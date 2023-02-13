@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZhaoXiEducation", "ZhaoXiEducation", "{6457FA8D-88B6-4AB2-A97A-1846622D5F0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YanZhongKe", "YanZhongKe", "{AB282EF2-E16C-4528-963E-B5125DDD5BB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog", "Blog", "{799BCFC7-A9B5-4769-BE9F-B81E984F4D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahao-Blog", "Ahao-Blog\Ahao-Blog.csproj", "{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A} = {799BCFC7-A9B5-4769-BE9F-B81E984F4D45}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
+	EndGlobalSection
+EndGlobal
