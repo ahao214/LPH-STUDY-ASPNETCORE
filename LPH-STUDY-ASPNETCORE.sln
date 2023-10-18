@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookVideo", "BookVideo", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{428E5EE0-4029-4DF6-86D2-52880CC3BFC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LaoZhaoNet", "LaoZhaoNet", "{335B607B-B1F3-4EF1-A86D-3BD517060117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_单一职责原则", "01_单一职责原则\01_单一职责原则.csproj", "{1C8DDA27-E90A-4804-875F-9347C88D33DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8DDA27-E90A-4804-875F-9347C88D33DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8DDA27-E90A-4804-875F-9347C88D33DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8DDA27-E90A-4804-875F-9347C88D33DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8DDA27-E90A-4804-875F-9347C88D33DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{799BCFC7-A9B5-4769-BE9F-B81E984F4D45} = {428E5EE0-4029-4DF6-86D2-52880CC3BFC2}
 		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A} = {799BCFC7-A9B5-4769-BE9F-B81E984F4D45}
+		{335B607B-B1F3-4EF1-A86D-3BD517060117} = {1AD94654-35BC-4502-A411-AA72A97CDA45}
+		{1C8DDA27-E90A-4804-875F-9347C88D33DF} = {335B607B-B1F3-4EF1-A86D-3BD517060117}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
