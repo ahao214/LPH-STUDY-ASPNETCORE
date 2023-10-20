@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\bin\Debug\net6.0\StaticDemo.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\bin\Debug\net6.0\StaticDemo.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\bin\Debug\net6.0\StaticDemo.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\bin\Debug\net6.0\StaticDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\bin\Debug\net6.0\StaticDemo.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\refint\StaticDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\StaticDemo.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StaticDemo\obj\Debug\net6.0\ref\StaticDemo.dll
