@@ -3,15 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+
 
 namespace WpfMvvmDemo.Models
 {
-    public class Student
+    public class Student : ICloneable
     {
-        public string? StuName { get; set; }
+        private string? name;
 
+        public string? Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+            }
+        }
 
-
-
+        public object Clone()
+        {
+            //浅拷贝
+            return this.MemberwiseClone();
+        }
     }
 }

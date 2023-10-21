@@ -8,7 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <TextBox Text="{Binding Stu.StuName}"></TextBox>
+            <TextBox Text="{Binding Stu.Name}"></TextBox>
+            <Button Content="点击我修改文本框内容" Command="{Binding ClickCommand}"></Button>
         </StackPanel>
     </Grid>
 </Window>

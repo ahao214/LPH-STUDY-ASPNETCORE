@@ -4,19 +4,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WpfMvvmDemo.Models;
+using WpfMvvmDemo.Common;
 
 namespace WpfMvvmDemo.ViewModels
 {
-    public class MainViewModel
+    public class MainViewModel : NotificationObject
     {
-        public Student Stu { get; set; } = new Student();
+        //public Student? Stu { get; set; } = new Student();
 
-        public MainViewModel()
+        private Student? stu = new Student();
+        public Student Stu
         {
-            Stu.StuName = "YDT Jack";
+            get { return stu!; }
+            set
+            {
+                stu = value;
+                OnPropertyChanged(nameof(Stu));
+            }
         }
 
 
+
+
+        public ReplyCommand? ClickCommand
+        {
+            get => new ReplyCommand
+            {
+                DoExecute = new Action<object>(UpdateStudentName)
+            };
+        }
+
+
+
+
+        public MainViewModel()
+        {
+            Stu.Name = "YDT Jack";
+        }
+
+        public void UpdateStudentName(object? parameter)
+        {
+            Stu!.Name = "hello jack";
+            //完成了对象的变化
+            Stu = (Student?)Stu.Clone()!;
+        }
 
 
 
