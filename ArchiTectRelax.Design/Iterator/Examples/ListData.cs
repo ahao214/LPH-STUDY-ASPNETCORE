@@ -18,7 +18,7 @@ namespace ArchiTectRelax.Design.Iterator.Examples
 
 
         /// <summary>
-        /// 获取迭代器接口
+        /// 获取迭代器方法
         /// </summary>
         /// <returns></returns>
         public IIterator GetIterator()
