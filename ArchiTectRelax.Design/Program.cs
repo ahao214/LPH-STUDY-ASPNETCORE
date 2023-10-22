@@ -63,19 +63,38 @@ ListData lst = new ListData();
 
 #region Middleware实现原理
 
-//1.默认中间件
-Middleware m1 = new Default404Middleware();
-Middleware m2 = new ExceptionMiddleware();
-Middleware m3 = new AuthenticationMiddleware();
-Middleware m4 = new AuthorizationMiddleware();
+////1.默认中间件
+//Middleware m1 = new Default404Middleware();
+//Middleware m2 = new ExceptionMiddleware();
+//Middleware m3 = new AuthenticationMiddleware();
+//Middleware m4 = new AuthorizationMiddleware();
 
 
-//2.设置调用关系
-m1.nextMiddleware = m2;
-m2.nextMiddleware = m3;
-m3.nextMiddleware = m4;
+////2.设置调用关系
+//m1.nextMiddleware = m2;
+//m2.nextMiddleware = m3;
+//m3.nextMiddleware = m4;
 
-//3.执行
-m1.HandleRequest(new HttpContext());
+////3.执行
+//m1.HandleRequest(new HttpContext());
+
+
+
+//List + 建造者
+//创建IApplicationBuilder
+IApplicationBuilder applicationBuilder = new IApplicationBuilder();
+applicationBuilder.UseAuthorization();
+applicationBuilder.UseAuthentication();
+applicationBuilder.UseException();
+
+
+//构建中间件
+Middleware middleware = applicationBuilder.Build();
+
+
+//执行中间件
+HttpContext httpContext = new HttpContext();
+httpContext.httpRequest = new HttpRequest() { requestUrl = "index.html" };
+middleware.HandleRequest(httpContext);
 
 #endregion
