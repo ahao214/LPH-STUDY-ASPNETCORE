@@ -74,18 +74,41 @@ namespace ArchiTectRelax.Design.Middle.Chains
         /// 4.构建404中间件
         /// </summary>
         /// <returns></returns>
-        public IApplicationBuilder Use404()
+        //public IApplicationBuilder Use404()
+        //{
+        //    //创建404中间件
+        //    Middleware middleware = new Default404Middleware();
+
+        //    //添加到应用程序中
+        //    application.middlewares.Add(middleware);
+
+        //    return this;
+
+        //}
+
+        /// <summary>
+        /// 构建中间件(按照责任链形式添加)
+        /// </summary>
+        /// <returns></returns>
+        public Middleware Build()
         {
-            //创建404中间件
-            Middleware middleware = new Default404Middleware();
+            //创建默认404中间件
+            Middleware middlewareFirst = new Default404Middleware();
 
-            //添加到应用程序中
-            application.middlewares.Add(middleware);
+            //遍历中间件添加到后面
+            List<Middleware> lst = application.middlewares;
+            lst.Reverse();
+            foreach (Middleware mw in lst)
+            {
+                //添加下一个中间件
+                middlewareFirst.nextMiddleware = mw;
 
-            return this;
-
+                //将默认中间件进行替换
+                middlewareFirst = mw;
+            }
+            //返回中间件
+            return middlewareFirst;
         }
-
 
     }
 }
