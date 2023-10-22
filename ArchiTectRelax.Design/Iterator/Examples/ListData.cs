@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace ArchiTectRelax.Design.Iterator.Examples
 {
-    public class ListData
+    public class ListData: IIterable
     {
+
+
+
+
         public static string[] names = { "张三", "李斯", "王五", "溜溜", "和三" };
 
 
         public string[] GetNames()
         {
+
+
             return names;
         }
 

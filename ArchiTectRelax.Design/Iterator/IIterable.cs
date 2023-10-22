@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ArchiTectRelax.Design.Iterator
 {
-    public class IIterable
+    public interface IIterable
     {
+        /// <summary>
+        /// 获取迭代器
+        /// </summary>
+        /// <returns></returns>
+        public IIterator GetIterator();
+
+
     }
 }
