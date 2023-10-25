@@ -14,6 +14,8 @@ namespace LoadBalancer.LoadBalancers
         //2、初始化集群实例地址的连接数
         private Dictionary<string, int> serverActives = new Dictionary<string, int>();
 
+
+
         public LeastActiveLoadBalancer()
         {
             serverAddresss.Add("http://localhost5001"); //商品实例1
@@ -35,6 +37,7 @@ namespace LoadBalancer.LoadBalancers
             //1、获取地址数量
             int serverCount = serverAddresss.Count;
             int leastActive = -1;
+            int leastIndex = 0;
             for (int i = 0; i < serverCount; i++)
             {
                 //1.1 根据索引找到活跃数
@@ -43,17 +46,37 @@ namespace LoadBalancer.LoadBalancers
                 //1.2 找到活跃数
                 int serverActive = serverActives[serverAddr];
 
-                leastActive = Math.Min(leastActive, serverActive);
+                if (leastActive > serverActive)
+                {
+                    leastActive = serverActive;
+
+                    //赋值索引
+                    leastIndex = i;
+                }
 
                 //判断是否是第一次进来
                 if (leastActive == -1)
                 {
                     leastActive = serverActive;
+                    leastIndex = i;
+                }
+
+                if (leastActive == serverActive)
+                {
+                    leastIndex = i;
                 }
             }
 
+            //2 获取服务器地址进行访问
+            string res = serverAddresss[leastIndex];
+            Console.WriteLine($"服务地址:{res}");
 
-            return null;
+            //3 更新活跃数
+            int currentActive = serverActives[res];
+            serverActives[res] += currentActive;
+
+
+            return res;
         }
 
 

@@ -14,7 +14,7 @@ namespace LoadBalancer
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            //CreateHostBuilder(args).Build().Run();
             LeastActiveLoadBalancer leastActiveLoadBalancer = new LeastActiveLoadBalancer();
             leastActiveLoadBalancer.Select();
         }
