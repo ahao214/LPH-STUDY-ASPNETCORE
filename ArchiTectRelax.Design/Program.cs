@@ -5,6 +5,7 @@ using ArchiTectRelax.Design.NullObject.Examples;
 using static System.Console;
 using ArchiTectRelax.Design.Middle;
 using ArchiTectRelax.Design.Factory.Examples;
+using ArchiTectRelax.Design.Factory;
 
 
 #region 迭代器设计模式
@@ -110,7 +111,12 @@ IShape s2 = new Rectangle();
 IShape s3 = new Square();
 
 
+//工厂模式使用
+ShapeFactory shapeFactory = new ShapeFactory();
+IShape shape1 = shapeFactory.GetShape("CIRCLE");
+shape1.Draw();
 
 
+//只要遇到了接口的对象，都可以使用工厂模式来解决!
 
 #endregion
