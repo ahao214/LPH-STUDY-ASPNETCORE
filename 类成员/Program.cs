@@ -6,6 +6,8 @@ namespace 类成员
     {
         static void Main(string[] args)
         {
+            //初始静态成员可以使用静态构造方法
+
             Student s1 = new Student();
             int m1 = s1.Member = 1;
             Console.WriteLine($"实例成员：{m1}");
