@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="IOC\RMAttribute\" />
+    <Folder Include="IOC\Strategy\" />
     <Folder Include="Middle\Chains\NullObject\" />
   </ItemGroup>
 
