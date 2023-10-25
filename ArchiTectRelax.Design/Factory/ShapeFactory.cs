@@ -15,6 +15,7 @@ namespace ArchiTectRelax.Design.Factory
 
         public IShape GetShape(string shapeType)
         {
+            //从字典获取，反射创建
             if (shapeType.Equals("CIRCLE"))
             {
                 return new Circle();
