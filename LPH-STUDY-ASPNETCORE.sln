@@ -63,7 +63,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AntBianCheng", "AntBianChen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{6C97307B-4ABA-477E-A0B0-E53A4C916706}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Study", "Study", "{86B8D046-90A1-4BAB-805A-1F4D632E43AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicKnowledge", "BasicKnowledge", "{86B8D046-90A1-4BAB-805A-1F4D632E43AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YiDingTong", "YiDingTong", "{F35E83E4-B82A-4430-8B59-5BBD1CE857A9}"
 EndProject
@@ -147,6 +147,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "类成员", "类成员\类�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "静态成员", "静态成员\静态成员.csproj", "{0384CBA5-551B-4103-9EAE-C52E9A10EE93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreQuickStart", "EFCoreQuickStart\EFCoreQuickStart.csproj", "{15C18FB1-A0CB-4C99-BE81-16C82D788118}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +231,10 @@ Global
 		{0384CBA5-551B-4103-9EAE-C52E9A10EE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0384CBA5-551B-4103-9EAE-C52E9A10EE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0384CBA5-551B-4103-9EAE-C52E9A10EE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C18FB1-A0CB-4C99-BE81-16C82D788118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C18FB1-A0CB-4C99-BE81-16C82D788118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C18FB1-A0CB-4C99-BE81-16C82D788118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C18FB1-A0CB-4C99-BE81-16C82D788118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +308,7 @@ Global
 		{6ADD4733-74E9-4121-B140-6082E673A582} = {FACDE600-DC23-49BA-AAE4-DED4831AA64F}
 		{97287499-F803-482E-8B0B-3777EEA5930A} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{0384CBA5-551B-4103-9EAE-C52E9A10EE93} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{15C18FB1-A0CB-4C99-BE81-16C82D788118} = {3BFE179C-92E5-4147-802E-0B8F4DAC03E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
