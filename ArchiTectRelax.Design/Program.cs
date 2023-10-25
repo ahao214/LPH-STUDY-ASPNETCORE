@@ -4,6 +4,7 @@ using ArchiTectRelax.Design.Middle.Chains;
 using ArchiTectRelax.Design.NullObject.Examples;
 using static System.Console;
 using ArchiTectRelax.Design.Middle;
+using ArchiTectRelax.Design.Factory.Examples;
 
 
 #region 迭代器设计模式
@@ -82,19 +83,34 @@ ListData lst = new ListData();
 
 //List + 建造者
 //创建IApplicationBuilder
-IApplicationBuilder applicationBuilder = new IApplicationBuilder();
-applicationBuilder.UseAuthorization();
-applicationBuilder.UseAuthentication();
-applicationBuilder.UseException();
+//IApplicationBuilder applicationBuilder = new IApplicationBuilder();
+//applicationBuilder.UseAuthorization();
+//applicationBuilder.UseAuthentication();
+//applicationBuilder.UseException();
 
 
-//构建中间件
-Middleware middleware = applicationBuilder.Build();
+////构建中间件
+//Middleware middleware = applicationBuilder.Build();
 
 
-//执行中间件
-HttpContext httpContext = new HttpContext();
-httpContext.httpRequest = new HttpRequest() { requestUrl = "index.html" };
-middleware.HandleRequest(httpContext);
+////执行中间件
+//HttpContext httpContext = new HttpContext();
+//httpContext.httpRequest = new HttpRequest() { requestUrl = "index.html" };
+//middleware.HandleRequest(httpContext);
+
+#endregion
+
+
+
+#region 工厂模式
+
+//直接接口使用
+IShape s1 = new Circle();
+IShape s2 = new Rectangle();
+IShape s3 = new Square();
+
+
+
+
 
 #endregion
