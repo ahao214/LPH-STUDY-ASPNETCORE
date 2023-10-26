@@ -11,7 +11,9 @@ namespace ConsoleApp
         // 队列数组
         private readonly T[] _items;
         private readonly int _size = 0;
+        // 头部
         private int _head = 0;
+        // 尾部
         private int _tail = 0;
 
         public ArrayQueue(int size)
