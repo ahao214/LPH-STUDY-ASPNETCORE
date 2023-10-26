@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "对象初始化器", "对�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadonlyDemo", "ReadonlyDemo\ReadonlyDemo.csproj", "{59890A0E-A570-4903-8143-B29406BD74FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "索引器", "索引器\索引器.csproj", "{CF888057-8C27-4BF9-B586-5A99589DBC53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -271,6 +273,10 @@ Global
 		{59890A0E-A570-4903-8143-B29406BD74FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59890A0E-A570-4903-8143-B29406BD74FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59890A0E-A570-4903-8143-B29406BD74FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF888057-8C27-4BF9-B586-5A99589DBC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF888057-8C27-4BF9-B586-5A99589DBC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF888057-8C27-4BF9-B586-5A99589DBC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF888057-8C27-4BF9-B586-5A99589DBC53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -351,6 +357,7 @@ Global
 		{8B6B9726-C488-457C-84CA-3FEDA5AFF061} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{CDCBE6FB-B16F-4072-BB64-2D4640407E6D} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{59890A0E-A570-4903-8143-B29406BD74FF} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{CF888057-8C27-4BF9-B586-5A99589DBC53} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
