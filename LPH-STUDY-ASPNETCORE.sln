@@ -153,6 +153,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityModels", "EntityModel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{8D315438-FCB2-4259-BFF4-FF0C00AA9CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataBinding", "WpfDataBinding\WpfDataBinding.csproj", "{99E2A6FC-16CE-4533-BB0C-2792E19DF815}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -247,6 +249,10 @@ Global
 		{8D315438-FCB2-4259-BFF4-FF0C00AA9CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D315438-FCB2-4259-BFF4-FF0C00AA9CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D315438-FCB2-4259-BFF4-FF0C00AA9CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E2A6FC-16CE-4533-BB0C-2792E19DF815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E2A6FC-16CE-4533-BB0C-2792E19DF815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E2A6FC-16CE-4533-BB0C-2792E19DF815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E2A6FC-16CE-4533-BB0C-2792E19DF815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -323,6 +329,7 @@ Global
 		{15C18FB1-A0CB-4C99-BE81-16C82D788118} = {3BFE179C-92E5-4147-802E-0B8F4DAC03E3}
 		{CB913537-6975-49FC-A920-13882DD7C49F} = {F1E7CC8F-E5D2-466E-8E0A-4E9AB9C2FD29}
 		{8D315438-FCB2-4259-BFF4-FF0C00AA9CD7} = {6ADD4733-74E9-4121-B140-6082E673A582}
+		{99E2A6FC-16CE-4533-BB0C-2792E19DF815} = {A14646E4-2C25-4F17-8FC4-5B5057C8A54A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
