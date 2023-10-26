@@ -34,7 +34,7 @@ namespace ConsoleApp
                     _items[i - _head] = _items[i]; 
                 }
                 // 搬完以后重新更新heand和tail
-                _tail = _head;
+                _tail -= _head;
                 _head = 0;
             }
             _items[_tail++] = item;
