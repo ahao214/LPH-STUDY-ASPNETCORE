@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\bin\Debug\net6.0\静态构造方法.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\bin\Debug\net6.0\静态构造方法.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\bin\Debug\net6.0\静态构造方法.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\bin\Debug\net6.0\静态构造方法.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\bin\Debug\net6.0\静态构造方法.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\refint\静态构造方法.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\静态构造方法.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态构造方法\obj\Debug\net6.0\ref\静态构造方法.dll

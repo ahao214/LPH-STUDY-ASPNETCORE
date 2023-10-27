@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\bin\Debug\net6.0\静态成员.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\bin\Debug\net6.0\静态成员.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\bin\Debug\net6.0\静态成员.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\bin\Debug\net6.0\静态成员.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\bin\Debug\net6.0\静态成员.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\refint\静态成员.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\静态成员.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态成员\obj\Debug\net6.0\ref\静态成员.dll

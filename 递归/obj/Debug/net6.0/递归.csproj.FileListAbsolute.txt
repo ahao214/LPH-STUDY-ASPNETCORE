@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\bin\Debug\net6.0\递归.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\bin\Debug\net6.0\递归.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\bin\Debug\net6.0\递归.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\bin\Debug\net6.0\递归.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\bin\Debug\net6.0\递归.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\refint\递归.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\递归.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\递归\obj\Debug\net6.0\ref\递归.dll
