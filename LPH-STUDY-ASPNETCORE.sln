@@ -177,6 +177,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "抽象类", "抽象类\抽�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "密封类", "密封类\密封类.csproj", "{2C8FFA4D-B290-4B9D-9A3E-D4DF095A4150}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "静态类", "静态类\静态类.csproj", "{15EBC9BD-BAF4-4CB9-A757-088770875386}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,10 @@ Global
 		{2C8FFA4D-B290-4B9D-9A3E-D4DF095A4150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8FFA4D-B290-4B9D-9A3E-D4DF095A4150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8FFA4D-B290-4B9D-9A3E-D4DF095A4150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EBC9BD-BAF4-4CB9-A757-088770875386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EBC9BD-BAF4-4CB9-A757-088770875386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EBC9BD-BAF4-4CB9-A757-088770875386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EBC9BD-BAF4-4CB9-A757-088770875386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -403,6 +409,7 @@ Global
 		{06202B61-E47B-499F-93F0-680846CC135A} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{96C589C3-F140-4570-B7A6-9EDDE9CFF192} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{2C8FFA4D-B290-4B9D-9A3E-D4DF095A4150} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{15EBC9BD-BAF4-4CB9-A757-088770875386} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
