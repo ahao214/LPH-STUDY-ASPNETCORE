@@ -19,3 +19,13 @@ abstract class ABClass
 
     abstract public int Name { get; set; }
 }
+
+class Child : ABClass
+{
+    public override int Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+    public override void Test1()
+    {
+        throw new NotImplementedException();
+    }
+}
