@@ -2,6 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model IEnumerable<T2.Models.Goods>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -12,10 +14,28 @@
     <button id="getWeather">获取气象数据</button>
 </p>
 
+<table class="table table-bordered table-danger table-hover">
+    <tr>
+        <th>商品编号</th>
+        <th>商品名称</th>
+        <th>商品价格</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GoodsId</td>
+            <td>@item.GoodsName</td>
+            <td>@item.GoodsPrice</td>
+
+        </tr>
+    }
+
+</table>
+
 @section Scripts{
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script>
-        $("#getWeather").click(function(){
+        $("#getWeather").click(function() {
             $.get("https://localhost:44361/weatherforecast", function(res) {
                 console.log(res)
             })

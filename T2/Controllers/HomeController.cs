@@ -20,7 +20,16 @@ namespace T2.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var list = new List<Goods>()
+            {
+               new Goods(1,"苹果",10),
+               new Goods(2,"凤梨",12),
+               new Goods(3,"橘子",23),
+               new Goods(4,"香蕉",4),
+
+            };
+
+            return View(list);
         }
 
         public IActionResult Privacy()
