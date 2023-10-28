@@ -6,3 +6,19 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+
+<p>
+    <button id="getWeather">获取气象数据</button>
+</p>
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("#getWeather").click(function(){
+            $.get("https://localhost:44361/weatherforecast", function(res) {
+                console.log(res)
+            })
+        })
+    </script>
+}
