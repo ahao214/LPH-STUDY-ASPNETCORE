@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using T2.Utils;
 
 namespace T2
 {
@@ -23,6 +24,9 @@ namespace T2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // ◊¢≤·“¿¿µπÿœµ
+            services.AddTransient<IProductService, ProductService>();
+
             services.AddControllersWithViews();
         }
 

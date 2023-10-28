@@ -3,7 +3,7 @@ using T2.Models;
 
 namespace T2.Utils
 {
-    interface IProductService
+    public interface IProductService
     {
         IEnumerable<Goods> GetAllGoods();
 
