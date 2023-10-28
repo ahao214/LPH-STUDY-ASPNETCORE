@@ -9,16 +9,18 @@ namespace T1
         static void Main(string[] args)
         {
             BoilWater();
-            Clean();
+            //Clean();
+            CleanAsync();
             Pao();
-
+            Console.ReadKey();
         }
 
 
         static void BoilWater()
         {
-            Console.WriteLine("烧开水");
             Thread.Sleep(5000);
+            Console.WriteLine("烧开水");
+            
         }
 
         // 异步方法
@@ -44,14 +46,16 @@ namespace T1
 
         static void Clean()
         {
-            Console.WriteLine("清洗茶具");
             Thread.Sleep(5000);
+            Console.WriteLine("清洗茶具");
+            
         }
 
         static void Pao()
         {
-            Console.WriteLine("泡茶");
             Thread.Sleep(5000);
+            Console.WriteLine("泡茶");
+            
         }
 
 
