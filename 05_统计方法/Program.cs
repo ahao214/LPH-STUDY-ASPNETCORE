@@ -22,7 +22,7 @@ new Student{Id=1,Name ="赵虎",Age = 25,Sex ="男",English =45},
 new Student{Id=1,Name ="王超",Age = 27,Sex ="男",English =67},
 new Student{Id=1,Name ="马汉",Age = 30,Sex ="男",English =78},
 
-new Student{Id=1,Name ="苏小妹",Age = 18,Sex ="女",English =100},
+new Student{Id=1,Name ="苏小妹",Age = 18,Sex ="女",English =99},
 
 };
 
@@ -36,6 +36,11 @@ WriteLine($"男生平均分：{students.Where(s => s.Sex == "男").Average(s => 
 WriteLine($"女生平均分：{students.Where(s => s.Sex == "女").Average(s => s.English):0.00}");
 
 // 统计英语成绩最高学员名字和乘积
+var result = students.Where(s => s.English == students.Max(s => s.English));
+foreach (var item in result)
+{
+    WriteLine($"姓名：{item.Name},成绩：{item.English}");
+}
 
 
 ReadKey();
