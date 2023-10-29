@@ -48,7 +48,7 @@ WriteLine(letter); // 结果为a
 
 
 // 元祖作为参数
-void ProcessTuple((string name,int age) person)
+void ProcessTuple((string name, int age) person)
 {
     WriteLine($"name:{person.name},age:{person.age}");
 }
@@ -57,7 +57,7 @@ ProcessTuple(("Jack", 24));
 
 
 // 元组作为返回类型
-(int Sum,int Product) GetSumAndProduct(int a,int b)
+(int Sum, int Product) GetSumAndProduct(int a, int b)
 {
     return (a + b, a * b);
 }
@@ -65,6 +65,22 @@ ProcessTuple(("Jack", 24));
 var result = GetSumAndProduct(3, 4);
 WriteLine($"和：{result.Sum},乘积：{result.Product}");
 
+
+// 使用元组作为返回值
+(string, int) GetPerson()
+{
+    return ("Bob", 30);
+}
+
+// 调用方法并解构返回值
+(string Names, int Ages) = GetPerson();
+WriteLine($"Name:{Names},Age:{Ages}");
+
+
+// 元组可以修改
+var p = (n: "鲁班七号", a: 11);
+p.n = "百里";
+WriteLine($"姓名：{p.n},年龄：{p.a}");
 
 
 
