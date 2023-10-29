@@ -43,7 +43,21 @@ WriteLine($"name:{names},age:{ages}");
 // 弃元 即放弃不需要的元素
 var tuple = (1, "a", 3.123);
 var (_, letter, _) = tuple;
-WriteLine(letter);
+WriteLine(letter); // 结果为a 
+
+
+
+// 元祖作为参数
+void ProcessTuple((string name,int age) person)
+{
+    WriteLine($"name:{person.name},age:{person.age}");
+}
+
+ProcessTuple(("Jack", 24));
+
+
+
+
 
 
 
