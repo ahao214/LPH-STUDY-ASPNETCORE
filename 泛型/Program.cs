@@ -14,7 +14,7 @@ Student<int> s2 = new Student<int>();
 s2.Id = 1;
 
 
-//多个参数的泛型
+// 多个参数的泛型
 Teacher<int, string, int> teacher = new Teacher<int, string, int>();
 
 
@@ -37,7 +37,7 @@ class Student<T>
 
 
 
-//多个参数的泛型类型
+// 多个参数的泛型类型
 class Teacher<T, S, V>
 {
     public T Id { get; set; }
@@ -48,4 +48,37 @@ class Teacher<T, S, V>
         return default;
     }
 
+}
+
+
+// 泛型接口
+interface IPeople<T, S>
+{
+    T ShowInfo(S id);
+}
+
+class MyClass1 : IPeople<string, int>
+{
+    public string ShowInfo(int id)
+    {
+        return default;
+    }
+}
+
+
+class MyClass2<T, S> : IPeople<T, S>
+{
+    public T ShowInfo(S id)
+    {
+        return default;
+    }
+}
+
+
+class MyClass3<T>:IPeople<T,int>
+{
+    public T ShowInfo(int id)
+    {
+        return default;
+    }
 }
