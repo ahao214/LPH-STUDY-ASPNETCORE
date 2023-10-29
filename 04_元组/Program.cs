@@ -33,14 +33,17 @@ WriteLine($"姓名：{one.name},age:{one.age}");
 WriteLine($"name:{two.name},age:{two.age}");
 
 
-// 元祖的解构
+// 元组的解构
 (string name, int age) = ("纣王", 234);
 var (names, ages) = ("妲己", 11111);
 
 WriteLine($"name:{name},age:{age}");
 WriteLine($"name:{names},age:{ages}");
 
-
+// 弃元 即放弃不需要的元素
+var tuple = (1, "a", 3.123);
+var (_, letter, _) = tuple;
+WriteLine(letter);
 
 
 
