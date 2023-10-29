@@ -56,6 +56,16 @@ void ProcessTuple((string name,int age) person)
 ProcessTuple(("Jack", 24));
 
 
+// 元组作为返回类型
+(int Sum,int Product) GetSumAndProduct(int a,int b)
+{
+    return (a + b, a * b);
+}
+
+var result = GetSumAndProduct(3, 4);
+WriteLine($"和：{result.Sum},乘积：{result.Product}");
+
+
 
 
 
