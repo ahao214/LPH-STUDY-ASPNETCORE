@@ -17,7 +17,15 @@ s2.Id = 1;
 // 多个参数的泛型
 Teacher<int, string, int> teacher = new Teacher<int, string, int>();
 
+// 泛型委托Func
+Func<double, double, int> func = new Func<double, double, int>(Adds);
+func(1, 2);
 
+// 泛型委托Func
+static int Adds(double a, double b)
+{
+    return (int)(a + b);
+}
 
 class Student1
 {
@@ -82,3 +90,4 @@ class MyClass3<T>:IPeople<T,int>
         return default;
     }
 }
+
