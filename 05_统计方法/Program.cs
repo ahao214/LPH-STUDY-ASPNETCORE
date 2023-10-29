@@ -24,10 +24,18 @@ new Student{Id=1,Name ="马汉",Age = 30,Sex ="男",English =78},
 
 new Student{Id=1,Name ="苏小妹",Age = 18,Sex ="女",English =100},
 
-
-
-
 };
+
+
+// 统计英语最高分、最低分、总分、平均分
+WriteLine($"最高分：{students.Max(s => s.English)}," + $"最低分：{students.Min(s => s.English)}," + $"总分：{students.Sum(s => s.English)}," + $"平均分：{students.Average(s => s.English):0.00}");
+
+// 统计男生和女生各自英语平均分
+WriteLine($"男生平均分：{students.Where(s => s.Sex == "男").Average(s => s.English):0.00}");
+
+WriteLine($"女生平均分：{students.Where(s => s.Sex == "女").Average(s => s.English):0.00}");
+
+// 统计英语成绩最高学员名字和乘积
 
 
 ReadKey();
