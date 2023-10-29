@@ -201,6 +201,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "扩展方法", "扩展方�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "委托", "委托\委托.csproj", "{39715132-4580-47D2-A14D-9D87EB201DFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛型", "泛型\泛型.csproj", "{377DE3B7-FAFC-498C-9107-BAAE39A23F40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{39715132-4580-47D2-A14D-9D87EB201DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39715132-4580-47D2-A14D-9D87EB201DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39715132-4580-47D2-A14D-9D87EB201DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377DE3B7-FAFC-498C-9107-BAAE39A23F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377DE3B7-FAFC-498C-9107-BAAE39A23F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377DE3B7-FAFC-498C-9107-BAAE39A23F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377DE3B7-FAFC-498C-9107-BAAE39A23F40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -463,6 +469,7 @@ Global
 		{6A325200-9552-49F1-9F8E-0EA4FD76879E} = {78A53B21-E2ED-49CB-AB0D-9C9CB4B7943D}
 		{9C35F9C6-AB64-41C0-BF9F-740624331ECB} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{39715132-4580-47D2-A14D-9D87EB201DFF} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{377DE3B7-FAFC-498C-9107-BAAE39A23F40} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
