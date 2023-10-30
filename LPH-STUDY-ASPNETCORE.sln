@@ -207,6 +207,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_统计方法", "05_统�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_数组复制", "06_数组复制\06_数组复制.csproj", "{C4C38FDE-8831-4757-91E7-099661591913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_数组类型转换", "07_数组类型转换\07_数组类型转换.csproj", "{E785B5D3-23AB-4038-B408-2C1F9E2EB523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -381,6 +383,10 @@ Global
 		{C4C38FDE-8831-4757-91E7-099661591913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4C38FDE-8831-4757-91E7-099661591913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4C38FDE-8831-4757-91E7-099661591913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E785B5D3-23AB-4038-B408-2C1F9E2EB523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E785B5D3-23AB-4038-B408-2C1F9E2EB523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E785B5D3-23AB-4038-B408-2C1F9E2EB523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E785B5D3-23AB-4038-B408-2C1F9E2EB523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -484,6 +490,7 @@ Global
 		{377DE3B7-FAFC-498C-9107-BAAE39A23F40} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{C40AFF00-4528-4660-B62F-57E0592A62D2} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
 		{C4C38FDE-8831-4757-91E7-099661591913} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
+		{E785B5D3-23AB-4038-B408-2C1F9E2EB523} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
