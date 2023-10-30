@@ -20,3 +20,12 @@ string[] arrTS = Array.ConvertAll(arrt, i => i.ToString());
 double[] arrd = Array.ConvertAll(arri, i => Convert.ToDouble(i));
 
 #endregion
+
+
+
+#region 数组转化为byte[] 1对多
+
+
+
+
+#endregion
