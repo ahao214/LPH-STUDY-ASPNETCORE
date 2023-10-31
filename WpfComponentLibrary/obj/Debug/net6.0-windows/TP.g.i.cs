@@ -69,7 +69,7 @@ namespace WpfComponentLibrary {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfComponentLibrary;component/tp.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfComponentLibrary;V1.0.0.0;component/tp.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TP.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
