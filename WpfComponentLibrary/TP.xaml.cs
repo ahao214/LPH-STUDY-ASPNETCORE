@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -47,6 +48,18 @@ namespace WpfComponentLibrary
         public static readonly DependencyProperty MinimumProperty =
             DependencyProperty.Register("Minimum", typeof(int), typeof(TP), new PropertyMetadata(0));
 
+
+
+
+        public double CurrentValue
+        {
+            get { return (double)GetValue(CurrentValueProperty); }
+            set { SetValue(CurrentValueProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CurrentValue.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CurrentValueProperty =
+            DependencyProperty.Register("CurrentValue", typeof(double), typeof(TP), new PropertyMetadata(0));
 
 
 
@@ -136,6 +149,16 @@ namespace WpfComponentLibrary
                     line.X2 = w - 25;
                 }
             }
+
+
+            // 使温度值与borden高度保持一致
+            var newValue = CurrentValue - this.Minimum;
+            newValue *= step;
+            newValue += 20;
+
+            // 创建一个动画方式来改变刻度盘中水银液的高度
+       DoubleAnimation animation=     new DoubleAnimation(newValue, TimeSpan.FromMilliseconds(500));
+
 
 
         }
