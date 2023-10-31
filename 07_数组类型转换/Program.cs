@@ -83,7 +83,13 @@ WriteLine(str2);
 
 
 
-#region
+#region 数组与List互转
+
+// 数组元素访问速度快 List操作更灵活
+int[] data = { 89, 3333, 333334422, 9087 };
+List<int> lst = data.ToList();
+int[] ds = lst.ToArray();
+WriteLine(string.Join(",", ds));
 
 
 
