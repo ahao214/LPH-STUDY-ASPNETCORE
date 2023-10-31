@@ -25,7 +25,7 @@ Factory<Animal> fac2 = fac;
 #region 逆变
 
 // 在泛型中关于父子之间方法参数(初始化泛型的方法)的问题
-
+// 逆变:在泛型中、父类作为方法参数、父类变量--->子变量 时的情况
 Action1<Animal> act1 = ActionAnimal;
 Action1<Dog> act2 = act1;
 
