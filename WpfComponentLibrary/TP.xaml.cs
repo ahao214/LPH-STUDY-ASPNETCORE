@@ -59,7 +59,7 @@ namespace WpfComponentLibrary
 
         // Using a DependencyProperty as the backing store for CurrentValue.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CurrentValueProperty =
-            DependencyProperty.Register("CurrentValue", typeof(double), typeof(TP), new PropertyMetadata(0));
+            DependencyProperty.Register("CurrentValue", typeof(double), typeof(TP), new PropertyMetadata(20.0));
 
 
 
@@ -158,7 +158,7 @@ namespace WpfComponentLibrary
 
             // 创建一个动画方式来改变刻度盘中水银液的高度
        DoubleAnimation animation=     new DoubleAnimation(newValue, TimeSpan.FromMilliseconds(500));
-
+            BorValue.BeginAnimation(HeightProperty, animation);
 
 
         }

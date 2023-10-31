@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <tp:TP Maximum="120" Minimum="20"/>
+        <tp:TP Maximum="120" Minimum="0" CurrentValue="20"/>
     </Grid>
 </Window>
