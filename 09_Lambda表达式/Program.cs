@@ -21,6 +21,11 @@ Func<int, int> func = (x) =>
 WriteLine(func(99));
 
 
+// Lambda作为参数
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
+// 统计数组奇数个数
+WriteLine($"arr数组中有{arr.Count(x => x % 2 == 1)}个奇数");
+
 
 
 
