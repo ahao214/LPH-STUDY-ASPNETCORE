@@ -6,9 +6,9 @@ Title = "数组类型转换";
 #region 数组类型转换 1对1
 
 // 方法一，循环处理 转化为字符串数组
-int[] arri = {12,3,4,5,6,798,90};
+int[] arri = { 12, 3, 4, 5, 6, 798, 90 };
 string[] arrs = new string[arri.Length];
-for(int i = 0;i< arri.Length;i++)
+for (int i = 0; i < arri.Length; i++)
 {
     arrs[i] = arri[i].ToString();
 }
@@ -31,13 +31,34 @@ double[] arrd = Array.ConvertAll(arri, i => Convert.ToDouble(i));
 
 int[] arrI = { 12, 23, 4, 5, 6, 21, 67, 98 };
 byte[] result = new byte[arrI.Length * sizeof(int)];
-for(int i = 0;i< arrI.Length;i++)
+for (int i = 0; i < arrI.Length; i++)
 {
+    // 单个转换
     byte[] temp = BitConverter.GetBytes(arrI[i]);
+    // 拼接
     Array.Copy(temp, 0, result, i * sizeof(int), temp.Length);
 }
 
 // 更简单的方法
+byte[] result1 = new byte[arrI.Length * sizeof(int)];
+Buffer.BlockCopy(arrI, 0, result1, 0, result1.Length);
+
+// 小端转大端 字节序反转
+byte[] result2 = new byte[arrI.Length * sizeof(int)];
+for (int i = 0; i < arrI.Length; i++)
+{
+    // 单个转换
+    byte[] temp = BitConverter.GetBytes(arrI[i]);
+    if (BitConverter.IsLittleEndian)
+        Array.Reverse(temp);    // 小端转大端
+    Array.Copy(temp, 0, result2, i * sizeof(int), temp.Length); // 拼接
+}
+
+// 使用BitConverter.ToString()可以显示转换结果
+WriteLine(BitConverter.ToString(result));
+WriteLine(BitConverter.ToString(result1));
+WriteLine(BitConverter.ToString(result2));
+
 
 
 #endregion
