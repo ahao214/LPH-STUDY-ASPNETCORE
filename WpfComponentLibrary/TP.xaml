@@ -30,20 +30,25 @@
             <!--画摄氏度文本-->
             <TextBlock Text="C" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#555" Margin="0 20"></TextBlock>
 
-            <!--画刻度-->
+            <!--画刻度[不能直接写死] Canvas-->
             <Canvas x:Name="MainCanvas" Width="75" Margin="0 70"></Canvas>
 
-            <!--画水银柱-->
+            <!--画水银柱-->         
             <Border Width="10" CornerRadius="5" Margin="0 50">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="0" Direction="0" Color="White"></DropShadowEffect>
                 </Border.Effect>
+                
                 <Border.Background>
+                    
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        
                         <GradientStop Color="LightGray" Offset="0"></GradientStop>
                         <GradientStop Color="White" Offset="0.4"></GradientStop>
                         <GradientStop Color="LightGray" Offset="1"></GradientStop>
+                        
                     </LinearGradientBrush>
+                    
                 </Border.Background>
 
                 <Border Height="75" VerticalAlignment="Bottom" Name="BorValue">
@@ -60,7 +65,12 @@
             
             <!--画水银球-->
             <Border Height="25" Width="25" CornerRadius="15" VerticalAlignment="Bottom" Margin="0 0 0 30">
-                
+                <Border.Background>
+                    <RadialGradientBrush Center="0.3 0.3" GradientOrigin="0.4 0.4">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#CD3333" Offset="1"/>
+                    </RadialGradientBrush>
+                </Border.Background>
                 
             </Border>
             
