@@ -70,7 +70,7 @@ namespace WpfComponentLibrary
         {
             // 获取刻度板的真实高度
             var actualHeight = MainCanvas.ActualHeight;
-            if(actualHeight==0)
+            if (actualHeight == 0)
             {
                 return;
             }
@@ -80,19 +80,33 @@ namespace WpfComponentLibrary
             // 获取每一个间隔距离
             double step = actualHeight / stepCount;
 
-            for(int i = 0;i<=stepCount;i++)
+            for (int i = 0; i <= stepCount; i++)
             {
                 // 画直线
                 Line line = new Line();
                 line.Y1 = i * step;
                 line.Y2 = i * step;
 
-                line.X1 = 15;
-                line.X2 = w - 15;
-
                 line.Stroke = Brushes.Black;
                 line.StrokeThickness = 1;
                 MainCanvas.Children.Add(line);
+
+                // 刻度线
+                if (i % 10 == 0)
+                {
+                    line.X1 = 15;
+                    line.X2 = w - 15;
+                }
+                else if (i % 5 == 0)
+                {
+                    line.X1 = 20;
+                    line.X2 = w - 20;
+                }
+                else
+                {
+                    line.X1 = 25;
+                    line.X2 = w - 25;
+                }
             }
 
 
