@@ -68,7 +68,34 @@ namespace WpfComponentLibrary
         /// </summary>
         private void RefreshComponent()
         {
-            throw new NotImplementedException();
+            // 获取刻度板的真实高度
+            var actualHeight = MainCanvas.ActualHeight;
+            if(actualHeight==0)
+            {
+                return;
+            }
+            double w = MainCanvas.Width;
+            // 获取刻度盘的间隔数
+            double stepCount = Maximum - Minimum;
+            // 获取每一个间隔距离
+            double step = actualHeight / stepCount;
+
+            for(int i = 0;i<=stepCount;i++)
+            {
+                // 画直线
+                Line line = new Line();
+                line.Y1 = i * step;
+                line.Y2 = i * step;
+
+                line.X1 = 15;
+                line.X2 = w - 15;
+
+                line.Stroke = Brushes.Black;
+                line.StrokeThickness = 1;
+                MainCanvas.Children.Add(line);
+            }
+
+
         }
 
     }

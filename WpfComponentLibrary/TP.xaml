@@ -17,7 +17,7 @@
                 <Rectangle.Stroke>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
 
-                        <LinearGradientBrush.RelativeTransform>
+                    <LinearGradientBrush.RelativeTransform>
                             <RotateTransform Angle="30" CenterX="0.5" CenterY="0.5"></RotateTransform>
                         </LinearGradientBrush.RelativeTransform>
 
