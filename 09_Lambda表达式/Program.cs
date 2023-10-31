@@ -28,7 +28,33 @@ WriteLine($"arr数组中有{arr.Count(x => x % 2 == 1)}个奇数");
 
 
 
+#region Lambda闭包问题
 
+var w = new Test2().CreateWrite();
+w("hello 闭包");
+w(null);
+w(null);
+w("你好");
+w(null);
+w(null);
+
+
+class Test2
+{
+    public Action<string?> CreateWrite()
+    {
+        string msg = "";
+
+        return (string? info) =>
+        {
+            msg = info ?? msg;
+            WriteLine(msg);
+        };
+    }
+}
+
+
+#endregion
 
 
 
