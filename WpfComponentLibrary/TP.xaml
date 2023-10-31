@@ -15,6 +15,7 @@
                 </Rectangle.Effect>
                 <Rectangle.Stroke>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        
                         <GradientStop Color="Black"></GradientStop>
                         <GradientStop Color="White" Offset="0.8"></GradientStop>
                     </LinearGradientBrush>
