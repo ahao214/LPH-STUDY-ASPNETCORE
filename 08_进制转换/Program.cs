@@ -9,7 +9,7 @@ WriteLine(i);
 
 // 十进制转2 8 16 进制
 int x = 16;
-WriteLine(Convert.ToString(x, 2));
+WriteLine(Convert.ToString(x, 2).PadLeft(8, '0'));
 WriteLine(Convert.ToString(x, 8));
 WriteLine(Convert.ToString(x, 16));
 
