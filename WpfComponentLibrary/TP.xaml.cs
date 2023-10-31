@@ -80,6 +80,8 @@ namespace WpfComponentLibrary
             // 获取每一个间隔距离
             double step = actualHeight / stepCount;
 
+            MainCanvas.Children.Clear();
+
             for (int i = 0; i <= stepCount; i++)
             {
                 // 画直线
@@ -96,6 +98,32 @@ namespace WpfComponentLibrary
                 {
                     line.X1 = 15;
                     line.X2 = w - 15;
+
+                    // 添加文字
+                    TextBlock text = new TextBlock
+                    {
+                        Text = (Maximum - i).ToString(),
+                        Width = 20,
+                        TextAlignment = TextAlignment.Center,
+                        FontSize = 9,
+                        Margin = new Thickness(0, -5, -4, 0)
+                    };
+                    Canvas.SetLeft(text, w - 15);
+                    Canvas.SetTop(text, i * step);
+                    this.MainCanvas.Children.Add(text);
+
+                    // 添加文字
+                    text = new TextBlock
+                    {
+                        Text = (Maximum - i).ToString(),
+                        Width = 20,
+                        TextAlignment = TextAlignment.Center,
+                        FontSize = 9,
+                        Margin = new Thickness(-4, -5, 0, 0)
+                    };
+                    Canvas.SetLeft(text, 0);
+                    Canvas.SetTop(text, i * step);
+                    this.MainCanvas.Children.Add(text);
                 }
                 else if (i % 5 == 0)
                 {
