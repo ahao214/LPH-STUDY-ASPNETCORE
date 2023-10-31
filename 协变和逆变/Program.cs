@@ -24,7 +24,10 @@ Factory<Animal> fac2 = fac;
 
 #region 逆变
 
+// 在泛型中关于父子之间方法参数(初始化泛型的方法)的问题
 
+Action1<Animal> act1 = ActionAnimal;
+Action1<Dog> act2 = act1;
 
 #endregion
 
@@ -35,9 +38,17 @@ static Dog MakeDog()
     return new Dog();
 }
 
+static void ActionAnimal(Animal a)
+{
+
+}
 
 
 delegate T Factory<out T>();
+
+delegate void Action1<in T>(T value);
+
+
 
 
 class Animal
