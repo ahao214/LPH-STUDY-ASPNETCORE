@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Text;
+using static System.Console;
 
 Title = "数组类型转换";
 
@@ -65,7 +66,17 @@ WriteLine(BitConverter.ToString(result2));
 
 
 
-#region
+#region 字符串转字节数组
+
+// 字符串转字节数组 字符串转字节数组不是固定的一对多，而是按编码方案转换
+string str = "Excel梦想家";
+byte[] buff = Encoding.UTF8.GetBytes(str);  // 编码
+WriteLine(BitConverter.ToString(buff));
+
+
+// 字节数组转字符(用什么编码，就用什么解码)
+string str2 = Encoding.UTF8.GetString(buff);
+WriteLine(str2);
 
 
 #endregion
