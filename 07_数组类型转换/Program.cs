@@ -29,3 +29,18 @@ double[] arrd = Array.ConvertAll(arri, i => Convert.ToDouble(i));
 
 
 #endregion
+
+
+
+#region
+
+
+#endregion
+
+
+
+#region
+
+
+
+#endregion
