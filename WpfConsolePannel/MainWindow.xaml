@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfConsolePannel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1260" Background="Black">
+        Title="MainWindow" Height="450" Width="1260">
     <Grid Background="Black">
 
         <Canvas Background="Transparent" MouseWheel="Canvas_MouseWheel"
@@ -13,9 +13,9 @@
 
             <Viewbox Canvas.Left="30" Canvas.Top="120" Name="mainView">
                 <Grid>
-                    <Polygon VerticalAlignment="Center" Fill="LightGray" Points="0,200 150,0 1000,0 1200 200 0,200" Stroke="LightGray" StrokeThickness="2">
+                    <Polygon VerticalAlignment="Center" Fill="LightGray" Points="0,200 150,0 1000,0 1200 200 0,200" Stroke="LightGray" StrokeThickness="2"/>
 
-                    </Polygon>
+
                 </Grid>
                 
             </Viewbox>
