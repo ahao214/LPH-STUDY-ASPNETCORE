@@ -111,7 +111,7 @@ namespace WPFAppleUnlock
             foreach (var crilName in crilNames)
             {
                 var ellipse = FindClick<Ellipse>(Application.Current.MainWindow, crilName);
-                ellipse.Fill = Brushes.White;
+                ellipse.Fill = Brushes.Black;
             }
         }
 
