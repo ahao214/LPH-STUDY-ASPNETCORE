@@ -88,10 +88,48 @@ namespace WPFAppleUnlock
             if (index == 6)
             {
                 // 判断密码是否正确
+                if(CheckPasswordIsCorrect(passwds))
+                {
+                    MessageBox.Show("密码正确");
+                }
+                else
+                {
+                    this.lblTip.Text = "密 码 错 误";
+                    // 清空小圆点
+                    CleanEllipseFill(crilNames);
+                }
                 index = 0;
             }
-
         }
+
+        /// <summary>
+        /// 清空小圆点
+        /// </summary>
+        /// <param name="crilNames"></param>
+        private void CleanEllipseFill(string[] crilNames)
+        {
+            foreach (var crilName in crilNames)
+            {
+                var ellipse = FindClick<Ellipse>(Application.Current.MainWindow, crilName);
+                ellipse.Fill = Brushes.White;
+            }
+        }
+
+
+        /// <summary>
+        /// 判断输入的密码是否正确
+        /// </summary>
+        /// <param name="passwds"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        private bool CheckPasswordIsCorrect(int[] passwds)
+        {
+            var correctPwd = new[] { 9, 8, 7, 6, 5, 4 };
+            return correctPwd.SequenceEqual(passwds);
+        }
+
+
+
 
         /// <summary>
         /// 搜索制定名称的子元素
