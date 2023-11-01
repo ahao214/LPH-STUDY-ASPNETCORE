@@ -56,6 +56,9 @@ WriteLine(result);
 Cal calTest = Add;
 Test(calTest);
 
+Test(Mul);
+Test(Div);
+
 
 public delegate double Cal(double x, double y);
 
