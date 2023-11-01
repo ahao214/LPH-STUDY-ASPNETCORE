@@ -18,6 +18,7 @@ WriteLine(result);
 
 
 
+
 static void SayHi(string msg)
 {
     WriteLine(msg);
@@ -29,7 +30,10 @@ static double Add(double x, double y)
     return x + y;
 }
 
-
+static double Mul(double x, double y)
+{
+    return x * y;
+}
 
 
 
