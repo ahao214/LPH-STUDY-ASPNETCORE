@@ -13,6 +13,7 @@
                 <Ellipse x:Name="buttonSurface" StrokeThickness="3" Fill="#66FFFFFF"/>
                 <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#EEE9E9" FontSize="20" Content="{TemplateBinding Button.Content}"/>
             </Grid>
+            
             <ControlTemplate.Triggers>
                 <Trigger Property="IsPressed" Value="true">
                     <Setter TargetName="buttonSurface" Property="Fill" Value="#F5F5F5"/>
@@ -30,9 +31,9 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
-            <!--<Image Name="Welcome_img" Source="" Width="100" Height="100" Grid.RowSpan="3"/>-->
+            <Image Name="Welcome_img" Source="/Asserts/Images/apple.jpg" Width="100" Height="100" Grid.RowSpan="3"/>
 
-            <TextBlock Name="lblTip"  HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Text="请 输 入 密 码" Background="Transparent" Foreground="White">
+            <TextBlock Name="lblTip" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Text="请 输 入 密 码" Background="Transparent" Foreground="White">
 
                 <TextBlock.RenderTransform>
                     <TranslateTransform x:Name="translate"/>
@@ -40,7 +41,7 @@
                 
             </TextBlock>
 
-            <StackPanel Name="spInput" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Name="spInput" Grid.Row="1" Orientation="Horizontal" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Ellipse Name="ell_1" Stroke="White" Width="10" Margin="10" Height="10"/>
                 <Ellipse Name="ell_2" Stroke="White" Width="10" Margin="10" Height="10"/>
                 <Ellipse Name="ell_3" Stroke="White" Width="10" Margin="10" Height="10"/>
