@@ -6,8 +6,24 @@
         xmlns:local="clr-namespace:WPFAppleUnlock"
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="280" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ControlTemplate x:Key="NumberButtonTemplate">
+            <Grid>
+                <Ellipse Width="50" Height="50" Fill="#66FFFFFF"></Ellipse>
+                <TextBlock Text="1" FontSize="30" Foreground="White" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+    
     <Border Background="Black" BorderThickness="1" CornerRadius="5">
-        
+
+        <WrapPanel>
+            <Grid>
+                <Ellipse Width="50" Height="50" Fill="#66FFFFFF"></Ellipse>
+                <TextBlock Text="1" FontSize="30" Foreground="White" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </WrapPanel>
         
         
     </Border>
