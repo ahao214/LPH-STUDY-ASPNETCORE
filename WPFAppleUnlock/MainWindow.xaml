@@ -24,22 +24,52 @@
     
     <Border Background="Black" BorderThickness="1" CornerRadius="5">
 
-        <WrapPanel>
-            <Button Content="1" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="2" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="3" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <!--<Image Name="Welcome_img" Source="" Width="100" Height="100" Grid.RowSpan="3"/>-->
 
-            <Button Content="4" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="5" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="6" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <TextBlock Name="lblTip"  HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Text="请 输 入 密 码" Background="Transparent" Foreground="White">
 
-            <Button Content="7" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="8" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            <Button Content="9" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-            
-            <Label Background="Transparent" Margin="20,15" Width="50" Height="50" />
-            <Button Content="0" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
-        </WrapPanel>
+                <TextBlock.RenderTransform>
+                    <TranslateTransform x:Name="translate"/>
+                </TextBlock.RenderTransform>
+                
+            </TextBlock>
+
+            <StackPanel Name="spInput" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Ellipse Name="ell_1" Stroke="White" Width="10" Margin="10" Height="10"/>
+                <Ellipse Name="ell_2" Stroke="White" Width="10" Margin="10" Height="10"/>
+                <Ellipse Name="ell_3" Stroke="White" Width="10" Margin="10" Height="10"/>
+                <Ellipse Name="ell_4" Stroke="White" Width="10" Margin="10" Height="10"/>
+                <Ellipse Name="ell_5" Stroke="White" Width="10" Margin="10" Height="10"/>
+                <Ellipse Name="ell_6" Stroke="White" Width="10" Margin="10" Height="10"/>
+
+            </StackPanel>
+
+
+            <WrapPanel Grid.Row="2">
+                <Button Content="1" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="2" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="3" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+
+                <Button Content="4" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="5" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="6" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+
+                <Button Content="7" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="8" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+                <Button Content="9" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+
+                <Label Background="Transparent" Margin="20,15" Width="50" Height="50" />
+                <Button Content="0" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            </WrapPanel>
+        </Grid>
+        
+        
         
         
     </Border>
