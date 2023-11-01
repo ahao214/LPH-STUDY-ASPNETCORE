@@ -20,6 +20,23 @@ static double Dec(double x, double y)
     return x - y;
 }
 
+static void Test(Cal f)
+{
+    Write("请输入：X");
+    double x = Convert.ToDouble(ReadLine());
+    Write("请输入：Y");
+    double y = Convert.ToDouble(ReadLine());
+
+    // 委托方法工作，怎么工作由具体委托决定
+    double result = f(x, y);
+    WriteLine($"X:{x}与Y：{y}委托方法计算结果为：{result}");
+
+
+
+
+
+}
+
 
 Cal cal = new Cal(Add);
 double result = cal(5, 9);
