@@ -209,19 +209,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_数组复制", "06_数�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_数组类型转换", "07_数组类型转换\07_数组类型转换.csproj", "{E785B5D3-23AB-4038-B408-2C1F9E2EB523}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "协变和逆变", "协变和逆变\协变和逆变.csproj", "{425F9677-387C-44E1-BDCB-0493787966F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "协变和逆变", "协变和逆变\协变和逆变.csproj", "{425F9677-387C-44E1-BDCB-0493787966F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLayoutDemo", "WpfLayoutDemo\WpfLayoutDemo.csproj", "{BF80A6D4-7872-48DA-B61C-198DFB13EBF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLayoutDemo", "WpfLayoutDemo\WpfLayoutDemo.csproj", "{BF80A6D4-7872-48DA-B61C-198DFB13EBF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTP", "WpfTP\WpfTP.csproj", "{67549B2E-9280-49D3-B710-C3880A4F7316}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfTP", "WpfTP\WpfTP.csproj", "{67549B2E-9280-49D3-B710-C3880A4F7316}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WpfTPSolution", "WpfTPSolution", "{5AEB70D6-8C1E-40AA-8EFD-332C5241D535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfComponentLibrary", "WpfComponentLibrary\WpfComponentLibrary.csproj", "{34D17F1A-CA5D-4002-BFEE-CA509AF3FC9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfComponentLibrary", "WpfComponentLibrary\WpfComponentLibrary.csproj", "{34D17F1A-CA5D-4002-BFEE-CA509AF3FC9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_进制转换", "08_进制转换\08_进制转换.csproj", "{6F14329A-2DA3-4DF4-8D60-48D3A549D010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_进制转换", "08_进制转换\08_进制转换.csproj", "{6F14329A-2DA3-4DF4-8D60-48D3A549D010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Lambda表达式", "09_Lambda表达式\09_Lambda表达式.csproj", "{18A5F8AF-EA2F-4825-9116-75AB65C99F85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Lambda表达式", "09_Lambda表达式\09_Lambda表达式.csproj", "{18A5F8AF-EA2F-4825-9116-75AB65C99F85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_委托", "10_委托\10_委托.csproj", "{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppleFace", "AppleFace", "{1FE3345F-3FD2-41B4-81E8-FD5292F1F6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAppleUnlock", "WPFAppleUnlock\WPFAppleUnlock.csproj", "{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -425,6 +431,14 @@ Global
 		{18A5F8AF-EA2F-4825-9116-75AB65C99F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A5F8AF-EA2F-4825-9116-75AB65C99F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A5F8AF-EA2F-4825-9116-75AB65C99F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -536,6 +550,9 @@ Global
 		{34D17F1A-CA5D-4002-BFEE-CA509AF3FC9D} = {5AEB70D6-8C1E-40AA-8EFD-332C5241D535}
 		{6F14329A-2DA3-4DF4-8D60-48D3A549D010} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
 		{18A5F8AF-EA2F-4825-9116-75AB65C99F85} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
+		{4EF74C5F-F52A-44FC-A2AB-461FA6AC6109} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
+		{1FE3345F-3FD2-41B4-81E8-FD5292F1F6FB} = {A14646E4-2C25-4F17-8FC4-5B5057C8A54A}
+		{E8A1BCC2-4732-48A7-AA96-F55DC5D0A506} = {1FE3345F-3FD2-41B4-81E8-FD5292F1F6FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
