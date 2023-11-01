@@ -52,7 +52,7 @@
             </StackPanel>
 
 
-            <WrapPanel Name="spNumber" Visibility="Hidden" Grid.Row="2">
+            <WrapPanel ButtonBase.Click="spNumber_Click" Name="spNumber" Visibility="Hidden" Grid.Row="2">
                 <Button Content="1" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
                 <Button Content="2" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
                 <Button Content="3" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
