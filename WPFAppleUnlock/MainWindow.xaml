@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WPFAppleUnlock"
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="280" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
-    <Grid>
-
-    </Grid>
+    <Border Background="Black" BorderThickness="1" CornerRadius="5">
+        
+        
+        
+    </Border>
 </Window>
