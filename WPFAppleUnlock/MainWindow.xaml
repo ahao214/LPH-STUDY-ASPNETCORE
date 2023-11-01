@@ -8,21 +8,37 @@
         Title="MainWindow" Height="480" Width="280" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
-        <ControlTemplate x:Key="NumberButtonTemplate">
+        <ControlTemplate TargetType="Button" x:Key="NumberTemplate">
             <Grid>
-                <Ellipse Width="50" Height="50" Fill="#66FFFFFF"></Ellipse>
-                <TextBlock Text="1" FontSize="30" Foreground="White" VerticalAlignment="Center"></TextBlock>
+                <Ellipse x:Name="buttonSurface" StrokeThickness="3" Fill="#66FFFFFF"/>
+                <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#EEE9E9" FontSize="20" Content="{TemplateBinding Button.Content}"/>
             </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter TargetName="buttonSurface" Property="Fill" Value="#F5F5F5"/>
+                    <Setter TargetName="buttonCaption" Property="Foreground" Value="#FFFAFA"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
         </ControlTemplate>
     </Window.Resources>
     
     <Border Background="Black" BorderThickness="1" CornerRadius="5">
 
         <WrapPanel>
-            <Grid>
-                <Ellipse Width="50" Height="50" Fill="#66FFFFFF"></Ellipse>
-                <TextBlock Text="1" FontSize="30" Foreground="White" VerticalAlignment="Center"></TextBlock>
-            </Grid>
+            <Button Content="1" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="2" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="3" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+
+            <Button Content="4" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="5" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="6" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+
+            <Button Content="7" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="8" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            <Button Content="9" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
+            
+            <Label Background="Transparent" Margin="20,15" Width="50" Height="50" />
+            <Button Content="0" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
         </WrapPanel>
         
         
