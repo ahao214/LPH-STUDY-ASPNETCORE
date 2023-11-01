@@ -64,7 +64,7 @@ namespace WPFAppleUnlock
             this.spNumber.Dispatcher.Invoke(() =>
             {
                 this.Welcome_img.Visibility = Visibility.Hidden;
-            });  
+            });
             _timer.Stop();
         }
 
@@ -73,11 +73,23 @@ namespace WPFAppleUnlock
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void spNumber_Click(object sender,RoutedEventArgs e)
+        private void spNumber_Click(object sender, RoutedEventArgs e)
         {
             // 如何获取当前被点击按钮
             var button = (Button)e.OriginalSource;
-            
+            var content = button.Content.ToString();
+            passwds[index] = int.Parse(content);
+            // 设置圆点为白色背景
+            var crilName = $"ell_{index + 1}";
+            crilNames[index] = crilName;
+            var ellipse = FindClick<Ellipse>(Application.Current.MainWindow, crilName);
+            ellipse.Fill = Brushes.White;
+            index++;
+            if (index == 6)
+            {
+                // 判断密码是否正确
+                index = 0;
+            }
 
         }
 
@@ -88,19 +100,19 @@ namespace WPFAppleUnlock
         /// <param name="obj"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static T FindClick<T>(DependencyObject obj,string name)where T : FrameworkElement
+        public static T FindClick<T>(DependencyObject obj, string name) where T : FrameworkElement
         {
-            for(int i=0;i< VisualTreeHelper.GetChildrenCount(obj);i++)
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(obj); i++)
             {
                 DependencyObject child = VisualTreeHelper.GetChild(obj, i);
-                if(child !=null && child is T &&(child as T)!.Name.Equals (name))
+                if (child != null && child is T && (child as T)!.Name.Equals(name))
                 {
                     return (T)child;
                 }
                 else
                 {
                     T childOfChild = FindClick<T>(child!, name);
-                    if(childOfChild!=null )
+                    if (childOfChild != null)
                     {
                         return childOfChild;
                     }
