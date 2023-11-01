@@ -33,7 +33,7 @@
             </Grid.RowDefinitions>
             <Image Name="Welcome_img" Source="/Asserts/Images/apple.jpg" Width="100" Height="100" Grid.RowSpan="3"/>
 
-            <TextBlock Name="lblTip" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Text="请 输 入 密 码" Background="Transparent" Foreground="White">
+            <TextBlock Name="lblTip" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="14" Text="请 输 入 密 码" Background="Transparent" Foreground="White">
 
                 <TextBlock.RenderTransform>
                     <TranslateTransform x:Name="translate"/>
@@ -41,7 +41,7 @@
                 
             </TextBlock>
 
-            <StackPanel Name="spInput" Grid.Row="1" Orientation="Horizontal" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Name="spInput" Grid.Row="1" Orientation="Horizontal" Visibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Ellipse Name="ell_1" Stroke="White" Width="10" Margin="10" Height="10"/>
                 <Ellipse Name="ell_2" Stroke="White" Width="10" Margin="10" Height="10"/>
                 <Ellipse Name="ell_3" Stroke="White" Width="10" Margin="10" Height="10"/>
@@ -52,7 +52,7 @@
             </StackPanel>
 
 
-            <WrapPanel Grid.Row="2">
+            <WrapPanel Name="spNumber" Visibility="Hidden" Grid.Row="2">
                 <Button Content="1" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
                 <Button Content="2" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
                 <Button Content="3" Margin="20,15" Width="50" Height="50" Template="{StaticResource NumberTemplate}"/>
