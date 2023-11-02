@@ -77,19 +77,19 @@ namespace _11_多线程
         }
 
         /// <summary>
-        /// 菜都做好了吃饭
+        /// 菜都做好了吃饭:异步方法
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button5_Click(object sender, EventArgs e)
+        private async void button5_Click(object sender, EventArgs e)
         {
-            Task.Run(() =>
-            {
-                Thread.Sleep(3000);
-                MessageBox.Show("素菜做好了", "友情提示");
-                Thread.Sleep(5000);
-                MessageBox.Show("荤菜做好了", "友情提示");
-            });
+            await Task.Run(() =>
+             {
+                 Thread.Sleep(3000);
+                 MessageBox.Show("素菜做好了", "友情提示");
+                 Thread.Sleep(5000);
+                 MessageBox.Show("荤菜做好了", "友情提示");
+             });
             MessageBox.Show("菜都做好了，大家来吃饭");
         }
     }
