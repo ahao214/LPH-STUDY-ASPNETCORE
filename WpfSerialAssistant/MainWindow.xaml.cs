@@ -89,12 +89,26 @@ namespace WpfSerialAssistant
             bool flag = false;
             try
             {
-
+                // 创建串口对象
+                serialPort = new SerialPort();
+                // 串口名称 波特率 数据位 校验位 停止位
+                // 填充对象需要的内容
+                serialPort.PortName = CbPort.Name;
+                serialPort.BaudRate = Convert.ToInt32(CbBaudRate.Text);
+                // 把校验位文本转换为一个枚举对象
+                serialPort.Parity = (Parity)Enum.Parse(typeof(Parity), CbParity.Text);
+                serialPort.DataBits = Convert.ToInt32(CbDataBits.Text);
+                serialPort.StopBits = (StopBits)Enum.Parse(typeof(StopBits), CbStoBit.Text);
+                // 打开串口
+                serialPort.Open();
+                if (serialPort.IsOpen)
+                {
+                    flag = true;
+                }
             }
             catch (Exception)
             {
                 MessageBox.Show("打开串口失败");
-                
             }
             return flag;
         }
