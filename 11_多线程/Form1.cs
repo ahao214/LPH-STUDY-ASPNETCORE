@@ -57,11 +57,30 @@ namespace _11_多线程
 
         }
 
+        /// <summary>
+        /// 同时做多道菜
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Task.Run(() =>
+            {
+                Thread.Sleep(3000);
+                MessageBox.Show("素菜做好了", "友情提示");
+            });
+            Task.Run(() =>
+            {
+                Thread.Sleep(5000);
+                MessageBox.Show("荤菜做好了", "友情提示");
+            });
         }
 
+        /// <summary>
+        /// 菜都做好了吃饭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
 
