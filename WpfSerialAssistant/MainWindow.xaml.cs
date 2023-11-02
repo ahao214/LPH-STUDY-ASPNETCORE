@@ -98,6 +98,8 @@ namespace WpfSerialAssistant
                 serialPort.StopBits = (StopBits)Enum.Parse(typeof(StopBits), CbStoBit.Text);
                 // 打开串口
                 serialPort.Open();
+
+                serialPort.DataReceived += SerialPort_DataReceived;
                 if (serialPort.IsOpen)
                 {
                     flag = true;
@@ -108,6 +110,26 @@ namespace WpfSerialAssistant
                 MessageBox.Show("打开串口失败");
             }
             return flag;
+        }
+
+        /// <summary>
+        /// 主动接收串口发送的数据方法
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        private void SerialPort_DataReceived(object sender,SerialDataReceivedEventArgs e)
+        {
+            // 获取串口缓冲区的数据字节数量
+            int count = serialPort!.BytesToRead;
+            byte[] buffer = new byte[count];
+            // 读取缓冲区中的数据
+            serialPort.Read(buffer, 0, count);
+            // 把缓冲区中的数据转换为一个字符串
+            string receiveData = Encoding.UTF8.GetString(buffer);
+            Dispatcher.Invoke(() =>
+            {
+                txtReceive.Text = receiveData;
+            });
         }
 
         /// <summary>
@@ -162,6 +184,8 @@ namespace WpfSerialAssistant
         /// <param name="e"></param>
         private void btnReceive_Click(object sender, RoutedEventArgs e)
         {
+
+
 
         }
     }
