@@ -120,7 +120,15 @@ namespace WpfSerialAssistant
         private bool CloseSerialPort()
         {
             bool flag = false;
-
+            try
+            {
+                serialPort!.Close();
+                flag = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("关闭串口失败");
+            }
             return flag;
         }
     }
