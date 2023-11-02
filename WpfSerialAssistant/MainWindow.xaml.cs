@@ -128,5 +128,26 @@ namespace WpfSerialAssistant
             }
             return flag;
         }
+
+        /// <summary>
+        /// 发送数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSend_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        /// <summary>
+        /// 接收数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnReceive_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
