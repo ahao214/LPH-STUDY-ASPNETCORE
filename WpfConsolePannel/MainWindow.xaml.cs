@@ -51,5 +51,45 @@ namespace WpfConsolePannel
         Point _point = new Point(0, 0);
         double _left =0, _top = 0;
 
+
+        /// <summary>
+        /// 鼠标按下事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            _isMoving = true;
+            _point = e.GetPosition(sender as Canvas);
+            _left = double.Parse(this.mainView.GetValue(Canvas.LeftProperty).ToString());
+            _top = double.Parse(this.mainView.GetValue(Canvas.TopProperty).ToString());
+        }
+
+        /// <summary>
+        /// 鼠标放开事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Canvas_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            _isMoving = false;
+        }
+
+        /// <summary>
+        /// 按下鼠标移动事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Canvas_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(_isMoving)
+            {
+                Point currentPoint = e.GetPosition(sender as Canvas);
+                this.mainView.SetValue(LeftProperty, _left + (currentPoint.X - _point.X));
+                this.mainView.SetValue(TopProperty, _top + (currentPoint.Y - _point.Y));
+
+            }
+        }
+
     }
 }

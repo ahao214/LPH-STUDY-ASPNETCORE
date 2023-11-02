@@ -1,0 +1,5 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfConsolePannel\obj\Debug\net6.0-windows\WpfConsolePannel.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfConsolePannel\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfConsolePannel\obj\Debug\net6.0-windows\App.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfConsolePannel\obj\Debug\net6.0-windows\WpfConsolePannel_MarkupCompile.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfConsolePannel\obj\Debug\net6.0-windows\WpfConsolePannel_MarkupCompile.lref
