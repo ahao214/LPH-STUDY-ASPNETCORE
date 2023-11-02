@@ -61,6 +61,50 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
+                        <Border Background="#AAA" Margin="2" CornerRadius="8"/>
+                        <Border Background="#AAA" Margin="2" Grid.Column="1" CornerRadius="8"/>
+                    </Grid>
+                </Grid>
+                
+                <!--侧面-->
+                <Grid Width="180" Height="180" Background="LightGray" Canvas.Top="70" Canvas.Left="180">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="7*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.139"/>
+                            <SkewTransform AngleY="-67.4"/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Border VerticalAlignment="Top"  Height="140" BorderThickness="10" Grid.ColumnSpan="2">
+                        <Border.Background>
+                            <DrawingBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="1 0 25 1">
+                                <DrawingBrush.Drawing>
+                                    <GeometryDrawing>
+                                        <GeometryDrawing.Pen>
+                                            <Pen Brush="#EEE"/>
+                                        </GeometryDrawing.Pen>
+                                        <GeometryDrawing.Geometry>
+                                            <PathGeometry>
+                                                <PathFigure>
+                                                    <LineSegment Point="10,0"/>
+                                                    <LineSegment Point="10,10"/>
+                                                </PathFigure>
+                                            </PathGeometry>
+                                        </GeometryDrawing.Geometry>     
+                                    </GeometryDrawing>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </Border.Background>
+                        
+                    </Border>
+                    <Grid VerticalAlignment="Bottom" Height="45" Margin="5,0,5,5" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
                         <Border Background="#AAA" Margin="2"/>
                         <Border Background="#AAA" Margin="2" Grid.Column="1"/>
                     </Grid>
