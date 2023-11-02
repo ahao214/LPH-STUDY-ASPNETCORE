@@ -22,6 +22,10 @@ namespace WpfSerialAssistant
     /// </summary>
     public partial class MainWindow : Window
     {
+        private SerialPort? serialPort;
+
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -41,6 +45,69 @@ namespace WpfSerialAssistant
             // 选择第一项
             CbPort.SelectedIndex = 0;
 
+        }
+
+        /// <summary>
+        /// 连接串口或者断开串口核心逻辑
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnOpenSerialPort_Click(object sender, RoutedEventArgs e)
+        {
+            // 获取按钮
+            Button button = (Button)sender;
+
+            // 关闭串口
+            if (serialPort != null && serialPort.IsOpen)
+            {
+                if (CloseSerialPort())
+                {
+                    button.Content = "打开串口";
+                }
+            }
+            else // 打开串口
+            {
+                if (OpenSerialPort())
+                {
+                    button.Content = "关闭串口";
+
+                }
+            }
+
+
+
+        }
+
+
+        /// <summary>
+        /// 打开串口的方法
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        private bool OpenSerialPort()
+        {
+            bool flag = false;
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("打开串口失败");
+                
+            }
+            return flag;
+        }
+
+        /// <summary>
+        /// 关闭串口
+        /// </summary>
+        /// <returns></returns>
+        private bool CloseSerialPort()
+        {
+            bool flag = false;
+
+            return flag;
         }
     }
 }
