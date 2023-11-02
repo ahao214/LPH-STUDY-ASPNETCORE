@@ -73,9 +73,6 @@ namespace WpfSerialAssistant
 
                 }
             }
-
-
-
         }
 
 
@@ -94,10 +91,10 @@ namespace WpfSerialAssistant
                 // 串口名称 波特率 数据位 校验位 停止位
                 // 填充对象需要的内容
                 serialPort.PortName = CbPort.Name;
-                serialPort.BaudRate = Convert.ToInt32(CbBaudRate.Text);
+                serialPort.BaudRate = int.Parse(CbBaudRate.Text);
                 // 把校验位文本转换为一个枚举对象
                 serialPort.Parity = (Parity)Enum.Parse(typeof(Parity), CbParity.Text);
-                serialPort.DataBits = Convert.ToInt32(CbDataBits.Text);
+                serialPort.DataBits = int.Parse(CbDataBits.Text);
                 serialPort.StopBits = (StopBits)Enum.Parse(typeof(StopBits), CbStoBit.Text);
                 // 打开串口
                 serialPort.Open();
