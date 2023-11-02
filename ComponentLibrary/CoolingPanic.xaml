@@ -22,6 +22,50 @@
                     </Path.Fill>
                 </Path>
                 <Ellipse Width="120" Height="30" Fill="#CCC" Canvas.Top="10" Canvas.Left="50"/>
+
+                <!--<Border Canvas.Left="54" Canvas.Top="-30">
+                    <Viewbox Width="110" Height="110" RenderTransformOrigin="0.5,0.5">
+                        <Viewbox.RenderTransform>
+                            <RotateTransform Angle="0" x:Name="rt"/>
+                            <ScaleTransform ScaleY="0.25"/>
+                        </Viewbox.RenderTransform>                        
+                    </Viewbox>                    
+                </Border>-->
+
+                <Grid Width="180" Height="180" Background="LightGray" Canvas.Top="70">
+                    <Border VerticalAlignment="Top" Height="140" BorderThickness="10">
+                        <Border.Background>
+                            <DrawingBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="1 0 25 1">
+                                <DrawingBrush.Drawing>
+                                    <GeometryDrawing>
+                                        <GeometryDrawing.Pen>
+                                            <Pen Brush="#EEE"/>
+                                        </GeometryDrawing.Pen>
+                                        <GeometryDrawing.Geometry>
+                                            <PathGeometry>
+                                                <PathFigure>
+                                                    <LineSegment Point="10,0"/>
+                                                    <LineSegment Point="10,10"/>
+
+                                                </PathFigure>
+                                            </PathGeometry>
+                                        </GeometryDrawing.Geometry>
+
+                                    </GeometryDrawing>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </Border.Background>
+                    </Border>
+                    <Grid VerticalAlignment="Bottom" Height="45" Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="#AAA" Margin="2"/>
+                        <Border Background="#AAA" Margin="2" Grid.Column="1"/>
+                    </Grid>
+                </Grid>
+                
             </Canvas>
         </Viewbox>
     </Border>
