@@ -130,13 +130,28 @@ namespace WpfSerialAssistant
         }
 
         /// <summary>
-        /// 发送数据
+        /// 给串口发送数据逻辑
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-
+            if (serialPort == null)
+            {
+                MessageBox.Show("请先连接串口后操作");
+                return;
+            }
+            try
+            {
+                // 获取发送文本框中的数据
+                var datas = Encoding.Default.GetBytes(txtSend.Text);
+                // 把数据写入串口
+                serialPort!.Write(datas, 0, datas.Length);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("发送数据失败");
+            }
         }
 
 
