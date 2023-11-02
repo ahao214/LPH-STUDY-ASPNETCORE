@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO.Ports;
+
 
 namespace WpfSerialAssistant
 {
@@ -23,6 +25,22 @@ namespace WpfSerialAssistant
         public MainWindow()
         {
             InitializeComponent();
+            InitializeSerials();
+        }
+
+        /// <summary>
+        /// 初始化串口下拉列表框的数据
+        /// </summary>
+        /// <exception cref="NotImplementedException"></exception>
+        private void InitializeSerials()
+        {
+            // 获取当前机器中所有可以使用串口列表
+            var portList = SerialPort.GetPortNames();
+            // 把列表绑定到串口下拉列表框中
+            CbPort.ItemsSource = portList;
+            // 选择第一项
+            CbPort.SelectedIndex = 0;
+
         }
     }
 }
