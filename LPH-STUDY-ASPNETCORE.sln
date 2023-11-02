@@ -253,6 +253,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_单例模式", "01_单�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_策略模式", "02_策略模式\02_策略模式.csproj", "{134E580A-E4DB-4C53-87BD-5664769B4617}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_建造者模式", "03_建造者模式\03_建造者模式.csproj", "{4CCA164E-3300-414E-B98F-CF8CB7E8D940}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -491,6 +493,10 @@ Global
 		{134E580A-E4DB-4C53-87BD-5664769B4617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134E580A-E4DB-4C53-87BD-5664769B4617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{134E580A-E4DB-4C53-87BD-5664769B4617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CCA164E-3300-414E-B98F-CF8CB7E8D940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCA164E-3300-414E-B98F-CF8CB7E8D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCA164E-3300-414E-B98F-CF8CB7E8D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCA164E-3300-414E-B98F-CF8CB7E8D940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -617,6 +623,7 @@ Global
 		{E39529A5-6C10-4E3E-8FEC-EFFCD7E7EC64} = {1CED9BD0-44B9-44FC-B34A-26CC9EDFB858}
 		{A38731AE-52D6-455E-8139-B1792115E5B6} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{134E580A-E4DB-4C53-87BD-5664769B4617} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
+		{4CCA164E-3300-414E-B98F-CF8CB7E8D940} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
