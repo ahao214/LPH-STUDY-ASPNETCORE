@@ -13,5 +13,13 @@ namespace HelloWorld
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e); // 执行Application父类的OnStartup方法
+
+
+            Console.WriteLine("1.OnStartup被执行");
+        }
+
     }
 }
