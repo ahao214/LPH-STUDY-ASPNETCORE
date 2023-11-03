@@ -18,7 +18,7 @@ namespace HelloWorld
             base.OnStartup(e); // 执行Application父类的OnStartup方法
 
 
-            Console.WriteLine("1.OnStartup 被执行");
+            Console.WriteLine("1.OnStartup 被执行"); // 加载本地设置参数
         }
 
         protected override void OnActivated(EventArgs e)
@@ -39,7 +39,7 @@ namespace HelloWorld
         {
             base.OnExit(e);
 
-            Console.WriteLine("4.OnExit 被执行");
+            Console.WriteLine("4.OnExit 被执行"); // 保存当前缓存数据
         }
 
     }
