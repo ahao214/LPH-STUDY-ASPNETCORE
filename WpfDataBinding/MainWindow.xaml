@@ -11,7 +11,7 @@
 
     </Window.Resources>
 
-    <Grid>
+    <Grid VerticalAlignment="Center">
         <StackPanel Margin="10 10">
             <!--相对数据源方式-->
             <TextBox Text="{Binding Path=Age, RelativeSource={RelativeSource AncestorType=Window}}"></TextBox>
@@ -37,5 +37,8 @@
 
             <TextBox Name="txtContent" Text="文本框内容"></TextBox>
         </StackPanel>
+
+        
+        
     </Grid>
 </Window>
