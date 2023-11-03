@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfDataBinding.Models;
 
 namespace WpfDataBinding.Controller
 {
@@ -23,6 +24,15 @@ namespace WpfDataBinding.Controller
         public UserControl()
         {
             InitializeComponent();
+
+            Book book = new Book()
+            {
+                Id = 100,
+                Name = "Go开发",
+                Author = "不二"
+            };
+
+            
         }
     }
 }
