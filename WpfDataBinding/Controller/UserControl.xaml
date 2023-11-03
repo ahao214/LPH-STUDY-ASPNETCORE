@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfDataBinding.Controller"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid VerticalAlignment="Center" Margin="40"> 
+    <Grid VerticalAlignment="Center" Margin="40" Background="White"> 
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
