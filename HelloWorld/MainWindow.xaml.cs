@@ -41,5 +41,10 @@ namespace HelloWorld
             this.Unloaded += (s, e) => Console.WriteLine("6.MainWindow.Unloaded 被触发");
 
         }
+
+        private void Grid_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Grid 被点击了");
+        }
     }
 }

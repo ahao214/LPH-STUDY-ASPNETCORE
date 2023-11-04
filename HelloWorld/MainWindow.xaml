@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HelloWorld"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid PreviewMouseUp="Grid_PreviewMouseUp" Background="LightBlue">
         <Button Content="Cancel" Background="Red" Width="100" Height="25" Panel.ZIndex="99"/>
         <Button Content="Cancel" Background="Orange" Width="100" Height="25" Panel.ZIndex="100"/>
 
