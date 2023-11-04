@@ -281,6 +281,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{BBA5293D-A8CC-4D98-A731-60B782416780}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_模板模式", "05_模板模式\05_模板模式.csproj", "{1B900905-D7C7-44F5-BBBD-20A49476780B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -567,6 +569,10 @@ Global
 		{BBA5293D-A8CC-4D98-A731-60B782416780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBA5293D-A8CC-4D98-A731-60B782416780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBA5293D-A8CC-4D98-A731-60B782416780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B900905-D7C7-44F5-BBBD-20A49476780B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B900905-D7C7-44F5-BBBD-20A49476780B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B900905-D7C7-44F5-BBBD-20A49476780B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B900905-D7C7-44F5-BBBD-20A49476780B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -707,6 +713,7 @@ Global
 		{D15E6CD4-86AD-4A82-A80E-190209005F3F} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{BBA5293D-A8CC-4D98-A731-60B782416780} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{1B900905-D7C7-44F5-BBBD-20A49476780B} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
