@@ -6,13 +6,15 @@
         xmlns:local="clr-namespace:StackPanelControl"
         mc:Ignorable="d"
         Title="StackPanel--控件" Height="450" Width="800">
-    <StackPanel Orientation="Horizontal">
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-        <Button Content="按钮1" Margin="5"/>
-    </StackPanel>
+    <ScrollViewer>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+            <Button Content="按钮1" Margin="5"/>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
