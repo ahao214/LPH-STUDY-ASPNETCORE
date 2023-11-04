@@ -7,7 +7,9 @@
 */
 
 
-
+var facade = new Facade();
+var result = facade.GetUserAuthorities(11);
+Console.WriteLine(result);
 
 
 interface IUserRepository
@@ -23,4 +25,26 @@ interface IRoleRepository
 interface IAuthorityRepository
 {
     IEnumerable<string> GetAuthorities(IEnumerable<string> roles);
+}
+
+
+class Facade
+{
+    private readonly IUserRepository _userRepository;
+    private readonly IAuthorityRepository _authorityRepository;
+    private readonly IRoleRepository _roleRepository;
+
+    public Facade()
+    {
+
+    }
+
+    public IEnumerable<string> GetUserAuthorities(in int userId)
+    {
+        var user = _userRepository.GetById(userId);
+        var roles = _roleRepository.GetRoles(userId);
+        var authorities = _authorityRepository.GetAuthorities(roles);
+        return authorities;
+
+    }
 }
