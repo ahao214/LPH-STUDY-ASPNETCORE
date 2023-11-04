@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Canvas--绝对布局" Height="450" Width="800">
     <Canvas>
-        
+        <Button  Content="Canvas--绝对布局" Margin="3"/>
+        <Button  Content="Canvas--绝对布局" Margin="3"/>
+        <Button  Content="Canvas--绝对布局" Margin="3"/>
+        <Button  Content="Canvas--绝对布局" Canvas.Left="202" Canvas.Top="100" Margin="3"/>
+        <Button  Content="Canvas--绝对布局" Margin="3"/>
+
     </Canvas>
 </Window>
