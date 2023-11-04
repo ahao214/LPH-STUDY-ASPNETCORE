@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\bin\Debug\net6.0\05_模板模式.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\bin\Debug\net6.0\05_模板模式.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\bin\Debug\net6.0\05_模板模式.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\bin\Debug\net6.0\05_模板模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\bin\Debug\net6.0\05_模板模式.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\refint\05_模板模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\05_模板模式.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_模板模式\obj\Debug\net6.0\ref\05_模板模式.dll
