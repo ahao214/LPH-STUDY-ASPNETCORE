@@ -8,5 +8,13 @@
         Title="UniformGrid控件" Height="450" Width="800">
     <Grid>
 
+        <UniformGrid FirstColumn="1" Rows="3" Columns="3">
+            <Button Content="UniformGrid课程1" Margin="2"/>
+            <Button Content="UniformGrid课程2" Margin="2"/>
+            <Button Content="UniformGrid课程3" Margin="2"/>
+            <Button Content="UniformGrid课程4" Margin="2"/>
+            <Button Content="UniformGrid课程5" Margin="2"/>
+        </UniformGrid>
+
     </Grid>
 </Window>
