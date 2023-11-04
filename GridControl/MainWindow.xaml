@@ -7,16 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--一行两列-->
+        <Grid.RowDefinitions>
+            <!--两行-->
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
         <Grid.ColumnDefinitions>
             <!--两列-->
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <!--显示在第一列-->
-        <Button Content="WPF中文网1" Grid.Column="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="1"/>
-        <!--显示在第二列-->
-        <Button Content="WPF中文网2" Grid.Column="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
+        <!--显示在第一列第一行 Grid.Column="0" Grid.Row="0"-->
+        <Button Content="WPF中文网1" Grid.Column="0" Grid.Row="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="1"/>
+        
+        <Button Content="WPF中文网2" Grid.Column="1" Grid.Row="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
+
+        <Button Content="WPF中文网3" Grid.Column="0" Grid.Row="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
+
+        <Button Content="WPF中文网4" Grid.Column="1" Grid.Row="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
 
     </Grid>
 </Window>
