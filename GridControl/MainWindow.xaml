@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GridControl"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
             <!--两行-->
             <RowDefinition/>
@@ -19,11 +19,11 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <!--显示在第一列第一行 Grid.Column="0" Grid.Row="0"-->
-        <Button Content="WPF中文网1" Grid.Column="0" Grid.Row="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="1"/>
+        <Button Content="WPF中文网1" Grid.Column="0" Grid.Row="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="3"/>
         
         <Button Content="WPF中文网2" Grid.Column="1" Grid.Row="0" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
 
-        <Button Content="WPF中文网3" Grid.Column="0" Grid.Row="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
+        <Button Content="WPF中文网3" Grid.Column="0" Grid.Row="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="3"/>
 
         <Button Content="WPF中文网4" Grid.Column="1" Grid.Row="1" Margin="20 40 60 80" Padding="50" Panel.ZIndex="2"/>
 
