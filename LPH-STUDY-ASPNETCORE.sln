@@ -279,6 +279,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasControl", "CanvasCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{BBA5293D-A8CC-4D98-A731-60B782416780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -561,6 +563,10 @@ Global
 		{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA5293D-A8CC-4D98-A731-60B782416780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA5293D-A8CC-4D98-A731-60B782416780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA5293D-A8CC-4D98-A731-60B782416780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA5293D-A8CC-4D98-A731-60B782416780}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -700,6 +706,7 @@ Global
 		{0D45782D-C8E2-43A8-A317-67A960792107} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{D15E6CD4-86AD-4A82-A80E-190209005F3F} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{BBA5293D-A8CC-4D98-A731-60B782416780} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
