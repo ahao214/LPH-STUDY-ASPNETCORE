@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:WrapPanelControl"
         mc:Ignorable="d"
         Title="WrapPanel--控件--瀑布流布局" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <WrapPanel ItemHeight="50" ItemWidth="50" Orientation="Vertical">
+        <Button Content="按钮1" Margin="0"/>
+        <Button Content="按钮1" Margin="0"/>
+        <Button Content="按钮1" Margin="0"/>
+        <Button Content="按钮1" Margin="0"/>
+        <Button Content="按钮1" Margin="0"/>
+        <Button Content="按钮1" Margin="0"/>
+    </WrapPanel>
 </Window>

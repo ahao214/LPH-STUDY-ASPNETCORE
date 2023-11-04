@@ -271,6 +271,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniformGridControl", "Unifo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelControl", "StackPanelControl\StackPanelControl.csproj", "{859615CA-4355-40E0-97C1-9823901C172E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanelControl", "WrapPanelControl\WrapPanelControl.csproj", "{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -537,6 +539,10 @@ Global
 		{859615CA-4355-40E0-97C1-9823901C172E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{859615CA-4355-40E0-97C1-9823901C172E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{859615CA-4355-40E0-97C1-9823901C172E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -672,6 +678,7 @@ Global
 		{36CE1400-76E0-439D-B7BD-DAECD9ACAF17} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{A3678E8E-8D03-4657-BADC-FD66164C3017} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{859615CA-4355-40E0-97C1-9823901C172E} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
