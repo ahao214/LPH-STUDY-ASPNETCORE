@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="DockPanel--停靠布局" Height="450" Width="800">
     <!--LastChildFill 最后一个元素是否填满空间-->
-    <DockPanel LastChildFill="True">
+    <DockPanel LastChildFill="True" HorizontalAlignment="Center">
         <Button DockPanel.Dock="Left" Content="DockLeft" Margin="3"/>
         <Button DockPanel.Dock="Right" Content="DockRight" Margin="3"/>
         <Button DockPanel.Dock="Top" Content="DockTop" Margin="3"/>
         <Button DockPanel.Dock="Bottom" Content="DockBottom" Margin="3"/>
         <Button Content="DockOther" Margin="3"/>
     </DockPanel>
+    
 </Window>
