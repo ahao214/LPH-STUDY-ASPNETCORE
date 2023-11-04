@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StackPanelControl"
         mc:Ignorable="d"
-        Title="StackPanel--控件" Height="450" Width="800">
+        Title="StackPanel--控件--栈式布局" Height="450" Width="800">
     <ScrollViewer>
-        <StackPanel Orientation="Horizontal">
-            <Button Content="按钮1" Margin="5"/>
-            <Button Content="按钮1" Margin="5"/>
-            <Button Content="按钮1" Margin="5"/>
-            <Button Content="按钮1" Margin="5"/>
+        <StackPanel Orientation="Vertical">
+            <Button Content="按钮1" HorizontalAlignment="Left" Height="50" Margin="20"/>
+            <Button Content="按钮1" HorizontalAlignment="Right" Height="50" Margin="5"/>
+            <Button Content="按钮1" HorizontalAlignment="Center" Height="50" Margin="5"/>
+            <Button Content="按钮1" HorizontalAlignment="Stretch" Height="50" Margin="5"/>
             <Button Content="按钮1" Margin="5"/>
             <Button Content="按钮1" Margin="5"/>
             <Button Content="按钮1" Margin="5"/>
