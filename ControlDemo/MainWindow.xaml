@@ -30,9 +30,20 @@
             </StackPanel>
         </DockPanel>
 
-    <!--LEFT-->
+        <!--LEFT-->
         <StackPanel Grid.Row="1" Grid.Column="0" Width="350">
-            
+            <Border Height="250" Margin="10" Padding="5" Background="#439D84">
+                <TextBlock Text="列表区域" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+            </Border>
+
+            <Border Height="250" Margin="10" Padding="5" Background="#111D84">
+                <TextBlock Text="列表区域" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+            </Border>
+
+            <Border Height="110" Margin="10" Padding="5" Background="#43CC84">
+                <TextBlock Text="列表区域" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+            </Border>
+
         </StackPanel>
     </Grid>
 </Window>
