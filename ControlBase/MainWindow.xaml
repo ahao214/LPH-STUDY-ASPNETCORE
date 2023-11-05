@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="Control基类" Height="450" Width="800">
     <Grid>
-
+        <Control Background="Red" FontSize="50">
+            <Control.Template>
+                <ControlTemplate TargetType="Control">
+                    <Border Background="Green">
+                        <TextBlock Text="WPF教程" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Control.Template>
+        </Control>
     </Grid>
 </Window>
