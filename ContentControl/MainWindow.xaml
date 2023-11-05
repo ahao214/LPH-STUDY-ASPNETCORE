@@ -10,8 +10,8 @@
         <ContentControl FontSize="40" Foreground="Red">
             <ContentControl.ContentTemplate>
                 <DataTemplate>
-                    <Border>
-                        <TextBlock Text="{Binding}" />
+                    <Border CornerRadius="10" Padding="15" Background="Red" BorderBrush="Red" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding}" Foreground="White"/>
                     </Border>
                 </DataTemplate>
             </ContentControl.ContentTemplate>               
