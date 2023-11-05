@@ -303,6 +303,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDemo", "ControlDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSplitter", "GridSplitter\GridSplitter.csproj", "{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBase", "ControlBase\ControlBase.csproj", "{8C7D1820-7C33-464C-8328-32C890693246}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -629,6 +631,10 @@ Global
 		{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7D1820-7C33-464C-8328-32C890693246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7D1820-7C33-464C-8328-32C890693246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7D1820-7C33-464C-8328-32C890693246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7D1820-7C33-464C-8328-32C890693246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -781,6 +787,7 @@ Global
 		{9920F71F-DA20-42D8-B977-6422592063E0} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{6EFF2F43-B714-4D50-8BCA-9000148F8189} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{8C7D1820-7C33-464C-8328-32C890693246} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
