@@ -7,4 +7,41 @@
 
 */
 
+IExpectedInterface client = new ExistObject();
 
+WriteLine(client.Name);
+
+Adapter adapter = new Adapter();
+client = adapter;
+WriteLine(client.Name);
+
+
+
+interface IExpectedInterface
+{
+    public string Name { get; set; }
+}
+
+class ExistObject : IExpectedInterface
+{
+    public string Name { get; set; } = "已经存在";
+}
+
+
+class YourClass
+{
+    public DateOnly Birthday { get; set; }
+}
+
+
+/// <summary>
+/// 适配器
+/// </summary>
+class Adapter : YourClass, IExpectedInterface
+{
+    public Adapter()
+    {
+        Name = base.Birthday.ToString();
+    }
+    public string Name { get; set; }
+}
