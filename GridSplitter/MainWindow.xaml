@@ -19,7 +19,17 @@
                 经济大省是国家经济发展的“顶梁柱”。目前，广东、江苏、山东、浙江、河南、四川6个经济大省“三季报”均已发布。前三季度，经济大省各项主要指标稳定增长，经济运行呈现持续恢复态势，发展质效稳步提升。
 专家表示，经济大省勇挑大梁，经济发展韧性和活力进一步显现，发挥了稳经济关键支撑作用。
             </TextBlock>
-
         </Border>
+
+        <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Center" ShowsPreview="False"/>
+        
+        <Border Grid.Column="2" Background="LightCoral">
+            <TextBlock TextWrapping="Wrap" Padding="10" LineHeight="20">
+                经济大省是国家经济发展的“顶梁柱”。目前，广东、江苏、山东、浙江、河南、四川6个经济大省“三季报”均已发布。前三季度，经济大省各项主要指标稳定增长，经济运行呈现持续恢复态势，发展质效稳步提升。
+专家表示，经济大省勇挑大梁，经济发展韧性和活力进一步显现，发挥了稳经济关键支撑作用。
+            </TextBlock>
+        </Border>
+
+
     </Grid>
 </Window>
