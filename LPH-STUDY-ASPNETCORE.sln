@@ -269,21 +269,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridControl", "GridControl\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniformGridControl", "UniformGridControl\UniformGridControl.csproj", "{A3678E8E-8D03-4657-BADC-FD66164C3017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelControl", "StackPanelControl\StackPanelControl.csproj", "{859615CA-4355-40E0-97C1-9823901C172E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackPanelControl", "StackPanelControl\StackPanelControl.csproj", "{859615CA-4355-40E0-97C1-9823901C172E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanelControl", "WrapPanelControl\WrapPanelControl.csproj", "{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapPanelControl", "WrapPanelControl\WrapPanelControl.csproj", "{08E7391E-FE9C-4DDA-9CED-7CD2ECD61D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockPanelControl", "DockPanelControl\DockPanelControl.csproj", "{0D45782D-C8E2-43A8-A317-67A960792107}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockPanelControl", "DockPanelControl\DockPanelControl.csproj", "{0D45782D-C8E2-43A8-A317-67A960792107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasControl", "CanvasControl\CanvasControl.csproj", "{D15E6CD4-86AD-4A82-A80E-190209005F3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanvasControl", "CanvasControl\CanvasControl.csproj", "{D15E6CD4-86AD-4A82-A80E-190209005F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BorderControl", "BorderControl\BorderControl.csproj", "{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BorderControl", "BorderControl\BorderControl.csproj", "{5DA05CCC-6078-4C8A-ADDD-109FC26DF91B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{BBA5293D-A8CC-4D98-A731-60B782416780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LayoutDemo", "LayoutDemo\LayoutDemo.csproj", "{BBA5293D-A8CC-4D98-A731-60B782416780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_模板模式", "05_模板模式\05_模板模式.csproj", "{1B900905-D7C7-44F5-BBBD-20A49476780B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_模板模式", "05_模板模式\05_模板模式.csproj", "{1B900905-D7C7-44F5-BBBD-20A49476780B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_外观模式", "06_外观模式\06_外观模式.csproj", "{CAB5BD64-C680-4361-8516-7DED8FD9068D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_外观模式", "06_外观模式\06_外观模式.csproj", "{CAB5BD64-C680-4361-8516-7DED8FD9068D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_中介者模式", "07_中介者模式\07_中介者模式.csproj", "{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "匿名方法", "匿名方法\匿名方法.csproj", "{27578508-67FD-492C-8B91-643364748D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -579,6 +583,14 @@ Global
 		{CAB5BD64-C680-4361-8516-7DED8FD9068D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB5BD64-C680-4361-8516-7DED8FD9068D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAB5BD64-C680-4361-8516-7DED8FD9068D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27578508-67FD-492C-8B91-643364748D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27578508-67FD-492C-8B91-643364748D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27578508-67FD-492C-8B91-643364748D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27578508-67FD-492C-8B91-643364748D60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -721,6 +733,8 @@ Global
 		{BBA5293D-A8CC-4D98-A731-60B782416780} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{1B900905-D7C7-44F5-BBBD-20A49476780B} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{CAB5BD64-C680-4361-8516-7DED8FD9068D} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
+		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
+		{27578508-67FD-492C-8B91-643364748D60} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
