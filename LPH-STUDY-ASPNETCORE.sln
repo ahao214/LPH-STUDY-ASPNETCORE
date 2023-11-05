@@ -289,6 +289,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_中介者模式", "07_�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "匿名方法", "匿名方法\匿名方法.csproj", "{27578508-67FD-492C-8B91-643364748D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多播委托", "多播委托\多播委托.csproj", "{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -591,6 +593,10 @@ Global
 		{27578508-67FD-492C-8B91-643364748D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27578508-67FD-492C-8B91-643364748D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27578508-67FD-492C-8B91-643364748D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -735,6 +741,7 @@ Global
 		{CAB5BD64-C680-4361-8516-7DED8FD9068D} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{27578508-67FD-492C-8B91-643364748D60} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
