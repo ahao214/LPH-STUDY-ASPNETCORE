@@ -58,7 +58,7 @@
         
         <!--BOTTOM-->
         <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Background="#CA5100">
-            <TextBlock Text="版本号1.2.1 枯藤不二" FontSize="20" Foreground="White"/>
+            <TextBlock Text="版本号1.2.1 布衣天子" FontSize="20" Foreground="White"/>
 
         </Grid>
     </Grid>
