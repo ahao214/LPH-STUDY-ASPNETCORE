@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="ContentControl类" Height="450" Width="800">
     <Grid>
-        <ContentControl></ContentControl>
+        <ContentControl FontSize="40" Foreground="Red">
+            <ContentControl.ContentTemplate>
+                <DataTemplate>
+                    <Border>
+                        <TextBlock Text="{Binding}" />
+                    </Border>
+                </DataTemplate>
+            </ContentControl.ContentTemplate>               
+           WPF学习教程
+        </ContentControl>
     </Grid>
 </Window>
