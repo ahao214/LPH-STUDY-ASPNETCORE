@@ -7,22 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1200">
     <Grid>
+        <!--三行-->
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
-
         </Grid.RowDefinitions>
-
+        <!--两列-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
         <!--TOP-->
-        <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#126A74" Height="60"/>
-        <TextBlock Text="WPF应用程序布局课程" Foreground="White" FontSize="20" Margin="15,15"/>
+        <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#126A74" Height="60">
+            <TextBlock Text="WPF应用程序布局课程" Foreground="White" FontSize="20" Margin="15,15"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Border Height="35" Margin="10" BorderThickness="1" BorderBrush="#CA5100" CornerRadius="10">
+                    <TextBlock Text="退出系统" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 10 0"/>
 
+                </Border>
+            </StackPanel>
+        </DockPanel>
 
+    <!--LEFT-->
+        <StackPanel Grid.Row="1" Grid.Column="0" Width="350">
+            
+        </StackPanel>
     </Grid>
 </Window>
