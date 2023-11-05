@@ -1,0 +1,28 @@
+﻿<Window x:Class="ControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControlDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--TOP-->
+        <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#126A74" Height="60"/>
+        <TextBlock Text="WPF应用程序布局课程" Foreground="White" FontSize="20" Margin="15,15"/>
+
+
+    </Grid>
+</Window>
