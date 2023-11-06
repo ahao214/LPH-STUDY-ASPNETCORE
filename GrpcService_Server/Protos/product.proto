@@ -6,16 +6,29 @@ package product;
 
 
 service ProductManager {
-
-  rpc SayHello (HelloRequest) returns (HelloReply);
+	// GetProductByID 是方法名称
+	// ProductRequest 是方法的参数
+	// ProductReply	  是方法的返回值	
+  rpc GetProductByID (ProductRequest) return (ProductReply);
 }
 
 
-message HelloRequest {
-  string name = 1;
+message Product{
+	int32 productID=1;
+	string productName=2;
+	string productPic=3;
+	double productPrice=4;
+	string productDesc=5;
+	int32 classID=6;
+	string addTime=7;
 }
 
+// 解释ProductRequest是什么
+message ProductRequest {
+  int32 pid=1;
+}
 
-message HelloReply {
-  string message = 1;
+// 解释ProductReply是什么
+message ProductReply {
+  Product product = 1;
 }
