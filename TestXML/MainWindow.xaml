@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="C#读取XML" Height="450" Width="800">
     <Grid>
-
+        <ListView HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="600" Name="listView">
+            <ListView.View >
+                <GridView >
+                    <GridViewColumn Header="年级" Width="100" DisplayMemberBinding="{Binding Grade}"/>
+                    <GridViewColumn Header="老师" Width="100" DisplayMemberBinding="{Binding Teacher}"/>
+                    <GridViewColumn Header="姓名" Width="100" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="地址" Width="100" DisplayMemberBinding="{Binding Address}"/>
+                    <GridViewColumn Header="年龄" Width="100" DisplayMemberBinding="{Binding Age}"/>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
     </Grid>
 </Window>
