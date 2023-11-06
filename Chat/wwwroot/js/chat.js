@@ -20,3 +20,8 @@ $("#btnSend").click(function () {
 
 
 // 接收信息
+conn.on("Receivemsg", function (user, msg) {
+    let li = `<li>${user}:${msg}</li>`
+    $("#msgs").append(li)
+
+})
