@@ -285,27 +285,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_外观模式", "06_外�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_中介者模式", "07_中介者模式\07_中介者模式.csproj", "{0EBFFEE0-5172-4101-AB30-DDAAF3704FE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "匿名方法", "匿名方法\匿名方法.csproj", "{27578508-67FD-492C-8B91-643364748D60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "匿名方法", "匿名方法\匿名方法.csproj", "{27578508-67FD-492C-8B91-643364748D60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "多播委托", "多播委托\多播委托.csproj", "{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "多播委托", "多播委托\多播委托.csproj", "{DE8E7C5D-68E2-49FC-9942-2E1E71A1BE46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{B9E4F619-C94D-425C-8D45-BEB1BFB1ED26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YangZhongKe", "YangZhongKe", "{2B51CBBD-D01F-4318-A8D7-D73162B829D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_适配器模式", "08_适配器模式\08_适配器模式.csproj", "{891719C7-E81A-49F2-9372-5F9675BFD2CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_适配器模式", "08_适配器模式\08_适配器模式.csproj", "{891719C7-E81A-49F2-9372-5F9675BFD2CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_观察者模式", "09_观察者模式\09_观察者模式.csproj", "{CB1395EF-DC9B-4A09-A477-ADE4DA209A21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_观察者模式", "09_观察者模式\09_观察者模式.csproj", "{CB1395EF-DC9B-4A09-A477-ADE4DA209A21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_享元模式", "10_享元模式\10_享元模式.csproj", "{9920F71F-DA20-42D8-B977-6422592063E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_享元模式", "10_享元模式\10_享元模式.csproj", "{9920F71F-DA20-42D8-B977-6422592063E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDemo", "ControlDemo\ControlDemo.csproj", "{6EFF2F43-B714-4D50-8BCA-9000148F8189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDemo", "ControlDemo\ControlDemo.csproj", "{6EFF2F43-B714-4D50-8BCA-9000148F8189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridSplitter", "GridSplitter\GridSplitter.csproj", "{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridSplitter", "GridSplitter\GridSplitter.csproj", "{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBase", "ControlBase\ControlBase.csproj", "{8C7D1820-7C33-464C-8328-32C890693246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlBase", "ControlBase\ControlBase.csproj", "{8C7D1820-7C33-464C-8328-32C890693246}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentControl", "ContentControl\ContentControl.csproj", "{57B0D746-8039-440C-921D-7112F9B53799}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContentControl", "ContentControl\ContentControl.csproj", "{57B0D746-8039-440C-921D-7112F9B53799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService_Server", "GrpcService_Server\GrpcService_Server.csproj", "{6E6A3139-C47F-427A-9DC7-01B17C288467}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -641,6 +643,10 @@ Global
 		{57B0D746-8039-440C-921D-7112F9B53799}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B0D746-8039-440C-921D-7112F9B53799}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B0D746-8039-440C-921D-7112F9B53799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6A3139-C47F-427A-9DC7-01B17C288467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6A3139-C47F-427A-9DC7-01B17C288467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6A3139-C47F-427A-9DC7-01B17C288467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6A3139-C47F-427A-9DC7-01B17C288467}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -795,6 +801,7 @@ Global
 		{53270B9F-4C3B-4EC1-AEC4-6715199AEA9C} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{8C7D1820-7C33-464C-8328-32C890693246} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{57B0D746-8039-440C-921D-7112F9B53799} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{6E6A3139-C47F-427A-9DC7-01B17C288467} = {78A53B21-E2ED-49CB-AB0D-9C9CB4B7943D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}

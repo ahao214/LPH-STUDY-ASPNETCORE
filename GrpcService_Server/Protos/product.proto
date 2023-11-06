@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService_Product_Server";
+
+package product;
+
+
+service ProductManager {
+
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+  string name = 1;
+}
+
+
+message HelloReply {
+  string message = 1;
+}

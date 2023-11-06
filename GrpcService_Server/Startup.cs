@@ -31,6 +31,7 @@ namespace GrpcService_Server
 
             app.UseEndpoints(endpoints =>
             {
+                // 注册服务
                 endpoints.MapGrpcService<GreeterService>();
 
                 endpoints.MapGet("/", async context =>
