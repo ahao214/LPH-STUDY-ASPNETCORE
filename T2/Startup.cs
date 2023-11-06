@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using T2.Utils;
 using Microsoft.EntityFrameworkCore;
+using T2.Models;
 
 namespace T2
 {
@@ -26,10 +27,10 @@ namespace T2
         public void ConfigureServices(IServiceCollection services)
         {
             // 将EF生成的连接字符串注册到此处
-            //services.AddDbContext<>(a =>
-            //{
-            //    a.UseSqlServer(Configuration.GetConnectionString("FreshLiveDB");
-            //});
+            services.AddDbContext<FreshLiveDBContext>(a =>
+            {
+                a.UseSqlServer(Configuration.GetConnectionString("FreshLiveDB"));
+            });
 
 
 
