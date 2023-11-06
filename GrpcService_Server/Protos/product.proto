@@ -9,7 +9,11 @@ service ProductManager {
 	// GetProductByID 是方法名称
 	// ProductRequest 是方法的参数
 	// ProductReply	  是方法的返回值	
-  rpc GetProductByID (ProductRequest) return (ProductReply);
+	// 根据产品ID获取产品信息
+	rpc GetProductByID (ProductRequest) returns (ProductReply);
+	// 获取所有的商品
+	rpc GetProductAll (google.protobuf.Empty) returns (AllProductsReply);	// 使用空参数
+
 }
 
 
