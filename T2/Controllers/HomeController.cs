@@ -34,17 +34,15 @@ namespace T2.Controllers
             ViewBag.SiteConfig = sc;
 
 
-            //var list = new List<Goods>()
-            //{
-            //   new Goods(1,"苹果",10),
-            //   new Goods(2,"凤梨",12),
-            //   new Goods(3,"橘子",23),
-            //   new Goods(4,"香蕉",4),
-            //};
+            var list = new List<Goods>()
+            {
+               new Goods(1,"苹果",10),
+               new Goods(2,"凤梨",12),
+               new Goods(3,"橘子",23),
+               new Goods(4,"香蕉",4),
+            };
 
-            var list = _services.GetAllGoods();
-
-
+            //var list = _services.GetAllGoods();
 
             return View(list);
         }
