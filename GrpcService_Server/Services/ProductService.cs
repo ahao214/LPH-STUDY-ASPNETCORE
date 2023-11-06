@@ -10,6 +10,8 @@ namespace GrpcService_Server.Services
     {
         public override Task<ProductReply> GetProductByID(ProductRequest request, ServerCallContext context)
         {
+            int pid =request.Pid;
+
             return base.GetProductByID(request, context);
         }
 
