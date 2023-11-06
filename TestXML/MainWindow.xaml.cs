@@ -31,19 +31,28 @@ namespace TestXML
             XmlNode xmlNode = doc.SelectSingleNode("StudentInfo");
 
             XmlNodeList xmlNodeList = xmlNode.ChildNodes;
-            List <Student > lstStudent = new List <Student> ();   
-            foreach (XmlNode item in xmlNodeList )
+            List<Student> lstStudent = new List<Student>();
+            foreach (XmlNode item in xmlNodeList)
             {
-                Student student = new Student();
-                XmlElement ele = (XmlElement)item;
-                student.Grade = ele.GetAttribute("Grade");
-                student.Teacher = ele.GetAttribute("Teacher");
+                // 读取到的信息是注释
+                if (item is XmlComment)
+                {
+                    XmlComment comment = (XmlComment)item;
+                    string str = comment.InnerText;
+                }
+                else
+                {
+                    Student student = new Student();
+                    XmlElement ele = (XmlElement)item;
+                    student.Grade = ele.GetAttribute("Grade");
+                    student.Teacher = ele.GetAttribute("Teacher");
 
-                XmlNodeList xmlNodeList1 = ele.ChildNodes;
-                student.Name = xmlNodeList1.Item(0).InnerText;
-                student.Address = xmlNodeList1.Item(1).InnerText;
-                student.Age = Convert.ToInt32(xmlNodeList1.Item(2).InnerText);
-                lstStudent.Add(student);
+                    XmlNodeList xmlNodeList1 = ele.ChildNodes;
+                    student.Name = xmlNodeList1.Item(0).InnerText;
+                    student.Address = xmlNodeList1.Item(1).InnerText;
+                    student.Age = Convert.ToInt32(xmlNodeList1.Item(2).InnerText);
+                    lstStudent.Add(student);
+                }
             }
 
             listView.ItemsSource = lstStudent;
