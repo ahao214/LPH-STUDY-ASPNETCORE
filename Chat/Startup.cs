@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Chat.Hubs;
 
 namespace Chat
 {
@@ -24,6 +25,8 @@ namespace Chat
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            // ×¢²áSignalR
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

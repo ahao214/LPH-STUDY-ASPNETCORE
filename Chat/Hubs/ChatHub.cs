@@ -17,5 +17,7 @@ namespace Chat.Hubs
             await Clients.All.SendAsync("ReceiveMsg", user, msg);
         }
 
+
+
     }
 }
