@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using T2.Models;
 using T2.Utils;
-
+using Microsoft.Extensions.Configuration;
 
 
 
@@ -17,16 +17,23 @@ namespace T2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private IProductService _services;
+        private IConfiguration _config;
 
-
-        public HomeController(ILogger<HomeController> logger,IProductService services)
+        public HomeController(ILogger<HomeController> logger,IProductService services, IConfiguration config)
         {
             _logger = logger;
             _services = _services;
+            _config = config;
         }
 
         public IActionResult Index()
         {
+            // 获取appsettings.json里面的节点信息
+           SiteConfig sc= _config.GetSection("SiteConfig").Get<SiteConfig>();
+
+            ViewBag.SiteConfig = sc;
+
+
             //var list = new List<Goods>()
             //{
             //   new Goods(1,"苹果",10),
