@@ -37,6 +37,8 @@ namespace T2.Controllers
 
             var list = _services.GetAllGoods();
 
+
+
             return View(list);
         }
 
