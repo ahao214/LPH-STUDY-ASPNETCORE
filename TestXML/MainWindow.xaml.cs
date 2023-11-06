@@ -44,10 +44,9 @@ namespace TestXML
                 student.Address = xmlNodeList1.Item(1).InnerText;
                 student.Age = Convert.ToInt32(xmlNodeList1.Item(2).InnerText);
                 lstStudent.Add(student);
-
-
             }
 
+            listView.ItemsSource = lstStudent;
         }
     }
 }
