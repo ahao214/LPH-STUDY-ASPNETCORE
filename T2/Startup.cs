@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using T2.Utils;
+using Microsoft.EntityFrameworkCore;
 
 namespace T2
 {
@@ -24,6 +25,14 @@ namespace T2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // 将EF生成的连接字符串注册到此处
+            //services.AddDbContext<>(a =>
+            //{
+            //    a.UseSqlServer(Configuration.GetConnectionString("FreshLiveDB");
+            //});
+
+
+
             // 注册依赖关系
             services.AddTransient<IProductService, ProductService>();
 
