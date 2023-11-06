@@ -22,12 +22,14 @@ namespace T2.Controllers
         public HomeController(ILogger<HomeController> logger,IProductService services, IConfiguration config)
         {
             _logger = logger;
+            _logger.LogInformation("...构造函数中依赖注入...");
             _services = _services;
             _config = config;
         }
 
         public IActionResult Index()
         {
+            _logger.LogInformation("...进入Index视图...");
             // 获取appsettings.json里面的节点信息
            SiteConfig sc= _config.GetSection("SiteConfig").Get<SiteConfig>();
 
