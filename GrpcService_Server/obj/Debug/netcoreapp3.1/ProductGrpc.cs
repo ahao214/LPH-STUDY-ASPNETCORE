@@ -12,15 +12,24 @@ namespace GrpcService_Product_Server {
   {
     static readonly string __ServiceName = "product.ProductManager";
 
-    static readonly grpc::Marshaller<global::GrpcService_Product_Server.HelloRequest> __Marshaller_product_HelloRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService_Product_Server.HelloRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::GrpcService_Product_Server.HelloReply> __Marshaller_product_HelloReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService_Product_Server.HelloReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcService_Product_Server.ProductRequest> __Marshaller_product_ProductRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService_Product_Server.ProductRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcService_Product_Server.ProductReply> __Marshaller_product_ProductReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService_Product_Server.ProductReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Protobuf.WellKnownTypes.Empty.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcService_Product_Server.AllProductsReply> __Marshaller_product_AllProductsReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService_Product_Server.AllProductsReply.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::GrpcService_Product_Server.HelloRequest, global::GrpcService_Product_Server.HelloReply> __Method_SayHello = new grpc::Method<global::GrpcService_Product_Server.HelloRequest, global::GrpcService_Product_Server.HelloReply>(
+    static readonly grpc::Method<global::GrpcService_Product_Server.ProductRequest, global::GrpcService_Product_Server.ProductReply> __Method_GetProductByID = new grpc::Method<global::GrpcService_Product_Server.ProductRequest, global::GrpcService_Product_Server.ProductReply>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "SayHello",
-        __Marshaller_product_HelloRequest,
-        __Marshaller_product_HelloReply);
+        "GetProductByID",
+        __Marshaller_product_ProductRequest,
+        __Marshaller_product_ProductReply);
+
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::GrpcService_Product_Server.AllProductsReply> __Method_GetProductAll = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::GrpcService_Product_Server.AllProductsReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProductAll",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_product_AllProductsReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -32,7 +41,27 @@ namespace GrpcService_Product_Server {
     [grpc::BindServiceMethod(typeof(ProductManager), "BindService")]
     public abstract partial class ProductManagerBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::GrpcService_Product_Server.HelloReply> SayHello(global::GrpcService_Product_Server.HelloRequest request, grpc::ServerCallContext context)
+      /// <summary>
+      /// GetProductByID 是方法名称
+      /// ProductRequest 是方法的参数
+      /// ProductReply	  是方法的返回值	
+      /// 根据产品ID获取产品信息
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService_Product_Server.ProductReply> GetProductByID(global::GrpcService_Product_Server.ProductRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// 获取所有的商品
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService_Product_Server.AllProductsReply> GetProductAll(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -44,7 +73,8 @@ namespace GrpcService_Product_Server {
     public static grpc::ServerServiceDefinition BindService(ProductManagerBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SayHello, serviceImpl.SayHello).Build();
+          .AddMethod(__Method_GetProductByID, serviceImpl.GetProductByID)
+          .AddMethod(__Method_GetProductAll, serviceImpl.GetProductAll).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -53,7 +83,8 @@ namespace GrpcService_Product_Server {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductManagerBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SayHello, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService_Product_Server.HelloRequest, global::GrpcService_Product_Server.HelloReply>(serviceImpl.SayHello));
+      serviceBinder.AddMethod(__Method_GetProductByID, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService_Product_Server.ProductRequest, global::GrpcService_Product_Server.ProductReply>(serviceImpl.GetProductByID));
+      serviceBinder.AddMethod(__Method_GetProductAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::GrpcService_Product_Server.AllProductsReply>(serviceImpl.GetProductAll));
     }
 
   }

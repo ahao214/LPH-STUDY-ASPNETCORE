@@ -36,3 +36,8 @@ message ProductRequest {
 message ProductReply {
   Product product = 1;
 }
+
+// Ω‚ ÕAllProductsReply « ≤√¥
+message AllProductsReply{
+	repeated Product product=1;
+}
