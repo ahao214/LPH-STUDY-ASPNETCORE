@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace TestXML
 {
@@ -23,6 +24,11 @@ namespace TestXML
         public MainWindow()
         {
             InitializeComponent();
+
+            string path = @"..\..\test.xml";
+            XmlDocument doc = new XmlDocument();
+            doc.Load(path);
+
         }
     }
 }
