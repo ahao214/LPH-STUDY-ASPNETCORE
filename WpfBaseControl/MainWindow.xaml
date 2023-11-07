@@ -25,11 +25,15 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="今晚吃什么" Margin="5"/>
-            <RadioButton x:Name="rad1" Content="牛肉" Margin="5"/>
-            <RadioButton x:Name="rad2" Content="羊肉" Margin="5"/>
+            <RadioButton x:Name="rad1" Content="牛肉" Margin="5" GroupName="c"/>
+            <RadioButton x:Name="rad2" Content="羊肉" Margin="5" GroupName="c"/>
             <RadioButton x:Name="rad3" Content="排骨" Margin="5"/>
             <Button x:Name="btnRad" Content="查看菜单" Click="btnRad_Click"/>
         </StackPanel>
+        
+        
+        
+        
     </Grid>
     
 </Window>
