@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="WPF基础控件的使用" Height="450" Width="800">
     <Grid>
-
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <ToggleButton>
+                <Border Width="100" Height="100" CornerRadius="50" Background="red">
+                    <TextBlock Text="Toggle" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </ToggleButton>
+        </StackPanel>
     </Grid>
 </Window>
