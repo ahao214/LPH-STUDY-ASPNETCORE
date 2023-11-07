@@ -6,12 +6,18 @@
         xmlns:local="clr-namespace:WpfCheckBox"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="今晚吃什么？" Margin="5" />
-        <CheckBox x:Name="chk1" Content="红烧牛肉" Margin=" 5"/>
-        <CheckBox x:Name="chk2" Content="红烧鲤鱼" Margin=" 5"/>
-        <CheckBox x:Name="chk3" Content="红烧排骨" Margin=" 5"/>
-        <Button x:Name="button" Content="查看菜单" Click="button_Click"/>
-    </StackPanel>
-   
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="今晚吃什么？" Margin="5" />
+            <CheckBox x:Name="chk1" Content="红烧牛肉" Margin=" 5"/>
+            <CheckBox x:Name="chk2" Content="红烧鲤鱼" Margin=" 5"/>
+            <CheckBox x:Name="chk3" Content="红烧排骨" Margin=" 5"/>
+            <Button x:Name="button" Content="查看菜单" Click="button_Click"/>
+        </StackPanel>
+    </Grid>
 </Window>
