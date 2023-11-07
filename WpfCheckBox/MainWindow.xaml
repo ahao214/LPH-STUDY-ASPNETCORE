@@ -13,4 +13,5 @@
         <CheckBox x:Name="chk3" Content="红烧排骨" Margin=" 5"/>
         <Button x:Name="button" Content="查看菜单" Click="button_Click"/>
     </StackPanel>
+   
 </Window>
