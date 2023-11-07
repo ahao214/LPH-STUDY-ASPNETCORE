@@ -74,8 +74,17 @@
                 
             </Button>
         </StackPanel>
-        
-        
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <CheckBox x:Name="chk" Content="是否打开Popup" Height="30" ToolTip="wpf study"/>
+
+            <Popup x:Name="myPopup" IsOpen="{Binding ElementName=chk, Path=IsChecked}">
+
+
+            </Popup>
+
+
+        </StackPanel>
     </Grid>
     
 </Window>
