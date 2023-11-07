@@ -325,6 +325,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_代理模式", "14_代�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_责任链模式", "15_责任链模式\15_责任链模式.csproj", "{A5BD9016-02F0-43EF-886F-5B00B54ABA1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_过滤器模式", "16_过滤器模式\16_过滤器模式.csproj", "{133DAF8C-FA68-409F-9B99-DA6CFE46DD59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -695,6 +697,10 @@ Global
 		{A5BD9016-02F0-43EF-886F-5B00B54ABA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5BD9016-02F0-43EF-886F-5B00B54ABA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5BD9016-02F0-43EF-886F-5B00B54ABA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133DAF8C-FA68-409F-9B99-DA6CFE46DD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133DAF8C-FA68-409F-9B99-DA6CFE46DD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133DAF8C-FA68-409F-9B99-DA6CFE46DD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133DAF8C-FA68-409F-9B99-DA6CFE46DD59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -858,6 +864,7 @@ Global
 		{620EE28B-E179-4D33-99E3-B352BB4505D5} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{6BE076B0-FF85-4755-95FC-FF7D889F45FC} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 		{A5BD9016-02F0-43EF-886F-5B00B54ABA1E} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
+		{133DAF8C-FA68-409F-9B99-DA6CFE46DD59} = {A260C7A8-BC5C-4612-A1B6-2B11CF9FC5AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
