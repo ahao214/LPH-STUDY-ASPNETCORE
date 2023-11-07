@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Collections;
+using static System.Console;
 
 // 设计模式：迭代器模式
 // 目的：循环遍历输出结果
@@ -50,4 +51,26 @@ class UserCollection : IIterator
 class User
 {
     public string Name { get; set; }
+}
+
+
+
+// C#自带的迭代器接口
+class UserCollections : IEnumerator
+{
+    private readonly User[] _users;
+    int index = -1;
+
+    public UserCollections(User[] users) => this._users = users;
+
+    public object Current { get; private set; }
+
+    public bool MoveNext()
+    {
+        index++;
+        Current = _users[index];
+        return index < _users.Length - 1;
+    }
+
+    public void Reset() => index = -1;
 }
