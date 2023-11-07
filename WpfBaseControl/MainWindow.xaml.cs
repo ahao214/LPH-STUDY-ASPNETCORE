@@ -24,5 +24,23 @@ namespace WpfBaseControl
         {
             InitializeComponent();
         }
+
+        private void btnRad_Click(object sender, RoutedEventArgs e)
+        {
+            string order = string.Empty;
+            if(rad1.IsChecked .Value )
+            {
+                order += rad1.Content+",";
+            }
+            if(rad2.IsChecked .Value )
+            {
+                order += rad2.Content + ",";
+            }
+            if(rad3.IsChecked .Value )
+            {
+                order += rad3.Content + ",";
+            }
+            MessageBox.Show($"菜单是{order}");
+        }
     }
 }

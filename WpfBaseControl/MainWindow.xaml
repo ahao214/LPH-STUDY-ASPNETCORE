@@ -8,12 +8,27 @@
         Title="WPF基础控件的使用" Height="450" Width="800">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <ToggleButton>
-                <Border Width="100" Height="100" CornerRadius="50" Background="red">
+                <Border Width="50" Height="50" CornerRadius="50" Background="red">
                     <TextBlock Text="Toggle" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
             </ToggleButton>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="今晚吃什么" Margin="5"/>
+            <RadioButton x:Name="rad1" Content="牛肉" Margin="5"/>
+            <RadioButton x:Name="rad2" Content="羊肉" Margin="5"/>
+            <RadioButton x:Name="rad3" Content="排骨" Margin="5"/>
+            <Button x:Name="btnRad" Content="查看菜单" Click="btnRad_Click"/>
         </StackPanel>
     </Grid>
     
