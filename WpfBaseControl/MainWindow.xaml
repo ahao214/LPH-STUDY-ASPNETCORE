@@ -40,7 +40,7 @@
             <TextBlock Text="粗体" FontWeight="Bold"/>
             <TextBlock Text="细体" FontWeight="Light"/>
             <TextBlock Text="微软雅黑" FontFamily="Microsoft YaHei UI"/>
-            
+            <TextBlock Text="底色字体" Margin="5" Foreground="Yellow" Background="Red" Height="20" Width="20"/>
         </WrapPanel>
         
     </Grid>
