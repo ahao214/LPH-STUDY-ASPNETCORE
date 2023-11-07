@@ -16,8 +16,8 @@ leader.Process(context);
 
 class ProcessContext
 {
-    public string Name { get; set; }
-    public string Next { get; set; }
+    public string? Name { get; set; }
+    public string? Next { get; set; }
 }
 
 abstract class ProcessHandler
