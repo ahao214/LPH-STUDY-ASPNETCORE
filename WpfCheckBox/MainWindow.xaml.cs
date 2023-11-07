@@ -27,7 +27,20 @@ namespace WpfCheckBox
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            string order = string.Empty;
+            if (chk1.IsChecked.Value)
+            {
+                order += chk1.Content + ",";
+            }
+            if (chk2.IsChecked.Value)
+            {
+                order += chk2.Content + ",";
+            }
+            if (chk3.IsChecked.Value)
+            {
+                order += chk3.Content + ",";
+            }
+            MessageBox.Show($"你选择了{order}");
         }
     }
 }
