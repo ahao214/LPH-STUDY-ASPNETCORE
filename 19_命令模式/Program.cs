@@ -6,6 +6,7 @@ var person = new Person();
 var command = new WashCommand(person);
 command.Execute();
 
+ReadKey();
 
 class Person
 {
