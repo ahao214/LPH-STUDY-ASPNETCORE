@@ -14,6 +14,11 @@
             <RowDefinition />
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <ToggleButton>
@@ -50,8 +55,26 @@
 
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="用户名："/>
-            <TextBox  Width="50" Height="20"/>
+            <TextBox CharacterCasing="Upper"  Width="50" Height="20"/>
+            
         </StackPanel>
+
+        <StackPanel Grid.Row="5">
+            <Button Content="确定" Width="100" Height="30" ToolTip="WPF从入门到精通"/>
+            <Button Content="进入" Width="100" Height="30" Margin="5">
+                <Button.ToolTip>
+                    <StackPanel>
+                        <TextBlock Text="VIP课程" FontWeight="Bold"/>
+                        <TextBlock Text="点击这个按钮 进入课程" />
+                        <Border BorderBrush="SlateBlue" BorderThickness="0,1,0,0" Margin="0,4"/>
+                        <TextBlock Text="WPF STUDY"/>
+                    </StackPanel>
+                </Button.ToolTip>
+                
+                
+            </Button>
+        </StackPanel>
+        
         
     </Grid>
     
