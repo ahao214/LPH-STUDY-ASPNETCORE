@@ -85,6 +85,10 @@
 
 
         </StackPanel>
+        <StackPanel>
+            <Image Source="/Images/buer.jpeg" Stretch="Uniform" StretchDirection="Both" Height="100" Width="100"/>
+            <Image x:Name="buer" Stretch="Uniform" StretchDirection="Both" Height="100" Width="100"/>
+        </StackPanel>
     </Grid>
     
 </Window>

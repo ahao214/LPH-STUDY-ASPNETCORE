@@ -23,6 +23,18 @@ namespace WpfBaseControl
         public MainWindow()
         {
             InitializeComponent();
+
+            try
+            {
+                var path = Environment.CurrentDirectory + "\\" + "buer.jpeg";
+                var imageSource = BitmapFrame.Create(new Uri(path), BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
+                buer.Source = imageSource;
+            }
+            catch
+            {
+
+            }
+
         }
 
         private void btnRad_Click(object sender, RoutedEventArgs e)
