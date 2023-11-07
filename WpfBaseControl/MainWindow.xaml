@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WpfBaseControl"
         mc:Ignorable="d"
         Title="WPF基础控件的使用" Height="450" Width="800">
+
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <ToggleButton>
@@ -15,4 +16,5 @@
             </ToggleButton>
         </StackPanel>
     </Grid>
+
 </Window>
