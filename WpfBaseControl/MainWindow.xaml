@@ -30,8 +30,10 @@
             <RadioButton x:Name="rad3" Content="排骨" Margin="5"/>
             <Button x:Name="btnRad" Content="查看菜单" Click="btnRad_Click"/>
         </StackPanel>
-        
-        
+
+        <StackPanel Grid.Row="2">
+            <Label Content="课程" FontSize="20" Margin="3"/>
+        </StackPanel>
         
         
     </Grid>
