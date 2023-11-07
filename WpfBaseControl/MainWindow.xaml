@@ -50,7 +50,7 @@
 
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="用户名："/>
-            <TextBox />
+            <TextBox  Width="50" Height="20"/>
         </StackPanel>
         
     </Grid>
