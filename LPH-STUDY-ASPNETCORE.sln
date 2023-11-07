@@ -343,6 +343,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBaseControl", "WpfBaseCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCheckBox", "WpfCheckBox\WpfCheckBox.csproj", "{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBaseControl2", "WpfBaseControl2\WpfBaseControl2.csproj", "{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -745,6 +747,10 @@ Global
 		{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -917,6 +923,7 @@ Global
 		{D2BB8685-7471-401E-B22F-951B1E143FBA} = {0A15DDF5-6DDA-410C-A1CE-DFDDE148A228}
 		{E175FCD2-C2DE-4883-86DB-B7AFEC0BDFF8} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{680E4D9D-719E-4654-9EA9-5DBD8D4965DE} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
