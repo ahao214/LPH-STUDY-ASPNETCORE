@@ -55,9 +55,9 @@ namespace WpfListBox
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var selectedItem = listbox.SelectedItem;
-            var selectedValue = listbox.SelectedValue;
-            textblock.Text = $"Item={selectedItem},Value={selectedValue}";
+            var selectedItem = listbox.SelectedItem as Person;
+            var selectedValue = listbox.SelectedValue as Person;
+            textblock.Text = $"Item={selectedItem.Name},Value={selectedValue.Age}";
 
 
         }
