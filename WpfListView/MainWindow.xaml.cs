@@ -24,5 +24,10 @@ namespace WpfListView
         {
             InitializeComponent();
         }
+
+        private void listview_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

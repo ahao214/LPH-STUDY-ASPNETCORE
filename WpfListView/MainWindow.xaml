@@ -6,7 +6,36 @@
         xmlns:local="clr-namespace:WpfListView"
         mc:Ignorable="d"
         Title="ListView" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="listview" Margin="5" SelectionChanged="listview_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding Age}"/>
+                    <GridViewColumn Header="地址" DisplayMemberBinding="{Binding Address}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="5">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="姓名"/>
+                <TextBlock x:Name="_name"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="年龄"/>
+                <TextBlock x:Name="_age"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <TextBlock Text="地址"/>
+                <TextBlock x:Name="_address"/>
+            </StackPanel>
+            
+        </StackPanel>
+        
     </Grid>
 </Window>
