@@ -1,0 +1,1 @@
+﻿// record required init 修饰

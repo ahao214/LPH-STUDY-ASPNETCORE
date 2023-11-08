@@ -16,9 +16,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\using\\using.csproj",
-      "projectName": "using",
-      "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\using\\using.csproj",
+      "projectUniqueName": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\using\\01_using.csproj",
+      "projectName": "01_using",
+      "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\using\\01_using.csproj",
       "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
       "outputPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\using\\obj\\",
       "projectStyle": "PackageReference",
