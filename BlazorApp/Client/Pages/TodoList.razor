@@ -43,6 +43,8 @@
 
 @inject HttpClient Http;
 
+@inject IJSRuntime JS;
+
 @code {
 
 
@@ -56,6 +58,23 @@
             StateHasChanged();
         }
     }
+
+
+    async Task Delete(int id)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", "确定要删除吗?");
+        if(!confirmed)
+        {
+            return;
+        }
+
+        var response = await Http.DeleteAsync($"api/todo/{id}");
+        response.EnsureSuccessStatusCode();
+         List = await Http.GetFromJsonAsync<IEnumerable<TodoOutput>>("api/todo");
+            StateHasChanged();
+    }
+
+
 
 
 }
