@@ -397,6 +397,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_内置委托", "04_内�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_反射", "05_反射\05_反射.csproj", "{A0964BEF-F24C-4359-9414-1912E8D978BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_问号", "06_问号\06_问号.csproj", "{EE19CD1D-4CA4-493C-8BD2-02625A6842FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -891,6 +893,10 @@ Global
 		{A0964BEF-F24C-4359-9414-1912E8D978BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0964BEF-F24C-4359-9414-1912E8D978BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0964BEF-F24C-4359-9414-1912E8D978BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE19CD1D-4CA4-493C-8BD2-02625A6842FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE19CD1D-4CA4-493C-8BD2-02625A6842FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE19CD1D-4CA4-493C-8BD2-02625A6842FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE19CD1D-4CA4-493C-8BD2-02625A6842FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1090,6 +1096,7 @@ Global
 		{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 		{1197D586-098A-4CE8-B45A-0547CF1FAE87} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 		{A0964BEF-F24C-4359-9414-1912E8D978BD} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
+		{EE19CD1D-4CA4-493C-8BD2-02625A6842FF} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
