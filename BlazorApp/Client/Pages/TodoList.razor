@@ -55,6 +55,7 @@
         if (firstRender)
         {
             List = await Http.GetFromJsonAsync<IEnumerable<Todo>>("api/todo");
+            StateHasChanged();
         }
     }
 
