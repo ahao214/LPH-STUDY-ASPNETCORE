@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/MyProgramm/CShape/LPH-STUDY-ASPNETCORE/BlazorApp/Client/Pages/TodoList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kb0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/MyProgramm/CShape/LPH-STUDY-ASPNETCORE/BlazorApp/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
