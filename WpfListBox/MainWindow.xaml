@@ -11,7 +11,7 @@
             <RowDefinition/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="listbox"  Margin="5"/>
+        <ListBox x:Name="listbox"  Margin="5" DisplayMemberPath="Name" SelectedValuePath="Address"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
             <Button Content="查看结果" Click="Button_Click"/>
             <TextBlock x:Name="textblock" />

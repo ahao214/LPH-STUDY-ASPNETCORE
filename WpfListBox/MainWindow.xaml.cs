@@ -32,10 +32,33 @@ namespace WpfListBox
         public MainWindow()
         {
             InitializeComponent();
+
+            listbox.Items.Add(new Person
+            {
+                Name = "张三",
+                Age = 23,
+                Address = "北京"
+            });
+            listbox.Items.Add(new Person
+            {
+                Name = "JACK",
+                Age = 24,
+                Address = "Lakers"
+            });
+            listbox.Items.Add(new Person
+            {
+                Name = "大道",
+                Age = 30,
+                Address = "上海"
+            });
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var selectedItem = listbox.SelectedItem;
+            var selectedValue = listbox.SelectedValue;
+            textblock.Text = $"Item={selectedItem},Value={selectedValue}";
+
 
         }
     }
