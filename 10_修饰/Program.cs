@@ -1,8 +1,11 @@
 ﻿// record required init 修饰
 
 
-// init 属性必须在 new 的时候初始化(赋值)
+// init 属性只能在 new 的时候初始化(赋值)
 // initial 
+
+
+// required 属性必须在 new 的时候初始化(赋值)
 
 var user = new User()
 {
