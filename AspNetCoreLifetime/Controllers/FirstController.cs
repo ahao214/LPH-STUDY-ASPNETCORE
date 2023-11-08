@@ -28,5 +28,23 @@ namespace AspNetCoreLifetime.Controllers
         //api/users/{id} ...Put     更新用户
         //api/users/{id} ...Delete  删除用户
 
+
+        [HttpGet]
+        public IActionResult Get() => Ok();
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id) => Ok();
+
+        [HttpPost]  // 创建用户
+        public IActionResult Post(User model) => Ok();
+
+        [HttpPut]   // 更新用户
+        public IActionResult Put(int id,User model) => Ok();
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id) => Ok();
     }
+
+    public class User
+    {}
 }
