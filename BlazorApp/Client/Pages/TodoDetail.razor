@@ -1,0 +1,43 @@
+﻿@page "/todo/detail/{id:int}"
+@using BlazorApp.Shared;
+
+<dl>
+    <dt>
+        标题
+    </dt>
+    <dd>
+        @Model.Name
+    </dd>
+    <dt>
+        描述
+    </dt>
+    <dd>
+        @Model.Description
+    </dd>
+    <dt>
+        计划时间
+    </dt>
+    <dd>
+        @Model.PlanTime
+    </dd>
+</dl>
+
+@inject HttpClient Http;
+
+@code {
+
+    [Parameter] public int Id { get; set; }
+    TodoOutput Mode { get; set; } = new();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+        {
+            Model = await Http.GetFromJsonAsync<TodoOutput>($"api/todo/{Id}");
+            StateHasChanged();
+        }
+    }
+
+
+}
+

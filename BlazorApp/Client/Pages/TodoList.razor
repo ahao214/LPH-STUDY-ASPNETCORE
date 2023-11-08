@@ -10,6 +10,7 @@
             <td>标题</td>
             <td>描述</td>
             <td>计划时间</td>
+            <td>操作</td>
         </tr>
     </thead>
     <tbody>
@@ -30,6 +31,9 @@
                     <td>@item.Name</td>
                     <td>@item.Description</td>
                     <td>@item.PlanTime?.ToString("yyyy年MM月dd日 HH:mm")</td>
+                    <td>
+                        <a href="/todo/detal/@item.Id">详情</a>
+                    </td>
                 </tr>
             }
         }
