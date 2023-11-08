@@ -1,5 +1,9 @@
 ﻿using static System.Console;
 
+// 变成可为空的类型
+int? x = null;
+WriteLine(x);
+
 // ? 表达式
 
 // 1.三元运算符
@@ -21,3 +25,7 @@ public class C1
     }
     public string Name { get; }
 }
+
+
+// 可空操作符 ?.
+
