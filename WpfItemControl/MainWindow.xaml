@@ -9,16 +9,19 @@
     <Grid>
         <ItemsControl x:Name="itemcontrol" Background="LightBlue">
             <Button Content="content" Margin="5" Click="Button_Click"/>
-                <Border Height="30" Background="LightPink" Margin="5"/>
-                <TextBlock Text="从小白" Margin="5"/>
-                <ItemsControl Height="35" Background="AliceBlue"/>
-                <CheckBox Content="checkbox元素"/>
-                <StackPanel Orientation="Horizontal" Margin="5">
-                    <RadioButton Content="初级"/>
-                    <RadioButton Content="中级"/>
-                    <RadioButton Content="高级"/>
-                </StackPanel>
-            
+            <Border Height="30" Background="LightPink" Margin="5"/>
+            <TextBlock Text="从小白到大佬" Margin="5"/>
+            <ItemsControl Height="35" Background="AliceBlue"/>
+            <CheckBox Content="checkbox元素"/>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <RadioButton Content="初级"/>
+                <RadioButton Content="中级"/>
+                <RadioButton Content="高级"/>
+            </StackPanel>
+            <Label Content="从小开始学习" Margin="5" />
+            <Control Background="Red" Height="30" />
+            <ProgressBar  Value="50" Width="20"  MaxHeight="100" />
+
         </ItemsControl>
     </Grid>
 </Window>
