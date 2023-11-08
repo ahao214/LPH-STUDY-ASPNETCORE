@@ -13,6 +13,11 @@ var action = new Action<int, int>((a, b) =>
 action(1, 2);
 
 
+// Func 有返回值
+var func = new Func<int, int, int>((a, b) => a + b);
+var c = func(1, 2);
+Console.WriteLine(c);
+
 
 
 
