@@ -56,5 +56,25 @@ namespace BlazorApp.Server.Controllers
             });
 
         }
+
+        /// <summary>
+        /// 根据ID删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id}")]
+        public async Task<IResult> DeleteAsync(int id)
+        {
+            var data = await _context.Todos.FindAsync(id);
+            if(data is null)
+            {
+                return Results.NotFound();
+            }
+            _context.Todos.Remove(data);
+            await _context.SaveChangesAsync();
+            return Results.Ok();
+        }
+
+
     }
 }
