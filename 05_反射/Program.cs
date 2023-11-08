@@ -1,4 +1,4 @@
-﻿
+﻿using static System.Console;
 
 // 反射
 // 一切从 Type 开始
@@ -15,7 +15,9 @@ user.GetType()
     .ForEach(item =>
     {
         var name = item.Name;
-        item.GetValue(user);
+        var value =item.GetValue(user);
+        Console.WriteLine($"{name}:{value}");
+
     });
 
 
@@ -23,4 +25,5 @@ class User
 {
     public int Id { get; set; }
     public string Name { get; set; }
+
 }
