@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AspNetCoreLifetime.Controllers;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Http;
 
 namespace AspnetTest
 {
