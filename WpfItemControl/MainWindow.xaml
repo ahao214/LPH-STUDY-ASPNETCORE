@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="ItemsControl" Height="450" Width="800">
     <Grid>
-
+        <ItemsControl x:Name="itemcontrol" Background="LightBlue">
+            <Button Content="content" Margin="5" Click="Button_Click"/>
+                <Border Height="30" Background="LightPink" Margin="5"/>
+                <TextBlock Text="从小白" Margin="5"/>
+                <ItemsControl Height="35" Background="AliceBlue"/>
+                <CheckBox Content="checkbox元素"/>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <RadioButton Content="初级"/>
+                    <RadioButton Content="中级"/>
+                    <RadioButton Content="高级"/>
+                </StackPanel>
+            
+        </ItemsControl>
     </Grid>
 </Window>
