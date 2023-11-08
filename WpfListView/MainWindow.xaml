@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:WpfListView"
         mc:Ignorable="d"
         Title="ListView" Height="450" Width="800">
-    <Grid Margin="5">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-        <ListView x:Name="listview" Margin="5" SelectionChanged="listview_SelectionChanged">
+        <ListView Grid.Column="0" x:Name="listview" SelectionChanged="listview_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="姓名" DisplayMemberBinding="{Binding Name}"/>
@@ -20,22 +20,19 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
-        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="5">
+        <StackPanel Grid.Column="1">
             <StackPanel Orientation="Horizontal" Margin="5">
-                <TextBlock Text="姓名"/>
-                <TextBlock x:Name="_name"/>
+                <TextBlock Text="姓名:"/>
+                <TextBlock x:Name="_TextBlockName"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
-                <TextBlock Text="年龄"/>
-                <TextBlock x:Name="_age"/>
+                <TextBlock Text="年龄:"/>
+                <TextBlock x:Name="_TextBlockAge"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
-                <TextBlock Text="地址"/>
-                <TextBlock x:Name="_address"/>
+                <TextBlock Text="地址:"/>
+                <TextBlock x:Name="_TextBlockAddress"/>
             </StackPanel>
-            
         </StackPanel>
-        
     </Grid>
 </Window>
