@@ -1,4 +1,63 @@
-﻿@page "/"
+﻿@page "/todo"
 
 
+<table>
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <td>标题</td>
+            <td>描述</td>
+            <td>计划时间</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!List.Any())
+        {
+            <tr>
+                <td colspan="=4">数据加载zhong ...</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in List)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>@item.PlanTime?.ToString("yyyy年MM月dd日 HH:mm")</td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+
+@inject HttpClient Http;
+
+@code {
+    class Todo
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string? Description { get; set; }
+        public DateTime? PlanTime { get; set; }
+    }
+
+    IEnumerable<Todo> List { get; set; } = Enumerable.Empty<Todo>();
+
+    protected override async void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            List = await Http.GetFromJsonAsync<IEnumerable<Todo>>("api/todo");
+        }
+    }
+
+
+}
 
