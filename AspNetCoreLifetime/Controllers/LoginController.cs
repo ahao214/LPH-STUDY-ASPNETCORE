@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace AspNetCoreLifetime.Controllers
 {
@@ -10,7 +12,13 @@ namespace AspNetCoreLifetime.Controllers
         [HttpPost]
         public IResult Login([FromForm]LoginModel model)
         {
-            return Results.Ok(model);
+            JwtSecurityToken securityToken = new(claims: new[]
+            {
+                new Claim(ClaimTypes.Name,model.UserName)
+            });
+            JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
+            var token = handler .WriteToken(securityToken);
+            return Results.Ok(token);
         }
 
     }
