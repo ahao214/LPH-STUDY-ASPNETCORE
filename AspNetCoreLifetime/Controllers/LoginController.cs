@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -10,6 +11,7 @@ namespace AspNetCoreLifetime.Controllers
     public class LoginController : ControllerBase
     {
         [HttpPost]
+        [AllowAnonymous]
         public IResult Login([FromForm]LoginModel model)
         {
             JwtSecurityToken securityToken = new(claims: new[]
@@ -20,6 +22,9 @@ namespace AspNetCoreLifetime.Controllers
             var token = handler .WriteToken(securityToken);
             return Results.Ok(token);
         }
+
+        [HttpGet]
+        public IResult Hello() => Results.Ok(User.Identity.Name);
 
     }
 
