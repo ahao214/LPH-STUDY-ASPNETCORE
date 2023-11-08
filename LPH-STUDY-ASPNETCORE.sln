@@ -393,6 +393,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_扩展方法", "02_扩�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_委托", "03_委托\03_委托.csproj", "{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_内置委托", "04_内置委托\04_内置委托.csproj", "{1197D586-098A-4CE8-B45A-0547CF1FAE87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -879,6 +881,10 @@ Global
 		{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1197D586-098A-4CE8-B45A-0547CF1FAE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1197D586-098A-4CE8-B45A-0547CF1FAE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1197D586-098A-4CE8-B45A-0547CF1FAE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1197D586-098A-4CE8-B45A-0547CF1FAE87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1076,6 +1082,7 @@ Global
 		{219B8829-3F01-4874-B754-1B822333F69E} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 		{8013DD09-1E20-4E1D-A110-807417B9DC73} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 		{95BD56A7-F6A2-4A4C-8468-3FF01D3E9C30} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
+		{1197D586-098A-4CE8-B45A-0547CF1FAE87} = {EFD279E2-F382-4CF8-A914-E01B0F267452}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
