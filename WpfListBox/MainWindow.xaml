@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:WpfListBox"
         mc:Ignorable="d"
         Title="ListBox" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="listbox"  Margin="5"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+            <Button Content="查看结果" Click="Button_Click"/>
+            <TextBlock x:Name="textblock" />
 
+        </StackPanel>
     </Grid>
 </Window>

@@ -351,6 +351,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSlider", "WpfSlider\WpfS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfItemControl", "WpfItemControl\WpfItemControl.csproj", "{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfListBox", "WpfListBox\WpfListBox.csproj", "{A81B6282-54A2-49D7-9C05-B42724AAC165}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -769,6 +771,10 @@ Global
 		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -945,6 +951,7 @@ Global
 		{7B20134C-022B-44E5-9E27-9A5DDF37F3AF} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{A81B6282-54A2-49D7-9C05-B42724AAC165} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
