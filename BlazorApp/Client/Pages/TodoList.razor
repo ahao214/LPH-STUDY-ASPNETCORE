@@ -1,5 +1,5 @@
 ﻿@page "/todo"
-
+@using BlazorApp.Shared;
 
 <table>
     <thead>
@@ -40,21 +40,15 @@
 @inject HttpClient Http;
 
 @code {
-    class Todo
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string? Description { get; set; }
-        public DateTime? PlanTime { get; set; }
-    }
 
-    IEnumerable<Todo> List { get; set; } = Enumerable.Empty<Todo>();
+
+    IEnumerable<TodoOutput> List { get; set; } = Enumerable.Empty<TodoOutput>();
 
     protected override async void OnAfterRender(bool firstRender)
     {
         if (firstRender)
         {
-            List = await Http.GetFromJsonAsync<IEnumerable<Todo>>("api/todo");
+            List = await Http.GetFromJsonAsync<IEnumerable<TodoOutput>>("api/todo");
             StateHasChanged();
         }
     }
