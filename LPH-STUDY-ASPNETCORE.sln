@@ -331,23 +331,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_组合模式", "17_组�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_备忘录模式", "18_备忘录模式\18_备忘录模式.csproj", "{7B29DB3E-6123-4125-8E4C-2EF7C3DB56D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_命令模式", "19_命令模式\19_命令模式.csproj", "{1B82EC20-7346-46B6-8315-9E6CCC100001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_命令模式", "19_命令模式\19_命令模式.csproj", "{1B82EC20-7346-46B6-8315-9E6CCC100001}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{C951B8FE-E322-4208-8FE1-8D7B5D3F93B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Host", "01_Host\01_Host.csproj", "{46B0A7CB-5A01-4547-B556-F8E7387D7C1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Host", "01_Host\01_Host.csproj", "{46B0A7CB-5A01-4547-B556-F8E7387D7C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_环境变量", "02_环境变量\02_环境变量.csproj", "{D2BB8685-7471-401E-B22F-951B1E143FBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_环境变量", "02_环境变量\02_环境变量.csproj", "{D2BB8685-7471-401E-B22F-951B1E143FBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBaseControl", "WpfBaseControl\WpfBaseControl.csproj", "{E175FCD2-C2DE-4883-86DB-B7AFEC0BDFF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBaseControl", "WpfBaseControl\WpfBaseControl.csproj", "{E175FCD2-C2DE-4883-86DB-B7AFEC0BDFF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCheckBox", "WpfCheckBox\WpfCheckBox.csproj", "{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCheckBox", "WpfCheckBox\WpfCheckBox.csproj", "{680E4D9D-719E-4654-9EA9-5DBD8D4965DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBaseControl2", "WpfBaseControl2\WpfBaseControl2.csproj", "{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBaseControl2", "WpfBaseControl2\WpfBaseControl2.csproj", "{2DE816BA-2069-42AE-BFD5-7F48EE7C795C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfScrollBar", "WpfScrollBar\WpfScrollBar.csproj", "{7B20134C-022B-44E5-9E27-9A5DDF37F3AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfScrollBar", "WpfScrollBar\WpfScrollBar.csproj", "{7B20134C-022B-44E5-9E27-9A5DDF37F3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSlider", "WpfSlider\WpfSlider.csproj", "{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSlider", "WpfSlider\WpfSlider.csproj", "{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfItemControl", "WpfItemControl\WpfItemControl.csproj", "{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -763,6 +765,10 @@ Global
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -938,6 +944,7 @@ Global
 		{2DE816BA-2069-42AE-BFD5-7F48EE7C795C} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{7B20134C-022B-44E5-9E27-9A5DDF37F3AF} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
