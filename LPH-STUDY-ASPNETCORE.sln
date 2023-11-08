@@ -353,6 +353,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfItemControl", "WpfItemCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfListBox", "WpfListBox\WpfListBox.csproj", "{A81B6282-54A2-49D7-9C05-B42724AAC165}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfListView", "WpfListView\WpfListView.csproj", "{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -775,6 +777,10 @@ Global
 		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81B6282-54A2-49D7-9C05-B42724AAC165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -952,6 +958,7 @@ Global
 		{6A5F0B6A-0844-4C7A-BDBD-C6BB95565D6B} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{542EC2C1-0080-4E8C-B6D9-0223BBA046F6} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 		{A81B6282-54A2-49D7-9C05-B42724AAC165} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
+		{6A5F8AB9-E903-4EEB-84DB-04CCCDC55218} = {7BDA4F1B-5847-4FCA-AD59-F2320C09A8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
