@@ -33,6 +33,8 @@
                     <td>@item.PlanTime?.ToString("yyyy年MM月dd日 HH:mm")</td>
                     <td>
                         <a href="/todo/detail/@item.Id">详情</a>
+                        <a href="javascript:;" @onclick="e=>Delete(item.Id)">删除</a>
+
                     </td>
                 </tr>
             }
