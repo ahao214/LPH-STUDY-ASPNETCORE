@@ -17,6 +17,10 @@ namespace BlazorApp.Server.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// 或缺列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IResult> GetAsync()
         {
@@ -28,6 +32,29 @@ namespace BlazorApp.Server.Controllers
                 Description = m.Description,
                 PlanTime = m.PlanTime
             }));
+        }
+
+        /// <summary>
+        /// 根据ID获取信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id:int}")]
+        public async Task<IResult>GetByIdAsync(int id)
+        {
+            var todo = await _context.Todos.FindAsync(id);
+            if(todo ==null)
+            {
+                return Results.NotFound();  // 404 
+            }
+            return Results.Ok(new TodoOutput
+            {
+                Id = todo.Id,
+                Name = todo.Name,
+                Description = todo.Description,
+                PlanTime = todo.PlanTime,
+            });
+
         }
     }
 }
