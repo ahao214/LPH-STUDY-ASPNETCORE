@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace AspNetCoreLifetime
+namespace AspNetCoreLifetime.Filters
 {
-    public class LogFilter:IActionFilter
+    public class LogFilter : IActionFilter
     {
         private readonly ILogger<LogFilter> _logger;
 
