@@ -7,16 +7,37 @@
         mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
         Title="{Binding AppData.SystemName}" 
                   Background="#2B2C31" Height="700" Width="1200">
-    
 
+    <mah:MetroWindow.Resources>
+        <Storyboard x:Key="OnChecked">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="leftBorder">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnUnChecked">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="leftBorder">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="200"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </mah:MetroWindow.Resources>
+
+    <mah:MetroWindow.Triggers>
+        <EventTrigger RoutedEvent="ToggleButton.Checked"  SourceName="toggleButton">
+            <BeginStoryboard Storyboard="{StaticResource OnChecked}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ToggleButton.Unchecked"  SourceName="toggleButton">
+            <BeginStoryboard Storyboard="{StaticResource OnUnChecked}"/>
+        </EventTrigger>
+    </mah:MetroWindow.Triggers>
+    
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <!--LEFT-->
-        <Border BorderThickness="0 0 1 0" Background="#2B2C31">
+        <Border x:Name="leftBorder" Width="200" BorderThickness="0 0 1 0" Background="#2B2C31">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Black" Opacity="0.5"/>
             </Border.Effect>
@@ -46,7 +67,7 @@
 
         <!--RIGHT-->
         <Grid Grid.Column="1">
-            <ToggleButton Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Content="&#xf060;" FontSize="20" Margin="10 25"  Foreground="White" Style="{DynamicResource ToggleButtonStyle}"  FontFamily="Fonts/#FontAwesome" />
+            <ToggleButton x:Name="toggleButton" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Content="&#xf060;" FontSize="20" Margin="10 25"  Foreground="White" Style="{DynamicResource ToggleButtonStyle}"  FontFamily="Fonts/#FontAwesome" />
         </Grid>
 
 
