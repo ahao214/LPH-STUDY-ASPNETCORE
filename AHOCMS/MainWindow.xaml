@@ -7,6 +7,7 @@
         mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
         Title="{Binding AppData.SystemName}" 
                   Background="#2B2C31" Height="700" Width="1200">
+    
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -44,7 +45,9 @@
        
 
         <!--RIGHT-->
-
+        <Grid Grid.Column="1">
+            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" Margin="10 25" FontSize="22" FontFamily="Fonts/#FontAwesome" Foreground="#297790"/>
+        </Grid>
 
 
     </Grid>
