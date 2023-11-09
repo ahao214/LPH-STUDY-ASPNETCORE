@@ -7,16 +7,43 @@
         mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
         Title="{Binding AppData.SystemName}" 
                   Background="#2B2C31" Height="700" Width="1200">
-   
-    
+
     <Grid>
-        <StackPanel>
-            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"/>
-            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页1" FontSize="18" Foreground="White"/>
-            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页2" FontSize="18" Foreground="White"/>
-        </StackPanel>
-        
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--LEFT-->
+        <Border BorderThickness="0 0 1 0" Background="#2B2C31">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Black" Opacity="0.5"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 15 0 15">
+                    <StackPanel.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Black" Opacity="1"/>
+                    </StackPanel.Effect>
+                    <TextBlock Text="&#xf1b3;" Margin="10" FontSize="22" FontFamily="Fonts/#FontAwesome" Foreground="#297790"/>
+                    <TextBlock Text="CargoSystem"  FontSize="20" FontFamily="Fonts/#FontAwesome" Foreground="#297790" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1">
+                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页1" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页2" FontSize="18" Foreground="White"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+       
+
+        <!--RIGHT-->
 
 
 
