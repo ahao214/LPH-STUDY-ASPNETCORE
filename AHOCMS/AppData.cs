@@ -13,7 +13,7 @@ namespace AHOCMS
         public static AppData Instance = new Lazy<AppData>(() => new AppData()).Value;
 
 
-        private Member member = null;
+        private Member member = new Member();
 
         public Member CurrentUser
         {
