@@ -16,7 +16,7 @@ namespace AHOCMS.ViewModel
 
         public LoginViewModel()
         {
-           
+
         }
 
         /// <summary>
@@ -28,7 +28,24 @@ namespace AHOCMS.ViewModel
             {
                 return new RelayCommand(() =>
                 {
-                    MessageBox.Show("登录成功");
+                    MemberProvider memberProvider = new MemberProvider();
+                    var user = memberProvider.Select().FirstOrDefault(item => item.Name == AppData.CurrentUser.Name && item.Password == AppData.CurrentUser.Password);
+
+                    if (user == null)
+                    {
+                        MessageBox.Show("用户名或密码错误");
+                    }
+                    else
+                    {
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+
+
+
+                    }
+
+
+
                 });
             }
         }
