@@ -15,7 +15,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="仓库物资管理系统" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Grid.Row="0" Text="{Binding AppData.SystemName}" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
 
             <StackPanel Grid.Row="1" Margin="10 0 0 0" VerticalAlignment="Center" Orientation="Horizontal">
                 <TextBlock  Text="用户名" Width="60" FontSize="18"/>
@@ -28,7 +28,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3" Margin="60 0 0 0" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="登录"  Width="80" Command="{Binding LoginCommand}"/>
+                <Button Content="登录"  Width="80" Command="{Binding LoginCommand2}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"/>
                 <Button Content="取消" Width="80"  Margin="40 0 0 0" Command="{Binding CloseCommand}"/>
             </StackPanel>
         </Grid>

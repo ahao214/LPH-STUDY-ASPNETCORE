@@ -16,7 +16,8 @@ namespace AHOCMS.ViewModel
 
         public LoginViewModel()
         {
-
+            this.AppData.CurrentUser.Name = "admin";
+            this.AppData.CurrentUser.Password = "0";
         }
 
         /// <summary>
@@ -50,6 +51,39 @@ namespace AHOCMS.ViewModel
                 });
             }
         }
+
+        /// <summary>
+        /// 登录命令
+        /// </summary>
+        public RelayCommand<Window> LoginCommand2
+        {
+            get
+            {
+                return new RelayCommand<Window>((arg) =>
+                {
+                    MemberProvider memberProvider = new MemberProvider();
+                    var list = memberProvider.Select();
+                    var user = list.FirstOrDefault(item => item.Name == AppData.CurrentUser.Name && item.Password == AppData.CurrentUser.Password);
+
+                    if (user == null)
+                    {
+                        MessageBox.Show("用户名或密码错误");
+                    }
+                    else
+                    {
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+
+                        arg.Close();
+
+                    }
+
+
+
+                });
+            }
+        }
+
 
         /// <summary>
         /// 取消命令

@@ -13,6 +13,14 @@ namespace AHOCMS
     {
         public static AppData Instance = new Lazy<AppData>(() => new AppData()).Value;
 
+        public string systemName = "仓库物资管理系统 1.0";
+
+        public string SystemName
+        {
+            get { return systemName; }
+            set { systemName = value; RaisePropertyChanged(); }
+        }
+
 
         private Member member = new Member();
 
