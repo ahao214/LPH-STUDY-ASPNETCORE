@@ -10,7 +10,9 @@ namespace AHOCMS.ViewModel
 {
     public class LoginViewModel:ViewModelBase
     {
-        //public Member Member { get; set; } = AppData.Instance.CurrentUser;
+        public Member Member { get; set; } = AppData.Instance.CurrentUser;
+
+
 
     }
 }
