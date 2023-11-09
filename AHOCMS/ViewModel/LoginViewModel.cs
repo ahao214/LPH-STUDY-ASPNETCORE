@@ -29,7 +29,8 @@ namespace AHOCMS.ViewModel
                 return new RelayCommand(() =>
                 {
                     MemberProvider memberProvider = new MemberProvider();
-                    var user = memberProvider.Select().FirstOrDefault(item => item.Name == AppData.CurrentUser.Name && item.Password == AppData.CurrentUser.Password);
+                    var list = memberProvider.Select();
+                    var user = list.FirstOrDefault(item => item.Name == AppData.CurrentUser.Name && item.Password == AppData.CurrentUser.Password);
 
                     if (user == null)
                     {

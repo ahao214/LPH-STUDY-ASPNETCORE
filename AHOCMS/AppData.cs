@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AHOCMS.Models;
 using GalaSoft.MvvmLight;
-using Models;
+
 
 namespace AHOCMS
 {
