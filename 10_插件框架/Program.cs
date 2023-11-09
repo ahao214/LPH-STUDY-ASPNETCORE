@@ -9,4 +9,33 @@
 
 
 
-Directory.EnumerateFiles(AppContext.BaseDirectory, "*.dll");
+using Plugin.Core;
+using System.Reflection;
+
+var assemblyFiles= Directory.EnumerateFiles(AppContext.BaseDirectory, "*.dll");
+
+var assemblyList = new List<Assembly>();
+
+foreach (var file in assemblyFiles)
+{
+    Console.WriteLine("加载程序集：{0}", file);
+
+    // 加载程序集
+    var assembly = Assembly.LoadFile(file);
+    assemblyList.Add(assembly);
+}
+
+var allPublicTypes = assemblyList.SelectMany(m=>m.GetExportedTypes());  
+
+var allPluginTypes = allPublicTypes.Where (type=>type.IsAssignableTo(typeof(IPlugin)));
+
+foreach (var type in allPluginTypes)
+{
+    var plugin = Activator.CreateInstance(type) as IPlugin;
+
+    plugin?.Execute();
+}
+
+
+
+
