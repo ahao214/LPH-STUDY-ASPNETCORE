@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\App.xaml
-21018680231
+3-2110460670
 2-1223955081
 231001344294
 1331512907830
-MainWindow.xaml;Windows\LoginWindow.xaml;
+MainWindow.xaml;Resources\RadioButtonMenuDictionary.xaml;Windows\LoginWindow.xaml;
 
-False
+True
 

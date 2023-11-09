@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AHOCMS"
         mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
-        Title="{Binding AppData.SystemName}" Height="700" Width="1200">
+        Title="{Binding AppData.SystemName}" 
+                  Background="#2B2C31" Height="700" Width="1200">
+   
+    
     <Grid>
+        <StackPanel>
+            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"/>
+            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页1" FontSize="18" Foreground="White"/>
+            <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页2" FontSize="18" Foreground="White"/>
+        </StackPanel>
         
+        
+
+
+
     </Grid>
 </mah:MetroWindow>
