@@ -46,7 +46,7 @@
 
         <!--RIGHT-->
         <Grid Grid.Column="1">
-            <ToggleButton Style="{DynamicResource ToggleButtonStyle}" Margin="10 25" FontSize="22" FontFamily="Fonts/#FontAwesome" Foreground="#297790"/>
+            <ToggleButton Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Content="&#xf060;" FontSize="20" Margin="10 25"  Foreground="White" Style="{DynamicResource ToggleButtonStyle}"  FontFamily="Fonts/#FontAwesome" />
         </Grid>
 
 

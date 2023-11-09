@@ -10,8 +10,13 @@
                 
                 <!--my styles-->
                 <ResourceDictionary Source="Resources/RadioButtonMenuDictionary.xaml"/>
+                <ResourceDictionary Source="Resources/ToggleButtonDictionary.xaml"/>
+                
+                
+                
             </ResourceDictionary.MergedDictionaries>
 
+            
 
             <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:AHOCMS.ViewModel" />
         </ResourceDictionary>
