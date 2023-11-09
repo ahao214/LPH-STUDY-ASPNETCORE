@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Jack",
+    "Age": 23,
+    "Roles": [ "管理员" ]
+  },
+  {
+    "Name": "Tom",
+    "Age": 33,
+    "Roles": [ "开发者" ]
+  },
+  {
+    "Name": "liu",
+    "Age": 40,
+    "Roles": [ "创造者" ]
+  }
+]
