@@ -22,7 +22,7 @@
                                     <ColumnDefinition Width="0.3*"/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{TemplateBinding Tag}" FontSize="{TemplateBinding FontSize}"  FontFamily="Fonts/#FontAwesome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="0" Text="{TemplateBinding Tag}" FontSize="{TemplateBinding FontSize}"  FontFamily="../Fonts/#FontAwesome" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 <TextBlock Grid.Column="1" Text="{TemplateBinding Content}" 
 FontSize="{TemplateBinding FontSize}"                                               HorizontalAlignment="Left" VerticalAlignment="Center"/>
                             </Grid>
