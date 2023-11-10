@@ -3,19 +3,24 @@
 
 <InputFile OnChange="Upload"/>
 
+@if(uploaded)
+{
+    <div class="alert alert-success">上传成功</div>
+}
+
 @inject IHostEnvironment Env
 @code {
     bool uploaded;
     async Task Upload(InputFileChangeEventArgs e)
     {
         uploaded = false;
-        var path = $"{Env.ContentRootPath}/upload";
+        var path = $"{Env.ContentRootPath}/upload/";
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
         }
 
-        var fileName = e.File.Name;
+        var fileName = $"{DateTime.Now.ToString("yyyyMMddHHmmssfff")}{Path.GetExtension(e.File.Name)}";
 
         await using FileStream fs = new(path + fileName, FileMode.Create);
         await e.File.OpenReadStream().CopyToAsync(fs);
