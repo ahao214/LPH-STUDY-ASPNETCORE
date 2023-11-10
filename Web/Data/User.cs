@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web.Data
 {
-    [Table("AspNetUsers")]
+    [Table("Users")]
     public class User
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -12,6 +12,9 @@ namespace Web.Data
         [StringLength(100)]
         public string Name { get; set; }
         public int Age { get; set; }
+
+        public virtual ICollection<Role> Roles { get; set; } = new HashSet<Role>();
+
 
     }
 }
