@@ -11,6 +11,7 @@ namespace Web.Data
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
+        public int Age { get; set; }
 
     }
 }

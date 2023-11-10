@@ -51,6 +51,7 @@ namespace Web.Controllers
                 return Results.NotFound();
             }
             user.Name = model.Name;
+            user.Age = model.Age;
             Context.SaveChanges();
 
             return Results.Ok(user);
@@ -61,7 +62,7 @@ namespace Web.Controllers
         public IResult Delete(int id)
         {
             var user = Context.Users.SingleOrDefault(x => x.Id == id);
-            if(user == null)
+            if (user == null)
             {
                 return Results.NotFound();
             }
