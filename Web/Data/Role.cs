@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web.Data
 {
+    [Table("Roles")]
     /// <summary>
     /// 角色表
     /// </summary>
