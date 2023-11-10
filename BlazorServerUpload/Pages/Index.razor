@@ -1,9 +1,25 @@
 ﻿@page "/"
+<PageTitle>文件上传</PageTitle>
 
-<PageTitle>Index</PageTitle>
+<InputFile OnChange="Upload"/>
 
-<h1>Hello, world!</h1>
+@inject IHostEnvironment Env
+@code {
+    bool uploaded;
+    async Task Upload(InputFileChangeEventArgs e)
+    {
+        uploaded = false;
+        var path = $"{Env.ContentRootPath}/upload";
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
 
-Welcome to your new app.
+        var fileName = e.File.Name;
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+        await using FileStream fs = new(path + fileName, FileMode.Create);
+        await e.File.OpenReadStream().CopyToAsync(fs);
+        uploaded = true;
+
+    }
+}
