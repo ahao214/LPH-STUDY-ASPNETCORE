@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Web.Data;
 
 namespace Web.Controllers
@@ -15,10 +16,22 @@ namespace Web.Controllers
         }
 
         [HttpGet]
-        public IResult Get()
+        public IResult Get(User model)
         {
-            var users = Context.Users.ToList();
-            return Results.Ok(users);
+            var query = Context.Users.AsNoTracking();
+            if(!string .IsNullOrEmpty (model .Name ))
+            {
+                query = query.Where(m => m.Name.Contains(model.Name));
+            }
+            if(model .Age > 0)
+            {
+                query = query.Where(m => m.Age == model.Age);
+            }
+
+            query = query.OrderBy(m => m.Id).ThenByDescending(m => m.Name);
+            var data = query.ToList();
+            //var data = Context.Users.ToList();
+            return Results.Ok(data);
         }
 
 
