@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "10_插件框架/1.0.0": {
+        "dependencies": {
+          "AppPlugin": "1.0.0"
+        },
+        "runtime": {
+          "10_插件框架.dll": {}
+        }
+      },
+      "AppPlugin/1.0.0": {
+        "dependencies": {
+          "Plugin.Core": "1.0.0"
+        },
+        "runtime": {
+          "AppPlugin.dll": {}
+        }
+      },
+      "Plugin.Core/1.0.0": {
+        "runtime": {
+          "Plugin.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "10_插件框架/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppPlugin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plugin.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

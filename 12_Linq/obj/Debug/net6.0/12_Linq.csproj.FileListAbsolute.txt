@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\bin\Debug\net6.0\12_Linq.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\bin\Debug\net6.0\12_Linq.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\bin\Debug\net6.0\12_Linq.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\bin\Debug\net6.0\12_Linq.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\bin\Debug\net6.0\12_Linq.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\refint\12_Linq.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\12_Linq.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_Linq\obj\Debug\net6.0\ref\12_Linq.dll

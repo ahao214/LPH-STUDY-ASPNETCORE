@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataBinding\App.xaml
-11407045341
+2468986193
 
-3-1233169557
+6-261798119
 1942030480316
-MainWindow.xaml;
+Controller\UserControl.xaml;MainWindow.xaml;
 
-False
+True
 

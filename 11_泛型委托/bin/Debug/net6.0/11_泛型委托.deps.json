@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "11_泛型委托/1.0.0": {
+        "runtime": {
+          "11_泛型委托.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "11_泛型委托/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

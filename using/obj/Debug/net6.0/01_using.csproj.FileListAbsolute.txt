@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\bin\Debug\net6.0\01_using.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\bin\Debug\net6.0\01_using.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\bin\Debug\net6.0\01_using.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\bin\Debug\net6.0\01_using.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\bin\Debug\net6.0\01_using.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\refint\01_using.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\01_using.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\using\obj\Debug\net6.0\ref\01_using.dll

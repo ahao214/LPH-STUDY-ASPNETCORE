@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\bin\Debug\net6.0\08_适配器模式.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\bin\Debug\net6.0\08_适配器模式.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\bin\Debug\net6.0\08_适配器模式.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\bin\Debug\net6.0\08_适配器模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\bin\Debug\net6.0\08_适配器模式.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\refint\08_适配器模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\08_适配器模式.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\08_适配器模式\obj\Debug\net6.0\ref\08_适配器模式.dll

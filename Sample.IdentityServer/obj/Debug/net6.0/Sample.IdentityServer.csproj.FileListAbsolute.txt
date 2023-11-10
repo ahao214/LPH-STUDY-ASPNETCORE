@@ -1,0 +1,8 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.RazorAssemblyInfo.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.RazorAssemblyInfo.cs

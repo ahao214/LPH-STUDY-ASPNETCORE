@@ -1,0 +1,17 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\bin\Debug\net6.0-windows\ComponentLibrary.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\bin\Debug\net6.0-windows\ComponentLibrary.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\bin\Debug\net6.0-windows\ComponentLibrary.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\CoolingPanic.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary_MarkupCompile.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary_MarkupCompile.lref
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\CoolingPanic.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.g.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\refint\ComponentLibrary.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ComponentLibrary.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ComponentLibrary\obj\Debug\net6.0-windows\ref\ComponentLibrary.dll

@@ -1,0 +1,6 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Client\obj\Debug\net6.0\BlazorApp.Client.MvcApplicationPartsAssemblyInfo.cache

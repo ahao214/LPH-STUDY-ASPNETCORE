@@ -14,3 +14,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\13_Json\obj\Debug\net6.0\refint\13_Jso
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\13_Json\obj\Debug\net6.0\13_Json.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\13_Json\obj\Debug\net6.0\13_Json.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\13_Json\obj\Debug\net6.0\ref\13_Json.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\13_Json\bin\Debug\net6.0\demos.json

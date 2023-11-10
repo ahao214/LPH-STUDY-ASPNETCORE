@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\bin\Debug\net6.0\02_顶级语句.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\bin\Debug\net6.0\02_顶级语句.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\bin\Debug\net6.0\02_顶级语句.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\bin\Debug\net6.0\02_顶级语句.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\bin\Debug\net6.0\02_顶级语句.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\refint\02_顶级语句.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\02_顶级语句.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_顶级语句\obj\Debug\net6.0\ref\02_顶级语句.dll
