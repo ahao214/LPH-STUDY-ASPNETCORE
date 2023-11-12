@@ -13,13 +13,8 @@ namespace YDT_MongoDEbusiness.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-
-        /// <summary>
-        /// 添加用户方法
-        /// </summary>
-        /// <returns></returns>
-        [HttpPost(Name = "AddUser")]
-        public string AddUser(User user)
+        IMongoCollection<User> users;
+        public UserController()
         {
             //1.创建MongoClient
             MongoClient mongoClient = new MongoClient("mongodb://localhost:2222");
@@ -28,8 +23,17 @@ namespace YDT_MongoDEbusiness.Controllers
             var database = mongoClient.GetDatabase("数据库名称");
 
             //3.获取数据库集合
-            var users = database.GetCollection<User>("user");
+            users = database.GetCollection<User>("user");
+        }
 
+
+        /// <summary>
+        /// 添加用户方法
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost(Name = "AddUser")]
+        public string AddUser(User user)
+        {
             //4.存储用户数据到集合
             users.InsertOne(user);
 
@@ -41,17 +45,8 @@ namespace YDT_MongoDEbusiness.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet(Name = "GetUser")]
-        public List <User> GetUser()
+        public List<User> GetUser()
         {
-            //1.创建MongoClient
-            MongoClient mongoClient = new MongoClient("mongodb://localhost:2222");
-
-            //2.获取数据库            
-            var database = mongoClient.GetDatabase("数据库名称");
-
-            //3.获取数据库集合
-            var users = database.GetCollection<User>("user");
-
             //4.存储用户数据到集合
             var userList = users.Find(u => u.Id == 1).ToList();
 
