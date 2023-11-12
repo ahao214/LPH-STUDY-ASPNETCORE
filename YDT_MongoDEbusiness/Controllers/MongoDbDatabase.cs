@@ -8,6 +8,7 @@ namespace YDT_MongoDEbusiness.Controllers
     /// </summary>
     public class MongoDbDatabase
     {
+        //2.获取数据库
         public IMongoDatabase database { get; }
 
         public MongoDbDatabase()
