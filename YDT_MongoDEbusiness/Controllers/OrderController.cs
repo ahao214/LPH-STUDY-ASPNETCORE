@@ -7,7 +7,7 @@ using MongoDB.Driver;
 namespace YDT_MongoDEbusiness.Controllers
 {
     /// <summary>
-    /// 用户控制器
+    /// 订单控制器
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -16,14 +16,9 @@ namespace YDT_MongoDEbusiness.Controllers
         IMongoCollection<Order> orders;
         public OrderController()
         {
-            //1.创建MongoClient
-            MongoClient mongoClient = new MongoClient("mongodb://localhost:2222");
-
-            //2.获取数据库            
-            var database = mongoClient.GetDatabase("数据库名称");
-
+            MongoDbDatabase mongoDatabase = new MongoDbDatabase();
             //3.获取数据库集合
-            orders = database.GetCollection<Order>("order");
+            orders = mongoDatabase.database.GetCollection<Order>("order");
         }
 
 
