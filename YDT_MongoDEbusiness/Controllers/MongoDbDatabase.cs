@@ -11,13 +11,13 @@ namespace YDT_MongoDEbusiness.Controllers
         //2.获取数据库
         public IMongoDatabase database { get; }
 
-        public MongoDbDatabase()
+        public MongoDbDatabase(IConfiguration configuration)
         {
             //1.创建MongoClient
-            MongoClient mongoClient = new MongoClient("mongodb://localhost:2222");
+            MongoClient mongoClient = new MongoClient(configuration["MongoDB:url"]);
 
             //2.获取数据库            
-            database = mongoClient.GetDatabase("数据库名称");
+            database = mongoClient.GetDatabase(configuration["MongoDB:database"]);
         }
 
 
