@@ -16,14 +16,9 @@ namespace YDT_MongoDEbusiness.Controllers
         IMongoCollection<User> users;
         public UserController()
         {
-            //1.创建MongoClient
-            MongoClient mongoClient = new MongoClient("mongodb://localhost:2222");
-
-            //2.获取数据库            
-            var database = mongoClient.GetDatabase("数据库名称");
-
+            MongoDbDatabase mongoDbDatabase = new MongoDbDatabase();
             //3.获取数据库集合
-            users = database.GetCollection<User>("user");
+            users = mongoDbDatabase.database.GetCollection<User>("user");
         }
 
 
