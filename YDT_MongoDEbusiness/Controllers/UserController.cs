@@ -14,9 +14,8 @@ namespace YDT_MongoDEbusiness.Controllers
     public class UserController : ControllerBase
     {
         IMongoCollection<User> users;
-        public UserController()
+        public UserController(MongoDbDatabase mongoDbDatabase)
         {
-            MongoDbDatabase mongoDbDatabase = new MongoDbDatabase();
             //3.获取数据库集合
             users = mongoDbDatabase.database.GetCollection<User>("user");
         }

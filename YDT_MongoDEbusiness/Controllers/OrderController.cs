@@ -14,9 +14,8 @@ namespace YDT_MongoDEbusiness.Controllers
     public class OrderController : ControllerBase
     {
         IMongoCollection<Order> orders;
-        public OrderController()
+        public OrderController(MongoDbDatabase mongoDatabase)
         {
-            MongoDbDatabase mongoDatabase = new MongoDbDatabase();
             //3.获取数据库集合
             orders = mongoDatabase.database.GetCollection<Order>("order");
         }
