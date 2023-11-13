@@ -2,7 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<p>
+    <a href="/Home/ReadData">获取redis数据</a>
+    @if(ViewBag.TimeNow !=null)
+    {
+        <span>@ViewBag.TimeNow</span>
+    }
+</p>
+
+<p>
+    <a class="btn btn-primary" href="/Home/DelData" >删除redis数据</a>
+</p>

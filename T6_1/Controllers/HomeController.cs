@@ -70,7 +70,7 @@ namespace T6_1.Controllers
         {
             // redis 删
             redisClient.Remove("timeNow");
-            return View();
+            return View("Index");
         }
 
 
