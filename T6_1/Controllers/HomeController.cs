@@ -23,7 +23,7 @@ namespace T6_1.Controllers
 
         #endregion
 
-        RedisCache redisCache;
+        RedisCache redisClient;
 
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
@@ -37,7 +37,7 @@ namespace T6_1.Controllers
             options.Configuration = _config.GetSection("redis").Get<RedisInfo>().DB;
             options.InstanceName = _config.GetSection("redis").Get<RedisInfo>().Name;
 
-            redisCache = new RedisCache(options);
+            redisClient = new RedisCache(options);
 
             #endregion
         }
@@ -45,10 +45,25 @@ namespace T6_1.Controllers
         public IActionResult Index()
         {
             // redis的写入
-            redisCache.SetString("timeNow", DateTime.Now.ToString());
+            redisClient.SetString("timeNow", DateTime.Now.ToString());
 
             return View();
         }
+
+        /// <summary>
+        /// 读取redis中的数据
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult ReadData()
+        {
+            // redis 读
+            ViewBag.TimeNow = redisClient.GetString("timeNow");
+
+            return View("Index");
+        }
+
+
+
 
         public IActionResult Privacy()
         {
