@@ -47,6 +47,16 @@ namespace T6_1.Controllers
             // redis的写入
             redisClient.SetString("timeNow", DateTime.Now.ToString());
 
+            Product p = new Product()
+            {
+                ID = 1,
+                ProductName = "手机",
+                ProductPrice = 344.56
+            };
+
+
+
+
             return View();
         }
 
