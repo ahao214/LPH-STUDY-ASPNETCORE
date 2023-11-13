@@ -62,7 +62,16 @@ namespace T6_1.Controllers
             return View("Index");
         }
 
-
+        /// <summary>
+        /// 删除redis中的数据
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult DelData()
+        {
+            // redis 删
+            redisClient.Remove("timeNow");
+            return View();
+        }
 
 
         public IActionResult Privacy()
