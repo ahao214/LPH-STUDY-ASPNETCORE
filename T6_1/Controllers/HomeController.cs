@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using T6_1.Models;
+using Newtonsoft.Json;
 
 
 
@@ -47,6 +48,7 @@ namespace T6_1.Controllers
             // redis的写入
             redisClient.SetString("timeNow", DateTime.Now.ToString());
 
+
             Product p = new Product()
             {
                 ID = 1,
@@ -54,8 +56,9 @@ namespace T6_1.Controllers
                 ProductPrice = 344.56
             };
 
-
-
+            // 序列化
+            string pStr = JsonConvert.SerializeObject(p);
+            redisClient.SetString("p", pStr);
 
             return View();
         }
@@ -68,6 +71,11 @@ namespace T6_1.Controllers
         {
             // redis 读
             ViewBag.TimeNow = redisClient.GetString("timeNow");
+
+            // redis 读对象
+            string pStr = redisClient.GetString("p");
+            // 反序列化
+            ViewBag.p = JsonConvert.DeserializeObject<Product>(pStr);
 
             return View("Index");
         }

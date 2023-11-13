@@ -64,3 +64,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.cspr
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

@@ -8,6 +8,13 @@
     {
         <span>@ViewBag.TimeNow</span>
     }
+
+    @if(ViewBag.p !=null)
+    {
+        <span>
+            @ViewBag.p.ID @ViewBag.p.ProductName @ViewBag.p.ProductPrice
+        </span>    
+    }
 </p>
 
 <p>
