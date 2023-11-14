@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Async\" />
+    <Folder Include="Coupler\" />
+    <Folder Include="FlowLimit\" />
+    <Folder Include="MQ\" />
+  </ItemGroup>
+
+</Project>
