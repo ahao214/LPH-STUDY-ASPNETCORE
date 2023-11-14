@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using MyRedisMq.MQ;
+
 
 namespace MyRedisMq.Async
 {
@@ -28,19 +30,26 @@ namespace MyRedisMq.Async
             Console.WriteLine($"订单：{order_no}保存成功");
 
             // 2、添加积分
-            Console.WriteLine($"---开始调用积分服务---");
-            RmOrderPoints rmOrderPoints = new RmOrderPoints();
-            rmOrderPoints.AddPoints(order_no);
+            //Console.WriteLine($"---开始调用积分服务---");
+            //RmOrderPoints rmOrderPoints = new RmOrderPoints();
+            //rmOrderPoints.AddPoints(order_no);
 
-            Console.WriteLine($"---积分服务调用完成---");
+            //Console.WriteLine($"---积分服务调用完成---");
 
 
-            // 3、发送短信
-            Console.WriteLine($"---开始调用发送短信服务---");
-            RmOrderSms rmOrderSms = new RmOrderSms();
-            rmOrderSms.SendSms(order_no);
+            //// 3、发送短信
+            //Console.WriteLine($"---开始调用发送短信服务---");
+            //RmOrderSms rmOrderSms = new RmOrderSms();
+            //rmOrderSms.SendSms(order_no);
 
-            Console.WriteLine($"---发送短信服务调用完成---");
+            //Console.WriteLine($"---发送短信服务调用完成---");
+
+            #region redis优化
+
+
+
+            #endregion
+
 
             stopWatch.Stop();
             Console.WriteLine($"订单完成耗时：{stopWatch.ElapsedMilliseconds} ms");
