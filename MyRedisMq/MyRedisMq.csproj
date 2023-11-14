@@ -8,7 +8,11 @@
   <ItemGroup>
     <Folder Include="Coupler\" />
     <Folder Include="FlowLimit\" />
-    <Folder Include="MQ\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack.Redis" Version="6.11.0" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="6.11.0" />
   </ItemGroup>
 
 </Project>

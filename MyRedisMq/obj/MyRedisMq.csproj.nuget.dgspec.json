@@ -46,6 +46,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "ServiceStack.Redis.Core": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
