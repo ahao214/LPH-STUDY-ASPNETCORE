@@ -14,6 +14,9 @@ namespace MyRedisMq.MQ
     /// </summary>
     public class RedisMessageQueue : IDisposable
     {
+        /// <summary>
+        /// redis 客户端
+        /// </summary>
         public RedisClient redisClient { get; }
 
         public RedisMessageQueue(string redisHost)
