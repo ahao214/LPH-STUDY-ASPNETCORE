@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyRedisMq.Async;
+using System;
 
 namespace MyRedisMq
 {
@@ -6,7 +7,18 @@ namespace MyRedisMq
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Redis专题一(消息队列)!");
+
+            #region 异步处理
+
+            RmOrder order = new RmOrder();
+            order.CreateOrder();
+
+
+            #endregion
+
+
+            Console.ReadKey();
         }
     }
 }
