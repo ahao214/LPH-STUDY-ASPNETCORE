@@ -38,7 +38,7 @@ namespace MyRedisMq.MQ
         }
 
         /// <summary>
-        /// 出队
+        /// 出队(非阻塞)
         /// </summary>
         /// <param name="QKey"></param>
         /// <returns></returns>
@@ -58,6 +58,22 @@ namespace MyRedisMq.MQ
             }
             return QMessage;
         }
+
+        /// <summary>
+        /// 出队(阻塞)
+        /// </summary>
+        /// <param name="QKey"></param>
+        /// <param name="timeSpan"></param>
+        /// <returns></returns>
+        public string BDeQueue(string QKey, TimeSpan? timeSpan)
+        {
+            //1 redis 消息出队
+            string QMessage = redisClient.BlockingPopItemFromList(QKey, timeSpan);
+
+            return QMessage;
+        }
+
+
 
         public void Dispose()
         {
