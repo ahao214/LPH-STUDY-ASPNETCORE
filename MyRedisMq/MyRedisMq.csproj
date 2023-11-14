@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Async\" />
     <Folder Include="Coupler\" />
     <Folder Include="FlowLimit\" />
     <Folder Include="MQ\" />
