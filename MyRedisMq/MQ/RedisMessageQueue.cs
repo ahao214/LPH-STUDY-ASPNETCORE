@@ -73,11 +73,20 @@ namespace MyRedisMq.MQ
             return QMessage;
         }
 
-
+        /// <summary>
+        /// 获取队列数量
+        /// </summary>
+        /// <param name="QKey"></param>
+        /// <returns></returns>
+        public long GetQueueCount(string QKey)
+        {
+            return redisClient.GetListCount(QKey);
+        }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            //1 关闭redis
+            redisClient.Dispose();
         }
     }
 }
