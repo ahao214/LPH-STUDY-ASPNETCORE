@@ -9,7 +9,7 @@ namespace EBusiness.Service.Services
     public interface IProductService
     {
         IEnumerable<Product> GetProducts();
-        Product GetProductById(int id);
+        Product GetProductById(string id);
         void Create(Product product);
         void Update(Product product);
         void Delete(Product product);

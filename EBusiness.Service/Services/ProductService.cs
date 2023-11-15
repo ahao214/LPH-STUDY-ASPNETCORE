@@ -35,19 +35,19 @@ namespace EBusiness.Service.Services
             _products.DeleteOne(p => p.Id == product.Id);
         }
 
-        public Product GetProductById(int id)
+        public Product GetProductById(string id)
         {
-            throw new System.NotImplementedException();
+            return _products.Find<Product>(p => p.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<Product> GetProducts()
-        {
-            throw new System.NotImplementedException();
+        {            
+            return _products.Find(p=>true).ToList();
         }
 
         public bool ProductExists(int id)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public void Update(Product product)
