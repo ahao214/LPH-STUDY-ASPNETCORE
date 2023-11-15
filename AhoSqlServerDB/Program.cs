@@ -32,24 +32,52 @@ namespace AhoSqlServerDB
 
             #region 多结果查询
 
-            string sql = "select Id,ClassName from StudentClass where Id=1";
+            //string sql = "select Id,ClassName from StudentClass where Id=1";
 
-            SqlConnection conn = new SqlConnection(connString); // 链接数据库
-            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
-            conn.Open();
-            SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            StudentClass studentClass = new StudentClass();
-            // 解析数据
-            if (reader.Read())
-            {
-                studentClass = new StudentClass()
-                {
-                    Id = Convert.ToInt32(reader["Id"]),
-                    ClassName = reader["ClassName"].ToString()
-                };
-            }
+            //SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            //SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            //conn.Open();
+            //SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            //StudentClass studentClass = new StudentClass();
+            //// 解析数据
+            //if (reader.Read())
+            //{
+            //    studentClass = new StudentClass()
+            //    {
+            //        Id = Convert.ToInt32(reader["Id"]),
+            //        ClassName = reader["ClassName"].ToString()
+            //    };
+            //}
 
-            WriteLine($"班级ID：{studentClass.Id},班级名称：{studentClass.ClassName}");
+            //WriteLine($"班级ID：{studentClass.Id},班级名称：{studentClass.ClassName}");
+
+            #endregion
+
+            #region 多条数据
+
+            //string sql = "select Id,ClassName from StudentClass";
+
+            //SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            //SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            //conn.Open();
+            //List<StudentClass> lst = new List<StudentClass>();
+            //SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            //StudentClass studentClass = new StudentClass();
+            //// 解析数据
+            //while (reader.Read())
+            //{
+            //    StudentClass stu = new StudentClass()
+            //    {
+            //        Id = Convert.ToInt32(reader["Id"]),
+            //        ClassName = reader["ClassName"].ToString()
+            //    };
+            //    lst.Add(stu);
+            //}
+
+            //foreach (var student in lst)
+            //{
+            //    WriteLine($"班级ID：{student.Id},班级名称：{student.ClassName}");
+            //}
 
             #endregion
 
