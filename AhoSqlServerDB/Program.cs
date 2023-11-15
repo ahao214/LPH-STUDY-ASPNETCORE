@@ -81,6 +81,19 @@ namespace AhoSqlServerDB
 
             #endregion
 
+            #region 增加对象
+
+            string sql = "insert into StudentClass(Id,ClassName) values(10,N'C语言班级')";
+
+            SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            conn.Open();
+            int result = cmd.ExecuteNonQuery();
+            WriteLine("返回结果：" + result);
+
+            #endregion
+
+
             ReadKey();
 
         }
