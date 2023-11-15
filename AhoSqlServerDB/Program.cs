@@ -89,6 +89,7 @@ namespace AhoSqlServerDB
             SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
             conn.Open();
             int result = cmd.ExecuteNonQuery();
+            conn.Close();
             WriteLine("返回结果：" + result);
 
             #endregion
