@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using EBusiness.Service.Models;
 using MongoDB.Driver;
+using Microsoft.Extensions.Configuration;
 
 namespace EBusiness.Service.Services
 {
@@ -11,12 +12,12 @@ namespace EBusiness.Service.Services
     public class ProductService : IProductService
     {
         private readonly IMongoCollection<Product> _products;
+        private readonly IConfiguration _configuration;
 
-
-        public ProductService()
+        public ProductService(IConfiguration configuration)
         {
             //1 建立MongoDB连接
-            var client = new MongoClient("mongodb://localhost:27017");
+            var client = new MongoClient(configuration.GetSection("ProductMongoDBOptions").GetValue<string>("ConnectionString"));
 
             //2 获取商品库
             var database = client.GetDatabase("productdb");
