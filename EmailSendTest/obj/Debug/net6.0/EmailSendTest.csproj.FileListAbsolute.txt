@@ -249,3 +249,12 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtime
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\MimeKit.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\System.Formats.Asn1.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EmailSendTest\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
