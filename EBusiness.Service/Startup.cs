@@ -1,3 +1,5 @@
+using EBusiness.Service.Models;
+using EBusiness.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,13 @@ namespace EBusiness.Service
         {
 
             services.AddControllers();
+
+            //1 注册商品服务到数据库
+            services.AddSingleton<IProductService, ProductService>();
+
+            //2 配置商品MongoDB选项
+            services.Configure<ProductMongoDBOptions>(Configuration.GetSection(nameof(ProductMongoDBOptions)));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EBusiness.Service", Version = "v1" });

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using EBusiness.Service.Models;
 using MongoDB.Driver;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace EBusiness.Service.Services
 {
@@ -14,16 +15,17 @@ namespace EBusiness.Service.Services
         private readonly IMongoCollection<Product> _products;
         private readonly IConfiguration _configuration;
 
-        public ProductService(IConfiguration configuration)
+        public ProductService(/*IConfiguration configuration*/ IOptions<ProductMongoDBOptions> options)
         {
+            ProductMongoDBOptions productMongoDBOptions = options.Value;
             //1 建立MongoDB连接
-            var client = new MongoClient(configuration.GetSection("ProductMongoDBOptions").GetValue<string>("ConnectionString"));
+            var client = new MongoClient(productMongoDBOptions.CollectionString);
 
             //2 获取商品库
-            var database = client.GetDatabase("productdb");
+            var database = client.GetDatabase(productMongoDBOptions.DatabaseName);
 
             //3 获取商品表(集合)
-            _products = database.GetCollection<Product>("Product");
+            _products = database.GetCollection<Product>(productMongoDBOptions.ProductCollectionName);
         }
 
         public void Create(Product product)
@@ -42,8 +44,8 @@ namespace EBusiness.Service.Services
         }
 
         public IEnumerable<Product> GetProducts()
-        {            
-            return _products.Find(p=>true).ToList();
+        {
+            return _products.Find(p => true).ToList();
         }
 
         public bool ProductExists(int id)
