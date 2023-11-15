@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
+
 
 namespace AhoSqlServerDB
 {
@@ -14,15 +17,18 @@ namespace AhoSqlServerDB
         static void Main(string[] args)
         {
             // 准备好SQL语句
+            string sql = "select ClassName from StudentClass where ClassName=N'网络班'";
 
-
-
-
-            // 链接SQL数据库并查询
-
-
+            SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            conn.Open();
+            object result = cmd.ExecuteScalar();
+            conn.Close();
 
             // 展示数据
+            WriteLine($"班级名称是：{result.ToString()}");
+
+            ReadKey();
 
         }
     }
