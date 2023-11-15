@@ -96,7 +96,20 @@ namespace AhoSqlServerDB
 
             #region 删除对象
 
-            string sql = "delete from StudentClass Where Id= 3";
+            //string sql = "delete from StudentClass Where Id= 3";
+
+            //SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            //SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            //conn.Open();
+            //int result = cmd.ExecuteNonQuery();
+            //conn.Close();
+            //WriteLine("返回结果：" + result);
+
+            #endregion
+
+            #region 修改对象
+
+            string sql = "update StudentClass set ClassName=N'JS班级' where Id=4";
 
             SqlConnection conn = new SqlConnection(connString); // 链接数据库
             SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
