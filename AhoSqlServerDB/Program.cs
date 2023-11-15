@@ -83,7 +83,20 @@ namespace AhoSqlServerDB
 
             #region 增加对象
 
-            string sql = "insert into StudentClass(Id,ClassName) values(10,N'C语言班级')";
+            //string sql = "insert into StudentClass(Id,ClassName) values(10,N'C语言班级')";
+
+            //SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            //SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            //conn.Open();
+            //int result = cmd.ExecuteNonQuery();
+            //conn.Close();
+            //WriteLine("返回结果：" + result);
+
+            #endregion
+
+            #region 删除对象
+
+            string sql = "delete from StudentClass Where Id= 3";
 
             SqlConnection conn = new SqlConnection(connString); // 链接数据库
             SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
@@ -93,7 +106,6 @@ namespace AhoSqlServerDB
             WriteLine("返回结果：" + result);
 
             #endregion
-
 
             ReadKey();
 
