@@ -20,11 +20,9 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <ListBox Style="{DynamicResource ListBoxStyle}" ItemsSource="{Binding CargoTypes}">
-                <ListBoxItem>
-                    
-                </ListBoxItem>
-            </ListBox>
+            <DataGrid  ItemsSource="{Binding CargoTypes}">
+                
+            </DataGrid>
             <StackPanel Grid.Row="1"/>
         </Grid>
 
