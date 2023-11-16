@@ -7,26 +7,43 @@ using AHOCMS.Models;
 
 namespace Models
 {
+    /// <summary>
+    /// 类型设置
+    /// </summary>
     public class CargoTypeProvider : IProvider<CargoType>
     {
+        private CargoDBEntities db = new CargoDBEntities();
+
         public int Delete(CargoType t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            return 0;
         }
 
         public int Insert(CargoType t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            if (string.IsNullOrEmpty(t.Name) || string.IsNullOrEmpty(t.MemberName))
+                return 0;
+            if (t.InsertDate == null)
+                return 0;
+            db.CargoType.Add(t);
+            int count = db.SaveChanges();
+            return count;
         }
 
         public List<CargoType> Select()
         {
-            throw new NotImplementedException();
+            return db.CargoType.ToList();
         }
 
         public int Update(CargoType t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            return 0;
         }
     }
 }
