@@ -147,6 +147,9 @@
     <Compile Include="View\RecordView.xaml.cs">
       <DependentUpon>RecordView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddCargoTypeWindow.xaml.cs">
+      <DependentUpon>AddCargoTypeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -191,6 +194,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\RecordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddCargoTypeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
