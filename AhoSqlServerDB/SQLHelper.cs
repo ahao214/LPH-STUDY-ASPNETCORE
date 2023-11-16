@@ -117,6 +117,9 @@ namespace AhoSqlServerDB
 
         /// <summary>
         /// 事务
+        /// 显示事务：手动操作的
+        /// 隐士事务：平常的一条SQL语句
+        /// 
         /// </summary>
         /// <param name="sqlList">SQL语句List</param>
         /// <returns></returns>
