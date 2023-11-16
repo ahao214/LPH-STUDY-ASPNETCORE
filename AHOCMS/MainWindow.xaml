@@ -56,9 +56,13 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="1">
-                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页1" FontSize="18" Foreground="White"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页2" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf17a;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf1c0;" Style="{DynamicResource RadioButtonMenuStyle}" Content="出入库" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="物资管理" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf234;" Style="{DynamicResource RadioButtonMenuStyle}" Content="用户管理" FontSize="18" Foreground="White"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="类型设置" FontSize="18" Foreground="White"/>
+
+
                 </StackPanel>
             </Grid>
         </Border>
