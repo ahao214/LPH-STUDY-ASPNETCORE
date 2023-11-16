@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace AHOCMS.Windows
     /// <summary>
     /// AddCargoTypeWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class AddCargoTypeWindow : Window
+    public partial class AddCargoTypeWindow : MetroWindow
     {
         public AddCargoTypeWindow()
         {
