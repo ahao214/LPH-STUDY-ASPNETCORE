@@ -111,6 +111,56 @@ namespace AhoSqlServerDB
 
         #endregion
 
+
+
+        #region 事务
+
+        /// <summary>
+        /// 事务
+        /// </summary>
+        /// <param name="sqlList">SQL语句List</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static int UpdateByTransaction(List<string> sqlList)
+        {
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+
+            // 开启事务
+            try
+            {
+                conn.Open();
+                cmd.Transaction = conn.BeginTransaction(); //开启事务
+                int result = 0;
+                foreach (string sql in sqlList)
+                {
+                    cmd.CommandText = sql;
+                    result += cmd.ExecuteNonQuery();
+                }
+                cmd.Transaction.Commit();   //提交事务
+                return result;
+            }
+            catch (Exception ex)
+            {
+                if (cmd.Transaction != null)
+                {
+                    cmd.Transaction.Rollback(); //回滚事务
+                }
+                throw new Exception("执行UpdateByTransaction(List<string> sqlList)方法出错:" + ex.Message);
+            }
+            finally
+            {
+                if (cmd.Transaction != null)
+                {
+                    cmd.Transaction = null; //清除事务
+                }
+                conn.Close();
+            }
+        }
+
+        #endregion
+
         #region 单一查询结果
         //string sql = "select ClassName from StudentClass where ClassName=N'网络班'";
 
