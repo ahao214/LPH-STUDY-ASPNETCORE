@@ -48,3 +48,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\EntityFramework.SqlSe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS_Content.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\RadioButtonMenuDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\ToggleButtonDictionary.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

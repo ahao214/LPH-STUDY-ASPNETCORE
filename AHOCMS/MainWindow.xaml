@@ -72,6 +72,7 @@
         <!--RIGHT-->
         <Grid Grid.Column="1">
             <ToggleButton x:Name="toggleButton" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Content="&#xf060;" FontSize="20" Margin="10 20"  Foreground="White" Style="{DynamicResource ToggleButtonStyle}"  FontFamily="Fonts/#FontAwesome" />
+            <ContentControl x:Name="container"/>
         </Grid>
 
 
