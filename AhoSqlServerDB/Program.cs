@@ -53,16 +53,16 @@ namespace AhoSqlServerDB
 
             #region 测试事务
 
-            List<string> sqlList = new List<string>()
-            {
-                "insert into StudentClass(ClassName) values(N'VIP一班')",
-                "insert into StudentClass(ClassName) values(N'VIP二班')",
-                "insert into StudentClass(ClassName) values(N'VIP三班')",
-                "insert into StudentClass(ClassName) values(N'VIP四班')"
-            };
+            //List<string> sqlList = new List<string>()
+            //{
+            //    "insert into StudentClass(ClassName) values(N'VIP一班')",
+            //    "insert into StudentClass(ClassName) values(N'VIP二班')",
+            //    "insert into StudentClass(ClassName) values(N'VIP三班')",
+            //    "insert into StudentClass(ClassName) values(N'VIP四班')"
+            //};
 
-            int result = SQLHelper.UpdateByTransaction(sqlList);
-            WriteLine("执行成功" + result + "SQL语句");
+            //int result = SQLHelper.UpdateByTransaction(sqlList);
+            //WriteLine("执行成功" + result + "SQL语句");
 
             #endregion
 

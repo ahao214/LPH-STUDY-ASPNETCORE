@@ -45,12 +45,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLHelper.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="StudentClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{60dcf078-b668-4da6-99cc-59dc7efec15e}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StuModels\StuModels.csproj">
+      <Project>{d65a40d2-cb5d-4e4b-9d78-ed54a6f0ff6a}</Project>
+      <Name>StuModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,6 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\bin\Debug\StuModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\bin\Debug\StuModels.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\obj\Debug\StuModels.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\obj\Debug\StuModels.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\obj\Debug\StuModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StuModels\obj\Debug\StuModels.pdb
