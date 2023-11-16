@@ -62,7 +62,7 @@ namespace AhoSqlServerDB
         {
             SqlConnection conn = new SqlConnection(connString); // 链接数据库
             SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
-            StudentClass studentClass = new StudentClass();
+
             try
             {
                 conn.Open();
@@ -83,6 +83,33 @@ namespace AhoSqlServerDB
 
         #endregion
 
+
+        #region 读取多个对象
+
+        /// <summary>
+        /// 读取多个对象
+        /// </summary>
+        /// <param name="sql">SQL语句</param>
+        /// <returns></returns>
+        public static SqlDataReader GetDataReader(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                WriteLine("执行SqlDataReader GetDataReader(string sql)方法出错：" + ex.Message);
+                throw ex;
+            }
+        }
+
+
+        #endregion
 
         #region 单一查询结果
         //string sql = "select ClassName from StudentClass where ClassName=N'网络班'";
