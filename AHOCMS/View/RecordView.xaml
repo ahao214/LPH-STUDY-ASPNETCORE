@@ -7,6 +7,17 @@
              mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Record}" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="RecordView" FontSize="20"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border BorderThickness="0 0 0 1" BorderBrush="#383839">
+            <TextBlock Text="标题" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        </Border>
+
+
+
     </Grid>
 </UserControl>
