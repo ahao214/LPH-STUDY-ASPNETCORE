@@ -15,12 +15,40 @@ namespace AhoSqlServerDB
     /// 
     /// 封装：抽取变化的 封装不变的
     /// </summary>
-    public  class SQLHelper
+    public class SQLHelper
     {
         // 链接字符串---链接数据库用
         private static readonly string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentManager;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
+        #region 增、删、改
 
+        /// <summary>
+        /// 增、删、改(insert/delete/update)
+        /// </summary>
+        /// <param name="sql">SQL语句</param>
+        /// <returns></returns>
+        public static int GetSingle(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            try
+            {
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                WriteLine("执行GetSingle(string sql)方法出错:" + ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }           
+        }
+
+        #endregion
 
 
 
