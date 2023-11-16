@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using AHOCMS.Models;
+using Models;
 
 namespace AHOCMS.ViewModel
 {
@@ -27,6 +28,11 @@ namespace AHOCMS.ViewModel
                 cargoTypes = value;
                 RaisePropertyChanged();
             }
+        }
+
+        public CargoTypeViewModel()
+        {
+            cargoTypes = new CargoTypeProvider().Select();
         }
     }
 }
