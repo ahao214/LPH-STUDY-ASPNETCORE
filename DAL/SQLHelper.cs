@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using static System.Console;
 using System.Data;
 
-namespace AhoSqlServerDB
+namespace DAL
 {
     /// <summary>
     /// SQL助手
