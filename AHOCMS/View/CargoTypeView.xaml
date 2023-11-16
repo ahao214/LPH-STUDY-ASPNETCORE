@@ -15,6 +15,9 @@
         <Border BorderThickness="0 0 0 1" BorderBrush="#383839">
             <TextBlock Text="物资类型定义" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
+
+        <TextBlock Text="&#xf055;" FontFamily="../Fonts/#FontAwesome" Margin="0 0 25 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -47,7 +50,9 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <StackPanel Grid.Row="1"/>
+            <StackPanel Grid.Row="1">
+                
+            </StackPanel>                     
         </Grid>
 
 
