@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AhoSqlServerDB
+namespace StuModels
 {
     /// <summary>
     /// 学生实体类
