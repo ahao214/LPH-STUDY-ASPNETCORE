@@ -12,7 +12,8 @@
                 <ResourceDictionary Source="Resources/RadioButtonMenuDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/ToggleButtonDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/ListBoxDictionary.xaml"/>
-
+                <ResourceDictionary Source="Resources/DataGridDictionary.xaml"/>
+                
 
             </ResourceDictionary.MergedDictionaries>
 
