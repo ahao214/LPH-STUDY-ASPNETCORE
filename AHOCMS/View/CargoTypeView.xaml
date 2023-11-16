@@ -20,12 +20,15 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <DataGrid ItemsSource="{Binding CargoTypes}">
-                <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
-                <DataGridTextColumn Header="物资名称" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="备注" Binding="{Binding Tag}"/>
-                <DataGridTextColumn Header="插入日期" Binding="{Binding InsertDate}"/>
-                <DataGridTextColumn Header="操作员" Binding="{Binding MemberName}"/>
+            <DataGrid ItemsSource="{Binding CargoTypes}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="物资名称" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="备注" Binding="{Binding Tag}"/>
+                    <DataGridTextColumn Header="插入日期" Binding="{Binding InsertDate}"/>
+                    <DataGridTextColumn Header="登录员" Binding="{Binding MemberName}"/>
+                    
+                </DataGrid.Columns>
             </DataGrid>
             <StackPanel Grid.Row="1"/>
         </Grid>
