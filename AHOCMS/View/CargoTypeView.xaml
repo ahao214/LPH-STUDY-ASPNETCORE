@@ -20,7 +20,11 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <ListBox />
+            <ListBox ItemsSource="{Binding CargoTypes}">
+                <ListBoxItem>
+                    
+                </ListBoxItem>
+            </ListBox>
             <StackPanel Grid.Row="1"/>
         </Grid>
 

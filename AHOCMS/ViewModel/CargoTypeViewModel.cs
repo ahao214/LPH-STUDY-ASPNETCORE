@@ -11,12 +11,12 @@ namespace AHOCMS.ViewModel
 {
     public class CargoTypeViewModel:ViewModelBase
     {
-        private ObservableCollection<CargoType> cargoTypes = new ObservableCollection<CargoType>();
+        private List<CargoType> cargoTypes = new List<CargoType>();
 
         /// <summary>
         /// 所有物资类型
         /// </summary>
-        public ObservableCollection<CargoType> CargoTypes
+        public List<CargoType> CargoTypes
         {
             get
             {
