@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AHOCMS.ViewModel
 {
-    internal class MemberViewModel
+    public class MemberViewModel
     {
     }
 }

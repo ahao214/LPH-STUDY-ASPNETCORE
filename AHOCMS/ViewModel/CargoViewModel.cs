@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AHOCMS.ViewModel
 {
-    internal class CargoViewModel
+    public class CargoViewModel
     {
     }
 }
