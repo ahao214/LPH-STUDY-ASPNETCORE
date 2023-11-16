@@ -29,5 +29,11 @@ namespace AHOCMS
             get { return member; }
             set { member = value; RaisePropertyChanged("CurrentUser"); }
         }
+
+        /// <summary>
+        ///  主窗体
+        /// </summary>
+        public MainWindow MainWindow { get; set; } = null;
+
     }
 }

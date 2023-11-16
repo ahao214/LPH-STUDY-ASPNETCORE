@@ -1,4 +1,7 @@
+using AHOCMS.View;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using System.Windows.Controls;
 
 namespace AHOCMS.ViewModel
 {
@@ -23,14 +26,44 @@ namespace AHOCMS.ViewModel
         /// </summary>
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+
         }
+
+
+        public RelayCommand<RadioButton> SelectViewCommand
+        {
+            get
+            {
+                return new RelayCommand<RadioButton>((arg) =>
+                {
+                    if (!(arg is RadioButton button))
+                        return;
+                    if (string.IsNullOrEmpty(button.Content.ToString()))
+                        return;
+                    switch (button.Content.ToString())
+                    {
+                        case "首页":
+                            AppData .Instance .MainWindow .container.Content = new IndexView();
+                            break;
+                        case "出入库":
+                            AppData.Instance.MainWindow.container.Content = new RecordView();
+                            break;
+                        case "物资管理":
+                            AppData.Instance.MainWindow.container.Content = new CargoView();
+                            break;
+                        case "用户管理":
+                            AppData.Instance.MainWindow.container.Content = new MemberView();
+                            break;
+                        case "类型设置":
+                            AppData.Instance.MainWindow.container.Content = new CargoTypeView();
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            }
+        }
+
+
     }
 }

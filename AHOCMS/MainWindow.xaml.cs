@@ -25,39 +25,7 @@ namespace AHOCMS
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            if (!(sender is RadioButton button))
-            {
-                return;
-            }
-            if (string.IsNullOrEmpty(button.Content.ToString()))
-            {
-                return;
-            }
-            switch (button.Content.ToString())
-            {
-                case "首页":
-                    container.Content = new IndexView();
-                    break;
-                case "出入库":
-                    container.Content = new RecordView();
-                    break;
-                case "物资管理":
-                    container.Content = new CargoView();
-                    break;
-                case "用户管理":
-                    container.Content = new MemberView();
-                    break;
-                case "类型设置":
-                    container.Content = new CargoTypeView();
-                    break;
-                default:
-                    break;
-            }
-        }
+            AppData.Instance.MainWindow = this;
+        }        
     }
 }

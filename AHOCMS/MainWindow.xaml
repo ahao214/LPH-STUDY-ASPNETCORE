@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AHOCMS"
-        mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:AHOCMS" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+                  mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
         Title="{Binding AppData.SystemName}" 
                   Background="#2B2C31" Height="700" Width="1200">
 
@@ -56,11 +56,42 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="1">
-                    <RadioButton Width="200" Height="50"  Tag="&#xf17a;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White"  Checked="RadioButton_Checked"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf1c0;" Style="{DynamicResource RadioButtonMenuStyle}" Content="出入库" FontSize="18" Foreground="White" Checked="RadioButton_Checked"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="物资管理" FontSize="18" Foreground="White" Checked="RadioButton_Checked"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf234;" Style="{DynamicResource RadioButtonMenuStyle}" Content="用户管理" FontSize="18" Foreground="White" Checked="RadioButton_Checked"/>
-                    <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="类型设置" FontSize="18" Foreground="White" Checked="RadioButton_Checked"/>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf17a;" Style="{DynamicResource RadioButtonMenuStyle}" Content="首页" FontSize="18" Foreground="White">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        
+                    </RadioButton>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf1c0;" Style="{DynamicResource RadioButtonMenuStyle}" Content="出入库" FontSize="18" Foreground="White">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf187;" Style="{DynamicResource RadioButtonMenuStyle}" Content="物资管理" FontSize="18" Foreground="White">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf234;" Style="{DynamicResource RadioButtonMenuStyle}" Content="用户管理" FontSize="18" Foreground="White">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
+                    <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="类型设置" FontSize="18" Foreground="White">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </RadioButton>
 
 
                 </StackPanel>
