@@ -7,22 +7,18 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
-                
+
                 <!--my styles-->
                 <ResourceDictionary Source="Resources/RadioButtonMenuDictionary.xaml"/>
                 <ResourceDictionary Source="Resources/ToggleButtonDictionary.xaml"/>
-                <ResourceDictionary Source="Resources/ListBoxDictionary.xaml"/>
-                <ResourceDictionary Source="Resources/DataGridDictionary.xaml"/>
                 
+
 
             </ResourceDictionary.MergedDictionaries>
 
-            
+
 
             <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:AHOCMS.ViewModel" />
-            <!--public color-->
-            <SolidColorBrush x:Key="AppBackground" Color="#2B2C31"/>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>
