@@ -16,6 +16,8 @@ namespace DAL
     /// </summary>
     public class ClassService
     {
+        #region 返回班级列表
+
         /// <summary>
         /// 返回班级列表
         /// </summary>
@@ -35,6 +37,10 @@ namespace DAL
             }
             return classList;
         }
+
+        #endregion
+
+        #region 根据班级ID查询
 
         /// <summary>
         /// 根据班级ID查询
@@ -57,14 +63,18 @@ namespace DAL
             return objClass;
         }
 
+        #endregion
+
+        #region 根据班级名称查询
+
         /// <summary>
         /// 根据班级名称查询
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public StudentClass GetClassObject(string name)
+        public StudentClass GetClassObject(string className)
         {
-            string sql = $"select Id,ClassName from StudentClass where ClassName={name}";
+            string sql = $"select Id,ClassName from StudentClass where ClassName={className}";
             SqlDataReader reader = SQLHelper.GetDataReader(sql);
             StudentClass objClass = new StudentClass();
             while (reader.Read())
@@ -77,6 +87,41 @@ namespace DAL
             }
             return objClass;
         }
+
+        #endregion
+
+        #region 删除班级
+
+        /// <summary>
+        /// 根据ID删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool DeleteClass(int id)
+        {
+            string sql = $"Delete from StudentClass Where Id={id}";
+            int result = SQLHelper.GetSingle(sql);
+            return result > 0;
+        }
+
+        #endregion
+
+        #region 修改班级
+
+        /// <summary>
+        /// 修改班级名称
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="className"></param>
+        /// <returns></returns>
+        public bool UpdateClass(int id, string className)
+        {
+            string sql = $"update StudentClass set ClassName=N'{className}' where Id={id}";
+            int result = SQLHelper.GetSingle(sql);
+            return result > 0;
+        }
+
+        #endregion
 
     }
 }
