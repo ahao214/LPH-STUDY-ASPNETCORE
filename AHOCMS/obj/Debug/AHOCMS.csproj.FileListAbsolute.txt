@@ -49,3 +49,13 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS_Content.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\RadioButtonMenuDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\ToggleButtonDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\CargoTypeView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\CargoView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\IndexView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\MemberView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\RecordView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\CargoTypeView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\CargoView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\IndexView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\MemberView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\RecordView.baml
