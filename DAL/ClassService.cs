@@ -123,5 +123,21 @@ namespace DAL
 
         #endregion
 
+        #region 添加班级
+
+        /// <summary>
+        /// 添加班级
+        /// </summary>
+        /// <param name="className">班级名称</param>
+        /// <returns></returns>
+        public bool AddClass(string className)
+        {
+            string sql = $"insert into StudentClass(ClassName) values(N'{className}')";
+            int result = SQLHelper.GetSingle(sql);
+            return result > 0;
+        }
+
+        #endregion
+
     }
 }
