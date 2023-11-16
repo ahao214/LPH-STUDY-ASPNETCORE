@@ -124,9 +124,29 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RecordProvider.cs" />
+    <Compile Include="ViewModel\CargoTypeViewModel.cs" />
+    <Compile Include="ViewModel\CargoViewModel.cs" />
+    <Compile Include="ViewModel\IndexViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MemberViewModel.cs" />
+    <Compile Include="ViewModel\RecordViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\CargoTypeView.xaml.cs">
+      <DependentUpon>CargoTypeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CargoView.xaml.cs">
+      <DependentUpon>CargoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IndexView.xaml.cs">
+      <DependentUpon>IndexView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MemberView.xaml.cs">
+      <DependentUpon>MemberView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RecordView.xaml.cs">
+      <DependentUpon>RecordView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -147,6 +167,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\ToggleButtonDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CargoTypeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CargoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IndexView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MemberView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RecordView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
