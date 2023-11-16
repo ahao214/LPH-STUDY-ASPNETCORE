@@ -111,8 +111,8 @@ namespace DAL
         /// <summary>
         /// 修改班级名称
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="className"></param>
+        /// <param name="id">班级ID</param>
+        /// <param name="className">班级名称</param>
         /// <returns></returns>
         public bool UpdateClass(int id, string className)
         {
