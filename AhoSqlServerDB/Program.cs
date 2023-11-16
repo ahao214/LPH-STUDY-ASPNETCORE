@@ -34,24 +34,37 @@ namespace AhoSqlServerDB
 
 
 
-            string sql = "select id,classname from studentclass";
-            SqlDataReader reader = SQLHelper.GetDataReader(sql);
-            List<StudentClass> stuList = new List<StudentClass>();
+            //string sql = "select id,classname from studentclass";
+            //SqlDataReader reader = SQLHelper.GetDataReader(sql);
+            //List<StudentClass> stuList = new List<StudentClass>();
 
-            while (reader.Read())
+            //while (reader.Read())
+            //{
+            //    StudentClass stu = new StudentClass();
+            //    stu.Id = Convert.ToInt32(reader["id"]);
+            //    stu.ClassName = reader["ClassName"].ToString();
+            //    stuList.Add(stu);
+            //}
+
+            //foreach (var item in stuList)
+            //{
+            //    WriteLine($"班级ID:{item.Id},班级名称：{item.ClassName}");
+            //}
+
+            #region 测试事务
+
+            List<string> sqlList = new List<string>()
             {
-                StudentClass stu = new StudentClass();
-                stu.Id = Convert.ToInt32(reader["id"]);
-                stu.ClassName = reader["ClassName"].ToString();
-                stuList.Add(stu);
-            }
+                "insert into StudentClass(ClassName) values(N'VIP一班')",
+                "insert into StudentClass(ClassName) values(N'VIP二班')",
+                "insert into StudentClass(ClassName) values(N'VIP三班')",
+                "insert into StudentClass(ClassName) values(N'VIP四班')"
+            };
 
-            foreach (var item in stuList)
-            {
-                WriteLine($"班级ID:{item.Id},班级名称：{item.ClassName}");
-            }
+            int result = SQLHelper.UpdateByTransaction(sqlList);
+            WriteLine("执行成功" + result + "SQL语句");
 
-
+            #endregion
 
             ReadKey();
 
