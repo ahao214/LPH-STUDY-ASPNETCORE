@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AHOCMS" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
                   mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Main}" WindowState="Maximized" WindowStartupLocation="CenterScreen"
         Title="{Binding AppData.SystemName}" 
-                  Background="#2B2C31" Height="700" Width="1200">
+                  Background="{StaticResource AppBackground}" Height="700" Width="1200">
 
     <mah:MetroWindow.Resources>
         <Storyboard x:Key="OnChecked">
