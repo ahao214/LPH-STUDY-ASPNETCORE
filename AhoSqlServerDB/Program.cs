@@ -30,6 +30,10 @@ namespace AhoSqlServerDB
             //int classId = (int)stuObject;
             //WriteLine($"班级ID:{classId}");
 
+
+
+
+
             string sql = "select id,classname from studentclass";
             SqlDataReader reader = SQLHelper.GetDataReader(sql);
             List<StudentClass> stuList = new List<StudentClass>();
