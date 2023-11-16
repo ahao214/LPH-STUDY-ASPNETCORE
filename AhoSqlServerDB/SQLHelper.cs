@@ -45,12 +45,43 @@ namespace AhoSqlServerDB
             finally
             {
                 conn.Close();
-            }           
+            }
         }
 
         #endregion
 
 
+        #region 读取单一结果
+
+        /// <summary>
+        /// 读取单一结果
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static object GetSingleObject(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connString); // 链接数据库
+            SqlCommand cmd = new SqlCommand(sql, conn); //发送SQL命令
+            StudentClass studentClass = new StudentClass();
+            try
+            {
+                conn.Open();
+                object obj = cmd.ExecuteScalar();
+                return obj;
+            }
+            catch (Exception ex)
+            {
+                WriteLine("执行GetSingleObject(string sql)方法出错L:" + ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
+        #endregion
 
 
         #region 单一查询结果
