@@ -16,6 +16,12 @@ namespace Ant_Linq
     {
         static void Main(string[] args)
         {
+            IEnumerableShow enumerableShow = new IEnumerableShow();
+            enumerableShow.Show();
+
+
+            Console.ReadKey();
+
         }
     }
 }
