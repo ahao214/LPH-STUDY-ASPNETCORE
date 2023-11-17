@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
-
-
+using SqlServerDB;
 
 namespace Reflection
 {
@@ -18,19 +17,33 @@ namespace Reflection
     {
         static void Main(string[] args)
         {
-            // 加载dll文件
+            //[1] 加载dll文件
 
             // 方式一:这个DLL文件要在启动项目下
-            Assembly assembly1 = Assembly.Load("SqlServerDB");
+            //Assembly assembly1 = Assembly.Load("SqlServerDB");
 
             // 方式二：完整路径
-            Assembly assembly2 = Assembly.LoadFile(@"F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.dll");
+            //Assembly assembly2 = Assembly.LoadFile(@"F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.dll");
 
             // 方式三：完整路径
-            Assembly assembly3 = Assembly.LoadFrom(@"F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.dll");
+            //Assembly assembly3 = Assembly.LoadFrom(@"F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.dll");
 
             Assembly assembly4 = Assembly.LoadFrom(@"SqlServerDB.dll");
 
+
+            //[2] 获取指定类型
+            Type type = assembly4.GetType("SqlServerDB.ReflectionTest");
+
+            //[3] 实例化
+            //ReflectionTest refTest = new ReflectionTest();  //这种实例化是知道具体类型，是静态实例化
+
+            // 动态实例化--调用我们的构造方法
+            object obj1 = Activator.CreateInstance(type);
+
+            // 动态实例化--调用我们的有参数的构造方法
+            object obj2 = Activator.CreateInstance(type, new object[] { "Block编程" });
+
+            Console.ReadKey();
         }
     }
 }
