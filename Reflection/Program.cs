@@ -62,8 +62,17 @@ namespace Reflection
 
 
             // 调用私有构造函数
-            //object obj3 = Activator.CreateInstance(type, true);
+            object obj3 = Activator.CreateInstance(type, true);
 
+            // 调用普通方法
+            ReflectionTest reflectionTest = obj3 as ReflectionTest;// as 转换的好处，它不报错，类型不对的话就返回null
+            reflectionTest.Show1();
+
+            // 调用私有方法
+            var method = type.GetMethod("Show2",BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic);
+            method.Invoke(obj3, new object[] { });
+
+            Console.WriteLine("--------泛型方法调用--------");
 
 
 

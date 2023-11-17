@@ -26,5 +26,30 @@ namespace SqlServerDB
         //    Console.WriteLine($"这是有参数构造方法：{name}");
         //}
 
+        public void Show1()
+        {
+            Console.WriteLine("调用普通方法", this.GetType());
+        }
+
+        private void Show2()
+        {
+            Console.WriteLine("调用私有方法", this.GetType());
+        }
+
+        public void Show3<T>()
+        {
+            Console.WriteLine("调用无参数泛型方法", this.GetType());
+        }
+
+        public void Show4<T>(int id, string name)
+        {
+            Console.WriteLine($"调用有参数构造方法:参数是{id},{name}", this.GetType());
+        }
+
+
+
+
+
+
     }
 }
