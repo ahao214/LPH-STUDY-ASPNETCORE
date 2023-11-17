@@ -487,6 +487,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreBase", "AspNetCor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavsScriptFromIntroductionToPractice", "JavsScriptFromIntroductionToPractice", "{35B1C061-B4F9-412A-BAF0-01ABBC4F3239}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ch01", "ch01", "{5A116828-C4C7-4B5E-A89F-0D9AC6A89064}"
+	ProjectSection(SolutionItems) = preProject
+		Chap1.1.html = Chap1.1.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1353,6 +1358,7 @@ Global
 		{78CDC12F-C46E-46B6-B726-5F02ABCD20AB} = {6065342A-5EBE-4380-8114-8BA92A596BF9}
 		{88029722-4C4C-4F08-9FC5-F88A61217F98} = {78CDC12F-C46E-46B6-B726-5F02ABCD20AB}
 		{35B1C061-B4F9-412A-BAF0-01ABBC4F3239} = {516EE702-6C53-4770-91D9-FED05122F4BF}
+		{5A116828-C4C7-4B5E-A89F-0D9AC6A89064} = {35B1C061-B4F9-412A-BAF0-01ABBC4F3239}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
