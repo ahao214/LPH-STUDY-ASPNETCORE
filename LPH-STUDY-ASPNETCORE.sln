@@ -473,6 +473,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManager", "StudentMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ant-Generic", "Ant-Generic\Ant-Generic.csproj", "{F7B680E0-3109-45F8-9981-0864EA797B24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{55FD5CCD-216A-48BF-A9E1-173EF69656D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1075,6 +1077,10 @@ Global
 		{F7B680E0-3109-45F8-9981-0864EA797B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7B680E0-3109-45F8-9981-0864EA797B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7B680E0-3109-45F8-9981-0864EA797B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FD5CCD-216A-48BF-A9E1-173EF69656D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FD5CCD-216A-48BF-A9E1-173EF69656D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FD5CCD-216A-48BF-A9E1-173EF69656D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FD5CCD-216A-48BF-A9E1-173EF69656D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1312,6 +1318,7 @@ Global
 		{D65A40D2-CB5D-4E4B-9D78-ED54A6F0FF6A} = {137B7CF4-8F4B-4ACF-906B-85F427DFFA90}
 		{A4B48B6B-58A7-4978-B64E-1D25AFFBF149} = {137B7CF4-8F4B-4ACF-906B-85F427DFFA90}
 		{F7B680E0-3109-45F8-9981-0864EA797B24} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{55FD5CCD-216A-48BF-A9E1-173EF69656D4} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
