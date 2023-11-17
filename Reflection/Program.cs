@@ -69,7 +69,7 @@ namespace Reflection
             reflectionTest.Show1();
 
             // 调用私有方法
-            var method = type.GetMethod("Show2",BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic);
+            var method = type.GetMethod("Show2", BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic);
             method.Invoke(obj3, new object[] { });
 
             Console.WriteLine("--------泛型方法调用--------");
@@ -82,26 +82,26 @@ namespace Reflection
             // 有参数
             var method4 = type.GetMethod("Show4");// 查找指定方法
             var genMethod4 = method4.MakeGenericMethod(new Type[] { typeof(string) });  //指定泛型参数类型T
-            genMethod.Invoke(obj3, new object[] {123,"block编程" });
+            genMethod.Invoke(obj3, new object[] { 123, "block编程" });
 
             #region 反射获取属性
 
             Assembly a4 = Assembly.LoadFrom("SqlServerDB.dll");
             Type t2 = a4.GetType("SqlServerDB.PropertyClass");
-            Object obj =Activator .CreateInstance(t2);
+            Object obj = Activator.CreateInstance(t2);
             foreach (var property in t2.GetProperties())
             {
                 Console.WriteLine(property.Name);
                 // 给属性设置值
-                if(property.Name .Equals ("Id"))
+                if (property.Name.Equals("Id"))
                 {
                     property.SetValue(obj, 1);
                 }
-                else if (property .Name .Equals ("Name"))
+                else if (property.Name.Equals("Name"))
                 {
                     property.SetValue(obj, "Block编程");
                 }
-                else if(property .Name .Equals ("Phone"))
+                else if (property.Name.Equals("Phone"))
                 {
                     property.SetValue(obj, "111");
                 }
