@@ -43,6 +43,13 @@ namespace Reflection
             // 动态实例化--调用我们的有参数的构造方法
             object obj2 = Activator.CreateInstance(type, new object[] { "Block编程" });
 
+
+            // 调用私有构造函数
+            object obj3 = Activator.CreateInstance(type, true);
+
+
+
+
             Console.ReadKey();
         }
     }

@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SqlServerDB\SqlServerDB.csproj">
+      <Project>{5CB0990C-3A01-48A7-A3AD-89D66F408752}</Project>
+      <Name>SqlServerDB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
