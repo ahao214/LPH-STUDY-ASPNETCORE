@@ -87,6 +87,7 @@ namespace DbFirst
             {
                 // 根据ID查询
                 //var stu1 = db.Student.Find(1);
+                //var stu1 = db.Student.Where(s => s.Name == "Jakc").FirstOrDefault();
                 //WriteLine(stu1.Name);
 
 
