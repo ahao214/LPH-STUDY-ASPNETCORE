@@ -13,5 +13,27 @@ namespace DbFirst
 
 
         }
+
+
+        /// <summary>
+        /// 添加数据
+        /// </summary>
+        static void Add()
+        {
+            using (var db = new Entities())
+            {
+                Student stu = new Student
+                {
+                    Name = "Castle编程",
+                    Address = "SH",
+                    Age = 33,
+                    Phone = "110"
+                };
+                db.Student.Add(stu);
+                db.SaveChanges();   //执行到数据库
+            }
+
+        }
+
     }
 }
