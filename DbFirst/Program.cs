@@ -137,12 +137,12 @@ namespace DbFirst
         {
             using (var db = new  Entities ())
             {
-                // 官方推荐
+                // 官方推荐 只会更新你需要修改的
                 Student stu = db.Student.Where(s => s.Id == 1).FirstOrDefault();
                 stu.Name = "测试";
                 db.SaveChanges();
 
-                // 方式二
+                // 方式二 会修改全部字段
                 Student stu1 = db.Student.Where(s => s.Id == 1).FirstOrDefault();
                 stu1.Age = 30;
                 db.Entry(stu1).State = EntityState.Modified;
@@ -152,5 +152,26 @@ namespace DbFirst
 
         #endregion
 
+        #region 删除
+
+        static void Delete()
+        {
+            using (var db = new Entities())
+            {
+                Student student = new Student { Id = 2 };
+
+                // 方式一
+                db.Student.Attach(student);
+                db.Student.Remove(student);
+                db.SaveChanges();
+
+
+                // 方式二
+                db.Entry(student).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+        #endregion
     }
 }
