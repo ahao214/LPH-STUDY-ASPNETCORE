@@ -84,6 +84,34 @@ namespace Reflection
             var genMethod4 = method4.MakeGenericMethod(new Type[] { typeof(string) });  //指定泛型参数类型T
             genMethod.Invoke(obj3, new object[] {123,"block编程" });
 
+            #region 反射获取属性
+
+            Assembly a4 = Assembly.LoadFrom("SqlServerDB.dll");
+            Type t2 = a4.GetType("SqlServerDB.PropertyClass");
+            Object obj =Activator .CreateInstance(t2);
+            foreach (var property in t2.GetProperties())
+            {
+                Console.WriteLine(property.Name);
+                // 给属性设置值
+                if(property.Name .Equals ("Id"))
+                {
+                    property.SetValue(obj, 1);
+                }
+                else if (property .Name .Equals ("Name"))
+                {
+                    property.SetValue(obj, "Block编程");
+                }
+                else if(property .Name .Equals ("Phone"))
+                {
+                    property.SetValue(obj, "111");
+                }
+                // 获取属性值
+                Console.WriteLine(property.GetValue(obj));
+            }
+
+            #endregion
+
+
             Console.ReadKey();
         }
     }
