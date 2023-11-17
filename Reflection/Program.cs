@@ -34,18 +34,24 @@ namespace Reflection
             //[2] 获取指定类型
             Type type = assembly4.GetType("SqlServerDB.ReflectionTest");
 
+            // 获取所有类型
+            foreach (var item in assembly4.GetTypes())
+            {
+                Console.WriteLine(item.Name);
+            }
+
             //[3] 实例化
             //ReflectionTest refTest = new ReflectionTest();  //这种实例化是知道具体类型，是静态实例化
 
             // 动态实例化--调用我们的构造方法
-            object obj1 = Activator.CreateInstance(type);
+            //object obj1 = Activator.CreateInstance(type);
 
             // 动态实例化--调用我们的有参数的构造方法
-            object obj2 = Activator.CreateInstance(type, new object[] { "Block编程" });
+            //object obj2 = Activator.CreateInstance(type, new object[] { "Block编程" });
 
 
             // 调用私有构造函数
-            object obj3 = Activator.CreateInstance(type, true);
+            //object obj3 = Activator.CreateInstance(type, true);
 
 
 
