@@ -41,9 +41,13 @@ namespace Reflection
             }
 
             // 获取类型里面的所有的构造方法
-            foreach (var item in  type.GetConstructors())
+            foreach (var ctor in type.GetConstructors())
             {
-                Console.WriteLine($"构造方法：{item.Name}"); 
+                Console.WriteLine($"构造方法：{ctor.Name}");
+                foreach (var param in ctor.GetParameters())
+                {
+                    Console.WriteLine($"构造方法的参数：{param.ParameterType}");
+                }
             }
 
 
