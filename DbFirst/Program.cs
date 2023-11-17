@@ -18,6 +18,7 @@ namespace DbFirst
             ReadKey();
         }
 
+        #region 添加数据
 
         /// <summary>
         /// 添加数据
@@ -52,6 +53,7 @@ namespace DbFirst
 
         }
 
+        #endregion
 
         #region 批处理
 
@@ -76,6 +78,34 @@ namespace DbFirst
 
         #endregion
 
+        #region 查询
+
+        static void Query()
+        {
+           
+            using (var db = new Entities())
+            {
+                // 根据ID查询
+                var stu1 = db.Student.Find(1);
+                WriteLine(stu1.Name);
+
+
+                // 根据条件查询
+
+
+                // 查询所有
+
+
+                // 延迟查询
+
+
+                // 分页查询
+            }
+
+
+        }
+
+        #endregion
 
     }
 }
