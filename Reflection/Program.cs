@@ -40,6 +40,13 @@ namespace Reflection
                 Console.WriteLine(item.Name);
             }
 
+            // 获取类型里面的所有的构造方法
+            foreach (var item in  type.GetConstructors())
+            {
+                Console.WriteLine($"构造方法：{item.Name}"); 
+            }
+
+
             //[3] 实例化
             //ReflectionTest refTest = new ReflectionTest();  //这种实例化是知道具体类型，是静态实例化
 
