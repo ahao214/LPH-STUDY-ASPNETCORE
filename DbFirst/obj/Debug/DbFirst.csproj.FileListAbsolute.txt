@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\DbFirst.exe.config
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\DbFirst.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\DbFirst.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\EntityFramework.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\EntityFramework.SqlServer.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\EntityFramework.xml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\EntityFramework.SqlServer.xml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.SuggestedBindingRedirects.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.pdb
