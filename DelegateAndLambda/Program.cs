@@ -22,6 +22,29 @@ namespace DelegateAndLambda
             int sum = addDele.Invoke(1, 2);
             Console.WriteLine(sum);
 
+            #region Lambda
+
+            Action<string> action1 = new Action<string>(delegate (string msg)
+            {
+                Console.WriteLine(msg);
+            });
+
+            action1("你好我是泛型委托Action 使用了匿名方法");
+
+
+            Action<string> action2 = new Action<string>((string msg) =>
+            {
+                Console.WriteLine(msg);
+            });
+            action2("你好我是泛型委托Action 使用了匿名方法");
+
+            // 一个参数 一个语句
+            Action<string> action3 = new Action<string>(msg => Console.WriteLine(msg));
+
+
+            #endregion
+
+
             Console.ReadKey();
         }
 
