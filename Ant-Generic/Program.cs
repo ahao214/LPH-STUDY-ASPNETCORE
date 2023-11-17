@@ -2,6 +2,17 @@
 
 Title = "泛型";
 
+#region 泛型约束
+
+static void Test<T>() where T : class
+{
+    T tmp = null;
+}
+
+#endregion
+
+
+
 List<int> lst = new List<int>();
 lst.Add(1);
 int i = lst[0];
@@ -45,3 +56,5 @@ public class ListBlock<T>
 }
 
 #endregion
+
+
