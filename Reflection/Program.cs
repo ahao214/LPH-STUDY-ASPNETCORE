@@ -74,7 +74,15 @@ namespace Reflection
 
             Console.WriteLine("--------泛型方法调用--------");
 
+            // 无参数
+            var method3 = type.GetMethod("Show3");// 查找指定方法
+            var genMethod = method3.MakeGenericMethod(new Type[] { typeof(int) });  //指定泛型参数类型T
+            genMethod.Invoke(obj3, new object[] { });
 
+            // 有参数
+            var method4 = type.GetMethod("Show4");// 查找指定方法
+            var genMethod4 = method4.MakeGenericMethod(new Type[] { typeof(string) });  //指定泛型参数类型T
+            genMethod.Invoke(obj3, new object[] {123,"block编程" });
 
             Console.ReadKey();
         }
