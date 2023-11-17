@@ -82,7 +82,7 @@ namespace DbFirst
 
         static void Query()
         {
-           
+
             using (var db = new Entities())
             {
                 // 根据ID查询
@@ -98,7 +98,11 @@ namespace DbFirst
                 }
 
                 // 查询所有
-
+                var lstStudent = db.Student.ToList();
+                foreach (var item in lstStudent)
+                {
+                    WriteLine($"StudentID is ：{item.Id},Student's name is :{item.Name}");
+                }
 
                 // 延迟查询
 
