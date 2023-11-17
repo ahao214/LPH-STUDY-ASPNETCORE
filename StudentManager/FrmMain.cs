@@ -20,6 +20,7 @@ namespace StudentManager
         public FrmMain()
         {
             InitializeComponent();
+            LoadClassList();    // 下载班级列表
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -34,6 +35,23 @@ namespace StudentManager
             {
                 MessageBox.Show("添加失败!");
             }
+
+        }
+
+        /// <summary>
+        ///下载班级列表 
+        /// </summary>
+        private void LoadClassList()
+        {
+            //this.liClassList.DataSource = classLogic.ClassList();
+
+            this.liClassList.DisplayMember = "ClassName";   //显示选项值
+            this.liClassList.ValueMember = "Id";
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
 
         }
     }
