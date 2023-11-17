@@ -86,12 +86,16 @@ namespace DbFirst
             using (var db = new Entities())
             {
                 // 根据ID查询
-                var stu1 = db.Student.Find(1);
-                WriteLine(stu1.Name);
+                //var stu1 = db.Student.Find(1);
+                //WriteLine(stu1.Name);
 
 
                 // 根据条件查询
-
+                var query = db.Student.Where(s => s.Id > 1);
+                foreach (var item in query)
+                {
+                    WriteLine(item.Name);
+                }
 
                 // 查询所有
 
