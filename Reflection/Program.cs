@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Reflection
 {
     /// <summary>
-    /// 反射：
+    /// 反射：就是操作dll文件的一个类库
     /// </summary>
     internal class Program
     {
