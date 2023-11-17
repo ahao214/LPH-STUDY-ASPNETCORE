@@ -107,11 +107,26 @@ namespace DbFirst
 
                 // 延迟查询
 
-
-                // 分页查询
             }
+        }
 
+        /// <summary>
+        /// 分页查询
+        /// </summary>
+        /// <param name="pageIndex">第几页</param>
+        /// <param name="pageSize">每页几条数据</param>
+        static void PageQuery(int pageIndex,int pageSize)
+        {
+            using (var db = new Entities())
+            {
+                // 分页查询一定要排序
+                var query = db.Student.OrderBy(s => s.Id).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                foreach (var item in query)
+                {
+                    WriteLine($"StudentID is ：{item.Id},Student's name is :{item.Name}");
+                }
 
+            }
         }
 
         #endregion
