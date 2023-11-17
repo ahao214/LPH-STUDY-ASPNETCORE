@@ -6,6 +6,9 @@ namespace AspNetCoreBase
     {
         static void Main(string[] args)
         {
+            IocShow ioc = new IocShow();
+            ioc.Show();
+
             Console.WriteLine("Hello World!");
         }
     }
