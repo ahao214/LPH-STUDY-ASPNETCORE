@@ -13,8 +13,8 @@ namespace DbFirst
     {
         static void Main(string[] args)
         {
-            Add();
-
+            //Add();
+            AddBatch();
             ReadKey();
         }
 
@@ -126,6 +126,27 @@ namespace DbFirst
                     WriteLine($"StudentID is ：{item.Id},Student's name is :{item.Name}");
                 }
 
+            }
+        }
+
+        #endregion
+
+        #region 修改
+
+        static void Update()
+        {
+            using (var db = new  Entities ())
+            {
+                // 官方推荐
+                Student stu = db.Student.Where(s => s.Id == 1).FirstOrDefault();
+                stu.Name = "测试";
+                db.SaveChanges();
+
+                // 方式二
+                Student stu1 = db.Student.Where(s => s.Id == 1).FirstOrDefault();
+                stu1.Age = 30;
+                db.Entry(stu1).State = EntityState.Modified;
+                db.SaveChanges();
             }
         }
 
