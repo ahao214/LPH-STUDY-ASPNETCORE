@@ -477,6 +477,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerDB", "SqlServerDB\SqlServerDB.csproj", "{5CB0990C-3A01-48A7-A3AD-89D66F408752}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAndLambda", "DelegateAndLambda\DelegateAndLambda.csproj", "{B08D01DC-A52B-4C72-A51F-BA99BF474A77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1087,6 +1089,10 @@ Global
 		{5CB0990C-3A01-48A7-A3AD-89D66F408752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB0990C-3A01-48A7-A3AD-89D66F408752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB0990C-3A01-48A7-A3AD-89D66F408752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08D01DC-A52B-4C72-A51F-BA99BF474A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08D01DC-A52B-4C72-A51F-BA99BF474A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08D01DC-A52B-4C72-A51F-BA99BF474A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08D01DC-A52B-4C72-A51F-BA99BF474A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1326,6 +1332,7 @@ Global
 		{F7B680E0-3109-45F8-9981-0864EA797B24} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{55FD5CCD-216A-48BF-A9E1-173EF69656D4} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 		{5CB0990C-3A01-48A7-A3AD-89D66F408752} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
+		{B08D01DC-A52B-4C72-A51F-BA99BF474A77} = {86B8D046-90A1-4BAB-805A-1F4D632E43AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
