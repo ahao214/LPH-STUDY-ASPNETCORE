@@ -1,0 +1,6 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\bin\Debug\SqlServerDB.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\obj\Debug\SqlServerDB.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\obj\Debug\SqlServerDB.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\obj\Debug\SqlServerDB.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\SqlServerDB\obj\Debug\SqlServerDB.pdb
