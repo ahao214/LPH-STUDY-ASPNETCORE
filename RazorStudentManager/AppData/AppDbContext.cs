@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RazorStudentManager.Model;
+
 
 namespace RazorStudentManager.AppData
 {
@@ -8,6 +10,8 @@ namespace RazorStudentManager.AppData
         {
 
         }
+
+        public DbSet<Student> Students { get; set; }
 
     }
 }
