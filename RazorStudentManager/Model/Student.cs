@@ -7,8 +7,10 @@ namespace RazorStudentManager.Model
     /// </summary>
     public class Student
     {
+        [Required]
         public int Id { get; set; }
         [Display(Name = "姓名")]
+        [MaxLength(40)]
         public string Name { get; set; }
         [Display(Name = "年龄")]
         public int Age { get; set; }
