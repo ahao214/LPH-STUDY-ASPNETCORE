@@ -34,6 +34,7 @@ namespace RazorStudentManager.Pages.StudentPage
                 studentObj.Age = student.Age;
                 studentObj.Phone = student.Phone;
                 studentObj.Address = student.Address;
+                studentObj.Gender = student.Gender;
 
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");

@@ -1,4 +1,5 @@
 ﻿@page
+@using RazorStudentManager.Model
 @model RazorStudentManager.Pages.StudentPage.EditModel
 @{
 }
@@ -49,6 +50,20 @@
                 <input class="form-control" asp-for="student.Address" />
             </div>
                         <span asp-validation-for="student.Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="student.Gender"></label>
+            </div>
+            <div class="col-6">
+                <select class="custom-select" asp-for="student.Gender" asp-items="Html.GetEnumSelectList<Gender>()">
+                    <option value="">
+                        请选择性别
+                    </option>
+                </select>
+            </div>
+                        <span asp-validation-for="student.Gender" class="text-danger"></span>
         </div>
 
         <div class="form-group row">
