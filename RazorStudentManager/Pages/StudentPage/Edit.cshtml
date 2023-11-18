@@ -1,0 +1,64 @@
+﻿@page
+@model RazorStudentManager.Pages.StudentPage.EditModel
+@{
+}
+
+
+<br />
+<h1 class="text-info">Edit</h1>
+<br />
+
+<div class="border container p-4">
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="student.Name"></label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" asp-for="student.Name" />
+            </div>
+            <span asp-validation-for="student.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="student.Age"></label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" asp-for="student.Age" />
+            </div>
+                        <span asp-validation-for="student.Age" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="student.Phone"></label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" asp-for="student.Phone" />
+            </div>
+                        <span asp-validation-for="student.Phone" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="student.Address"></label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" asp-for="student.Address" />
+            </div>
+                        <span asp-validation-for="student.Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="修改" class="btn btn-primary form-control"/>
+            </div>
+            <div class="col-3">
+                <a asp-page="/Index" class="btn btn-success form-control">返回</a>
+            </div>
+        </div>
+
+    </form>
+
+</div>

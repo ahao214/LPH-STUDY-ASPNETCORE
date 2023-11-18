@@ -51,7 +51,7 @@
                   <td>@item.Address</td>
                   <td>
                       <button asp-page-handle="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('您确定要删除吗?')">删除</button>
-                      <a asp-page="Edit" class="btn btn-success btn-sm">修改</a>
+                      <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">修改</a>
                   </td>
                   
                 </tr> 
