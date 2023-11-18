@@ -29,7 +29,7 @@ namespace RazorStudentManager.Pages.StudentPage
             {
                 await _db.AddAsync(student);
                 await _db.SaveChangesAsync();
-                return RedirectToPage("Create");
+                return RedirectToPage("Index");
             }
             else
             {

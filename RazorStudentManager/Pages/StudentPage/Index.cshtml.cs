@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using RazorStudentManager.AppData;
 using RazorStudentManager.Model;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RazorStudentManager.Pages.StudentPage
 {
@@ -23,7 +24,24 @@ namespace RazorStudentManager.Pages.StudentPage
             Students = await _db.Students.ToListAsync();
         }
 
+        /// <summary>
+        /// É¾³ý·½·¨
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> OnPostDelete(int id)
+        {
+            var student = await _db.Students.FindAsync(id);
+            if(student ==null)
+            {
+                return NotFound();
+            }
+            _db.Students.Remove(student);   //°Ñstudent×´Ì¬ÉèÖÃÉ¾³ý
+            await _db.SaveChangesAsync();
 
+            return RedirectToPage();
+
+        }
 
     }
 }
