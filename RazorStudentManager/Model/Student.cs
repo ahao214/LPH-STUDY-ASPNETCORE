@@ -18,6 +18,7 @@ namespace RazorStudentManager.Model
         public string Phone { get; set; }
         [Display(Name = "地址")]
         public string Address { get; set; }
-
+        [Display(Name = "性别")]
+        public Gender Gender { get; set; }
     }
 }
