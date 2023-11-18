@@ -5,6 +5,9 @@ using RazorStudentManager.AppData;
 using RazorStudentManager.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
+
+
 
 namespace RazorStudentManager.Pages.StudentPage
 {
@@ -19,9 +22,16 @@ namespace RazorStudentManager.Pages.StudentPage
 
         public IEnumerable<Student> Students { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string Search { get; set; }
         public async void OnGet()
         {
-            Students = await _db.Students.ToListAsync();
+            var query = _db.Students.AsNoTracking();    // AsNoTracking·½·¨²»¸ú×Ù
+            if (!string.IsNullOrEmpty(Search))
+            {
+                query = query.Where(q => q.Name.Contains(Search));
+            }
+            Students = await query.ToListAsync();
         }
 
         /// <summary>
@@ -32,7 +42,7 @@ namespace RazorStudentManager.Pages.StudentPage
         public async Task<IActionResult> OnPostDelete(int id)
         {
             var student = await _db.Students.FindAsync(id);
-            if(student ==null)
+            if (student == null)
             {
                 return NotFound();
             }

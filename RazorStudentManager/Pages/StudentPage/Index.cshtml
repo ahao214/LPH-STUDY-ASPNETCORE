@@ -5,61 +5,80 @@
 
 
 <br />
-<h1 class="text-info">Student List</h1>
+<h1 class="text-info">学生列表</h1>
 <br />
 
 
 
 <div class="container p-0 m-0">
-   <div class="col-2">
-       <a asp-page="Create" class="btn btn-primary form-control text-white">
-           创建学生
-    </a>
-   </div>
-   <br/>
-   <br/>
-   <form method="post">
-       <table class="table">
-      <thead class="thead-light">
-        <tr>
-            <th>
-                <label scope="col" asp-for="Students.FirstOrDefault().Id"></label>
-            </th>
-            <th>
-                <label scope="col" asp-for="Students.FirstOrDefault().Name"></label>
-            </th>
-          <th>
-                <label scope="col" asp-for="Students.FirstOrDefault().Age"></label>
-            </th>
-            <th>
-                <label scope="col" asp-for="Students.FirstOrDefault().Phone"></label>
-            </th>
-            <th>
-                <label scope="col" asp-for="Students.FirstOrDefault().Address"></label>
-            </th>
-            <th></th>
-        </tr>
-      </thead>
-      <tbody>
-          @foreach(var item in Model.Students)
-          {
+
+    <div class="row">
+
+        <div class="col-4">
+            <a asp-page="Create" class="btn btn-primary form-control text-white">
+                创建学生
+            </a>
+        </div>
+
+
+        <div class="col-4 offset-4">
+            <form method="get">
+                <div class="input-group">
+                    <input class="form-control"  asp-for="Search" placeholder="请输入姓名查询" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">查询</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <br />
+    <br />
+    <form method="post">
+        <table class="table">
+            <thead class="thead-light">
                 <tr>
-                  <th scope="row">@item.Id</th>
-                  <td>@item.Name</td>
-                  <td>@item.Age</td>
-                  <td>@item.Phone</td>
-                  <td>@item.Address</td>
-                  <td>
-                      <button asp-page-handle="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('您确定要删除吗?')">删除</button>
-                      <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">修改</a>
-                  </td>
-                  
-                </tr> 
-          }
-               
-      </tbody>
-</table>
-   </form>
+                    <th>
+                        <label scope="col" asp-for="Students.FirstOrDefault().Id"></label>
+                    </th>
+                    <th>
+                        <label scope="col" asp-for="Students.FirstOrDefault().Name"></label>
+                    </th>
+                    <th>
+                        <label scope="col" asp-for="Students.FirstOrDefault().Age"></label>
+                    </th>
+                    <th>
+                        <label scope="col" asp-for="Students.FirstOrDefault().Phone"></label>
+                    </th>
+                    <th>
+                        <label scope="col" asp-for="Students.FirstOrDefault().Address"></label>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Students)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Name</td>
+                        <td>@item.Age</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Address</td>
+                        <td>
+                            <button asp-page-handle="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('您确定要删除吗?')">删除</button>
+                            <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">修改</a>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </form>
 
 
 
