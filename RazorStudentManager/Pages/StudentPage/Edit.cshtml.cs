@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorStudentManager.Model;
 using RazorStudentManager.AppData;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace RazorStudentManager.Pages.StudentPage
 {
@@ -16,8 +18,14 @@ namespace RazorStudentManager.Pages.StudentPage
 
         [BindProperty]  //和前端的代码绑定
         public Student student { get; set; }
+        // 班级信息列表
+        public SelectList ClassList { get; set; }
         public async void OnGet(int id)
         {
+            // 加载班级列表
+            var items = await _db.Students.ToListAsync();
+            ClassList = new SelectList(items, "Id", "ClassName");
+            // 加载学生信息
             student = await _db.Students.FindAsync(id);
         }
 
