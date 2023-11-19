@@ -50,7 +50,7 @@ namespace ArchiTectRelax.Design.IOC
                         {
                             //3.3 通过反射创建Teacher
                             object oj1 = Activator.CreateInstance(type1);
-                            propertyInfos.SetValue(oj, oj1);
+                            
                         }
                     }                   
                 }
