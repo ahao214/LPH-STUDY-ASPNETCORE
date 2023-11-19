@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RazorStudentManager.Model
 {
@@ -20,5 +21,10 @@ namespace RazorStudentManager.Model
         public string Address { get; set; }
         [Display(Name = "性别")]
         public Gender Gender { get; set; }
+
+        public int? StudentClassId { get; set; }
+        [ForeignKey("StudentClassId")]
+        public virtual StudentClass StudentClass { get; set; }  
+
     }
 }

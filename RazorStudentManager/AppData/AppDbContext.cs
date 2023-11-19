@@ -11,7 +11,14 @@ namespace RazorStudentManager.AppData
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<Student> Students { get; set; }
+        public DbSet <StudentClass> StudentClasses { get; set; }
+
 
     }
 }
