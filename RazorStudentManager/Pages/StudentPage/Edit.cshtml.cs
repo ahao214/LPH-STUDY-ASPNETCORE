@@ -43,6 +43,7 @@ namespace RazorStudentManager.Pages.StudentPage
                 studentObj.Phone = student.Phone;
                 studentObj.Address = student.Address;
                 studentObj.Gender = student.Gender;
+                studentObj.StudentClassId = student.StudentClassId;
 
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");

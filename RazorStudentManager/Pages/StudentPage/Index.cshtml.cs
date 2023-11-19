@@ -26,7 +26,7 @@ namespace RazorStudentManager.Pages.StudentPage
         public string Search { get; set; }
         public async void OnGet()
         {
-            var query = _db.Students.AsNoTracking();    // AsNoTracking方法不跟踪
+            var query = _db.Students.Include(c=>c.StudentClassId).AsNoTracking();    // AsNoTracking方法不跟踪
             if (!string.IsNullOrEmpty(Search))
             {
                 query = query.Where(q => q.Name.Contains(Search));
