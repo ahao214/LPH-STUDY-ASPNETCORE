@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EFCore_First
 {
     /// <summary>
-    /// 数据基础类
+    /// 数据库上下文类
     /// </summary>
     public class JokerContext : DbContext
     {
