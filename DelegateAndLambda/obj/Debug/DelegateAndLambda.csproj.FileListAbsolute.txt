@@ -1,0 +1,8 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\bin\Debug\DelegateAndLambda.exe.config
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\bin\Debug\DelegateAndLambda.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\bin\Debug\DelegateAndLambda.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\obj\Debug\DelegateAndLambda.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\obj\Debug\DelegateAndLambda.csproj.SuggestedBindingRedirects.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\obj\Debug\DelegateAndLambda.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\obj\Debug\DelegateAndLambda.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DelegateAndLambda\obj\Debug\DelegateAndLambda.pdb

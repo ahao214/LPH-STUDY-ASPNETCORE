@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\bin\Debug\net6.0\Ant-Generic.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\bin\Debug\net6.0\Ant-Generic.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\bin\Debug\net6.0\Ant-Generic.runtimeconfig.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\bin\Debug\net6.0\Ant-Generic.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\bin\Debug\net6.0\Ant-Generic.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\refint\Ant-Generic.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\Ant-Generic.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Generic\obj\Debug\net6.0\ref\Ant-Generic.dll

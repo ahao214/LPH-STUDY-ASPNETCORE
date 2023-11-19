@@ -1,0 +1,5 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.csproj.CoreCompileInputs.cache

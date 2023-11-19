@@ -11,10 +11,10 @@ namespace ArchiTectRelax.Design.IOC.Examples
     /// <summary>
     /// 学生类
     /// </summary>
-    [IOCService]
+    
     class Student
     {
-        [IOCInject]
+        
         public Teacher teacher { get; set; }
 
         public void Study()

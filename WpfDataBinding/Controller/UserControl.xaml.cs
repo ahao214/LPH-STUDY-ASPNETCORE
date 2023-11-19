@@ -19,7 +19,7 @@ namespace WpfDataBinding.Controller
     /// <summary>
     /// UserControl.xaml 的交互逻辑
     /// </summary>
-    public partial class UserControl : UserControl
+    public partial class UserControl 
     {
         public UserControl()
         {

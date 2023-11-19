@@ -7,3 +7,5 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\obj\Debug\BLL.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\bin\Debug\DAL.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\bin\Debug\DAL.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\bin\Debug\StuModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BLL\bin\Debug\StuModels.pdb

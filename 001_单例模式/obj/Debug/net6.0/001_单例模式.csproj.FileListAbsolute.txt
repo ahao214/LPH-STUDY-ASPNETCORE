@@ -1,0 +1,5 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\001_单例模式\obj\Debug\net6.0\001_单例模式.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\001_单例模式\obj\Debug\net6.0\001_单例模式.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\001_单例模式\obj\Debug\net6.0\001_单例模式.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\001_单例模式\obj\Debug\net6.0\001_单例模式.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\001_单例模式\obj\Debug\net6.0\001_单例模式.csproj.CoreCompileInputs.cache

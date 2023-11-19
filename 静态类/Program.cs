@@ -37,7 +37,6 @@ static class Student
 
     static public void ShowInfo()
     {
-        WriteLine($"id={id},Name={Name}");
-
+       
     }
 }

@@ -1,0 +1,5 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCore_First\obj\Debug\net6.0\EFCore_First.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCore_First\obj\Debug\net6.0\EFCore_First.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCore_First\obj\Debug\net6.0\EFCore_First.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCore_First\obj\Debug\net6.0\EFCore_First.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCore_First\obj\Debug\net6.0\EFCore_First.csproj.CoreCompileInputs.cache

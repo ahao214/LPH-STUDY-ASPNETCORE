@@ -60,3 +60,5 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.csproj.CoreCom
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoTypeWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoTypeWindow.baml

@@ -9,3 +9,7 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerD
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\BLL.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\BLL.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\StuModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\DAL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\StuModels.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\DAL.pdb

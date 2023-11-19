@@ -9,3 +9,11 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManage
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.csproj.CoreCompileInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\BLL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\DAL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\StuModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\BLL.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\DAL.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\StuModels.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.FrmUpdateClass.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.csproj.CopyComplete

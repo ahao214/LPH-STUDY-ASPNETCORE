@@ -8,10 +8,10 @@ using System.Collections.Generic;
 
 namespace ArchiTectRelax.Design.IOC.Examples
 {
-    [IOCService]
+   
     public class Teacher
     {
-        public Student student { set; get; }
+       
 
         public void Classes()
         {

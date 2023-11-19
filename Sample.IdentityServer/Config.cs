@@ -13,7 +13,7 @@ namespace Sample.IdentityServer
                 Name ="sample_api",
                 DisplayName="Sample API"
             },
-        }
+        };
 
 
         public static IEnumerable<Client> Clients = new[]
@@ -28,7 +28,7 @@ namespace Sample.IdentityServer
                 AllowedGrantTypes= GrantTypes.ClientCredentials,
                 AllowedScopes={"sample_api"}
             },
-        }
+        };
 
     }
 }
