@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9Jel5Dbh6U9917LtyIYzVFVYEo+e3JM/G8+g8tHZJlf9pa/1B71gZwXSoDBwFRFDbkndlnGTr/dqH3BsCESXLQ==",
+  "dgSpecHash": "gnXpMO05TqA/aTvD44t9OG7tIU80Zy37HN5QQ/UbmjBjvVh08xeKBGb3J+oOdGj1cLyV5Pwvp7Av46FAGYRueA==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\GrpcService_Server\\GrpcService_Server.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,8 @@
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.3\\microsoft.extensions.primitives.3.0.3.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }

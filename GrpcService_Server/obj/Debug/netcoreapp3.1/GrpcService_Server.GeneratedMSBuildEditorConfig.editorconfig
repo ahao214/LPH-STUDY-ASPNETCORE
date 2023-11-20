@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = GrpcService_Server
 build_property.ProjectDir = F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GrpcService_Server\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

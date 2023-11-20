@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tNYuc/sPPGg+sRn0JBReuG0QFCchZ29vw9G+o437x4r6iCDU64vzk0fFBZeOgvA38qSOz3VP1BadY69h9Dz4Mg==",
+  "dgSpecHash": "Bb9IbWj8NTpE6nxYtGIqv9Qxxymub0QQYQulvwhCrHfsfwxHIS9j69G6FcOvsHRiZCiY+YaydHxIHXMGezc6ww==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Chat\\Chat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

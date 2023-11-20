@@ -517,7 +517,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ch03", "ch03", "{751DB30D-B
 		Chap3.1.html = Chap3.1.html
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore_First", "EFCore_First\EFCore_First.csproj", "{3236978A-A961-4896-A78F-3F39C2684366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore_First", "EFCore_First\EFCore_First.csproj", "{3236978A-A961-4896-A78F-3F39C2684366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

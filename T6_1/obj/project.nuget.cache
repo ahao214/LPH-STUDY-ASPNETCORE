@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XvThu5MqDa0oMjsB7lez19jqfX4PUafWZFGro7wYPY0ShykHYtfX2PxfKxzzkjer9TXahNQaK4MMW3FxiKQRRA==",
+  "dgSpecHash": "rvMpajteg33bC2izmDr1Cx1p8UOGaKfNzYOPmCgLhG8AT92YTn9Tei/bY7kDZ7GqRR84ALdqedTVFQ9N1AI7Rw==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\T6_1\\T6_1.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,8 @@
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }

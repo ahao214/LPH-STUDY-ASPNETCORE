@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xSH6FQdItagnPqHy5WCmkAb67wTilaRtdAcCw2SmeCsqMktm95Gqwj6wt/GSmKqiHvioqFsQLdiGQpnFc1zeWA==",
+  "dgSpecHash": "5Rx2npE7qzdYWp3uvSR5z16rpBUYEC+7D+bbyM6prll7D+chESdlSphNzPxOwGROfyxeB6ifUimwEF81qy6hyQ==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\LoadBalancer\\LoadBalancer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

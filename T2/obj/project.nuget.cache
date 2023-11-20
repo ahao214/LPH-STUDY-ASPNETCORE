@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PNC5tC9dP+faermptlSvWDiiHmO/hP6ugpBaRsFiu7vaC+rKpA3W56grEavYx36+A5RDVawFCqv0DkmmJ8chZw==",
+  "dgSpecHash": "EEiH7Po+tz5a8KjWqXasXRTVBfr/0k5SMl6lMDABCHQcNcKQwvZf8Zb65MoMkEfzL3TbBZO9g3f9MINmDQmaAQ==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\T2\\T2.csproj",
   "expectedPackageFiles": [
@@ -100,7 +100,8 @@
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }

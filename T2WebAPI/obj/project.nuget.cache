@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sERZSX7k3yJk3s3ncXJ862Uy3JFmdKNTCNcjlTP0xBAXDp1z5/UyHTU0VOheG31loAilD0r8LbuD1BB/c3Cukg==",
+  "dgSpecHash": "ceqvLFdZcEC7xGDcNL9oHx3AbzvFpBNHyIb00vjYzas7DmHpUs9jYZpBknDwhECVgViWU0lqCrNQpoedN55tiA==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\T2WebAPI\\T2WebAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

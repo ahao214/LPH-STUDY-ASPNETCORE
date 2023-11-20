@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Chat
 build_property.ProjectDir = F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
