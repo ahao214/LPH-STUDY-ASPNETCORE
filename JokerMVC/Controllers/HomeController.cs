@@ -1,6 +1,7 @@
 ﻿using JokerMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Transactions;
 
 namespace JokerMVC.Controllers
 {
@@ -13,8 +14,10 @@ namespace JokerMVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
+            ViewData["name"] = "ViewData-Joker编程";
+            ViewBag.name = "ViewBag-joker";
             return View();
         }
 
