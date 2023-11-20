@@ -1,4 +1,5 @@
 ﻿using JokerMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Transactions;
@@ -14,11 +15,15 @@ namespace JokerMVC.Controllers
             _logger = logger;
         }
 
+
+        [Authorize(Roles ="admin")]
         public IActionResult Index(int? id)
         {
             ViewData["name"] = "ViewData-Joker编程";
             ViewBag.name = "ViewBag-joker";
-            return View();
+            Student stu = new Student() { Id = 1, Name = "Joker" };
+            //return Json(stu);
+            return View(stu);
         }
 
         public IActionResult Privacy()
@@ -31,5 +36,12 @@ namespace JokerMVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+    }
+
+
+    class Student
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
