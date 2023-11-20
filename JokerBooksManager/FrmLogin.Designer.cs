@@ -293,6 +293,7 @@
             this.Text = "图书管理系统登录页面";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbVerfiyCode)).EndInit();
             this.ResumeLayout(false);
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerComm.Comm;
 using Sunny.UI;
 
 
@@ -21,6 +22,30 @@ namespace JokerBooksManager
             InitializeComponent();
         }
 
+        #region 窗体加载
+
+        /// <summary>
+        /// 窗体加载
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            InitialVerityCode();
+        }
+
+        private void InitialVerityCode()
+        {
+            VerifyCode verifyCode = new VerifyCode
+            {
+                CodeCount = 5
+            };
+            verifyCode.CreateVerifyCode();
+        }
+
+
+        #endregion
+
         /// <summary>
         /// 退出按钮
         /// </summary>
@@ -30,5 +55,7 @@ namespace JokerBooksManager
         {
             Application.Exit();
         }
+
+        
     }
 }

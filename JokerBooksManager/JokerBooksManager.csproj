@@ -91,5 +91,11 @@
   <ItemGroup>
     <Folder Include="SunnyUI\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JokerBooksManagerComm\JokerBooksManagerComm.csproj">
+      <Project>{78ED9531-C95A-46A4-B172-41BEC4187904}</Project>
+      <Name>JokerBooksManagerComm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
