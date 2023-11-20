@@ -535,6 +535,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Learn06", "Learn06", "{8E58
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study6", "Study6\Study6.csproj", "{A7087D7A-6A8E-4DEA-840C-1AF5B2816282}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokerBooksManager", "JokerBooksManager\JokerBooksManager.csproj", "{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1185,6 +1187,10 @@ Global
 		{A7087D7A-6A8E-4DEA-840C-1AF5B2816282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7087D7A-6A8E-4DEA-840C-1AF5B2816282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7087D7A-6A8E-4DEA-840C-1AF5B2816282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1448,6 +1454,7 @@ Global
 		{64D4BFF8-DFAB-4E52-ADB1-2E32809C64CA} = {EFF1C5DA-A9BA-4097-AE81-0C0331BCA8DC}
 		{8E5872ED-ACEA-4FFE-961E-E8BB4906B191} = {6FE4BB40-0F92-4304-9336-028E10E9C435}
 		{A7087D7A-6A8E-4DEA-840C-1AF5B2816282} = {8E5872ED-ACEA-4FFE-961E-E8BB4906B191}
+		{0EA5D6F2-A217-4C0F-AC14-DB933B7A9FE0} = {6B775402-7A1F-45FB-B070-3CE6D06DA2B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
