@@ -34,6 +34,9 @@ namespace JokerBooksManager
             InitialVerityCode();
         }
 
+        /// <summary>
+        /// 初始化验证码
+        /// </summary>
         private void InitialVerityCode()
         {
             VerifyCode verifyCode = new VerifyCode
