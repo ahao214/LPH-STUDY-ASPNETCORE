@@ -17,7 +17,15 @@ namespace JokerBooksManager
 {
     public partial class FrmLogin : UIForm
     {
+        #region 验证码初始值
+
+        /// <summary>
+        /// 验证码初始值
+        /// </summary>
         private string checkCode = string.Empty;
+
+        #endregion
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -52,6 +60,11 @@ namespace JokerBooksManager
 
         #endregion
 
+        /// <summary>
+        /// 登录事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             if (!IsCheckCode())
@@ -71,7 +84,7 @@ namespace JokerBooksManager
         }
 
         /// <summary>
-        /// 退出按钮
+        /// 退出系统
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
