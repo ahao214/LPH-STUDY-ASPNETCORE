@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -69,11 +71,34 @@ namespace JokerBooksManagerComm.Comm
                     : value;
             }
         }
+        /// <summary>
+        /// 验证码字体字段
+        /// </summary>
+        private string _fontName = FtName;
+        public string FontName
+        {
+            set
+            {
+                _fontName = string.IsNullOrEmpty(value) ? _fontName : value;
+            }
+        }
 
+        /// <summary>
+        /// 验证码字体大小字段
+        /// </summary>
+        private int _fontSize = FtSize;
+        public int FontSize
+        {
+            set
+            {
+                _fontSize = value <= 0 ? _fontSize : value;
+            }
+        }
 
         #endregion
 
 
+        #region 创建验证码
 
         /// <summary>
         /// 创建验证码
@@ -92,8 +117,27 @@ namespace JokerBooksManagerComm.Comm
 
             Bitmap bitmap = new Bitmap(_bitMapWidth, _bitMapHeight);
             Graphics gra = Graphics.FromImage(bitmap);
+            Font font = new Font(_fontName, _fontSize, FontStyle.Regular);
+            Brush brush = new SolidBrush(Color.Green);
+            gra.Clear(ColorTranslator.FromHtml("#eff8e8"));
+            SizeF charSize;
+            PointF pointF = new PointF(0, 2);
+            float sepDistance = 3.5F;
+            char[] vs = sCode.ToCharArray();
+            for (int i = 0; i < vs.Length; i++)
+            {
+                string sChar = vs[i].ToString();
+                charSize = gra.MeasureString(sChar, font);
+                gra.DrawString(sChar, font, brush, pointF);
+                pointF.X += charSize.Width + sepDistance;
+            }
+            MemoryStream ms = new MemoryStream();
+            bitmap.Save(ms, ImageFormat.Jpeg);
+
             return bitmap;
         }
+
+        #endregion
 
     }
 }

@@ -11,3 +11,5 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\SunnyUI.Co
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\SunnyUI.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.FrmLogin.resources
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerComm.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerComm.pdb

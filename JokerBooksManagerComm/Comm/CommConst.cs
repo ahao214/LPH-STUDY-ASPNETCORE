@@ -41,5 +41,28 @@ namespace JokerBooksManagerComm.Comm
         protected const int BitMapH = 28;
 
         #endregion
+
+        #region 验证码字体
+
+        /// <summary>
+        /// 验证码字体
+        /// </summary>
+        protected const string FtName = "微软雅黑";
+
+        #endregion
+
+        #region 验证码字体大小
+
+        /// <summary>
+        /// 验证码字体大小
+        /// </summary>
+        protected const int FtSize = 12;
+
+        #endregion
+
+
+
+
+
     }
 }
