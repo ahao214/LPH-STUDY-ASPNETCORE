@@ -17,6 +17,7 @@ namespace JokerBooksManager
 {
     public partial class FrmLogin : UIForm
     {
+        private string checkCode = string.Empty;
         public FrmLogin()
         {
             InitializeComponent();
@@ -45,10 +46,29 @@ namespace JokerBooksManager
                 FontSize = 8
             };
             PbVerfiyCode.Image = verifyCode.CreateVerifyCode();
+            checkCode = verifyCode.CheckCode;
         }
 
 
         #endregion
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            if (!IsCheckCode())
+            {
+                return;
+            }
+        }
+
+        public bool IsCheckCode()
+        {
+            if (!TxtVerifyCode.Text.Trim().Equals(checkCode))
+            {
+                MessageBox.Show("错误");
+                return false;
+            }
+            return true;
+        }
 
         /// <summary>
         /// 退出按钮
