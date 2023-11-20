@@ -19,5 +19,27 @@ namespace JokerBooksManagerComm.Comm
         protected const string AllChar = "QWERTYUIOPASDFGHJKLZXCVBNM0123456789";
 
         #endregion
+
+        #region 验证码的位数
+
+        /// <summary>
+        /// 验证码的位数
+        /// </summary>
+        protected const int CodeCounts = 5;
+
+        #endregion
+
+        #region 验证码位图的宽度和高度
+
+        /// <summary>
+        /// 宽度
+        /// </summary>
+        protected const int BitMapW = 84;
+        /// <summary>
+        /// 高度
+        /// </summary>
+        protected const int BitMapH = 28;
+
+        #endregion
     }
 }
