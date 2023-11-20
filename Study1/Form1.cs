@@ -16,5 +16,30 @@ namespace Study1
         {
             InitializeComponent();
         }
+
+        private string ReturnResult(char val)
+        {
+            string result = string.Empty;
+            switch (val)
+            {
+                case 'A':
+                    result = "90-100";
+                    break;
+                case 'B':
+                    result = "80-89";
+                    break;
+                case 'C':
+                    result = "70-79";
+                    break;
+                case 'D':
+                    result = "60-69";
+                    break;
+                default:
+                    result = "不及格";
+                    break;
+            }
+            return result;
+        }
+
     }
 }
