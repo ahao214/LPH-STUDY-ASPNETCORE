@@ -65,3 +65,10 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\T6_1.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\Razor\Views\Show.cshtml.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\staticwebassets\T6_1.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.T6_1.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.T6_1.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.T6_1.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T6_1\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.T6_1.props

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using T6_1.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 
 
@@ -43,8 +44,21 @@ namespace T6_1.Controllers
             #endregion
         }
 
+        public IActionResult Show()
+        {
+            //session 读
+            ViewBag.Now = HttpContext.Session.GetString("now");
+
+            return View();
+        }
+
         public IActionResult Index()
         {
+            //session 写
+            HttpContext.Session.SetString("now", DateTime.Now.ToString());
+
+            
+
             // redis的写入
             redisClient.SetString("timeNow", DateTime.Now.ToString());
 
