@@ -30,8 +30,10 @@ namespace JokerMVC.Controllers
             // 创建管理员用户
             IdentityUser user = new IdentityUser { UserName = UserEmail, Email = UserEmail, EmailConfirmed = true };
             await userManager.CreateAsync(user, UserEmail);
-            // 
-            return View();
+            // 把用户添加给角色
+            await userManager.AddToRoleAsync(user, AdminRole);
+            return Redirect("/");
+            // return View();
         }
     }
 }
