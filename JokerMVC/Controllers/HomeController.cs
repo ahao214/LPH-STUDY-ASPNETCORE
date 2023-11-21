@@ -28,6 +28,11 @@ namespace JokerMVC.Controllers
 
         public IActionResult Privacy()
         {
+            // 可以写入文本文件 数据库 控制台
+            _logger.LogError("严重错误");
+            _logger.LogWarning("警告错误");
+            _logger.LogInformation("我是在HomeController的Privacy方法里面");
+
             return View();
         }
 
