@@ -79,6 +79,8 @@ namespace JokerMVC.Controllers
                     {
                         await product.FormFile.CopyToAsync(stream);
                     }
+                    // 保存文件名--保存到数据库
+                    product.ImageUrl = fileName;
                 }
 
                 _context.Add(product);
