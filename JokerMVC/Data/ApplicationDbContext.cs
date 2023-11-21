@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using JokerMVC.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace JokerMVC.Data
@@ -9,5 +10,7 @@ namespace JokerMVC.Data
             : base(options)
         {
         }
+        
+        public DbSet <Product> Products { get; set; }
     }
 }

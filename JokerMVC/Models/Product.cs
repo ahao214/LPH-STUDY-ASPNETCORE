@@ -1,4 +1,6 @@
 ﻿
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace JokerMVC.Models
 {
     /// <summary>
@@ -11,6 +13,7 @@ namespace JokerMVC.Models
         public double Price { get; set; }
         public short? Stock { get; set; }
         public string? ImageUrl { get; set; }
+        [NotMapped]
         public IFormFile? FormFile { get; set; }
 
     }
