@@ -19,14 +19,18 @@ namespace JokerMVC.Controllers
             _context = context;
         }
 
+        #region 获取所有商品
+
         // GET: Products
         public async Task<IActionResult> Index()
         {
-              return _context.Products != null ? 
-                          View(await _context.Products.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Products'  is null.");
+            var products = await _context.Products.ToListAsync();
+            return View (products);              
         }
 
+        #endregion
+
+        #region 明细页面
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,6 +48,11 @@ namespace JokerMVC.Controllers
 
             return View(product);
         }
+
+        #endregion
+
+        #region 创建商品
+
 
         // GET: Products/Create
         public IActionResult Create()
@@ -66,6 +75,11 @@ namespace JokerMVC.Controllers
             }
             return View(product);
         }
+
+        #endregion
+
+        #region 编辑商品
+
 
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -118,6 +132,10 @@ namespace JokerMVC.Controllers
             return View(product);
         }
 
+        #endregion
+
+        #region 删除商品
+
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -150,14 +168,18 @@ namespace JokerMVC.Controllers
             {
                 _context.Products.Remove(product);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
+        #endregion
+
+        #region private
         private bool ProductExists(int id)
         {
           return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+        #endregion
     }
 }
