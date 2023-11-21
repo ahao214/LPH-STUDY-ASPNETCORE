@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManagerComm.Comm;
 using Sunny.UI;
-
+using JokerBooksManager.Comm;
 
 
 
@@ -77,7 +77,7 @@ namespace JokerBooksManager
         {
             if (!TxtVerifyCode.Text.Trim().Equals(checkCode))
             {
-                MessageBox.Show("错误");
+                CommMsgBox.MsgBoxCaveat(CommConst.VerifyErr);
                 return false;
             }
             return true;
