@@ -45,5 +45,11 @@
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JokerBooksManagerComm\JokerBooksManagerComm.csproj">
+      <Project>{78ed9531-c95a-46a4-b172-41bec4187904}</Project>
+      <Name>JokerBooksManagerComm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

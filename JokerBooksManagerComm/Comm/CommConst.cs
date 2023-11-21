@@ -86,5 +86,11 @@ namespace JokerBooksManagerComm.Comm
         public const string InputFail = "输入有误";
 
         #endregion
+
+        #region 连接对象不能为空
+
+        public const string ConnNotNull = "连接对象不能为空";
+
+        #endregion
     }
 }
