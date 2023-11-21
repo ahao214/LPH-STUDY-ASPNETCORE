@@ -76,11 +76,23 @@ namespace JokerBooksManager
             {
                 return;
             }
+            CheckLogin(loginName, loginPass);
+        }
+
+        #region 检验用户名和密码
+
+        /// <summary>
+        /// 检验用户名和密码
+        /// </summary>
+        /// <param name="loginName"></param>
+        /// <param name="loginPass"></param>
+        private void CheckLogin(string loginName, string loginPass)
+        {
             ManagerBLL managerBLL = new ManagerBLL();
-            Manager manager = managerBLL.GetManagerByNameAndPass(loginName, loginPass);
+            Manager manager = managerBLL.GetManagerByNameAndPass(loginName, CommDefine.GetMD5Hash(loginPass));
             if (manager is null)
             {
-                CommMsgBox.MsgBoxCaveat("登录失败");
+                CommMsgBox.MsgBoxCaveat(CommConst.LoginFail);
                 return;
             }
 
@@ -88,6 +100,8 @@ namespace JokerBooksManager
             frmMain.Show();
             Hide();
         }
+
+        #endregion
 
         private bool IsCheckCode(out string loginName, out string loginPass)
         {

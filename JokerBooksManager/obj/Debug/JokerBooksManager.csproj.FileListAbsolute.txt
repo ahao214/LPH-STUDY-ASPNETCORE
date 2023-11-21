@@ -13,4 +13,10 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooks
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerComm.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerComm.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.Manager.FrmMain.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerBLL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerDAL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerBLL.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerDAL.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerModels.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.Managers.FrmMain.resources

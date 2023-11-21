@@ -92,5 +92,16 @@ namespace JokerBooksManagerComm.Comm
         public const string ConnNotNull = "连接对象不能为空";
 
         #endregion
+
+
+        #region 登录失败
+
+        public const string LoginFail = "登录失败";
+
+        #endregion
+
+
+
+
     }
 }
