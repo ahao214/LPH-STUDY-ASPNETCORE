@@ -78,6 +78,13 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 输入有误
 
+        /// <summary>
+        /// 输入有误
+        /// </summary>
+        public const string InputFail = "输入有误";
+
+        #endregion
     }
 }

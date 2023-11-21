@@ -67,7 +67,7 @@ namespace JokerBooksManager
         /// <param name="e"></param>
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (!IsCheckCode())
+            if (!IsCheckCode()) // 验证没有通过
             {
                 return;
             }
@@ -75,6 +75,17 @@ namespace JokerBooksManager
 
         public bool IsCheckCode()
         {
+            if (TxtLoginName.Text.Trim().Length == 0)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (TxtLoginPass.Text.Trim().Length == 0)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+
             if (!TxtVerifyCode.Text.Trim().Equals(checkCode))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.VerifyErr);
