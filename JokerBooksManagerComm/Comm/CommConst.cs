@@ -60,8 +60,23 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 对话框标题内容
 
+        /// <summary>
+        /// 对话框标题内容
+        /// </summary>
+        protected const string Caption = "信息提示";
 
+        #endregion
+
+        #region 验证码输入有误
+
+        /// <summary>
+        /// 验证码输入有误
+        /// </summary>
+        public const string VerifyErr = "验证码输入有误";
+
+        #endregion
 
 
     }
