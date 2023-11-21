@@ -87,7 +87,7 @@
             this.TxtLoginName.ShowText = false;
             this.TxtLoginName.Size = new System.Drawing.Size(170, 32);
             this.TxtLoginName.Style = Sunny.UI.UIStyle.Custom;
-            this.TxtLoginName.TabIndex = 2;
+            this.TxtLoginName.TabIndex = 1;
             this.TxtLoginName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtLoginName.Watermark = "";
             // 
@@ -118,12 +118,13 @@
             this.TxtLoginPass.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtLoginPass.Name = "TxtLoginPass";
             this.TxtLoginPass.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtLoginPass.PasswordChar = '*';
             this.TxtLoginPass.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtLoginPass.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtLoginPass.ShowText = false;
             this.TxtLoginPass.Size = new System.Drawing.Size(170, 32);
             this.TxtLoginPass.Style = Sunny.UI.UIStyle.Custom;
-            this.TxtLoginPass.TabIndex = 4;
+            this.TxtLoginPass.TabIndex = 2;
             this.TxtLoginPass.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtLoginPass.Watermark = "";
             // 
@@ -159,7 +160,7 @@
             this.TxtVerifyCode.ShowText = false;
             this.TxtVerifyCode.Size = new System.Drawing.Size(79, 32);
             this.TxtVerifyCode.Style = Sunny.UI.UIStyle.Custom;
-            this.TxtVerifyCode.TabIndex = 6;
+            this.TxtVerifyCode.TabIndex = 3;
             this.TxtVerifyCode.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtVerifyCode.Watermark = "";
             // 
@@ -184,7 +185,7 @@
             this.uiRadioButton2.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.uiRadioButton2.Size = new System.Drawing.Size(150, 29);
             this.uiRadioButton2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiRadioButton2.TabIndex = 9;
+            this.uiRadioButton2.TabIndex = 4;
             this.uiRadioButton2.Text = "读者";
             // 
             // RBIsSupper
@@ -198,7 +199,7 @@
             this.RBIsSupper.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.RBIsSupper.Size = new System.Drawing.Size(150, 29);
             this.RBIsSupper.Style = Sunny.UI.UIStyle.Custom;
-            this.RBIsSupper.TabIndex = 10;
+            this.RBIsSupper.TabIndex = 5;
             this.RBIsSupper.Text = "管理员";
             // 
             // BtnLogin
@@ -219,7 +220,7 @@
             this.BtnLogin.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnLogin.Size = new System.Drawing.Size(100, 35);
             this.BtnLogin.Style = Sunny.UI.UIStyle.Custom;
-            this.BtnLogin.TabIndex = 11;
+            this.BtnLogin.TabIndex = 6;
             this.BtnLogin.Text = "登录";
             this.BtnLogin.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -242,7 +243,7 @@
             this.BtnExit.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnExit.Size = new System.Drawing.Size(100, 35);
             this.BtnExit.Style = Sunny.UI.UIStyle.Custom;
-            this.BtnExit.TabIndex = 12;
+            this.BtnExit.TabIndex = 7;
             this.BtnExit.Text = "退出";
             this.BtnExit.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);

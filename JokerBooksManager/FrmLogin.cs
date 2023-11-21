@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using JokerBooksManagerComm.Comm;
 using Sunny.UI;
 using JokerBooksManager.Comm;
+using JokerBooksManager.Manager;
+using System.Net;
+using System.Web.UI.Design.WebControls;
 
 
 
@@ -71,6 +74,9 @@ namespace JokerBooksManager
             {
                 return;
             }
+            FrmMain frmMain = new FrmMain();
+            frmMain.Show();
+            Hide();
         }
 
         public bool IsCheckCode()
