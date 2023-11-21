@@ -10,9 +10,11 @@ using System.Windows.Forms;
 using JokerBooksManagerComm.Comm;
 using Sunny.UI;
 using JokerBooksManager.Comm;
-using JokerBooksManager.Manager;
 using System.Net;
 using System.Web.UI.Design.WebControls;
+using JokerBooksManager.Managers;
+using JokerBooksManagerBLL.BookBLL;
+using JokerBooksManagerModels;
 
 
 
@@ -70,23 +72,33 @@ namespace JokerBooksManager
         /// <param name="e"></param>
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (!IsCheckCode()) // 验证没有通过
+            if (!IsCheckCode(out string loginName, out string loginPass)) // 验证没有通过
             {
                 return;
             }
+            ManagerBLL managerBLL = new ManagerBLL();
+            Manager manager = managerBLL.GetManagerByNameAndPass(loginName, loginPass);
+            if (manager is null)
+            {
+                CommMsgBox.MsgBoxCaveat("登录失败");
+                return;
+            }
+
             FrmMain frmMain = new FrmMain();
             frmMain.Show();
             Hide();
         }
 
-        public bool IsCheckCode()
+        private bool IsCheckCode(out string loginName, out string loginPass)
         {
-            if (TxtLoginName.Text.Trim().Length == 0)
+            loginName = TxtLoginName.Text.Trim();
+            loginPass = TxtLoginPass.Text.Trim();
+            if (loginName.Length == 0)
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if (TxtLoginPass.Text.Trim().Length == 0)
+            if (loginPass.Length == 0)
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;

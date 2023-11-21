@@ -1,4 +1,4 @@
-﻿namespace JokerBooksManager.Manager
+﻿namespace JokerBooksManager.Managers
 {
     partial class FrmMain
     {

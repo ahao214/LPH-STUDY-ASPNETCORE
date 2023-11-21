@@ -40,6 +40,7 @@
       <HintPath>..\packages\SunnyUI.Common.3.5.1\lib\net472\SunnyUI.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Web.Extensions" />
@@ -61,10 +62,10 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\FrmMain.cs">
+    <Compile Include="Managers\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager\FrmMain.Designer.cs">
+    <Compile Include="Managers\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -72,7 +73,7 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager\FrmMain.resx">
+    <EmbeddedResource Include="Managers\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -103,9 +104,21 @@
     <Folder Include="SunnyUI\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JokerBooksManagerBLL\JokerBooksManagerBLL.csproj">
+      <Project>{b54681e5-771a-4362-99f0-0389be66cf4b}</Project>
+      <Name>JokerBooksManagerBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JokerBooksManagerComm\JokerBooksManagerComm.csproj">
       <Project>{78ED9531-C95A-46A4-B172-41BEC4187904}</Project>
       <Name>JokerBooksManagerComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JokerBooksManagerDAL\JokerBooksManagerDAL.csproj">
+      <Project>{B8843A60-0389-45A0-8273-B501F29C0296}</Project>
+      <Name>JokerBooksManagerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JokerBooksManagerModels\JokerBooksManagerModels.csproj">
+      <Project>{6d5b65cc-9357-4234-acf4-d829e8576625}</Project>
+      <Name>JokerBooksManagerModels</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

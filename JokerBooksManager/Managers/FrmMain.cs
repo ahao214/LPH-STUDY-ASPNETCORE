@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Sunny.UI;
 
 
-namespace JokerBooksManager.Manager
+namespace JokerBooksManager.Managers
 {
     public partial class FrmMain : UIForm
     {
