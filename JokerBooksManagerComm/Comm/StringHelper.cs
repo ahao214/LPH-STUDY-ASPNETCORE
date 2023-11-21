@@ -34,13 +34,13 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
-        #region 将object转换为short
+        #region 将object转换为短整型
 
         /// <summary>
         /// 将object转换为short
         /// </summary>
         /// <param name="sVal">参数值</param>
-        /// <returns>返回类型</returns>
+        /// <returns>返回短整型</returns>
         public static short ChangeShort(this object sVal)
         {
             short iRes;
