@@ -37,7 +37,8 @@ redisDB.ListRightPush("books", "NBA");
 
 redisDB.ListRightPop("books");  // 删除
 redisDB.ListGetByIndex("books", -1);    // 读
-                                        // 
+
+WriteLine(redisDB.ListGetByIndex("books", -1));                                         
 
 // 集合 set
 redisDB.SetAdd("sports", "篮球");
