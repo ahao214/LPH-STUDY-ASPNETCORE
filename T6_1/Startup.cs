@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using T6_1.Models;
 
 namespace T6_1
 {
@@ -23,6 +26,16 @@ namespace T6_1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // 添加session依赖服务
+            services.AddSession();
+            // 添加Redis分布式缓存依赖服务
+            services.AddSingleton<IDistributedCache>(serviceProvider => new RedisCache(new RedisCacheOptions()
+            {
+                Configuration = Configuration.GetSection("redis").Get<RedisInfo>().DB,
+                InstanceName = Configuration.GetSection("redis").Get<RedisInfo>().Name
+            })
+            );
+
             services.AddControllersWithViews();
         }
 
