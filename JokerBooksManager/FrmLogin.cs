@@ -110,6 +110,14 @@ namespace JokerBooksManager
             Application.Exit();
         }
 
-
+        /// <summary>
+        /// 重新加载验证码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PbVerfiyCode_Click(object sender, EventArgs e)
+        {
+            InitialVerityCode();
+        }
     }
 }

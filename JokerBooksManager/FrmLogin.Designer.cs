@@ -250,11 +250,13 @@
             // 
             // PbVerfiyCode
             // 
+            this.PbVerfiyCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PbVerfiyCode.Location = new System.Drawing.Point(319, 300);
             this.PbVerfiyCode.Name = "PbVerfiyCode";
             this.PbVerfiyCode.Size = new System.Drawing.Size(66, 31);
             this.PbVerfiyCode.TabIndex = 13;
             this.PbVerfiyCode.TabStop = false;
+            this.PbVerfiyCode.Click += new System.EventHandler(this.PbVerfiyCode_Click);
             // 
             // FrmLogin
             // 
