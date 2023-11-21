@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MsMenu = new System.Windows.Forms.MenuStrip();
             this.TsmiSysManage = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiPassModify = new System.Windows.Forms.ToolStripMenuItem();
             this.TmsiExitSystem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MsMenu = new System.Windows.Forms.MenuStrip();
             this.MsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,18 +45,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1189, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // MsMenu
-            // 
-            this.MsMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiSysManage});
-            this.MsMenu.Location = new System.Drawing.Point(0, 35);
-            this.MsMenu.Name = "MsMenu";
-            this.MsMenu.Size = new System.Drawing.Size(1189, 32);
-            this.MsMenu.TabIndex = 1;
-            this.MsMenu.Text = "menuStrip2";
             // 
             // TsmiSysManage
             // 
@@ -78,6 +66,18 @@
             this.TmsiExitSystem.Name = "TmsiExitSystem";
             this.TmsiExitSystem.Size = new System.Drawing.Size(270, 34);
             this.TmsiExitSystem.Text = "退出系统(&Q)";
+            // 
+            // MsMenu
+            // 
+            this.MsMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiSysManage});
+            this.MsMenu.Location = new System.Drawing.Point(0, 35);
+            this.MsMenu.Name = "MsMenu";
+            this.MsMenu.Size = new System.Drawing.Size(1189, 32);
+            this.MsMenu.TabIndex = 1;
+            this.MsMenu.Text = "menuStrip2";
             // 
             // FrmMain
             // 
@@ -104,9 +104,9 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.MenuStrip MsMenu;
         private System.Windows.Forms.ToolStripMenuItem TsmiSysManage;
         private System.Windows.Forms.ToolStripMenuItem TsmiPassModify;
         private System.Windows.Forms.ToolStripMenuItem TmsiExitSystem;
+        private System.Windows.Forms.MenuStrip MsMenu;
     }
 }
