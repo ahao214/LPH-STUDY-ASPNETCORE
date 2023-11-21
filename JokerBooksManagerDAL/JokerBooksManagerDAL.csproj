@@ -51,6 +51,10 @@
       <Project>{78ed9531-c95a-46a4-b172-41bec4187904}</Project>
       <Name>JokerBooksManagerComm</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JokerBooksManagerModels\JokerBooksManagerModels.csproj">
+      <Project>{6d5b65cc-9357-4234-acf4-d829e8576625}</Project>
+      <Name>JokerBooksManagerModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

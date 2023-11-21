@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Comm\CommConst.cs" />
     <Compile Include="Comm\CommDefine.cs" />
+    <Compile Include="Comm\StringHelper.cs" />
     <Compile Include="Comm\VerifyCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -41,10 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookBLL\ManagerBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BookBLL\" />
+    <ProjectReference Include="..\JokerBooksManagerDAL\JokerBooksManagerDAL.csproj">
+      <Project>{b8843a60-0389-45a0-8273-b501f29c0296}</Project>
+      <Name>JokerBooksManagerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JokerBooksManagerModels\JokerBooksManagerModels.csproj">
+      <Project>{6d5b65cc-9357-4234-acf4-d829e8576625}</Project>
+      <Name>JokerBooksManagerModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
