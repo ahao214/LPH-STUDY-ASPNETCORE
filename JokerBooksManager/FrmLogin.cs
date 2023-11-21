@@ -14,7 +14,7 @@ using System.Net;
 using System.Web.UI.Design.WebControls;
 using JokerBooksManager.Managers;
 using JokerBooksManagerBLL.BookBLL;
-using JokerBooksManagerModels;
+using JokerBooksManagerModels.Model;
 
 
 
@@ -103,6 +103,8 @@ namespace JokerBooksManager
 
         #endregion
 
+        #region 验证码认证
+
         private bool IsCheckCode(out string loginName, out string loginPass)
         {
             loginName = TxtLoginName.Text.Trim();
@@ -126,6 +128,10 @@ namespace JokerBooksManager
             return true;
         }
 
+        #endregion
+
+        #region 退出系统
+
         /// <summary>
         /// 退出系统
         /// </summary>
@@ -136,6 +142,10 @@ namespace JokerBooksManager
             Application.Exit();
         }
 
+        #endregion
+
+        #region 重新加载验证码
+
         /// <summary>
         /// 重新加载验证码
         /// </summary>
@@ -145,5 +155,7 @@ namespace JokerBooksManager
         {
             InitialVerityCode();
         }
+
+        #endregion
     }
 }

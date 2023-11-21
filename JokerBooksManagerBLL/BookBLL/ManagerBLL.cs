@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JokerBooksManagerDAL;
-using JokerBooksManagerModels;
+using JokerBooksManagerModels.Model;
 using JokerBooksManagerDAL.BookDAL;
 
 
