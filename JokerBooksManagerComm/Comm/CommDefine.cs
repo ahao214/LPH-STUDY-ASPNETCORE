@@ -17,7 +17,7 @@ namespace JokerBooksManagerComm.Comm
         /// 获取MD5哈希值
         /// </summary>
         /// <param name="sVal">传入的字符</param>
-        /// <returns>返回加密后的字符</returns>
+        /// <returns>返回加密后的字符串</returns>
         public static string GetMD5Hash(string sVal)
         {
             MD5 md5 = MD5.Create();
