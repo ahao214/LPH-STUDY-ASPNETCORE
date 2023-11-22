@@ -74,6 +74,18 @@
     <Compile Include="Managers\FrmPassModify.Designer.cs">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmReaderType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmReaderType.Designer.cs">
+      <DependentUpon>FrmReaderType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\FrmReaderTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmReaderTypeAdd.Designer.cs">
+      <DependentUpon>FrmReaderTypeAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
@@ -84,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmPassModify.resx">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmReaderType.resx">
+      <DependentUpon>FrmReaderType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmReaderTypeAdd.resx">
+      <DependentUpon>FrmReaderTypeAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
