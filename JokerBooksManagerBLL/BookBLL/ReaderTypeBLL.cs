@@ -7,6 +7,7 @@ using JokerBooksManagerModels.Model;
 using JokerBooksManagerDAL.BookDAL;
 using JokerBooksManagerDAL.Helper;
 using System.Data.SqlClient;
+using System.Data;
 
 
 namespace JokerBooksManagerBLL.BookBLL
@@ -53,11 +54,24 @@ namespace JokerBooksManagerBLL.BookBLL
             catch (Exception ex)
             {
                 throw ex;
-            }           
+            }
         }
 
         #endregion
 
+        #region 获取所有读者类别
+
+        /// <summary>
+        /// 获取所有读者类别
+        /// </summary>
+        /// <returns></returns>
+        public List<ReaderType> GetReaderTypes()
+        {
+            return ReaderTypeDAL.GetReaderTypes();
+        }
+
+
+        #endregion
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -75,5 +76,37 @@ namespace JokerBooksManagerDAL.BookDAL
         }
 
         #endregion
+
+        #region 获取所有读者类别
+
+        /// <summary>
+        /// 获取所有读者类别
+        /// </summary>
+        /// <returns></returns>
+        public static List<ReaderType> GetReaderTypes()
+        {
+            BookCommandType bookCommand = BookCommandType.Text;
+            List<ReaderType> lst = new List<ReaderType>();
+            StringBuilder sb = new StringBuilder();
+            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType  ORDER BY ReadTypeId ASC");
+            DataTable dt = DBHelper.GetDataTable(sb.ToString(), bookCommand);
+            foreach (DataRow dr in dt.Rows)
+            {
+                ReaderType type = new ReaderType
+                {
+                    ReadTypeId = dr["ReadTypeId"].ChangeInt(),
+                    ReadTypeName = dr["ReadTypeName"].ToString()
+                };
+                lst.Add(type);
+            }
+            return lst;
+        }
+
+
+        #endregion
+
+
+
+
     }
 }
