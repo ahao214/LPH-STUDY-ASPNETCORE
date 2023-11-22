@@ -105,7 +105,37 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+        #region 根据ID获取读者类别
 
+        /// <summary>
+        /// 根据ID获取读者类别
+        /// </summary>
+        /// <param name="ID">读者类别ID</param>
+        /// <returns>返回读者类别对象</returns>
+        public static ReaderType GetReaderTypeById(int ID)
+        {
+            ReaderType type = new ReaderType();
+            BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
+            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId  ORDER BY ReadTypeId ASC");
+            DataTable dt = DBHelper.GetDataTable(sb.ToString(), bookCommand);
+            SqlParameter[] paras =
+            {
+                new SqlParameter ("@ReadTypeId",ID )
+            };
+            SqlDataReader dr = DBHelper.ExecuteReader(sb.ToString(), bookCommand, paras);
+            if (dr.Read())
+            {
+                type = new ReaderType()
+                {
+                    ReadTypeId = dr["ReadTypeId"].ChangeInt(),
+                    ReadTypeName = dr["ReadTypeName"].ToString()
+                };
+            }
+            return type;
+        }
+
+
+        #endregion
 
 
     }

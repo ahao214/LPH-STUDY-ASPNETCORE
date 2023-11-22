@@ -8,6 +8,7 @@ using JokerBooksManagerDAL.BookDAL;
 using JokerBooksManagerDAL.Helper;
 using System.Data.SqlClient;
 using System.Data;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 
 namespace JokerBooksManagerBLL.BookBLL
@@ -73,6 +74,30 @@ namespace JokerBooksManagerBLL.BookBLL
             }
             catch (Exception ex)
             {
+                throw ex;
+            }
+        }
+
+
+        #endregion
+
+
+        #region 根据ID获取读者类别
+
+        /// <summary>
+        /// 根据ID获取读者类别
+        /// </summary>
+        /// <param name="ID">读者类别ID</param>
+        /// <returns>返回读者类别对象</returns>
+        public ReaderType GetReaderTypeById(int ID)
+        {
+            try
+            {
+                return ReaderTypeDAL.GetReaderTypeById(ID);
+            }
+            catch (Exception ex)
+            {
+
                 throw ex;
             }
         }
