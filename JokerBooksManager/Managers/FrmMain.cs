@@ -14,12 +14,22 @@ using Sunny.UI;
 
 namespace JokerBooksManager.Managers
 {
+    /// <summary>
+    /// 主窗体界面
+    /// </summary>
     public partial class FrmMain : UIForm
     {
+        #region 构造函数
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public FrmMain()
         {
             InitializeComponent();
         }
+
+        #endregion
 
         #region 密码修改事件
 
