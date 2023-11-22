@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.TsmiSysManage = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiPassModify = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +39,7 @@
             this.TsslTxtInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Timers = new System.Windows.Forms.Timer(this.components);
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -131,6 +133,12 @@
             this.TsslTime.Name = "TsslTime";
             this.TsslTime.Size = new System.Drawing.Size(200, 24);
             // 
+            // Timers
+            // 
+            this.Timers.Enabled = true;
+            this.Timers.Interval = 1000;
+            this.Timers.Tick += new System.EventHandler(this.Timers_Tick);
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -170,5 +178,6 @@
         private System.Windows.Forms.ToolStripStatusLabel TsslTxtInfo;
         private System.Windows.Forms.ToolStripStatusLabel TsslLoginName;
         private System.Windows.Forms.ToolStripStatusLabel TsslTime;
+        private System.Windows.Forms.Timer Timers;
     }
 }

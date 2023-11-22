@@ -92,7 +92,7 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            LoadInfo();              
+            LoadInfo();
         }
 
         #endregion
@@ -105,9 +105,25 @@ namespace JokerBooksManager.Managers
         private void LoadInfo()
         {
             TsslLoginName.Text = UserInfo.LoginName;
-            TsslTime.Text = "时间：" + DateTime.Now.ToString();
+            TsslTime.Text = "时间：" + CommDefine.RepString(DateTime.Now.ToString());
         }
 
         #endregion
+
+        #region 状态栏时间计时器
+
+        /// <summary>
+        /// 状态栏时间计时器
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Timers_Tick(object sender, EventArgs e)
+        {
+            TsslTime.Text = "时间：" + CommDefine.RepString(DateTime.Now.ToString());
+        }
+
+        #endregion
+
+
     }
 }
