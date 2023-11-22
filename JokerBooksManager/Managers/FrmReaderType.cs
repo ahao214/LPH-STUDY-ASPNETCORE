@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManagerBLL.BookBLL;
+using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
@@ -77,7 +78,37 @@ namespace JokerBooksManager.Managers
         private void FrmReaderType_Load(object sender, EventArgs e)
         {
             LoadReaderType();  //绑定读者类别信息
-        } 
+        }
+        #endregion
+
+        #region 单击单元格内容事件
+        /// <summary>
+        /// 单击单元格内容事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DgvReaderType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // 获取行
+            int row = e.RowIndex;
+            // 获取列
+            int col = e.ColumnIndex;
+            ReaderType type = DgvReaderType.Rows[row].DataBoundItem as ReaderType;
+            if (!(DgvReaderType.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
+                return;
+            // 拿到单元格的值
+            string cellValue = linkCell.FormattedValue.ToString();
+            // int readTypeId = DgvReaderType["ReadTypeId", row].Value.ChangeInt();
+            switch (cellValue)
+            {
+                case "修改":
+                    ShowForm(type.ReadTypeId); break;
+                default:
+                    break;
+            }
+
+
+        }
         #endregion
     }
 }
