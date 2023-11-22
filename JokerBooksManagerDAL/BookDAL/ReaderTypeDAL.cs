@@ -131,6 +131,7 @@ namespace JokerBooksManagerDAL.BookDAL
                     ReadTypeName = dr["ReadTypeName"].ToString()
                 };
             }
+            dr.Close();
             return type;
         }
 
