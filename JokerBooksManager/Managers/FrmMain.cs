@@ -134,7 +134,7 @@ namespace JokerBooksManager.Managers
         private void FormFit()
         {
             WindowState = FormWindowState.Maximized;
-            TsslLoginName.Width = Sstatus.Width - TsslTxtInfo.Width - TsslTime.Width - 500;
+            TsslLoginName.Width = Sstatus.Width - TsslTxtInfo.Width - TsslTime.Width * 2;
         }
 
         #endregion
