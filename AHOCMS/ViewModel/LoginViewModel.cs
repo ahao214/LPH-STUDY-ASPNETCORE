@@ -94,7 +94,7 @@ namespace AHOCMS.ViewModel
             {
                 return new RelayCommand(() =>
                 {
-                    MessageBox.Show("取消");
+                    App.Current.Shutdown();
                 });
             }
         }

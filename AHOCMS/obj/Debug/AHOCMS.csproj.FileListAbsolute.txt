@@ -1,5 +1,4 @@
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.csproj.SuggestedBindingRedirects.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\RadioButtonMenuDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Resources\ToggleButtonDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\MainWindow.g.cs

@@ -23,6 +23,15 @@ namespace AHOCMS.Windows
         public AddCargoTypeWindow()
         {
             InitializeComponent();
+
+            this.Loaded += ((s, e) =>
+            {
+                AppData.Instance.ShowMarkLayer(true);
+            });
+            this.Closing += ((s, e) =>
+            {
+                AppData.Instance.ShowMarkLayer(false);
+            });
         }
     }
 }

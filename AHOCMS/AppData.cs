@@ -35,5 +35,18 @@ namespace AHOCMS
         /// </summary>
         public MainWindow MainWindow { get; set; } = null;
 
+        /// <summary>
+        /// 显示或者隐藏遮罩层
+        /// </summary>
+        /// <param name="isMark"></param>
+        public void ShowMarkLayer(bool isMark)
+        {
+            if(MainWindow ==null)
+            {
+                return;
+            }
+            MainWindow.markLayer.Visibility = isMark ? System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
+        }
+
     }
 }

@@ -23,6 +23,8 @@ namespace AHOCMS.View
         public CargoTypeView()
         {
             InitializeComponent();
+
+
         }
     }
 }

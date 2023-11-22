@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using AHOCMS.Models;
 using Models;
+using GalaSoft.MvvmLight.Command;
+using AHOCMS.Windows;
 
 namespace AHOCMS.ViewModel
 {
-    public class CargoTypeViewModel:ViewModelBase
+    public class CargoTypeViewModel : ViewModelBase
     {
         private List<CargoType> cargoTypes = new List<CargoType>();
 
@@ -33,6 +35,23 @@ namespace AHOCMS.ViewModel
         public CargoTypeViewModel()
         {
             cargoTypes = new CargoTypeProvider().Select();
+        }
+
+        /// <summary>
+        /// 打开物资类型添加页面
+        /// </summary>
+        public RelayCommand OpenAddCargoTypeWindowCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    var window = new AddCargoTypeWindow();
+                    window.ShowDialog();
+                    // 刷新数据库
+                    CargoTypes = new CargoTypeProvider().Select();
+                });
+            }
         }
     }
 }
