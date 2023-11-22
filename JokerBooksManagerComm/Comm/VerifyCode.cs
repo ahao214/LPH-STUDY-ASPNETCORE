@@ -122,7 +122,7 @@ namespace JokerBooksManagerComm.Comm
             gra.Clear(ColorTranslator.FromHtml("#eff8e8"));
             SizeF charSize;
             PointF pointF = new PointF(0, 2);
-            float sepDistance = 3.5F;
+            float sepDistance = 5.5F;
             char[] vs = sCode.ToCharArray();
             for (int i = 0; i < vs.Length; i++)
             {

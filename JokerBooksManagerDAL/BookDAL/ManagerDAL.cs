@@ -29,6 +29,7 @@ namespace JokerBooksManagerDAL.BookDAL
         public static Manager GetManagerByNameAndPass(string loginName, string loginPass)
         {            
             StringBuilder sb = new StringBuilder();
+            BookCommandType commandType = BookCommandType.Text;
             sb.Append("SELECT Id,LoginName,LoginPass,IsSupper From Manager ");
             sb.Append(" WHERE LoginName=@LoginName AND LoginPass=@LoginPass");
             SqlParameter[] paras =
@@ -36,7 +37,7 @@ namespace JokerBooksManagerDAL.BookDAL
                 new SqlParameter ("@LoginName",loginName ),
                 new SqlParameter ("@LoginPass",loginPass )
             };
-            DataTable dt = DBHelper.GetDataTable(sb.ToString(), 1, paras);
+            DataTable dt = DBHelper.GetDataTable(sb.ToString(), commandType, paras);
             Manager manager = default;
             foreach (DataRow dr in dt.Rows)
             {

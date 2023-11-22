@@ -38,7 +38,7 @@ namespace JokerBooksManagerDAL.Helper
         /// <param name="iCmdType">参数数组</param>
         /// <param name="parameters">返回DataTable</param>
         /// <returns></returns>
-        public static DataTable GetDataTable(string sql, int iCmdType, params SqlParameter[] parameters)
+        public static DataTable GetDataTable(string sql, BookCommandType iCmdType, params SqlParameter[] parameters)
         {
             DataTable dt = new DataTable();
             using (SqlConnection conn = CreateConn ())
@@ -54,7 +54,7 @@ namespace JokerBooksManagerDAL.Helper
 
         #region
 
-        private static SqlCommand CreateCommand(SqlConnection oConn, string sql, int iCmdType, SqlTransaction trans, params SqlParameter[] paras)
+        private static SqlCommand CreateCommand(SqlConnection oConn, string sql, BookCommandType iCmdType, SqlTransaction trans, params SqlParameter[] paras)
         {
             // iCmdType 1是Text 2是StoredProcedure 3是Table
             if (oConn == null)
@@ -62,7 +62,7 @@ namespace JokerBooksManagerDAL.Helper
                 throw new Exception(CommConst.ConnNotNull);
             }
             SqlCommand cmd = new SqlCommand(sql, oConn);
-            if (iCmdType == 2)
+            if (iCmdType.ChangeInt() == 2)
             {
                 // 是存储过程
                 cmd.CommandType = CommandType.StoredProcedure;

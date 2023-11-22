@@ -57,6 +57,31 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 将BookCommandType转换为整型
+
+        /// <summary>
+        /// 将BookCommandType转换为整型
+        /// </summary>
+        /// <param name="sVal">参数值</param>
+        /// <returns>返回类型</returns>
+        public static int ChangeInt(this BookCommandType sVal)
+        {
+            int iRes;
+            try
+            {
+                iRes = Convert.ToInt32(sVal);
+            }
+            catch (Exception)
+            {
+                iRes = 0;
+            }
+            return iRes;
+        }
+
+        #endregion
+
+
+
 
     }
 }
