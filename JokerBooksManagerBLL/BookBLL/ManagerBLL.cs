@@ -47,7 +47,7 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="manager">管理员对象</param>
         /// <returns>大于0：修改成功 小于0：修改失败</returns>
-        public static int UpdatePassById(Manager manager)
+        public int UpdatePassById(Manager manager)
         {
             try
             {
