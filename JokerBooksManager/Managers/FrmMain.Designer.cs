@@ -60,6 +60,7 @@
             this.TsmiPassModify.Name = "TsmiPassModify";
             this.TsmiPassModify.Size = new System.Drawing.Size(270, 34);
             this.TsmiPassModify.Text = "密码修改(&P)";
+            this.TsmiPassModify.Click += new System.EventHandler(this.TsmiPassModify_Click);
             // 
             // TmsiExitSystem
             // 

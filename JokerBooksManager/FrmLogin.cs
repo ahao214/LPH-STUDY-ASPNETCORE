@@ -95,6 +95,10 @@ namespace JokerBooksManager
                 CommMsgBox.MsgBoxCaveat(CommConst.LoginFail);
                 return;
             }
+            UserInfo.Id = manager.Id;
+            UserInfo.LoginName = manager.LoginName;
+            UserInfo.LoginPass = manager.LoginPass;
+            UserInfo.IsSupper = manager.IsSupper;
 
             FrmMain frmMain = new FrmMain();
             frmMain.Show();

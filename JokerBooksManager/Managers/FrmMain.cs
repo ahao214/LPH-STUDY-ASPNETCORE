@@ -18,5 +18,16 @@ namespace JokerBooksManager.Managers
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 密码修改事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TsmiPassModify_Click(object sender, EventArgs e)
+        {
+            FrmPassModify frmPassModify = new FrmPassModify();  
+            frmPassModify.ShowDialog();
+        }
     }
 }

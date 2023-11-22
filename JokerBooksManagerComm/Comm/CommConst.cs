@@ -100,7 +100,17 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 两次密码输入不一致
 
+        public const string RePassFalse = "两次密码输入不一致";
+
+        #endregion
+
+        #region 原始密码不正确
+
+        public const string OldPassFalse = "原始密码不正确";
+
+        #endregion
 
 
     }
