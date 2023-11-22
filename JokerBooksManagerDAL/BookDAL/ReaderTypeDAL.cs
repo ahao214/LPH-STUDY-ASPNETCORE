@@ -45,5 +45,35 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+        #region 读者类别是否存在
+
+        /// <summary>
+        /// 读者类别是否存在
+        /// </summary>
+        /// <param name="readerType">读者类别</param>
+        /// <returns>大于0：成功 小于0：失败</returns>
+        public static bool IsExistReaderType(string typeName)
+        {
+            bool res = false;
+            StringBuilder sb = new StringBuilder();
+            BookCommandType commandType = BookCommandType.Text;
+            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReaderTypeName=@ReadTypeName");
+            SqlParameter[] paras =
+            {
+                new SqlParameter ("@ReadTypeName",typeName)
+            };
+            try
+            {
+                object obj = DBHelper.ExecuteScalar(sb.ToString(), commandType, paras);
+                res = obj.ChangeInt() > 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return res;
+        }
+
+        #endregion
     }
 }

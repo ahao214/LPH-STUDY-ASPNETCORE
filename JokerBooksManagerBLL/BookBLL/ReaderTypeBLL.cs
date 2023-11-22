@@ -37,5 +37,27 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
+        #region 读者类别是否重复
+
+        /// <summary>
+        /// 读者类别是否存在
+        /// </summary>
+        /// <param name="readerType">读者类别</param>
+        /// <returns>大于0：成功 小于0：失败</returns>
+        public bool IsExistReaderType(string typeName)
+        {
+            try
+            {
+                return ReaderTypeDAL.IsExistReaderType(typeName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }           
+        }
+
+        #endregion
+
+
     }
 }

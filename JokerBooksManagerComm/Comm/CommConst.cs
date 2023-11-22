@@ -130,5 +130,11 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 改名称已经存在
+
+        public const string IsExistsInfo = "改名称已经存在";
+
+        #endregion
+
     }
 }

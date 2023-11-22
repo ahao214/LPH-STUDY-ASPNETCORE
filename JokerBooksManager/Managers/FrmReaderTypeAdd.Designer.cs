@@ -32,7 +32,7 @@
             this.BtnClose = new Sunny.UI.UIButton();
             this.BtnOk = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
-            this.TxtReaderType = new Sunny.UI.UITextBox();
+            this.TxtReaderTypeName = new Sunny.UI.UITextBox();
             this.SuspendLayout();
             // 
             // uiButton1
@@ -114,37 +114,37 @@
             this.uiLabel1.Text = "类别名称";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtReaderType
+            // TxtReaderTypeName
             // 
-            this.TxtReaderType.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtReaderType.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtReaderType.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtReaderType.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtReaderType.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtReaderType.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtReaderType.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtReaderType.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.TxtReaderType.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderType.Location = new System.Drawing.Point(172, 89);
-            this.TxtReaderType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtReaderType.MinimumSize = new System.Drawing.Size(1, 16);
-            this.TxtReaderType.Name = "TxtReaderType";
-            this.TxtReaderType.Padding = new System.Windows.Forms.Padding(5);
-            this.TxtReaderType.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtReaderType.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtReaderType.ShowText = false;
-            this.TxtReaderType.Size = new System.Drawing.Size(150, 32);
-            this.TxtReaderType.Style = Sunny.UI.UIStyle.Green;
-            this.TxtReaderType.TabIndex = 4;
-            this.TxtReaderType.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TxtReaderType.Watermark = "";
+            this.TxtReaderTypeName.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderTypeName.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtReaderTypeName.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtReaderTypeName.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderTypeName.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtReaderTypeName.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtReaderTypeName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtReaderTypeName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtReaderTypeName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtReaderTypeName.Location = new System.Drawing.Point(172, 89);
+            this.TxtReaderTypeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtReaderTypeName.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtReaderTypeName.Name = "TxtReaderTypeName";
+            this.TxtReaderTypeName.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtReaderTypeName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderTypeName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderTypeName.ShowText = false;
+            this.TxtReaderTypeName.Size = new System.Drawing.Size(150, 32);
+            this.TxtReaderTypeName.Style = Sunny.UI.UIStyle.Green;
+            this.TxtReaderTypeName.TabIndex = 4;
+            this.TxtReaderTypeName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtReaderTypeName.Watermark = "";
             // 
             // FrmReaderTypeAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(391, 330);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.Controls.Add(this.TxtReaderType);
+            this.Controls.Add(this.TxtReaderTypeName);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnClose);
@@ -155,6 +155,7 @@
             this.Text = "新增读者类别";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.Load += new System.EventHandler(this.FrmReaderTypeAdd_Load);
             this.ResumeLayout(false);
 
         }
@@ -165,6 +166,6 @@
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIButton BtnOk;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UITextBox TxtReaderType;
+        private Sunny.UI.UITextBox TxtReaderTypeName;
     }
 }

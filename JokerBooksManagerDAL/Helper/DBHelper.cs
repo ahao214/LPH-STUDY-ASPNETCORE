@@ -145,5 +145,33 @@ namespace JokerBooksManagerDAL.Helper
 
         #endregion
 
+
+        #region 返回首行首列
+
+        /// <summary>
+        /// 返回首行首列
+        /// </summary>
+        /// <param name="sql">SQL语句</param>
+        /// <param name="iCmdType">命令类型</param>
+        /// <param name="param">参数列表</param>
+        /// <returns>返回首行首列</returns>
+        public static object ExecuteScalar(string sql, BookCommandType iCmdType, params SqlParameter[] param)
+        {
+            object res = null;
+            using (SqlConnection conn = CreateConn())
+            {
+                SqlCommand cmd = CreateCommand(conn, sql, iCmdType, null, param);
+                res = cmd.ExecuteScalar();//返回一个值 第一行第一列
+                cmd.Parameters.Clear();
+                if (res is null || res == DBNull.Value)
+                {
+                    res = null;
+                }
+            }
+            return res;
+        }
+
+        #endregion
+
     }
 }

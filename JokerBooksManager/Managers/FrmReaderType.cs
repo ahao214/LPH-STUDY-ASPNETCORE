@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
 namespace JokerBooksManager.Managers
@@ -42,8 +43,21 @@ namespace JokerBooksManager.Managers
             {
                 MdiParent = MdiParent
             };
+            frmReaderTypeAdd.Tag = new FormInfoModel
+            {
+                KeyId = iReaderType,
+                ReloadData = null // 某个函数(加载Dgv数据的)
+            };
+
             frmReaderTypeAdd.Show();
-        } 
+        }
+        #endregion
+
+        #region 关闭窗体
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         #endregion
     }
 }
