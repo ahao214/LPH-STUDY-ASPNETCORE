@@ -92,6 +92,7 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            FormFit();
             LoadInfo();
         }
 
@@ -124,6 +125,19 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
+
+        #region 状态栏宽度自动伸缩
+
+        /// <summary>
+        /// 状态栏宽度自动伸缩
+        /// </summary>
+        private void FormFit()
+        {
+            WindowState = FormWindowState.Maximized;
+            TsslLoginName.Width = Sstatus.Width - TsslTxtInfo.Width - TsslTime.Width - 500;
+        }
+
+        #endregion
 
     }
 }
