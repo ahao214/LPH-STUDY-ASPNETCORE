@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="Models\RecordProvider.cs" />
     <Compile Include="ViewModel\AddCargoTypeViewModel.cs" />
+    <Compile Include="ViewModel\AddCargoViewModel.cs" />
     <Compile Include="ViewModel\CargoTypeViewModel.cs" />
     <Compile Include="ViewModel\CargoViewModel.cs" />
     <Compile Include="ViewModel\IndexViewModel.cs" />
@@ -150,6 +151,9 @@
     </Compile>
     <Compile Include="Windows\AddCargoTypeWindow.xaml.cs">
       <DependentUpon>AddCargoTypeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddCargoWindow.xaml.cs">
+      <DependentUpon>AddCargoWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -199,6 +203,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AddCargoTypeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddCargoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -14,7 +14,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="{Binding AppData.SystemName}" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Grid.Row="0" Text="添加新的物资类型" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
 
             <StackPanel Grid.Row="1" Margin="10 0 0 0" VerticalAlignment="Center" Orientation="Horizontal">
                 <TextBlock  Text="类型名称" Width="80" FontSize="18"/>
