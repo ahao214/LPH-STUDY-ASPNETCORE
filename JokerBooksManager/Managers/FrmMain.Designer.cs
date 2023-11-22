@@ -40,6 +40,9 @@
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
+            this.TsmiReaderManager = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiReaderTypeName = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiReaderInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +89,7 @@
             this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSysManage,
+            this.TsmiReaderManager,
             this.TsmiWindowList});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
@@ -141,6 +145,28 @@
             this.Timers.Interval = 1000;
             this.Timers.Tick += new System.EventHandler(this.Timers_Tick);
             // 
+            // TsmiReaderManager
+            // 
+            this.TsmiReaderManager.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiReaderTypeName,
+            this.TsmiReaderInfo});
+            this.TsmiReaderManager.Image = global::JokerBooksManager.Properties.Resources._5;
+            this.TsmiReaderManager.Name = "TsmiReaderManager";
+            this.TsmiReaderManager.Size = new System.Drawing.Size(146, 28);
+            this.TsmiReaderManager.Text = "读者管理(&R)";
+            // 
+            // TsmiReaderTypeName
+            // 
+            this.TsmiReaderTypeName.Name = "TsmiReaderTypeName";
+            this.TsmiReaderTypeName.Size = new System.Drawing.Size(270, 34);
+            this.TsmiReaderTypeName.Text = "读者类别(&T)";
+            // 
+            // TsmiReaderInfo
+            // 
+            this.TsmiReaderInfo.Name = "TsmiReaderInfo";
+            this.TsmiReaderInfo.Size = new System.Drawing.Size(270, 34);
+            this.TsmiReaderInfo.Text = "读者信息(&I)";
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -181,5 +207,8 @@
         private System.Windows.Forms.ToolStripStatusLabel TsslLoginName;
         private System.Windows.Forms.ToolStripStatusLabel TsslTime;
         private System.Windows.Forms.Timer Timers;
+        private System.Windows.Forms.ToolStripMenuItem TsmiReaderManager;
+        private System.Windows.Forms.ToolStripMenuItem TsmiReaderTypeName;
+        private System.Windows.Forms.ToolStripMenuItem TsmiReaderInfo;
     }
 }

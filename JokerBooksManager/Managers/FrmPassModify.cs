@@ -122,5 +122,17 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
+
+        #region 关闭当前窗体
+        /// <summary>
+        /// 关闭当前窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        } 
+        #endregion
     }
 }
