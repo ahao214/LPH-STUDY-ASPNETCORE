@@ -64,10 +64,17 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <summary>
         /// 获取所有读者类别
         /// </summary>
-        /// <returns></returns>
+        /// <returns>返回读者对象集合</returns>
         public List<ReaderType> GetReaderTypes()
         {
-            return ReaderTypeDAL.GetReaderTypes();
+            try
+            {
+                return ReaderTypeDAL.GetReaderTypes();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
 
