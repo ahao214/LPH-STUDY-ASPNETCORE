@@ -20,3 +20,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooks
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerDAL.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\bin\Debug\JokerBooksManagerModels.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.Managers.FrmMain.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.Managers.FrmPassModify.resources

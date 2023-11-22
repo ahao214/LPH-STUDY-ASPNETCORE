@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
+using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
+
 namespace JokerBooksManager.Managers
 {
     /// <summary>
@@ -44,6 +46,7 @@ namespace JokerBooksManager.Managers
                 return;
             if (!CheckInput(newPass, rePass))
                 return;
+            UpdatePwd(newPass);
         }
 
         #endregion
@@ -88,6 +91,34 @@ namespace JokerBooksManager.Managers
                 return false;
             }
             return true;
+        }
+
+        #endregion
+
+        #region 更新密码
+
+        /// <summary>
+        /// 更新密码
+        /// </summary>
+        /// <param name="newPwd">新密码</param>
+        private void UpdatePwd(string newPwd)
+        {
+            ManagerBLL bll = new ManagerBLL();
+            Manager manager = new Manager()
+            {
+                Id = UserInfo.Id,
+                LoginPass = CommDefine.GetMD5Hash(newPwd)
+            };
+            int res = bll.UpdatePassById(manager);
+            if (res > 0)
+            {
+                CommMsgBox.MsgBox(CommConst.UpdatePwdTrue);
+            }
+            else
+            {
+                CommMsgBox.MsgBox(CommConst.UpdatePwdFalse);
+            }
+            Close();
         }
 
         #endregion

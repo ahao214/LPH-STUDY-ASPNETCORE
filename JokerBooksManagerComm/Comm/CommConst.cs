@@ -112,6 +112,17 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 密码更新成功
+
+        public const string UpdatePwdTrue = "密码更新成功";
+
+        #endregion
+
+        #region 密码更新失败
+
+        public const string UpdatePwdFalse = "密码更新失败";
+
+        #endregion
 
     }
 }
