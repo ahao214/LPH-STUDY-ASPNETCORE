@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace JokerBooksManagerModels.Model
 {
+    /// <summary>
+    /// 窗体信息类(用于在各个窗体间传输数据)
+    /// </summary>
     public class FormInfoModel
     {
         /// <summary>
