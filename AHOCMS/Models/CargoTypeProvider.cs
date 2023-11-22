@@ -18,8 +18,10 @@ namespace Models
         {
             if (t == null)
                 return 0;
-            db.CargoType.Remove(t);
-            
+            var model = db.CargoType.ToList ().FirstOrDefault(item=> item.Id == t.Id);  
+            if(model ==null )
+                return 0;
+            db.CargoType.Remove(model);            
             int count = db.SaveChanges();
             return count;            
         }

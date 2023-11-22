@@ -19,7 +19,7 @@ namespace AHOCMS.ViewModel
         public AddCargoViewModel()
         {
             CargoTypes = new CargoTypeProvider().Select();
-         }
+        }
 
         private Cargo cargo = new Cargo();
         /// <summary>
@@ -75,10 +75,12 @@ namespace AHOCMS.ViewModel
             {
                 return new RelayCommand<Window>((arg) =>
                 {
-                    if (string.IsNullOrEmpty(cargo.Name))
+                    if (string.IsNullOrEmpty(cargo.Name) || string.IsNullOrEmpty(cargo.TypeName) || string.IsNullOrEmpty(cargo.Unit))
                         return;
                     cargo.InsertDate = DateTime.Now;
-                    
+                    cargo.MemberId = AppData.Instance.CurrentUser.Id;
+                    cargo.MemberName = AppData.Instance.CurrentUser.Name;
+
                     var count = new CargoProvider().Insert(cargo);
                     if (count == 0)
                     {

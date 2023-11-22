@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:AHOCMS.View"
+             xmlns:local="clr-namespace:AHOCMS.View" xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
              mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Cargo}" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -17,7 +17,73 @@
 
         </Border>
 
-
-
+        <TextBlock Text="&#xf055;" FontFamily="../Fonts/#FontAwesome" Margin="0 0 25 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="FontSize" Value="26"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Foreground" Value="Green"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="FontSize" Value="24"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="MouseUp">
+            <b:InvokeCommandAction Command="{Binding OpenAddCargoWindowCommand}"/>
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+        </TextBlock>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <DataGrid ItemsSource="{Binding Cargos}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="物资名称" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="物资类型" Binding="{Binding TypeName}"/>
+                    <DataGridTextColumn Header="单位" Binding="{Binding Unit}"/>
+                    <DataGridTextColumn Header="单价" Binding="{Binding Price}"/>
+                    <DataGridTextColumn Header="备注" Binding="{Binding Tag}"/>
+                    <DataGridTextColumn Header="插入日期" Binding="{Binding InsertDate}"/>
+                    <DataGridTextColumn Header="登录员" Binding="{Binding MemberName}"/>
+                    <DataGridTemplateColumn Header="操作">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="删除" HorizontalAlignment="Center">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Foreground" Value="red" />
+                                                    <Setter Property="Cursor" Value="Hand"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                            <b:Interaction.Triggers>
+                                <b:EventTrigger EventName="MouseUp">
+                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoTypeView},Path=DataContext.DeleteCargoTypeCommand}" CommandParameter="{Binding}"/>
+                                </b:EventTrigger>
+                            </b:Interaction.Triggers>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+                <TextBlock Text="统计：" FontSize="18" Foreground="White"/>
+                <TextBlock Text="{Binding Cargos.Count}" FontSize="18" Foreground="white"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>
