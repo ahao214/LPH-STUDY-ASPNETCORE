@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using JokerBooksManagerComm.Comm;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 
 
@@ -41,7 +42,7 @@ namespace JokerBooksManagerDAL.Helper
         public static DataTable GetDataTable(string sql, BookCommandType iCmdType, params SqlParameter[] parameters)
         {
             DataTable dt = new DataTable();
-            using (SqlConnection conn = CreateConn ())
+            using (SqlConnection conn = CreateConn())
             {
                 SqlCommand cmd = CreateCommand(conn, sql, iCmdType, null, parameters);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -52,8 +53,18 @@ namespace JokerBooksManagerDAL.Helper
 
         #endregion
 
-        #region
+        #region 返回SqlCommand对象
 
+        /// <summary>
+        /// 返回SqlCommand对象
+        /// </summary>
+        /// <param name="oConn"></param>
+        /// <param name="sql"></param>
+        /// <param name="iCmdType"></param>
+        /// <param name="trans"></param>
+        /// <param name="paras"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         private static SqlCommand CreateCommand(SqlConnection oConn, string sql, BookCommandType iCmdType, SqlTransaction trans, params SqlParameter[] paras)
         {
             // iCmdType 1是Text 2是StoredProcedure 3是Table
@@ -84,6 +95,33 @@ namespace JokerBooksManagerDAL.Helper
         }
 
         #endregion
+
+        #region 返回SqlDataReader对象
+
+        /// <summary>
+        /// 返回SqlDataReader对象
+        /// </summary>
+        /// <param name="sql">SQL一句</param>
+        /// <param name="iCmdType">命令类型</param>
+        /// <param name="param">参数</param>
+        /// <returns>返回SqlDataReader对象</returns>
+        public static SqlDataReader ExecuteReader(string sql, BookCommandType iCmdType, params SqlParameter[] param)
+        {
+            SqlConnection conn = CreateConn();
+            SqlCommand cmd = CreateCommand(conn, sql, iCmdType, null, param);
+            try
+            {
+                SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                return reader;
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
+
+        #endregion
+
 
 
     }
