@@ -118,6 +118,7 @@
             this.BtnClose.TabIndex = 3;
             this.BtnClose.Text = "关闭";
             this.BtnClose.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // uiLabel2
             // 
