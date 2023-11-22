@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 
 namespace JokerBooksManagerBLL.BookBLL
 {
+    /// <summary>
+    /// 业务逻辑层读者类别
+    /// </summary>
     public class ReaderTypeBLL
     {
         #region 新增读者类别
