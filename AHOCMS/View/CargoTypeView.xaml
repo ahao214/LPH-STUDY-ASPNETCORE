@@ -77,8 +77,9 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <StackPanel Grid.Row="1">
-                
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
+                <TextBlock Text="统计：" FontSize="18" Foreground="White"/>
+                <TextBlock Text="{Binding CargoTypes.Count}" FontSize="18" Foreground="white"/>
             </StackPanel>                     
         </Grid>
 
