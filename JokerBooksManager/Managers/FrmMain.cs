@@ -139,5 +139,20 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
+        #region 窗体变换大小时发生
+        /// <summary>
+        /// 窗体变换大小时发生
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmMain_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        #endregion
     }
 }

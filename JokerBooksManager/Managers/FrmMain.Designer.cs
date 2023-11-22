@@ -48,9 +48,9 @@
             // 
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 71);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 67);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1189, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1189, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,7 +90,7 @@
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
-            this.MsMenu.Size = new System.Drawing.Size(1189, 36);
+            this.MsMenu.Size = new System.Drawing.Size(1189, 32);
             this.MsMenu.TabIndex = 1;
             this.MsMenu.Text = "menuStrip2";
             // 
@@ -158,6 +158,7 @@
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.Resize += new System.EventHandler(this.FrmMain_Resize);
             this.MsMenu.ResumeLayout(false);
             this.MsMenu.PerformLayout();
             this.Sstatus.ResumeLayout(false);
