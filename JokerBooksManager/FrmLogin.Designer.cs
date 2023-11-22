@@ -88,6 +88,7 @@
             this.TxtLoginName.Size = new System.Drawing.Size(170, 32);
             this.TxtLoginName.Style = Sunny.UI.UIStyle.Custom;
             this.TxtLoginName.TabIndex = 1;
+            this.TxtLoginName.Text = "admin";
             this.TxtLoginName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtLoginName.Watermark = "";
             // 
@@ -111,8 +112,10 @@
             this.TxtLoginPass.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.TxtLoginPass.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.TxtLoginPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtLoginPass.DoubleValue = 1D;
             this.TxtLoginPass.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtLoginPass.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtLoginPass.IntValue = 1;
             this.TxtLoginPass.Location = new System.Drawing.Point(215, 237);
             this.TxtLoginPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtLoginPass.MinimumSize = new System.Drawing.Size(1, 16);
@@ -125,6 +128,7 @@
             this.TxtLoginPass.Size = new System.Drawing.Size(170, 32);
             this.TxtLoginPass.Style = Sunny.UI.UIStyle.Custom;
             this.TxtLoginPass.TabIndex = 2;
+            this.TxtLoginPass.Text = "1";
             this.TxtLoginPass.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtLoginPass.Watermark = "";
             // 

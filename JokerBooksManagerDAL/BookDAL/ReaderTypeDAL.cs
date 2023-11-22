@@ -116,8 +116,7 @@ namespace JokerBooksManagerDAL.BookDAL
         {
             ReaderType type = new ReaderType();
             BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId  ORDER BY ReadTypeId ASC");
-            DataTable dt = DBHelper.GetDataTable(sb.ToString(), bookCommand);
+            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId");           
             SqlParameter[] paras =
             {
                 new SqlParameter ("@ReadTypeId",ID )

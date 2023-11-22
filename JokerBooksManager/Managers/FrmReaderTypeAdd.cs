@@ -146,7 +146,10 @@ namespace JokerBooksManager.Managers
             }
             if (readTypeId > 0)
             {
-
+                ReaderType type = bll.GetReaderTypeById(readTypeId);
+                if (type is null)
+                    return;
+                TxtReaderTypeName.Text = type.ReadTypeName;
             }
             else
             {
