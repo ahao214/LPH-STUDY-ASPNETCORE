@@ -33,6 +33,7 @@
             this.TsmiPassModify = new System.Windows.Forms.ToolStripMenuItem();
             this.TmsiExitSystem = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu = new System.Windows.Forms.MenuStrip();
+            this.TsmiWindowList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,18 +68,27 @@
             this.TmsiExitSystem.Name = "TmsiExitSystem";
             this.TmsiExitSystem.Size = new System.Drawing.Size(270, 34);
             this.TmsiExitSystem.Text = "退出系统(&Q)";
+            this.TmsiExitSystem.Click += new System.EventHandler(this.TmsiExitSystem_Click);
             // 
             // MsMenu
             // 
             this.MsMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiSysManage});
+            this.TsmiSysManage,
+            this.TsmiWindowList});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
+            this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
             this.MsMenu.Size = new System.Drawing.Size(1189, 32);
             this.MsMenu.TabIndex = 1;
             this.MsMenu.Text = "menuStrip2";
+            // 
+            // TsmiWindowList
+            // 
+            this.TsmiWindowList.Name = "TsmiWindowList";
+            this.TsmiWindowList.Size = new System.Drawing.Size(98, 28);
+            this.TsmiWindowList.Text = "窗口列表";
             // 
             // FrmMain
             // 
@@ -95,6 +105,7 @@
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.MsMenu.ResumeLayout(false);
             this.MsMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -109,5 +120,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiPassModify;
         private System.Windows.Forms.ToolStripMenuItem TmsiExitSystem;
         private System.Windows.Forms.MenuStrip MsMenu;
+        private System.Windows.Forms.ToolStripMenuItem TsmiWindowList;
     }
 }

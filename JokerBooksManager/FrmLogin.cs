@@ -55,7 +55,7 @@ namespace JokerBooksManager
         {
             VerifyCode verifyCode = new VerifyCode
             {
-                CodeCount = 5,
+                CodeCount = 3,
                 FontSize = 8
             };
             PbVerfiyCode.Image = verifyCode.CreateVerifyCode();

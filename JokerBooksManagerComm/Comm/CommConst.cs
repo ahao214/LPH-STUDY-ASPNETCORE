@@ -124,5 +124,11 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 您确定要退出系统吗
+
+        public const string QuitSystem = "您确定要退出系统吗?";
+
+        #endregion
+
     }
 }
