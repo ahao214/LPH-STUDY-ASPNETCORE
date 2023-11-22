@@ -28,34 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uiButton1 = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
             this.BtnOk = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.TxtReaderTypeName = new Sunny.UI.UITextBox();
             this.SuspendLayout();
-            // 
-            // uiButton1
-            // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(-22, -22);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiButton1.Style = Sunny.UI.UIStyle.Green;
-            this.uiButton1.TabIndex = 0;
-            this.uiButton1.Text = "uiButton1";
-            this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
             // BtnClose
             // 
@@ -148,7 +125,6 @@
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnClose);
-            this.Controls.Add(this.uiButton1);
             this.Name = "FrmReaderTypeAdd";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.Style = Sunny.UI.UIStyle.Green;
@@ -161,8 +137,6 @@
         }
 
         #endregion
-
-        private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIButton BtnOk;
         private Sunny.UI.UILabel uiLabel1;

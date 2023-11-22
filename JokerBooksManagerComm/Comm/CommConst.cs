@@ -180,5 +180,11 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 修改读者类别
+
+        public const string CharUpdateReaderType = "修改读者类别";
+
+        #endregion
+
     }
 }

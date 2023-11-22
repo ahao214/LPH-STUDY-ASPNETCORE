@@ -150,6 +150,7 @@ namespace JokerBooksManager.Managers
                 if (type is null)
                     return;
                 TxtReaderTypeName.Text = type.ReadTypeName;
+                Text = CommConst.CharUpdateReaderType;
             }
             else
             {
