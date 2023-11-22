@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
@@ -14,6 +15,7 @@ namespace JokerBooksManager.Managers
 {
     public partial class FrmReaderType : UIForm
     {
+        private readonly ReaderTypeBLL bll = new ReaderTypeBLL();
         public FrmReaderType()
         {
             InitializeComponent();
@@ -46,18 +48,36 @@ namespace JokerBooksManager.Managers
             frmReaderTypeAdd.Tag = new FormInfoModel
             {
                 KeyId = iReaderType,
-                ReloadData = null // 某个函数(加载Dgv数据的)
+                ReloadData = LoadReaderType // 某个函数(加载Dgv数据的)
             };
 
             frmReaderTypeAdd.Show();
         }
         #endregion
 
+
+        #region 绑定读者信息
+
+        private void LoadReaderType()
+        {
+            DgvReaderType.DataSource = bll.GetReaderTypes();
+        }
+
+        #endregion 
+
+
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        #endregion
+
+        #region 窗体加载
+        private void FrmReaderType_Load(object sender, EventArgs e)
+        {
+            LoadReaderType();  //绑定读者类别信息
+        } 
         #endregion
     }
 }

@@ -136,5 +136,43 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 新增成功
+
+        public const string SaveDataSuccess = "新增成功";
+
+        #endregion
+
+        #region 新增失败
+
+        public const string SaveDataFail = "新增失败";
+
+        #endregion
+
+        #region 更新成功
+
+        public const string UpdateDataSuccess = "更新成功";
+
+        #endregion
+
+
+        #region 更新失败
+
+        public const string UpdateDataFail = "更新失败";
+
+        #endregion
+
+        #region 删除成功
+
+        public const string DeleteDataSuccess = "删除成功";
+
+        #endregion
+
+
+        #region 删除失败
+
+        public const string DeleteDataFail = "删除失败";
+
+        #endregion
+
     }
 }

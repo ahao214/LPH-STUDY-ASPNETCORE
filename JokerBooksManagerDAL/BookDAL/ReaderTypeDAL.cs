@@ -24,8 +24,8 @@ namespace JokerBooksManagerDAL.BookDAL
         /// 新增读者类别
         /// </summary>
         /// <param name="readerType">读者类别</param>
-        /// <returns>大于0：成功 小于0：失败</returns>
-        public static int AddReaderType(ReaderType readerType)
+        /// <returns>大于0：True 小于0：False</returns>
+        public static bool AddReaderType(ReaderType readerType)
         {
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
@@ -36,7 +36,7 @@ namespace JokerBooksManagerDAL.BookDAL
             };
             try
             {
-                return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras);
+                return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
             }
             catch (Exception ex)
             {
@@ -58,7 +58,7 @@ namespace JokerBooksManagerDAL.BookDAL
             bool res = false;
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReaderTypeName=@ReadTypeName");
+            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReadTypeName=@ReadTypeName");
             SqlParameter[] paras =
             {
                 new SqlParameter ("@ReadTypeName",typeName)

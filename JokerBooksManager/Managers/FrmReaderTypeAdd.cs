@@ -52,8 +52,44 @@ namespace JokerBooksManager.Managers
             {
                 return;
             }
-
+            ReaderType type = new ReaderType
+            {
+                ReadTypeName = typeName
+            };
+            AddOrUpdate(type);
         }
+        #endregion
+
+        #region 添加或修改读者类别信息
+        /// <summary>
+        /// 添加或修改读者类别信息
+        /// </summary>
+        /// <param name="type"></param>
+        private void AddOrUpdate(ReaderType type)
+        {
+            bool bRes;
+            if (readTypeId == 0) // 添加
+            {
+                bRes = bll.AddReaderType(type);
+            }
+            else
+            {
+                bRes = false;
+            }
+            if (bRes)
+            {
+                CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
+                // 刷新
+                formInfoModel.ReloadData?.Invoke();
+                Close();
+            }
+            else
+            {
+                CommMsgBox.MsgBox(CommConst.SaveDataFail);
+                Close();
+            }
+        }
+
         #endregion
 
         #region 验证读者类别名称是否存在

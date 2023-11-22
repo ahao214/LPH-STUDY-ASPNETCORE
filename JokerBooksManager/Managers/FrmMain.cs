@@ -153,10 +153,18 @@ namespace JokerBooksManager.Managers
             }
         }
 
+
+
+
         #endregion
 
+        #region 读者类别窗体
+        private void TsmiReaderTypeName_Click(object sender, EventArgs e)
+        {
+            FrmReaderType type = new FrmReaderType();
+            type.ShowDialog();
+        }
 
-
-
+        #endregion
     }
 }
