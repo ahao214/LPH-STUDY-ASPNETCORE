@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using AHOCMS.ViewModel;
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,19 @@ namespace AHOCMS.Windows
         public AddCargoWindow()
         {
             InitializeComponent();
+
+            this.Loaded += ((s, e) =>
+            {
+                AppData.Instance.ShowMarkLayer(true);
+                var vm = DataContext as AddCargoViewModel;
+                vm.Cargo = new Models.Cargo();
+            });
+
+            this.Closing += ((s, e) =>
+            {
+                AppData.Instance.ShowMarkLayer(false);
+            });
+
         }
     }
 }

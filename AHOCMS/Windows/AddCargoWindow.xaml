@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AHOCMS.Windows"
-        mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=AddCargo}"
-        Title="AddCargoWindow" Height="350" Width="600">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" DataContext="{Binding Source={StaticResource Locator},Path=AddCargo}"
+        Title="添加新的物资" Height="350" Width="600" ResizeMode="NoResize">
     <Grid>
         <Grid Margin="100 50 100 50">
             <Grid.RowDefinitions>
