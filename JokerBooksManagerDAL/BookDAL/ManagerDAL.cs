@@ -27,7 +27,7 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <param name="loginPass">密码</param>
         /// <returns></returns>
         public static Manager GetManagerByNameAndPass(string loginName, string loginPass)
-        {            
+        {
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
             sb.Append("SELECT Id,LoginName,LoginPass,IsSupper From Manager ");
@@ -54,6 +54,34 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+        #region 更新管理员密码
+
+        /// <summary>
+        /// 更新管理员密码
+        /// </summary>
+        /// <param name="manager">管理员对象</param>
+        /// <returns>大于0：修改成功 小于0：修改失败</returns>
+        public static int UpdatePassById(Manager manager)
+        {
+            StringBuilder sb = new StringBuilder();
+            BookCommandType commandType = BookCommandType.Text;
+            sb.Append("UPDATE Manager SET LoginPass=@LoginPass WHERE Id=@Id");
+            SqlParameter[] parameters = {
+                new SqlParameter ("@LoginPass",manager .LoginPass ),
+                new SqlParameter ("@Id",manager .Id )
+            };
+            try
+            {
+                return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, parameters);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        #endregion
 
     }
 }

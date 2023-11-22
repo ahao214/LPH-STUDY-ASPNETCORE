@@ -39,5 +39,26 @@ namespace JokerBooksManagerBLL.BookBLL
         }
 
         #endregion
+
+        #region 更新管理员密码
+
+        /// <summary>
+        /// 更新管理员密码
+        /// </summary>
+        /// <param name="manager">管理员对象</param>
+        /// <returns>大于0：修改成功 小于0：修改失败</returns>
+        public static int UpdatePassById(Manager manager)
+        {
+            try
+            {
+                return ManagerDAL.UpdatePassById(manager);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        #endregion
     }
 }
