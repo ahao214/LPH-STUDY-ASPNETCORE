@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerComm.Comm;
+using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
 
@@ -78,6 +79,33 @@ namespace JokerBooksManager.Managers
             {
                 Application.ExitThread();
             }
+        }
+
+        #endregion
+
+        #region 窗体加载
+
+        /// <summary>
+        /// 窗体加载
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            LoadInfo();              
+        }
+
+        #endregion
+
+        #region 加载状态栏指定信息
+
+        /// <summary>
+        /// 加载状态栏指定信息
+        /// </summary>
+        private void LoadInfo()
+        {
+            TsslLoginName.Text = UserInfo.LoginName;
+            TsslTime.Text = "时间：" + DateTime.Now.ToString();
         }
 
         #endregion

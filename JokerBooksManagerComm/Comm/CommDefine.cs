@@ -32,5 +32,24 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 字符替换
+
+        /// <summary>
+        /// 字符替换
+        /// </summary>
+        /// <param name="val">字符串</param>
+        /// <returns>返回替换后的字符</returns>
+        public static string RepString(string val)
+        {
+            if (val.Length == 0 || string.IsNullOrEmpty(val))
+            {
+                return "";
+            }
+            val = val.Replace("/", "-");
+            return val;
+        }
+
+        #endregion
+
     }
 }
