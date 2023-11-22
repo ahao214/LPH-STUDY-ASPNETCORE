@@ -109,7 +109,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Res\Ico\" />
     <Folder Include="SunnyUI\" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +128,13 @@
       <Project>{6d5b65cc-9357-4234-acf4-d829e8576625}</Project>
       <Name>JokerBooksManagerModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Res\Ico\1.ico" />
+    <Content Include="Res\Ico\2.ico" />
+    <Content Include="Res\Ico\3.ico" />
+    <Content Include="Res\Ico\4.ico" />
+    <Content Include="Res\Ico\5.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
