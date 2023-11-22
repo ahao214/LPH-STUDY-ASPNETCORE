@@ -71,7 +71,7 @@
                                     </TextBlock.Style>
                             <b:Interaction.Triggers>
                                 <b:EventTrigger EventName="MouseUp">
-                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoTypeView},Path=DataContext.DeleteCargoCommand}" CommandParameter="{Binding}"/>
+                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoView},Path=DataContext.DeleteCargoCommand}" CommandParameter="{Binding}"/>
                                 </b:EventTrigger>
                             </b:Interaction.Triggers>
                                 </TextBlock>
