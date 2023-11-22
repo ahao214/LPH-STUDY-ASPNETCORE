@@ -101,7 +101,7 @@ namespace JokerBooksManager.Managers
             // int readTypeId = DgvReaderType["ReadTypeId", row].Value.ChangeInt();
             switch (cellValue)
             {
-                case "修改":
+                case CommConst.CharUpdate:
                     ShowForm(type.ReadTypeId); break;
                 default:
                     break;

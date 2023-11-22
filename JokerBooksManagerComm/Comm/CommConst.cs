@@ -174,5 +174,11 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 修改
+
+        public const string CharUpdate = "修改";
+
+        #endregion
+
     }
 }
