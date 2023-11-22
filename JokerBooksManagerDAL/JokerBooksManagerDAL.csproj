@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookDAL\ManagerDAL.cs" />
+    <Compile Include="BookDAL\ReaderTypeDAL.cs" />
     <Compile Include="Helper\CommStaticClass.cs" />
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
