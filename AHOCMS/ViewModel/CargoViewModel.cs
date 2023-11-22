@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace AHOCMS.ViewModel
 {
@@ -47,6 +48,29 @@ namespace AHOCMS.ViewModel
                 {
                     var window = new AddCargoWindow();
                     window.ShowDialog();
+                    // 刷新数据库
+                    Cargos = new CargoProvider().Select();
+                });
+            }
+        }
+
+
+        /// <summary>
+        /// 删除物资
+        /// </summary>
+        public RelayCommand<object> DeleteCargoCommand
+        {
+            get
+            {
+                return new RelayCommand<object>((arg) =>
+                {
+                    if (!(arg is Cargo model))
+                        return;
+                    var count = new CargoProvider().Delete(model);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("操作成功");
+                    }
                     // 刷新数据库
                     Cargos = new CargoProvider().Select();
                 });
