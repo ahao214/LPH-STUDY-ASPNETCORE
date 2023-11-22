@@ -38,6 +38,8 @@ namespace AHOCMS.ViewModel
             {
                 return new RelayCommand<Window>((arg) =>
                 {
+                    if (arg == null)
+                        return;
                     arg.Close();
                 });
             }

@@ -9,6 +9,8 @@ using AHOCMS.Models;
 using Models;
 using GalaSoft.MvvmLight.Command;
 using AHOCMS.Windows;
+using MahApps.Metro.Controls.Dialogs;
+using System.Windows;
 
 namespace AHOCMS.ViewModel
 {
@@ -48,6 +50,28 @@ namespace AHOCMS.ViewModel
                 {
                     var window = new AddCargoTypeWindow();
                     window.ShowDialog();
+                    // 刷新数据库
+                    CargoTypes = new CargoTypeProvider().Select();
+                });
+            }
+        }
+
+        /// <summary>
+        /// 删除物资类型
+        /// </summary>
+        public RelayCommand <object> DeleteCargoTypeCommand
+        {
+            get
+            {
+                return new RelayCommand<object>((arg) =>
+                {
+                    if(!(arg is CargoType model))
+                        return;
+                    var count = new CargoTypeProvider().Delete(model);
+                    if(count> 0)
+                    {
+                        MessageBox.Show("操作成功");
+                    }
                     // 刷新数据库
                     CargoTypes = new CargoTypeProvider().Select();
                 });

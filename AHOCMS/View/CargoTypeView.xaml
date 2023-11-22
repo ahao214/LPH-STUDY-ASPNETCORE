@@ -66,6 +66,11 @@
                                             </Style.Triggers>
                                         </Style>
                                     </TextBlock.Style>
+                                    <b:Interaction.Triggers>
+                                        <b:EventTrigger EventName="MouseUp">
+                                            <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoTypeView},Path=DataContext.DeleteCargoTypeCommand}" CommandParameter="{Binding}"/>
+                                        </b:EventTrigger>
+                                    </b:Interaction.Triggers>
                                 </TextBlock>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

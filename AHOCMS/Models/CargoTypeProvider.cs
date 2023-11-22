@@ -18,7 +18,10 @@ namespace Models
         {
             if (t == null)
                 return 0;
-            return 0;
+            db.CargoType.Remove(t);
+            
+            int count = db.SaveChanges();
+            return count;            
         }
 
         public int Insert(CargoType t)

@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.Controls;
+﻿using AHOCMS.ViewModel;
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,9 @@ namespace AHOCMS.Windows
             this.Loaded += ((s, e) =>
             {
                 AppData.Instance.ShowMarkLayer(true);
+                // 清空文本框的值
+                var vm = DataContext as AddCargoTypeViewModel;
+                vm.CargoType = new Models.CargoType();
             });
             this.Closing += ((s, e) =>
             {
