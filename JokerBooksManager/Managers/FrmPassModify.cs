@@ -10,13 +10,13 @@ using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
-
+using Sunny.UI;
 namespace JokerBooksManager.Managers
 {
     /// <summary>
     /// 密码修改窗体
     /// </summary>
-    public partial class FrmPassModify : Form
+    public partial class FrmPassModify : UIForm
     {
         public FrmPassModify()
         {

@@ -122,7 +122,28 @@ namespace JokerBooksManagerDAL.Helper
 
         #endregion
 
+        #region 执行增删改命令
 
+        /// <summary>
+        /// 执行增删改命令
+        /// </summary>
+        /// <param name="sql">SQL语句</param>
+        /// <param name="iCmdType">命令类型</param>
+        /// <param name="param">参数</param>
+        /// <returns>受影响的行数</returns>
+        public static int ExecuteNoneQuery(string sql, BookCommandType iCmdType, params SqlParameter[] param)
+        {
+            int res = 0;
+            using (SqlConnection conn = CreateConn())
+            {
+                SqlCommand cmd = CreateCommand(conn, sql, iCmdType, null, param);
+                res = cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+            }
+            return res;
+        }
+
+        #endregion
 
     }
 }
