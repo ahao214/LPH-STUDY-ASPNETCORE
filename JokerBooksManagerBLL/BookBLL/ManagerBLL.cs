@@ -13,7 +13,7 @@ using JokerBooksManagerDAL.BookDAL;
 namespace JokerBooksManagerBLL.BookBLL
 {
     /// <summary>
-    /// 
+    /// 业务逻辑层管理员
     /// </summary>
     public class ManagerBLL
     {
