@@ -38,7 +38,7 @@ namespace AHOCMS.ViewModel
         }
 
         /// <summary>
-        /// 所有的物资类型列表
+        /// 所有的物资列表
         /// </summary>
         private List<CargoType> cargoTypes = new List<CargoType>();
         public List<CargoType> CargoTypes
@@ -50,6 +50,7 @@ namespace AHOCMS.ViewModel
 
 
 
+        #region 关闭窗体
         /// <summary>
         /// 关闭窗体
         /// </summary>
@@ -64,12 +65,14 @@ namespace AHOCMS.ViewModel
                     arg.Close();
                 });
             }
-        }
+        } 
+        #endregion
 
+        #region 添加新的物资
         /// <summary>
-        /// 添加新的物资类型
+        /// 添加新的物资
         /// </summary>
-        public RelayCommand<Window> InsertCargoTypeCommand
+        public RelayCommand<Window> AddCargoCommand
         {
             get
             {
@@ -77,6 +80,7 @@ namespace AHOCMS.ViewModel
                 {
                     if (string.IsNullOrEmpty(cargo.Name) || string.IsNullOrEmpty(cargo.TypeName) || string.IsNullOrEmpty(cargo.Unit))
                         return;
+                    cargo.TypeId = this.cargoTypes.FirstOrDefault(t => t.Name == cargo.TypeName).Id;
                     cargo.InsertDate = DateTime.Now;
                     cargo.MemberId = AppData.Instance.CurrentUser.Id;
                     cargo.MemberName = AppData.Instance.CurrentUser.Name;
@@ -92,7 +96,8 @@ namespace AHOCMS.ViewModel
                     }
                 });
             }
-        }
+        } 
+        #endregion
 
     }
 }

@@ -12,7 +12,7 @@ using System.Windows;
 namespace AHOCMS.ViewModel
 {
     /// <summary>
-    /// 增加类型
+    /// 物资类型
     /// </summary>
     public class AddCargoTypeViewModel : ViewModelBase
     {
@@ -72,7 +72,7 @@ namespace AHOCMS.ViewModel
             }
         }
 
-
+       
 
 
     }

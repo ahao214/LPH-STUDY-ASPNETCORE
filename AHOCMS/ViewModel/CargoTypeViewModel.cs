@@ -67,6 +67,12 @@ namespace AHOCMS.ViewModel
                 {
                     if(!(arg is CargoType model))
                         return;
+                    var cargos = new CargoProvider().Select().FindAll(t => t.TypeId == model.Id);
+                    if(cargos !=null && cargos.Count > 0)
+                    {
+                        MessageBox.Show("当前类型已有引用");
+                        return;
+                    }
                     var count = new CargoTypeProvider().Delete(model);
                     if(count> 0)
                     {
@@ -77,5 +83,7 @@ namespace AHOCMS.ViewModel
                 });
             }
         }
+
+
     }
 }
