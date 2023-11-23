@@ -3,6 +3,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Dictionary/ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="Dictionary/TextBoxDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:DataBoard.ViewModel" />
