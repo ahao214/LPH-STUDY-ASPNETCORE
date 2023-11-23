@@ -17,6 +17,8 @@ namespace AHOCMS.ViewModel
         public CargoViewModel()
         {
             Cargos = new CargoProvider().Select();
+            CargoTypes = new CargoTypeProvider().Select();
+            UnitTypes = new UnitTypeProvider().Select();
         }
 
         private List<Cargo> cargos = new List<Cargo>();
@@ -36,6 +38,26 @@ namespace AHOCMS.ViewModel
             }
         }
 
+
+        /// <summary>
+        /// 所有的物资列表
+        /// </summary>
+        private List<CargoType> cargoTypes = new List<CargoType>();
+        public List<CargoType> CargoTypes
+        {
+            get { return cargoTypes; }
+            set { cargoTypes = value; RaisePropertyChanged(); }
+        }
+
+        /// <summary>
+        /// 所有的单位信息列表
+        /// </summary>
+        private List<UnitType> unitTypes = new List<UnitType>();
+        public List<UnitType> UnitTypes
+        {
+            get { return unitTypes; }
+            set { unitTypes = value; RaisePropertyChanged(); }
+        }
 
         /// <summary>
         /// 打开物资添加页面
