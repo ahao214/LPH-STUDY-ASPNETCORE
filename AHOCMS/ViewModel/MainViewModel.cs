@@ -43,7 +43,7 @@ namespace AHOCMS.ViewModel
                     switch (button.Content.ToString())
                     {
                         case "首页":
-                            AppData .Instance .MainWindow .container.Content = new IndexView();
+                            AppData.Instance.MainWindow.container.Content = new IndexView();
                             break;
                         case "出入库":
                             AppData.Instance.MainWindow.container.Content = new RecordView();
@@ -56,6 +56,9 @@ namespace AHOCMS.ViewModel
                             break;
                         case "类型设置":
                             AppData.Instance.MainWindow.container.Content = new CargoTypeView();
+                            break;
+                        case "单位设置":
+                            AppData.Instance.MainWindow.container.Content = new UnitTypeView();
                             break;
                         default:
                             break;

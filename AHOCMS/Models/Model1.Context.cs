@@ -29,5 +29,6 @@ namespace AHOCMS.Models
         public virtual DbSet<CargoType> CargoType { get; set; }
         public virtual DbSet<Member> Member { get; set; }
         public virtual DbSet<Record> Record { get; set; }
+        public virtual DbSet<UnitType> UnitType { get; set; }
     }
 }

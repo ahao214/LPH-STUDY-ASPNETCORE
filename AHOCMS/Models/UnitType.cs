@@ -12,15 +12,10 @@ namespace AHOCMS.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Cargo
+    public partial class UnitType
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int TypeId { get; set; }
-        public string TypeName { get; set; }
-        public int UnitId { get; set; }
-        public string UnitName { get; set; }
-        public double Price { get; set; }
         public string Tag { get; set; }
         public System.DateTime InsertDate { get; set; }
         public int MemberId { get; set; }

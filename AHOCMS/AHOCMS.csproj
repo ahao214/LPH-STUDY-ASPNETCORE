@@ -124,8 +124,13 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RecordProvider.cs" />
+    <Compile Include="Models\UnitType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UnitTypeProvider.cs" />
     <Compile Include="ViewModel\AddCargoTypeViewModel.cs" />
     <Compile Include="ViewModel\AddCargoViewModel.cs" />
+    <Compile Include="ViewModel\AddUnitTypeViewModel.cs" />
     <Compile Include="ViewModel\CargoTypeViewModel.cs" />
     <Compile Include="ViewModel\CargoViewModel.cs" />
     <Compile Include="ViewModel\IndexViewModel.cs" />
@@ -133,6 +138,7 @@
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MemberViewModel.cs" />
     <Compile Include="ViewModel\RecordViewModel.cs" />
+    <Compile Include="ViewModel\UnitTypeViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\CargoTypeView.xaml.cs">
       <DependentUpon>CargoTypeView.xaml</DependentUpon>
@@ -149,11 +155,17 @@
     <Compile Include="View\RecordView.xaml.cs">
       <DependentUpon>RecordView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UnitTypeView.xaml.cs">
+      <DependentUpon>UnitTypeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddCargoTypeWindow.xaml.cs">
       <DependentUpon>AddCargoTypeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AddCargoWindow.xaml.cs">
       <DependentUpon>AddCargoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddUnitTypeWindow.xaml.cs">
+      <DependentUpon>AddUnitTypeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -202,11 +214,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\UnitTypeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AddCargoTypeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AddCargoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddUnitTypeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

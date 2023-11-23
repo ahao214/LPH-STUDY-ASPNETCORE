@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="CargoDBModel.CargoType" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="CargoDBModel.Member" Width="1.5" PointX="2.75" PointY="3.75" />
         <EntityTypeShape EntityType="CargoDBModel.Record" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CargoDBModel.UnitType" Width="1.5" PointX="4.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
