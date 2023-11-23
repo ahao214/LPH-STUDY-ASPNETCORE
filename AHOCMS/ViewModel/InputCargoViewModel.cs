@@ -97,6 +97,7 @@ namespace AHOCMS.ViewModel
                     record.InsertDate = DateTime.Now;
                     record.MemberId = AppData.CurrentUser.Id;
                     record.MemberName = AppData.CurrentUser.Name;
+                    record.RecordType = true;
                     var count = new RecordProvider().Insert(record);
                     if (count == 0)
                     {

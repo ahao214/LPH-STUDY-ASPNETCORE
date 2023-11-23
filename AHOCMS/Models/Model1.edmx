@@ -54,6 +54,7 @@
           <Property Name="InsertDate" Type="datetime" Nullable="false" />
           <Property Name="MemberId" Type="int" Nullable="false" />
           <Property Name="MemberName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RecordType" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="UnitType">
           <Key>
@@ -133,6 +134,7 @@
           <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="MemberId" Type="Int32" Nullable="false" />
           <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RecordType" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="UnitType">
           <Key>
@@ -194,6 +196,7 @@
           <EntitySetMapping Name="Record">
             <EntityTypeMapping TypeName="CargoDBModel.Record">
               <MappingFragment StoreEntitySet="Record">
+                <ScalarProperty Name="RecordType" ColumnName="RecordType" />
                 <ScalarProperty Name="MemberName" ColumnName="MemberName" />
                 <ScalarProperty Name="MemberId" ColumnName="MemberId" />
                 <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />

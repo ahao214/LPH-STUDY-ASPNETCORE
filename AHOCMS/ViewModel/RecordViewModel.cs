@@ -86,29 +86,6 @@ namespace AHOCMS.ViewModel
         }
 
 
-        #region 删除入库
-        /// <summary>
-        /// 删除入库
-        /// </summary>
-        public RelayCommand<object> DeleteCargoCommand
-        {
-            get
-            {
-                return new RelayCommand<object>((arg) =>
-                {
-                    if (!(arg is Cargo model))
-                        return;
-                    var count = new CargoProvider().Delete(model);
-                    if (count > 0)
-                    {
-                        MessageBox.Show("操作成功");
-                    }
-                    // 刷新数据库
-                    Records = new RecordProvider().Select();
-                });
-            }
-        }
-        #endregion
 
 
         #region 编辑入库信息

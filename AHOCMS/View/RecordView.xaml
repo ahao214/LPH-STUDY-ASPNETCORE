@@ -71,51 +71,20 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <DataGrid ItemsSource="{Binding Members}" AutoGenerateColumns="False">
+            <DataGrid ItemsSource="{Binding Records}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
-                    <DataGridTextColumn Header="用户名" Binding="{Binding Name}"/>
-                    <DataGridComboBoxColumn Header="角色" >
-                        <DataGridComboBoxColumn.ElementStyle>
-                            <Style TargetType="ComboBox">
-                                <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.AppData.Roles}"/>
-                                <Setter Property="DisplayMemberPath" Value="Name"/>
-                                <Setter Property="SelectedValue" Value="Id"/>
-                                <Setter Property="SelectedValue" Value="{Binding Role}"/>
-                            </Style>
-                        </DataGridComboBoxColumn.ElementStyle>
-                        <DataGridComboBoxColumn.EditingElementStyle>
-                            <Style TargetType="ComboBox">
-                                <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.AppData.Roles}"/>
-                                <Setter Property="DisplayMemberPath" Value="Name"/>
-                                <Setter Property="SelectedValue" Value="Id"/>
-                                <Setter Property="SelectedValue" Value="{Binding Role,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-                            </Style>
-                        </DataGridComboBoxColumn.EditingElementStyle>
-                    </DataGridComboBoxColumn>
-                    <DataGridTextColumn Header="注册日期" Binding="{Binding InsertDate}"/>
+                    <DataGridTextColumn Header="物资名称" Binding="{Binding CargoName}"/>
+                    <DataGridTextColumn Header="数量" Binding="{Binding Number}"/>
+                    <DataGridTextColumn Header="备注" Binding="{Binding Tag}"/>
+                    <DataGridTextColumn Header="日期" Binding="{Binding InsertDate}"/>
+                    <DataGridTextColumn Header="操作员" Binding="{Binding MemberName}"/>
+                  
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="删除" HorizontalAlignment="Center">
-                                        <TextBlock.Style>
-                                            <Style TargetType="TextBlock">
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Foreground" Value="red" />
-                                                        <Setter Property="Cursor" Value="Hand"/>
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </TextBlock.Style>
-<b:Interaction.Triggers>
-    <b:EventTrigger EventName="MouseUp">
-        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.DeleteMemberCommand}" CommandParameter="{Binding}"/>
-    </b:EventTrigger>
-</b:Interaction.Triggers>
-                                    </TextBlock>
-
+                                   
                                     <TextBlock Text="编辑" HorizontalAlignment="Center" Margin="10 0 0 0">
                                         <TextBlock.Style>
                                             <Style TargetType="TextBlock">
@@ -129,7 +98,7 @@
                                         </TextBlock.Style>
 <b:Interaction.Triggers>
     <b:EventTrigger EventName="MouseUp">
-        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.EditMemberCommand}" CommandParameter="{Binding}"/>
+        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.EditRecordCommand}" CommandParameter="{Binding}"/>
     </b:EventTrigger>
 </b:Interaction.Triggers>
                                     </TextBlock>
@@ -142,7 +111,7 @@
             </DataGrid>
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
                 <TextBlock Text="统计：" FontSize="18" Foreground="White"/>
-                <TextBlock Text="{Binding Members.Count}" FontSize="18" Foreground="white"/>
+                <TextBlock Text="{Binding Records.Count}" FontSize="18" Foreground="white"/>
             </StackPanel>
         </Grid>
 

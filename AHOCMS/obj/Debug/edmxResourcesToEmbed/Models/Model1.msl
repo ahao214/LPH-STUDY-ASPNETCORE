@@ -44,6 +44,7 @@
     <EntitySetMapping Name="Record">
       <EntityTypeMapping TypeName="CargoDBModel.Record">
         <MappingFragment StoreEntitySet="Record">
+          <ScalarProperty Name="RecordType" ColumnName="RecordType" />
           <ScalarProperty Name="MemberName" ColumnName="MemberName" />
           <ScalarProperty Name="MemberId" ColumnName="MemberId" />
           <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />

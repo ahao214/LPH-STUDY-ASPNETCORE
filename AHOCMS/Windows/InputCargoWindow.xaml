@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AHOCMS.Windows"
+        xmlns:local="clr-namespace:AHOCMS.Windows" WindowStartupLocation="CenterScreen" 
         mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=InputCargo}"
-        Title="物资入库" Height="450" Width="800">
+        Title="物资入库" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid Margin="100 50 100 50">
             <Grid.RowDefinitions>

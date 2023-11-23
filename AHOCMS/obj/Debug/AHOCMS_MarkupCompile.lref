@@ -1,4 +1,4 @@
-﻿F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\App.xaml;;
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\MainWindow.xaml;;
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\View\CargoTypeView.xaml;;
@@ -12,4 +12,6 @@ FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\AddCargoWindow.xaml;;
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\AddMemberWindow.xaml;;
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\AddUnitTypeWindow.xaml;;
 FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\LoginWindow.xaml;;
+FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\InputCargoWindow.xaml;;
+FF:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\Windows\OutCargoWindow.xaml;;
 

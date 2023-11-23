@@ -22,5 +22,6 @@ namespace AHOCMS.Models
         public System.DateTime InsertDate { get; set; }
         public int MemberId { get; set; }
         public string MemberName { get; set; }
+        public bool RecordType { get; set; }
     }
 }

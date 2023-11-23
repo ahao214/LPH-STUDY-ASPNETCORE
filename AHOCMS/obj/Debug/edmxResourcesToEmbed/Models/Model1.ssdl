@@ -49,6 +49,7 @@
     <Property Name="InsertDate" Type="datetime" Nullable="false" />
     <Property Name="MemberId" Type="int" Nullable="false" />
     <Property Name="MemberName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RecordType" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="UnitType">
     <Key>

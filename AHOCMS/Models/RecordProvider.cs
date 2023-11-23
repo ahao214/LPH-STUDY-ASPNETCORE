@@ -23,9 +23,7 @@ namespace Models
         public int Insert(Record t)
         {
             if (t == null)
-                return 0;
-            if (t.InsertDate == null)
-                return 0;
+                return 0;            
             db.Record.Add(t);
             int count = db.SaveChanges();
             return count;
@@ -38,7 +36,13 @@ namespace Models
 
         public int Update(Record t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            var model = db.Record.ToList().FirstOrDefault(item => item.Id == t.Id);
+            if (model == null) return 0;
+            model.Number = t.Number;
+            int count = db.SaveChanges();
+            return count;
         }
     }
 }

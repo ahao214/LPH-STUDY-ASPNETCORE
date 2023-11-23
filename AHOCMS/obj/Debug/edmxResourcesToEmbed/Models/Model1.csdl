@@ -56,6 +56,7 @@
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="MemberId" Type="Int32" Nullable="false" />
     <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RecordType" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="UnitType">
     <Key>

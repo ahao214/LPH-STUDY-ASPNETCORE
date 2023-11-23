@@ -1,11 +1,13 @@
 ﻿using AHOCMS.Models;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace AHOCMS.ViewModel
 {
@@ -74,18 +76,25 @@ namespace AHOCMS.ViewModel
         /// <summary>
         /// 添加新的物资类型
         /// </summary>
-        public RelayCommand<Window> InsertCargoTypeCommand
+        public RelayCommand<Window> AddOutputCommand
         {
             get
             {
                 return new RelayCommand<Window>((arg) =>
                 {
-                    if (string.IsNullOrEmpty(cargoType.Name))
+                    if (string.IsNullOrEmpty(record.CargoName))
                         return;
-                    cargoType.InsertDate = DateTime.Now;
-                    cargoType.MemberId = AppData.CurrentUser.Id;
-                    cargoType.MemberName = AppData.CurrentUser.Name;
-                    var count = new CargoTypeProvider().Insert(cargoType);
+                    var cargo = this.Cargos.FirstOrDefault(item => item.Name == record.CargoName);
+                    if (cargo == null) return;
+                    record.CargoId = cargo.Id;
+
+                    if (record.Number == 0)
+                        return;
+                    record.InsertDate = DateTime.Now;
+                    record.MemberId = AppData.CurrentUser.Id;
+                    record.MemberName = AppData.CurrentUser.Name;
+                    record.RecordType = true;
+                    var count = new RecordProvider().Insert(record);
                     if (count == 0)
                     {
                         MessageBox.Show("添加失败");
