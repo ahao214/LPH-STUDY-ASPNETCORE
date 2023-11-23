@@ -50,8 +50,9 @@ namespace Models
             var model = db.Cargo.ToList().FirstOrDefault(item => t.Id == item.Id);
             if (model == null) return 0;
             model.TypeId = t.TypeId;
-            model.TypeName = t.TypeName;
-            model.Unit = t.Unit;
+            model.TypeName = t.TypeName;            
+            model.UnitId = t.UnitId;
+            model.UnitName = t.UnitName;
             model.Price = t.Price;
             model.Tag = t.Tag;
             int count = db.SaveChanges();

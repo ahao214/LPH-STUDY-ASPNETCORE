@@ -19,6 +19,7 @@ namespace AHOCMS.ViewModel
         public AddCargoViewModel()
         {
             CargoTypes = new CargoTypeProvider().Select();
+            UnitTypes = new UnitTypeProvider().Select();
         }
 
         private Cargo cargo = new Cargo();
@@ -47,6 +48,15 @@ namespace AHOCMS.ViewModel
             set { cargoTypes = value; RaisePropertyChanged(); }
         }
 
+        /// <summary>
+        /// 所有的单位信息列表
+        /// </summary>
+        private List<UnitType> unitTypes = new List<UnitType>();
+        public List<UnitType> UnitTypes
+        {
+            get { return unitTypes; }
+            set { unitTypes = value; RaisePropertyChanged(); }
+        }
 
 
 
@@ -65,7 +75,7 @@ namespace AHOCMS.ViewModel
                     arg.Close();
                 });
             }
-        } 
+        }
         #endregion
 
         #region 添加新的物资
@@ -78,9 +88,10 @@ namespace AHOCMS.ViewModel
             {
                 return new RelayCommand<Window>((arg) =>
                 {
-                    if (string.IsNullOrEmpty(cargo.Name) || string.IsNullOrEmpty(cargo.TypeName) || string.IsNullOrEmpty(cargo.Unit))
+                    if (string.IsNullOrEmpty(cargo.Name) || string.IsNullOrEmpty(cargo.TypeName) || string.IsNullOrEmpty(cargo.UnitName))
                         return;
                     cargo.TypeId = this.cargoTypes.FirstOrDefault(t => t.Name == cargo.TypeName).Id;
+                    cargo.UnitId = this.unitTypes.FirstOrDefault(t => t.Name == cargo.UnitName).Id;
                     cargo.InsertDate = DateTime.Now;
                     cargo.MemberId = AppData.Instance.CurrentUser.Id;
                     cargo.MemberName = AppData.Instance.CurrentUser.Name;
@@ -96,7 +107,7 @@ namespace AHOCMS.ViewModel
                     }
                 });
             }
-        } 
+        }
         #endregion
 
     }

@@ -31,7 +31,7 @@
 
             <StackPanel Grid.Row="3" Margin="10 0 0 0" VerticalAlignment="Center" Orientation="Horizontal">
                 <TextBlock  Text="单位" Width="80" FontSize="18"/>
-                <TextBox Text="{Binding  Cargo.Unit,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="50 0 0 0"/>
+                <ComboBox ItemsSource="{Binding UnitTypes}" DisplayMemberPath="Name" Text="{Binding  Cargo.UnitName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="50 0 0 0"/>
             </StackPanel>
             <StackPanel Grid.Row="4" Margin="10 0 0 0" VerticalAlignment="Center" Orientation="Horizontal">
                 <TextBlock  Text="价格" Width="80" FontSize="18"/>
