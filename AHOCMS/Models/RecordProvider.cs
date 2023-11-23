@@ -9,19 +9,31 @@ namespace Models
 {
     public class RecordProvider : IProvider<Record>
     {
+        private CargoDBEntities db = new CargoDBEntities();
         public int Delete(Record t)
         {
-            throw new NotImplementedException();
+            if (t == null) return 0;
+            var model = db.Record.ToList().FirstOrDefault(item => item.Id == t.Id);
+            if (model == null) return 0;
+            db.Record.Remove(model);
+            int count = db.SaveChanges();
+            return count;
         }
 
         public int Insert(Record t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            if (t.InsertDate == null)
+                return 0;
+            db.Record.Add(t);
+            int count = db.SaveChanges();
+            return count;
         }
 
         public List<Record> Select()
         {
-            throw new NotImplementedException();
+            return db.Record.ToList();
         }
 
         public int Update(Record t)

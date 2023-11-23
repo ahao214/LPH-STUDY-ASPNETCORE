@@ -36,7 +36,7 @@
     
 <b:Interaction.Triggers>
     <b:EventTrigger EventName="MouseUp">
-        <b:InvokeCommandAction Command="{Binding OpenAddMemberWindowCommand}"/>
+        <b:InvokeCommandAction Command="{Binding OpenInputWindowCommand}"/>
     </b:EventTrigger>
 </b:Interaction.Triggers>
         </TextBlock>
@@ -60,11 +60,12 @@
     
 <b:Interaction.Triggers>
     <b:EventTrigger EventName="MouseUp">
-        <b:InvokeCommandAction Command="{Binding OpenAddMemberWindowCommand}"/>
+        <b:InvokeCommandAction Command="{Binding OpenOutputWindowCommand}"/>
     </b:EventTrigger>
 </b:Interaction.Triggers>
         </TextBlock>
 
+        <!--出入库列表-->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
