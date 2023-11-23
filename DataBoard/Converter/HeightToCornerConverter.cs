@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 
 
@@ -18,7 +19,7 @@ namespace DataBoard.Converter
         {
             if (value == null) return value;
             if (double.TryParse(value.ToString(), out double height))
-                return height / 2;
+                return new CornerRadius(height / 2);
             else
                 return value;
         }

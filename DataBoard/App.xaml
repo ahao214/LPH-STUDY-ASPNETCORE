@@ -4,7 +4,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Dictionary/ButtonDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <converter:HeightToCornerConverter x:Key="HeightToCornerConverter"/>
+            
             <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:DataBoard.ViewModel" />
 
         </ResourceDictionary>
