@@ -12,7 +12,7 @@ using System.Windows;
 
 namespace AHOCMS.ViewModel
 {
-    public class CargoViewModel:ViewModelBase
+    public class CargoViewModel : ViewModelBase
     {
         public CargoViewModel()
         {
@@ -26,7 +26,7 @@ namespace AHOCMS.ViewModel
         /// <summary>
         /// 所有物资
         /// </summary>
-        public List <Cargo> Cargos
+        public List<Cargo> Cargos
         {
             get
             {
@@ -34,7 +34,7 @@ namespace AHOCMS.ViewModel
             }
             set
             {
-                cargos = value;RaisePropertyChanged();
+                cargos = value; RaisePropertyChanged();
             }
         }
 
@@ -115,6 +115,10 @@ namespace AHOCMS.ViewModel
                 {
                     if (!(arg is Cargo model))
                         return;
+
+                    model.TypeId = CargoTypes.FirstOrDefault(t => t.Name == model.TypeName).Id;
+                    model.UnitId = UnitTypes.First(t => t.Name == model.UnitName).Id;
+
                     var count = new CargoProvider().Update(model);
                     if (count > 0)
                     {
