@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BoardDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LineId" Type="Int32" Nullable="false" />
+    <Property Name="SubLineId" Type="Int32" Nullable="false" />
+    <Property Name="StopTypeId" Type="Int32" Nullable="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Line" Relationship="BoardDBModel.FK_History_Line" FromRole="History" ToRole="Line" />
+    <NavigationProperty Name="StopType" Relationship="BoardDBModel.FK_History_StopType" FromRole="History" ToRole="StopType" />
+    <NavigationProperty Name="SubLine" Relationship="BoardDBModel.FK_History_SubLine" FromRole="History" ToRole="SubLine" />
+  </EntityType>
+  <EntityType Name="Line">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_Line" FromRole="Line" ToRole="History" />
+  </EntityType>
+  <EntityType Name="StopType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_StopType" FromRole="StopType" ToRole="History" />
+  </EntityType>
+  <EntityType Name="SubLine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserInfoId" Type="Int32" Nullable="false" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_SubLine" FromRole="SubLine" ToRole="History" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="Int32" Nullable="false" />
+    <Property Name="InsertDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="BoardDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="History" EntityType="Self.History" />
+    <EntitySet Name="Line" EntityType="Self.Line" />
+    <EntitySet Name="StopType" EntityType="Self.StopType" />
+    <EntitySet Name="SubLine" EntityType="Self.SubLine" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_History_Line" Association="BoardDBModel.FK_History_Line">
+      <End Role="Line" EntitySet="Line" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+    <AssociationSet Name="FK_History_StopType" Association="BoardDBModel.FK_History_StopType">
+      <End Role="StopType" EntitySet="StopType" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+    <AssociationSet Name="FK_History_SubLine" Association="BoardDBModel.FK_History_SubLine">
+      <End Role="SubLine" EntitySet="SubLine" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_History_Line">
+    <End Type="BoardDBModel.Line" Role="Line" Multiplicity="1" />
+    <End Type="BoardDBModel.History" Role="History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Line">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="History">
+        <PropertyRef Name="LineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_History_StopType">
+    <End Type="BoardDBModel.StopType" Role="StopType" Multiplicity="1" />
+    <End Type="BoardDBModel.History" Role="History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StopType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="History">
+        <PropertyRef Name="StopTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_History_SubLine">
+    <End Type="BoardDBModel.SubLine" Role="SubLine" Multiplicity="1" />
+    <End Type="BoardDBModel.History" Role="History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubLine">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="History">
+        <PropertyRef Name="SubLineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

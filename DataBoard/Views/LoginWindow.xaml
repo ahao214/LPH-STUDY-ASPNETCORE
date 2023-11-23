@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBoard.Views"
         mc:Ignorable="d"
-        Title="登录窗体" Height="450" Width="800">
+        WindowStyle="None"
+        Title="登录窗体" Height="400" Width="760">
     <Grid>
-        
+        <!--定义两列-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--左边-->
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                    <GradientStop Color="#83ABE9" Offset="0"/>
+                    <GradientStop Color="#C8B9D0" Offset="0.9"/>
+                    <GradientStop Color="#4E6A9C" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="Black" Opacity="0.8"/>
+                </StackPanel.Effect>
+                <TextBlock Text="Welcome" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
+                <TextBlock Text="DataBoard System" Foreground="White" Margin="0 10 0 0" FontSize="24" HorizontalAlignment="Center"/>
+            </StackPanel>
+
+        </Border>
+
+        <!--右边-->
+        <Grid Grid.Column="1">
+            <Grid  VerticalAlignment="Center">
+                <!--定义三行-->
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" Margin="15" Width="270" Height="35"/>
+                <TextBox Grid.Row="1" Margin="15" Width="270" Height="35"/>
+                <Button Grid.Row="2" Margin="15" Content="登录" Width="255" Height="35" Style="{StaticResource LoginButtonStyle}"/>
+            </Grid>
+        </Grid>
+
     </Grid>
 </Window>
