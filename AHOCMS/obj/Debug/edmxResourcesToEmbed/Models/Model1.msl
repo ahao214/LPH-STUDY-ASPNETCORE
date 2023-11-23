@@ -9,7 +9,8 @@
           <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
           <ScalarProperty Name="Tag" ColumnName="Tag" />
           <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
           <ScalarProperty Name="TypeName" ColumnName="TypeName" />
           <ScalarProperty Name="TypeId" ColumnName="TypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -50,6 +51,18 @@
           <ScalarProperty Name="Number" ColumnName="Number" />
           <ScalarProperty Name="CargoName" ColumnName="CargoName" />
           <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitType">
+      <EntityTypeMapping TypeName="CargoDBModel.UnitType">
+        <MappingFragment StoreEntitySet="UnitType">
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

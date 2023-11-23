@@ -5,6 +5,7 @@
     <EntitySet Name="CargoType" EntityType="CargoDBModel.CargoType" />
     <EntitySet Name="Member" EntityType="CargoDBModel.Member" />
     <EntitySet Name="Record" EntityType="CargoDBModel.Record" />
+    <EntitySet Name="UnitType" EntityType="CargoDBModel.UnitType" />
   </EntityContainer>
   <EntityType Name="Cargo">
     <Key>
@@ -14,7 +15,8 @@
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="TypeId" Type="Int32" Nullable="false" />
     <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Unit" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="UnitName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Price" Type="Double" Nullable="false" />
     <Property Name="Tag" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
@@ -51,6 +53,17 @@
     <Property Name="CargoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Number" Type="Double" Nullable="false" />
     <Property Name="Tag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MemberId" Type="Int32" Nullable="false" />
+    <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UnitType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tag" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="MemberId" Type="Int32" Nullable="false" />
     <Property Name="MemberName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />

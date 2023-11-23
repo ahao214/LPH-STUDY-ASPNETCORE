@@ -61,3 +61,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\AHOCMS.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoTypeWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoTypeWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\UnitTypeView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddUnitTypeWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\View\UnitTypeView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddCargoWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\AddUnitTypeWindow.baml

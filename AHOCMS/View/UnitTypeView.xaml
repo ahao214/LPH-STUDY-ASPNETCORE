@@ -36,7 +36,7 @@
         
     <b:Interaction.Triggers>
         <b:EventTrigger EventName="MouseUp">
-            <b:InvokeCommandAction Command="{Binding OpenAddCargoWindowCommand}"/>
+            <b:InvokeCommandAction Command="{Binding OpenAddUnitTypeWindowCommand}"/>
         </b:EventTrigger>
     </b:Interaction.Triggers>
         </TextBlock>
@@ -45,7 +45,7 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <DataGrid ItemsSource="{Binding CargoTypes}" AutoGenerateColumns="False">
+            <DataGrid ItemsSource="{Binding UnitTypes}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
                     <DataGridTextColumn Header="物资名称" Binding="{Binding Name}"/>
@@ -68,7 +68,7 @@
                                     </TextBlock.Style>
                         <b:Interaction.Triggers>
                             <b:EventTrigger EventName="MouseUp">
-                                <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoTypeView},Path=DataContext.DeleteCargoTypeCommand}" CommandParameter="{Binding}"/>
+                                <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoTypeView},Path=DataContext.DeleteUnitTypeCommand}" CommandParameter="{Binding}"/>
                             </b:EventTrigger>
                         </b:Interaction.Triggers>
                                 </TextBlock>
@@ -79,7 +79,7 @@
             </DataGrid>
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="5">
                 <TextBlock Text="统计：" FontSize="18" Foreground="White"/>
-                <TextBlock Text="{Binding Cargos.Count}" FontSize="18" Foreground="white"/>
+                <TextBlock Text="{Binding UnitTypes.Count}" FontSize="18" Foreground="white"/>
             </StackPanel>
         </Grid>
     </Grid>
