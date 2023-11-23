@@ -54,10 +54,10 @@ namespace AHOCMS.ViewModel
                         case "用户管理":
                             AppData.Instance.MainWindow.container.Content = new MemberView();
                             break;
-                        case "类型设置":
+                        case "物资类型":
                             AppData.Instance.MainWindow.container.Content = new CargoTypeView();
                             break;
-                        case "单位设置":
+                        case "物资单位":
                             AppData.Instance.MainWindow.container.Content = new UnitTypeView();
                             break;
                         default:

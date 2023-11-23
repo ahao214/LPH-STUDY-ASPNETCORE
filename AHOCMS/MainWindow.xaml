@@ -88,7 +88,7 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </RadioButton>
-                        <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="类型设置" FontSize="18" Foreground="White">
+                        <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="物资类型" FontSize="18" Foreground="White">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Checked">
                                     <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
@@ -96,7 +96,7 @@
                             </i:Interaction.Triggers>
                         </RadioButton>
 
-                        <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="单位设置" FontSize="18" Foreground="White">
+                        <RadioButton Width="200" Height="50"  Tag="&#xf013;" Style="{DynamicResource RadioButtonMenuStyle}" Content="物资单位" FontSize="18" Foreground="White">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Checked">
                                     <i:InvokeCommandAction Command="{Binding SelectViewCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RadioButton}}"/>
