@@ -50,31 +50,52 @@
                     <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
                     <DataGridTextColumn Header="物资名称" Binding="{Binding Name}"/>
                     <DataGridTextColumn Header="物资类型" Binding="{Binding TypeName}"/>
-                    <DataGridTextColumn Header="单位" Binding="{Binding Unit}"/>
-                    <DataGridTextColumn Header="单价" Binding="{Binding Price}"/>
-                    <DataGridTextColumn Header="备注" Binding="{Binding Tag}"/>
+                    <DataGridTextColumn Header="单位" Binding="{Binding Unit,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="单价" Binding="{Binding Price,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="备注" Binding="{Binding Tag,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                     <DataGridTextColumn Header="插入日期" Binding="{Binding InsertDate}"/>
                     <DataGridTextColumn Header="登录员" Binding="{Binding MemberName}"/>
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="删除" HorizontalAlignment="Center">
-                                    <TextBlock.Style>
-                                        <Style TargetType="TextBlock">
-                                            <Style.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Foreground" Value="red" />
-                                                    <Setter Property="Cursor" Value="Hand"/>
-                                                </Trigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </TextBlock.Style>
-                            <b:Interaction.Triggers>
-                                <b:EventTrigger EventName="MouseUp">
-                                    <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoView},Path=DataContext.DeleteCargoCommand}" CommandParameter="{Binding}"/>
-                                </b:EventTrigger>
-                            </b:Interaction.Triggers>
-                                </TextBlock>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="删除" HorizontalAlignment="Center">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Foreground" Value="red" />
+                                                        <Setter Property="Cursor" Value="Hand"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+<b:Interaction.Triggers>
+    <b:EventTrigger EventName="MouseUp">
+        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoView},Path=DataContext.DeleteCargoCommand}" CommandParameter="{Binding}"/>
+    </b:EventTrigger>
+</b:Interaction.Triggers>
+                                    </TextBlock>
+
+                                    <TextBlock Text="编辑" HorizontalAlignment="Center" Margin="10 0 0 0">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Foreground" Value="red" />
+                                                        <Setter Property="Cursor" Value="Hand"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+<b:Interaction.Triggers>
+    <b:EventTrigger EventName="MouseUp">
+        <b:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:CargoView},Path=DataContext.EditCargoCommand}" CommandParameter="{Binding}"/>
+    </b:EventTrigger>
+</b:Interaction.Triggers>
+                                    </TextBlock>
+                                </StackPanel>
+                                    
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

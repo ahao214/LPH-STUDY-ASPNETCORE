@@ -55,6 +55,7 @@ namespace AHOCMS.ViewModel
         }
 
 
+        #region 删除物资
         /// <summary>
         /// 删除物资
         /// </summary>
@@ -76,6 +77,35 @@ namespace AHOCMS.ViewModel
                 });
             }
         }
+        #endregion
+
+
+        #region 编辑物资信息
+
+        /// <summary>
+        /// 编辑物资信息
+        /// </summary>
+        public RelayCommand<object> EditCargoCommand
+        {
+            get
+            {
+                return new RelayCommand<object>((arg) =>
+                {
+                    if (!(arg is Cargo model))
+                        return;
+                    var count = new CargoProvider().Update(model);
+                    if (count > 0)
+                    {
+                        MessageBox.Show("操作成功");
+                    }
+                    // 刷新数据库
+                    Cargos = new CargoProvider().Select();
+                });
+            }
+        }
+
+
+        #endregion
 
     }
 }

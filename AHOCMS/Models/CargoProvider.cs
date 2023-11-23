@@ -37,9 +37,27 @@ namespace Models
             return db.Cargo.ToList();
         }
 
+        #region 编辑物资信息
+        /// <summary>
+        /// 编辑物资信息
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public int Update(Cargo t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            var model = db.Cargo.ToList().FirstOrDefault(item => t.Id == item.Id);
+            if (model == null) return 0;
+            model.TypeId = t.TypeId;
+            model.TypeName = t.TypeName;
+            model.Unit = t.Unit;
+            model.Price = t.Price;
+            model.Tag = t.Tag;
+            int count = db.SaveChanges();
+            return count;
+
         }
+        #endregion
     }
 }
