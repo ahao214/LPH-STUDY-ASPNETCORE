@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BoardDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BoardDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="History" EntityType="BoardDBModel.History" />
+    <EntitySet Name="Line" EntityType="BoardDBModel.Line" />
+    <EntitySet Name="StopType" EntityType="BoardDBModel.StopType" />
+    <EntitySet Name="SubLine" EntityType="BoardDBModel.SubLine" />
+    <EntitySet Name="UserInfo" EntityType="BoardDBModel.UserInfo" />
+    <AssociationSet Name="FK_History_Line" Association="BoardDBModel.FK_History_Line">
+      <End Role="Line" EntitySet="Line" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+    <AssociationSet Name="FK_History_StopType" Association="BoardDBModel.FK_History_StopType">
+      <End Role="StopType" EntitySet="StopType" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+    <AssociationSet Name="FK_History_SubLine" Association="BoardDBModel.FK_History_SubLine">
+      <End Role="SubLine" EntitySet="SubLine" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+  </EntityContainer>
   <EntityType Name="History">
     <Key>
       <PropertyRef Name="Id" />
@@ -21,7 +40,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
     <Property Name="UserInfoId" Type="Int32" Nullable="false" />
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_Line" FromRole="Line" ToRole="History" />
@@ -31,7 +50,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
     <Property Name="UserInfoId" Type="Int32" Nullable="false" />
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_StopType" FromRole="StopType" ToRole="History" />
@@ -41,40 +60,21 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
     <Property Name="UserInfoId" Type="Int32" Nullable="false" />
     <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="History" Relationship="BoardDBModel.FK_History_SubLine" FromRole="SubLine" ToRole="History" />
   </EntityType>
   <EntityType Name="UserInfo">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
     <Property Name="Role" Type="Int32" Nullable="false" />
     <Property Name="InsertDate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityContainer Name="BoardDBEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="History" EntityType="Self.History" />
-    <EntitySet Name="Line" EntityType="Self.Line" />
-    <EntitySet Name="StopType" EntityType="Self.StopType" />
-    <EntitySet Name="SubLine" EntityType="Self.SubLine" />
-    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
-    <AssociationSet Name="FK_History_Line" Association="BoardDBModel.FK_History_Line">
-      <End Role="Line" EntitySet="Line" />
-      <End Role="History" EntitySet="History" />
-    </AssociationSet>
-    <AssociationSet Name="FK_History_StopType" Association="BoardDBModel.FK_History_StopType">
-      <End Role="StopType" EntitySet="StopType" />
-      <End Role="History" EntitySet="History" />
-    </AssociationSet>
-    <AssociationSet Name="FK_History_SubLine" Association="BoardDBModel.FK_History_SubLine">
-      <End Role="SubLine" EntitySet="SubLine" />
-      <End Role="History" EntitySet="History" />
-    </AssociationSet>
-  </EntityContainer>
   <Association Name="FK_History_Line">
     <End Type="BoardDBModel.Line" Role="Line" Multiplicity="1" />
     <End Type="BoardDBModel.History" Role="History" Multiplicity="*" />
