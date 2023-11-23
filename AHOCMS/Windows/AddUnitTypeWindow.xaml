@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AHOCMS.Windows"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="添加新的单位信息" Height="450" Width="800" ResizeMode="NoResize">
+        Title="添加新的单位类型" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid Margin="100 50 100 50">
             <Grid.RowDefinitions>
@@ -14,7 +14,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Text="添加新的单位信息" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Grid.Row="0" Text="添加新的单位类型" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
 
             <StackPanel Grid.Row="1" Margin="10 0 0 0" VerticalAlignment="Center" Orientation="Horizontal">
                 <TextBlock  Text="单位名称" Width="80" FontSize="18"/>

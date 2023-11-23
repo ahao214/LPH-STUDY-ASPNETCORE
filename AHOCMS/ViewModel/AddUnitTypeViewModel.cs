@@ -44,9 +44,9 @@ namespace AHOCMS.ViewModel
             }
         }
 
-        #region 添加新的单位信息
+        #region 添加新的单位类型
         /// <summary>
-        /// 添加新的单位信息
+        /// 添加新的单位类型
         /// </summary>
         public RelayCommand<Window> AddUnitTypeCommand
         {
