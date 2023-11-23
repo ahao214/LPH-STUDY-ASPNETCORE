@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\App.xaml
-14-576681953
+15383121137
 2-1223955081
-43-152589730
+461659186582
 134811359157
-MainWindow.xaml;Resources\DataGridDictionary.xaml;Resources\RadioButtonMenuDictionary.xaml;Resources\ToggleButtonDictionary.xaml;View\CargoTypeView.xaml;View\CargoView.xaml;View\IndexView.xaml;View\MemberView.xaml;View\RecordView.xaml;View\UnitTypeView.xaml;Windows\AddCargoTypeWindow.xaml;Windows\AddCargoWindow.xaml;Windows\AddUnitTypeWindow.xaml;Windows\LoginWindow.xaml;
+MainWindow.xaml;Resources\DataGridDictionary.xaml;Resources\RadioButtonMenuDictionary.xaml;Resources\ToggleButtonDictionary.xaml;View\CargoTypeView.xaml;View\CargoView.xaml;View\IndexView.xaml;View\MemberView.xaml;View\RecordView.xaml;View\UnitTypeView.xaml;Windows\AddCargoTypeWindow.xaml;Windows\AddCargoWindow.xaml;Windows\AddMemberWindow.xaml;Windows\AddUnitTypeWindow.xaml;Windows\LoginWindow.xaml;
 
 True
 

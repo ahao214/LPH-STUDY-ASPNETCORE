@@ -54,6 +54,7 @@ namespace AHOCMS.ViewModel
             SimpleIoc.Default.Register<AddCargoViewModel>();
             SimpleIoc.Default.Register<UnitTypeViewModel>();
             SimpleIoc.Default.Register<AddUnitTypeViewModel>();
+            SimpleIoc.Default.Register<AddMemberWindowViewModel>();
 
         }
 
@@ -144,6 +145,14 @@ namespace AHOCMS.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<AddUnitTypeViewModel>();
+            }
+        }
+
+        public AddMemberWindowViewModel AddMember
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<AddMemberWindowViewModel>();
             }
         }
 
