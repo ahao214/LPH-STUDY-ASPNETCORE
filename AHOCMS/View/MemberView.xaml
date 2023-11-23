@@ -63,7 +63,7 @@
                                 <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:MemberView},Path=DataContext.AppData.Roles}"/>
                                 <Setter Property="DisplayMemberPath" Value="Name"/>
                                 <Setter Property="SelectedValue" Value="Id"/>
-                                <Setter Property="SelectedValue" Value="{Binding TypeName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                                <Setter Property="SelectedValue" Value="{Binding Role,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                             </Style>
                         </DataGridComboBoxColumn.EditingElementStyle>
                     </DataGridComboBoxColumn>

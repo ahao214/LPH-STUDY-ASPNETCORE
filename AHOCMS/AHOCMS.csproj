@@ -93,6 +93,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppData.cs" />
+    <Compile Include="Converters\StringToIntConverter.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Models\Cargo.cs">
       <DependentUpon>Model1.tt</DependentUpon>

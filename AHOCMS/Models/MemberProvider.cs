@@ -43,7 +43,8 @@ namespace Models
                 return 0;
             var model = db.Member.ToList().FirstOrDefault(item => t.Id == item.Id);
             if (model == null) return 0;
-            
+            model.Password = t.Password;
+            model.Role = t.Role;
             int count = db.SaveChanges();
             return count;
         }
