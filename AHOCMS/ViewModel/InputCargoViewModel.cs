@@ -22,7 +22,7 @@ namespace AHOCMS.ViewModel
             Cargos = new CargoProvider().Select();
         }
 
-        public AppData AppData { get; set; } = new AppData();
+        public AppData AppData { get; set; } = AppData.Instance;
 
         private Record record = new Record();
 

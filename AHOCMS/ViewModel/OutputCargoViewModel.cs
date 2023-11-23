@@ -20,7 +20,7 @@ namespace AHOCMS.ViewModel
         {
             Cargos = new CargoProvider().Select();
         }
-        public AppData AppData { get; set; } = new AppData();
+        public AppData AppData { get; set; } = AppData.Instance;
 
         private Record record = new Record();
 
@@ -74,7 +74,7 @@ namespace AHOCMS.ViewModel
         }
 
         /// <summary>
-        /// 添加新的物资类型
+        /// 添加出库
         /// </summary>
         public RelayCommand<Window> AddOutputCommand
         {
@@ -93,7 +93,7 @@ namespace AHOCMS.ViewModel
                     record.InsertDate = DateTime.Now;
                     record.MemberId = AppData.CurrentUser.Id;
                     record.MemberName = AppData.CurrentUser.Name;
-                    record.RecordType = true;
+                    record.RecordType = false;
                     var count = new RecordProvider().Insert(record);
                     if (count == 0)
                     {
