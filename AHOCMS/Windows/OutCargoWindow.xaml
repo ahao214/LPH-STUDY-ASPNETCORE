@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AHOCMS.Windows"
         mc:Ignorable="d"
-        Title="OutCargoWindow" Height="450" Width="800">
+        Title="出库管理" Height="450" Width="800">
     <Grid>
         
     </Grid>
