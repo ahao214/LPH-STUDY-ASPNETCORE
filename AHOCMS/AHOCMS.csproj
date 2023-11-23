@@ -174,8 +174,14 @@
     <Compile Include="Windows\AddUnitTypeWindow.xaml.cs">
       <DependentUpon>AddUnitTypeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\InputCargoWindow.xaml.cs">
+      <DependentUpon>InputCargoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OutCargoWindow.xaml.cs">
+      <DependentUpon>OutCargoWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -241,7 +247,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\InputCargoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OutCargoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
