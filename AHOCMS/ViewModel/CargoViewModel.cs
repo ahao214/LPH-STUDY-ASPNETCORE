@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
+
 namespace AHOCMS.ViewModel
 {
     public class CargoViewModel : ViewModelBase

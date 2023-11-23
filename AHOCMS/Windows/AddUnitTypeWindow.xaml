@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AHOCMS.Windows"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+                  DataContext="{Binding Source={StaticResource Locator},Path=AddUnitType}"
         Title="添加新的单位类型" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid Margin="100 50 100 50">
