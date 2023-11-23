@@ -28,10 +28,10 @@
 
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="auto"/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="ico" Margin="10 0 10 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="&#xf007;" FontSize="22" Foreground="#898F8C" FontFamily="/Fonts/#FontAwesome" Margin="10 0 10 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 <ScrollViewer Grid.Column="1" x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                             </Grid>
                             
