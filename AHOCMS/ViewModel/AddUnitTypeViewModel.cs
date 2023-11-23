@@ -13,20 +13,20 @@ namespace AHOCMS.ViewModel
     /// <summary>
     /// 单位信息
     /// </summary>
-    public class AddUnitTypeViewModel:ViewModelBase
+    public class AddUnitTypeViewModel : ViewModelBase
     {
         public AppData AppData { get; set; } = AppData.Instance;
 
-        private CargoType cargoType = new CargoType();
-        public CargoType CargoType
+        private UnitType unitTypes = new UnitType();
+
+        public UnitType UnitType
         {
-            get { return cargoType; }
+            get { return unitTypes; }
             set
             {
-                cargoType = value; RaisePropertyChanged();
+                unitTypes = value; RaisePropertyChanged();
             }
         }
-
 
         /// <summary>
         /// 关闭窗体
@@ -44,21 +44,22 @@ namespace AHOCMS.ViewModel
             }
         }
 
+        #region 添加新的单位信息
         /// <summary>
-        /// 添加新的物资类型
+        /// 添加新的单位信息
         /// </summary>
-        public RelayCommand<Window> InsertCargoTypeCommand
+        public RelayCommand<Window> AddUnitTypeCommand
         {
             get
             {
                 return new RelayCommand<Window>((arg) =>
                 {
-                    if (string.IsNullOrEmpty(cargoType.Name))
+                    if (string.IsNullOrEmpty(unitTypes.Name))
                         return;
-                    cargoType.InsertDate = DateTime.Now;
-                    cargoType.MemberId = AppData.CurrentUser.Id;
-                    cargoType.MemberName = AppData.CurrentUser.Name;
-                    var count = new CargoTypeProvider().Insert(cargoType);
+                    unitTypes.InsertDate = DateTime.Now;
+                    unitTypes.MemberId = AppData.CurrentUser.Id;
+                    unitTypes.MemberName = AppData.CurrentUser.Name;
+                    var count = new UnitTypeProvider().Insert(unitTypes);
                     if (count == 0)
                     {
                         MessageBox.Show("添加失败");
@@ -69,7 +70,8 @@ namespace AHOCMS.ViewModel
                     }
                 });
             }
-        }
+        } 
+        #endregion
 
     }
 }
