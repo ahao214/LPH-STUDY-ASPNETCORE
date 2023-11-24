@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
     <Compile Include="Comm\BookCommandType.cs" />
     <Compile Include="Comm\CommConst.cs" />
     <Compile Include="Comm\CommDefine.cs" />
+    <Compile Include="Comm\SingleForm.cs" />
     <Compile Include="Comm\StringHelper.cs" />
     <Compile Include="Comm\VerifyCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

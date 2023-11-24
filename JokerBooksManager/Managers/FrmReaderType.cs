@@ -42,10 +42,8 @@ namespace JokerBooksManager.Managers
         /// <param name="iReaderType"></param>
         private void ShowForm(int iReaderType)
         {
-            FrmReaderTypeAdd frmReaderTypeAdd = new FrmReaderTypeAdd
-            {
-                MdiParent = MdiParent
-            };
+            FrmReaderTypeAdd frmReaderTypeAdd = SingleForm<FrmReaderTypeAdd>.CreateInstance();
+            frmReaderTypeAdd.MdiParent = MdiParent;            
             frmReaderTypeAdd.Tag = new FormInfoModel
             {
                 KeyId = iReaderType,
