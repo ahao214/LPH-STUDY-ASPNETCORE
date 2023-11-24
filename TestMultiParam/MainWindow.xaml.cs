@@ -44,9 +44,9 @@ namespace TestMultiParam
             MyDataGrid.ItemsSource = students;
         }
 
-
-
-
-
+        private void Apply_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(students[MyDataGrid.SelectedIndex].Name);
+        }
     }
 }

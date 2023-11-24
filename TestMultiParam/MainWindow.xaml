@@ -19,6 +19,22 @@
                 <DataGridTextColumn Header="年级" Binding="{Binding Grade}"/>
                 <DataGridTextColumn Header="专业" Binding="{Binding Major}"/>
                 <DataGridTextColumn Header="年龄" Binding="{Binding Age}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Apply"
+                                    Content="申请"
+                                    Width="60"
+                                    HorizontalAlignment="Center"
+                                    Click="Apply_Click">
+                                
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
