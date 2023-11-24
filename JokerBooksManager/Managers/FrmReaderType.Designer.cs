@@ -39,6 +39,7 @@
             this.ReadTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReadTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReaderType)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             this.BtnAddNew.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnAddNew.Location = new System.Drawing.Point(377, 372);
+            this.BtnAddNew.Location = new System.Drawing.Point(544, 374);
             this.BtnAddNew.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnAddNew.Name = "BtnAddNew";
             this.BtnAddNew.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -74,7 +75,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(534, 372);
+            this.BtnClose.Location = new System.Drawing.Point(701, 374);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -107,7 +108,8 @@
             this.DgvReaderType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ReadTypeId,
             this.ReadTypeName,
-            this.Modify});
+            this.Modify,
+            this.DelData});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -142,7 +144,7 @@
             this.DgvReaderType.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.DgvReaderType.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.DgvReaderType.SelectedIndex = -1;
-            this.DgvReaderType.Size = new System.Drawing.Size(610, 257);
+            this.DgvReaderType.Size = new System.Drawing.Size(763, 257);
             this.DgvReaderType.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.DgvReaderType.Style = Sunny.UI.UIStyle.Green;
             this.DgvReaderType.TabIndex = 2;
@@ -175,10 +177,21 @@
             this.Modify.UseColumnTextForLinkValue = true;
             this.Modify.Width = 150;
             // 
+            // DelData
+            // 
+            this.DelData.HeaderText = "删除";
+            this.DelData.LinkColor = System.Drawing.Color.Lime;
+            this.DelData.MinimumWidth = 8;
+            this.DelData.Name = "DelData";
+            this.DelData.Text = "删除";
+            this.DelData.ToolTipText = "删除";
+            this.DelData.UseColumnTextForLinkValue = true;
+            this.DelData.Width = 150;
+            // 
             // FrmReaderType
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(724, 450);
+            this.ClientSize = new System.Drawing.Size(917, 450);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.DgvReaderType);
             this.Controls.Add(this.BtnClose);
@@ -203,5 +216,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ReadTypeId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReadTypeName;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
+        private System.Windows.Forms.DataGridViewLinkColumn DelData;
     }
 }

@@ -113,7 +113,7 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="readerType">读者类别对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool UpdateReaderType(ReaderType readerType)
+        public bool UpdateReaderType(ReaderType readerType)
         {
             try
             {

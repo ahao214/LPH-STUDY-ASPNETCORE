@@ -28,6 +28,11 @@ namespace JokerBooksManager.Managers
         /// 读者类别ID
         /// </summary>
         private int readTypeId = 0;
+        /// <summary>
+        /// 存放原始的读者类别
+        /// </summary>
+        private string oldReadTypeName = string.Empty;
+
         private ReaderTypeBLL bll = new ReaderTypeBLL();
 
         public FrmReaderTypeAdd()
@@ -48,14 +53,17 @@ namespace JokerBooksManager.Managers
             {
                 return;
             }
-            if (CheckReaderTypeRepeat(typeName))
+            if (CheckReaderType(typeName))
             {
                 return;
             }
+            // 封装ReaderType信息
             ReaderType type = new ReaderType
             {
+                ReadTypeId = readTypeId,
                 ReadTypeName = typeName
             };
+            // 添加数据到数据库
             AddOrUpdate(type);
         }
         #endregion
@@ -72,9 +80,9 @@ namespace JokerBooksManager.Managers
             {
                 bRes = bll.AddReaderType(type);
             }
-            else
+            else // 修改
             {
-                bRes = false;
+                bRes = bll.UpdateReaderType(type);
             }
             if (bRes)
             {
@@ -98,9 +106,9 @@ namespace JokerBooksManager.Managers
         /// </summary>
         /// <param name="typeName">读者类别名称</param>
         /// <returns>True:存在 False：不存在</returns>
-        private bool CheckReaderTypeRepeat(string typeName)
+        private bool CheckReaderType(string typeName)
         {
-            if (readTypeId == 0)
+            if (readTypeId == 0 || (readTypeId > 0 && oldReadTypeName != typeName))
             {
                 if (bll.IsExistReaderType(typeName))
                 {
@@ -149,7 +157,8 @@ namespace JokerBooksManager.Managers
                 ReaderType type = bll.GetReaderTypeById(readTypeId);
                 if (type is null)
                     return;
-                TxtReaderTypeName.Text = type.ReadTypeName;
+                oldReadTypeName = TxtReaderTypeName.Text = type.ReadTypeName;
+
                 Text = CommConst.CharUpdateReaderType;
             }
             else
