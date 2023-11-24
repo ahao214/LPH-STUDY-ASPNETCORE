@@ -73,14 +73,14 @@
                 <Button Grid.Column="0" Tag="&#xf2bd;" Content="{Binding AppData.CurrentUser.Name}" Style="{StaticResource HomePageButtonStyle}">
                     
                 </Button>
-                <Button Grid.Column="1" Tag="&#xf001;" Content="退出" Style="{StaticResource HomePageButtonStyle}">
+                <Button Grid.Column="1" Tag="&#xf011;" Content="退出" Style="{StaticResource HomePageButtonStyle}">
                     
                 </Button>
             </Grid>                      
         </Grid>
         
-        
-        
-        
+        <!--container-->
+        <ContentControl x:Name="container" Grid.Column="1" Grid.Row="1"/>
+
     </Grid>
 </Window>

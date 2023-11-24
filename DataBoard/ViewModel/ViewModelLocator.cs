@@ -51,13 +51,20 @@ namespace DataBoard.ViewModel
             SimpleIoc.Default.Register<StopTypeViewModel>();
             SimpleIoc.Default.Register<SubLineViewModel>();
             SimpleIoc.Default.Register<UserInfoViewModel>();
-
             SimpleIoc.Default.Register<HistoryViewModel>();
             SimpleIoc.Default.Register<IndexViewModel>();
 
 
             SimpleIoc.Default.Register<AppData>();
             SimpleIoc.Default.Register<IDialogService, LoginWindow>();
+
+            SimpleIoc.Default.Register<LineView>();
+            SimpleIoc.Default.Register<StopTypeView>();
+            SimpleIoc.Default.Register<SubLineView>();
+            SimpleIoc.Default.Register<UserInfoView>();
+            SimpleIoc.Default.Register<HistoryView>();
+            SimpleIoc.Default.Register<IndexView>();
+
 
         }
 

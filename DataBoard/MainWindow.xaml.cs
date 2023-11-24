@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataBoard.Views;
+using GalaSoft.MvvmLight.Ioc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,10 @@ namespace DataBoard
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += (x, y) =>
+            {
+                container.Content = SimpleIoc.Default.GetInstance<IndexView>();
+            };
         }
     }
 }
