@@ -103,6 +103,7 @@
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Provider\IProvider.cs" />
+    <Compile Include="Model\Provider\LineProvider.cs" />
     <Compile Include="Model\StopType.cs">
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
