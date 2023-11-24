@@ -3,19 +3,23 @@ using DataBoard.Model;
 using DataBoard.Views;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
+
 
 namespace DataBoard.ViewModel
 {
     public class LoginWindowViewModel : ViewModelBase
     {
         private AppData appData;
-
+        /// <summary>
+        /// 构造函数
+        /// </summary>
         public LoginWindowViewModel()
         {
             appData = ServiceLocator.Current.GetInstance<AppData>();
@@ -53,6 +57,9 @@ namespace DataBoard.ViewModel
         //}
 
 
+        /// <summary>
+        /// 登录按钮事件
+        /// </summary>
         public RelayCommand<LoginWindow> CheckUserCommand
         {
             get
@@ -64,6 +71,8 @@ namespace DataBoard.ViewModel
                     item.Password == appData.CurrentUser.Password);
                     if (model == null)
                     {
+                        var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
+                        dialog.ShowMessage("用户名或密码错误", "提示");
                         return;
                     }
                     AppData.CurrentUser = model;

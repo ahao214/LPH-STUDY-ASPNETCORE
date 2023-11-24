@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,42 @@ namespace DataBoard.Views
     /// <summary>
     /// LoginWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class LoginWindow : Window,IDialogService
     {
         public LoginWindow()
         {
             InitializeComponent();
+        }
+
+        public Task ShowError(string message, string title, string buttonText, Action afterHideCallback)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task ShowError(Exception error, string title, string buttonText, Action afterHideCallback)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task ShowMessage(string message, string title)
+        {            
+            MessageBox.Show(message, title);
+            return null;
+        }
+
+        public Task ShowMessage(string message, string title, string buttonText, Action afterHideCallback)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> ShowMessage(string message, string title, string buttonConfirmText, string buttonCancelText, Action<bool> afterHideCallback)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task ShowMessageBox(string message, string title)
+        {
+            throw new NotImplementedException();
         }
 
         #region 关闭登录页面

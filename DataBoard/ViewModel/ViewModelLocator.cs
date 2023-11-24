@@ -13,8 +13,10 @@
 */
 
 using CommonServiceLocator;
+using DataBoard.Views;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 
 namespace DataBoard.ViewModel
 {
@@ -45,6 +47,7 @@ namespace DataBoard.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<LoginWindowViewModel>();
             SimpleIoc.Default.Register<AppData>();
+            SimpleIoc.Default.Register<IDialogService, LoginWindow>();
 
         }
 
