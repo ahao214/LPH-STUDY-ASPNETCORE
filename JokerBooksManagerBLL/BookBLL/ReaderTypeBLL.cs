@@ -105,5 +105,29 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
+
+        #region 更新读者类别
+
+        /// <summary>
+        /// 更新读者类别
+        /// </summary>
+        /// <param name="readerType">读者类别</param>
+        /// <returns>大于0：True 小于0：False</returns>
+        public static bool UpdateReaderType(ReaderType readerType)
+        {
+            try
+            {
+                return ReaderTypeDAL.UpdateReaderType(readerType);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        #endregion
+
     }
 }

@@ -116,7 +116,7 @@ namespace JokerBooksManagerDAL.BookDAL
         {
             ReaderType type = new ReaderType();
             BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId");           
+            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId");
             SqlParameter[] paras =
             {
                 new SqlParameter ("@ReadTypeId",ID )
@@ -137,6 +137,29 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+
+        #region 更新读者类别
+
+        /// <summary>
+        /// 更新读者类别
+        /// </summary>
+        /// <param name="readerType">读者类别</param>
+        /// <returns>大于0：True 小于0：False</returns>
+        public static bool UpdateReaderType(ReaderType readerType)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Update ReaderType SET ReaderTypeName=@ReaderTypeName WHERE ReaderTypeId=@ReaderTypeId");
+            SqlParameter[] paras =
+            {
+                new SqlParameter ("@ReaderTypeName",readerType.ReadTypeName),
+                new SqlParameter ("@ReaderTypeId",readerType.ReadTypeId)
+            };
+            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
+
+        }
+
+        #endregion
 
     }
 }
