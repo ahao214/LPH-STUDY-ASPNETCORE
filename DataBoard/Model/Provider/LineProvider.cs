@@ -11,9 +11,15 @@ namespace DataBoard.Model.Provider
     /// </summary>
     public class LineProvider : IProvider<Line>
     {
+        private readonly BoardDBEntities db = new BoardDBEntities();
         public int Delete(Line t)
         {
-            throw new NotImplementedException();
+            if (t == null)
+                return 0;
+            var model = db.Line .ToList().FirstOrDefault(item=>item.Id == t.Id);
+            if(model == null) return 0; 
+            db.Line .Remove(model);
+            return db.SaveChanges();            
         }
 
         public int Insert(Line t)
@@ -23,7 +29,7 @@ namespace DataBoard.Model.Provider
 
         public List<Line> Select()
         {
-            throw new NotImplementedException();
+            return db.Line.ToList();
         }
 
         public int Update(Line t)

@@ -1,4 +1,5 @@
 ﻿using DataBoard.Model;
+using DataBoard.Model.Provider;
 using GalaSoft.MvvmLight;
 using System;
 using System.Collections.Generic;
@@ -14,22 +15,24 @@ namespace DataBoard.ViewModel
     /// </summary>
     public class LineViewModel : ViewModelBase
     {
-        private List<Line> lines;
+        private LineProvider _lineProvider = new LineProvider();
+
         /// <summary>
         /// 构造函数
         /// </summary>
         public LineViewModel()
         {
-                
+            lines = _lineProvider.Select();
         }
 
+        private List<Line> lines;
         public List<Line> Lines
         {
             get { return lines; }
             set { lines = value; }
         }
 
-       
+
 
     }
 }

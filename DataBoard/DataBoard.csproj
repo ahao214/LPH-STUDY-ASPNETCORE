@@ -102,8 +102,12 @@
     <Compile Include="Model\Line.cs">
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Provider\HistoryProvider.cs" />
     <Compile Include="Model\Provider\IProvider.cs" />
     <Compile Include="Model\Provider\LineProvider.cs" />
+    <Compile Include="Model\Provider\StopTypeProvider.cs" />
+    <Compile Include="Model\Provider\SubLineProvider.cs" />
+    <Compile Include="Model\Provider\UserInfoProvider.cs" />
     <Compile Include="Model\StopType.cs">
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
