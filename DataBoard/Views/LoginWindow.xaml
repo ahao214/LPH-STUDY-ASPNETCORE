@@ -7,9 +7,7 @@
         mc:Ignorable="d"
         WindowStyle="None"
         Title="登录窗体" Height="400" Width="760">
-    <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="50"/>
-    </WindowChrome.WindowChrome>
+
     <Grid>
         <!--定义两列-->
         <Grid.ColumnDefinitions>
@@ -37,6 +35,8 @@
 
         <!--右边-->
         <Grid Grid.Column="1">
+            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 15 15 0" Text="&#xf2d3;" FontSize="22" 
+                       FontFamily="/Fonts/#FontAwesome" MouseUp="TextBlock_MouseUp"/>
             <Grid  VerticalAlignment="Center">
                 <!--定义三行-->
                 <Grid.RowDefinitions>

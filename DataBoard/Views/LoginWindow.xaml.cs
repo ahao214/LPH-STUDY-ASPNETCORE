@@ -23,5 +23,17 @@ namespace DataBoard.Views
         {
             InitializeComponent();
         }
+
+        #region 关闭登录页面
+        /// <summary>
+        /// 关闭登录页面
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextBlock_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        } 
+        #endregion
     }
 }
