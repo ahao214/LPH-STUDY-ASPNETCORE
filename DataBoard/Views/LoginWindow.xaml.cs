@@ -18,7 +18,7 @@ namespace DataBoard.Views
     /// <summary>
     /// LoginWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class LoginWindow : Window,IDialogService
+    public partial class LoginWindow : Window, IDialogService
     {
         public LoginWindow()
         {
@@ -36,7 +36,7 @@ namespace DataBoard.Views
         }
 
         public Task ShowMessage(string message, string title)
-        {            
+        {
             MessageBox.Show(message, title);
             return null;
         }
@@ -64,8 +64,8 @@ namespace DataBoard.Views
         /// <param name="e"></param>
         private void TextBlock_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            Close();
-        } 
+            Application.Current.Shutdown();
+        }
         #endregion
     }
 }
