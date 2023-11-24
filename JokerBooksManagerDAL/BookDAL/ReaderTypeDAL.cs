@@ -143,7 +143,7 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 更新读者类别
         /// </summary>
-        /// <param name="readerType">读者类别</param>
+        /// <param name="readerType">读者类别对象</param>
         /// <returns>大于0：True 小于0：False</returns>
         public static bool UpdateReaderType(ReaderType readerType)
         {
