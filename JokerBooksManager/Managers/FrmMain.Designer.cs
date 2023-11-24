@@ -120,6 +120,7 @@
             this.TsmiReaderInfo.Name = "TsmiReaderInfo";
             this.TsmiReaderInfo.Size = new System.Drawing.Size(270, 34);
             this.TsmiReaderInfo.Text = "读者信息(&I)";
+            this.TsmiReaderInfo.Click += new System.EventHandler(this.TsmiReaderInfo_Click);
             // 
             // TsmiWindowList
             // 

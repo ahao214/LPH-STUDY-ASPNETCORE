@@ -41,8 +41,9 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void TsmiPassModify_Click(object sender, EventArgs e)
         {
-            FrmPassModify frmPassModify = new FrmPassModify();
-            frmPassModify.ShowDialog();
+            FrmPassModify frmPassModify = SingleForm<FrmPassModify>.CreateInstance();
+            frmPassModify.MdiParent = this;
+            frmPassModify.Show();
         }
 
         #endregion
@@ -161,8 +162,19 @@ namespace JokerBooksManager.Managers
         #region 读者类别窗体
         private void TsmiReaderTypeName_Click(object sender, EventArgs e)
         {
-            FrmReaderType type = new FrmReaderType();
-            type.ShowDialog();
+            FrmReaderType type = SingleForm<FrmReaderType>.CreateInstance();
+            type.MdiParent = this;
+            type.Show();
+        }
+
+        #endregion
+
+        #region 读者信息
+        private void TsmiReaderInfo_Click(object sender, EventArgs e)
+        {
+            FrmReaderInfoList infoList = SingleForm<FrmReaderInfoList>.CreateInstance();
+            infoList.MdiParent = this;
+            infoList.Show();
         }
 
         #endregion
