@@ -24,7 +24,7 @@ namespace JokerBooksManager.Managers
 
         private void FrmReaderInfoList_Load(object sender, EventArgs e)
         {
-            DgvReaderInfoList.DataSource = new List<string>();
+            DgvReaderInfoList.DataSource = bll.GetReaderInfos();
         }
     }
 }
