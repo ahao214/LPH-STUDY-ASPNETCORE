@@ -173,5 +173,52 @@ namespace JokerBooksManagerDAL.Helper
 
         #endregion
 
+
+        #region 执行带事务的SQL语句
+
+        /// <summary>
+        /// 执行带事务的SQL语句
+        /// </summary>
+        /// <param name="listSql">SQL语句集合</param>
+        /// <param name="iCmdType">命令类型</param>
+        /// <param name="param">参数</param>
+        /// <returns>True:成功 False：失败</returns>
+        public static bool ExecuteSqlTrans(List<string> listSql, BookCommandType iCmdType, params SqlParameter[] param)
+        {
+            using (SqlConnection conn = CreateConn())
+            {
+                conn.Open();
+                SqlTransaction trans = conn.BeginTransaction();
+                try
+                {                    
+                    SqlCommand cmd = CreateCommand(conn, "", iCmdType, trans, param);
+                    int count = 0;
+                    for (int i = 0; i < listSql.Count; i++)
+                    {
+                        if (listSql[i].Length > 0)
+                        {
+                            cmd.CommandText = listSql[i];
+                            cmd.CommandType = CommandType.Text;
+                            count += cmd.ExecuteNonQuery();
+                        }
+                    }
+                    trans.Commit();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    trans.Rollback();   //回滚事务
+                    throw ex;
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+
+
+        #endregion
+
     }
 }
