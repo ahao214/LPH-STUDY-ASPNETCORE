@@ -46,9 +46,48 @@ namespace DataBoard.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<LoginWindowViewModel>();
+
+            SimpleIoc.Default.Register<LineViewModel>();
+            SimpleIoc.Default.Register<StopTypeViewModel>();
+            SimpleIoc.Default.Register<SubLineViewModel>();
+            SimpleIoc.Default.Register<UserInfoViewModel>();
+
             SimpleIoc.Default.Register<AppData>();
             SimpleIoc.Default.Register<IDialogService, LoginWindow>();
 
+        }
+
+
+        public LineViewModel Line
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LineViewModel>();
+            }
+        }
+
+        public StopTypeViewModel StopType
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<StopTypeViewModel>();
+            }
+        }
+
+        public SubLineViewModel SubLine
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<SubLineViewModel>();
+            }
+        }
+
+        public UserInfoViewModel UserInfo
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<UserInfoViewModel>();
+            }
         }
 
         public LoginWindowViewModel LoginWindow
