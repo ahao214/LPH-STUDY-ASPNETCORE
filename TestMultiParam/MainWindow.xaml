@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:TestMultiParam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:SingleParamConverter x:Key="SingleParamConverter"/>
+    </Window.Resources>
     <Grid>
         <DataGrid x:Name="MyDataGrid"
                   AutoGenerateColumns="False"
@@ -27,8 +30,14 @@
                                     Content="申请"
                                     Width="60"
                                     HorizontalAlignment="Center"
-                                    Click="Apply_Click">
-                                
+                                    Click="Apply_Click"
+                                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=DataGrid},Path=SelectedItem}">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <!--年龄大于规定的范围，按钮才可以使用-->
+                                        <Setter Property="IsEnabled" Value="{Binding Age,Converter={StaticResource SingleParamConverter}}"/>
+                                    </Style>
+                                </Button.Style>
                             </Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

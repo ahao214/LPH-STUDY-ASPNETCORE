@@ -5,6 +5,7 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\bin\Debug\net6.0-window
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\bin\Debug\net6.0-windows\TestMultiParam.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\App.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\TestMultiParam_MarkupCompile.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\TestMultiParam_MarkupCompile.lref
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestMultiParam\obj\Debug\net6.0-windows\MainWindow.baml
