@@ -33,6 +33,12 @@
             <hr class="hr15">
             <input name="password" lay-verify="required" placeholder="密码" type="password" class="layui-input">
             <hr class="hr15">
+
+            <input name="ImgCode" lay-verify="required" placeholder="验证码" type="text" class="layui-input" style="width:180px;" />
+            <div style="float:right;margin:-30px auto;padding-right:20px">
+                <img style="border-radius:7px; cursor:pointer" id="ReloadImg" alt="验证码图片" height="30" onclick="Refresh(this)" title="点击刷新" src="" />
+            </div>
+            <hr class="hr15">
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20">
         </form>
