@@ -24,3 +24,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooks
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManager\obj\Debug\JokerBooksManager.Managers.FrmReaderInfoAdd.resources

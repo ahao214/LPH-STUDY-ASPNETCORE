@@ -31,9 +31,9 @@
             this.BtnOk = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.TxtReaderName = new Sunny.UI.UITextBox();
-            this.RbtFemale = new Sunny.UI.UIRadioButton();
-            this.RbtMale = new Sunny.UI.UIRadioButton();
-            this.CobReaderTypeOne = new Sunny.UI.UIComboBox();
+            this.RbFemale = new Sunny.UI.UIRadioButton();
+            this.RbMale = new Sunny.UI.UIRadioButton();
+            this.CboReaderTypeId = new Sunny.UI.UIComboBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel4 = new Sunny.UI.UILabel();
@@ -41,7 +41,6 @@
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.BtnClose = new Sunny.UI.UIButton();
-            this.CobReaderTypeTwo = new Sunny.UI.UIComboBox();
             this.TxtReaderNumber = new Sunny.UI.UITextBox();
             this.TxtReaderIdCard = new Sunny.UI.UITextBox();
             this.TxtReaderTel = new Sunny.UI.UITextBox();
@@ -57,7 +56,7 @@
             this.BtnOk.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnOk.Location = new System.Drawing.Point(481, 698);
+            this.BtnOk.Location = new System.Drawing.Point(251, 569);
             this.BtnOk.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -74,7 +73,7 @@
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(280, 83);
+            this.uiLabel1.Location = new System.Drawing.Point(50, 70);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(121, 23);
             this.uiLabel1.Style = Sunny.UI.UIStyle.Green;
@@ -93,7 +92,7 @@
             this.TxtReaderName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtReaderName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtReaderName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderName.Location = new System.Drawing.Point(481, 83);
+            this.TxtReaderName.Location = new System.Drawing.Point(251, 70);
             this.TxtReaderName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReaderName.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtReaderName.Name = "TxtReaderName";
@@ -101,64 +100,64 @@
             this.TxtReaderName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtReaderName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtReaderName.ShowText = false;
-            this.TxtReaderName.Size = new System.Drawing.Size(217, 32);
+            this.TxtReaderName.Size = new System.Drawing.Size(333, 32);
             this.TxtReaderName.Style = Sunny.UI.UIStyle.Green;
             this.TxtReaderName.TabIndex = 2;
             this.TxtReaderName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtReaderName.Watermark = "";
             // 
-            // RbtFemale
+            // RbFemale
             // 
-            this.RbtFemale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RbtFemale.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RbtFemale.Location = new System.Drawing.Point(481, 269);
-            this.RbtFemale.MinimumSize = new System.Drawing.Size(1, 1);
-            this.RbtFemale.Name = "RbtFemale";
-            this.RbtFemale.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.RbtFemale.Size = new System.Drawing.Size(81, 29);
-            this.RbtFemale.Style = Sunny.UI.UIStyle.Green;
-            this.RbtFemale.TabIndex = 3;
-            this.RbtFemale.Text = "女";
+            this.RbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RbFemale.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RbFemale.Location = new System.Drawing.Point(251, 198);
+            this.RbFemale.MinimumSize = new System.Drawing.Size(1, 1);
+            this.RbFemale.Name = "RbFemale";
+            this.RbFemale.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.RbFemale.Size = new System.Drawing.Size(81, 29);
+            this.RbFemale.Style = Sunny.UI.UIStyle.Green;
+            this.RbFemale.TabIndex = 3;
+            this.RbFemale.Text = "女";
             // 
-            // RbtMale
+            // RbMale
             // 
-            this.RbtMale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RbtMale.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RbtMale.Location = new System.Drawing.Point(568, 269);
-            this.RbtMale.MinimumSize = new System.Drawing.Size(1, 1);
-            this.RbtMale.Name = "RbtMale";
-            this.RbtMale.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.RbtMale.Size = new System.Drawing.Size(150, 29);
-            this.RbtMale.Style = Sunny.UI.UIStyle.Green;
-            this.RbtMale.TabIndex = 4;
-            this.RbtMale.Text = "男";
+            this.RbMale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RbMale.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RbMale.Location = new System.Drawing.Point(338, 198);
+            this.RbMale.MinimumSize = new System.Drawing.Size(1, 1);
+            this.RbMale.Name = "RbMale";
+            this.RbMale.RadioButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.RbMale.Size = new System.Drawing.Size(150, 29);
+            this.RbMale.Style = Sunny.UI.UIStyle.Green;
+            this.RbMale.TabIndex = 4;
+            this.RbMale.Text = "男";
             // 
-            // CobReaderTypeOne
+            // CboReaderTypeId
             // 
-            this.CobReaderTypeOne.DataSource = null;
-            this.CobReaderTypeOne.FillColor = System.Drawing.Color.White;
-            this.CobReaderTypeOne.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CobReaderTypeOne.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CobReaderTypeOne.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            this.CobReaderTypeOne.ItemRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeOne.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeOne.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CobReaderTypeOne.Location = new System.Drawing.Point(481, 178);
-            this.CobReaderTypeOne.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CobReaderTypeOne.MinimumSize = new System.Drawing.Size(63, 0);
-            this.CobReaderTypeOne.Name = "CobReaderTypeOne";
-            this.CobReaderTypeOne.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.CobReaderTypeOne.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeOne.Size = new System.Drawing.Size(217, 32);
-            this.CobReaderTypeOne.Style = Sunny.UI.UIStyle.Green;
-            this.CobReaderTypeOne.TabIndex = 5;
-            this.CobReaderTypeOne.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CobReaderTypeOne.Watermark = "";
+            this.CboReaderTypeId.DataSource = null;
+            this.CboReaderTypeId.FillColor = System.Drawing.Color.White;
+            this.CboReaderTypeId.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.CboReaderTypeId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CboReaderTypeId.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
+            this.CboReaderTypeId.ItemRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.CboReaderTypeId.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.CboReaderTypeId.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.CboReaderTypeId.Location = new System.Drawing.Point(251, 139);
+            this.CboReaderTypeId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CboReaderTypeId.MinimumSize = new System.Drawing.Size(63, 0);
+            this.CboReaderTypeId.Name = "CboReaderTypeId";
+            this.CboReaderTypeId.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.CboReaderTypeId.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.CboReaderTypeId.Size = new System.Drawing.Size(333, 32);
+            this.CboReaderTypeId.Style = Sunny.UI.UIStyle.Green;
+            this.CboReaderTypeId.TabIndex = 5;
+            this.CboReaderTypeId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CboReaderTypeId.Watermark = "";
             // 
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(280, 178);
+            this.uiLabel2.Location = new System.Drawing.Point(50, 139);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(121, 23);
             this.uiLabel2.Style = Sunny.UI.UIStyle.Green;
@@ -169,7 +168,7 @@
             // uiLabel3
             // 
             this.uiLabel3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(280, 269);
+            this.uiLabel3.Location = new System.Drawing.Point(50, 198);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(121, 23);
             this.uiLabel3.Style = Sunny.UI.UIStyle.Green;
@@ -180,7 +179,7 @@
             // uiLabel4
             // 
             this.uiLabel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(280, 413);
+            this.uiLabel4.Location = new System.Drawing.Point(50, 317);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(135, 23);
             this.uiLabel4.Style = Sunny.UI.UIStyle.Green;
@@ -191,7 +190,7 @@
             // uiLabel5
             // 
             this.uiLabel5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.Location = new System.Drawing.Point(280, 488);
+            this.uiLabel5.Location = new System.Drawing.Point(50, 383);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(121, 23);
             this.uiLabel5.Style = Sunny.UI.UIStyle.Green;
@@ -202,7 +201,7 @@
             // uiLabel6
             // 
             this.uiLabel6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel6.Location = new System.Drawing.Point(280, 554);
+            this.uiLabel6.Location = new System.Drawing.Point(50, 447);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(121, 23);
             this.uiLabel6.Style = Sunny.UI.UIStyle.Green;
@@ -213,7 +212,7 @@
             // uiLabel7
             // 
             this.uiLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel7.Location = new System.Drawing.Point(280, 347);
+            this.uiLabel7.Location = new System.Drawing.Point(50, 253);
             this.uiLabel7.Name = "uiLabel7";
             this.uiLabel7.Size = new System.Drawing.Size(135, 23);
             this.uiLabel7.Style = Sunny.UI.UIStyle.Green;
@@ -230,7 +229,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(822, 698);
+            this.BtnClose.Location = new System.Drawing.Point(469, 569);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -244,28 +243,6 @@
             this.BtnClose.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // CobReaderTypeTwo
-            // 
-            this.CobReaderTypeTwo.DataSource = null;
-            this.CobReaderTypeTwo.FillColor = System.Drawing.Color.White;
-            this.CobReaderTypeTwo.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CobReaderTypeTwo.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CobReaderTypeTwo.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            this.CobReaderTypeTwo.ItemRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeTwo.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeTwo.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CobReaderTypeTwo.Location = new System.Drawing.Point(742, 178);
-            this.CobReaderTypeTwo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CobReaderTypeTwo.MinimumSize = new System.Drawing.Size(63, 0);
-            this.CobReaderTypeTwo.Name = "CobReaderTypeTwo";
-            this.CobReaderTypeTwo.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.CobReaderTypeTwo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.CobReaderTypeTwo.Size = new System.Drawing.Size(217, 32);
-            this.CobReaderTypeTwo.Style = Sunny.UI.UIStyle.Green;
-            this.CobReaderTypeTwo.TabIndex = 13;
-            this.CobReaderTypeTwo.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CobReaderTypeTwo.Watermark = "";
-            // 
             // TxtReaderNumber
             // 
             this.TxtReaderNumber.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -277,7 +254,7 @@
             this.TxtReaderNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtReaderNumber.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtReaderNumber.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderNumber.Location = new System.Drawing.Point(481, 347);
+            this.TxtReaderNumber.Location = new System.Drawing.Point(251, 253);
             this.TxtReaderNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReaderNumber.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtReaderNumber.Name = "TxtReaderNumber";
@@ -302,7 +279,7 @@
             this.TxtReaderIdCard.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtReaderIdCard.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtReaderIdCard.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderIdCard.Location = new System.Drawing.Point(481, 413);
+            this.TxtReaderIdCard.Location = new System.Drawing.Point(251, 317);
             this.TxtReaderIdCard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReaderIdCard.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtReaderIdCard.Name = "TxtReaderIdCard";
@@ -327,7 +304,7 @@
             this.TxtReaderTel.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtReaderTel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtReaderTel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderTel.Location = new System.Drawing.Point(481, 488);
+            this.TxtReaderTel.Location = new System.Drawing.Point(251, 383);
             this.TxtReaderTel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReaderTel.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtReaderTel.Name = "TxtReaderTel";
@@ -352,7 +329,7 @@
             this.TxtReaderRemark.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtReaderRemark.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtReaderRemark.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtReaderRemark.Location = new System.Drawing.Point(481, 554);
+            this.TxtReaderRemark.Location = new System.Drawing.Point(251, 447);
             this.TxtReaderRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtReaderRemark.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtReaderRemark.Name = "TxtReaderRemark";
@@ -360,7 +337,7 @@
             this.TxtReaderRemark.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtReaderRemark.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtReaderRemark.ShowText = false;
-            this.TxtReaderRemark.Size = new System.Drawing.Size(540, 101);
+            this.TxtReaderRemark.Size = new System.Drawing.Size(333, 75);
             this.TxtReaderRemark.Style = Sunny.UI.UIStyle.Green;
             this.TxtReaderRemark.TabIndex = 17;
             this.TxtReaderRemark.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,13 +346,12 @@
             // FrmReaderInfoAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1354, 777);
+            this.ClientSize = new System.Drawing.Size(960, 1020);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.TxtReaderRemark);
             this.Controls.Add(this.TxtReaderTel);
             this.Controls.Add(this.TxtReaderIdCard);
             this.Controls.Add(this.TxtReaderNumber);
-            this.Controls.Add(this.CobReaderTypeTwo);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.uiLabel7);
             this.Controls.Add(this.uiLabel6);
@@ -383,9 +359,9 @@
             this.Controls.Add(this.uiLabel4);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.uiLabel2);
-            this.Controls.Add(this.CobReaderTypeOne);
-            this.Controls.Add(this.RbtMale);
-            this.Controls.Add(this.RbtFemale);
+            this.Controls.Add(this.CboReaderTypeId);
+            this.Controls.Add(this.RbMale);
+            this.Controls.Add(this.RbFemale);
             this.Controls.Add(this.TxtReaderName);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.BtnOk);
@@ -395,6 +371,7 @@
             this.Text = "添加读者信息";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.Load += new System.EventHandler(this.FrmReaderInfoAdd_Load);
             this.ResumeLayout(false);
 
         }
@@ -404,9 +381,9 @@
         private Sunny.UI.UIButton BtnOk;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UITextBox TxtReaderName;
-        private Sunny.UI.UIRadioButton RbtFemale;
-        private Sunny.UI.UIRadioButton RbtMale;
-        private Sunny.UI.UIComboBox CobReaderTypeOne;
+        private Sunny.UI.UIRadioButton RbFemale;
+        private Sunny.UI.UIRadioButton RbMale;
+        private Sunny.UI.UIComboBox CboReaderTypeId;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UILabel uiLabel4;
@@ -414,7 +391,6 @@
         private Sunny.UI.UILabel uiLabel6;
         private Sunny.UI.UILabel uiLabel7;
         private Sunny.UI.UIButton BtnClose;
-        private Sunny.UI.UIComboBox CobReaderTypeTwo;
         private Sunny.UI.UITextBox TxtReaderNumber;
         private Sunny.UI.UITextBox TxtReaderIdCard;
         private Sunny.UI.UITextBox TxtReaderTel;

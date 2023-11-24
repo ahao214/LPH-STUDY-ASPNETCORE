@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
 
 
@@ -14,10 +15,44 @@ namespace JokerBooksManager.Managers
 {
     public partial class FrmReaderInfoAdd : UIForm
     {
+        /// <summary>
+        /// 读者类别业务逻辑
+        /// </summary>
+        private ReaderTypeBLL typeBll = new ReaderTypeBLL();
+
+        /// <summary>
+        /// 读者信息业务逻辑
+        /// </summary>
+        private ReaderInfoBLL infoBll = new ReaderInfoBLL();
+
         public FrmReaderInfoAdd()
         {
             InitializeComponent();
         }
+
+        #region 窗体加载
+
+        private void FrmReaderInfoAdd_Load(object sender, EventArgs e)
+        {
+            DataBindReaderType();
+        }
+
+        #endregion
+
+        #region 绑定读者类别
+
+        /// <summary>
+        /// 绑定读者类别
+        /// </summary>
+        private void DataBindReaderType()
+        {
+            CboReaderTypeId.DataSource = typeBll.GetReaderTypes();
+            CboReaderTypeId.DisplayMember = "ReaderTypeName";
+            CboReaderTypeId.ValueMember = "ReaderTypeId";
+            
+        }
+
+        #endregion
 
         #region 添加读者信息
 
@@ -27,14 +62,20 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion 添加读者信息
-        
+
+
+
+
+
         #region 关闭窗体
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         #endregion
+
+
     }
 }
