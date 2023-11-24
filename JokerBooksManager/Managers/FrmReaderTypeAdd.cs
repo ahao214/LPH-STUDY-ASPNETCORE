@@ -60,8 +60,8 @@ namespace JokerBooksManager.Managers
             // 封装ReaderType信息
             ReaderType type = new ReaderType
             {
-                ReadTypeId = readTypeId,
-                ReadTypeName = typeName
+                ReaderTypeId = readTypeId,
+                ReaderTypeName = typeName
             };
             // 添加数据到数据库
             AddOrUpdate(type);
@@ -157,7 +157,7 @@ namespace JokerBooksManager.Managers
                 ReaderType type = bll.GetReaderTypeById(readTypeId);
                 if (type is null)
                     return;
-                oldReadTypeName = TxtReaderTypeName.Text = type.ReadTypeName;
+                oldReadTypeName = TxtReaderTypeName.Text = type.ReaderTypeName;
 
                 Text = CommConst.CharUpdateReaderType;
             }

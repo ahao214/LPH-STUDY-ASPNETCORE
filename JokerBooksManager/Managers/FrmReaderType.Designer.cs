@@ -36,8 +36,8 @@
             this.BtnAddNew = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
             this.DgvReaderType = new Sunny.UI.UIDataGridView();
-            this.ReadTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReadTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReaderTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReaderTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReaderType)).BeginInit();
@@ -106,8 +106,8 @@
             this.DgvReaderType.ColumnHeadersHeight = 32;
             this.DgvReaderType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvReaderType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ReadTypeId,
-            this.ReadTypeName,
+            this.ReaderTypeId,
+            this.ReaderTypeName,
             this.Modify,
             this.DelData});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -150,21 +150,21 @@
             this.DgvReaderType.TabIndex = 2;
             this.DgvReaderType.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvReaderType_CellContentClick);
             // 
-            // ReadTypeId
+            // ReaderTypeId
             // 
-            this.ReadTypeId.DataPropertyName = "ReadTypeId";
-            this.ReadTypeId.HeaderText = "类别ID";
-            this.ReadTypeId.MinimumWidth = 8;
-            this.ReadTypeId.Name = "ReadTypeId";
-            this.ReadTypeId.Width = 200;
+            this.ReaderTypeId.DataPropertyName = "ReaderTypeId";
+            this.ReaderTypeId.HeaderText = "类别ID";
+            this.ReaderTypeId.MinimumWidth = 8;
+            this.ReaderTypeId.Name = "ReaderTypeId";
+            this.ReaderTypeId.Width = 200;
             // 
-            // ReadTypeName
+            // ReaderTypeName
             // 
-            this.ReadTypeName.DataPropertyName = "ReadTypeName";
-            this.ReadTypeName.HeaderText = "读者分类";
-            this.ReadTypeName.MinimumWidth = 8;
-            this.ReadTypeName.Name = "ReadTypeName";
-            this.ReadTypeName.Width = 200;
+            this.ReaderTypeName.DataPropertyName = "ReaderTypeName";
+            this.ReaderTypeName.HeaderText = "类别名称";
+            this.ReaderTypeName.MinimumWidth = 8;
+            this.ReaderTypeName.Name = "ReaderTypeName";
+            this.ReaderTypeName.Width = 200;
             // 
             // Modify
             // 
@@ -213,8 +213,8 @@
         private Sunny.UI.UIButton BtnAddNew;
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIDataGridView DgvReaderType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReadTypeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReadTypeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReaderTypeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReaderTypeName;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
         private System.Windows.Forms.DataGridViewLinkColumn DelData;
     }

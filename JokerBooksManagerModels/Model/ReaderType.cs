@@ -14,11 +14,11 @@ namespace JokerBooksManagerModels.Model
         /// <summary>
         /// 读者类别Id
         /// </summary>
-        public int ReadTypeId { get; set; }
+        public int ReaderTypeId { get; set; }
         /// <summary>
         /// 读者类别名称
         /// </summary>
-        public string ReadTypeName { get; set; }
+        public string ReaderTypeName { get; set; }
 
     }
 }

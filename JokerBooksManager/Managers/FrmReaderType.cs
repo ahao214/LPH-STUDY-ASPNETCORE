@@ -101,10 +101,10 @@ namespace JokerBooksManager.Managers
             switch (cellValue)
             {
                 case CommConst.CharUpdate:
-                    ShowForm(type.ReadTypeId); break;
+                    ShowForm(type.ReaderTypeId); break;
                 case CommConst.CharDelete:
                     //删除
-                    DelReaderType(type.ReadTypeId);
+                    DelReaderType(type.ReaderTypeId);
                     break;
                 default:
                     break;

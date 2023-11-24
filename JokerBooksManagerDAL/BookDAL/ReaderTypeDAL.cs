@@ -29,10 +29,10 @@ namespace JokerBooksManagerDAL.BookDAL
         {
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("INSERT INTO ReaderType(ReadTypeName)VALUES(@ReadTypeName)");
+            sb.Append("INSERT INTO ReaderType(ReaderTypeName)VALUES(@ReaderTypeName)");
             SqlParameter[] paras =
             {
-                new SqlParameter ("@ReadTypeName",readerType .ReadTypeName)
+                new SqlParameter ("@ReaderTypeName",readerType .ReaderTypeName)
             };
             try
             {
@@ -58,10 +58,10 @@ namespace JokerBooksManagerDAL.BookDAL
             bool res = false;
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReadTypeName=@ReadTypeName");
+            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReaderTypeName=@ReaderTypeName");
             SqlParameter[] paras =
             {
-                new SqlParameter ("@ReadTypeName",typeName)
+                new SqlParameter ("@ReaderTypeName",typeName)
             };
             try
             {
@@ -88,14 +88,14 @@ namespace JokerBooksManagerDAL.BookDAL
             BookCommandType bookCommand = BookCommandType.Text;
             List<ReaderType> lst = new List<ReaderType>();
             StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType  ORDER BY ReadTypeId ASC");
+            sb.Append(" SELECT ReaderTypeId,ReaderTypeName FROM ReaderType  ORDER BY ReaderTypeId ASC");
             DataTable dt = DBHelper.GetDataTable(sb.ToString(), bookCommand);
             foreach (DataRow dr in dt.Rows)
             {
                 ReaderType type = new ReaderType
                 {
-                    ReadTypeId = dr["ReadTypeId"].ChangeInt(),
-                    ReadTypeName = dr["ReadTypeName"].ToString()
+                    ReaderTypeId = dr["ReaderTypeId"].ChangeInt(),
+                    ReaderTypeName = dr["ReaderTypeName"].ToString()
                 };
                 lst.Add(type);
             }
@@ -116,18 +116,18 @@ namespace JokerBooksManagerDAL.BookDAL
         {
             ReaderType type = new ReaderType();
             BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReadTypeId,ReadTypeName FROM ReaderType WHERE ReadTypeId=@ReadTypeId");
+            sb.Append(" SELECT ReaderTypeId,ReaderTypeName FROM ReaderType WHERE ReaderTypeId=@ReaderTypeId");
             SqlParameter[] paras =
             {
-                new SqlParameter ("@ReadTypeId",ID )
+                new SqlParameter ("@ReaderTypeId",ID )
             };
             SqlDataReader dr = DBHelper.ExecuteReader(sb.ToString(), bookCommand, paras);
             if (dr.Read())
             {
                 type = new ReaderType()
                 {
-                    ReadTypeId = dr["ReadTypeId"].ChangeInt(),
-                    ReadTypeName = dr["ReadTypeName"].ToString()
+                    ReaderTypeId = dr["ReaderTypeId"].ChangeInt(),
+                    ReaderTypeName = dr["ReaderTypeName"].ToString()
                 };
             }
             dr.Close();
@@ -152,8 +152,8 @@ namespace JokerBooksManagerDAL.BookDAL
             sb.Append("Update ReaderType SET ReaderTypeName=@ReaderTypeName WHERE ReaderTypeId=@ReaderTypeId");
             SqlParameter[] paras =
             {
-                new SqlParameter ("@ReaderTypeName",readerType.ReadTypeName),
-                new SqlParameter ("@ReaderTypeId",readerType.ReadTypeId)
+                new SqlParameter ("@ReaderTypeName",readerType.ReaderTypeName),
+                new SqlParameter ("@ReaderTypeId",readerType.ReaderTypeId)
             };
             return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
 
