@@ -16,9 +16,37 @@ namespace TestMultiParam
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Student> students = new List<Student>();
+
+
         public MainWindow()
         {
             InitializeComponent();
+            InitData();
         }
+
+        /// <summary>
+        /// 初始化数据
+        /// </summary>
+        private void InitData()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Student stu = new Student()
+                {
+                    Name = "刘" + (i + 1).ToString(),
+                    Grade = i + 1,
+                    Major = "计算机" + (i + 1).ToString(),
+                    Age = 20 + i
+                };
+                students.Add(stu);
+            }
+            MyDataGrid.ItemsSource = students;
+        }
+
+
+
+
+
     }
 }
