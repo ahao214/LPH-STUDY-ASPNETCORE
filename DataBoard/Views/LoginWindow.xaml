@@ -36,7 +36,20 @@
         <!--右边-->
         <Grid Grid.Column="1">
             <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 15 15 0" Text="&#xf2d3;" FontSize="22" 
-                       FontFamily="/Fonts/#FontAwesome" MouseUp="TextBlock_MouseUp"/>
+                       FontFamily="/Fonts/#FontAwesome" MouseUp="TextBlock_MouseUp">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="False">
+                                <Setter Property="Foreground" Value="Gray"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
             <Grid  VerticalAlignment="Center">
                 <!--定义三行-->
                 <Grid.RowDefinitions>
