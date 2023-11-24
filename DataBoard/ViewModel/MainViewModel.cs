@@ -55,11 +55,11 @@ namespace DataBoard.ViewModel
         {
             get
             {
-                var cmd = new RelayCommand(() =>
+                return new RelayCommand(() =>
                 {
                     Application.Current.Shutdown();
                 });
-                return cmd;
+                
             }
         } 
         #endregion
