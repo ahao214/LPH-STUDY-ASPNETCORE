@@ -103,6 +103,9 @@
     <EmbeddedResource Include="Managers\FrmPassModify.resx">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmReaderInfoList.resx">
+      <DependentUpon>FrmReaderInfoList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmReaderType.resx">
       <DependentUpon>FrmReaderType.cs</DependentUpon>
     </EmbeddedResource>

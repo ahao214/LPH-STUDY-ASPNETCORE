@@ -7,10 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
+
 
 namespace JokerBooksManager.Managers
 {
-    public partial class FrmReaderInfoList : Form
+    public partial class FrmReaderInfoList : UIForm
     {
         public FrmReaderInfoList()
         {
