@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
 
 
@@ -14,6 +15,8 @@ namespace JokerBooksManager.Managers
 {
     public partial class FrmReaderInfoList : UIForm
     {
+        private ReaderInfoBLL bll = new ReaderInfoBLL();
+
         public FrmReaderInfoList()
         {
             InitializeComponent();

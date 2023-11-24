@@ -42,7 +42,7 @@ namespace JokerBooksManager.Managers
         private void TsmiPassModify_Click(object sender, EventArgs e)
         {
             FrmPassModify frmPassModify = SingleForm<FrmPassModify>.CreateInstance();
-            frmPassModify.MdiParent = this;
+            frmPassModify.MdiParent = MdiParent;
             frmPassModify.Show();
         }
 
@@ -163,7 +163,7 @@ namespace JokerBooksManager.Managers
         private void TsmiReaderTypeName_Click(object sender, EventArgs e)
         {
             FrmReaderType type = SingleForm<FrmReaderType>.CreateInstance();
-            type.MdiParent = this;
+            type.MdiParent = MdiParent;
             type.Show();
         }
 
@@ -173,7 +173,7 @@ namespace JokerBooksManager.Managers
         private void TsmiReaderInfo_Click(object sender, EventArgs e)
         {
             FrmReaderInfoList infoList = SingleForm<FrmReaderInfoList>.CreateInstance();
-            infoList.MdiParent = this;
+            infoList.MdiParent = MdiParent;
             infoList.Show();
         }
 

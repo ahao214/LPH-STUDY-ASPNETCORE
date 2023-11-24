@@ -22,6 +22,10 @@ namespace JokerBooksManagerComm.Comm
             {
                 t = new T();
             }
+            else
+            {
+                t.Activate();
+            }
             return t;
         }
     }
