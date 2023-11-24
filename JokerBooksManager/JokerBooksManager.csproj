@@ -74,6 +74,12 @@
     <Compile Include="Managers\FrmPassModify.Designer.cs">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmReaderInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmReaderInfoList.Designer.cs">
+      <DependentUpon>FrmReaderInfoList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\FrmReaderType.cs">
       <SubType>Form</SubType>
     </Compile>

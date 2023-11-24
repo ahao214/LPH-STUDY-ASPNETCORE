@@ -30,6 +30,7 @@ namespace JokerBooksManagerDAL.BookDAL
             StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
             sb.Append("INSERT INTO ReaderType(ReaderTypeName)VALUES(@ReaderTypeName)");
+
             SqlParameter[] paras =
             {
                 new SqlParameter ("@ReaderTypeName",readerType .ReaderTypeName)
@@ -173,13 +174,22 @@ namespace JokerBooksManagerDAL.BookDAL
         public static bool DeleteReaderType(int iReaderTypeId)
         {
             BookCommandType commandType = BookCommandType.Text;
+            List<string> sqlList = new List<string>();
+
             StringBuilder sb = new StringBuilder();
+            sb.Append("Delete From  ReaderInfo WHERE ReaderTypeId=@ReaderTypeId");
+            sqlList.Add(sb.ToString());
+            sb.Clear();
             sb.Append("Delete From  ReaderType WHERE ReaderTypeId=@ReaderTypeId");
+            sqlList.Add(sb.ToString());
+
+
             SqlParameter[] paras =
             {
                 new SqlParameter ("@ReaderTypeId",iReaderTypeId)
             };
-            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
+
+            return DBHelper.ExecuteSqlTrans(sqlList, commandType, paras);
 
         }
 
