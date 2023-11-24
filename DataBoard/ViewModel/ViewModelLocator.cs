@@ -52,11 +52,30 @@ namespace DataBoard.ViewModel
             SimpleIoc.Default.Register<SubLineViewModel>();
             SimpleIoc.Default.Register<UserInfoViewModel>();
 
+            SimpleIoc.Default.Register<HistoryViewModel>();
+            SimpleIoc.Default.Register<IndexViewModel>();
+
+
             SimpleIoc.Default.Register<AppData>();
             SimpleIoc.Default.Register<IDialogService, LoginWindow>();
 
         }
 
+        public IndexViewModel Index
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<IndexViewModel>();
+            }
+        }
+
+        public HistoryViewModel History
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<HistoryViewModel>();
+            }
+        }
 
         public LineViewModel Line
         {
