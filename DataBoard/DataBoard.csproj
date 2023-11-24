@@ -79,6 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppData.cs" />
     <Compile Include="Converter\HeightToCornerConverter.cs" />
     <Compile Include="Model\BoardDBModel.Context.cs">
       <AutoGen>True</AutoGen>

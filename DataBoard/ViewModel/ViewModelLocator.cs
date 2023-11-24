@@ -44,7 +44,7 @@ namespace DataBoard.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<LoginWindowViewModel>();
-
+            SimpleIoc.Default.Register<AppData>();
 
         }
 

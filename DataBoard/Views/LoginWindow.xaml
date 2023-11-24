@@ -57,11 +57,18 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" Margin="15" Width="270" Height="35" Tag="&#xf007;" Style="{StaticResource LoginTextBoxStyle}">
-                    
-                </TextBox>
-                <TextBox Grid.Row="1" Margin="15" Width="270" Height="35" Tag="&#xf023;" Style="{StaticResource LoginTextBoxStyle}"/>
-                <Button Grid.Row="2" Margin="15" Content="登录" Width="255" Height="35" Style="{StaticResource LoginButtonStyle}"/>
+                <TextBox Grid.Row="0" Margin="15" Width="270" Height="35" Tag="&#xf007;" 
+                         Style="{StaticResource LoginTextBoxStyle}"
+                         Text="{Binding AppData.CurrentUser.Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBox Grid.Row="1" Margin="15" Width="270" Height="35" Tag="&#xf023;"
+                         Style="{StaticResource LoginTextBoxStyle}"
+                         Text="{Binding AppData.CurrentUser.Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                
+                <Button Grid.Row="2" Margin="15" Content="登录" Width="255" Height="35" 
+                        Style="{StaticResource LoginButtonStyle}"
+                        Command="{Binding CheckUserCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LoginWindow}}"/>
             </Grid>
         </Grid>
 
