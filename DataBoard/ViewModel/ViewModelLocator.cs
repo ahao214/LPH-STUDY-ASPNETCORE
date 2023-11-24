@@ -43,6 +43,17 @@ namespace DataBoard.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<LoginWindowViewModel>();
+
+
+        }
+
+        public LoginWindowViewModel LoginWindow
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LoginWindowViewModel>();
+            }
         }
 
         public MainViewModel Main
@@ -52,7 +63,7 @@ namespace DataBoard.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-        
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

@@ -110,6 +110,7 @@
     <Compile Include="Model\UserInfo.cs">
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\LoginWindowViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="Views\LoginWindow.xaml.cs">

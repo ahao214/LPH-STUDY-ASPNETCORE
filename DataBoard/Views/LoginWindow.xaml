@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBoard.Views"
         mc:Ignorable="d"
-        WindowStyle="None"
+        WindowStyle="None" DataContext="{Binding Source={StaticResource Locator},Path=LoginWindow}"
         Title="登录窗体" Height="400" Width="760">
 
     <Grid>
