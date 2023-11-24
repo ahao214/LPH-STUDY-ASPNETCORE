@@ -14,7 +14,7 @@ namespace DataBoard
     /// </summary>
     public class AppData : ViewModelBase
     {
-        private UserInfo userInfo = new UserInfo();
+        private UserInfo userInfo = new UserInfo() { Name = "admin", Password = "1" };
 
         /// <summary>
         /// 当前用户

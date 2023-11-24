@@ -4,9 +4,57 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBoard"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        DataContext="{Binding Source={StaticResource Locator},Path=Main}"
+        Title="数字管理系统" Height="700" Width="1200">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions >
+            <RowDefinition  Height="45"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <Border Grid.RowSpan="2" Background="#29282D">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" ShadowDepth="0" Color="Black" Opacity="0.5"/>
+            </Border.Effect>
+        </Border>
+        
+
+        <Border Background="#0C7D95">
+            <TextBlock Text="数据看板" FontSize="22" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+
+        
+        <!--menu grid-->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <!--menu-->
+            <StackPanel Grid.Row="0"></StackPanel>
+            <!--exit-->
+            <Grid Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Tag="&#xf2bd;" Content="{Binding AppData.CurrentUser.Name}" Style="{StaticResource HomePageButtonStyle}">
+                    
+                </Button>
+                <Button Grid.Column="1" Tag="&#xf001;" Content="退出" Style="{StaticResource HomePageButtonStyle}">
+                    
+                </Button>
+            </Grid>                      
+        </Grid>
+        
+        
+        
         
     </Grid>
 </Window>
