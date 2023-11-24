@@ -27,7 +27,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 读者类别ID
         /// </summary>
-        private int readTypeId = 0;
+        private int readerTypeId = 0;
         /// <summary>
         /// 存放原始的读者类别
         /// </summary>
@@ -60,7 +60,7 @@ namespace JokerBooksManager.Managers
             // 封装ReaderType信息
             ReaderType type = new ReaderType
             {
-                ReaderTypeId = readTypeId,
+                ReaderTypeId = readerTypeId,
                 ReaderTypeName = typeName
             };
             // 添加数据到数据库
@@ -76,7 +76,7 @@ namespace JokerBooksManager.Managers
         private void AddOrUpdate(ReaderType type)
         {
             bool bRes;
-            if (readTypeId == 0) // 添加
+            if (readerTypeId == 0) // 添加
             {
                 bRes = bll.AddReaderType(type);
             }
@@ -108,7 +108,7 @@ namespace JokerBooksManager.Managers
         /// <returns>True:存在 False：不存在</returns>
         private bool CheckReaderType(string typeName)
         {
-            if (readTypeId == 0 || (readTypeId > 0 && oldReadTypeName != typeName))
+            if (readerTypeId == 0 || (readerTypeId > 0 && oldReadTypeName != typeName))
             {
                 if (bll.IsExistReaderType(typeName))
                 {
@@ -149,12 +149,12 @@ namespace JokerBooksManager.Managers
                 formInfoModel = Tag as FormInfoModel;
                 if (!(formInfoModel is null))
                 {
-                    readTypeId = formInfoModel.KeyId;
+                    readerTypeId = formInfoModel.KeyId;
                 }
             }
-            if (readTypeId > 0)
+            if (readerTypeId > 0)
             {
-                ReaderType type = bll.GetReaderTypeById(readTypeId);
+                ReaderType type = bll.GetReaderTypeById(readerTypeId);
                 if (type is null)
                     return;
                 oldReadTypeName = TxtReaderTypeName.Text = type.ReaderTypeName;
