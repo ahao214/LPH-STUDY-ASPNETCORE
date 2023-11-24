@@ -47,7 +47,7 @@
                     <Grid x:Name="_grid">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" 
                                    Margin="5 5 5 20"

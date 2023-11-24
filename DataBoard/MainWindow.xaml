@@ -38,9 +38,10 @@
             </Grid.RowDefinitions>
             <!--menu-->
             <StackPanel Grid.Row="0">
-                
-                
-                
+                <RadioButton Content="首页" Tag="&#xf17a;" Style="{StaticResource RadioButtonMenuStyle}"/>
+                <RadioButton Content="生产线" Tag="&#xf233;" Style="{StaticResource RadioButtonMenuStyle}"/>
+                <RadioButton Content="子线" Tag="&#xf1a4;" Style="{StaticResource RadioButtonMenuStyle}"/>
+                <RadioButton Content="用户列表" Tag="&#xf2be;" Style="{StaticResource RadioButtonMenuStyle}"/>
             </StackPanel>
             <!--exit-->
             <Grid Grid.Row="1" >
