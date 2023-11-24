@@ -1,8 +1,12 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight;
+using System;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DataBoard.ViewModel
-{  
+{
     public class MainViewModel : ViewModelBase
     {
         /// <summary>
@@ -11,6 +15,15 @@ namespace DataBoard.ViewModel
         public MainViewModel()
         {
             appData = ServiceLocator.Current.GetInstance<AppData>();
+            
+            Task.Run(() =>
+            {
+                while (true)
+                {
+                    this.SystemTime = DateTime.Now.ToString();
+                    Thread.Sleep(1000);
+                }
+            });
         }
 
         private AppData appData;
@@ -18,6 +31,17 @@ namespace DataBoard.ViewModel
         {
             get { return appData; }
             set { appData = value; }
+        }
+
+        /// <summary>
+        /// 系统时间
+        /// </summary>
+        private string systemTime;
+        public string SystemTime
+        {
+            get { return systemTime; }
+            set { systemTime = value; RaisePropertyChanged(); }
+
         }
     }
 }

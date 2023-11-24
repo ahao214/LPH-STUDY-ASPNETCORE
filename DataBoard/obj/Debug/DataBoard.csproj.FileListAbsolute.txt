@@ -40,3 +40,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.csproj.C
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Dictionary\RadioButtonDictionary.baml
