@@ -129,5 +129,27 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
+        #region 删除读者类别
+
+        /// <summary>
+        /// 删除读者类别
+        /// </summary>
+        /// <param name="readerType">读者类别ID</param>
+        /// <returns>大于0：True 小于0：False</returns>
+        public bool DeleteReaderType(int iReaderTypeId)
+        {
+            try
+            {
+                return ReaderTypeDAL.DeleteReaderType(iReaderTypeId);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        #endregion
+
     }
 }

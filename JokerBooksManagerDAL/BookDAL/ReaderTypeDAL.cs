@@ -161,5 +161,28 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+
+
+        #region 删除读者类别
+
+        /// <summary>
+        /// 删除读者类别
+        /// </summary>
+        /// <param name="readerType">读者类别ID</param>
+        /// <returns>大于0：True 小于0：False</returns>
+        public static bool DeleteReaderType(int iReaderTypeId)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Delete From  ReaderType WHERE ReaderTypeId=@ReaderTypeId");
+            SqlParameter[] paras =
+            {
+                new SqlParameter ("@ReaderTypeId",iReaderTypeId)
+            };
+            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
+
+        }
+
+        #endregion
     }
 }

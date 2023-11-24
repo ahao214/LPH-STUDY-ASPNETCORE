@@ -186,5 +186,17 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 删除字符
+
+        public const string CharDelete = "删除";
+
+        #endregion
+
+        #region 你确定要删除数据吗
+
+        public const string IsDeleteData = "你确定要删除数据吗？";
+
+        #endregion
+
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
@@ -101,6 +102,10 @@ namespace JokerBooksManager.Managers
             {
                 case CommConst.CharUpdate:
                     ShowForm(type.ReadTypeId); break;
+                case CommConst.CharDelete:
+                    //删除
+                    DelReaderType(type.ReadTypeId);
+                    break;
                 default:
                     break;
             }
@@ -108,5 +113,11 @@ namespace JokerBooksManager.Managers
 
         }
         #endregion
+
+        private void DelReaderType(int iReaderTypeId)
+        {
+            if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
+                return;
+        }
     }
 }
