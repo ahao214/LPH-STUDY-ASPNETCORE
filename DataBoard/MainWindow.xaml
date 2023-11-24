@@ -58,6 +58,7 @@
             <!--menu-->
             <StackPanel Grid.Row="0">
                 <RadioButton Content="首页" Tag="&#xf17a;" Style="{StaticResource RadioButtonMenuStyle}"/>
+                <RadioButton Content="停机数据" Tag="&#xf233;" Style="{StaticResource RadioButtonMenuStyle}"/>
                 <RadioButton Content="生产线" Tag="&#xf233;" Style="{StaticResource RadioButtonMenuStyle}"/>
                 <RadioButton Content="子线类型" Tag="&#xf1a4;" Style="{StaticResource RadioButtonMenuStyle}"/>
                 <RadioButton Content="停机类型" Tag="&#xf208;" Style="{StaticResource RadioButtonMenuStyle}"/>
