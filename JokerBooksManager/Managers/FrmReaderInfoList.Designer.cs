@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgvReaderInfoList = new Sunny.UI.UIDataGridView();
             this.BtnClose = new Sunny.UI.UIButton();
             this.BtnAddNew = new Sunny.UI.UIButton();
@@ -44,7 +44,7 @@
             this.ReaderIdCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReaderTel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReaderRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.读者类别Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReaderTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvReaderInfoList)).BeginInit();
@@ -52,18 +52,18 @@
             // 
             // DgvReaderInfoList
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvReaderInfoList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvReaderInfoList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.DgvReaderInfoList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.DgvReaderInfoList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvReaderInfoList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvReaderInfoList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.DgvReaderInfoList.ColumnHeadersHeight = 32;
             this.DgvReaderInfoList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvReaderInfoList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -75,44 +75,45 @@
             this.ReaderIdCard,
             this.ReaderTel,
             this.ReaderRemark,
-            this.读者类别Id,
+            this.ReaderTypeId,
             this.Modify,
             this.DelData});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvReaderInfoList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvReaderInfoList.DefaultCellStyle = dataGridViewCellStyle13;
+            this.DgvReaderInfoList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvReaderInfoList.EnableHeadersVisualStyles = false;
             this.DgvReaderInfoList.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DgvReaderInfoList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(199)))), ((int)(((byte)(69)))));
-            this.DgvReaderInfoList.Location = new System.Drawing.Point(3, 38);
+            this.DgvReaderInfoList.Location = new System.Drawing.Point(0, 35);
             this.DgvReaderInfoList.Name = "DgvReaderInfoList";
             this.DgvReaderInfoList.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvReaderInfoList.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvReaderInfoList.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.DgvReaderInfoList.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.DgvReaderInfoList.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.DgvReaderInfoList.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.DgvReaderInfoList.RowTemplate.Height = 30;
             this.DgvReaderInfoList.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.DgvReaderInfoList.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.DgvReaderInfoList.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.DgvReaderInfoList.SelectedIndex = -1;
-            this.DgvReaderInfoList.Size = new System.Drawing.Size(1902, 733);
+            this.DgvReaderInfoList.Size = new System.Drawing.Size(1920, 985);
             this.DgvReaderInfoList.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.DgvReaderInfoList.Style = Sunny.UI.UIStyle.Green;
             this.DgvReaderInfoList.TabIndex = 3;
@@ -138,6 +139,7 @@
             this.BtnClose.TabIndex = 5;
             this.BtnClose.Text = "关闭";
             this.BtnClose.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // BtnAddNew
             // 
@@ -160,6 +162,7 @@
             this.BtnAddNew.TabIndex = 4;
             this.BtnAddNew.Text = "新增读者";
             this.BtnAddNew.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnAddNew.Click += new System.EventHandler(this.BtnAddNew_Click);
             // 
             // ReaderId
             // 
@@ -167,15 +170,14 @@
             this.ReaderId.HeaderText = "读者编号";
             this.ReaderId.MinimumWidth = 8;
             this.ReaderId.Name = "ReaderId";
-            this.ReaderId.Width = 150;
             // 
             // ReaderTypeName
             // 
-            this.ReaderTypeName.DataPropertyName = "ReaderTypeId";
+            this.ReaderTypeName.DataPropertyName = "ReaderTypeName";
             this.ReaderTypeName.HeaderText = "读者类别";
             this.ReaderTypeName.MinimumWidth = 8;
             this.ReaderTypeName.Name = "ReaderTypeName";
-            this.ReaderTypeName.Width = 150;
+            this.ReaderTypeName.ToolTipText = "读者类别";
             // 
             // ReaderName
             // 
@@ -183,7 +185,6 @@
             this.ReaderName.HeaderText = "读者姓名";
             this.ReaderName.MinimumWidth = 8;
             this.ReaderName.Name = "ReaderName";
-            this.ReaderName.Width = 150;
             // 
             // ReaderSex
             // 
@@ -191,7 +192,6 @@
             this.ReaderSex.HeaderText = "读者性别";
             this.ReaderSex.MinimumWidth = 8;
             this.ReaderSex.Name = "ReaderSex";
-            this.ReaderSex.Width = 150;
             // 
             // ReaderNumber
             // 
@@ -215,7 +215,6 @@
             this.ReaderTel.HeaderText = "电话";
             this.ReaderTel.MinimumWidth = 8;
             this.ReaderTel.Name = "ReaderTel";
-            this.ReaderTel.Width = 150;
             // 
             // ReaderRemark
             // 
@@ -225,15 +224,15 @@
             this.ReaderRemark.Name = "ReaderRemark";
             this.ReaderRemark.Width = 150;
             // 
-            // 读者类别Id
+            // ReaderTypeId
             // 
-            this.读者类别Id.DataPropertyName = "ReaderTypeId";
-            this.读者类别Id.HeaderText = "读者类别Id";
-            this.读者类别Id.MinimumWidth = 8;
-            this.读者类别Id.Name = "读者类别Id";
-            this.读者类别Id.ToolTipText = "读者类别Id";
-            this.读者类别Id.Visible = false;
-            this.读者类别Id.Width = 50;
+            this.ReaderTypeId.DataPropertyName = "ReaderTypeId";
+            this.ReaderTypeId.HeaderText = "读者类别Id";
+            this.ReaderTypeId.MinimumWidth = 8;
+            this.ReaderTypeId.Name = "ReaderTypeId";
+            this.ReaderTypeId.ToolTipText = "读者类别Id";
+            this.ReaderTypeId.Visible = false;
+            this.ReaderTypeId.Width = 10;
             // 
             // Modify
             // 
@@ -288,7 +287,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ReaderIdCard;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReaderTel;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReaderRemark;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 读者类别Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReaderTypeId;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
         private System.Windows.Forms.DataGridViewLinkColumn DelData;
     }

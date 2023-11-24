@@ -74,6 +74,12 @@
     <Compile Include="Managers\FrmPassModify.Designer.cs">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmReaderInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmReaderInfoAdd.Designer.cs">
+      <DependentUpon>FrmReaderInfoAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\FrmReaderInfoList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmPassModify.resx">
       <DependentUpon>FrmPassModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmReaderInfoAdd.resx">
+      <DependentUpon>FrmReaderInfoAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmReaderInfoList.resx">
       <DependentUpon>FrmReaderInfoList.cs</DependentUpon>

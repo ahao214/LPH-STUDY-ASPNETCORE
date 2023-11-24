@@ -61,7 +61,7 @@ namespace JokerBooksManagerBLL.BookBLL
         /// 获取所有读者
         /// </summary>
         /// <returns>返回读者对象集合</returns>
-        public List<ReaderInfo> GetReaderInfos()
+        public List<ReaderInfoExpend> GetReaderInfos()
         {
             try
             {

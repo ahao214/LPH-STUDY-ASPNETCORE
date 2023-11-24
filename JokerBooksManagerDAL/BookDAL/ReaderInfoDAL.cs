@@ -82,18 +82,19 @@ namespace JokerBooksManagerDAL.BookDAL
         /// 返回读者信息集合
         /// </summary>
         /// <returns></returns>
-        public static List<ReaderInfo> GetReaderInfos()
+        public static List<ReaderInfoExpend> GetReaderInfos()
         {
             BookCommandType bookCommand = BookCommandType.Text;
-            List<ReaderInfo> lst = new List<ReaderInfo>();
+            List<ReaderInfoExpend> lst = new List<ReaderInfoExpend>();
             StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReaderId,ReaderTypeId,ReaderName,ReaderSex,ReaderNumber,ReaderIdCard,ReaderTel,ReaderRemark FROM ReaderInfo  ORDER BY ReaderId ASC");
+            sb.Append(" SELECT R.ReaderId,R.ReaderTypeId,R.ReaderName,R.ReaderSex,R.ReaderNumber,R.ReaderIdCard,R.ReaderTel,R.ReaderRemark,T.ReaderTypeName FROM ReaderInfo AS R,ReaderType AS T WHERE R.ReaderTypeId = T.ReaderTypeId  ORDER BY R.ReaderId ASC");
             DataTable dt = DBHelper.GetDataTable(sb.ToString(), bookCommand);
             foreach (DataRow dr in dt.Rows)
             {
-                ReaderInfo readerInfo = new ReaderInfo
+                ReaderInfoExpend readerInfo = new ReaderInfoExpend
                 {
                     ReaderId = dr["ReaderId"].ChangeInt(),
+                    ReaderTypeName = dr["ReaderTypeName"].ToString(),
                     ReaderTypeId = dr["ReaderTypeId"].ChangeInt(),
                     ReaderName = dr["ReaderName"].ToString(),
                     ReaderSex = dr["ReaderSex"].ToString(),
