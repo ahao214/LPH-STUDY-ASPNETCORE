@@ -44,7 +44,7 @@ namespace JokerBooksManager.Managers
         private void ShowForm(int iReaderType)
         {
             FrmReaderTypeAdd frmReaderTypeAdd = SingleForm<FrmReaderTypeAdd>.CreateInstance();
-            frmReaderTypeAdd.MdiParent = MdiParent;            
+            frmReaderTypeAdd.MdiParent = MdiParent;
             frmReaderTypeAdd.Tag = new FormInfoModel
             {
                 KeyId = iReaderType,
@@ -114,10 +114,28 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
+
+        #region 执行删除
+        /// <summary>
+        /// 执行删除
+        /// </summary>
+        /// <param name="iReaderTypeId"></param>
         private void DelReaderType(int iReaderTypeId)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
-        }
+
+            bool res = bll.DeleteReaderType(iReaderTypeId);
+            if (res)
+            {
+                CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
+            }
+            else
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataFail);
+            }
+
+        } 
+        #endregion
     }
 }
