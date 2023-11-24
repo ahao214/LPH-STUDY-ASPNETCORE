@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
         <local:SingleParamConverter x:Key="SingleParamConverter"/>
+        <local:MultiParamConverter x:Key="MultiParamConverter"/>
     </Window.Resources>
     <Grid>
         <DataGrid x:Name="MyDataGrid"
@@ -35,7 +36,17 @@
                                 <Button.Style>
                                     <Style TargetType="Button">
                                         <!--年龄大于规定的范围，按钮才可以使用-->
-                                        <Setter Property="IsEnabled" Value="{Binding Age,Converter={StaticResource SingleParamConverter}}"/>
+                                        <!--<Setter Property="IsEnabled" Value="{Binding Age,Converter={StaticResource SingleParamConverter}}"/>-->
+
+                                        <Setter Property="IsEnabled">
+                                            <Setter.Value>
+                                                <MultiBinding Converter="{StaticResource MultiParamConverter}">
+                                                    <Binding Path="Age"/>
+                                                    <Binding Path="Grade"/>
+                                                </MultiBinding>
+                                            </Setter.Value>
+                                        </Setter>
+                                        
                                     </Style>
                                 </Button.Style>
                             </Button>
