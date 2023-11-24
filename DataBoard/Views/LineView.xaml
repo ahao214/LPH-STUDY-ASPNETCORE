@@ -16,7 +16,7 @@
             <DataGrid Grid.Row="0"/>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Margin="15 15 15 15" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Style="{StaticResource AddButtonStyle}"/>
+                <Button Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Style="{StaticResource AddButtonStyle}"/>
             </StackPanel>
         </Grid>
         
