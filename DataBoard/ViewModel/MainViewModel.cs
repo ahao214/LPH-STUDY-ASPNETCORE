@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace DataBoard.ViewModel
 {
@@ -61,8 +62,9 @@ namespace DataBoard.ViewModel
                 });
                 
             }
-        } 
+        }
         #endregion
+
 
 
     }

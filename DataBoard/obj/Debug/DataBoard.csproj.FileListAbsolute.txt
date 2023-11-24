@@ -19,9 +19,16 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\bin\Debug\GalaSoft.MvvmLight
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Dictionary\RadioButtonDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Dictionary\TextBoxDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\MainWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\HistoryView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\IndexView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\LineView.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\LoginWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\StopTypeView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\SubLineView.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\UserInfoView.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Windows\Window1.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard_Content.g.cs
@@ -31,7 +38,13 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard_MarkupCo
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\App.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Dictionary\ButtonDictionary.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\MainWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\HistoryView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\IndexView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\LineView.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\LoginWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\StopTypeView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\SubLineView.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Views\UserInfoView.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Windows\Window1.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.g.resources
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.Properties.Resources.resources
@@ -40,4 +53,3 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.csproj.C
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\DataBoard.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\obj\Debug\Dictionary\RadioButtonDictionary.baml

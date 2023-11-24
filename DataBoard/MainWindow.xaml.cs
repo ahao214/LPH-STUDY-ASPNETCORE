@@ -30,5 +30,50 @@ namespace DataBoard
                 container.Content = SimpleIoc.Default.GetInstance<IndexView>();
             };
         }
+
+        #region 页面导航
+
+        /// <summary>
+        /// 页面导航
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if(!(sender is RadioButton radioButton)) return;
+            var uid = radioButton.Uid;
+            if(string.IsNullOrEmpty (uid) )
+            {
+                return;
+            }
+            switch (uid)
+            {
+                case "IndexView":
+                    container .Content = SimpleIoc .Default .GetInstance<IndexView>();
+                    break;
+                case "HistoryView":
+                    container.Content = SimpleIoc.Default.GetInstance<HistoryView>();
+                    break;
+                case "LineView":
+                    container.Content = SimpleIoc.Default.GetInstance<LineView>();
+                    break;
+                case "SubLineView":
+                    container.Content = SimpleIoc.Default.GetInstance<SubLineView>();
+                    break;
+                case "StopTypeView":
+                    container.Content = SimpleIoc.Default.GetInstance<StopTypeView>();
+                    break;
+                case "UserInfoView":
+                    container.Content = SimpleIoc.Default.GetInstance<UserInfoView>();
+                    break;
+              
+                default:break;
+            }
+
+        
+        
+        }
+
+        #endregion
     }
 }

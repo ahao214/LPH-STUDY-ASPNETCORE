@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DataBoard\App.xaml
-6447407677
+121026511296
 2-1004098313
-20109915346
+32946750624
 1271820036436
-Dictionary\ButtonDictionary.xaml;Dictionary\RadioButtonDictionary.xaml;Dictionary\TextBoxDictionary.xaml;MainWindow.xaml;Views\LoginWindow.xaml;Windows\Window1.xaml;
+Dictionary\ButtonDictionary.xaml;Dictionary\RadioButtonDictionary.xaml;Dictionary\TextBoxDictionary.xaml;MainWindow.xaml;Views\HistoryView.xaml;Views\IndexView.xaml;Views\LineView.xaml;Views\LoginWindow.xaml;Views\StopTypeView.xaml;Views\SubLineView.xaml;Views\UserInfoView.xaml;Windows\Window1.xaml;
 
 False
 
