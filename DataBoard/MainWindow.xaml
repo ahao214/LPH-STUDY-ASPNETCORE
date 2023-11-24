@@ -37,7 +37,11 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <!--menu-->
-            <StackPanel Grid.Row="0"></StackPanel>
+            <StackPanel Grid.Row="0">
+                
+                
+                
+            </StackPanel>
             <!--exit-->
             <Grid Grid.Row="1" >
                 <Grid.ColumnDefinitions>
