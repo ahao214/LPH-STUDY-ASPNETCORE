@@ -1,9 +1,11 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using System;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DataBoard.ViewModel
 {
@@ -15,7 +17,7 @@ namespace DataBoard.ViewModel
         public MainViewModel()
         {
             appData = ServiceLocator.Current.GetInstance<AppData>();
-            
+
             Task.Run(() =>
             {
                 while (true)
@@ -43,5 +45,25 @@ namespace DataBoard.ViewModel
             set { systemTime = value; RaisePropertyChanged(); }
 
         }
+
+
+        #region 退出程序
+        /// <summary>
+        /// 退出程序
+        /// </summary>
+        public RelayCommand ExitCommand
+        {
+            get
+            {
+                var cmd = new RelayCommand(() =>
+                {
+                    Application.Current.Shutdown();
+                });
+                return cmd;
+            }
+        } 
+        #endregion
+
+
     }
 }
