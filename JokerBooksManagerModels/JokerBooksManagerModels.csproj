@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Model\FormInfoModel.cs" />
     <Compile Include="Model\Manager.cs" />
+    <Compile Include="Model\ReaderInfo.cs" />
     <Compile Include="Model\ReaderType.cs" />
     <Compile Include="Model\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

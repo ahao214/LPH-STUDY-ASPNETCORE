@@ -18,5 +18,10 @@ namespace JokerBooksManager.Managers
         {
             InitializeComponent();
         }
+
+        private void FrmReaderInfoList_Load(object sender, EventArgs e)
+        {
+            DgvReaderInfoList.DataSource = new List<string>();
+        }
     }
 }
