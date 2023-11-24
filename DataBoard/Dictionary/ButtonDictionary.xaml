@@ -21,7 +21,14 @@
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center"/>
                     </Border>
-                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#4BA2EF" TargetName="border"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Background"  Value="#2391F2" TargetName="border"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

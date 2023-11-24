@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         WindowStyle="None"
         Title="登录窗体" Height="400" Width="760">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="50"/>
+    </WindowChrome.WindowChrome>
     <Grid>
         <!--定义两列-->
         <Grid.ColumnDefinitions>
