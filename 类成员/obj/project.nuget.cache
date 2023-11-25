@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nzDb812pT5U8zlw63D50epiza4nGiWKweH+MhvomssKQiRA3SHoX5NzkscWX9Vn5hFeeX0j6A7R0RCWjLh5Nkg==",
+  "success": true,
+  "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\类成员\\类成员.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

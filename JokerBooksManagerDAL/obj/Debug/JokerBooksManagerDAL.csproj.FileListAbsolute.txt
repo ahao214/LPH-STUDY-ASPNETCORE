@@ -1,0 +1,11 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerDAL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerDAL.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerComm.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerComm.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\bin\Debug\JokerBooksManagerModels.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\obj\Debug\JokerBooksManagerDAL.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\obj\Debug\JokerBooksManagerDAL.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\obj\Debug\JokerBooksManagerDAL.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\obj\Debug\JokerBooksManagerDAL.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerDAL\obj\Debug\JokerBooksManagerDAL.pdb

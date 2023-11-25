@@ -171,10 +171,10 @@ namespace JokerBooksManagerComm.Comm
         #endregion
 
 
-        #region 获取SQL的删除语句
+        #region 获取SQL的删除语句(根据主键来删除)
 
         /// <summary>
-        /// 获取SQL的删除语句
+        /// 获取SQL的删除语句(根据主键来删除)
         /// </summary>
         /// <typeparam name="T">泛型</typeparam>
         /// <param name="t">泛型变量</param>

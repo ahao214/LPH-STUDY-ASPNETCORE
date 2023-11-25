@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "kKiGD550F2qmwCMYEaED2KPF3lnBfCvStp1I+wFCrYaDXvzxpSVbGR6p4cm0frR94fgJ+4x04g1qH8RVT0fKVw==",
+  "success": true,
+  "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\T3\\T3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\stackexchange.redis\\2.7.4\\stackexchange.redis.2.7.4.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
