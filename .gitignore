@@ -3,23 +3,15 @@
 ################################################################################
 
 /.vs
-/JokerBooksManager/obj
-/JokerBooksManager/bin
-/JokerBooksManagerDAL/obj
-/JokerBooksManagerDAL/bin
+*.suo
+/LPH-STUDY-ASPNETCORE/JokerBooksManager/obj
+/LPH-STUDY-ASPNETCORE/JokerBooksManager/bin
 
-/JokerBooksManagerBLL/obj
-/JokerBooksManagerBLL/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/obj
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/bin
 
-/JokerBooksManagerComm/obj
-/JokerBooksManagerComm/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/obj
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/bin
 
-bin/
-obj/
-*.dll
-*.exe
-*.pdb
-
-
-# 忽略应用程序的配置文件
-appsettings*.json
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/obj
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/bin
