@@ -108,6 +108,7 @@
             // 
             // RbFemale
             // 
+            this.RbFemale.Checked = true;
             this.RbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RbFemale.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.RbFemale.Location = new System.Drawing.Point(251, 198);

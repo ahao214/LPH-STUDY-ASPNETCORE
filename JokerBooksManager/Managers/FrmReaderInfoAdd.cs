@@ -89,7 +89,7 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        #region 初始化添加还是修改
+        #region 初始化添加还是修改读者窗体
 
         private void InitialAddOrUpdate()
         {
@@ -110,7 +110,6 @@ namespace JokerBooksManager.Managers
             {
                 // 添加
                 TxtReaderName.Clear();
-                TxtReaderNumber.Clear();
                 TxtReaderIdCard.Clear();
                 TxtReaderRemark.Clear();
                 TxtReaderRemark.Clear();
@@ -138,7 +137,7 @@ namespace JokerBooksManager.Managers
                 ReaderRemark = sReaderRemark
             };
 
-
+            AddOrUpdate(info);
 
         }
 
@@ -152,10 +151,10 @@ namespace JokerBooksManager.Managers
         private void AddOrUpdate(ReaderInfo info)
         {
             bool res;
-            if(readerId == 0)
+            if (readerId == 0)
             {
                 // 添加
-                res = infoBll .AddReaderInfo (info);
+                res = infoBll.AddReaderInfo(info);
 
             }
             else
@@ -163,7 +162,7 @@ namespace JokerBooksManager.Managers
                 // 修改
                 res = false;
             }
-            if(res)
+            if (res)
             {
                 CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
                 // 刷新Dgv
