@@ -107,8 +107,8 @@ namespace JokerBooksManager.Managers
             {
                 // 修改
                 ReaderInfo info = infoBll.GetReaderInfoById(readerId);
-                
-                if(info !=null)
+
+                if (info != null)
                 {
                     TxtReaderName.Text = info.ReaderName;
                     CboReaderTypeId.SelectedValue = info.ReaderTypeId.ChangeInt();
@@ -116,7 +116,7 @@ namespace JokerBooksManager.Managers
                         RbMale.Checked = true;
                     else
                         RbFemale.Checked = true;
-                    
+
                     TxtReaderNumber.Text = info.ReaderNumber;
                     TxtReaderIdCard.Text = info.ReaderIdCard;
                     TxtReaderTel.Text = info.ReaderTel;
@@ -172,12 +172,12 @@ namespace JokerBooksManager.Managers
             {
                 // 添加
                 res = infoBll.AddReaderInfo(info);
-
             }
             else
             {
                 // 修改
-                res = false;
+                info .ReaderId = readerId;
+                res = infoBll.UpdateReaderInfo(info);
             }
             if (res)
             {
@@ -203,7 +203,7 @@ namespace JokerBooksManager.Managers
         {
             sReaderName = TxtReaderName.Text;
             iReaderTypeId = CboReaderTypeId.SelectedValue.ChangeInt();
-            if(RbFemale .Checked)
+            if (RbFemale.Checked)
             {
                 sSex = RbFemale.Text;
             }
@@ -211,27 +211,27 @@ namespace JokerBooksManager.Managers
             {
                 sSex = RbMale.Text;
             }
-            
+
             sReaderNumber = TxtReaderNumber.Text;
             sReaderIdCard = TxtReaderIdCard.Text;
             sReaderTel = TxtReaderTel.Text;
             sReaderRemark = TxtReaderRemark.Text;
-            if(sReaderRemark.Length ==0 || string .IsNullOrEmpty (sReaderRemark))
+            if (sReaderRemark.Length == 0 || string.IsNullOrEmpty(sReaderRemark))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if(iReaderTypeId == 0|| string .IsNullOrEmpty (iReaderTypeId.ToString ()))
+            if (iReaderTypeId == 0 || string.IsNullOrEmpty(iReaderTypeId.ToString()))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if(sSex .Length == 0|| string .IsNullOrEmpty (sSex))
+            if (sSex.Length == 0 || string.IsNullOrEmpty(sSex))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if(sReaderNumber.Length == 0|| string .IsNullOrEmpty (sReaderNumber))
+            if (sReaderNumber.Length == 0 || string.IsNullOrEmpty(sReaderNumber))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
