@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.Design;
 using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
@@ -105,13 +106,28 @@ namespace JokerBooksManager.Managers
             if (readerId > 0)
             {
                 // 修改
+                ReaderInfo info = infoBll.GetReaderInfoById(readerId);
+                if(info !=null)
+                {
+                    TxtReaderName.Text = info.ReaderName;
+                    CboReaderTypeId.SelectedValue = info.ReaderTypeId.ChangeInt();
+                    if (info.ReaderSex.Equals("男"))
+                        RbMale.Checked = true;
+                    else
+                        RbFemale.Checked = true;
+                    
+                    TxtReaderNumber.Text = info.ReaderNumber;
+                    TxtReaderIdCard.Text = info.ReaderIdCard;
+                    TxtReaderTel.Text = info.ReaderTel;
+                    TxtReaderRemark.Text = info.ReaderRemark;
+                }
             }
             else
             {
                 // 添加
                 TxtReaderName.Clear();
                 TxtReaderIdCard.Clear();
-                TxtReaderRemark.Clear();
+                TxtReaderTel.Clear();
                 TxtReaderRemark.Clear();
             }
         }
