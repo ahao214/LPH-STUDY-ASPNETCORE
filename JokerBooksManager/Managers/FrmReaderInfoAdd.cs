@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
@@ -17,6 +18,8 @@ namespace JokerBooksManager.Managers
 {
     public partial class FrmReaderInfoAdd : UIForm
     {
+
+        #region 业务逻辑层
         /// <summary>
         /// 读者类别业务逻辑
         /// </summary>
@@ -26,11 +29,29 @@ namespace JokerBooksManager.Managers
         /// 读者信息业务逻辑
         /// </summary>
         private ReaderInfoBLL infoBll = new ReaderInfoBLL();
+        #endregion
 
+        #region 窗体共用Mode变量
+
+        /// <summary>
+        /// 窗体共用Mode变量
+        /// </summary>
+        private FormInfoModel formInfoModel = new FormInfoModel();
+
+        #endregion
+
+        #region 读者信息ID
+
+        private int readerId = 0;
+
+        #endregion
+
+        #region 构造函数
         public FrmReaderInfoAdd()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region 窗体加载
 
@@ -38,6 +59,7 @@ namespace JokerBooksManager.Managers
         {
             DataBindReaderType();
             ReaderNumberInit();
+            InitialAddOrUpdate();
         }
 
         #endregion
@@ -67,6 +89,36 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
+        #region 初始化添加还是修改
+
+        private void InitialAddOrUpdate()
+        {
+            if (!(Tag is null))
+            {
+                formInfoModel = Tag as FormInfoModel;
+                if (!(formInfoModel is null))
+                {
+                    readerId = formInfoModel.KeyId;
+                }
+            }
+            // 判断窗体是添加还是修改
+            if (readerId > 0)
+            {
+                // 修改
+            }
+            else
+            {
+                // 添加
+                TxtReaderName.Clear();
+                TxtReaderNumber.Clear();
+                TxtReaderIdCard.Clear();
+                TxtReaderRemark.Clear();
+                TxtReaderRemark.Clear();
+            }
+        }
+
+        #endregion
+
         #region 添加读者信息
 
         private void BtnOk_Click(object sender, EventArgs e)
@@ -86,12 +138,46 @@ namespace JokerBooksManager.Managers
                 ReaderRemark = sReaderRemark
             };
 
-            string sql = BuilderSqlHelper.InsertSql<ReaderInfo>(info, "ReaderInfo", "ReaderId");
-            
+
+
         }
 
         #endregion 添加读者信息
 
+        #region 添加或修改读者信息
+        /// <summary>
+        /// 添加或修改读者信息
+        /// </summary>
+        /// <param name="info"></param>
+        private void AddOrUpdate(ReaderInfo info)
+        {
+            bool res;
+            if(readerId == 0)
+            {
+                // 添加
+                res = infoBll .AddReaderInfo (info);
+
+            }
+            else
+            {
+                // 修改
+                res = false;
+            }
+            if(res)
+            {
+                CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
+                // 刷新Dgv
+                formInfoModel.ReloadData?.Invoke();
+            }
+            else
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.SaveDataFail);
+
+            }
+            Close();
+        }
+
+        #endregion
 
 
 
