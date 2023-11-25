@@ -198,5 +198,10 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 读者编码前缀字符
+
+        public const string PrefixReaderNumber = "RU";
+
+        #endregion
     }
 }

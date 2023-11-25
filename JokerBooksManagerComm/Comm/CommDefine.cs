@@ -89,8 +89,8 @@ namespace JokerBooksManagerComm.Comm
             {
                 dataSource = "0" + dataSource;
             }
-            return dataSource;
-        } 
+            return CommConst.PrefixReaderNumber + dataSource;
+        }
         #endregion
 
 
