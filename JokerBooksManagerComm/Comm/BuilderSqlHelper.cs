@@ -39,6 +39,7 @@ namespace JokerBooksManagerComm.Comm
         /// </summary>
         /// <typeparam name="T">泛型</typeparam>
         /// <param name="t">泛型参数</param>
+        /// <param name="primaryKey">主键ID</param>
         /// <returns>返回由逗号构成的列</returns>
         private static string GetColumnName<T>(T t, string primaryKey)
         {
