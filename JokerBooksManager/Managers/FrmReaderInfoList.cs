@@ -52,9 +52,7 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void BtnAddNew_Click(object sender, EventArgs e)
         {
-            FrmReaderInfoAdd frmReaderInfoAdd = SingleForm<FrmReaderInfoAdd>.CreateInstance();
-            frmReaderInfoAdd.MdiParent = MdiParent;
-            frmReaderInfoAdd.Show();
+            ShowForm(0);
         }
 
         #endregion
