@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comm\BookCommandType.cs" />
+    <Compile Include="Comm\BuilderSqlHelper.cs" />
     <Compile Include="Comm\CommConst.cs" />
     <Compile Include="Comm\CommDefine.cs" />
     <Compile Include="Comm\SingleForm.cs" />
