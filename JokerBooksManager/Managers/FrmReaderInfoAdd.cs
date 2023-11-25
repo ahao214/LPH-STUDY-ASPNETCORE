@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManagerBLL.BookBLL;
+using JokerBooksManagerComm.Comm;
 using Sunny.UI;
 
 
@@ -35,6 +36,17 @@ namespace JokerBooksManager.Managers
         private void FrmReaderInfoAdd_Load(object sender, EventArgs e)
         {
             DataBindReaderType();
+            ReaderNumberInit();
+        }
+
+        #endregion
+
+
+        #region  初始化读者编码
+
+        private void ReaderNumberInit()
+        {
+            TxtReaderNumber.Text = CommDefine.NumberPlusOne(infoBll.GetReaderNumber());
         }
 
         #endregion
@@ -49,7 +61,7 @@ namespace JokerBooksManager.Managers
             CboReaderTypeId.DataSource = typeBll.GetReaderTypes();
             CboReaderTypeId.DisplayMember = "ReaderTypeName";
             CboReaderTypeId.ValueMember = "ReaderTypeId";
-            
+
         }
 
         #endregion

@@ -80,7 +80,28 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 将string转换为整型
 
+        /// <summary>
+        /// 将string转换为整型
+        /// </summary>
+        /// <param name="sVal">数字字符串</param>
+        /// <returns>返回整型</returns>
+        public static int ChangeInt(this string sVal)
+        {
+            int iRes;
+            try
+            {
+                iRes = Convert.ToInt32(sVal);
+            }
+            catch (Exception)
+            {
+                iRes = 0;
+            }
+            return iRes;
+        }
+
+        #endregion
 
 
     }

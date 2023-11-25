@@ -219,7 +219,7 @@ namespace JokerBooksManagerDAL.BookDAL
             }
             else
             {
-                sReaderNumber = "RU000000000";
+                sReaderNumber = "RU00000000000";
             }
             reader.Close();
             return sReaderNumber;

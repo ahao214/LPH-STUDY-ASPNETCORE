@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.Runtime.InteropServices;
 
 
 namespace JokerBooksManagerComm.Comm
@@ -50,6 +51,48 @@ namespace JokerBooksManagerComm.Comm
         }
 
         #endregion
+
+
+        #region 读者编码加一 
+
+        /// <summary>
+        /// 读者编码加一
+        /// </summary>
+        /// <param name="readerNumber"></param>
+        /// <returns>返回加一后的读者编码</returns>
+        public static string NumberPlusOne(string readerNumber)
+        {
+            int len = readerNumber.Length;
+            readerNumber = readerNumber.Substring(2, len - 2);
+            int iNumber = readerNumber.ChangeInt() + 1;
+            return FillIn(iNumber.ToString());
+        }
+
+        #endregion
+
+
+        #region 构造11位读者编码
+        /// <summary>
+        /// 构造11位读者编码
+        /// </summary>
+        /// <param name="dataSource"></param>
+        /// <returns></returns>
+        private static string FillIn(string dataSource)
+        {
+            // 首先得到字符串长度
+            int len = dataSource.Length;
+            // 判断字符串是否已经是11位了
+            if (len == 11) return dataSource;
+            // 如果不是11位，进行补零操作(在左边)
+            int end = 11 - len;
+            for (int i = 0; i <= end; i++)
+            {
+                dataSource = "0" + dataSource;
+            }
+            return dataSource;
+        } 
+        #endregion
+
 
     }
 }
