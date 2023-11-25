@@ -15,6 +15,9 @@ using Sunny.UI;
 
 namespace JokerBooksManager.Managers
 {
+    /// <summary>
+    /// 读者信息列表窗体
+    /// </summary>
     public partial class FrmReaderInfoList : UIForm
     {
         private ReaderInfoBLL bll = new ReaderInfoBLL();
