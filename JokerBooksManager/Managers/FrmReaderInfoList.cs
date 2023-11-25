@@ -128,12 +128,12 @@ namespace JokerBooksManager.Managers
 
         #region
         /// <summary>
-        /// 
+        /// 删除读者信息
         /// </summary>
         /// <param name="readerInfo"></param>
         private void DeleteData(ReaderInfo readerInfo)
         {
-
+            bool res = bll.DeleteReaderInfo(readerInfo);
         }
 
         #endregion
