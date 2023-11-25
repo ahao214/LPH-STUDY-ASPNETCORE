@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
+using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
 
@@ -70,7 +71,8 @@ namespace JokerBooksManager.Managers
 
         private void BtnOk_Click(object sender, EventArgs e)
         {
-
+            ReaderInfo info = new ReaderInfo();
+            string sql = BuilderSqlHelper.InsertSql<ReaderInfo>(info, "ReaderInfo", "ReaderId");
         }
 
         #endregion 添加读者信息

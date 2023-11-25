@@ -19,7 +19,7 @@ namespace JokerBooksManagerComm.Comm
         /// <param name="t">泛型变量</param>
         /// <param name="tableName">表名</param>
         /// <returns></returns>
-        public static string InsertSql<T>(T t, string tableName) where T : class
+        public static string InsertSql<T>(T t, string tableName, string primaryKey) where T : class
         {
             // 第一步是判断传入的T是否位null或者传入的表名是否位空
             if (t == null || string.IsNullOrEmpty(tableName))
@@ -27,7 +27,7 @@ namespace JokerBooksManagerComm.Comm
                 return string.Empty;
             }
             // 获取需要的列名
-            string colNames = GetColumnName<T>(t);
+            string colNames = GetColumnName<T>(t, primaryKey);
             return colNames;
         }
         #endregion
@@ -40,10 +40,10 @@ namespace JokerBooksManagerComm.Comm
         /// <typeparam name="T">泛型</typeparam>
         /// <param name="t">泛型参数</param>
         /// <returns>返回由逗号构成的列</returns>
-        private static string GetColumnName<T>(T t)
+        private static string GetColumnName<T>(T t, string primaryKey)
         {
             // 链式写法
-            return string.Join(",", t.GetType().GetProperties().Where(p=>p.Name!= "ReaderId").Select(p => p.Name).ToArray());
+            return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => p.Name).ToArray());
         }
         #endregion
 
