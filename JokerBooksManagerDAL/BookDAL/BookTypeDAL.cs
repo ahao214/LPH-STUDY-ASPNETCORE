@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 namespace JokerBooksManagerDAL.BookDAL
 {
     /// <summary>
-    /// 
+    /// 数据访问层图书类别
     /// </summary>
     public class BookTypeDAL
     {
+
+
+
+
     }
 }
