@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -122,6 +123,48 @@ namespace JokerBooksManagerComm.Comm
             sb.Append($" ORDER BY {primaryKey} ASC");
 
             return sb.ToString();
+        }
+
+
+        #endregion
+
+
+        #region 获取SQL的更新语句
+
+        /// <summary>
+        /// 获取SQL的更新语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>
+        /// <param name="keyId">查询的条件</param>
+        /// <returns></returns>
+        public static string UpdateSql<T>(T t, string tableName, string primaryKey, int keyId) where T : class
+        {
+            if (t is null || string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(primaryKey))
+                return string.Empty;
+
+            // 获取当前类型
+            Type type = t.GetType();
+            // 获取到属性数组
+            PropertyInfo[] properties = type.GetProperties();
+            string sColVal = "";
+            foreach (PropertyInfo pi in properties)
+            {
+                if (pi.Name != primaryKey)
+                {
+                    sColVal += (string.IsNullOrEmpty(sColVal) ? "" : ",") + string.Format("{0}='{1}'", pi.Name, pi.GetValue(t));
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"UPDATE {tableName} SET ");
+            sb.Append(sColVal);
+            sb.Append($" WHERE {primaryKey} = {keyId}");
+
+            return sb.ToString();
+
         }
 
 
