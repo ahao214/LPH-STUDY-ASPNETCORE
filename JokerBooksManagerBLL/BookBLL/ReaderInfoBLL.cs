@@ -36,27 +36,6 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
-        #region 读者是否重复
-
-        /// <summary>
-        /// 读者是否存在
-        /// </summary>
-        /// <param name="readerType">读者</param>
-        /// <returns>大于0：成功 小于0：失败</returns>
-        public bool IsExistReaderType(string typeName)
-        {
-            try
-            {
-                return ReaderTypeDAL.IsExistReaderType(typeName);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        #endregion
-
         #region 获取所有读者
 
         /// <summary>
@@ -75,76 +54,6 @@ namespace JokerBooksManagerBLL.BookBLL
             }
         }
 
-
-        #endregion
-
-
-        #region 根据ID获取读者
-
-        /// <summary>
-        /// 根据ID获取读者
-        /// </summary>
-        /// <param name="ID">读者ID</param>
-        /// <returns>返回读者对象</returns>
-        public ReaderType GetReaderTypeById(int ID)
-        {
-            try
-            {
-                return ReaderInfoDAL.GetReaderTypeById(ID);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-
-
-        #endregion
-
-
-        #region 更新读者
-
-        /// <summary>
-        /// 更新读者
-        /// </summary>
-        /// <param name="readerType">读者对象</param>
-        /// <returns>大于0：True 小于0：False</returns>
-        public bool UpdateReaderType(ReaderType readerType)
-        {
-            try
-            {
-                return ReaderInfoDAL.UpdateReaderType(readerType);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-        }
-
-        #endregion
-
-        #region 删除读者
-
-        /// <summary>
-        /// 删除读者
-        /// </summary>
-        /// <param name="readerType">读者ID</param>
-        /// <returns>大于0：True 小于0：False</returns>
-        public bool DeleteReaderType(int iReaderTypeId)
-        {
-            try
-            {
-                return ReaderInfoDAL.DeleteReaderType(iReaderTypeId);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
 
         #endregion
 
