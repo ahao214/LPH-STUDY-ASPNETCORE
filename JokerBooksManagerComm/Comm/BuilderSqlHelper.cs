@@ -36,7 +36,7 @@ namespace JokerBooksManagerComm.Comm
             StringBuilder sb = new StringBuilder();
             sb.Append($"INSERT INTO {tableName}");
             sb.Append($"({colNames})");
-            sb.Append($" VALUES {fieldValues}");
+            sb.Append($" VALUES( {fieldValues} )");
 
             return sb.ToString();
         }
@@ -77,7 +77,7 @@ namespace JokerBooksManagerComm.Comm
             {
                 return string.Empty;
             }
-            return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => p.GetValue(t)).ToArray());
+            return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => string.Format("'{0}'", p.GetValue(t))).ToArray());
 
         }
 

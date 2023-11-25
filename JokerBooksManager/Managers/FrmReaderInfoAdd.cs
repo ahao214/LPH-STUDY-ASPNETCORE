@@ -71,13 +71,42 @@ namespace JokerBooksManager.Managers
 
         private void BtnOk_Click(object sender, EventArgs e)
         {
-            ReaderInfo info = new ReaderInfo();
+            if (!CheckInput(out string sReaderName, out int iReaderTypeId, out string sSex, out string sReaderNumber, out string sReaderIdCard, out string sReaderTel, out string sReaderRemark))
+            {
+                return;
+            }
+            ReaderInfo info = new ReaderInfo
+            {
+                ReaderName = sReaderName,
+                ReaderTypeId = iReaderTypeId,
+                ReaderSex = sSex,
+                ReaderNumber = sReaderNumber,
+                ReaderIdCard = sReaderIdCard,
+                ReaderTel = sReaderTel,
+                ReaderRemark = sReaderRemark
+            };
+
             string sql = BuilderSqlHelper.InsertSql<ReaderInfo>(info, "ReaderInfo", "ReaderId");
+            
         }
 
         #endregion 添加读者信息
 
+        #region 验证输入控件值
 
+        private bool CheckInput(out string sReaderName, out int iReaderTypeId, out string sSex, out string sReaderNumber, out string sReaderIdCard, out string sReaderTel, out string sReaderRemark)
+        {
+            sReaderName = TxtReaderName.Text;
+            iReaderTypeId = TxtReaderIdCard.Text.ChangeInt();
+            sSex = RbFemale.Text;
+            sReaderNumber = TxtReaderNumber.Text;
+            sReaderIdCard = TxtReaderIdCard.Text;
+            sReaderTel = TxtReaderTel.Text;
+            sReaderRemark = TxtReaderRemark.Text;
+            return true;
+        }
+
+        #endregion
 
 
 
