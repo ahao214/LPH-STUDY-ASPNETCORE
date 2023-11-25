@@ -170,5 +170,45 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+
+        #region 获取SQL的删除语句
+
+        /// <summary>
+        /// 获取SQL的删除语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>
+        /// <param name="keyId">查询的条件</param>
+        /// <returns></returns>
+        public static string DeleteSql<T>(T t, string tableName, string primaryKey, int keyId) where T : class
+        {
+            if (t is null || string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(primaryKey))
+                return string.Empty;
+
+            // 获取当前类型
+            Type type = t.GetType();
+            // 获取到属性数组
+            PropertyInfo[] properties = type.GetProperties();
+            string sColVal = "";
+            foreach (PropertyInfo pi in properties)
+            {
+                if (pi.Name != primaryKey)
+                {
+                    sColVal += (string.IsNullOrEmpty(sColVal) ? "" : ",") + string.Format("{0}='{1}'", pi.Name, pi.GetValue(t));
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"DELETE FROM {tableName}");
+            sb.Append($" WHERE {primaryKey} = {keyId}");
+
+            return sb.ToString();
+
+        }
+
+
+        #endregion
     }
 }
