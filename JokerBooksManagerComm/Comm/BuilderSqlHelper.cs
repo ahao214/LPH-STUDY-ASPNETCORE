@@ -29,11 +29,20 @@ namespace JokerBooksManagerComm.Comm
             }
             // 获取需要的列名
             string colNames = GetColumnName<T>(t, primaryKey);
-            return colNames;
+
+            // 得到列对应的值
+            string fieldValues = GetFieldValue<T>(t, primaryKey);
+            // 拼接字符串
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"INSERT INTO {tableName}");
+            sb.Append($"({colNames})");
+            sb.Append($" VALUES {fieldValues}");
+
+            return sb.ToString();
         }
         #endregion
 
-        #region 通过反射获取到T型的列
+        #region 通过反射获取到T型的列(这里主要是Model类)
 
         /// <summary>
         /// 通过反射获取到T型的列
@@ -44,9 +53,34 @@ namespace JokerBooksManagerComm.Comm
         /// <returns>返回由逗号构成的列</returns>
         private static string GetColumnName<T>(T t, string primaryKey)
         {
-            // 链式写法
+            if (t == null)
+            {
+                return string.Empty;
+            }            // 链式写法
             return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => p.Name).ToArray());
         }
+        #endregion
+
+
+        #region 通过反射获取到T型列对应的值(这里主要是Model类)
+
+        /// <summary>
+        /// 通过反射获取到T型列对应的值(这里主要是Model类)
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型参数</param>
+        /// <param name="primaryKey">主键ID</param>
+        /// <returns></returns>
+        private static string GetFieldValue<T>(T t, string primaryKey)
+        {
+            if (t == null)
+            {
+                return string.Empty;
+            }
+            return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => p.GetValue(t)).ToArray());
+
+        }
+
         #endregion
 
     }
