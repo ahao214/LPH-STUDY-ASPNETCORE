@@ -93,5 +93,33 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
+
+        #region 单击单元格内容事件
+
+        /// <summary>
+        /// 单击单元格内容事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DgvReaderInfoList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int iRow = e.RowIndex;
+            int iCol = e.ColumnIndex;
+            ReaderInfo readerInfo = DgvReaderInfoList.Rows[iRow].DataBoundItem as ReaderInfo;
+            if (!(DgvReaderInfoList.Rows[iRow].Cells[iCol] is DataGridViewLinkCell linkCell))
+                return;
+            string cellValue = linkCell.FormattedValue.ToString();
+            switch (cellValue)
+            {
+                case "修改":
+                    ShowForm(readerInfo.ReaderId);
+                    break;
+                case "删除":
+                    break;
+            }
+
+
+        }
+        #endregion
     }
 }
