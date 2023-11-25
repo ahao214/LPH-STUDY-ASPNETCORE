@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
@@ -134,6 +135,15 @@ namespace JokerBooksManager.Managers
         private void DeleteData(ReaderInfo readerInfo)
         {
             bool res = bll.DeleteReaderInfo(readerInfo);
+            if (res)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataSuccess);
+            }
+            else
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataFail);
+            }
+            LoadReaderInfo();
         }
 
         #endregion
