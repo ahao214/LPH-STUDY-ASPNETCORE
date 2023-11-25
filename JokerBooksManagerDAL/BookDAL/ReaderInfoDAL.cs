@@ -135,7 +135,7 @@ namespace JokerBooksManagerDAL.BookDAL
         /// 更新读者信息
         /// </summary>
         /// <param name="readerInfo">读者对象</param>
-        /// <returns></returns>
+        /// <returns>True:更新成功 False:更新失败</returns>
         public static bool UpdateReaderInfo(ReaderInfo readerInfo)
         {
             BookCommandType commandType = BookCommandType.Text;
