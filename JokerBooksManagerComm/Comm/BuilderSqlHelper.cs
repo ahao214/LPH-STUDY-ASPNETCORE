@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace JokerBooksManagerComm.Comm
 {
@@ -11,7 +12,7 @@ namespace JokerBooksManagerComm.Comm
     /// </summary>
     public class BuilderSqlHelper
     {
-        #region 
+        #region 获取SQL的插入语句
         /// <summary>
         /// 获取SQL的插入语句
         /// </summary>
@@ -80,6 +81,49 @@ namespace JokerBooksManagerComm.Comm
             return string.Join(",", t.GetType().GetProperties().Where(p => p.Name != primaryKey).Select(p => string.Format("'{0}'", p.GetValue(t))).ToArray());
 
         }
+
+        #endregion
+
+
+        #region 获取SQL的查询语句
+
+        /// <summary>
+        /// 获取SQL的查询语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>
+        /// <param name="dict"></param>
+        /// <returns></returns>
+        public static string SelectSql<T>(T t, string tableName, string primaryKey, Dictionary<string, object> dict) where T : class
+        {
+            if (t is null || string.IsNullOrEmpty(tableName))
+                return string.Empty;
+            // 获取字段名称
+            string colNames = GetColumnName<T>(t, primaryKey);
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"SELECT {colNames} FROM {tableName} WHERE 1 = 1");
+            foreach (KeyValuePair<string, object> kv in dict)
+            {
+                string sType = kv.Value.GetType().ToString().ToLower();
+                // 证明是数字的值
+                bool bNum = sType.Contains("int") || sType.Contains("float") || sType.Contains("double") || sType.Contains("decimal");
+
+                if (bNum)
+                {
+                    sb.Append($" AND {kv.Key} = {kv.Value}");
+                }
+                else
+                {
+                    sb.Append($" AND {kv.Key} = '{kv.Value}'");
+                }
+            }
+            sb.Append($" ORDERBY {primaryKey} ASC");
+
+            return sb.ToString();
+        }
+
 
         #endregion
 

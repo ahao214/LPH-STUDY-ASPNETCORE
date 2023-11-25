@@ -77,5 +77,29 @@ namespace JokerBooksManagerBLL.BookBLL
 
 
         #endregion
+
+
+        #region 根据读者编号获取读者信息 
+
+        /// <summary>
+        /// 根据读者编号获取读者信息
+        /// </summary>
+        /// <param name="iReaderId">读者编号</param>
+        /// <returns>返回读者对象</returns>
+        public ReaderInfo GetReaderInfoById(int iReaderId)
+        {
+            try
+            {
+                return ReaderInfoDAL.GetReaderInfoById(iReaderId);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+        #endregion
     }
 }

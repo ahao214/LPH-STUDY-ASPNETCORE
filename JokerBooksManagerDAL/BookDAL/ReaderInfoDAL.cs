@@ -96,9 +96,35 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
-        #region 
+        #region 根据读者编号获取读者信息 
 
+        /// <summary>
+        /// 根据读者编号获取读者信息
+        /// </summary>
+        /// <param name="iReaderId">读者编号</param>
+        /// <returns>返回读者对象</returns>
+        public static ReaderInfo GetReaderInfoById(int iReaderId)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            ReaderInfo info = new ReaderInfo();
+            Dictionary<string, object> dic = new Dictionary<string, object>();
+            dic.Add("ReaderId", iReaderId);
+            string sql = BuilderSqlHelper.SelectSql<ReaderInfo>(info, "ReaderInfo", "ReaderId", dic);
+            SqlDataReader dr = DBHelper.ExecuteReader(sql, commandType);
+            if(dr.Read ())
+            {
+                info.ReaderName = dr["ReaderName"].ToString();
+                info.ReaderTypeId = dr["ReaderTypeId"].ChangeInt();
+                info.ReaderSex = dr["ReaderSex"].ToString();
+                info.ReaderNumber = dr["ReaderNumber"].ToString();
+                info.ReaderIdCard = dr["ReaderIdCard"].ToString();
+                info.ReaderTel = dr["ReaderTel"].ToString();
+                info.ReaderRemark = dr["ReaderRemark"].ToString();
 
+            }
+            dr.Close();
+            return info;
+        }
 
 
         #endregion
