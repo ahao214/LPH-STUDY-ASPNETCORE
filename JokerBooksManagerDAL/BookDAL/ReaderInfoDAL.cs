@@ -201,5 +201,32 @@ namespace JokerBooksManagerDAL.BookDAL
         #endregion
 
 
+        #region 获取读者编码中最后一条读者编码
+        /// <summary>
+        /// 获取读者编码中最后一条读者编码
+        /// </summary>
+        /// <returns>返回读者编码</returns>
+        public static string GetReaderNumber()
+        {
+            BookCommandType iCmdType = BookCommandType.Text;
+            StringBuilder sb = new StringBuilder();
+            sb.Append("SELECT TOP 1 ReaderNumber FROM ReaderInfo ORDER BY ReaderId DESC");
+            SqlDataReader reader = DBHelper.ExecuteReader(sb.ToString(), iCmdType);
+            string sReaderNumber;
+            if(reader.Read ())
+            {
+                sReaderNumber = reader["ReaderNumber"].ToString();
+            }
+            else
+            {
+                sReaderNumber = "RU000000000";
+            }
+            reader.Close();
+            return sReaderNumber;
+        }
+
+
+        #endregion
+
     }
 }
