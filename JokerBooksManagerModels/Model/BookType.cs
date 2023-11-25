@@ -28,6 +28,6 @@ namespace JokerBooksManagerModels.Model
 
         public DateTime Created { get; set; }
 
-
+        public string Publisher { get; set; }
     }
 }
