@@ -1,6 +1,0 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\bin\Debug\JokerBooksManagerModels.dll
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\bin\Debug\JokerBooksManagerModels.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\obj\Debug\JokerBooksManagerModels.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\obj\Debug\JokerBooksManagerModels.csproj.CoreCompileInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\obj\Debug\JokerBooksManagerModels.dll
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\JokerBooksManagerModels\obj\Debug\JokerBooksManagerModels.pdb
