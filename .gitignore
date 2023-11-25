@@ -4,8 +4,8 @@
 
 /.vs
 *.suo
-/LPH-STUDY-ASPNETCORE/JokerBooksManager/obj
-/LPH-STUDY-ASPNETCORE/JokerBooksManager/bin
+LPH-STUDY-ASPNETCORE/JokerBooksManager/obj
+LPH-STUDY-ASPNETCORE/JokerBooksManager/bin
 
 /LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/obj
 /LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/bin

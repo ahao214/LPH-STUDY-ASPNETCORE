@@ -118,11 +118,24 @@ namespace JokerBooksManager.Managers
                     ShowForm(readerInfo.ReaderId);
                     break;
                 case "删除":
+                    DeleteData(readerInfo);
                     break;
             }
 
 
         }
+        #endregion
+
+        #region
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="readerInfo"></param>
+        private void DeleteData(ReaderInfo readerInfo)
+        {
+
+        }
+
         #endregion
     }
 }
