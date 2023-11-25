@@ -107,6 +107,7 @@ namespace JokerBooksManager.Managers
             {
                 // 修改
                 ReaderInfo info = infoBll.GetReaderInfoById(readerId);
+                
                 if(info !=null)
                 {
                     TxtReaderName.Text = info.ReaderName;

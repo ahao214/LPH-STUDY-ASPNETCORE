@@ -79,7 +79,10 @@ namespace JokerBooksManager.Managers
                 KeyId = iReaderId,
                 ReloadData = LoadReaderInfo
             };
-
+            if (iReaderId > 0)
+            {
+                frmReaderInfoAdd.Text = "修改读者信息";
+            }
             frmReaderInfoAdd.Show();
         }
 
