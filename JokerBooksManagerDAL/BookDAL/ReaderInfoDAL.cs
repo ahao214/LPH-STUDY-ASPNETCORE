@@ -129,10 +129,19 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
-        #region 
+        #region 更新读者信息
 
-
-
+        /// <summary>
+        /// 更新读者信息
+        /// </summary>
+        /// <param name="readerInfo">读者对象</param>
+        /// <returns></returns>
+        public static bool UpdateReaderInfo(ReaderInfo readerInfo)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            string sql = BuilderSqlHelper.UpdateSql<ReaderInfo>(readerInfo, "ReaderInfo", "ReaderId", readerInfo.ReaderId);
+            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
+        }
 
         #endregion
 

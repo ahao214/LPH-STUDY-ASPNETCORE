@@ -101,5 +101,32 @@ namespace JokerBooksManagerBLL.BookBLL
 
 
         #endregion
+
+        #region 更新读者信息
+
+        /// <summary>
+        /// 更新读者信息
+        /// </summary>
+        /// <param name="readerInfo">读者对象</param>
+        /// <returns></returns>
+        public static bool UpdateReaderInfo(ReaderInfo readerInfo)
+        {
+            try
+            {
+                return ReaderInfoDAL.UpdateReaderInfo(readerInfo);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        #endregion
+
+
+
+
+
     }
 }
