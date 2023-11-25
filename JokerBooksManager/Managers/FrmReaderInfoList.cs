@@ -25,6 +25,11 @@ namespace JokerBooksManager.Managers
             DgvReaderInfoList.AutoGenerateColumns = false;
         }
 
+        /// <summary>
+        /// 窗体加载
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmReaderInfoList_Load(object sender, EventArgs e)
         {
             LoadReaderInfo();
