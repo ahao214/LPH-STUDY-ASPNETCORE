@@ -18,6 +18,7 @@ namespace JokerBooksManagerComm.Comm
         /// <typeparam name="T">泛型</typeparam>
         /// <param name="t">泛型变量</param>
         /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>
         /// <returns></returns>
         public static string InsertSql<T>(T t, string tableName, string primaryKey) where T : class
         {
