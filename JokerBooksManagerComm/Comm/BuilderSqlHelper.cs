@@ -32,18 +32,19 @@ namespace JokerBooksManagerComm.Comm
         }
         #endregion
 
-        #region 
+        #region 通过反射获取到T型的列
+        
         /// <summary>
-        /// 
+        /// 通过反射获取到T型的列
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="t"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型参数</param>
+        /// <returns>返回由逗号构成的列</returns>
         private static string GetColumnName<T>(T t)
         {
             // 链式写法
             Type type = typeof(T);
-            return string.Join(",", type.GetType().GetProperties().Select(p => p.Name).ToArray());
+            return string.Join(",", type.GetProperties().Select(p => p.Name).ToArray());
 
         } 
         #endregion
