@@ -203,5 +203,12 @@ namespace JokerBooksManagerComm.Comm
         public const string PrefixReaderNumber = "RU";
 
         #endregion
+
+
+        #region 读者编码长度
+
+        public const int ReaderNumberLen = 11;
+
+        #endregion
     }
 }

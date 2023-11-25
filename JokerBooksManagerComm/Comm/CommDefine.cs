@@ -82,9 +82,9 @@ namespace JokerBooksManagerComm.Comm
             // 首先得到字符串长度
             int len = dataSource.Length;
             // 判断字符串是否已经是11位了
-            if (len == 11) return dataSource;
+            if (len == CommConst.ReaderNumberLen) return dataSource;
             // 如果不是11位，进行补零操作(在左边)
-            int end = 11 - len;
+            int end = CommConst.ReaderNumberLen - len;
             for (int i = 0; i <= end; i++)
             {
                 dataSource = "0" + dataSource;
