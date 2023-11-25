@@ -186,23 +186,12 @@ namespace JokerBooksManagerComm.Comm
         {
             if (t is null || string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(primaryKey))
                 return string.Empty;
-
-            // 获取当前类型
-            Type type = t.GetType();
-            // 获取到属性数组
-            PropertyInfo[] properties = type.GetProperties();
-            string sColVal = "";
-            foreach (PropertyInfo pi in properties)
-            {
-                if (pi.Name != primaryKey)
-                {
-                    sColVal += (string.IsNullOrEmpty(sColVal) ? "" : ",") + string.Format("{0}='{1}'", pi.Name, pi.GetValue(t));
-                }
-            }
-
+            
+            Type type = typeof(T);
+           
             StringBuilder sb = new StringBuilder();
             sb.Append($"DELETE FROM {tableName}");
-            sb.Append($" WHERE {primaryKey} = {keyId}");
+            sb.Append($" WHERE {primaryKey} = { type.GetProperty(primaryKey).GetValue(t)}");
 
             return sb.ToString();
 
