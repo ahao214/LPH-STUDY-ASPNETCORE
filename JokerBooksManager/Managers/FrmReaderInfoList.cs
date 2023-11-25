@@ -122,8 +122,6 @@ namespace JokerBooksManager.Managers
                     DeleteData(readerInfo);
                     break;
             }
-
-
         }
         #endregion
 

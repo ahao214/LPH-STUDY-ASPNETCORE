@@ -4,3 +4,14 @@
 
 /.vs
 
+JokerBooksManager/obj
+JokerBooksManager/bin
+
+JokerBooksManagerDAL/obj
+JokerBooksManagerDAL/bin
+
+JokerBooksManagerBLL/obj
+JokerBooksManagerBLL/bin
+
+JokerBooksManagerComm/obj
+JokerBooksManagerComm/bin
