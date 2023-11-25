@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace JokerBooksManagerComm.Comm
 {
     /// <summary>
-    /// SQL语句生成帮助类
+    /// 通过反射创建SQL语句
     /// </summary>
     public class BuilderSqlHelper
     {
