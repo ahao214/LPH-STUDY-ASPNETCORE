@@ -182,16 +182,16 @@ namespace JokerBooksManagerComm.Comm
         /// <param name="primaryKey">主键ID</param>
         /// <param name="keyId">查询的条件</param>
         /// <returns></returns>
-        public static string DeleteSql<T>(T t, string tableName, string primaryKey, int keyId) where T : class
+        public static string DeleteSql<T>(T t, string tableName, string primaryKey) where T : class
         {
             if (t is null || string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(primaryKey))
                 return string.Empty;
-            
+
             Type type = typeof(T);
-           
+
             StringBuilder sb = new StringBuilder();
             sb.Append($"DELETE FROM {tableName}");
-            sb.Append($" WHERE {primaryKey} = { type.GetProperty(primaryKey).GetValue(t)}");
+            sb.Append($" WHERE {primaryKey} = {type.GetProperty(primaryKey).GetValue(t)}");
 
             return sb.ToString();
 

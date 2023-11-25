@@ -4,14 +4,14 @@
 
 /.vs
 *.suo
-LPH-STUDY-ASPNETCORE/JokerBooksManager/obj
-LPH-STUDY-ASPNETCORE/JokerBooksManager/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManager/obj/Debug
+/LPH-STUDY-ASPNETCORE/JokerBooksManager/bin/Debug
 
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/obj
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/obj/Debug
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerDAL/bin/Debug
 
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/obj
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/obj/Debug
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerBLL/bin/Debug
 
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/obj
-/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/bin
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/obj/Debug
+/LPH-STUDY-ASPNETCORE/JokerBooksManagerComm/bin/Debug

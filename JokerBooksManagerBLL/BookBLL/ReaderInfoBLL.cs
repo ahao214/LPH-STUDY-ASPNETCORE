@@ -124,7 +124,27 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
+        #region 删除读者信息
 
+        /// <summary>
+        /// 删除读者信息
+        /// </summary>
+        /// <param name="readerInfo">读者对象</param>
+        /// <returns>True:成功 False:失败</returns>
+        public bool DeleteReaderInfo(ReaderInfo readerInfo)
+        {
+            try
+            {
+                return ReaderInfoDAL.DeleteReaderInfo(readerInfo);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        #endregion
 
 
 

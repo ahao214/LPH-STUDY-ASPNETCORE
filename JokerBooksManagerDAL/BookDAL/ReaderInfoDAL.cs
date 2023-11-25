@@ -111,7 +111,7 @@ namespace JokerBooksManagerDAL.BookDAL
             dic.Add("ReaderId", iReaderId);
             string sql = BuilderSqlHelper.SelectSql<ReaderInfo>(info, "ReaderInfo", "ReaderId", dic);
             SqlDataReader dr = DBHelper.ExecuteReader(sql, commandType);
-            if(dr.Read ())
+            if (dr.Read())
             {
                 info.ReaderName = dr["ReaderName"].ToString();
                 info.ReaderTypeId = dr["ReaderTypeId"].ChangeInt();
@@ -145,7 +145,21 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+        #region 删除读者信息
 
+        /// <summary>
+        /// 删除读者信息
+        /// </summary>
+        /// <param name="readerInfo">读者对象</param>
+        /// <returns>True:成功 False:失败</returns>
+        public static bool DeleteReaderInfo(ReaderInfo readerInfo)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            string sql = BuilderSqlHelper.DeleteSql<ReaderInfo>(readerInfo, "ReaderInfo", "ReaderId");
+            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
+        }
+
+        #endregion
 
 
 
