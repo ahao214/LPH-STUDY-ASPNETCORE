@@ -7,27 +7,23 @@ using System.Threading.Tasks;
 namespace JokerBooksManagerModels.Model
 {
     /// <summary>
-    /// 图书类别模型类
+    /// 图书类别表
     /// </summary>
     public class BookType
     {
         /// <summary>
-        /// 
+        /// 图书ID
         /// </summary>
-        public int Id { get; set; }
+        public int BookTypeId { get; set; }
         /// <summary>
-        /// 
+        /// 图书姓名
         /// </summary>
-        public string Name { get; set; }
+        public string BookTypeName { get; set; }        
         /// <summary>
-        /// 
+        /// 备注
         /// </summary>
-        public double Price { get; set; }
+        public string Remark { get; set; }
 
-        public string Author { get; set; }
-
-        public DateTime Created { get; set; }
-
-        public string Publisher { get; set; }
+        
     }
 }
