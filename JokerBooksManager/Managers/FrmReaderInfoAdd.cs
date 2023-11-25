@@ -185,12 +185,50 @@ namespace JokerBooksManager.Managers
         private bool CheckInput(out string sReaderName, out int iReaderTypeId, out string sSex, out string sReaderNumber, out string sReaderIdCard, out string sReaderTel, out string sReaderRemark)
         {
             sReaderName = TxtReaderName.Text;
-            iReaderTypeId = TxtReaderIdCard.Text.ChangeInt();
-            sSex = RbFemale.Text;
+            iReaderTypeId = CboReaderTypeId.SelectedValue.ChangeInt();
+            if(RbFemale .Checked)
+            {
+                sSex = RbFemale.Text;
+            }
+            else
+            {
+                sSex = RbMale.Text;
+            }
+            
             sReaderNumber = TxtReaderNumber.Text;
             sReaderIdCard = TxtReaderIdCard.Text;
             sReaderTel = TxtReaderTel.Text;
             sReaderRemark = TxtReaderRemark.Text;
+            if(sReaderRemark.Length ==0 || string .IsNullOrEmpty (sReaderRemark))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if(iReaderTypeId == 0|| string .IsNullOrEmpty (iReaderTypeId.ToString ()))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if(sSex .Length == 0|| string .IsNullOrEmpty (sSex))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if(sReaderNumber.Length == 0|| string .IsNullOrEmpty (sReaderNumber))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (sReaderIdCard.Length == 0 || string.IsNullOrEmpty(sReaderIdCard))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (sReaderTel.Length == 0 || string.IsNullOrEmpty(sReaderTel))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
             return true;
         }
 
