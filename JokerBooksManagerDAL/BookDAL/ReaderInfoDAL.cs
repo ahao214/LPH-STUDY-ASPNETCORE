@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace JokerBooksManagerDAL.BookDAL
 {
     /// <summary>
-    /// 数据库访问层读者信息
+    /// 数据访问层读者信息
     /// </summary>
     public class ReaderInfoDAL
     {
@@ -23,24 +23,13 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="readerType">读者类</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool AddReaderType(ReaderType readerType)
+        public static bool AddReaderInfo(ReaderInfo info)
         {
-            StringBuilder sb = new StringBuilder();
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("INSERT INTO ReaderType(ReaderTypeName)VALUES(@ReaderTypeName)");
 
-            SqlParameter[] paras =
-            {
-                new SqlParameter ("@ReaderTypeName",readerType .ReaderTypeName)
-            };
-            try
-            {
-                return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            // 获取SQL语句
+            string sql = BuilderSqlHelper.InsertSql<ReaderInfo>(info, "ReaderInfo", "ReaderId");
+            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
         }
 
         #endregion
@@ -213,7 +202,7 @@ namespace JokerBooksManagerDAL.BookDAL
             sb.Append("SELECT TOP 1 ReaderNumber FROM ReaderInfo ORDER BY ReaderId DESC");
             SqlDataReader reader = DBHelper.ExecuteReader(sb.ToString(), iCmdType);
             string sReaderNumber;
-            if(reader.Read ())
+            if (reader.Read())
             {
                 sReaderNumber = reader["ReaderNumber"].ToString();
             }

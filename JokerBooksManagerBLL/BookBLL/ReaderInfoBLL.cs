@@ -15,18 +15,18 @@ namespace JokerBooksManagerBLL.BookBLL
     /// </summary>
     public class ReaderInfoBLL
     {
-        #region 新增读者
+        #region 新增读者信息
 
         /// <summary>
-        /// 新增读者
+        /// 新增读者信息
         /// </summary>
-        /// <param name="readerType">读者</param>
-        /// <returns>大于0：成功 小于0：失败</returns>
-        public bool AddReaderType(ReaderType readerType)
+        /// <param name="info">读者对象</param>
+        /// <returns>True：成功 False：失败</returns>
+        public bool AddReaderInfo(ReaderInfo info)
         {
             try
             {
-                return ReaderInfoDAL.AddReaderType(readerType);
+                return ReaderInfoDAL.AddReaderInfo(info);
             }
             catch (Exception ex)
             {

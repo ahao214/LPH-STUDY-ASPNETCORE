@@ -92,6 +92,9 @@ namespace JokerBooksManager.Managers
 
         #endregion 添加读者信息
 
+
+
+
         #region 验证输入控件值
 
         private bool CheckInput(out string sReaderName, out int iReaderTypeId, out string sSex, out string sReaderNumber, out string sReaderIdCard, out string sReaderTel, out string sReaderRemark)
