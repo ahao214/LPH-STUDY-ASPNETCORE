@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -142,10 +143,12 @@ namespace JokerBooksManagerComm.Comm
         {
             if (t is null || string.IsNullOrEmpty(tableName))
                 return string.Empty;
-            // 获取字段名称
-            string colNames = GetColumnName<T>(t, primaryKey);
+            Type type = t.GetType();
+            PropertyInfo[] propertyInfos = type.GetProperties();
+            string colNames = string.Join(",", propertyInfos.Select(p => p.Name));
+
             StringBuilder sb = new StringBuilder();
-            sb.Append($"SELECT {colNames} FROM {tableName} WHERE 1 = 1");            
+            sb.Append($"SELECT {colNames} FROM {tableName} ");
             sb.Append($" ORDER BY {primaryKey} ASC");
 
             return sb.ToString();
