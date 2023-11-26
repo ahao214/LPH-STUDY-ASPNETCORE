@@ -20,7 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // 使用Serilong
 builder.Host.UseSerilog();
-
+Log.Logger.Information("开始使用日志");
 
 builder.Services.AddVideoEntityFrameworkCor();
 

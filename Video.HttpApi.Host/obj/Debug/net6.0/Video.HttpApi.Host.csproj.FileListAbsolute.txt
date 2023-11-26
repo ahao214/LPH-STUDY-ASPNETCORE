@@ -51,3 +51,14 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\obj\Debug\net6.0\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\obj\Debug\net6.0\Video.HttpApi.Host.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\obj\Debug\net6.0\Video.HttpApi.Host.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\obj\Debug\net6.0\ref\Video.HttpApi.Host.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.AspNetCore.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.File.dll
