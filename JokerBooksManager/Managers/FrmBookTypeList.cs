@@ -112,16 +112,17 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 执行删除
         /// </summary>
-        /// <param name="iReaderTypeId"></param>
-        private void DelBookType(int iReaderTypeId)
+        /// <param name="iBookTypeId">图书类别ID</param>
+        private void DelBookType(int iBookTypeId)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
 
-            bool res = bll.DeleteReaderType(iReaderTypeId);
+            bool res = bll.DeleteBookType(iBookTypeId);
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
+                LoadBookType();
             }
             else
             {

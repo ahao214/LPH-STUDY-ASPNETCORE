@@ -131,11 +131,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="readerType">图书类别ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public bool DeleteReaderType(int iReaderTypeId)
+        public bool DeleteBookType(int iBookTypeId)
         {
             try
             {
-                return ReaderTypeDAL.DeleteReaderType(iReaderTypeId);
+                return BookTypeDAL.DeleteBookType(iBookTypeId);
             }
             catch (Exception ex)
             {

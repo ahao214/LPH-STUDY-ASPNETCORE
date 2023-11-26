@@ -106,7 +106,7 @@ namespace JokerBooksManagerDAL.BookDAL
             if (dr.Read())
             {
                 type = new BookType
-                {                    
+                {
                     BookTypeName = dr["BookTypeName"].ToString(),
                     Remark = dr["Remark"].ToString()
                 };
@@ -128,7 +128,7 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <returns>大于0：True 小于0：False</returns>
         public static bool UpdateBookType(BookType bookType)
         {
-            BookCommandType commandType = BookCommandType.Text;            
+            BookCommandType commandType = BookCommandType.Text;
             string sql = BuilderSqlHelper.UpdateSql<BookType>(bookType, "BookType", "BookTypeId", bookType.BookTypeId);
 
             return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
@@ -144,27 +144,19 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 删除图书类别
         /// </summary>
-        /// <param name="readerType">图书类别ID</param>
+        /// <param name="iBookTypeId">图书类别ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool DeleteReaderType(int iReaderTypeId)
+        public static bool DeleteBookType(int iBookTypeId)
         {
             BookCommandType commandType = BookCommandType.Text;
             List<string> sqlList = new List<string>();
-
             StringBuilder sb = new StringBuilder();
-            sb.Append("Delete From  ReaderInfo WHERE ReaderTypeId=@ReaderTypeId");
+            BookType bookType = new BookType();
+            bookType.BookTypeId = iBookTypeId;
+            string sql = BuilderSqlHelper.DeleteSql<BookType>(bookType, "BookType", "BookTypeId");
+            sb.Append(sql);
             sqlList.Add(sb.ToString());
-            sb.Clear();
-            sb.Append("Delete From  ReaderType WHERE ReaderTypeId=@ReaderTypeId");
-            sqlList.Add(sb.ToString());
-
-
-            SqlParameter[] paras =
-            {
-                new SqlParameter ("@ReaderTypeId",iReaderTypeId)
-            };
-
-            return DBHelper.ExecuteSqlTrans(sqlList, commandType, paras);
+            return DBHelper.ExecuteSqlTrans(sqlList, commandType);
 
         }
 
