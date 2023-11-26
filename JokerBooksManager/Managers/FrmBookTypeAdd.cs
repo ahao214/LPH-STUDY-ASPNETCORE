@@ -11,6 +11,9 @@ using Sunny.UI;
 
 namespace JokerBooksManager.Managers
 {
+    /// <summary>
+    /// 添加读者信息
+    /// </summary>
     public partial class FrmBookTypeAdd : UIForm
     {
         public FrmBookTypeAdd()
@@ -23,7 +26,7 @@ namespace JokerBooksManager.Managers
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         #endregion

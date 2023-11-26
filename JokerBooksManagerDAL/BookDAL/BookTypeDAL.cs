@@ -96,7 +96,8 @@ namespace JokerBooksManagerDAL.BookDAL
                 BookType type = new BookType
                 {
                     BookTypeId = dr["BookTypeId"].ChangeInt(),
-                    BookTypeName = dr["BookTypeName"].ToString()
+                    BookTypeName = dr["BookTypeName"].ToString(),
+                    Remark = dr["Remark"].ToString()
                 };
                 lst.Add(type);
             }
