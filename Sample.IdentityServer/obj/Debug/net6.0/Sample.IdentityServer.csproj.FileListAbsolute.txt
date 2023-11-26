@@ -36,3 +36,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\ref\Sample.IdentityServer.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\Sample.IdentityServer.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.Sample.IdentityServer.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.Sample.IdentityServer.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Sample.IdentityServer.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Sample.IdentityServer.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Sample.IdentityServer\obj\Debug\net6.0\staticwebassets.pack.json

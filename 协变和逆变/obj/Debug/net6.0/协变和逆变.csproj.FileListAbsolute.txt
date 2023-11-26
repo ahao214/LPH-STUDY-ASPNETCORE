@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\bin\Debug\net6.0\协�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\bin\Debug\net6.0\协变和逆变.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\bin\Debug\net6.0\协变和逆变.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\bin\Debug\net6.0\协变和逆变.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\ref\协变和逆变.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\协变和逆变\obj\Debug\net6.0\协变和逆变.sourcelink.json

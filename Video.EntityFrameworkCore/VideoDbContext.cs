@@ -8,7 +8,16 @@ namespace Video.EntityFrameworkCore
 {
     public class VideoDbContext : MasterDbContext<VideoDbContext>
     {
-        protected VideoDbContext(DbContextOptions<VideoDbContext> options) : base(options) { }
+        public DbSet<UserInfo> UserInfo { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<Video.Domains.Video> Video { get; set; }
+        public DbSet<Like> Likes { get; set; }
+        public DbSet<Comment> Comment { get; set; }
+        public DbSet<Classify> Classify { get; set; }
+        public DbSet<BeanVermicelli> BeanVermicelli { get; set; }
+
+        public VideoDbContext(DbContextOptions<VideoDbContext> options) : base(options) { }
 
 
 
@@ -49,7 +58,7 @@ namespace Video.EntityFrameworkCore
                 x.HasKey(x => x.Id);
                 x.HasIndex(x => x.Id);
                 x.HasIndex(x => x.UserId);
-                x.HasIndex(x => x.RoleId);               
+                x.HasIndex(x => x.RoleId);
             });
 
             builder.Entity<Video.Domains.Video>(x =>

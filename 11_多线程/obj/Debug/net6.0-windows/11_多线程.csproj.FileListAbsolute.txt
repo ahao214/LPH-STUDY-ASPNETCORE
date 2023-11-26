@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\bin\Debug\net6.0-windows\
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\bin\Debug\net6.0-windows\11_多线程.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\bin\Debug\net6.0-windows\11_多线程.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\bin\Debug\net6.0-windows\11_多线程.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\_11_多线程.Form1.resources
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.csproj.GenerateResource.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,3 +14,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\ref\11_多线程.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_多线程\obj\Debug\net6.0-windows\11_多线程.sourcelink.json

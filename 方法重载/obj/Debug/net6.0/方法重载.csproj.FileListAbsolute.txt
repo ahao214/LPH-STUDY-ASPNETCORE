@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\bin\Debug\net6.0\方法�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\bin\Debug\net6.0\方法重载.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\bin\Debug\net6.0\方法重载.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\bin\Debug\net6.0\方法重载.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\refint\�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\ref\方法重载.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法重载\obj\Debug\net6.0\方法重载.sourcelink.json

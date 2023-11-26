@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\bin\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\bin\Debug\net6.0-windows\WpfTreeView.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\bin\Debug\net6.0-windows\WpfTreeView.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\bin\Debug\net6.0-windows\WpfTreeView.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\WpfTreeView.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\WpfTreeView_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\WpfTreeView.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\WpfTreeView.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\ref\WpfTreeView.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfTreeView\obj\Debug\net6.0-windows\WpfTreeView.sourcelink.json

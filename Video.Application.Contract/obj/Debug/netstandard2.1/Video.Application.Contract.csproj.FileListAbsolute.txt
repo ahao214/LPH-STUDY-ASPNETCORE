@@ -1,0 +1,10 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\bin\Debug\netstandard2.1\Video.Application.Contract.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\bin\Debug\netstandard2.1\Video.Application.Contract.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\bin\Debug\netstandard2.1\Video.Application.Contract.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Application.Contract\obj\Debug\netstandard2.1\Video.Application.Contract.pdb

@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\bin\Debug\net6.0-windows\Wp
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\bin\Debug\net6.0-windows\WpfListBox.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\bin\Debug\net6.0-windows\WpfListBox.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\bin\Debug\net6.0-windows\WpfListBox.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\WpfListBox.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\WpfListBox_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\WpfListBox.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\WpfListBox.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\ref\WpfListBox.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfListBox\obj\Debug\net6.0-windows\WpfListBox.sourcelink.json

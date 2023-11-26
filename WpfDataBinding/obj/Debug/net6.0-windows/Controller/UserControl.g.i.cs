@@ -53,7 +53,7 @@ namespace WpfDataBinding.Controller {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfDataBinding;V1.0.0.0;component/controller/usercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfDataBinding;component/controller/usercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controller\UserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

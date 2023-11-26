@@ -3,3 +3,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\07_模式匹配\obj\Debug\net6.0\07_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\07_模式匹配\obj\Debug\net6.0\07_模式匹配.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\07_模式匹配\obj\Debug\net6.0\07_模式匹配.AssemblyInfo.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\07_模式匹配\obj\Debug\net6.0\07_模式匹配.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\07_模式匹配\obj\Debug\net6.0\07_模式匹配.sourcelink.json

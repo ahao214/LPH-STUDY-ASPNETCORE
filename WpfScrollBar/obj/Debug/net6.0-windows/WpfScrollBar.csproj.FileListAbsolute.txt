@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\bin\Debug\net6.0-windows\
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\bin\Debug\net6.0-windows\WpfScrollBar.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\bin\Debug\net6.0-windows\WpfScrollBar.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\bin\Debug\net6.0-windows\WpfScrollBar.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\WpfScrollBar.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\WpfScrollBar_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\WpfScrollBar.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\WpfScrollBar.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\ref\WpfScrollBar.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfScrollBar\obj\Debug\net6.0-windows\WpfScrollBar.sourcelink.json

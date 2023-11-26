@@ -2,7 +2,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\AhoSqlServerD
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\AhoSqlServerDB.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\bin\Debug\AhoSqlServerDB.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.csproj.SuggestedBindingRedirects.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.csproj.CoreCompileInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AhoSqlServerDB\obj\Debug\AhoSqlServerDB.pdb

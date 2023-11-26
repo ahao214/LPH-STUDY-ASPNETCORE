@@ -97,3 +97,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestProject\obj\Debug\net6.0\refint\Te
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestProject\obj\Debug\net6.0\TestProject.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestProject\obj\Debug\net6.0\TestProject.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestProject\obj\Debug\net6.0\ref\TestProject.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestProject\obj\Debug\net6.0\TestProject.sourcelink.json

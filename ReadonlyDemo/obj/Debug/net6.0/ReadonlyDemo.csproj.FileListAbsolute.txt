@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\bin\Debug\net6.0\Readonly
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\bin\Debug\net6.0\ReadonlyDemo.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\bin\Debug\net6.0\ReadonlyDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\bin\Debug\net6.0\ReadonlyDemo.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\refint\R
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ref\ReadonlyDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ReadonlyDemo\obj\Debug\net6.0\ReadonlyDemo.sourcelink.json

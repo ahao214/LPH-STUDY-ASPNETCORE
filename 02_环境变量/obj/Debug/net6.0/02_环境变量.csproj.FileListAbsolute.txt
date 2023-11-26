@@ -30,3 +30,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\02_环境变量.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\02_环境变量.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\ref\02_环境变量.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\02_环境变量.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\staticwebassets\msbuild.02_环境变量.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\staticwebassets\msbuild.build.02_环境变量.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.02_环境变量.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.02_环境变量.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_环境变量\obj\Debug\net6.0\staticwebassets.pack.json

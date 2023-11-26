@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\bin\Debug\net6.0-windows\TestX
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\bin\Debug\net6.0-windows\TestXML.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\bin\Debug\net6.0-windows\TestXML.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\bin\Debug\net6.0-windows\TestXML.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\TestXML.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\TestXML_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\TestXML.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\TestXML.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\ref\TestXML.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\TestXML\obj\Debug\net6.0-windows\TestXML.sourcelink.json

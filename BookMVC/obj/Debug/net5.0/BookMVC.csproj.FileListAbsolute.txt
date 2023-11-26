@@ -338,3 +338,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\refint\BookMV
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\BookMVC.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\BookMVC.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\ref\BookMVC.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\BookMVC.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\staticwebassets\BookMVC.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\staticwebassets\msbuild.BookMVC.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\staticwebassets\msbuild.build.BookMVC.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.BookMVC.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BookMVC\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.BookMVC.props

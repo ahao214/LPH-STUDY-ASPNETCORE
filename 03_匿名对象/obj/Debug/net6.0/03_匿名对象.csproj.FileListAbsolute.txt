@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\bin\Debug\net6.0\03_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\bin\Debug\net6.0\03_匿名对象.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\bin\Debug\net6.0\03_匿名对象.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\bin\Debug\net6.0\03_匿名对象.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\ref\03_匿名对象.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\03_匿名对象\obj\Debug\net6.0\03_匿名对象.sourcelink.json

@@ -4,7 +4,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\bin\Debug\netcoreapp3.1\T1.runtimec
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\bin\Debug\netcoreapp3.1\T1.runtimeconfig.dev.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\bin\Debug\netcoreapp3.1\T1.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\bin\Debug\netcoreapp3.1\T1.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.AssemblyInfo.cs
@@ -12,3 +11,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.csproj.C
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\T1\obj\Debug\netcoreapp3.1\T1.sourcelink.json

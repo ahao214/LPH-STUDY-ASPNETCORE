@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\bin\Debug\net6.0\05_反射.d
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\bin\Debug\net6.0\05_反射.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\bin\Debug\net6.0\05_反射.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\bin\Debug\net6.0\05_反射.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\refint\05_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\ref\05_反射.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\05_反射\obj\Debug\net6.0\05_反射.sourcelink.json

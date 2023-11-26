@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("EBusiness.Service")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbea7258358ca8cd9076e83d086a32820b9c976c")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EBusiness.Service.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

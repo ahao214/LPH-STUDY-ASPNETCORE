@@ -6,7 +6,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\bin\Debug\netcoreapp3.1\L
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\bin\Debug\netcoreapp3.1\LoadBalancer.runtimeconfig.dev.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\bin\Debug\netcoreapp3.1\LoadBalancer.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\bin\Debug\netcoreapp3.1\LoadBalancer.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.AssemblyInfo.cs
@@ -17,3 +16,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\L
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.genruntimeconfig.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\LoadBalancer.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\staticwebassets\LoadBalancer.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.LoadBalancer.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.LoadBalancer.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.LoadBalancer.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LoadBalancer\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.LoadBalancer.props

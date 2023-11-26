@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\bin\Debug\net6.0\方�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\bin\Debug\net6.0\方法的调用.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\bin\Debug\net6.0\方法的调用.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\bin\Debug\net6.0\方法的调用.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\ref\方法的调用.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\方法的调用\obj\Debug\net6.0\方法的调用.sourcelink.json

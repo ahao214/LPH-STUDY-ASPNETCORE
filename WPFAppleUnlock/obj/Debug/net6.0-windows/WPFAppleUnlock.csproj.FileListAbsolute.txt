@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\bin\Debug\net6.0-window
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\bin\Debug\net6.0-windows\WPFAppleUnlock.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\bin\Debug\net6.0-windows\WPFAppleUnlock.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\bin\Debug\net6.0-windows\WPFAppleUnlock.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\WPFAppleUnlock.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\WPFAppleUnlock_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-window
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\WPFAppleUnlock.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\WPFAppleUnlock.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\ref\WPFAppleUnlock.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WPFAppleUnlock\obj\Debug\net6.0-windows\WPFAppleUnlock.sourcelink.json

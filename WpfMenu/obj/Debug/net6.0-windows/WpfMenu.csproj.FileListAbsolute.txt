@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\bin\Debug\net6.0-windows\WpfMe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\bin\Debug\net6.0-windows\WpfMenu.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\bin\Debug\net6.0-windows\WpfMenu.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\bin\Debug\net6.0-windows\WpfMenu.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\WpfMenu.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\WpfMenu_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\WpfMenu.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\WpfMenu.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\ref\WpfMenu.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMenu\obj\Debug\net6.0-windows\WpfMenu.sourcelink.json

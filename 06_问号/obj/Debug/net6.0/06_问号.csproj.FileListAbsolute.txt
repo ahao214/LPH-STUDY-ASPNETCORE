@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\bin\Debug\net6.0\06_问号.d
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\bin\Debug\net6.0\06_问号.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\bin\Debug\net6.0\06_问号.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\bin\Debug\net6.0\06_问号.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\refint\06_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\ref\06_问号.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_问号\obj\Debug\net6.0\06_问号.sourcelink.json

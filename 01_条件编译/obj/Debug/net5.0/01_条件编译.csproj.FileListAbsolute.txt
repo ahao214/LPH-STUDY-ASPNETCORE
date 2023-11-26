@@ -4,7 +4,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\bin\Debug\net5.0\01_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\bin\Debug\net5.0\01_条件编译.runtimeconfig.dev.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\bin\Debug\net5.0\01_条件编译.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\bin\Debug\net5.0\01_条件编译.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.AssemblyInfo.cs
@@ -14,3 +13,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\ref\01_条件编译.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_条件编译\obj\Debug\net5.0\01_条件编译.sourcelink.json

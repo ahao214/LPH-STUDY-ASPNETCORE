@@ -61,7 +61,7 @@ namespace ComponentLibrary {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ComponentLibrary;V1.0.0.0;component/coolingpanic.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ComponentLibrary;component/coolingpanic.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CoolingPanic.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

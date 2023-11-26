@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\bin\Debug\net6.0-windows\G
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\bin\Debug\net6.0-windows\GridControl.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\bin\Debug\net6.0-windows\GridControl.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\bin\Debug\net6.0-windows\GridControl.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\GridControl.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\GridControl_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\GridControl.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\GridControl.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\ref\GridControl.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\GridControl\obj\Debug\net6.0-windows\GridControl.sourcelink.json

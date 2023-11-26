@@ -1,0 +1,5 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\PrimaryConstructor\obj\Debug\net8.0\PrimaryConstructor.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\PrimaryConstructor\obj\Debug\net8.0\PrimaryConstructor.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\PrimaryConstructor\obj\Debug\net8.0\PrimaryConstructor.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\PrimaryConstructor\obj\Debug\net8.0\PrimaryConstructor.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\PrimaryConstructor\obj\Debug\net8.0\PrimaryConstructor.sourcelink.json

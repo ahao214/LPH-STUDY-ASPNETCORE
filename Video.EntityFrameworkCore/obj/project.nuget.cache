@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "7Hau7BtRyLg//Jw7doAYXOoumkRqpX4TCx6ebl8ReaCBINpUdBVYgfQNaAjQ+bem6AsAkVo0yiplZAi0WNJltQ==",
+  "dgSpecHash": "OU7pLzFhoWOWKpBGhgd1j2oUwbFhrG+jqCH88JFl7N1QnNui7oDpd2u9mhCHd9UN8cP3kpyuVjRjrI4bi251bw==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Video.EntityFrameworkCore\\Video.EntityFrameworkCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.25\\microsoft.entityframeworkcore.abstractions.6.0.25.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.25\\microsoft.entityframeworkcore.analyzers.6.0.25.nupkg.sha512",
-    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.7\\microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.25\\microsoft.entityframeworkcore.design.6.0.25.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.25\\microsoft.entityframeworkcore.relational.6.0.25.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.25\\microsoft.entityframeworkcore.tools.6.0.25.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

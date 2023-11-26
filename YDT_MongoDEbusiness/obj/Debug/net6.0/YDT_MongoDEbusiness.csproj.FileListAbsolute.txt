@@ -38,3 +38,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\YDT_MongoDEbusiness.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\YDT_MongoDEbusiness.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\ref\YDT_MongoDEbusiness.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\YDT_MongoDEbusiness.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\staticwebassets\msbuild.YDT_MongoDEbusiness.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\staticwebassets\msbuild.build.YDT_MongoDEbusiness.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.YDT_MongoDEbusiness.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.YDT_MongoDEbusiness.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\YDT_MongoDEbusiness\obj\Debug\net6.0\staticwebassets.pack.json

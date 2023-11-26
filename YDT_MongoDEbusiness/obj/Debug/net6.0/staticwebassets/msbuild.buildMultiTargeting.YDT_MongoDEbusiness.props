@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\YDT_MongoDEbusiness.props" />
+</Project>

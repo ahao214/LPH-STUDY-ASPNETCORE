@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\bin\Debug\net6.0\多播�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\bin\Debug\net6.0\多播委托.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\bin\Debug\net6.0\多播委托.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\bin\Debug\net6.0\多播委托.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\refint\�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\ref\多播委托.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\多播委托\obj\Debug\net6.0\多播委托.sourcelink.json

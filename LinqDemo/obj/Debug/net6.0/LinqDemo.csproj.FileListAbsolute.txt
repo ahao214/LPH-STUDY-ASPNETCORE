@@ -3,3 +3,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.Gen
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfo.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\LinqDemo\obj\Debug\net6.0\LinqDemo.sourcelink.json

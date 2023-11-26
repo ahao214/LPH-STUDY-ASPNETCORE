@@ -22,3 +22,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\MyRedisMq\obj\Debug\net5.0\refint\MyRe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\MyRedisMq\obj\Debug\net5.0\MyRedisMq.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\MyRedisMq\obj\Debug\net5.0\MyRedisMq.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\MyRedisMq\obj\Debug\net5.0\ref\MyRedisMq.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\MyRedisMq\obj\Debug\net5.0\MyRedisMq.sourcelink.json

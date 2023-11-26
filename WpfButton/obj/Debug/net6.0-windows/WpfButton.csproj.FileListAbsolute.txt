@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\bin\Debug\net6.0-windows\Wpf
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\bin\Debug\net6.0-windows\WpfButton.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\bin\Debug\net6.0-windows\WpfButton.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\bin\Debug\net6.0-windows\WpfButton.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\WpfButton.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\WpfButton_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\ref
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\WpfButton.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\WpfButton.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\ref\WpfButton.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfButton\obj\Debug\net6.0-windows\WpfButton.sourcelink.json

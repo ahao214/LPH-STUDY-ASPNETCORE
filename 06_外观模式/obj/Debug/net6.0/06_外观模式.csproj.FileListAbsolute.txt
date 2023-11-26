@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\bin\Debug\net6.0\06_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\bin\Debug\net6.0\06_外观模式.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\bin\Debug\net6.0\06_外观模式.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\bin\Debug\net6.0\06_外观模式.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\ref\06_外观模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\06_外观模式\obj\Debug\net6.0\06_外观模式.sourcelink.json

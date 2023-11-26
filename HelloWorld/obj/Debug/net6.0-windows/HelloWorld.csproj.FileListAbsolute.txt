@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\bin\Debug\net6.0-windows\He
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\bin\Debug\net6.0-windows\HelloWorld.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\bin\Debug\net6.0-windows\HelloWorld.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\bin\Debug\net6.0-windows\HelloWorld.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\HelloWorld.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\HelloWorld_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\HelloWorld.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\HelloWorld.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\ref\HelloWorld.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\HelloWorld\obj\Debug\net6.0-windows\HelloWorld.sourcelink.json

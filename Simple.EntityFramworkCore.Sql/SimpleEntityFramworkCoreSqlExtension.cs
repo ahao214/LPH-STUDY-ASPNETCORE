@@ -14,7 +14,7 @@ namespace Simple.EntityFramworkCore.Sql
             
             services.AddEntityFrameworkCore<IDbContext>(x =>
             {
-                x.UseMySql(configuration.GetConnectionString(connect), new MySqlServerVersion(new Version()));
+                x.UseMySql(configuration.GetConnectionString(connect), new MySqlServerVersion(new Version(8,0,10)));
             });
             return services;
 

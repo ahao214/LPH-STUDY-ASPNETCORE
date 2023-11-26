@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\bin\Debug\net6.0-windows\C
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\bin\Debug\net6.0-windows\ControlDemo.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\bin\Debug\net6.0-windows\ControlDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\bin\Debug\net6.0-windows\ControlDemo.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ControlDemo.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ControlDemo_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ControlDemo.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ControlDemo.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ref\ControlDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\ControlDemo\obj\Debug\net6.0-windows\ControlDemo.sourcelink.json

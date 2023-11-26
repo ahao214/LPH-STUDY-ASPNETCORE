@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\bin\Debug\net6.0\11_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\bin\Debug\net6.0\11_泛型委托.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\bin\Debug\net6.0\11_泛型委托.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\bin\Debug\net6.0\11_泛型委托.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\ref\11_泛型委托.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_泛型委托\obj\Debug\net6.0\11_泛型委托.sourcelink.json

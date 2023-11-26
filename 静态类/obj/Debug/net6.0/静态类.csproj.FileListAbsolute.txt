@@ -1,4 +1,3 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\refint\静�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\ref\静态类.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\静态类\obj\Debug\net6.0\静态类.sourcelink.json

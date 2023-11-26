@@ -6,7 +6,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\bin\Debug\net6.0\Bl
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\bin\Debug\net6.0\BlazorServerUpload.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\bin\Debug\net6.0\BlazorServerUpload.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\bin\Debug\net6.0\BlazorServerUpload.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.AssemblyInfo.cs
@@ -25,3 +24,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\ref\BlazorServerUpload.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\BlazorServerUpload.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\staticwebassets\msbuild.BlazorServerUpload.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\staticwebassets\msbuild.build.BlazorServerUpload.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.BlazorServerUpload.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BlazorServerUpload.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorServerUpload\obj\Debug\net6.0\staticwebassets.pack.json

@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\bin\Debug\net6.0-win
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\bin\Debug\net6.0-windows\StackPanelControl.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\bin\Debug\net6.0-windows\StackPanelControl.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\bin\Debug\net6.0-windows\StackPanelControl.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\StackPanelControl.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\StackPanelControl_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-win
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\StackPanelControl.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\StackPanelControl.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\ref\StackPanelControl.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StackPanelControl\obj\Debug\net6.0-windows\StackPanelControl.sourcelink.json

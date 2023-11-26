@@ -4,7 +4,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\bin\Debug\net5.0
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\bin\Debug\net5.0\01_单一职责原则.runtimeconfig.dev.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\bin\Debug\net5.0\01_单一职责原则.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\bin\Debug\net5.0\01_单一职责原则.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.AssemblyInfo.cs
@@ -14,3 +13,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\ref\01_单一职责原则.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_单一职责原则\obj\Debug\net5.0\01_单一职责原则.sourcelink.json

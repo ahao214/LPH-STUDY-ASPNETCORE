@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\bin\Debug\net6.0\10_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\bin\Debug\net6.0\10_享元模式.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\bin\Debug\net6.0\10_享元模式.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\bin\Debug\net6.0\10_享元模式.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\ref\10_享元模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_享元模式\obj\Debug\net6.0\10_享元模式.sourcelink.json

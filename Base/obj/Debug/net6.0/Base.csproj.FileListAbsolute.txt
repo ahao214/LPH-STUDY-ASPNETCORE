@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\bin\Debug\net6.0\Base.deps.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\bin\Debug\net6.0\Base.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\bin\Debug\net6.0\Base.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\bin\Debug\net6.0\Base.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\refint\Base.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\ref\Base.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Base\obj\Debug\net6.0\Base.sourcelink.json

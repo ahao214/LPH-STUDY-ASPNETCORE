@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\bin\Debug\net6.0
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\bin\Debug\net6.0\11_通用值的转换.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\bin\Debug\net6.0\11_通用值的转换.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\bin\Debug\net6.0\11_通用值的转换.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\ref\11_通用值的转换.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_通用值的转换\obj\Debug\net6.0\11_通用值的转换.sourcelink.json

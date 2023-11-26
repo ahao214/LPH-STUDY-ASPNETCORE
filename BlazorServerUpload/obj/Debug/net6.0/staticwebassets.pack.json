@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorServerUpload.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorServerUpload.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\BlazorServerUpload\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorServerUpload.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BlazorServerUpload.props",
+      "PackagePath": "build\\BlazorServerUpload.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorServerUpload.props",
+      "PackagePath": "buildMultiTargeting\\BlazorServerUpload.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BlazorServerUpload.props",
+      "PackagePath": "buildTransitive\\BlazorServerUpload.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

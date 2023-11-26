@@ -1,7 +1,6 @@
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.deps.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\bin\Debug\net6.0\BlazorApp.Shared.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.AssemblyInfo.cs
@@ -10,3 +9,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\Blaz
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\refint\BlazorApp.Shared.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\ref\BlazorApp.Shared.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Shared\obj\Debug\net6.0\BlazorApp.Shared.sourcelink.json

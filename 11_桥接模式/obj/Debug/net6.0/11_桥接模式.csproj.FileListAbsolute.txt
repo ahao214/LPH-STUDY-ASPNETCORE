@@ -24,3 +24,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_桥接模式\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_桥接模式\obj\Debug\net6.0\11_桥接模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_桥接模式\obj\Debug\net6.0\11_桥接模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_桥接模式\obj\Debug\net6.0\ref\11_桥接模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\11_桥接模式\obj\Debug\net6.0\11_桥接模式.sourcelink.json

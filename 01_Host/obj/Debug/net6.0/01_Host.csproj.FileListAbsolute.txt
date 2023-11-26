@@ -46,3 +46,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_Host\obj\Debug\net6.0\refint\01_Hos
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_Host\obj\Debug\net6.0\01_Host.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_Host\obj\Debug\net6.0\01_Host.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_Host\obj\Debug\net6.0\ref\01_Host.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\01_Host\obj\Debug\net6.0\01_Host.sourcelink.json

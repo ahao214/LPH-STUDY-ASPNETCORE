@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\bin\Debug\net6.0\EntityMo
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\bin\Debug\net6.0\EntityModels.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\bin\Debug\net6.0\EntityModels.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\bin\Debug\net6.0\EntityModels.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\refint\E
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\ref\EntityModels.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EntityModels\obj\Debug\net6.0\EntityModels.sourcelink.json

@@ -80,3 +80,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\refint\Web.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\Web.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\Web.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\ref\Web.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\Web.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\staticwebassets\msbuild.build.Web.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Web.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Web\obj\Debug\net6.0\staticwebassets.pack.json

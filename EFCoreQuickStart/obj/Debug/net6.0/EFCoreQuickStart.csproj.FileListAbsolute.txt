@@ -62,3 +62,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCoreQuickStart\obj\Debug\net6.0\refi
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCoreQuickStart\obj\Debug\net6.0\EFCoreQuickStart.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCoreQuickStart\obj\Debug\net6.0\EFCoreQuickStart.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCoreQuickStart\obj\Debug\net6.0\ref\EFCoreQuickStart.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EFCoreQuickStart\obj\Debug\net6.0\EFCoreQuickStart.sourcelink.json

@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\bin\Debug\net6.0\泛型.deps.js
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\bin\Debug\net6.0\泛型.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\bin\Debug\net6.0\泛型.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\bin\Debug\net6.0\泛型.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\refint\泛型.
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\ref\泛型.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\泛型\obj\Debug\net6.0\泛型.sourcelink.json

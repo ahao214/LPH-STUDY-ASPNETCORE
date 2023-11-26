@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "Simple.EntityFramworkCore/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.25"
+          "Microsoft.EntityFrameworkCore": "6.0.25",
+          "Simple.EntityFramworkCore.Core": "1.0.0"
         },
         "runtime": {
           "Simple.EntityFramworkCore.dll": {}
@@ -148,7 +149,12 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "Simple.EntityFramworkCore.Core/1.0.0": {
+        "runtime": {
+          "Simple.EntityFramworkCore.Core.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -254,6 +260,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "Simple.EntityFramworkCore.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

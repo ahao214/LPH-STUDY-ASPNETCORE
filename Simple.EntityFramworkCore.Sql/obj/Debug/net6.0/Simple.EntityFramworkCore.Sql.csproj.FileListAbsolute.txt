@@ -10,3 +10,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debu
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debug\net6.0\refint\Simple.EntityFramworkCore.Sql.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debug\net6.0\Simple.EntityFramworkCore.Sql.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debug\net6.0\ref\Simple.EntityFramworkCore.Sql.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\bin\Debug\net6.0\Simple.EntityFramworkCore.Core.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\bin\Debug\net6.0\Simple.EntityFramworkCore.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\bin\Debug\net6.0\Simple.EntityFramworkCore.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\bin\Debug\net6.0\Simple.EntityFramworkCore.Core.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debug\net6.0\Simple.EntityFramworkCore.Sql.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Simple.EntityFramworkCore.Sql\obj\Debug\net6.0\Simple.EntityFramworkCore.Sql.csproj.CopyComplete

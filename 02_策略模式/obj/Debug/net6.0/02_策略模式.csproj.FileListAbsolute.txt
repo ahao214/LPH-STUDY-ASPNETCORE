@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\bin\Debug\net6.0\02_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\bin\Debug\net6.0\02_策略模式.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\bin\Debug\net6.0\02_策略模式.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\bin\Debug\net6.0\02_策略模式.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\ref\02_策略模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\02_策略模式\obj\Debug\net6.0\02_策略模式.sourcelink.json

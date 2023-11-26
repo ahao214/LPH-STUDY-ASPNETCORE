@@ -18,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_插件框架\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_插件框架\obj\Debug\net6.0\10_插件框架.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_插件框架\obj\Debug\net6.0\10_插件框架.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_插件框架\obj\Debug\net6.0\ref\10_插件框架.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_插件框架\obj\Debug\net6.0\10_插件框架.sourcelink.json

@@ -1,0 +1,7 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\bin\Debug\Study6.exe.config
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\bin\Debug\Study6.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\bin\Debug\Study6.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\obj\Debug\Study6.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\obj\Debug\Study6.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\obj\Debug\Study6.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study6\obj\Debug\Study6.pdb

@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\bin\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\bin\Debug\net6.0-windows\WpfMvvmDemo.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\bin\Debug\net6.0-windows\WpfMvvmDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\bin\Debug\net6.0-windows\WpfMvvmDemo.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\WpfMvvmDemo.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\WpfMvvmDemo_MarkupCompile.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\WpfMvvmDemo_MarkupCompile.lref
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\ref\WpfMvvmDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\Views\MainWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfMvvmDemo\obj\Debug\net6.0-windows\WpfMvvmDemo.sourcelink.json

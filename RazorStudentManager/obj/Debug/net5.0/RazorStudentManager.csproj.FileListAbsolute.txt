@@ -436,3 +436,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\R
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\Razor\Pages\ClassPages\Details.cshtml.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\Razor\Pages\ClassPages\Edit.cshtml.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\Razor\Pages\ClassPages\Index.cshtml.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\RazorStudentManager.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\staticwebassets\RazorStudentManager.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\staticwebassets\msbuild.RazorStudentManager.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\staticwebassets\msbuild.build.RazorStudentManager.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.RazorStudentManager.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\RazorStudentManager\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.RazorStudentManager.props

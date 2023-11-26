@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\bin\Debug\net6.0\扩展�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\bin\Debug\net6.0\扩展方法.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\bin\Debug\net6.0\扩展方法.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\bin\Debug\net6.0\扩展方法.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\refint\�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\ref\扩展方法.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\扩展方法\obj\Debug\net6.0\扩展方法.sourcelink.json

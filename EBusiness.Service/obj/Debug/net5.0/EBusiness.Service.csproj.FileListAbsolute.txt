@@ -178,3 +178,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\Raz
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\EBusiness.Service.RazorTargetAssemblyInfo.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\EBusiness.Service.Views.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\EBusiness.Service.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\staticwebassets\EBusiness.Service.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\staticwebassets\msbuild.EBusiness.Service.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\staticwebassets\msbuild.build.EBusiness.Service.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.EBusiness.Service.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\EBusiness.Service\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.EBusiness.Service.props

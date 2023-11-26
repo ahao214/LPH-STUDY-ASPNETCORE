@@ -4,7 +4,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\bin\Debug\net5.0\AspNet
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\bin\Debug\net5.0\AspNetCoreBase.runtimeconfig.dev.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\bin\Debug\net5.0\AspNetCoreBase.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\bin\Debug\net5.0\AspNetCoreBase.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.AssemblyInfo.cs
@@ -14,3 +13,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\refint
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\ref\AspNetCoreBase.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspNetCoreBase\obj\Debug\net5.0\AspNetCoreBase.sourcelink.json

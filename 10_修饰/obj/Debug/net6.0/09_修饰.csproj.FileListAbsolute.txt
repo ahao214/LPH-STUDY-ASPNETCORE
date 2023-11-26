@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\bin\Debug\net6.0\09_修饰.d
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\bin\Debug\net6.0\09_修饰.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\bin\Debug\net6.0\09_修饰.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\bin\Debug\net6.0\09_修饰.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\refint\09_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\ref\09_修饰.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\10_修饰\obj\Debug\net6.0\09_修饰.sourcelink.json

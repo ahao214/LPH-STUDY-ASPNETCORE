@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\bin\Debug\net6.0\密封类.d
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\bin\Debug\net6.0\密封类.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\bin\Debug\net6.0\密封类.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\bin\Debug\net6.0\密封类.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\refint\密�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\ref\密封类.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\密封类\obj\Debug\net6.0\密封类.sourcelink.json

@@ -8,7 +8,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\EntityFramework.SqlS
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.SuggestedBindingRedirects.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.CoreCompileInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.csproj.CopyComplete
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DbFirst\obj\Debug\DbFirst.exe

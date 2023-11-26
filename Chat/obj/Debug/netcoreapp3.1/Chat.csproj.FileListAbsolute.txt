@@ -9,7 +9,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\bin\Debug\netcoreapp3.1\Chat.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\bin\Debug\netcoreapp3.1\Chat.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\bin\Debug\netcoreapp3.1\Chat.Views.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\bin\Debug\netcoreapp3.1\Chat.Views.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.AssemblyInfo.cs
@@ -35,3 +34,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\Chat.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\staticwebassets\Chat.StaticWebAssets.Pack.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Chat.Microsoft.AspNetCore.StaticWebAssets.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Chat.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Chat.props
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Chat\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Chat.props

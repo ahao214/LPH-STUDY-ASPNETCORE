@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\bin\Debug\net6.0-windows
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\bin\Debug\net6.0-windows\WpfLayoutDemo.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\bin\Debug\net6.0-windows\WpfLayoutDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\bin\Debug\net6.0-windows\WpfLayoutDemo.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\WpfLayoutDemo.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\WpfLayoutDemo_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\WpfLayoutDemo.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\WpfLayoutDemo.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\ref\WpfLayoutDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfLayoutDemo\obj\Debug\net6.0-windows\WpfLayoutDemo.sourcelink.json

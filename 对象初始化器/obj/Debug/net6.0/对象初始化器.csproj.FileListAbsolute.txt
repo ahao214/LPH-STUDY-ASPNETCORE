@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\bin\Debug\net6.0\�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\bin\Debug\net6.0\对象初始化器.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\bin\Debug\net6.0\对象初始化器.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\bin\Debug\net6.0\对象初始化器.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\ref\对象初始化器.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\对象初始化器\obj\Debug\net6.0\对象初始化器.sourcelink.json

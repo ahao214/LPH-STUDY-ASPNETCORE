@@ -1,0 +1,15 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\bin\Debug\WpfAppBase.exe.config
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\bin\Debug\WpfAppBase.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\bin\Debug\WpfAppBase.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\MainWindow.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\App.g.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase_MarkupCompile.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase_MarkupCompile.lref
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\MainWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.g.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.Properties.Resources.resources
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.csproj.GenerateResource.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.exe
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfAppBase\obj\Debug\WpfAppBase.pdb

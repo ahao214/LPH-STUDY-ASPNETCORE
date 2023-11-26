@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\bin\Debug\net6.0\04_�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\bin\Debug\net6.0\04_工厂模式.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\bin\Debug\net6.0\04_工厂模式.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\bin\Debug\net6.0\04_工厂模式.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\refin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\ref\04_工厂模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\04_工厂模式\obj\Debug\net6.0\04_工厂模式.sourcelink.json

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3lJZOqfJm0YXH0VZhTPCYY02rshl3IKWPDGnDUxXaGo=",
+  "Source": "Video.HttpApi.Host",
+  "BasePath": "_content/Video.HttpApi.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

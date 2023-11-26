@@ -2,7 +2,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\StudentManage
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\StudentManager.exe
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\bin\Debug\StudentManager.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.csproj.SuggestedBindingRedirects.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.FrmMain.resources
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.Properties.Resources.resources
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\StudentManager\obj\Debug\StudentManager.csproj.GenerateResource.cache

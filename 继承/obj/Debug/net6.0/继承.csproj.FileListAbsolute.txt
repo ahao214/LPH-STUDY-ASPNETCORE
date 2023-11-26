@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\bin\Debug\net6.0\继承.deps.js
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\bin\Debug\net6.0\继承.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\bin\Debug\net6.0\继承.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\bin\Debug\net6.0\继承.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\refint\继承.
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\ref\继承.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\继承\obj\Debug\net6.0\继承.sourcelink.json

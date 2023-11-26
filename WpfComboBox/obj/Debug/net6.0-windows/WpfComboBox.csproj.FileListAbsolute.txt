@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\bin\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\bin\Debug\net6.0-windows\WpfComboBox.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\bin\Debug\net6.0-windows\WpfComboBox.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\bin\Debug\net6.0-windows\WpfComboBox.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\WpfComboBox.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\WpfComboBox_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\WpfComboBox.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\WpfComboBox.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\ref\WpfComboBox.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfComboBox\obj\Debug\net6.0-windows\WpfComboBox.sourcelink.json

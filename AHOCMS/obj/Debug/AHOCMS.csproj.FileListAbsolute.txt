@@ -73,3 +73,9 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\InputCargoWin
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\OutCargoWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\InputCargoWindow.baml
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\obj\Debug\Windows\OutCargoWindow.baml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.Wpf.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.xml
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.Wpf.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AHOCMS\bin\Debug\LiveCharts.Wpf.xml

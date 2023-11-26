@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\bin\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\bin\Debug\net6.0-windows\WpfCalcDemo.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\bin\Debug\net6.0-windows\WpfCalcDemo.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\bin\Debug\net6.0-windows\WpfCalcDemo.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\WpfCalcDemo.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\WpfCalcDemo_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\WpfCalcDemo.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\WpfCalcDemo.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\ref\WpfCalcDemo.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfCalcDemo\obj\Debug\net6.0-windows\WpfCalcDemo.sourcelink.json

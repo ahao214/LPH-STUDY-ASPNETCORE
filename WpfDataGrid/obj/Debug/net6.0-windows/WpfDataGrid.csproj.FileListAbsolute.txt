@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\bin\Debug\net6.0-windows\W
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\bin\Debug\net6.0-windows\WpfDataGrid.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\bin\Debug\net6.0-windows\WpfDataGrid.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\bin\Debug\net6.0-windows\WpfDataGrid.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\WpfDataGrid.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\MainWindow.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\App.g.cs
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\WpfDataGrid_MarkupCompile.cache
@@ -19,3 +18,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\r
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\WpfDataGrid.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\WpfDataGrid.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\ref\WpfDataGrid.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\WpfDataGrid\obj\Debug\net6.0-windows\WpfDataGrid.sourcelink.json

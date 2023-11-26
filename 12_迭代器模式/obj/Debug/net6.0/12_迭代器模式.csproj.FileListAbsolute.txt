@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\bin\Debug\net6.0\12
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\bin\Debug\net6.0\12_迭代器模式.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\bin\Debug\net6.0\12_迭代器模式.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\bin\Debug\net6.0\12_迭代器模式.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\re
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\ref\12_迭代器模式.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\12_迭代器模式\obj\Debug\net6.0\12_迭代器模式.sourcelink.json

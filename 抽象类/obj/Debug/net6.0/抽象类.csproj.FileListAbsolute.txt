@@ -3,7 +3,6 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\bin\Debug\net6.0\抽象类.d
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\bin\Debug\net6.0\抽象类.runtimeconfig.json
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\bin\Debug\net6.0\抽象类.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\bin\Debug\net6.0\抽象类.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.csproj.AssemblyReference.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.GeneratedMSBuildEditorConfig.editorconfig
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.AssemblyInfoInputs.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\refint\抽�
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\ref\抽象类.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\抽象类\obj\Debug\net6.0\抽象类.sourcelink.json

@@ -113,3 +113,4 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspnetTest\obj\Debug\net6.0\refint\Asp
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspnetTest\obj\Debug\net6.0\AspnetTest.pdb
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspnetTest\obj\Debug\net6.0\AspnetTest.genruntimeconfig.cache
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspnetTest\obj\Debug\net6.0\ref\AspnetTest.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\AspnetTest\obj\Debug\net6.0\AspnetTest.sourcelink.json
