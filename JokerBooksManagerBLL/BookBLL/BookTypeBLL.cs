@@ -84,7 +84,7 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="ID">图书类别ID</param>
         /// <returns>返回图书类别对象</returns>
-        public BookType GetReaderTypeById(int ID)
+        public BookType GetBookTypeById(int ID)
         {
             try
             {

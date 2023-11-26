@@ -24,7 +24,7 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <param name="bookType">图书类别</param>
         /// <returns>大于0：True 小于0：False</returns>
         public static bool AddBookType(BookType bookType)
-        {           
+        {
             BookCommandType commandType = BookCommandType.Text;
             string sql = BuilderSqlHelper.InsertSql<BookType>(bookType, "BookType", "BookTypeId");
             return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
@@ -96,19 +96,19 @@ namespace JokerBooksManagerDAL.BookDAL
         public static BookType GetBookTypeById(int ID)
         {
             BookType type = new BookType();
-            BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT BookTypeId,BookTypeName,Remark FROM BookType WHERE BookTypeId=@BookTypeId");
-            SqlParameter[] paras =
+            BookCommandType bookCommand = BookCommandType.Text;
+            Dictionary<string, object> dic = new Dictionary<string, object>
             {
-                new SqlParameter ("@BookTypeId",ID )
+                { "BookTypeId",ID }
             };
-            SqlDataReader dr = DBHelper.ExecuteReader(sb.ToString(), bookCommand, paras);
+            string sql = BuilderSqlHelper.SelectSql<BookType>(type, "BookType", "BookTypeId", dic);
+            SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             if (dr.Read())
             {
-                type = new BookType()
-                {
-                    BookTypeId = dr["BookTypeId"].ChangeInt(),
-                    BookTypeName = dr["BookTypeName"].ToString()
+                type = new BookType
+                {                    
+                    BookTypeName = dr["BookTypeName"].ToString(),
+                    Remark = dr["Remark"].ToString()
                 };
             }
             dr.Close();
@@ -131,7 +131,7 @@ namespace JokerBooksManagerDAL.BookDAL
             BookCommandType commandType = BookCommandType.Text;
             StringBuilder sb = new StringBuilder();
             sb.Append("Update ReaderType SET ReaderTypeName=@ReaderTypeName WHERE ReaderTypeId=@ReaderTypeId");
-           
+
             return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType) > 0;
 
         }

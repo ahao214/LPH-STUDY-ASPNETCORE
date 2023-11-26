@@ -192,6 +192,8 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+
+
         #region 删除字符
 
         public const string CharDelete = "删除";

@@ -93,14 +93,14 @@ namespace JokerBooksManager.Managers
                 return;
             // 拿到单元格的值
             string cellValue = linkCell.FormattedValue.ToString();
-            // int readTypeId = DgvReaderType["ReadTypeId", row].Value.ChangeInt();
+     
             switch (cellValue)
             {
                 case CommConst.CharUpdate:
                     ShowForm(type.BookTypeId); break;
                 case CommConst.CharDelete:
                     //删除
-                    DelReaderType(type.BookTypeId);
+                    DelBookType(type.BookTypeId);
                     break;
                 default:
                     break;
@@ -113,7 +113,7 @@ namespace JokerBooksManager.Managers
         /// 执行删除
         /// </summary>
         /// <param name="iReaderTypeId"></param>
-        private void DelReaderType(int iReaderTypeId)
+        private void DelBookType(int iReaderTypeId)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;

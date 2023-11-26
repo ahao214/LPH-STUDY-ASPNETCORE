@@ -132,10 +132,11 @@ namespace JokerBooksManager.Managers
             }
             if (bookTypeId > 0)
             {
-                //ReaderType type = bll.GetReaderTypeById(bookTypeId);
-                //if (type is null)
-                //    return;
-                //oldBookTypeName = TxtBookTypeName.Text = type.ReaderTypeName;
+                BookType type = bll.GetBookTypeById(bookTypeId);
+                if (type is null)
+                    return;
+                oldBookTypeName = TxtBookTypeName.Text = type.BookTypeName;
+                TxtRemark.Text = type.Remark;
 
                 Text = CommConst.CharUpdateBookType;
             }
