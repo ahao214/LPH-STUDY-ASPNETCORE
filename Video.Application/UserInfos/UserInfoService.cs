@@ -36,5 +36,10 @@ namespace Video.Application.UserInfos
             return await Task.FromResult(dto);
 
         }
+
+        public Task<UserInfoDto> LoginAsync(LoginInput input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
