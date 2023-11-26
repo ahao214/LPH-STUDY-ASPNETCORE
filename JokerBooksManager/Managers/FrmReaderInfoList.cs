@@ -136,6 +136,7 @@ namespace JokerBooksManager.Managers
             if (res)
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataSuccess);
+                LoadReaderInfo();
             }
             else
             {
