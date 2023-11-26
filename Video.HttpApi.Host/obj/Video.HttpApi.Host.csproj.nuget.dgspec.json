@@ -333,6 +333,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.25, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.5.0, )"
             }
           },
           "imports": [
