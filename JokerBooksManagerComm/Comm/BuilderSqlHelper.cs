@@ -128,6 +128,32 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 获取SQL的查询语句
+
+        /// <summary>
+        /// 获取SQL的查询语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>        
+        /// <returns></returns>
+        public static string SelectSql<T>(T t, string tableName, string primaryKey) where T : class
+        {
+            if (t is null || string.IsNullOrEmpty(tableName))
+                return string.Empty;
+            // 获取字段名称
+            string colNames = GetColumnName<T>(t, primaryKey);
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"SELECT {colNames} FROM {tableName} WHERE 1 = 1");            
+            sb.Append($" ORDER BY {primaryKey} ASC");
+
+            return sb.ToString();
+        }
+
+
+        #endregion
+
 
         #region 获取SQL的更新语句
 
