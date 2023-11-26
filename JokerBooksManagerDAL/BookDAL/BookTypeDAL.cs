@@ -52,26 +52,16 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="readerType">图书类别</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public static bool IsExistReaderType(string typeName)
+        public static bool IsExistBookType(string typeName)
         {
-            bool res = false;
             StringBuilder sb = new StringBuilder();
+            Dictionary<string, object> dic = new Dictionary<string, object>();
+            dic.Add("BookTypeName", typeName);
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("SELECT Count(*) FROM ReaderType WHERE ReaderTypeName=@ReaderTypeName");
-            SqlParameter[] paras =
-            {
-                new SqlParameter ("@ReaderTypeName",typeName)
-            };
-            try
-            {
-                object obj = DBHelper.ExecuteScalar(sb.ToString(), commandType, paras);
-                res = obj.ChangeInt() > 0;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return res;
+            BookType bookType = new BookType();
+            string sql = BuilderSqlHelper.SelectSql<BookType>(bookType, "BookType", "BookTypeId", dic);
+
+            return DBHelper.GetDataTable(sql, commandType).DefaultView.Count > 0;
         }
 
         #endregion
@@ -116,22 +106,22 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="ID">图书类别ID</param>
         /// <returns>返回图书类别对象</returns>
-        public static ReaderType GetReaderTypeById(int ID)
+        public static BookType GetBookTypeById(int ID)
         {
-            ReaderType type = new ReaderType();
+            BookType type = new BookType();
             BookCommandType bookCommand = BookCommandType.Text; StringBuilder sb = new StringBuilder();
-            sb.Append(" SELECT ReaderTypeId,ReaderTypeName FROM ReaderType WHERE ReaderTypeId=@ReaderTypeId");
+            sb.Append(" SELECT BookTypeId,BookTypeName,Remark FROM BookType WHERE BookTypeId=@BookTypeId");
             SqlParameter[] paras =
             {
-                new SqlParameter ("@ReaderTypeId",ID )
+                new SqlParameter ("@BookTypeId",ID )
             };
             SqlDataReader dr = DBHelper.ExecuteReader(sb.ToString(), bookCommand, paras);
             if (dr.Read())
             {
-                type = new ReaderType()
+                type = new BookType()
                 {
-                    ReaderTypeId = dr["ReaderTypeId"].ChangeInt(),
-                    ReaderTypeName = dr["ReaderTypeName"].ToString()
+                    BookTypeId = dr["BookTypeId"].ChangeInt(),
+                    BookTypeName = dr["BookTypeName"].ToString()
                 };
             }
             dr.Close();

@@ -93,6 +93,7 @@
             this.BtnOk.TabIndex = 6;
             this.BtnOk.Text = "确定";
             this.BtnOk.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // BtnClose
             // 
@@ -170,6 +171,7 @@
             this.Text = "添加图书类别";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.Load += new System.EventHandler(this.FrmBookTypeAdd_Load);
             this.ResumeLayout(false);
 
         }

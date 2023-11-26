@@ -41,11 +41,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="readerType">图书类别</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public bool IsExistReaderType(string typeName)
+        public bool IsExistBookType(string typeName)
         {
             try
             {
-                return ReaderTypeDAL.IsExistReaderType(typeName);
+                return BookTypeDAL.IsExistBookType(typeName);
             }
             catch (Exception ex)
             {
@@ -84,11 +84,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="ID">图书类别ID</param>
         /// <returns>返回图书类别对象</returns>
-        public ReaderType GetReaderTypeById(int ID)
+        public BookType GetReaderTypeById(int ID)
         {
             try
             {
-                return ReaderTypeDAL.GetReaderTypeById(ID);
+                return BookTypeDAL.GetBookTypeById(ID);
             }
             catch (Exception ex)
             {

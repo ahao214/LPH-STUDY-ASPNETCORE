@@ -132,7 +132,7 @@ namespace JokerBooksManagerComm.Comm
 
         #region 改名称已经存在
 
-        public const string IsExistsInfo = "改名称已经存在";
+        public const string IsExistsInfo = "名称已经存在";
 
         #endregion
 
@@ -183,6 +183,12 @@ namespace JokerBooksManagerComm.Comm
         #region 修改读者类别
 
         public const string CharUpdateReaderType = "修改读者类别";
+
+        #endregion
+
+        #region 修改图书类别
+
+        public const string CharUpdateBookType = "修改图书类别";
 
         #endregion
 

@@ -69,7 +69,6 @@ namespace JokerBooksManager.Managers
         private void  LoadBookType()
         {
             DgvBookType.DataSource = bll.GetBookTypes();
-
         }
         #endregion
 
