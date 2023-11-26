@@ -348,6 +348,16 @@
         "runtime": {
           "bin/placeholder/Simple.EntityFramworkCore.Sql.dll": {}
         }
+      },
+      "Video.Domains/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Video.Domains.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Video.Domains.dll": {}
+        }
       }
     }
   },
@@ -765,11 +775,17 @@
       "type": "project",
       "path": "../Simple.EntityFramworkCore.Sql/Simple.EntityFramworkCore.Sql.csproj",
       "msbuildProject": "../Simple.EntityFramworkCore.Sql/Simple.EntityFramworkCore.Sql.csproj"
+    },
+    "Video.Domains/1.0.0": {
+      "type": "project",
+      "path": "../Video.Domains/Video.Domains.csproj",
+      "msbuildProject": "../Video.Domains/Video.Domains.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Simple.EntityFramworkCore.Sql >= 1.0.0"
+      "Simple.EntityFramworkCore.Sql >= 1.0.0",
+      "Video.Domains >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -811,6 +827,9 @@
           "projectReferences": {
             "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Sql\\Simple.EntityFramworkCore.Sql.csproj": {
               "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Sql\\Simple.EntityFramworkCore.Sql.csproj"
+            },
+            "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Video.Domains\\Video.Domains.csproj": {
+              "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Video.Domains\\Video.Domains.csproj"
             }
           }
         }

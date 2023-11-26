@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Simple.EntityFramworkCore.Core")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Video.Domains")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Simple.EntityFramworkCore.Core")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Simple.EntityFramworkCore.Core")]
+[assembly: System.Reflection.AssemblyProductAttribute("Video.Domains")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Video.Domains")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

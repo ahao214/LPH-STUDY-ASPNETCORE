@@ -1,0 +1,10 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\bin\Debug\netstandard2.1\Video.Domains.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\bin\Debug\netstandard2.1\Video.Domains.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\bin\Debug\netstandard2.1\Video.Domains.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domains\obj\Debug\netstandard2.1\Video.Domains.pdb
