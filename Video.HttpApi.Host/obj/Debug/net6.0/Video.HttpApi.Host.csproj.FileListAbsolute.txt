@@ -62,3 +62,10 @@ F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Se
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Serilog.Sinks.File.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.HttpApi.Host\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
