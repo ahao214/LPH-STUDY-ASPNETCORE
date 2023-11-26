@@ -4,9 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppBase"
-        mc:Ignorable="d"
+        mc:Ignorable="d" Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="lblName" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Black" Foreground="White" Content="第一个" Margin="10 10 10 10"/>
+        <Label Name="lblPwd" Grid.Row="1" HorizontalAlignment="Left" Margin="100 20 10 10 " Width="100">
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="lyc" Margin="0 0 20 0"/>
+                    <TextBlock Text="white"/>
+                </StackPanel>
+            </Label.Content>
+        </Label>
     </Grid>
 </Window>

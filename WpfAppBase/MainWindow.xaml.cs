@@ -24,5 +24,12 @@ namespace WpfAppBase
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string name = lblName.Content.ToString();
+            StackPanel sp = lblPwd.Content as StackPanel;
+            string password = (sp.Children[0] as TextBlock).Text + " " + (sp.Children[1] as TextBlock).Text;
+        }
     }
 }
