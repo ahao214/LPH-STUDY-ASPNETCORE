@@ -1,6 +1,26 @@
 using Video.EntityFrameworkCore;
+using Serilog.Events;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    .ReadFrom.Configuration(new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Producton"}.json",
+    optional: true).Build())
+    .Enrich.FromLogContext()
+    .WriteTo.Async(c => c.File(Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "/log", "log"),
+    rollingInterval: RollingInterval.Day))// 写入日志文件
+    .WriteTo.Async(c => c.Console())
+    .CreateLogger();
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+// 使用Serilong
+builder.Host.UseSerilog();
+
 
 builder.Services.AddVideoEntityFrameworkCor();
 
