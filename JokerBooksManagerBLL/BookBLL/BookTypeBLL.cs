@@ -112,7 +112,7 @@ namespace JokerBooksManagerBLL.BookBLL
         {
             try
             {
-                return false;
+                return BookTypeDAL.UpdateBookType(bookType);
             }
             catch (Exception ex)
             {

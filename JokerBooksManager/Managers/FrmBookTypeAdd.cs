@@ -57,8 +57,7 @@ namespace JokerBooksManager.Managers
             }
             else // 修改
             {
-                //bRes = bll.UpdateBookType(type);
-                bRes = false;
+                bRes = bll.UpdateBookType(type);           
             }
             if (bRes)
             {

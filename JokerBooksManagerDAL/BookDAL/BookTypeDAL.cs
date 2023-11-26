@@ -128,11 +128,10 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <returns>大于0：True 小于0：False</returns>
         public static bool UpdateBookType(BookType bookType)
         {
-            BookCommandType commandType = BookCommandType.Text;
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Update ReaderType SET ReaderTypeName=@ReaderTypeName WHERE ReaderTypeId=@ReaderTypeId");
+            BookCommandType commandType = BookCommandType.Text;            
+            string sql = BuilderSqlHelper.UpdateSql<BookType>(bookType, "BookType", "BookTypeId", bookType.BookTypeId);
 
-            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType) > 0;
+            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
 
         }
 
