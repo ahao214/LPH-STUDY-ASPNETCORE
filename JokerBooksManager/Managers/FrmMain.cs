@@ -178,5 +178,13 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
+
+        #region 图书类别列表
+        private void TsmiBookTypeList_Click(object sender, EventArgs e)
+        {
+            FrmReaderType frmReaderType = SingleForm<FrmReaderType>.CreateInstance(); frmReaderType.MdiParent = MdiParent;
+            frmReaderType.Show();
+        }
+        #endregion
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
 
 
@@ -14,6 +15,8 @@ namespace JokerBooksManager.Managers
 {
     public partial class FrmBookTypeList : UIForm
     {
+        private readonly BookTypeBLL bll = new BookTypeBLL();
+
         public FrmBookTypeList()
         {
             InitializeComponent();
@@ -31,14 +34,31 @@ namespace JokerBooksManager.Managers
 
 
 
+        #region 窗体加载
+
+        private void FrmBookTypeList_Load(object sender, EventArgs e)
+        {
+            LoadBookType();
+        }
+
+        #endregion
+
+        #region DataGrid加载数据
+        private void  LoadBookType()
+        {
+            DgvBookType.DataSource = bll.GetBookTypes();
+
+        }
+        #endregion
+
+
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        #endregion
 
-       
+        #endregion
     }
 }

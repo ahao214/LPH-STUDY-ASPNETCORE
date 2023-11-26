@@ -43,6 +43,8 @@
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
+            this.TsmiBookTypeManager = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookTypeList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +73,7 @@
             // 
             this.TsmiPassModify.Image = global::JokerBooksManager.Properties.Resources._2;
             this.TsmiPassModify.Name = "TsmiPassModify";
-            this.TsmiPassModify.Size = new System.Drawing.Size(209, 34);
+            this.TsmiPassModify.Size = new System.Drawing.Size(270, 34);
             this.TsmiPassModify.Text = "密码修改(&P)";
             this.TsmiPassModify.Click += new System.EventHandler(this.TsmiPassModify_Click);
             // 
@@ -79,7 +81,7 @@
             // 
             this.TmsiExitSystem.Image = global::JokerBooksManager.Properties.Resources._3;
             this.TmsiExitSystem.Name = "TmsiExitSystem";
-            this.TmsiExitSystem.Size = new System.Drawing.Size(209, 34);
+            this.TmsiExitSystem.Size = new System.Drawing.Size(270, 34);
             this.TmsiExitSystem.Text = "退出系统(&Q)";
             this.TmsiExitSystem.Click += new System.EventHandler(this.TmsiExitSystem_Click);
             // 
@@ -90,7 +92,8 @@
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSysManage,
             this.TsmiReaderManager,
-            this.TsmiWindowList});
+            this.TsmiWindowList,
+            this.TsmiBookTypeManager});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
@@ -169,6 +172,23 @@
             this.Timers.Interval = 1000;
             this.Timers.Tick += new System.EventHandler(this.Timers_Tick);
             // 
+            // TsmiBookTypeManager
+            // 
+            this.TsmiBookTypeManager.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiBookTypeList});
+            this.TsmiBookTypeManager.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiBookTypeManager.Name = "TsmiBookTypeManager";
+            this.TsmiBookTypeManager.Size = new System.Drawing.Size(122, 28);
+            this.TsmiBookTypeManager.Text = "图书类别";
+            // 
+            // TsmiBookTypeList
+            // 
+            this.TsmiBookTypeList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiBookTypeList.Name = "TsmiBookTypeList";
+            this.TsmiBookTypeList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBookTypeList.Text = "图书类别列表";
+            this.TsmiBookTypeList.Click += new System.EventHandler(this.TsmiBookTypeList_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -212,5 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiReaderManager;
         private System.Windows.Forms.ToolStripMenuItem TsmiReaderTypeName;
         private System.Windows.Forms.ToolStripMenuItem TsmiReaderInfo;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBookTypeManager;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBookTypeList;
     }
 }
