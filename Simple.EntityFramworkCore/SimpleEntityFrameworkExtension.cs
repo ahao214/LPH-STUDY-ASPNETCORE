@@ -20,7 +20,7 @@ namespace Simple.EntityFramworkCore
         /// <param name="lifetime"></param>
         /// <returns></returns>
         public static IServiceCollection AddEntityFrameworkCore<IDbContext>(this IServiceCollection services, Action<DbContextOptionsBuilder>? options = null,
-            ServiceLifetime lifetime = ServiceLifetime.Singleton) where IDbContext : MasterDbContext<DbContext>
+            ServiceLifetime lifetime = ServiceLifetime.Singleton) where IDbContext : MasterDbContext<IDbContext>
         {
             services.AddDbContext<IDbContext>(options, lifetime);
             return services;
