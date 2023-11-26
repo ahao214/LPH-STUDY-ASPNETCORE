@@ -26,22 +26,6 @@ namespace Video.Application.UserInfos
             _userInfoRepository = userInfoRepository;
         }
 
-        public async Task<UserInfoDto> GetAsync()
-        {
-            var userInfo = new UserInfo()
-            {
-                Avatar = "cs",
-                //CreateTime = DateTime.Now,
-                Enable = false,
-                Id = Guid.NewGuid(),
-                Name = "test",
-                UserName = "test"
-            };
-            var dto = _mapper.Map<UserInfoDto>(userInfo);
-            return await Task.FromResult(dto);
-
-        }
-
         /// <summary>
         /// 
         /// </summary>
