@@ -87,7 +87,7 @@ namespace JokerBooksManagerComm.Comm
         #endregion
 
 
-        #region 获取SQL的查询语句
+        #region 获取SQL的查询语句带where
 
         /// <summary>
         /// 获取SQL的查询语句
@@ -222,6 +222,50 @@ namespace JokerBooksManagerComm.Comm
             sb.Append($"DELETE FROM {tableName}");
             sb.Append($" WHERE {primaryKey} = {type.GetProperty(primaryKey).GetValue(t)}");
 
+            return sb.ToString();
+
+        }
+
+
+        #endregion
+
+
+        #region 获取SQL的删除语句(根据字段来删除)
+
+        /// <summary>
+        /// 获取SQL的删除语句(根据字段来删除)
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="tableName">表名</param>
+        /// <param name="primaryKey">主键ID</param>
+        /// <param name="keyId">查询的条件</param>
+        /// <returns></returns>
+        public static string DeleteSql<T>(T t, string tableName, Dictionary<string, object> dic) where T : class
+        {
+            if (t is null || string.IsNullOrEmpty(tableName))
+                return string.Empty;
+            if (dic.Count == 0)
+                return string.Empty;
+            Type type = typeof(T);
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"DELETE FROM {tableName}");
+            sb.Append(" WHERE 1 = 1 ");
+
+            foreach (KeyValuePair<string, object> kv in dic)
+            {
+                string sType = kv.Value.GetType().ToString().ToLower();
+                bool bNum = sType.Contains("int") || sType.Contains("long") || sType.Contains("double") || sType.Contains("decimal");
+                if (bNum)
+                {
+                    sb.Append(" AND " + kv.Key + " = " + kv.Value);
+                }
+                else
+                {
+                    sb.Append(" AND " + kv.Key + " = '" + kv.Value + "'");
+                }
+
+            }
             return sb.ToString();
 
         }
