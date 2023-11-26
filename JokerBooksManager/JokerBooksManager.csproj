@@ -62,6 +62,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmBookTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmBookTypeList.Designer.cs">
+      <DependentUpon>FrmBookTypeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmBookTypeList.resx">
+      <DependentUpon>FrmBookTypeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
