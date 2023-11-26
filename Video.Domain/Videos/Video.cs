@@ -1,12 +1,13 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Video.Domain.Users
+namespace Video.Domain.Videos
 {
     /// <summary>
-    /// 用户表
+    /// 视频表
     /// </summary>
-    public class UserInfo
+    public class Video
     {
         /// <summary>
         /// 编号
@@ -17,26 +18,25 @@ namespace Video.Domain.Users
         /// </summary>
         public DateTime CreateTime { get; set; }
         /// <summary>
-        /// 昵称
+        /// 标题
         /// </summary>
-        public string? Name { get; set; }
+        public string? Title { get; set; }
         /// <summary>
-        /// 用户名
+        /// 描述
         /// </summary>
-        public string? UserName { get; set; }
+        public string? Description { get; set; }
         /// <summary>
-        /// 密码
+        /// 视频地址
         /// </summary>
-        public string? Password { get; set; }
+        public string? VideoUrl { get; set; }
         /// <summary>
-        /// 用户头像
+        /// 分类ID
         /// </summary>
-        public string? Avatar { get; set; }
+        public Guid ClassifyId { get; set; }
         /// <summary>
-        /// 是否启用
+        /// 用户ID
         /// </summary>
-        public bool Enable { get; set; } = true;
-
+        public Guid UserId { get; set; }
 
 
     }
