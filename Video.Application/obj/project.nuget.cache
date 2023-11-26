@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PMBewOIohpEwpF8epMJGscveNGB2vqKcDuOD32rjxtyOsuXS7kkvBaEoMWYJJNLluRiitN+hoBNRcEKl3MB1jw==",
+  "dgSpecHash": "jkGS7k15JLMmfy1wKktvAvLN2IuFw3/3lKWhZcspTUHquYif9SNH6NmL2dMa/P1Y5Iw/R2GnifXZvZAzs7Xw9w==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Video.Application\\Video.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\freeredis\\1.2.7\\freeredis.1.2.7.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",

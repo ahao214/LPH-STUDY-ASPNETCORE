@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PUqNlpsZoR1OUMJpVuARc/9sQnFwW31WHV3HKLywZg/thHNQYhLT/f7TBAYEVqFZB8qlvSBV4XsDwrm6eDEdMw==",
+  "dgSpecHash": "okmt3KFp6tR9l5mm6GpFJUUC/0KlnfPubrAwotz9IuMb/8LGu0odTsAlABm6rJhofSW63lIv0tK8E43j1Vp6ZA==",
   "success": true,
   "projectFilePath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Video.HttpApi.Host\\Video.HttpApi.Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\freeredis\\1.2.7\\freeredis.1.2.7.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.25\\microsoft.aspnetcore.authentication.jwtbearer.6.0.25.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

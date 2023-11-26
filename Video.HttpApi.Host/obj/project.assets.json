@@ -31,6 +31,19 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FreeRedis/1.2.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FreeRedis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreeRedis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -948,6 +961,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "FreeRedis": "1.2.7",
           "Video.Application.Contract": "1.0.0",
           "Video.Domains": "1.0.0"
         },
@@ -1024,6 +1038,24 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FreeRedis/1.2.7": {
+      "sha512": "ZC37NoZd31FHtpB4YaSJ5WUPWe5mDs+/jvOObJsgXu+1Cj9gdHgdXHOLjf9cicM05DvMMt8NuqU8S6ZV6/GSgw==",
+      "type": "package",
+      "path": "freeredis/1.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "freeredis.1.2.7.nupkg.sha512",
+        "freeredis.nuspec",
+        "lib/net40/FreeRedis.dll",
+        "lib/net40/FreeRedis.xml",
+        "lib/net451/FreeRedis.dll",
+        "lib/net451/FreeRedis.xml",
+        "lib/netstandard2.0/FreeRedis.dll",
+        "lib/netstandard2.0/FreeRedis.xml",
+        "readme.md"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -2426,6 +2458,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FreeRedis >= 1.2.7",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.25",
@@ -2490,6 +2523,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FreeRedis": {
+            "target": "Package",
+            "version": "[1.2.7, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[6.0.25, )"

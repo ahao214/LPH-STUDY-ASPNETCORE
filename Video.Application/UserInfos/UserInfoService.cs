@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FreeRedis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,15 @@ namespace Video.Application.UserInfos
     public class UserInfoService : IUserInfoService
     {
         private readonly IMapper _mapper;
-        public UserInfoService(IMapper mapper)
+        private readonly RedisClient _redisClient;
+        public UserInfoService(IMapper mapper, RedisClient redisClient)
         {
             _mapper = mapper;
+            _redisClient = redisClient;
         }
 
         public async Task<UserInfoDto> GetAsync()
-        {
+        {            
             var userInfo = new UserInfo()
             {
                 Avatar = "cs",
@@ -29,7 +32,7 @@ namespace Video.Application.UserInfos
                 Name = "test",
                 UserName = "test"
             };
-            var dto = _mapper .Map <UserInfoDto>(userInfo);
+            var dto = _mapper.Map<UserInfoDto>(userInfo);
             return await Task.FromResult(dto);
 
         }

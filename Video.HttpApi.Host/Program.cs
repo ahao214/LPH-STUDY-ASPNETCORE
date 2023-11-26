@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Video.Application;
 using Video.Application.Contract.UserInfos;
+using FreeRedis;
+using Microsoft.Extensions.DependencyInjection;
 
 
 
@@ -60,6 +62,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
 
     });
+
+
+builder.Services.AddSingleton(new RedisClient(configuration["RedisConnection"]));
 
 builder.Services.AddVideoEntityFrameworkCor();
 

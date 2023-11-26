@@ -119,6 +119,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "FreeRedis": {
+              "target": "Package",
+              "version": "[1.2.7, )"
             }
           },
           "imports": [
