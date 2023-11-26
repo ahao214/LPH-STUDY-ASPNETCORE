@@ -38,6 +38,8 @@ namespace Video.Domain.Videos
         /// </summary>
         public Guid UserId { get; set; }
 
+        public virtual UserInfo? User { get; set; }
 
+        public virtual Classify? Classify { get; set; }
     }
 }

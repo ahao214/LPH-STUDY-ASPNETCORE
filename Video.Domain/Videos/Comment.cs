@@ -35,5 +35,8 @@ namespace Video.Domain.Videos
         /// </summary>
         public Guid VideoId { get; set; }
 
+        public virtual UserInfo? User { get; set; }
+
+        public virtual Video? Video { get; set; }
     }
 }
