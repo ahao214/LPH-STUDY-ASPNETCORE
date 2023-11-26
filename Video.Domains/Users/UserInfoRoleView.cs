@@ -1,14 +1,18 @@
-﻿
-using Simple.EntityFramworkCore.Core.Base;
+﻿using Simple.EntityFramworkCore.Core.Base;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Video.Domains
+namespace Video.Domains.Users
 {
-    /// <summary>
-    /// 用户表
-    /// </summary>
-    public class UserInfo:Entity
-    {        
+    public class UserInfoRoleView : Entity
+    {
+
+        public UserInfoRoleView()
+        {
+            Role = new List<Role>();
+        }
+
         /// <summary>
         /// 昵称
         /// </summary>
@@ -29,5 +33,8 @@ namespace Video.Domains
         /// 是否启用
         /// </summary>
         public bool Enable { get; set; } = true;
+
+        public List<Role> Role { get; set; }
+
     }
 }

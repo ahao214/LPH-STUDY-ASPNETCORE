@@ -1,14 +1,11 @@
-﻿using Simple.EntityFramworkCore.Core.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Video.Application.Contract.Base;
 
-namespace Video.Domains
+namespace Video.Application.Contract
 {
-    /// <summary>
-    /// 角色表
-    /// </summary>
-    public class Role : Entity
+    public class RoleDto:EntityDto
     {
         /// <summary>
         /// 角色名称
@@ -18,7 +15,5 @@ namespace Video.Domains
         /// 角色编号
         /// </summary>
         public string? Code { get; set; }
-
-
     }
 }

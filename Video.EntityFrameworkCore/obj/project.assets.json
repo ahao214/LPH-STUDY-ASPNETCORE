@@ -687,6 +687,9 @@
       "Video.Domains/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Simple.EntityFramworkCore.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Video.Domains.dll": {}
         },

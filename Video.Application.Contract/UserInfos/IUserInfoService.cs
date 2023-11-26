@@ -9,7 +9,12 @@ namespace Video.Application.Contract.UserInfos
     public interface IUserInfoService
     {
         Task<UserInfoDto> GetAsync();
-
+        /// <summary>
+        /// 根据账号和密码获取用户信息
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<UserInfoRoleDto> LoginAsync(LoginInput input);
 
     }
 }

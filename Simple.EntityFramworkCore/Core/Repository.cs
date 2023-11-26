@@ -14,8 +14,8 @@ namespace Simple.EntityFramworkCore.Core
     public class Repository<IDbContext, TEntity> : IRepository<TEntity> where TEntity : Entity
         where IDbContext : MasterDbContext<IDbContext>
     {
-        private readonly IDbContext _dbContext;
-        private readonly DbSet<TEntity> _dbSet;
+        public readonly IDbContext _dbContext;
+        public readonly DbSet<TEntity> _dbSet;
         public Repository(IDbContext dbContext)
         {
             _dbContext = dbContext;

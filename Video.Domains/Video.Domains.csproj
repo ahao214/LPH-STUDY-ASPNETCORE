@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Simple.EntityFramworkCore.Core\Simple.EntityFramworkCore.Core.csproj" />
+  </ItemGroup>
+
 </Project>

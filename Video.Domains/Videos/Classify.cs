@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Simple.EntityFramworkCore.Core.Base;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,16 +8,8 @@ namespace Video.Domains
     /// <summary>
     /// 分类表
     /// </summary>
-    public class Classify
-    {
-        /// <summary>
-        /// 编号
-        /// </summary>
-        public Guid Id { get; set; }
-        /// <summary>
-        /// 创建时间
-        /// </summary>
-        public DateTime CreateTime { get; set; }
+    public class Classify: Entity
+    {        
         /// <summary>
         /// 名称
         /// </summary>

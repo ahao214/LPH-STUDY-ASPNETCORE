@@ -121,6 +121,16 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "Simple.EntityFramworkCore.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        }
+      },
       "Video.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -134,6 +144,9 @@
       "Video.Domains/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Simple.EntityFramworkCore.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Video.Domains.dll": {}
         },
@@ -355,6 +368,11 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Simple.EntityFramworkCore.Core/1.0.0": {
+      "type": "project",
+      "path": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj",
+      "msbuildProject": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj"
     },
     "Video.Application.Contract/1.0.0": {
       "type": "project",

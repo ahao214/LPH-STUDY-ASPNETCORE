@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Video.Domains.Users;
+using Video.EntityFrameworkCore.Users;
 
 namespace Video.EntityFrameworkCore
 {
@@ -13,7 +15,7 @@ namespace Video.EntityFrameworkCore
         public static IServiceCollection AddVideoEntityFrameworkCor(this IServiceCollection services)
         {
             services.AddMySqlEntityFrameworkCore<VideoDbContext>("Default");
-
+            services.AddTransient<IUserInfoRepository, UserInfoRepository>();
             return services;
         }
 

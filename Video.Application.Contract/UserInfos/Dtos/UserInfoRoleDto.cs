@@ -1,14 +1,13 @@
-﻿
-using Simple.EntityFramworkCore.Core.Base;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Video.Application.Contract.Base;
 
-namespace Video.Domains
+namespace Video.Application.Contract.UserInfos.Dtos
 {
-    /// <summary>
-    /// 用户表
-    /// </summary>
-    public class UserInfo:Entity
-    {        
+    public class UserInfoRoleDto:EntityDto
+    {
+
         /// <summary>
         /// 昵称
         /// </summary>
@@ -29,5 +28,8 @@ namespace Video.Domains
         /// 是否启用
         /// </summary>
         public bool Enable { get; set; } = true;
+
+        public List<RoleDto> Role { get; set; }
+
     }
 }

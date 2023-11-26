@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Simple.EntityFramworkCore.Core.Base;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,16 +8,8 @@ namespace Video.Domains
     /// <summary>
     /// 关注表
     /// </summary>
-    public class BeanVermicelli
+    public class BeanVermicelli: Entity
     {
-        /// <summary>
-        /// 编号
-        /// </summary>
-        public Guid Id { get; set; }
-        /// <summary>
-        /// 创建时间
-        /// </summary>
-        public DateTime CreateTime { get; set; }
         /// <summary>
         /// 被关注ID
         /// </summary>
