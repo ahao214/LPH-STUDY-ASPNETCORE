@@ -246,6 +246,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Simple.EntityFramworkCore.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        }
       }
     }
   },
@@ -572,11 +582,17 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Simple.EntityFramworkCore.Core/1.0.0": {
+      "type": "project",
+      "path": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj",
+      "msbuildProject": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.25"
+      "Microsoft.EntityFrameworkCore >= 6.0.25",
+      "Simple.EntityFramworkCore.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -615,7 +631,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Core\\Simple.EntityFramworkCore.Core.csproj": {
+              "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Core\\Simple.EntityFramworkCore.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
