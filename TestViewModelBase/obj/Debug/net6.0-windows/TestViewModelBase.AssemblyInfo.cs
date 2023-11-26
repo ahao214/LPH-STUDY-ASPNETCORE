@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WpfBindingDemo")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TestViewModelBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("WpfBindingDemo")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WpfBindingDemo")]
+[assembly: System.Reflection.AssemblyProductAttribute("TestViewModelBase")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TestViewModelBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
