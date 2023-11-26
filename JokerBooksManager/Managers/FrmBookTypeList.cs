@@ -21,8 +21,13 @@ namespace JokerBooksManager.Managers
 
 
 
+        #region 新增图书类别
+        private void BtnAddNew_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        #endregion
 
 
 
@@ -34,9 +39,6 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        private void BtnAddNew_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
