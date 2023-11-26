@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Simple.EntityFramworkCore.Core
+namespace Simple.EntityFramworkCore.Core.Base
 {
     /// <summary>
     /// 工作单元
