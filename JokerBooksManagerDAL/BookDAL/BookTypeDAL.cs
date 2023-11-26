@@ -21,26 +21,13 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 新增图书类别
         /// </summary>
-        /// <param name="readerType">图书类别</param>
+        /// <param name="bookType">图书类别</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool AddReaderType(ReaderType readerType)
-        {
-            StringBuilder sb = new StringBuilder();
+        public static bool AddBookType(BookType bookType)
+        {           
             BookCommandType commandType = BookCommandType.Text;
-            sb.Append("INSERT INTO ReaderType(ReaderTypeName)VALUES(@ReaderTypeName)");
-
-            SqlParameter[] paras =
-            {
-                new SqlParameter ("@ReaderTypeName",readerType .ReaderTypeName)
-            };
-            try
-            {
-                return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            string sql = BuilderSqlHelper.InsertSql<BookType>(bookType, "BookType", "BookTypeId");
+            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
         }
 
         #endregion
@@ -137,19 +124,15 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 更新图书类别
         /// </summary>
-        /// <param name="readerType">图书类别对象</param>
+        /// <param name="bookType">图书类别对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool UpdateReaderType(ReaderType readerType)
+        public static bool UpdateBookType(BookType bookType)
         {
             BookCommandType commandType = BookCommandType.Text;
             StringBuilder sb = new StringBuilder();
             sb.Append("Update ReaderType SET ReaderTypeName=@ReaderTypeName WHERE ReaderTypeId=@ReaderTypeId");
-            SqlParameter[] paras =
-            {
-                new SqlParameter ("@ReaderTypeName",readerType.ReaderTypeName),
-                new SqlParameter ("@ReaderTypeId",readerType.ReaderTypeId)
-            };
-            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, paras) > 0;
+           
+            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType) > 0;
 
         }
 

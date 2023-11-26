@@ -41,7 +41,7 @@ namespace JokerBooksManager.Managers
 
 
 
-       
+
 
         #region 添加或修改图书类别信息
         /// <summary>
@@ -53,11 +53,12 @@ namespace JokerBooksManager.Managers
             bool bRes;
             if (bookTypeId == 0) // 添加
             {
-                //bRes = bll.AddReaderType(type);
+                bRes = bll.AddBookType(type);
             }
             else // 修改
             {
-                //bRes = bll.UpdateReaderType(type);
+                //bRes = bll.UpdateBookType(type);
+                bRes = false;
             }
             //if (bRes)
             //{
@@ -171,14 +172,14 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void BtnOk_Click(object sender, EventArgs e)
         {
-            string bookType = TxtBookTypeName.Text.Trim();
+            string typeName = TxtBookTypeName.Text.Trim();
             string remark = TxtRemark.Text.Trim();
 
-            if (!CheckInput(bookType))
+            if (!CheckInput(typeName))
             {
                 return;
             }
-            if (CheckBookType(bookType))
+            if (CheckBookType(typeName))
             {
                 return;
             }
@@ -186,7 +187,8 @@ namespace JokerBooksManager.Managers
             BookType type = new BookType
             {
                 BookTypeId = bookTypeId,
-                BookTypeName = bookType
+                BookTypeName = typeName,
+                Remark = remark
             };
             // 添加数据到数据库
             AddOrUpdate(type);
