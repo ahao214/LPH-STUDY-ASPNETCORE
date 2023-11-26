@@ -10,6 +10,11 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Video.Application;
+using Video.Application.Contract.UserInfos;
+
+
+
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -30,6 +35,8 @@ var builder = WebApplication.CreateBuilder(args);
 // 使用Serilong
 builder.Host.UseSerilog();
 //Log.Logger.Information("开始使用日志");
+
+builder.Services.AddVideoApplication();
 
 var configuration = builder.Services.BuildServiceProvider().GetRequiredService<IConfiguration>();
 var jwtsection = configuration.GetSection(nameof(JWTOptions));
@@ -120,6 +127,10 @@ app.MapGet("/ok", (IOptions<JWTOptions> options) =>
 app.MapGet("/authorization", [Authorize] () => "ok");
 app.MapGet("/admin", [Authorize(Roles = "admin")] () => "ok");
 app.MapGet("/x", [Authorize(Roles = "/x")] () => "ok");
+
+app.MapGet("/user-info",async (IUserInfoService userInfoService)=>await userInfoService.GetAsync());
+
+
 app.MapControllers();
 app.Run();
 

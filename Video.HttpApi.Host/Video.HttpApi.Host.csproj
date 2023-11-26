@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Video.Application\Video.Application.csproj" />
     <ProjectReference Include="..\Video.EntityFrameworkCore\Video.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
