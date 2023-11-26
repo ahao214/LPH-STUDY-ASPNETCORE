@@ -2,8 +2,10 @@
 
 namespace Video.Domain
 {
-    public class Class1
+    public interface IRepository
     {
+
+
 
     }
 }

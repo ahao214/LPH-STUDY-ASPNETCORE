@@ -615,6 +615,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore.Sql", "Simple.EntityFramworkCore.Sql\Simple.EntityFramworkCore.Sql.csproj", "{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore.Core", "Simple.EntityFramworkCore.Core\Simple.EntityFramworkCore.Core.csproj", "{6391A2C3-C0B2-415C-9480-2E8C026C1991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1353,6 +1355,10 @@ Global
 		{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6391A2C3-C0B2-415C-9480-2E8C026C1991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6391A2C3-C0B2-415C-9480-2E8C026C1991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6391A2C3-C0B2-415C-9480-2E8C026C1991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6391A2C3-C0B2-415C-9480-2E8C026C1991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1656,6 +1662,7 @@ Global
 		{F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC} = {922D39CA-12A1-4D4D-94D0-73FE06AC6D74}
 		{5B1C347F-54CF-403D-BA7E-DF395D10263A} = {F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC}
 		{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9} = {F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC}
+		{6391A2C3-C0B2-415C-9480-2E8C026C1991} = {F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
