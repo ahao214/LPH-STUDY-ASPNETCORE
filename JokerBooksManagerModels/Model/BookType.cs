@@ -16,7 +16,7 @@ namespace JokerBooksManagerModels.Model
         /// </summary>
         public int BookTypeId { get; set; }
         /// <summary>
-        /// 图书姓名
+        /// 图书名称
         /// </summary>
         public string BookTypeName { get; set; }        
         /// <summary>

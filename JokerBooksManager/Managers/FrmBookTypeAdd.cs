@@ -18,10 +18,7 @@ namespace JokerBooksManager.Managers
             InitializeComponent();
         }
 
-        private void FrmBookTypeAdd_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
