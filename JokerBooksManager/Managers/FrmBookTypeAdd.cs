@@ -60,18 +60,18 @@ namespace JokerBooksManager.Managers
                 //bRes = bll.UpdateBookType(type);
                 bRes = false;
             }
-            //if (bRes)
-            //{
-            //    CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
-            //    // 刷新
-            //    formInfoModel.ReloadData?.Invoke();
-            //    Close();
-            //}
-            //else
-            //{
-            //    CommMsgBox.MsgBox(CommConst.SaveDataFail);
-            //    Close();
-            //}
+            if (bRes)
+            {
+                CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
+                // 刷新
+                formInfoModel.ReloadData?.Invoke();
+                Close();
+            }
+            else
+            {
+                CommMsgBox.MsgBox(CommConst.SaveDataFail);
+                Close();
+            }
         }
 
         #endregion
