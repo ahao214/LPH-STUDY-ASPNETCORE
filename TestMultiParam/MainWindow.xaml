@@ -9,6 +9,7 @@
     <Window.Resources>
         <local:SingleParamConverter x:Key="SingleParamConverter"/>
         <local:MultiParamConverter x:Key="MultiParamConverter"/>
+        <local:MultiParamImageConverter x:Key="MultiParamImageConverter"/>
     </Window.Resources>
     <Grid>
         <DataGrid x:Name="MyDataGrid"
@@ -49,6 +50,27 @@
                                         
                                     </Style>
                                 </Button.Style>
+                                <Button.Template>
+                                    <ControlTemplate>
+                                        <Border Background="Transparent" Width="60">
+                                            <Image>
+                                                <Image.Style>
+                                                    <Style TargetType="Image">
+                                                        <Setter Property="Source">
+                                                            <Setter.Value>
+                                                                <MultiBinding Converter="{StaticResource MultiParamImageConverter}">
+                                                                    <Binding Path="Age"/>
+                                                                    <Binding Path="Grade"/>
+                                                                    
+                                                                </MultiBinding>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Image.Style>
+                                            </Image>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
                             </Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
