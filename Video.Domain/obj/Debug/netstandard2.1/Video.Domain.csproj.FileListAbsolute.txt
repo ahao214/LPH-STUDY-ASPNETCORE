@@ -1,0 +1,14 @@
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\bin\Debug\netstandard2.1\Video.Domain.deps.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\bin\Debug\netstandard2.1\Video.Domain.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\bin\Debug\netstandard2.1\Video.Domain.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\bin\Debug\netstandard2.1\Simple.EntityFramworkCore.Core.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\bin\Debug\netstandard2.1\Simple.EntityFramworkCore.Core.pdb
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.csproj.AssemblyReference.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.AssemblyInfoInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.AssemblyInfo.cs
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.csproj.CoreCompileInputs.cache
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.sourcelink.json
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.csproj.CopyComplete
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.dll
+F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Video.Domain\obj\Debug\netstandard2.1\Video.Domain.pdb

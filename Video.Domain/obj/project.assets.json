@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "Simple.EntityFramworkCore.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.EntityFramworkCore.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Simple.EntityFramworkCore.Core/1.0.0": {
+      "type": "project",
+      "path": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj",
+      "msbuildProject": "../Simple.EntityFramworkCore.Core/Simple.EntityFramworkCore.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "Simple.EntityFramworkCore.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Thinkpad\\.nuget\\packages\\": {},
@@ -43,7 +62,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Core\\Simple.EntityFramworkCore.Core.csproj": {
+              "projectPath": "F:\\MyProgramm\\CShape\\LPH-STUDY-ASPNETCORE\\Simple.EntityFramworkCore.Core\\Simple.EntityFramworkCore.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
