@@ -28,6 +28,9 @@ namespace Blog.Module
         /// 文章类型ID
         /// </summary>
         public Guid TypeId { get; set; }
-
+        /// <summary>
+        /// 作者ID
+        /// </summary>
+        public Guid AuthorId { get; set; }
     }
 }
