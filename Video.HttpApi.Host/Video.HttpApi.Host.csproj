@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Video.EntityFrameworkCore\Video.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Filters\" />
+  </ItemGroup>
+
 </Project>
