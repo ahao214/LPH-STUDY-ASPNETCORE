@@ -24,5 +24,14 @@ namespace Blog.Module
         /// 评论内容
         /// </summary>
         public string Content { get; set; }
+        /// <summary>
+        /// 导航属性用户
+        /// </summary>
+        public virtual Users? User { get; set; }
+        /// <summary>
+        /// 导航属性博客
+        /// </summary>
+        public virtual Blogs Blogs { get; set; }
+
     }
 }
