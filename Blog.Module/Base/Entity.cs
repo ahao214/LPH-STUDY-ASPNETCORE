@@ -18,7 +18,7 @@ namespace Blog.Module.Base
         /// <summary>
         /// 创建时间
         /// </summary>
-        public DateTime? CreateTime { get; set; }
+        public DateTime? CreationTime { get; set; }
 
     }
 }
