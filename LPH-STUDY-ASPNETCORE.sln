@@ -621,17 +621,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestViewModelBase", "TestVi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Module", "Blog.Module\Blog.Module.csproj", "{180D1FEC-9E33-4CCE-B9BD-3E333938B634}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Module", "Blog.Module\Blog.Module.csproj", "{180D1FEC-9E33-4CCE-B9BD-3E333938B634}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Application", "Blog.Application\Blog.Application.csproj", "{3F10A45A-0984-4FF6-A686-A4335925525D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Application", "Blog.Application\Blog.Application.csproj", "{3F10A45A-0984-4FF6-A686-A4335925525D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Application.Contract", "Blog.Application.Contract\Blog.Application.Contract.csproj", "{4288D41A-C61F-4489-A6C2-49E111655D9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Application.Contract", "Blog.Application.Contract\Blog.Application.Contract.csproj", "{4288D41A-C61F-4489-A6C2-49E111655D9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.EntityFrameworkCore", "Blog.EntityFrameworkCore\Blog.EntityFrameworkCore.csproj", "{E7304575-9563-4EB3-8398-9B2DCE2D05AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.EntityFrameworkCore", "Blog.EntityFrameworkCore\Blog.EntityFrameworkCore.csproj", "{E7304575-9563-4EB3-8398-9B2DCE2D05AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D6A458B1-70E6-45B4-AF48-E651CCE3D0B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D6A458B1-70E6-45B4-AF48-E651CCE3D0B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppBorder", "WpfAppBorder\WpfAppBorder.csproj", "{B67E09A0-2BC3-4BF2-8411-196E0FE20339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppBorder", "WpfAppBorder\WpfAppBorder.csproj", "{B67E09A0-2BC3-4BF2-8411-196E0FE20339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppButton", "WpfAppButton\WpfAppButton.csproj", "{B7B2807E-26F4-4A37-9347-AF046B1F60C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1403,6 +1405,10 @@ Global
 		{B67E09A0-2BC3-4BF2-8411-196E0FE20339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67E09A0-2BC3-4BF2-8411-196E0FE20339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67E09A0-2BC3-4BF2-8411-196E0FE20339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1715,6 +1721,7 @@ Global
 		{E7304575-9563-4EB3-8398-9B2DCE2D05AD} = {CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}
 		{D6A458B1-70E6-45B4-AF48-E651CCE3D0B3} = {CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}
 		{B67E09A0-2BC3-4BF2-8411-196E0FE20339} = {EFA80766-E9EF-4090-889A-944549E7AFDF}
+		{B7B2807E-26F4-4A37-9347-AF046B1F60C0} = {EFA80766-E9EF-4090-889A-944549E7AFDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
