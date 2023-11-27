@@ -12,6 +12,9 @@ namespace Blog.Application
     {
         public static void AddApplication(this IServiceCollection services)
         {
+            // 注入AutoMapper
+            services.AddAutoMapper(typeof(BlogApplicationExtension));
+
             services.AddEntityFrameworkCore();
         }
 
