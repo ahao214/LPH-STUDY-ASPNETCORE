@@ -37,7 +37,7 @@ namespace Ahao_Blog.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<string> Login(LoginDto input)
+        public async Task<string> LoginAsync(LoginDto input)
         {
             var user = await _userServer.LoginAsync(input);
 
@@ -46,6 +46,8 @@ namespace Ahao_Blog.Controllers
                 new Claim ("Guid",user.Id .ToString ()),
                 new Claim(ClaimTypes.Role ,user .Role )
             };
+
+            // 加密
             var cred = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.SecretKey!)), SecurityAlgorithms.HmacSha256);
 
             var jwtSecurityToken = new JwtSecurityToken(
@@ -58,6 +60,10 @@ namespace Ahao_Blog.Controllers
             var token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
             return token;
         }
+
+
+
+
 
     }
 }
