@@ -20,6 +20,6 @@
         /// <summary>
         /// 过期时间(分钟)
         /// </summary>
-        public int ExpireMinute { get; set; }
+        public int ExpireMinute { get; set; } = 240;
     }
 }
