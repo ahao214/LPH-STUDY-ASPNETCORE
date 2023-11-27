@@ -28,7 +28,7 @@ namespace Blog.Application.Contract.Dto
         /// <summary>
         /// 角色
         /// </summary>
-        public string? Role { get; set; }
+        public string Role { get; set; } = null!;
 
 
     }
