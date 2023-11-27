@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Blog.Application.Contract.Blogs.Dto;
-using Blog.Application.Contract.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +13,9 @@ namespace Blog.Application.AutoMapper
         public BlogAutoMapperProfile()
         {
             CreateMap<CreateBlogsDto, Module.Blogs>();
-            //CreateMap<Module.Blogs, UserDto>()
-            //    .ForMember(x => x.Role, x => x.MapFrom(o => o.Role.ToString()));
+
+            CreateMap<CreateBlogTypesDto, Module.BlogTypes>();
+
         }
 
     }

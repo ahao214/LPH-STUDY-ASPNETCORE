@@ -23,6 +23,10 @@ namespace Blog.Application
             services.AddTransient<IUserServer, UserServer>();
             // 注入Blog服务
             services.AddTransient<IBlogServer, BlogServer>();
+            // 注入BlogType服务
+            services.AddTransient<IBlogTypeServer, BlogTypeServer>();
+
+
 
             services.AddEntityFrameworkCore();
         }
