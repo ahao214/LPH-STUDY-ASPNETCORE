@@ -23,9 +23,10 @@ namespace Blog.Application.Users
 
         public async Task CreateUserAsync(CreateUserDto input)
         {
-            //if (await dbContext.Users.AnyAsync(x => x.UserName == input.UserName){
+            if (await dbContext.Users.AnyAsync(x => x.UserName == input.UserName))
+            {
 
-            //}
+            }
 
             var data = mapper.Map<Module.Users>(input);
 

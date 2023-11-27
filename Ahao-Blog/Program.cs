@@ -1,3 +1,4 @@
+using Ahao_Blog.Filters;
 using Blog.Application;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication();
+
+// ×¢Èë¹ıÂËÆ÷
+builder.Services.AddMvcCore(x =>
+{
+    x.Filters.Add<ResponseFilter>();
+    x.Filters.Add<ExceptionFilter>();
+});
+
+
+
 
 var app = builder.Build();
 
