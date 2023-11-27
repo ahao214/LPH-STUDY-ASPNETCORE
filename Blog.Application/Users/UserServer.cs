@@ -22,6 +22,7 @@ namespace Blog.Application.Users
             mapper = mp;
         }
 
+        #region 创建用户
         /// <summary>
         /// 创建用户
         /// </summary>
@@ -43,10 +44,26 @@ namespace Blog.Application.Users
             // 保存操作
             await dbContext.SaveChangesAsync();
         }
+        #endregion
 
-        public Task LoginAsync(LoginDto input)
+        #region 登录
+        /// <summary>
+        /// 登录
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<UserDto> LoginAsync(LoginDto input)
         {
-            throw new NotImplementedException();
+            var data = await dbContext.Users.FirstOrDefaultAsync(x => x.UserName == input.UserName && x.Password == input.Password);
+            if (data == null)
+            {
+                throw new BusinessException("账号或密码错误");
+            }
+
+            var dto = mapper.Map<UserDto>(data);
+            return dto;
         }
+        #endregion
     }
 }
