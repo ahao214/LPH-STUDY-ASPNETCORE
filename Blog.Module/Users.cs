@@ -14,7 +14,7 @@ namespace Blog.Module
     {
         public Users()
         {
-            CreateTime = DateTime.Now;
+            CreationTime = DateTime.Now;
         }
         /// <summary>
         /// 用户名
