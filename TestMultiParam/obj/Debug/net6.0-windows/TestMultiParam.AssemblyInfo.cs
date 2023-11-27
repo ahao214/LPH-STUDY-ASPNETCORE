@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestMultiParam")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4281ca0b442b0d923d75bb5d5976f174cf6ccb33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestMultiParam")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestMultiParam")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

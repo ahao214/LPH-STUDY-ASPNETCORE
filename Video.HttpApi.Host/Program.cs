@@ -133,7 +133,7 @@ app.MapGet("/authorization", [Authorize] () => "ok");
 app.MapGet("/admin", [Authorize(Roles = "admin")] () => "ok");
 app.MapGet("/x", [Authorize(Roles = "/x")] () => "ok");
 
-app.MapGet("/user-info",async (IUserInfoService userInfoService)=>await userInfoService.GetAsync());
+
 
 
 app.MapControllers();
