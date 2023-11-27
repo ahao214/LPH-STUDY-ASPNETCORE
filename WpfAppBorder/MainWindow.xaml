@@ -9,7 +9,7 @@
   
         <Grid>
         <!--border：边框使用-->
-        <Border Grid.Row="2" BorderBrush="Purple" BorderThickness="2" Background="LightGreen" CornerRadius="5" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="100" Margin="10 5 5 5">
+        <Border BorderBrush="Purple" BorderThickness="2" Background="LightGreen" CornerRadius="5" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="100" Margin="15 15 15 15">
             <Label Content="用户名：" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Blue"/>
         </Border>
     </Grid>
