@@ -37,6 +37,7 @@ namespace Blog.Application.Users
 
             // Mapper 映射
             var data = mapper.Map<Module.Users>(input);
+            data.CreationTime = DateTime.Now;
             // 添加到数据库
             await dbContext.Users.AddAsync(data);
             // 保存操作
