@@ -9,6 +9,8 @@ namespace Blog.Application.AutoMapper
         public UserAutoMapperProfile()
         {
             CreateMap<CreateUserDto, Module.Users>();
+            CreateMap<Module.Users, UserDto>()
+                .ForMember(x => x.Role, x => x.MapFrom(o => o.Role.ToString()));
         }
     }
 }

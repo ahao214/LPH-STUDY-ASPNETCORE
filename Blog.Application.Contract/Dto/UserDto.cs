@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Application.Contract.Dto
 {
-    public class UserDto:EntityDto
+    public class UserDto : EntityDto
     {
         /// <summary>
         /// 用户名
@@ -25,6 +25,10 @@ namespace Blog.Application.Contract.Dto
         /// 邮箱
         /// </summary>
         public string Email { get; set; }
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public string? Role { get; set; }
 
 
     }

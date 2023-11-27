@@ -36,7 +36,11 @@ namespace Infrastructure
     {
         public Guid GetUserId()
         {
-            throw new NotImplementedException();
+            var userId = UserId ();
+            if (userId == null)
+                throw new BusinessException("账号未登录");
+
+            return (Guid)userId;
         }
 
         public bool? IsAuthenticated()
