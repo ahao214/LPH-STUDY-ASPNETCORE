@@ -635,6 +635,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppBorder", "WpfAppBorde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppButton", "WpfAppButton\WpfAppButton.csproj", "{B7B2807E-26F4-4A37-9347-AF046B1F60C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppTextBox", "WpfAppTextBox\WpfAppTextBox.csproj", "{03DC91ED-9AD8-4029-8924-E55E5B471E7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1409,6 +1411,10 @@ Global
 		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B2807E-26F4-4A37-9347-AF046B1F60C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03DC91ED-9AD8-4029-8924-E55E5B471E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DC91ED-9AD8-4029-8924-E55E5B471E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DC91ED-9AD8-4029-8924-E55E5B471E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DC91ED-9AD8-4029-8924-E55E5B471E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1722,6 +1728,7 @@ Global
 		{D6A458B1-70E6-45B4-AF48-E651CCE3D0B3} = {CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}
 		{B67E09A0-2BC3-4BF2-8411-196E0FE20339} = {EFA80766-E9EF-4090-889A-944549E7AFDF}
 		{B7B2807E-26F4-4A37-9347-AF046B1F60C0} = {EFA80766-E9EF-4090-889A-944549E7AFDF}
+		{03DC91ED-9AD8-4029-8924-E55E5B471E7A} = {EFA80766-E9EF-4090-889A-944549E7AFDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
