@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Video.HttpApi.Host.props" />
-</Project>

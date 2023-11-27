@@ -1,9 +1,0 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\bin\Debug\DAL.dll
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\bin\Debug\DAL.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\obj\Debug\DAL.dll
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\obj\Debug\DAL.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\bin\Debug\StuModels.dll
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\bin\Debug\StuModels.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -1,9 +1,0 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\bin\Debug\Study1.exe.config
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\bin\Debug\Study1.exe
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\bin\Debug\Study1.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.Properties.Resources.resources
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.csproj.GenerateResource.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.csproj.CoreCompileInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.exe
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Study1\obj\Debug\Study1.pdb

@@ -1,9 +1,0 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.GeneratedMSBuildEditorConfig.editorconfig
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.AssemblyInfoInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.AssemblyInfo.cs
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.csproj.CoreCompileInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.MvcApplicationPartsAssemblyInfo.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.RazorAssemblyInfo.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.RazorAssemblyInfo.cs
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\BlazorApp\Server\obj\Debug\net6.0\BlazorApp.Server.sourcelink.json

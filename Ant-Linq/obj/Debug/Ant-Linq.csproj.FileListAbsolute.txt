@@ -1,7 +1,0 @@
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\bin\Debug\Ant-Linq.exe.config
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\bin\Debug\Ant-Linq.exe
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\bin\Debug\Ant-Linq.pdb
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\obj\Debug\Ant-Linq.csproj.AssemblyReference.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\obj\Debug\Ant-Linq.csproj.CoreCompileInputs.cache
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\obj\Debug\Ant-Linq.exe
-F:\MyProgramm\CShape\LPH-STUDY-ASPNETCORE\Ant-Linq\obj\Debug\Ant-Linq.pdb
