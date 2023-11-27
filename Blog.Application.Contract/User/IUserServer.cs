@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blog.Application.Contract.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,11 @@ namespace Blog.Application.Contract.User
 {
     public interface IUserServer
     {
-
+        /// <summary>
+        /// 创建用户
+        /// </summary>
+        /// <returns></returns>
+        Task CreateUserAsync(CreateUserDto input);
 
     }
 }
