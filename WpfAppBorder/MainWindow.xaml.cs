@@ -20,5 +20,15 @@ namespace WpfAppBorder
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 鼠标左键按下事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();    // 移动
+        }
     }
 }
