@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +12,13 @@ namespace Blog.Application.Contract.Dto
         /// <summary>
         /// 用户名
         /// </summary>
-        public string UserName { get; set; }
+        [MinLength(6,ErrorMessage ="用户名长度不能小于6位")]
+        public string UserName { get; set; } = null!;
         /// <summary>
         /// 密码
         /// </summary>
-        public string Password { get; set; }
+        [MinLength(6, ErrorMessage = "密码长度不能小于6位")]
+        public string Password { get; set; } = null!;
         /// <summary>
         /// 头像
         /// </summary>
