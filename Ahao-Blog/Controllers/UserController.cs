@@ -1,6 +1,6 @@
 ﻿using Ahao_Blog.Options;
-using Blog.Application.Contract.Dto;
 using Blog.Application.Contract.User;
+using Blog.Application.Contract.User.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;

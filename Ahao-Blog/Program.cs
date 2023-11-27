@@ -25,6 +25,11 @@ var configurationSection = configuration.GetSection(nameof
 services.Configure<JwtOptions>(configurationSection);
 var jwt = configurationSection.Get<JwtOptions>();
 
+
+// 注入方法
+services.AddCurrent();
+
+// 注入Jwt的配置
 services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -40,11 +45,11 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// 注入过滤器
+// 添加过滤器
 builder.Services.AddMvcCore(x =>
 {
-    x.Filters.Add<ResponseFilter>();
-    x.Filters.Add<ExceptionFilter>();
+    x.Filters.Add<ResponseFilter>();    // 响应格式过滤器
+    x.Filters.Add<ExceptionFilter>();   // 异常过滤器
 });
 
 var app = builder.Build();

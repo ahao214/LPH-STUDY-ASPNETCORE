@@ -1,4 +1,6 @@
-﻿using Blog.Application.Contract.User;
+﻿using Blog.Application.Blogs;
+using Blog.Application.Contract.Blogs;
+using Blog.Application.Contract.User;
 using Blog.Application.Users;
 using Blog.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +21,8 @@ namespace Blog.Application
 
             // 注入User服务
             services.AddTransient<IUserServer, UserServer>();
-
+            // 注入Blog服务
+            services.AddTransient<IBlogServer, BlogServer>();
 
             services.AddEntityFrameworkCore();
         }

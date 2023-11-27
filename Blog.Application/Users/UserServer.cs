@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Blog.Application.Contract.Dto;
 using Blog.Application.Contract.User;
+using Blog.Application.Contract.User.Dto;
 using Blog.EntityFrameworkCore;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;

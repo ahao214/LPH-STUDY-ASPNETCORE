@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Blog.Application.Contract.Dto;
+using Blog.Application.Contract.User.Dto;
 
 
 namespace Blog.Application.AutoMapper
