@@ -1,4 +1,4 @@
-﻿using Blog.Application.Contract.Dto;
+﻿using Blog.Application.Contract.User.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
