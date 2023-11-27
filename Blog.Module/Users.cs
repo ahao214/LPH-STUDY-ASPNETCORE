@@ -12,6 +12,10 @@ namespace Blog.Module
     /// </summary>
     public class Users : Entity
     {
+        public Users()
+        {
+            CreateTime = DateTime.Now;
+        }
         /// <summary>
         /// 用户名
         /// </summary>
