@@ -42,5 +42,10 @@ namespace Blog.Application.Users
             // 保存操作
             await dbContext.SaveChangesAsync();
         }
+
+        public Task LoginAsync(LoginDto input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

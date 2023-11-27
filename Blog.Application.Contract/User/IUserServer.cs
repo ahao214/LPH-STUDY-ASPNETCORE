@@ -15,5 +15,6 @@ namespace Blog.Application.Contract.User
         /// <returns></returns>
         Task CreateUserAsync(CreateUserDto input);
 
+        Task LoginAsync(LoginDto input);
     }
 }
