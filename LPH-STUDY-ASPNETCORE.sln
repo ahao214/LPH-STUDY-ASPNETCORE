@@ -599,25 +599,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppBase", "WpfAppBase\Wp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JokerVideo", "JokerVideo", "{922D39CA-12A1-4D4D-94D0-73FE06AC6D74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video.HttpApi.Host", "Video.HttpApi.Host\Video.HttpApi.Host.csproj", "{368F5A5C-A563-45A8-A629-0D9436F85B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.HttpApi.Host", "Video.HttpApi.Host\Video.HttpApi.Host.csproj", "{368F5A5C-A563-45A8-A629-0D9436F85B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video.Application", "Video.Application\Video.Application.csproj", "{D9FCE694-68CB-4FEF-A623-7C70C34B8B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.Application", "Video.Application\Video.Application.csproj", "{D9FCE694-68CB-4FEF-A623-7C70C34B8B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video.Application.Contract", "Video.Application.Contract\Video.Application.Contract.csproj", "{D15766C2-CFBD-486D-B200-3B2D0EC2DB43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.Application.Contract", "Video.Application.Contract\Video.Application.Contract.csproj", "{D15766C2-CFBD-486D-B200-3B2D0EC2DB43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video.EntityFrameworkCore", "Video.EntityFrameworkCore\Video.EntityFrameworkCore.csproj", "{411D1562-866F-4768-8C0F-D72315E4F065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.EntityFrameworkCore", "Video.EntityFrameworkCore\Video.EntityFrameworkCore.csproj", "{411D1562-866F-4768-8C0F-D72315E4F065}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "efcore", "efcore", "{F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore", "Simple.EntityFramworkCore\Simple.EntityFramworkCore.csproj", "{5B1C347F-54CF-403D-BA7E-DF395D10263A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.EntityFramworkCore", "Simple.EntityFramworkCore\Simple.EntityFramworkCore.csproj", "{5B1C347F-54CF-403D-BA7E-DF395D10263A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore.Sql", "Simple.EntityFramworkCore.Sql\Simple.EntityFramworkCore.Sql.csproj", "{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.EntityFramworkCore.Sql", "Simple.EntityFramworkCore.Sql\Simple.EntityFramworkCore.Sql.csproj", "{EDF592F7-E54A-40C2-829E-F55E1E5A7DF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.EntityFramworkCore.Core", "Simple.EntityFramworkCore.Core\Simple.EntityFramworkCore.Core.csproj", "{6391A2C3-C0B2-415C-9480-2E8C026C1991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.EntityFramworkCore.Core", "Simple.EntityFramworkCore.Core\Simple.EntityFramworkCore.Core.csproj", "{6391A2C3-C0B2-415C-9480-2E8C026C1991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video.Domains", "Video.Domains\Video.Domains.csproj", "{9E40CFCC-BB33-4E4B-BB31-28B052E38510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.Domains", "Video.Domains\Video.Domains.csproj", "{9E40CFCC-BB33-4E4B-BB31-28B052E38510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestViewModelBase", "TestViewModelBase\TestViewModelBase.csproj", "{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestViewModelBase", "TestViewModelBase\TestViewModelBase.csproj", "{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Module", "Blog.Module\Blog.Module.csproj", "{180D1FEC-9E33-4CCE-B9BD-3E333938B634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1365,6 +1369,10 @@ Global
 		{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180D1FEC-9E33-4CCE-B9BD-3E333938B634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180D1FEC-9E33-4CCE-B9BD-3E333938B634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180D1FEC-9E33-4CCE-B9BD-3E333938B634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180D1FEC-9E33-4CCE-B9BD-3E333938B634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1372,7 +1380,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6457FA8D-88B6-4AB2-A97A-1846622D5F0E} = {B9E4F619-C94D-425C-8D45-BEB1BFB1ED26}
 		{799BCFC7-A9B5-4769-BE9F-B81E984F4D45} = {428E5EE0-4029-4DF6-86D2-52880CC3BFC2}
-		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A} = {799BCFC7-A9B5-4769-BE9F-B81E984F4D45}
+		{1E6E8C99-14EC-4A81-A4E1-EC257E1BAD2A} = {CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}
 		{335B607B-B1F3-4EF1-A86D-3BD517060117} = {B9E4F619-C94D-425C-8D45-BEB1BFB1ED26}
 		{1C8DDA27-E90A-4804-875F-9347C88D33DF} = {335B607B-B1F3-4EF1-A86D-3BD517060117}
 		{10EDEF99-0554-4FBA-91FA-8BE319338873} = {B9E4F619-C94D-425C-8D45-BEB1BFB1ED26}
@@ -1670,6 +1678,8 @@ Global
 		{6391A2C3-C0B2-415C-9480-2E8C026C1991} = {F29E4CD5-8DE3-4B7C-A504-4C3FB707E7FC}
 		{9E40CFCC-BB33-4E4B-BB31-28B052E38510} = {922D39CA-12A1-4D4D-94D0-73FE06AC6D74}
 		{BCD93CB2-9DC4-4F7B-9AAF-69A7C180B96E} = {08353411-3865-4B80-B1F6-2E320C897C84}
+		{CF42AE5C-5A00-402D-8973-0CB45EC8FFB3} = {799BCFC7-A9B5-4769-BE9F-B81E984F4D45}
+		{180D1FEC-9E33-4CCE-B9BD-3E333938B634} = {CF42AE5C-5A00-402D-8973-0CB45EC8FFB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
