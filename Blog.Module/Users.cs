@@ -28,6 +28,9 @@ namespace Blog.Module
         /// 邮箱
         /// </summary>
         public string Email { get; set; }
-
+        /// <summary>
+        /// 角色
+        /// </summary>
+        public RoleType Role { get; set; }
     }
 }
