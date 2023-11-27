@@ -3,6 +3,7 @@ using Blog.Application.Contract.Dto;
 using Blog.Application.Contract.User;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Pomelo.EntityFrameworkCore.MySql.Query.Internal;
 using System.IdentityModel.Tokens.Jwt;
@@ -18,10 +19,10 @@ namespace Ahao_Blog.Controllers
         private readonly IUserServer _userServer;
         private readonly JwtOptions _jwtOptions;
 
-        public UserController(IUserServer userServer, JwtOptions jwtOptions)
+        public UserController(IUserServer userServer, IOptions<JwtOptions> jwtOptions)
         {
             _userServer = userServer;
-            _jwtOptions = jwtOptions;
+            _jwtOptions = jwtOptions.Value;
         }
 
         /// <summary>
