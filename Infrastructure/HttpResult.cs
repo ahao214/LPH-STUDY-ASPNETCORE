@@ -21,10 +21,21 @@ namespace Infrastructure
         /// </summary>
         public object? Data { get; set; }
 
+        public HttpResult(int code)
+        {
+            this.Code = code;
+        }
+
         public HttpResult(int code, string? message)
         {
             this.Code = code;
-            this.Message = message;       
+            this.Message = message;
+        }
+
+        public HttpResult(int code, object? data)
+        {
+            this.Code = code;
+            this.Data = data;
         }
 
         public HttpResult(int code, string? message, object? data)
