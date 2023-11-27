@@ -33,6 +33,10 @@ namespace Blog.Module
         /// </summary>
         public Guid AuthorId { get; set; }
         /// <summary>
+        /// 导航属性博客类型
+        /// </summary>
+        public virtual BlogTypes Type { get; set; }
+        /// <summary>
         /// 导航属性用户
         /// </summary>
         public virtual Users? Author { get; set; }
