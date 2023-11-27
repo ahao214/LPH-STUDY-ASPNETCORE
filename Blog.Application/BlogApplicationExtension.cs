@@ -1,4 +1,6 @@
-﻿using Blog.EntityFrameworkCore;
+﻿using Blog.Application.Contract.User;
+using Blog.Application.Users;
+using Blog.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,10 @@ namespace Blog.Application
         {
             // 注入AutoMapper
             services.AddAutoMapper(typeof(BlogApplicationExtension));
+
+            // 注入User服务
+            services.AddTransient<IUserServer, UserServer>();
+
 
             services.AddEntityFrameworkCore();
         }
