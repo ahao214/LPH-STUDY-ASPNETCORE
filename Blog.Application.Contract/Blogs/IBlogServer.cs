@@ -17,9 +17,13 @@ namespace Blog.Application.Contract.Blogs
         /// </summary>
         /// <returns></returns>
         Task CreateBlogAsync(CreateBlogsDto input);
+        /// <summary>
+        /// 删除博客
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task DeleteAsync(Guid id);
 
-
-
-
+        Task UpdateAsync(CreateBlogsDto input);
     }
 }

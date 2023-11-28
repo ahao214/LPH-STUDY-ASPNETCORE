@@ -27,6 +27,27 @@ namespace Ahao_Blog.Controllers
             await blogServer.CreateBlogAsync(input);
         }
 
+        /// <summary>
+        /// 更新博客
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task UpdateAsync(CreateBlogsDto input)
+        {
+            await blogServer.UpdateAsync(input);
+        }
+
+        /// <summary>
+        /// 删除博客
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task DeleteAsync(Guid id)
+        {
+            await blogServer.DeleteAsync(id);
+        }
 
 
     }

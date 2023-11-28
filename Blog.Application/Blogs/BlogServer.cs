@@ -49,5 +49,46 @@ namespace Blog.Application.Blogs
 
 
         }
+
+        /// <summary>
+        /// 删除博客
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task DeleteAsync(Guid id)
+        {
+            var userId = curServer.GetUserId();
+            // 获取博客并且只能删除自己的博客
+            var data = await db.Blogs.FirstOrDefaultAsync(x => x.Id == id && x.AuthorId == userId);
+
+            if (data != null)
+            {
+                db.Blogs.Remove(data);
+                await db.SaveChangesAsync();
+            }
+        }
+
+        /// <summary>
+        /// 更新博客
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task UpdateAsync(CreateBlogsDto input)
+        {
+            var userId = curServer.GetUserId();
+            var data = await db.Blogs.FirstOrDefaultAsync(x => x.AuthorId == userId);
+
+            if (data == null)
+            {
+                throw new BusinessException("博客不存在");
+            }
+            // 将Input的数据映射到DATA
+            mp.Map(input, data);
+            
+            db.Blogs.Update(data);
+            await db.SaveChangesAsync();
+        }
     }
 }
