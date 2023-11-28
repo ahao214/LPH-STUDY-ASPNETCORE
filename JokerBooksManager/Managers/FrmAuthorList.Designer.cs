@@ -36,8 +36,8 @@
             this.BtnClose = new Sunny.UI.UIButton();
             this.BtnAddNew = new Sunny.UI.UIButton();
             this.DgvPublishHouse = new Sunny.UI.UIDataGridView();
-            this.PublishId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublishName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuthorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
@@ -53,7 +53,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(893, 454);
+            this.BtnClose.Location = new System.Drawing.Point(746, 454);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -76,7 +76,7 @@
             this.BtnAddNew.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnAddNew.Location = new System.Drawing.Point(720, 454);
+            this.BtnAddNew.Location = new System.Drawing.Point(529, 454);
             this.BtnAddNew.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnAddNew.Name = "BtnAddNew";
             this.BtnAddNew.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -107,8 +107,8 @@
             this.DgvPublishHouse.ColumnHeadersHeight = 32;
             this.DgvPublishHouse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DgvPublishHouse.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PublishId,
-            this.PublishName,
+            this.AuthorId,
+            this.AuthorName,
             this.Remark,
             this.Modify,
             this.DelData});
@@ -151,23 +151,23 @@
             this.DgvPublishHouse.Style = Sunny.UI.UIStyle.Green;
             this.DgvPublishHouse.TabIndex = 11;
             // 
-            // PublishId
+            // AuthorId
             // 
-            this.PublishId.DataPropertyName = "PublishId";
-            this.PublishId.HeaderText = "出版社ID";
-            this.PublishId.MinimumWidth = 8;
-            this.PublishId.Name = "PublishId";
-            this.PublishId.ToolTipText = "出版社ID";
-            this.PublishId.Width = 200;
+            this.AuthorId.DataPropertyName = "AuthorId";
+            this.AuthorId.HeaderText = "作者ID";
+            this.AuthorId.MinimumWidth = 8;
+            this.AuthorId.Name = "AuthorId";
+            this.AuthorId.ToolTipText = "作者ID";
+            this.AuthorId.Width = 150;
             // 
-            // PublishName
+            // AuthorName
             // 
-            this.PublishName.DataPropertyName = "PublishName";
-            this.PublishName.HeaderText = "出版社名称";
-            this.PublishName.MinimumWidth = 8;
-            this.PublishName.Name = "PublishName";
-            this.PublishName.ToolTipText = "出版社名称";
-            this.PublishName.Width = 200;
+            this.AuthorName.DataPropertyName = "AuthorName";
+            this.AuthorName.HeaderText = "作者姓名";
+            this.AuthorName.MinimumWidth = 8;
+            this.AuthorName.Name = "AuthorName";
+            this.AuthorName.ToolTipText = "作者姓名";
+            this.AuthorName.Width = 200;
             // 
             // Remark
             // 
@@ -203,7 +203,7 @@
             // FrmAuthorList
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1092, 558);
+            this.ClientSize = new System.Drawing.Size(956, 558);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnAddNew);
@@ -225,8 +225,8 @@
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIButton BtnAddNew;
         private Sunny.UI.UIDataGridView DgvPublishHouse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublishId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublishName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Remark;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
         private System.Windows.Forms.DataGridViewLinkColumn DelData;
