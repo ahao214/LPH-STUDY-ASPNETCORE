@@ -102,6 +102,7 @@ namespace Blog.Application.Blogs
         public async Task<BlogDto> GetAsync(Guid id)
         {
             var data = await db.Blogs.Where(x => x.Id == id)
+                .AsNoTracking()     // 禁止跟踪查询
                 .AsSplitQuery() // 拆分查询
                 .Include(x => x.Type) // 导航属性查询类型信息
                 .Include(x => x.Author) // 导航属性查询用户信息
