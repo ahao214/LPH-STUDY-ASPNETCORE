@@ -42,6 +42,12 @@ namespace Blog.Application.Contract.Blogs
         /// <param name="id"></param>
         /// <returns></returns>
         Task LikeAsync(Guid id);
+        /// <summary>
+        /// 添加评论
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task CreateCommentAsync(CreateCommentDto input);
 
     }
 }

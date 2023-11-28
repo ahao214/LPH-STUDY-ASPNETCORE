@@ -139,8 +139,35 @@ namespace Blog.Application.Blogs
                     CreationTime = DateTime.Now,
                 };
                 await db.BlogLikes.AddAsync(like);
-                await db.SaveChangesAsync();
             }
+            else
+            {
+                // 删除
+                db.BlogLikes.Remove(data);
+            }
+            await db.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// 博客评论
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task CreateCommentAsync(CreateCommentDto input)
+        {
+            if (await db.Blogs.AnyAsync(x => x.Id == input.BlogId))
+            {
+                throw new BusinessException("博客不存在");
+            }
+            var userId = curServer.GetUserId();
+            var data = mp.Map<BlogComment>(input);
+            data.UserId = userId;
+            data.CreationTime = DateTime.Now;
+
+            await db.BlogComments.AddAsync(data);
+            await db.SaveChangesAsync();
+
+
         }
     }
 }
