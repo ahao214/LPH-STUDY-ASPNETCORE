@@ -1,4 +1,5 @@
-﻿using Blog.Application.Contract.Blogs;
+﻿using Blog.Application.Contract.Base;
+using Blog.Application.Contract.Blogs;
 using Blog.Application.Contract.Blogs.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -94,6 +95,18 @@ namespace Ahao_Blog.Controllers
         {
             await blogServer.DeleteCommentAsync(id);
         }
+
+        /// <summary>
+        /// 获取博客推荐列表
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpGet("list")]
+        public async Task<PageResponseDto<PageBlogDto>> GetListAsync(BlogInput input)
+        {
+           return await blogServer.GetBlogListAsync(input);
+        }
+
 
     }
 
