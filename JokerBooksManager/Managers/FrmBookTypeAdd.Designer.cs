@@ -47,7 +47,7 @@
             this.TxtBookTypeName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBookTypeName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtBookTypeName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtBookTypeName.Location = new System.Drawing.Point(223, 82);
+            this.TxtBookTypeName.Location = new System.Drawing.Point(249, 82);
             this.TxtBookTypeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtBookTypeName.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtBookTypeName.Name = "TxtBookTypeName";
@@ -66,7 +66,7 @@
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel1.Location = new System.Drawing.Point(84, 82);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(132, 32);
+            this.uiLabel1.Size = new System.Drawing.Size(158, 32);
             this.uiLabel1.Style = Sunny.UI.UIStyle.Green;
             this.uiLabel1.TabIndex = 7;
             this.uiLabel1.Text = "类别名称";
@@ -129,7 +129,7 @@
             this.TxtRemark.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtRemark.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtRemark.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtRemark.Location = new System.Drawing.Point(223, 153);
+            this.TxtRemark.Location = new System.Drawing.Point(249, 153);
             this.TxtRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtRemark.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtRemark.Name = "TxtRemark";
