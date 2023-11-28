@@ -166,8 +166,23 @@ namespace Blog.Application.Blogs
 
             await db.BlogComments.AddAsync(data);
             await db.SaveChangesAsync();
+        }
 
-
+        /// <summary>
+        /// 删除评论
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task DeleteCommentAsync(Guid id)
+        {
+            var userId = curServer.GetUserId();
+            var result = await db.BlogComments.FirstOrDefaultAsync(x => x.Id == id && x.UserId == userId);
+            if (result == null)
+            {
+                return;
+            }
+            db.BlogComments.Remove(result);
+            await db.SaveChangesAsync();
         }
     }
 }

@@ -48,6 +48,13 @@ namespace Blog.Application.Contract.Blogs
         /// <param name="id"></param>
         /// <returns></returns>
         Task CreateCommentAsync(CreateCommentDto input);
+        /// <summary>
+        /// 删除评论
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task DeleteCommentAsync(Guid id);
+
 
     }
 }
