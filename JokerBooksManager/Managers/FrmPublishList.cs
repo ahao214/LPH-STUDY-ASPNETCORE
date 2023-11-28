@@ -13,9 +13,12 @@ namespace JokerBooksManager.Managers
     /// 出版社列表
     /// </summary>
     public partial class FrmPublishList : UIForm
-    {        
+    {
+        /// <summary>
+        /// 业务逻辑层:出版社变量
+        /// </summary>
         private readonly PublishHouseBLL bll = new PublishHouseBLL();
-     
+
         public FrmPublishList()
         {
             InitializeComponent();

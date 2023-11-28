@@ -40,14 +40,14 @@
             this.TsmiWindowList = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiBookTypeManager = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiBookTypeList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiPublish = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiPublishList = new System.Windows.Forms.ToolStripMenuItem();
             this.Sstatus = new System.Windows.Forms.StatusStrip();
             this.TsslTxtInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
-            this.TsmiPublish = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiPublishList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -95,9 +95,9 @@
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSysManage,
             this.TsmiReaderManager,
-            this.TsmiWindowList,
             this.TsmiBookTypeManager,
-            this.TsmiPublish});
+            this.TsmiPublish,
+            this.TsmiWindowList});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
@@ -152,6 +152,23 @@
             this.TsmiBookTypeList.Size = new System.Drawing.Size(218, 34);
             this.TsmiBookTypeList.Text = "图书类别列表";
             this.TsmiBookTypeList.Click += new System.EventHandler(this.TsmiBookTypeList_Click);
+            // 
+            // TsmiPublish
+            // 
+            this.TsmiPublish.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiPublishList});
+            this.TsmiPublish.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiPublish.Name = "TsmiPublish";
+            this.TsmiPublish.Size = new System.Drawing.Size(140, 28);
+            this.TsmiPublish.Text = "出版社信息";
+            // 
+            // TsmiPublishList
+            // 
+            this.TsmiPublishList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiPublishList.Name = "TsmiPublishList";
+            this.TsmiPublishList.Size = new System.Drawing.Size(236, 34);
+            this.TsmiPublishList.Text = "出版社信息列表";
+            this.TsmiPublishList.Click += new System.EventHandler(this.TsmiPublishList_Click);
             // 
             // Sstatus
             // 
@@ -216,23 +233,6 @@
             this.TvBookType.TabIndex = 3;
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TsmiPublish
-            // 
-            this.TsmiPublish.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiPublishList});
-            this.TsmiPublish.Image = global::JokerBooksManager.Properties.Resources._1;
-            this.TsmiPublish.Name = "TsmiPublish";
-            this.TsmiPublish.Size = new System.Drawing.Size(140, 28);
-            this.TsmiPublish.Text = "出版社信息";
-            // 
-            // TsmiPublishList
-            // 
-            this.TsmiPublishList.Image = global::JokerBooksManager.Properties.Resources._2;
-            this.TsmiPublishList.Name = "TsmiPublishList";
-            this.TsmiPublishList.Size = new System.Drawing.Size(270, 34);
-            this.TsmiPublishList.Text = "出版社信息列表";
-            this.TsmiPublishList.Click += new System.EventHandler(this.TsmiPublishList_Click);
             // 
             // FrmMain
             // 
