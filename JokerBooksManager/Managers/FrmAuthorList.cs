@@ -28,5 +28,20 @@ namespace JokerBooksManager.Managers
 
         }
         #endregion
+
+        #region 新增操作
+        private void BtnAddNew_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region 关闭窗体
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
     }
+
 }
