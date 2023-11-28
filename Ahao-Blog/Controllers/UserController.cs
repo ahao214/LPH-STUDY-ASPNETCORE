@@ -83,6 +83,5 @@ namespace Ahao_Blog.Controllers
         {
             await _userServer.UpdateAsync(input);
         }
-
     }
 }
