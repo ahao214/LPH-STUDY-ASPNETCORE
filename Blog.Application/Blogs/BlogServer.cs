@@ -112,8 +112,10 @@ namespace Blog.Application.Blogs
             }
 
             var dto = mp.Map<BlogDto>(data);
-            return dto;
+            // 获取博客点赞数量
+            dto.Likes = await db.BlogLikes.LongCountAsync(x => x.BlogId == id);
 
+            return dto;
         }
     }
 }

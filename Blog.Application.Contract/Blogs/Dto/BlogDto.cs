@@ -29,6 +29,10 @@ namespace Blog.Application.Contract.Blogs.Dto
         /// 作者ID
         /// </summary>
         public Guid AuthorId { get; set; }
+        /// <summary>
+        /// 点赞数量
+        /// </summary>
+        public long Likes { get; set; }
 
         /// <summary>
         /// 导航属性博客类型
