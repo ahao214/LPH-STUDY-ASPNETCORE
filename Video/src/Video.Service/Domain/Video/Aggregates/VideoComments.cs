@@ -40,15 +40,26 @@ namespace Video.Service.Domain.Video.Aggregates
 
         public VideoComments(long videoId, string comment, long? parentId)
         {
+            UpdateVideoId(videoId);
+            UpdateComment(comment);
+            ParentId = parentId;
+        }
+
+
+        public void UpdateVideoId(long videoId)
+        {
             if (videoId == null)
                 throw new UserFriendlyException("视频id为空");
+            VideoId = videoId;
+        }
 
+        public void UpdateComment(string comment)
+        {
             if (comment == null)
                 throw new UserFriendlyException("你的评论为空");
 
-            VideoId = videoId;
+
             Comment = comment;
-            ParentId = parentId;
         }
     }
 }
