@@ -21,6 +21,23 @@ namespace JokerBooksManager.Managers
             InitializeComponent();
         }
 
+
+        #region 窗体加载
+        private void FrmPublishList_Load(object sender, EventArgs e)
+        {
+            LoadPublishHouse();
+        }
+        #endregion
+
+
+        #region DataGrid加载数据
+        private void LoadPublishHouse()
+        {
+            DgvPublishHouse.DataSource = bll.GetPublishHouses();
+        }
+        #endregion
+
+
         #region 打开出版社窗体
         /// <summary>
         /// 打开出版社窗体
@@ -34,25 +51,12 @@ namespace JokerBooksManager.Managers
             frm.Tag = new FormInfoModel
             {
                 KeyId = iReaderType,
-                ReloadData = LoadBookType // 某个函数(加载Dgv数据的)
+                ReloadData = LoadPublishHouse // 某个函数(加载Dgv数据的)
             };
 
             frm.Show();
         }
         #endregion
-
-
-        
-
-        #region DataGrid加载数据
-        private void LoadBookType()
-        {
-            DgvPublishHouse.DataSource = bll.GetPublishHouses();
-        }
-        #endregion
-
-
-    
 
 
         #region 执行删除
@@ -69,7 +73,7 @@ namespace JokerBooksManager.Managers
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
-                LoadBookType();
+                LoadPublishHouse();
             }
             else
             {
@@ -79,15 +83,7 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
-        #region 窗体加载
-        private void FrmPublishList_Load(object sender, EventArgs e)
-        {
-            LoadBookType();
-        }
-
-
-
-        #endregion
+        #region 列表操作
 
         private void DgvPublishHouse_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -114,20 +110,20 @@ namespace JokerBooksManager.Managers
             }
         }
 
+        #endregion
+
+        #region 新增出版社
+        private void BtnAddNew_Click(object sender, EventArgs e)
+        {
+            ShowForm(0);
+        }
+        #endregion
+
         #region 关闭窗体
-        private void BtnClose_Click_1(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
         #endregion
-
-        #region 新增出版社
-        private void BtnAddNew_Click_1(object sender, EventArgs e)
-        {
-            ShowForm(0);
-        } 
-        #endregion
-
-
     }
 }
