@@ -33,23 +33,23 @@ namespace Video.Service.Domain.Users.Aggregates
         /// <summary>
         /// 用户名
         /// </summary>
-        public string UserName { get; private set; }
+        public string UserName { get => username; private set => username = value; }
         /// <summary>
         /// 密码
         /// </summary>
-        public string Password { get; private set; }
+        public string Password { get => password; private set => password = value; }
         /// <summary>
         /// 邮箱
         /// </summary>
-        public string Email { get; private set; }
+        public string Email { get => email; private set => email = value; }
         /// <summary>
         /// 头像
         /// </summary>
-        public string Avatar { get; set; }
+        public string Avatar { get => avatar; set => avatar = value; }
         /// <summary>
         /// 用户描述
         /// </summary>
-        public string Description { get; set; }
+        public string Description { get => description; set => description = value; }
 
         protected VideoUsers() { }
 
