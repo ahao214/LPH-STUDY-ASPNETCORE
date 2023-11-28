@@ -47,7 +47,7 @@
             this.TxtRemark.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtRemark.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtRemark.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtRemark.Location = new System.Drawing.Point(387, 189);
+            this.TxtRemark.Location = new System.Drawing.Point(170, 148);
             this.TxtRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtRemark.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtRemark.Name = "TxtRemark";
@@ -64,7 +64,7 @@
             // lblRemark
             // 
             this.lblRemark.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblRemark.Location = new System.Drawing.Point(248, 189);
+            this.lblRemark.Location = new System.Drawing.Point(31, 148);
             this.lblRemark.Name = "lblRemark";
             this.lblRemark.Size = new System.Drawing.Size(133, 32);
             this.lblRemark.Style = Sunny.UI.UIStyle.Green;
@@ -83,7 +83,7 @@
             this.TxtPublishName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtPublishName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtPublishName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtPublishName.Location = new System.Drawing.Point(387, 118);
+            this.TxtPublishName.Location = new System.Drawing.Point(170, 77);
             this.TxtPublishName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtPublishName.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtPublishName.Name = "TxtPublishName";
@@ -100,7 +100,7 @@
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(248, 118);
+            this.uiLabel1.Location = new System.Drawing.Point(31, 77);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(132, 32);
             this.uiLabel1.Style = Sunny.UI.UIStyle.Green;
@@ -117,7 +117,7 @@
             this.BtnOk.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnOk.Location = new System.Drawing.Point(248, 298);
+            this.BtnOk.Location = new System.Drawing.Point(31, 257);
             this.BtnOk.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -139,7 +139,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(452, 298);
+            this.BtnClose.Location = new System.Drawing.Point(235, 257);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -155,7 +155,7 @@
             // FrmPublishAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(450, 400);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.TxtRemark);
             this.Controls.Add(this.lblRemark);
