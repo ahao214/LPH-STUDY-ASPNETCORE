@@ -11,7 +11,7 @@ namespace Video.Contracts.Shared
     /// </summary>
     public enum FileType
     {
-        Document,
+        File,
         Image,
         Video,
         Audio,
