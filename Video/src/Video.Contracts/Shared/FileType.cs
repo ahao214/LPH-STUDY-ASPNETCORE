@@ -11,10 +11,21 @@ namespace Video.Contracts.Shared
     /// </summary>
     public enum FileType
     {
+        /// <summary>
+        /// 文件
+        /// </summary>
         File,
+        /// <summary>
+        /// 图片
+        /// </summary>
         Image,
+        /// <summary>
+        /// 视频
+        /// </summary>
         Video,
-        Audio,
-        Other
+        /// <summary>
+        /// 音频
+        /// </summary>
+        Audio
     }
 }
