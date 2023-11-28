@@ -73,8 +73,17 @@ namespace Ahao_Blog.Controllers
             await blogServer.LikeAsync(id);
         }
 
+        /// <summary>
+        /// 添加评论
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost("comment")]
+        public async Task CreateCommentAsync(CreateCommentDto input)
+        {
+            await blogServer.CreateCommentAsync(input); 
+        }
 
-        
 
 
 
