@@ -16,7 +16,8 @@ namespace Blog.Application.AutoMapper
 
             CreateMap<CreateBlogTypesDto, Module.BlogTypes>();
 
-            CreateMap<BlogTypeDto, Module.BlogTypes>();
+            CreateMap<BlogTypeDto, Module.BlogTypes>()
+                .ReverseMap();  // 双向配置
         }
 
     }
