@@ -21,16 +21,6 @@ namespace JokerBooksManager.Managers
             InitializeComponent();
         }
 
-
-
-        #region 新增出版社
-        private void BtnAddNew_Click(object sender, EventArgs e)
-        {
-            ShowForm(0);
-        }
-
-        #endregion
-
         #region 打开出版社窗体
         /// <summary>
         /// 打开出版社窗体
@@ -62,14 +52,7 @@ namespace JokerBooksManager.Managers
         #endregion
 
 
-        #region 关闭窗体
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-        #endregion
+    
 
 
         #region 执行删除
@@ -130,5 +113,21 @@ namespace JokerBooksManager.Managers
                     break;
             }
         }
+
+        #region 关闭窗体
+        private void BtnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
+
+        #region 新增出版社
+        private void BtnAddNew_Click_1(object sender, EventArgs e)
+        {
+            ShowForm(0);
+        } 
+        #endregion
+
+
     }
 }
