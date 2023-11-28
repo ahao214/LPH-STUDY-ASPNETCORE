@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blog.Application.Contract.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Application.Contract.Blogs.Dto
 {
-    public class PageBlogDto
+    public class PageBlogDto:EntityDto
     {
         /// <summary>
         /// 标题

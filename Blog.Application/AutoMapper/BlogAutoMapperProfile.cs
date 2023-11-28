@@ -22,6 +22,12 @@ namespace Blog.Application.AutoMapper
 
             // 博客评论
             CreateMap<CreateCommentDto, BlogComment>();
+
+            CreateMap<Module.Blogs, PageBlogDto>();
+
+
+
+
         }
 
     }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Blog.Application.Contract.Base;
 using Blog.Application.Contract.Blogs;
 using Blog.Application.Contract.Blogs.Dto;
 using Blog.Application.Users;
@@ -183,6 +184,44 @@ namespace Blog.Application.Blogs
             }
             db.BlogComments.Remove(result);
             await db.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// 获取博客推荐信息
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<PageResponseDto<PageBlogDto>> GetBlogListAsync(BlogInput input)
+        {
+            var data = db.Blogs.AsQueryable();
+            if (input.TypeId.HasValue)
+            {
+                data = data.Where(x => x.TypeId == input.TypeId);
+            }
+
+            if (!string.IsNullOrEmpty(input.Keyword))
+            {
+                data = data.Where(x => x.Title.Contains(input.Keyword) || x.Content.Contains(input.Keyword));
+            }
+
+            data = data.Include(x => x.Type).Include(x => x.Author).OrderBy(x => x.PageView)
+                .OrderByDescending(x => x.CreationTime);
+
+            var result = await data.Skip(input.SkipCount).Take(input.MaxResultCount).ToListAsync();
+
+            var count = await data.CountAsync();
+            var likes = await db.BlogLikes.Where(x => result.Select(s => s.Id).Contains(x.BlogId)).Select(x => x.BlogId).ToListAsync();
+
+
+            var dto = mp.Map<List<PageBlogDto>>(data);
+
+            foreach (var d in dto)
+            {
+                d.Like = likes.Count(x => x == d.Id);
+            }
+
+            return new PageResponseDto<PageBlogDto>(count, dto);
+
         }
     }
 }

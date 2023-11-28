@@ -1,4 +1,5 @@
-﻿using Blog.Application.Contract.Blogs.Dto;
+﻿using Blog.Application.Contract.Base;
+using Blog.Application.Contract.Blogs.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,14 @@ namespace Blog.Application.Contract.Blogs
         /// <param name="id"></param>
         /// <returns></returns>
         Task DeleteCommentAsync(Guid id);
+        /// <summary>
+        /// 获取博客推荐信息
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<PageResponseDto<PageBlogDto>> GetBlogListAsync(BlogInput input);
+
+
 
 
     }
