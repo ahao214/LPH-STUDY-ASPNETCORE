@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.VisualBasic;
 using Pomelo.EntityFrameworkCore.MySql.Query.Internal;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -61,7 +62,16 @@ namespace Ahao_Blog.Controllers
             return token;
         }
 
-
+        /// <summary>
+        /// 删除操作
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task DeleteAsync(Guid id)
+        {
+            await _userServer.DeleteAsync(id);
+        }
 
 
 

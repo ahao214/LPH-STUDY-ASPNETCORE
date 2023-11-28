@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -44,6 +45,7 @@ namespace Blog.Application.Users
             // 保存操作
             await dbContext.SaveChangesAsync();
         }
+
         #endregion
 
         #region 登录
@@ -65,5 +67,29 @@ namespace Blog.Application.Users
             return dto;
         }
         #endregion
+
+
+
+        #region 删除用户
+
+
+        public async Task DeleteAsync(Guid id)
+        {
+            var user = await dbContext.Users.FirstOrDefaultAsync(x => x.Id == id);
+            if (user != null)
+            {
+                // 删除用户
+                dbContext.Users.Remove(user);
+                // 保存操作
+                await dbContext.SaveChangesAsync();
+            }
+        }
+
+        #endregion
+
+        public async Task UpdateAsync(UserDto input)
+        {
+
+        }
     }
 }

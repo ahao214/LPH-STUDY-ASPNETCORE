@@ -14,7 +14,23 @@ namespace Blog.Application.Contract.User
         /// </summary>
         /// <returns></returns>
         Task CreateUserAsync(CreateUserDto input);
-
+        /// <summary>
+        /// 登录账号
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         Task<UserDto> LoginAsync(LoginDto input);
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task DeleteAsync(Guid id);
+        /// <summary>
+        /// 编辑用户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task UpdateAsync(UserDto input);
     }
 }
