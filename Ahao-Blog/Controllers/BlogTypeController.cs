@@ -38,5 +38,17 @@ namespace Ahao_Blog.Controllers
             await blogTypeServer.DeleteAsync(id);
         }
 
+        /// <summary>
+        /// 博客分类
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("list")]
+        public async Task<List<BlogTypeDto>> GetListAsync()
+        {
+            return await blogTypeServer.GetListAsync();
+        }
+
+
+
     }
 }
