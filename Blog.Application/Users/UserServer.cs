@@ -17,10 +17,12 @@ namespace Blog.Application.Users
     {
         private readonly BlogDbContext dbContext;
         private readonly IMapper mapper;
-        public UserServer(BlogDbContext db, IMapper mp)
+        private readonly CurrentServer currentServer;
+        public UserServer(BlogDbContext db, IMapper mp, CurrentServer currentServer)
         {
             dbContext = db;
             mapper = mp;
+            this.currentServer = currentServer;
         }
 
         #region 创建用户
@@ -87,9 +89,20 @@ namespace Blog.Application.Users
 
         #endregion
 
-        public async Task UpdateAsync(UserDto input)
+        #region 编辑用户
+        public async Task UpdateAsync(UpdateUserDto user)
         {
+            var userId = currentServer.GetUserId();
+            var result = await dbContext.Users.FirstOrDefaultAsync(x => x.Id == userId);
+            if (result == null)
+                return;
+
+            mapper.Map(user, result);
+            dbContext.Users.Update(result);
+            await dbContext.SaveChangesAsync();
 
         }
+
+        #endregion
     }
 }

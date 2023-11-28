@@ -31,6 +31,6 @@ namespace Blog.Application.Contract.User
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task UpdateAsync(UserDto input);
+        Task UpdateAsync(UpdateUserDto input);
     }
 }

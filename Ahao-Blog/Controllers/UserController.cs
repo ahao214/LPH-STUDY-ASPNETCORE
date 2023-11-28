@@ -73,7 +73,16 @@ namespace Ahao_Blog.Controllers
             await _userServer.DeleteAsync(id);
         }
 
-
+        /// <summary>
+        /// 更新用户信息
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task UpdateAsync(UpdateUserDto input)
+        {
+            await _userServer.UpdateAsync(input);
+        }
 
     }
 }
