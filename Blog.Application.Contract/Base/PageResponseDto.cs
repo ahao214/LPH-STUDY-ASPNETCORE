@@ -12,9 +12,6 @@ namespace Blog.Application.Contract.Base
     /// <typeparam name="T"></typeparam>
     public class PageResponseDto<T>
     {
-        public PageResponseDto()
-        {
-        }
 
         public int Total { get; set; }
 
