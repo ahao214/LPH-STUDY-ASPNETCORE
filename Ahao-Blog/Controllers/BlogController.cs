@@ -81,11 +81,19 @@ namespace Ahao_Blog.Controllers
         [HttpPost("comment")]
         public async Task CreateCommentAsync(CreateCommentDto input)
         {
-            await blogServer.CreateCommentAsync(input); 
+            await blogServer.CreateCommentAsync(input);
         }
 
-
-
+        /// <summary>
+        /// 删除评论
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("comment/{id}")]
+        public async Task DeleteCommentAsync(Guid id)
+        {
+            await blogServer.DeleteCommentAsync(id);
+        }
 
     }
 
