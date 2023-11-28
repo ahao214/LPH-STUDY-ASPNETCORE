@@ -19,11 +19,17 @@ services.AddSwaggerGen();
 
 services.AddApplication();
 
-var configurationSection = configuration.GetSection(nameof
+#region 注入File配置
+var fileOptionsSection = configuration.GetSection(nameof(BlogFileOptions));
+services.Configure<BlogFileOptions>(fileOptionsSection);
+
+#endregion
+
+var JwtOptionsSection = configuration.GetSection(nameof
     (JwtOptions));
 
-services.Configure<JwtOptions>(configurationSection);
-var jwt = configurationSection.Get<JwtOptions>();
+services.Configure<JwtOptions>(JwtOptionsSection);
+var jwt = JwtOptionsSection.Get<JwtOptions>();
 
 
 // 注入方法
@@ -65,4 +71,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
+
+app.UseStaticFiles();
 app.Run();
