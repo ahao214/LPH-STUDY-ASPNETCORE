@@ -5,9 +5,9 @@
         /// <summary>
         /// This can use query's DbContext
         /// </summary>
-        private readonly ExampleDbContext _dbContext;
+        private readonly VideoDbContext _dbContext;
 
-        public ExampleQueryHandler(ExampleDbContext dbContext) => _dbContext = dbContext;
+        public ExampleQueryHandler(VideoDbContext dbContext) => _dbContext = dbContext;
 
         [EventHandler]
         public Task GetListAsync(ExampleGetListQuery command)

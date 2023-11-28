@@ -1,3 +1,6 @@
+using Masa.BuildingBlocks.Data.UoW;
+using Masa.BuildingBlocks.Ddd.Domain.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Services
@@ -9,9 +12,15 @@ var app = builder.Services
         options.DocInclusionPredicate((docName, action) => true);
     })
     .AddEventBus()
-    .AddMasaDbContext<ExampleDbContext>(opt =>
+    .AddMasaDbContext<VideoDbContext>(opt =>
     {
         opt.UseNpgsql();
+    })
+    .AddDomainEventBus(options =>
+    {
+        options.UseEventBus()
+        .UseUoW<VideoDbContext>()
+        .UseRepository<VideoDbContext>();
     })
     .AddAutoInject()
     .AddServices(builder, option => option.MapHttpMethodsForUnmatched = new string[] { "Post" });

@@ -1,10 +1,10 @@
 ﻿namespace Video.Service.DataAccess
 {
-    public class ExampleDbContext : MasaDbContext
+    public class VideoDbContext : MasaDbContext
     {
         //public DbSet<UserEntity> { get; set; }
 
-        public ExampleDbContext(MasaDbContextOptions<ExampleDbContext> options) : base(options)
+        public VideoDbContext(MasaDbContextOptions<VideoDbContext> options) : base(options)
         {
         }
 

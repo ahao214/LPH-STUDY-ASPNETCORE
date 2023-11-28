@@ -5,9 +5,9 @@
         /// <summary>
         /// This use business DbContext
         /// </summary>
-        private readonly ExampleDbContext _dbContext;
+        private readonly VideoDbContext _dbContext;
 
-        public ExampleCommandHandler(ExampleDbContext dbContext) => _dbContext = dbContext;
+        public ExampleCommandHandler(VideoDbContext dbContext) => _dbContext = dbContext;
 
         [EventHandler]
         public Task CreateAsync(CreateExampleCommand command)
