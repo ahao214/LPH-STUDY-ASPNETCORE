@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace JokerBooksManagerBLL.BookBLL
 {
+    /// <summary>
+    /// 业务逻辑层：出版社信息
+    /// </summary>
     public class PublishHouseBLL
     {
         #region 新增出版社
