@@ -2,6 +2,7 @@
 using Blog.Application.Contract.Blogs.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ahao_Blog.Controllers
@@ -59,6 +60,23 @@ namespace Ahao_Blog.Controllers
         {
             return await blogServer.GetAsync(id);
         }
+
+
+        /// <summary>
+        /// 点赞博客
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPut("{id}")]
+        public async Task LikeAsync(Guid id)
+        {
+            await blogServer.LikeAsync(id);
+        }
+
+
+        
+
+
 
     }
 
