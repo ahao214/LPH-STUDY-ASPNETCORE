@@ -40,5 +40,17 @@ namespace Blog.Module
         /// 导航属性用户
         /// </summary>
         public virtual Users? Author { get; set; }
+        /// <summary>
+        /// 点赞人员
+        /// </summary>
+        public virtual List<BlogLikes> BlogLikes { get; set; }
+
+        public Blogs()
+        {
+            BlogLikes = new List<BlogLikes>();
+        }
+
+
+
     }
 }
