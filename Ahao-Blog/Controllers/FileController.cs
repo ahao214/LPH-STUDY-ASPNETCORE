@@ -31,7 +31,7 @@ namespace Ahao_Blog.Controllers
         public async Task<string> UploadAsync(IFormFile file)
         {
             // 限制文件大小
-            if ((file.Length * 1024) * 1024 > options.MaxSize)
+            if (((file.Length * 1024) * 1024) > options.MaxSize)
             {
                 throw new BusinessException("文件超过限制的大小");
             }
