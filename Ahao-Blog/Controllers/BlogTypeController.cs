@@ -1,4 +1,5 @@
-﻿using Blog.Application.Contract.Blogs;
+﻿using Blog.Application.Blogs;
+using Blog.Application.Contract.Blogs;
 using Blog.Application.Contract.Blogs.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,18 @@ namespace Ahao_Blog.Controllers
         public async Task CreateAsync(CreateBlogTypesDto input)
         {
             await blogTypeServer.CreateAsync(input);
+        }
+
+
+        /// <summary>
+        /// 删除博客类型
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task DeleteAsync(Guid id)
+        {
+            await blogTypeServer.DeleteAsync(id);
         }
 
     }

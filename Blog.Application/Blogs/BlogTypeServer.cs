@@ -40,5 +40,17 @@ namespace Blog.Application.Blogs
             // 保存操作
             await db.SaveChangesAsync();
         }
+
+        /// <inheritdoc>
+        public async Task DeleteAsync(Guid id)
+        {
+            var type = await db.BlogTypes.FirstOrDefaultAsync(x => x.Id == id);
+            if(type != null)
+            {
+                db.BlogTypes.Remove(type);
+                await db.SaveChangesAsync();
+            }
+
+        }
     }
 }

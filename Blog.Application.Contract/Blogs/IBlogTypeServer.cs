@@ -9,7 +9,22 @@ namespace Blog.Application.Contract.Blogs
 {
     public interface IBlogTypeServer
     {
+        /// <summary>
+        /// 创建博客类型
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         Task CreateAsync(CreateBlogTypesDto input);
+        /// <summary>
+        /// 删除博客类型
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task DeleteAsync(Guid id);
+
+
+
+
 
     }
 }
