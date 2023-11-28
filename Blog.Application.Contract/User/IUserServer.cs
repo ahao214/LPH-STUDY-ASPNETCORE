@@ -32,5 +32,10 @@ namespace Blog.Application.Contract.User
         /// <param name="input"></param>
         /// <returns></returns>
         Task UpdateAsync(UpdateUserDto input);
+        /// <summary>
+        /// 获取用户
+        /// </summary>
+        /// <returns></returns>
+        Task<UserDto> GetAsync();
     }
 }

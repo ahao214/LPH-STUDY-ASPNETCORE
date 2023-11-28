@@ -4,6 +4,7 @@ using Blog.Application.Contract.User.Dto;
 using Blog.EntityFrameworkCore;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -101,6 +102,17 @@ namespace Blog.Application.Users
             dbContext.Users.Update(result);
             await dbContext.SaveChangesAsync();
 
+        }
+
+        #endregion
+
+        #region 获取用户
+
+        public async Task<UserDto> GetAsync()
+        {
+            var userId = currentServer.GetUserId();
+            var data = await dbContext .Users .FirstOrDefaultAsync(x=>x.Id== userId); var dto = mapper.Map<UserDto>(data);
+            return dto;
         }
 
         #endregion

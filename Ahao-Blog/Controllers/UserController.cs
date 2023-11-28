@@ -83,5 +83,15 @@ namespace Ahao_Blog.Controllers
         {
             await _userServer.UpdateAsync(input);
         }
+
+        /// <summary>
+        /// 获取用户
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<UserDto> GetAsync()
+        {
+            return await _userServer.GetAsync();
+        }
     }
 }
