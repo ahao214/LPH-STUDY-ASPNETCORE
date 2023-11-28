@@ -231,5 +231,12 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
+
+        #region 作者列表
+        private void TsmiAuthorList_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
