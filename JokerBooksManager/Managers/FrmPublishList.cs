@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
@@ -45,7 +38,7 @@ namespace JokerBooksManager.Managers
         /// <param name="iReaderType"></param>
         private void ShowForm(int iReaderType)
         {
-            FrmBookTypeAdd frm = SingleForm<FrmBookTypeAdd>.CreateInstance();
+            FrmPublishAdd frm = SingleForm<FrmPublishAdd>.CreateInstance();
 
             frm.MdiParent = MdiParent;
             frm.Tag = new FormInfoModel
@@ -59,19 +52,12 @@ namespace JokerBooksManager.Managers
         #endregion
 
 
-        #region 窗体加载
-
-        private void FrmBookTypeList_Load(object sender, EventArgs e)
-        {
-            LoadBookType();
-        }
-
-        #endregion
+        
 
         #region DataGrid加载数据
         private void LoadBookType()
         {
-            DgvBookType.DataSource = bll.GetBookTypes();
+            DgvPublishHouse.DataSource = bll.GetPublishHouses();
         }
         #endregion
 
@@ -85,43 +71,18 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        private void DgvBookType_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // 获取行
-            int row = e.RowIndex;
-            // 获取列
-            int col = e.ColumnIndex;
-            BookType type = DgvBookType.Rows[row].DataBoundItem as BookType;
-            if (!(DgvBookType.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
-                return;
-            // 拿到单元格的值
-            string cellValue = linkCell.FormattedValue.ToString();
-
-            switch (cellValue)
-            {
-                case CommConst.CharUpdate:
-                    ShowForm(type.BookTypeId); break;
-                case CommConst.CharDelete:
-                    //删除
-                    DelBookType(type.BookTypeId);
-                    break;
-                default:
-                    break;
-            }
-        }
-
 
         #region 执行删除
         /// <summary>
         /// 执行删除
         /// </summary>
         /// <param name="iBookTypeId">出版社ID</param>
-        private void DelBookType(int iBookTypeId)
+        private void DelPublishHouse(int id)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
 
-            bool res = bll.DeleteBookType(iBookTypeId);
+            bool res = bll.DeletePublishHouse(id);
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
@@ -135,5 +96,39 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
+        #region 窗体加载
+        private void FrmPublishList_Load(object sender, EventArgs e)
+        {
+            LoadBookType();
+        }
+
+
+
+        #endregion
+
+        private void DgvPublishHouse_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // 获取行
+            int row = e.RowIndex;
+            // 获取列
+            int col = e.ColumnIndex;
+            PublishHouse type = DgvPublishHouse.Rows[row].DataBoundItem as PublishHouse;
+            if (!(DgvPublishHouse.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
+                return;
+            // 拿到单元格的值
+            string cellValue = linkCell.FormattedValue.ToString();
+
+            switch (cellValue)
+            {
+                case CommConst.CharUpdate:
+                    ShowForm(type.PublishId); break;
+                case CommConst.CharDelete:
+                    //删除
+                    DelPublishHouse(type.PublishId);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
