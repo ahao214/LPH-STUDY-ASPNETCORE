@@ -39,6 +39,17 @@ namespace Ahao_Blog.Controllers
         }
 
         /// <summary>
+        /// 更新博客类型
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task UpdateAsync(UpdateBlogTypeDto input)
+        {
+            await blogTypeServer.UpdateAsync(input);
+        }
+
+        /// <summary>
         /// 博客分类
         /// </summary>
         /// <returns></returns>
