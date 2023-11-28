@@ -66,5 +66,16 @@ namespace Blog.Application.Blogs
             await db.SaveChangesAsync();
 
         }
+
+        /// <summary>
+        /// 博客分类
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<BlogTypeDto>> GetListAsync()
+        {
+            var data = await db.BlogTypes.ToListAsync();
+            var dto = mp.Map<List<BlogTypeDto>>(data);
+            return dto;
+        }
     }
 }

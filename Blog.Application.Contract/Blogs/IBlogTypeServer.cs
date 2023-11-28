@@ -27,8 +27,11 @@ namespace Blog.Application.Contract.Blogs
         /// <param name="input"></param>
         /// <returns></returns>
         Task UpdateAsync(UpdateBlogTypeDto input);
-
-
+        /// <summary>
+        /// 博客分类
+        /// </summary>
+        /// <returns></returns>
+        Task<List<BlogTypeDto>> GetListAsync();  
 
     }
 }
