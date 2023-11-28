@@ -1,9 +1,11 @@
-﻿namespace Video.Service.Domain.Users
+﻿using Masa.BuildingBlocks.Ddd.Domain.Entities.Full;
+
+namespace Video.Service.Domain.System.Aggregates
 {
     /// <summary>
     /// 角色表
     /// </summary>
-    public class Roles : Entity<int>
+    public class Roles : FullAggregateRoot<int,long>
     {
         /// <summary>
         /// 角色排序
@@ -43,31 +45,31 @@
         /// <summary>
         /// 默认角色不允许删除
         /// </summary>
-        public bool IsDefault { get => isDefault;private set => isDefault = value; }
+        public bool IsDefault { get => isDefault; private set => isDefault = value; }
         /// <summary>
         /// 是否正常使用的
         /// </summary>
-        public bool IsActive { get => isActive;private set => isActive = value; }
+        public bool IsActive { get => isActive; private set => isActive = value; }
 
 
         public Roles()
         {
-                
+
         }
 
         public Roles(int sort, string name, string description, bool isDefault)
         {
             UpdateName(name);
-            Sort = sort;            
+            Sort = sort;
             Description = description;
             IsDefault = isDefault;
-            IsActive = true;           
+            IsActive = true;
         }
 
 
         public void UpdateName(string name)
         {
-            if(name.IsNullOrWhiteSpace())
+            if (name.IsNullOrWhiteSpace())
             {
                 throw new UserFriendlyException("角色名称不能为空");
             }
