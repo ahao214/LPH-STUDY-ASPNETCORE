@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManager.Comm;
+using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
 using Sunny.UI;
@@ -95,6 +96,7 @@ namespace JokerBooksManager.Managers
         {
             FormFit();
             LoadInfo();
+            LoadTvBookType();
         }
 
         #endregion
@@ -186,5 +188,39 @@ namespace JokerBooksManager.Managers
             frmBookTypeList.Show();
         }
         #endregion
+
+        #region 加载树形菜单(图书分类)
+
+        /// <summary>
+        /// 加载树形菜单(图书分类)
+        /// </summary>
+        private void LoadTvBookType()
+        {
+            BookTypeBLL bll = new BookTypeBLL();
+            List<BookType> lstBookTypes = bll.GetBookTypes();
+            // 先添加根节点
+            TreeNode rootNode = new TreeNode
+            {
+                Name = "RootBookType",
+                Text = "图书分类"
+            };
+            TvBookType.Nodes .Add (rootNode);
+            // 然后在根的节点处添加我们的分类
+            foreach (BookType bt in lstBookTypes)
+            {
+                TreeNode tn = new TreeNode
+                {
+                    Name = "BookType" + bt.BookTypeId.ToString(),
+                    Text = bt.BookTypeName
+                };
+                rootNode.Nodes.Add(tn);
+            }
+            TvBookType.ExpandAll();
+
+        }
+
+        #endregion
+
+
     }
 }
