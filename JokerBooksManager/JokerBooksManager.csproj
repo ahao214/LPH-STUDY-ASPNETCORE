@@ -62,6 +62,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmAuthorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmAuthorList.Designer.cs">
+      <DependentUpon>FrmAuthorList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\FrmBookTypeAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmAuthorList.resx">
+      <DependentUpon>FrmAuthorList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmBookTypeAdd.resx">
       <DependentUpon>FrmBookTypeAdd.cs</DependentUpon>
