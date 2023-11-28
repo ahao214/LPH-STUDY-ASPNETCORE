@@ -102,7 +102,7 @@ namespace Ahao_Blog.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpGet("list")]
-        public async Task<PageResponseDto<PageBlogDto>> GetListAsync(BlogInput input)
+        public async Task<PageResponseDto<PageBlogDto>> GetListAsync([FromQuery]BlogInput input)
         {
            return await blogServer.GetBlogListAsync(input);
         }
