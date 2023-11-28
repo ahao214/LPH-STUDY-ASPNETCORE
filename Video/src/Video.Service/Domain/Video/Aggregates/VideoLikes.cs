@@ -5,9 +5,8 @@ namespace Video.Service.Domain.Video.Aggregates
     /// <summary>
     /// 点赞表
     /// </summary>
-    public class VideoLikes
+    public class VideoLikes : Entity<long>
     {
-        public long Id { get; set; }
         /// <summary>
         /// 视频ID
         /// </summary>
