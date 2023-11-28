@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Blog.Application.Contract.Blogs;
 using Blog.Application.Contract.Blogs.Dto;
+using Blog.Application.Users;
 using Blog.EntityFrameworkCore;
+using Blog.Module;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -117,6 +119,28 @@ namespace Blog.Application.Blogs
             dto.Likes = await db.BlogLikes.LongCountAsync(x => x.BlogId == id);
 
             return dto;
+        }
+
+        /// <summary>
+        /// 博客点赞
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task LikeAsync(Guid id)
+        {
+            var userId = curServer.GetUserId();
+            var data = await db.BlogLikes.FirstOrDefaultAsync(x => x.BlogId == id && x.UserId == userId);
+            if (data == null)
+            {
+                var like = new BlogLikes()
+                {
+                    UserId = userId,
+                    BlogId = id,
+                    CreationTime = DateTime.Now,
+                };
+                await db.BlogLikes.AddAsync(like);
+                await db.SaveChangesAsync();
+            }
         }
     }
 }

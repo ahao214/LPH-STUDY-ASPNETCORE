@@ -36,5 +36,12 @@ namespace Blog.Application.Contract.Blogs
         /// <returns></returns>
         Task<BlogDto> GetAsync(Guid id);
 
+        /// <summary>
+        /// 博客点赞
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task LikeAsync(Guid id);
+
     }
 }
