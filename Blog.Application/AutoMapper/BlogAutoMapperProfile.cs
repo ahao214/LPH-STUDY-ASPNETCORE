@@ -12,7 +12,7 @@ namespace Blog.Application.AutoMapper
     {
         public BlogAutoMapperProfile()
         {
-            CreateMap<CreateBlogsDto, Module.Blogs>();
+            CreateMap<CreateBlogsDto, Module.Blogs>().ReverseMap();
 
             CreateMap<CreateBlogTypesDto, Module.BlogTypes>();
 
