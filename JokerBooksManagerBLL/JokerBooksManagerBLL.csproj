@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BookBLL\BookTypeBLL.cs" />
     <Compile Include="BookBLL\ManagerBLL.cs" />
+    <Compile Include="BookBLL\PublishHouseBLL.cs" />
     <Compile Include="BookBLL\ReaderInfoBLL.cs" />
     <Compile Include="BookBLL\ReaderTypeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

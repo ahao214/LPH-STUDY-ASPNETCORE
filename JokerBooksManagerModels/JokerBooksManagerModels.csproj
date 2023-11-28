@@ -44,6 +44,7 @@
     <Compile Include="Model\BookType.cs" />
     <Compile Include="Model\FormInfoModel.cs" />
     <Compile Include="Model\Manager.cs" />
+    <Compile Include="Model\PublishHouse.cs" />
     <Compile Include="Model\ReaderInfo.cs" />
     <Compile Include="Model\ReaderInfoExpend.cs" />
     <Compile Include="Model\ReaderType.cs" />
