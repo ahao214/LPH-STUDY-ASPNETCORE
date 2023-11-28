@@ -69,6 +69,7 @@ namespace Blog.Application.Blogs
             }
         }
 
+
         /// <summary>
         /// 更新博客
         /// </summary>
@@ -86,9 +87,33 @@ namespace Blog.Application.Blogs
             }
             // 将Input的数据映射到DATA
             mp.Map(input, data);
-            
+
             db.Blogs.Update(data);
             await db.SaveChangesAsync();
+        }
+
+
+        /// <summary>
+        /// 获取博客详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<BlogDto> GetAsync(Guid id)
+        {
+            var data = await db.Blogs.Where(x => x.Id == id)
+                .AsSplitQuery() // 拆分查询
+                .Include(x => x.Type) // 导航属性查询类型信息
+                .Include(x => x.Author) // 导航属性查询用户信息
+                .FirstOrDefaultAsync();
+            if (data == null)
+            {
+                throw new BusinessException("博客不存在", 404);
+            }
+
+            var dto = mp.Map<BlogDto>(data);
+            return dto;
+
         }
     }
 }

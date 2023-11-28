@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Blog.Application.Contract.Base;
+using Blog.Application.Contract.User.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +11,7 @@ namespace Blog.Application.Contract.Blogs.Dto
     /// <summary>
     /// 博客通用类型
     /// </summary>
-    public  class BlogDto
+    public class BlogDto : EntityDto
     {
         /// <summary>
         /// 标题
@@ -23,6 +25,19 @@ namespace Blog.Application.Contract.Blogs.Dto
         /// 文章类型ID
         /// </summary>
         public Guid TypeId { get; set; }
-       
+        /// <summary>
+        /// 作者ID
+        /// </summary>
+        public Guid AuthorId { get; set; }
+
+        /// <summary>
+        /// 导航属性博客类型
+        /// </summary>
+        public BlogTypeDto? Type { get; set; }
+        /// <summary>
+        /// 导航属性用户
+        /// </summary>
+        public BlogUserDto? Author { get; set; }
+
     }
 }

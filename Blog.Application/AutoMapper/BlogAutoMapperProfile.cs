@@ -16,6 +16,7 @@ namespace Blog.Application.AutoMapper
 
             CreateMap<CreateBlogTypesDto, Module.BlogTypes>();
 
+            CreateMap<BlogTypeDto, Module.BlogTypes>();
         }
 
     }

@@ -49,6 +49,16 @@ namespace Ahao_Blog.Controllers
             await blogServer.DeleteAsync(id);
         }
 
+        /// <summary>
+        /// 获取博客详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<BlogDto> GetAsync(Guid id)
+        {
+            return await blogServer.GetAsync(id);
+        }
 
     }
 

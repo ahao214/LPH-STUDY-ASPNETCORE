@@ -25,7 +25,7 @@ namespace Blog.Application
             services.AddTransient<IBlogServer, BlogServer>();
             // 注入BlogType服务
             services.AddTransient<IBlogTypeServer, BlogTypeServer>();
-
+            
 
             // 注入封装的EFCore服务
             services.AddEntityFrameworkCore();
