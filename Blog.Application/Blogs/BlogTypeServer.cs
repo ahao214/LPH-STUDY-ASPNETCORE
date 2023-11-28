@@ -45,11 +45,25 @@ namespace Blog.Application.Blogs
         public async Task DeleteAsync(Guid id)
         {
             var type = await db.BlogTypes.FirstOrDefaultAsync(x => x.Id == id);
-            if(type != null)
+            if (type != null)
             {
                 db.BlogTypes.Remove(type);
                 await db.SaveChangesAsync();
             }
+
+        }
+
+        /// <summary>
+        /// 更新博客类型
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task UpdateAsync(UpdateBlogTypeDto input)
+        {
+            var data = await db.BlogTypes.FirstOrDefaultAsync(x => x.Id == input.Id);
+            data.Name = input.Name;
+            db.BlogTypes.Update(data);
+            await db.SaveChangesAsync();
 
         }
     }
