@@ -20,8 +20,9 @@ namespace JokerBooksManager.Managers
     /// 出版社列表
     /// </summary>
     public partial class FrmPublishList : UIForm
-    {
-        private readonly BookTypeBLL bll = new BookTypeBLL();
+    {        
+        private readonly PublishHouseBLL bll = new PublishHouseBLL();
+     
         public FrmPublishList()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace JokerBooksManager.Managers
 
 
 
-        #region 新增图书类别
+        #region 新增出版社
         private void BtnAddNew_Click(object sender, EventArgs e)
         {
             ShowForm(0);
@@ -37,9 +38,9 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        #region 打开图书类别窗体
+        #region 打开出版社窗体
         /// <summary>
-        /// 打开图书类别窗体
+        /// 打开出版社窗体
         /// </summary>
         /// <param name="iReaderType"></param>
         private void ShowForm(int iReaderType)
@@ -114,7 +115,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 执行删除
         /// </summary>
-        /// <param name="iBookTypeId">图书类别ID</param>
+        /// <param name="iBookTypeId">出版社ID</param>
         private void DelBookType(int iBookTypeId)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
