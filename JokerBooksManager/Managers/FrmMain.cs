@@ -204,7 +204,7 @@ namespace JokerBooksManager.Managers
                 Name = "RootBookType",
                 Text = "图书分类"
             };
-            TvBookType.Nodes .Add (rootNode);
+            TvBookType.Nodes.Add(rootNode);
             // 然后在根的节点处添加我们的分类
             foreach (BookType bt in lstBookTypes)
             {
@@ -219,8 +219,17 @@ namespace JokerBooksManager.Managers
 
         }
 
+
         #endregion
 
+        #region 出版社列表
+        private void TsmiPublishList_Click(object sender, EventArgs e)
+        {
+            FrmPublishList frmPublishList = SingleForm<FrmPublishList>.CreateInstance();
+            frmPublishList.MdiParent = MdiParent;
+            frmPublishList.Show();
+        }
 
+        #endregion
     }
 }

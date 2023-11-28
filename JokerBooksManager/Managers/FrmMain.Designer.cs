@@ -46,6 +46,8 @@
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
+            this.TsmiPublish = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiPublishList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -94,7 +96,8 @@
             this.TsmiSysManage,
             this.TsmiReaderManager,
             this.TsmiWindowList,
-            this.TsmiBookTypeManager});
+            this.TsmiBookTypeManager,
+            this.TsmiPublish});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
@@ -192,6 +195,7 @@
             // 
             // TvBookType
             // 
+            this.TvBookType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TvBookType.Dock = System.Windows.Forms.DockStyle.Left;
             this.TvBookType.FillColor = System.Drawing.Color.White;
             this.TvBookType.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
@@ -204,12 +208,31 @@
             this.TvBookType.Name = "TvBookType";
             this.TvBookType.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TvBookType.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TvBookType.ShowLines = true;
+            this.TvBookType.ShowNodeToolTips = true;
             this.TvBookType.ShowText = false;
             this.TvBookType.Size = new System.Drawing.Size(294, 898);
             this.TvBookType.Style = Sunny.UI.UIStyle.Green;
             this.TvBookType.TabIndex = 3;
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TsmiPublish
+            // 
+            this.TsmiPublish.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiPublishList});
+            this.TsmiPublish.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiPublish.Name = "TsmiPublish";
+            this.TsmiPublish.Size = new System.Drawing.Size(140, 28);
+            this.TsmiPublish.Text = "出版社信息";
+            // 
+            // TsmiPublishList
+            // 
+            this.TsmiPublishList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiPublishList.Name = "TsmiPublishList";
+            this.TsmiPublishList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiPublishList.Text = "出版社信息列表";
+            this.TsmiPublishList.Click += new System.EventHandler(this.TsmiPublishList_Click);
             // 
             // FrmMain
             // 
@@ -258,5 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiBookTypeManager;
         private System.Windows.Forms.ToolStripMenuItem TsmiBookTypeList;
         private Sunny.UI.UITreeView TvBookType;
+        private System.Windows.Forms.ToolStripMenuItem TsmiPublish;
+        private System.Windows.Forms.ToolStripMenuItem TsmiPublishList;
     }
 }
