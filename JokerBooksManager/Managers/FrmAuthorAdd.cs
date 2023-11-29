@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using JokerBooksManagerComm.Comm;
@@ -31,35 +22,35 @@ namespace JokerBooksManager.Managers
         /// </summary>
         private FormInfoModel formInfoModel = new FormInfoModel();
         /// <summary>
-        /// 出版社ID
+        /// 作者ID
         /// </summary>
-        private int publishId = 0;
+        private int authorId = 0;
         /// <summary>
-        /// 存放原始的出版社
+        /// 存放原始的作者名字
         /// </summary>
-        private string oldPublishName = string.Empty;
+        private string oldAuthorName = string.Empty;
 
-        private PublishHouseBLL bll = new PublishHouseBLL();
-
-
+        private AuthorBLL bll = new AuthorBLL();
 
 
 
-        #region 添加或修改出版社信息
+
+
+        #region 添加或修改作者信息
         /// <summary>
-        /// 添加或修改出版社信息
+        /// 添加或修改作者信息
         /// </summary>
         /// <param name="type"></param>
-        private void AddOrUpdate(PublishHouse publish)
+        private void AddOrUpdate(Author author)
         {
             bool bRes;
-            if (publishId == 0) // 添加
+            if (authorId == 0) // 添加
             {
-                bRes = bll.AddPublishHouse(publish);
+                bRes = bll.AddAuthor(author);
             }
             else // 修改
             {
-                bRes = bll.UpdatePublishHouse(publish);
+                bRes = bll.UpdateAuthor(author);
             }
             if (bRes)
             {
@@ -81,13 +72,13 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 验证作者名称是否存在
         /// </summary>
-        /// <param name="publishName">出版社名称</param>
+        /// <param name="authorName">作者名称</param>
         /// <returns>True:存在 False：不存在</returns>
-        private bool CheckAuthorName(string publishName)
+        private bool CheckAuthorName(string authorName)
         {
-            if (publishId == 0 || (publishId > 0 && oldPublishName != publishName))
+            if (authorId == 0 || (authorId > 0 && oldAuthorName != authorName))
             {
-                if (bll.IsExistPublishHouse(publishName))
+                if (bll.IsExistAuthor(authorName))
                 {
                     CommMsgBox.MsgBoxCaveat(CommConst.IsExistsInfo);
                     return true;
@@ -105,11 +96,11 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 输入验证
         /// </summary>
-        /// <param name="publishName">出版社名称</param>
+        /// <param name="authorName">作者名称</param>
         /// <returns>True:通过 False：不通过</returns>
-        private bool CheckInput(string publishName)
+        private bool CheckInput(string authorName)
         {
-            if (publishName.Length == 0 || string.IsNullOrEmpty(publishName))
+            if (authorName.Length == 0 || string.IsNullOrEmpty(authorName))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
@@ -128,16 +119,16 @@ namespace JokerBooksManager.Managers
                 formInfoModel = Tag as FormInfoModel;
                 if (!(formInfoModel is null))
                 {
-                    publishId = formInfoModel.KeyId;
+                    authorId = formInfoModel.KeyId;
                 }
             }
-            if (publishId > 0)
+            if (authorId > 0)
             {
-                PublishHouse publishHouse = bll.GetPublishHouseById(publishId);
-                if (publishHouse is null)
+                Author author = bll.GetAuthorById(authorId);
+                if (author is null)
                     return;
-                oldPublishName = TxtAuthorName.Text = publishHouse.PublishName;
-                TxtRemark.Text = publishHouse.Remark;
+                oldAuthorName = TxtAuthorName.Text = author.AuthorName;
+                TxtRemark.Text = author.Remark;
 
                 Text = CommConst.CharUpdateBookType;
             }
@@ -178,23 +169,23 @@ namespace JokerBooksManager.Managers
             {
                 return;
             }
-            // 封装 PublishHouse 信息            
-            PublishHouse publishHouse = new PublishHouse
+            // 封装 Author 信息            
+            Author author = new Author
             {
-                PublishId = publishId,
-                PublishName = authorName,
+                AuthorId = authorId,
+                AuthorName = authorName,
                 Remark = remark
             };
             // 添加数据到数据库
-            AddOrUpdate(publishHouse);
-        } 
+            AddOrUpdate(author);
+        }
         #endregion
 
         #region 窗体加载
         private void FrmAuthorAdd_Load(object sender, EventArgs e)
         {
             InitialAddOrUpdate();
-        } 
+        }
         #endregion
     }
 }
