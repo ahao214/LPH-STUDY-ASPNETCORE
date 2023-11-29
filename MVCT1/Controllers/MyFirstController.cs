@@ -17,6 +17,8 @@ namespace MVCT1.Controllers
         public ActionResult Login()
         {
             string name = "jack";
+            ViewData["name"] = name;
+
             return View();
         }
     }
