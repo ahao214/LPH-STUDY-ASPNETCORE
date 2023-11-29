@@ -1,4 +1,5 @@
 using Newtonsoft.Json.Serialization;
+using WebAPI.Filter;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,12 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    // 设置对象类型参数默认值
+    options.SchemaFilter<DefaultValueSearchFilter>();
+
+});
 
 var app = builder.Build();
 
