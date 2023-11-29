@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <DataGrid AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  RowHeaderWidth="0"
+                  IsReadOnly="True"
+                  Margin="30" 
+                  ColumnWidth="*"
+                  ItemsSource="{Binding MyDataSource}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="姓名" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="年级" Binding="{Binding Grade}"/>
+                <DataGridTextColumn Header="专业" Binding="{Binding Major}"/>
+                <DataGridTextColumn Header="年龄" Binding="{Binding Age}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
 
     </Grid>
 </Window>

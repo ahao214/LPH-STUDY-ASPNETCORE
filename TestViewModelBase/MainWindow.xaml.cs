@@ -19,6 +19,10 @@ namespace TestViewModelBase
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainWindowViewModel();
+
+
         }
     }
 }
