@@ -30,7 +30,7 @@
         {
             this.TxtRemark = new Sunny.UI.UITextBox();
             this.lblRemark = new Sunny.UI.UILabel();
-            this.TxtPublishName = new Sunny.UI.UITextBox();
+            this.TxtAuthorName = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.BtnOk = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
@@ -72,30 +72,30 @@
             this.lblRemark.Text = "备注";
             this.lblRemark.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtPublishName
+            // TxtAuthorName
             // 
-            this.TxtPublishName.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtPublishName.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtPublishName.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtPublishName.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtPublishName.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtPublishName.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtPublishName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtPublishName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.TxtPublishName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtPublishName.Location = new System.Drawing.Point(387, 118);
-            this.TxtPublishName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtPublishName.MinimumSize = new System.Drawing.Size(1, 16);
-            this.TxtPublishName.Name = "TxtPublishName";
-            this.TxtPublishName.Padding = new System.Windows.Forms.Padding(5);
-            this.TxtPublishName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtPublishName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtPublishName.ShowText = false;
-            this.TxtPublishName.Size = new System.Drawing.Size(150, 32);
-            this.TxtPublishName.Style = Sunny.UI.UIStyle.Green;
-            this.TxtPublishName.TabIndex = 20;
-            this.TxtPublishName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TxtPublishName.Watermark = "";
+            this.TxtAuthorName.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtAuthorName.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtAuthorName.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtAuthorName.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtAuthorName.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtAuthorName.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtAuthorName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtAuthorName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtAuthorName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtAuthorName.Location = new System.Drawing.Point(387, 118);
+            this.TxtAuthorName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtAuthorName.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtAuthorName.Name = "TxtAuthorName";
+            this.TxtAuthorName.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtAuthorName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtAuthorName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtAuthorName.ShowText = false;
+            this.TxtAuthorName.Size = new System.Drawing.Size(150, 32);
+            this.TxtAuthorName.Style = Sunny.UI.UIStyle.Green;
+            this.TxtAuthorName.TabIndex = 20;
+            this.TxtAuthorName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtAuthorName.Watermark = "";
             // 
             // uiLabel1
             // 
@@ -129,6 +129,7 @@
             this.BtnOk.TabIndex = 18;
             this.BtnOk.Text = "确定";
             this.BtnOk.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // BtnClose
             // 
@@ -160,7 +161,7 @@
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.TxtRemark);
             this.Controls.Add(this.lblRemark);
-            this.Controls.Add(this.TxtPublishName);
+            this.Controls.Add(this.TxtAuthorName);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnClose);
@@ -170,6 +171,7 @@
             this.Text = "新增作者";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
+            this.Load += new System.EventHandler(this.FrmAuthorAdd_Load);
             this.ResumeLayout(false);
 
         }
@@ -178,7 +180,7 @@
 
         private Sunny.UI.UITextBox TxtRemark;
         private Sunny.UI.UILabel lblRemark;
-        private Sunny.UI.UITextBox TxtPublishName;
+        private Sunny.UI.UITextBox TxtAuthorName;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIButton BtnOk;
         private Sunny.UI.UIButton BtnClose;

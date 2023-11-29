@@ -35,13 +35,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnClose = new Sunny.UI.UIButton();
             this.BtnAddNew = new Sunny.UI.UIButton();
-            this.DgvPublishHouse = new Sunny.UI.UIDataGridView();
+            this.DgvAuthor = new Sunny.UI.UIDataGridView();
             this.AuthorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvPublishHouse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAuthor)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnClose
@@ -90,12 +90,12 @@
             this.BtnAddNew.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.BtnAddNew.Click += new System.EventHandler(this.BtnAddNew_Click);
             // 
-            // DgvPublishHouse
+            // DgvAuthor
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvPublishHouse.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvPublishHouse.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvPublishHouse.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DgvAuthor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvAuthor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvAuthor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -103,10 +103,10 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvPublishHouse.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvPublishHouse.ColumnHeadersHeight = 32;
-            this.DgvPublishHouse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DgvPublishHouse.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvAuthor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvAuthor.ColumnHeadersHeight = 32;
+            this.DgvAuthor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvAuthor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AuthorId,
             this.AuthorName,
             this.Remark,
@@ -119,13 +119,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvPublishHouse.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvPublishHouse.EnableHeadersVisualStyles = false;
-            this.DgvPublishHouse.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DgvPublishHouse.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(199)))), ((int)(((byte)(69)))));
-            this.DgvPublishHouse.Location = new System.Drawing.Point(3, 38);
-            this.DgvPublishHouse.Name = "DgvPublishHouse";
-            this.DgvPublishHouse.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.DgvAuthor.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvAuthor.EnableHeadersVisualStyles = false;
+            this.DgvAuthor.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DgvAuthor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(199)))), ((int)(((byte)(69)))));
+            this.DgvAuthor.Location = new System.Drawing.Point(3, 38);
+            this.DgvAuthor.Name = "DgvAuthor";
+            this.DgvAuthor.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -133,23 +133,24 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvPublishHouse.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DgvPublishHouse.RowHeadersWidth = 62;
+            this.DgvAuthor.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvAuthor.RowHeadersWidth = 62;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.DgvPublishHouse.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DgvPublishHouse.RowTemplate.Height = 30;
-            this.DgvPublishHouse.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvPublishHouse.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.DgvPublishHouse.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.DgvPublishHouse.SelectedIndex = -1;
-            this.DgvPublishHouse.Size = new System.Drawing.Size(926, 365);
-            this.DgvPublishHouse.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvPublishHouse.Style = Sunny.UI.UIStyle.Green;
-            this.DgvPublishHouse.TabIndex = 11;
+            this.DgvAuthor.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvAuthor.RowTemplate.Height = 30;
+            this.DgvAuthor.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvAuthor.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.DgvAuthor.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.DgvAuthor.SelectedIndex = -1;
+            this.DgvAuthor.Size = new System.Drawing.Size(926, 365);
+            this.DgvAuthor.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvAuthor.Style = Sunny.UI.UIStyle.Green;
+            this.DgvAuthor.TabIndex = 11;
+            this.DgvAuthor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAuthor_CellContentClick);
             // 
             // AuthorId
             // 
@@ -207,7 +208,7 @@
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnAddNew);
-            this.Controls.Add(this.DgvPublishHouse);
+            this.Controls.Add(this.DgvAuthor);
             this.Name = "FrmAuthorList";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.Style = Sunny.UI.UIStyle.Green;
@@ -215,7 +216,7 @@
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
             this.Load += new System.EventHandler(this.FrmAuthorList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvPublishHouse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAuthor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,7 +225,7 @@
 
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIButton BtnAddNew;
-        private Sunny.UI.UIDataGridView DgvPublishHouse;
+        private Sunny.UI.UIDataGridView DgvAuthor;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuthorId;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuthorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Remark;
