@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Author.cs" />
+    <Compile Include="Model\BookInfo.cs" />
     <Compile Include="Model\BookType.cs" />
     <Compile Include="Model\FormInfoModel.cs" />
     <Compile Include="Model\Manager.cs" />
