@@ -28,5 +28,14 @@ namespace WebAPI.Controllers
 
         }
 
+
+        [HttpPost]
+        public string GetSearch(SearchReq input)
+        {
+            return "ok" + input.Name;
+        }
+
+
+
     }
 }
