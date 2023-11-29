@@ -26,6 +26,12 @@ builder.Services.AddSwaggerGen(options =>
 
 });
 
+// 添加跨域策略
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", opt => opt.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,5 +46,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// 使用跨域策略
+app.UseCors("CorsPolicy");
 
 app.Run();
