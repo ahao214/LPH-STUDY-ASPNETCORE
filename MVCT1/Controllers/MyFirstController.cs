@@ -37,6 +37,7 @@ namespace MVCT1.Controllers
         }
 
         // 使用passName 给前端传值
+        [HttpPost]
         public ActionResult Detail(string passName)
         {
             
