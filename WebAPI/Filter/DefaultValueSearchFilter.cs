@@ -22,6 +22,16 @@ namespace WebAPI.Filter
                 {
                     property.Value.Default = new OpenApiString("");
                 }
+
+                if (property.Key == "pageIndex")
+                {
+                    property.Value.Default = new OpenApiInteger(1);
+                }
+                else if (property.Key == "pageSize")
+                {
+                    property.Value.Default = new OpenApiInteger(10);
+                }
+
             }
 
 
