@@ -22,5 +22,16 @@ namespace MVCT1.Controllers
             TempData["msg"] = "tempdata跨Action传递数据";
             return View();
         }
+
+
+       public ActionResult EditUser()
+        {
+
+
+            return View();
+        }
+
+
+
     }
 }
