@@ -129,6 +129,7 @@
             this.BtnOk.TabIndex = 12;
             this.BtnOk.Text = "确定";
             this.BtnOk.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
             // BtnClose
             // 
@@ -151,6 +152,7 @@
             this.BtnClose.TabIndex = 11;
             this.BtnClose.Text = "关闭";
             this.BtnClose.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // FrmPublishAdd
             // 

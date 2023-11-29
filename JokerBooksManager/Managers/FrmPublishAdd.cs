@@ -28,7 +28,7 @@ namespace JokerBooksManager.Managers
         /// 存放原始的出版社
         /// </summary>
         private string oldPublishName = string.Empty;
-        
+
         private PublishHouseBLL bll = new PublishHouseBLL();
 
 
@@ -48,7 +48,7 @@ namespace JokerBooksManager.Managers
                 bRes = bll.AddPublishHouse(publish);
             }
             else // 修改
-            {                
+            {
                 bRes = bll.UpdatePublishHouse(publish);
             }
             if (bRes)
@@ -77,7 +77,7 @@ namespace JokerBooksManager.Managers
         {
             if (publishId == 0 || (publishId > 0 && oldPublishName != publishName))
             {
-                if (bll.IsExistPublishHouse (publishName))
+                if (bll.IsExistPublishHouse(publishName))
                 {
                     CommMsgBox.MsgBoxCaveat(CommConst.IsExistsInfo);
                     return true;
@@ -140,15 +140,18 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        #region 关闭窗体
-        private void BtnClose_Click(object sender, EventArgs e)
+
+
+
+
+
+
+        #region 窗体加载
+        private void FrmPublishAdd_Load(object sender, EventArgs e)
         {
-            this.Close();
+            InitialAddOrUpdate();
         }
-
         #endregion
-
-        
 
         #region 确定事件(新增或修改图书)
         /// <summary>
@@ -156,6 +159,7 @@ namespace JokerBooksManager.Managers
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+
         private void BtnOk_Click(object sender, EventArgs e)
         {
             string publishName = TxtPublishName.Text.Trim();
@@ -181,11 +185,13 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
-        #region 窗体加载
-        private void FrmPublishAdd_Load(object sender, EventArgs e)
+        #region 关闭窗体
+
+        private void BtnClose_Click(object sender, EventArgs e)
         {
-            InitialAddOrUpdate();
-        } 
+            this.Close();
+        }
+
         #endregion
     }
 }
