@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCT1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,10 +25,21 @@ namespace MVCT1.Controllers
         }
 
 
-       public ActionResult EditUser()
+        public ActionResult EditUser()
         {
+            using (FreshLiveDBEntities db = new FreshLiveDBEntities())
+            {
+                ViewBag.Product = db.ProductClass.ToList();
+            }
+            
 
+            return View();
+        }
 
+        // 使用passName 给前端传值
+        public ActionResult Detail(string passName)
+        {
+            
             return View();
         }
 

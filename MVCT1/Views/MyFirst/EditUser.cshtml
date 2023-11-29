@@ -11,7 +11,21 @@
     <title>EditUser</title>
 </head>
 <body>
-    <div> 
+    <div>
+        <form action="/MyFirst/Detail" method="post">
+            姓名：<input type="text" name="passName" value="" />
+            <input type="submit" name="" />
+        </form>
+    </div>
+    <div>
+        <ul>
+            @foreach (var item in ViewBag.Product)
+            {
+                <li>
+                    @item.Name
+                </li>
+            }
+        </ul>
     </div>
 </body>
 </html>
