@@ -9,7 +9,9 @@ using System.Windows.Media.Imaging;
 
 namespace TestStepStatus
 {
-
+    /// <summary>
+    /// 步骤转换器
+    /// </summary>
     public class StepConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
