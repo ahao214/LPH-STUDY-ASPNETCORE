@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace TestViewModelBase
 {
@@ -16,9 +17,23 @@ namespace TestViewModelBase
             set { _students = value; RaisePropertyChanged(() => MyDataSource); }
         }
 
+
+        public RelayCommand ApplyCommand { get; set; }  
+
+
+
+        private void Apply()
+        {
+            MessageBox.Show("可以申请了");
+
+        }
+
+
+
         public MainWindowViewModel()
         {
             InitData();
+            ApplyCommand = new RelayCommand(Apply);
         }
 
         private void InitData()
