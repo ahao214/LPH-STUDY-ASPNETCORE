@@ -17,8 +17,9 @@ namespace MVCT1.Controllers
         public ActionResult Login()
         {
             string name = "jack";
-            ViewData["name"] = name;
-
+            ViewData["name"] = "jack";    // 键值对
+            ViewBag.Name = "Tom";    // 对象 dynamic
+            TempData["msg"] = "tempdata跨Action传递数据";
             return View();
         }
     }
