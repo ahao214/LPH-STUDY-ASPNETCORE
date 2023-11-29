@@ -8,6 +8,10 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     // 设置JSON返回日期格式
     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+    // 统一设置API的日期格式
+    options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+
+
 });
 
 
