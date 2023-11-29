@@ -42,21 +42,20 @@
             this.TsmiPublish = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiPublishList = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiWindowList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiAuthor = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiAuthorList = new System.Windows.Forms.ToolStripMenuItem();
             this.Sstatus = new System.Windows.Forms.StatusStrip();
             this.TsslTxtInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
-            this.TsmiAuthor = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiAuthorList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Location = new System.Drawing.Point(0, 67);
             this.menuStrip1.Name = "menuStrip1";
@@ -92,7 +91,6 @@
             // 
             // MsMenu
             // 
-            this.MsMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSysManage,
@@ -162,7 +160,7 @@
             // 
             this.TsmiPublishList.Image = global::JokerBooksManager.Properties.Resources._2;
             this.TsmiPublishList.Name = "TsmiPublishList";
-            this.TsmiPublishList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiPublishList.Size = new System.Drawing.Size(236, 34);
             this.TsmiPublishList.Text = "出版社信息列表";
             this.TsmiPublishList.Click += new System.EventHandler(this.TsmiPublishList_Click);
             // 
@@ -172,6 +170,23 @@
             this.TsmiWindowList.Name = "TsmiWindowList";
             this.TsmiWindowList.Size = new System.Drawing.Size(122, 28);
             this.TsmiWindowList.Text = "窗口列表";
+            // 
+            // TsmiAuthor
+            // 
+            this.TsmiAuthor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiAuthorList});
+            this.TsmiAuthor.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiAuthor.Name = "TsmiAuthor";
+            this.TsmiAuthor.Size = new System.Drawing.Size(122, 28);
+            this.TsmiAuthor.Text = "作者信息";
+            // 
+            // TsmiAuthorList
+            // 
+            this.TsmiAuthorList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiAuthorList.Name = "TsmiAuthorList";
+            this.TsmiAuthorList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiAuthorList.Text = "作者列表";
+            this.TsmiAuthorList.Click += new System.EventHandler(this.TsmiAuthorList_Click);
             // 
             // Sstatus
             // 
@@ -236,21 +251,6 @@
             this.TvBookType.TabIndex = 3;
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TsmiAuthor
-            // 
-            this.TsmiAuthor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiAuthorList});
-            this.TsmiAuthor.Name = "TsmiAuthor";
-            this.TsmiAuthor.Size = new System.Drawing.Size(98, 28);
-            this.TsmiAuthor.Text = "作者信息";
-            // 
-            // TsmiAuthorList
-            // 
-            this.TsmiAuthorList.Name = "TsmiAuthorList";
-            this.TsmiAuthorList.Size = new System.Drawing.Size(270, 34);
-            this.TsmiAuthorList.Text = "作者列表";
-            this.TsmiAuthorList.Click += new System.EventHandler(this.TsmiAuthorList_Click);
             // 
             // FrmMain
             // 
