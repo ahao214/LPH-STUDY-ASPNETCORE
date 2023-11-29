@@ -235,7 +235,9 @@ namespace JokerBooksManager.Managers
         #region 作者列表
         private void TsmiAuthorList_Click(object sender, EventArgs e)
         {
-            
+            FrmAuthorList frmAuthorList = SingleForm<FrmAuthorList>.CreateInstance();
+            frmAuthorList.MdiParent = MdiParent;
+            frmAuthorList.Show();
         }
         #endregion
     }
