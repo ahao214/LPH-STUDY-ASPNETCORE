@@ -24,7 +24,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 业务逻辑层:作者变量
         /// </summary>
-        private readonly PublishHouseBLL bll = new PublishHouseBLL();
+        private readonly AuthorBLL bll = new AuthorBLL();
         public FrmAuthorList()
         {
             InitializeComponent();
@@ -33,14 +33,14 @@ namespace JokerBooksManager.Managers
         #region 窗体加载
         private void FrmAuthorList_Load(object sender, EventArgs e)
         {
-            LoadPublishHouse();
+            LoadAuthor();
         }
         #endregion
 
         #region DataGrid加载数据
-        private void LoadPublishHouse()
+        private void LoadAuthor()
         {
-            DgvAuthor.DataSource = bll.GetPublishHouses();
+            DgvAuthor.DataSource = bll.GetAuthors();
         }
         #endregion
 
@@ -52,13 +52,13 @@ namespace JokerBooksManager.Managers
         /// <param name="iReaderType"></param>
         private void ShowForm(int iReaderType)
         {
-            FrmPublishAdd frm = SingleForm<FrmPublishAdd>.CreateInstance();
+            FrmAuthorAdd frm = SingleForm<FrmAuthorAdd>.CreateInstance();
 
             frm.MdiParent = MdiParent;
             frm.Tag = new FormInfoModel
             {
                 KeyId = iReaderType,
-                ReloadData = LoadPublishHouse // 某个函数(加载Dgv数据的)
+                ReloadData = LoadAuthor // 某个函数(加载Dgv数据的)
             };
 
             frm.Show();
@@ -71,16 +71,16 @@ namespace JokerBooksManager.Managers
         /// 执行删除
         /// </summary>
         /// <param name="iBookTypeId">出版社ID</param>
-        private void DelPublishHouse(int id)
+        private void DelAuthor(int id)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
 
-            bool res = bll.DeletePublishHouse(id);
+            bool res = bll.DeleteAuthor(id);
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
-                LoadPublishHouse();
+                LoadAuthor();
             }
             else
             {
@@ -112,7 +112,7 @@ namespace JokerBooksManager.Managers
             int row = e.RowIndex;
             // 获取列
             int col = e.ColumnIndex;
-            PublishHouse type = DgvAuthor.Rows[row].DataBoundItem as PublishHouse;
+            Author author = DgvAuthor.Rows[row].DataBoundItem as Author;
             if (!(DgvAuthor.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
                 return;
             // 拿到单元格的值
@@ -121,10 +121,10 @@ namespace JokerBooksManager.Managers
             switch (cellValue)
             {
                 case CommConst.CharUpdate:
-                    ShowForm(type.PublishId); break;
+                    ShowForm(author.AuthorId); break;
                 case CommConst.CharDelete:
                     //删除
-                    DelPublishHouse(type.PublishId);
+                    DelAuthor(author.AuthorId);
                     break;
                 default:
                     break;
