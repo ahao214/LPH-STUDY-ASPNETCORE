@@ -14,18 +14,18 @@ namespace JokerBooksManagerBLL.BookBLL
     public class AuthorBLL
     {
 
-        #region 新增出版社
+        #region 新增作者
 
         /// <summary>
-        /// 新增出版社
+        /// 新增作者
         /// </summary>
-        /// <param name="readerType">出版社</param>
+        /// <param name="readerType">作者</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public bool AddPublishHouse(PublishHouse publishHouse)
+        public bool AddAuthor(Author author)
         {
             try
             {
-                return PublishHouseDAL.AddPublishHouse(publishHouse);
+                return AuthorDAL.AddAuthor(author);
             }
             catch (Exception ex)
             {
@@ -35,18 +35,18 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
-        #region 出版社是否重复
+        #region 作者是否重复
 
         /// <summary>
-        /// 出版社是否存在
+        /// 作者是否存在
         /// </summary>
-        /// <param name="readerType">出版社</param>
+        /// <param name="readerType">作者</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public bool IsExistPublishHouse(string typeName)
+        public bool IsExistAuthor(string authorName)
         {
             try
             {
-                return PublishHouseDAL.IsExistPublishHouse(typeName);
+                return AuthorDAL.IsExistAuthor(authorName);
             }
             catch (Exception ex)
             {
@@ -56,17 +56,17 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
-        #region 获取所有出版社
+        #region 获取所有作者
 
         /// <summary>
-        /// 获取所有出版社
+        /// 获取所有作者
         /// </summary>
         /// <returns>返回图书对象集合</returns>
-        public List<PublishHouse> GetPublishHouses()
+        public List<Author> GetAuthors()
         {
             try
             {
-                return PublishHouseDAL.GetPublishHouses();
+                return AuthorDAL.GetAuthors();
             }
             catch (Exception ex)
             {
@@ -78,18 +78,18 @@ namespace JokerBooksManagerBLL.BookBLL
         #endregion
 
 
-        #region 根据ID获取出版社
+        #region 根据ID获取作者
 
         /// <summary>
-        /// 根据ID获取出版社
+        /// 根据ID获取作者
         /// </summary>
-        /// <param name="ID">出版社ID</param>
-        /// <returns>返回出版社对象</returns>
-        public PublishHouse GetPublishHouseById(int ID)
+        /// <param name="ID">作者ID</param>
+        /// <returns>返回作者对象</returns>
+        public Author GetAuthorById(int ID)
         {
             try
             {
-                return PublishHouseDAL.GetPublishHouseById(ID);
+                return AuthorDAL.GetAuthorById(ID);
             }
             catch (Exception ex)
             {
@@ -102,18 +102,18 @@ namespace JokerBooksManagerBLL.BookBLL
         #endregion
 
 
-        #region 更新出版社
+        #region 更新作者
 
         /// <summary>
-        /// 更新出版社
+        /// 更新作者
         /// </summary>
-        /// <param name="readerType">出版社对象</param>
+        /// <param name="author">作者对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public bool UpdatePublishHouse(PublishHouse publishHouse)
+        public bool UpdateAuthor(Author author)
         {
             try
             {
-                return PublishHouseDAL.UpdatePublishHouse(publishHouse);
+                return AuthorDAL.UpdateAuthor(author);
             }
             catch (Exception ex)
             {
@@ -125,18 +125,18 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
-        #region 删除出版社
+        #region 删除作者
 
         /// <summary>
-        /// 删除出版社
+        /// 删除作者
         /// </summary>
-        /// <param name="readerType">出版社ID</param>
+        /// <param name="readerType">作者ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public bool DeletePublishHouse(int id)
+        public bool DeleteAuthor(int id)
         {
             try
             {
-                return PublishHouseDAL.DeletePublishHouse(id);
+                return AuthorDAL.DeleteAuthor(id);
             }
             catch (Exception ex)
             {

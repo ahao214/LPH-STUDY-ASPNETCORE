@@ -16,67 +16,67 @@ namespace JokerBooksManagerDAL.BookDAL
     public class AuthorDAL
     {
 
-        #region 新增出版社
+        #region 新增作者
 
         /// <summary>
-        /// 新增出版社
+        /// 新增作者
         /// </summary>
-        /// <param name="publishHouse">出版社</param>
+        /// <param name="author">作者</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool AddPublishHouse(PublishHouse publishHouse)
+        public static bool AddAuthor(Author author)
         {
             BookCommandType commandType = BookCommandType.Text;
-            string sql = BuilderSqlHelper.InsertSql<PublishHouse>(publishHouse, "PublishHouse", "PublishId");
+            string sql = BuilderSqlHelper.InsertSql<Author>(author, "Author", "AuthorId");
             return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
         }
 
         #endregion
 
-        #region 出版社是否存在
+        #region 作者是否存在
 
         /// <summary>
-        /// 出版社是否存在
+        /// 作者是否存在
         /// </summary>
-        /// <param name="typeName">出版社</param>
+        /// <param name="authorName">作者</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public static bool IsExistPublishHouse(string typeName)
+        public static bool IsExistAuthor(string authorName)
         {
             StringBuilder sb = new StringBuilder();
             Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("PublishName", typeName);
+            dic.Add("AuthorName", authorName);
             BookCommandType commandType = BookCommandType.Text;
-            PublishHouse publishHouse = new PublishHouse();
-            string sql = BuilderSqlHelper.SelectSql<PublishHouse>(publishHouse, "PublishHouse", "PublishId", dic);
+            Author author = new Author();
+            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId", dic);
 
             return DBHelper.GetDataTable(sql, commandType).DefaultView.Count > 0;
         }
 
         #endregion
 
-        #region 获取所有出版社
+        #region 获取所有作者
 
         /// <summary>
-        /// 获取所有出版社
+        /// 获取所有作者
         /// </summary>
         /// <returns></returns>
-        public static List<PublishHouse> GetPublishHouses()
+        public static List<Author> GetAuthors()
         {
             BookCommandType bookCommand = BookCommandType.Text;
-            List<PublishHouse> lst = new List<PublishHouse>();
+            List<Author> lst = new List<Author>();
             StringBuilder sb = new StringBuilder();
-            PublishHouse publishHouse = new PublishHouse();
-            string sql = BuilderSqlHelper.SelectSql<PublishHouse>(publishHouse, "PublishHouse", "PublishId");
+            Author author = new Author();
+            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId");
 
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             while (dr.Read())
             {
-                PublishHouse type = new PublishHouse
+                Author auth = new Author
                 {
-                    PublishId = dr["PublishId"].ChangeInt(),
-                    PublishName = dr["PublishName"].ToString(),
+                    AuthorId = dr["AuthorId"].ChangeInt(),
+                    AuthorName = dr["AuthorName"].ToString(),
                     Remark = dr["Remark"].ToString()
                 };
-                lst.Add(type);
+                lst.Add(auth);
             }
             dr.Close();
 
@@ -86,75 +86,73 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
-        #region 根据ID获取出版社
+        #region 根据ID获取作者
 
         /// <summary>
-        /// 根据ID获取出版社
+        /// 根据ID获取作者
         /// </summary>
-        /// <param name="ID">出版社ID</param>
-        /// <returns>返回出版社对象</returns>
-        public static PublishHouse GetPublishHouseById(int ID)
+        /// <param name="ID">作者ID</param>
+        /// <returns>返回作者对象</returns>
+        public static Author GetAuthorById(int ID)
         {
-            PublishHouse house = new PublishHouse();
+            Author author = new Author();
             BookCommandType bookCommand = BookCommandType.Text;
             Dictionary<string, object> dic = new Dictionary<string, object>
             {
-                { "PublishId",ID }
+                { "AuthorId",ID }
             };
-            string sql = BuilderSqlHelper.SelectSql<PublishHouse>(house, "PublishHouse", "PublishId", dic);
+            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId", dic);
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             if (dr.Read())
             {
-                house = new PublishHouse
+                author = new Author
                 {
-                    PublishName = dr["PublishName"].ToString(),
+                    AuthorName = dr["AuthorName"].ToString(),
                     Remark = dr["Remark"].ToString()
                 };
             }
             dr.Close();
-            return house;
+            return author;
         }
 
 
         #endregion
 
 
-        #region 更新出版社
+        #region 更新作者
 
         /// <summary>
-        /// 更新出版社
+        /// 更新作者
         /// </summary>
-        /// <param name="PublishHouse">出版社对象</param>
+        /// <param name="author">作者对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool UpdatePublishHouse(PublishHouse publishHouse)
+        public static bool UpdateAuthor(Author author)
         {
             BookCommandType commandType = BookCommandType.Text;
-            string sql = BuilderSqlHelper.UpdateSql<PublishHouse>(publishHouse, "PublishHouse", "PublishId", publishHouse.PublishId);
+            string sql = BuilderSqlHelper.UpdateSql<Author>(author, "Author", "AuthorId", author.AuthorId);
 
             return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
-
         }
 
         #endregion
 
 
 
-        #region 删除出版社
+        #region 删除作者
 
         /// <summary>
-        /// 删除出版社
+        /// 删除作者
         /// </summary>
-        /// <param name="iPublishHouseId">出版社ID</param>
+        /// <param name="id">作者ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool DeletePublishHouse(int publishId)
+        public static bool DeleteAuthor(int id)
         {
             BookCommandType commandType = BookCommandType.Text;
             List<string> sqlList = new List<string>();
-            StringBuilder sb = new StringBuilder();
-            PublishHouse publishHouse = new PublishHouse();
-            publishHouse.PublishId = publishId;
-
-            string sql = BuilderSqlHelper.DeleteSql<PublishHouse>(publishHouse, "PublishHouse", "PublishId");
+            StringBuilder sb = new StringBuilder(); 
+            Author author = new Author();
+            author.AuthorId = id;
+            string sql = BuilderSqlHelper.DeleteSql<Author>(author, "Author", "AuthorId");
             sb.Append(sql);
             sqlList.Add(sb.ToString());
             return DBHelper.ExecuteSqlTrans(sqlList, commandType);
