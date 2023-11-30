@@ -5,8 +5,101 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestStackPanelBorder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="1000"
+        WindowStyle="None" AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip" Background="Transparent">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
 
+        <Border Background="#352E55" CornerRadius="26 0 0 26">
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top">
+                <Button Content="我的课程" Height="25" Background="#22204B" Width="140" Foreground="#E7E7E7" Margin="20 50 20  0"/>
+                <Button Content="我的课程" Height="25" Background="#22204B"  Width="140" Foreground="#E7E7E7" Margin="20 30 20  0"/>
+                <Button Content="我的课程" Height="25" Background="#22204B"  Width="140" Foreground="#E7E7E7" Margin="20 30 20  0"/>
+                <Button Content="我的课程" Height="25" Background="#22204B"  Width="140" Foreground="#E7E7E7" Margin="20 30 20  0"/>
+                <Button Content="我的课程" Height="25" Background="#22204B"  Width="140" Foreground="#E7E7E7" Margin="20 30 20  0"/>
+
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1" Background="#453766" CornerRadius="0 26 26 0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Background="#372F53" CornerRadius="26" Margin="20 130 20 20">
+                    <StackPanel Orientation="Vertical"
+                                Margin="10 40 10 0">
+                        <TextBlock Text="你好" Foreground="#FBFBFB" FontSize="26" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                        <TextBox Text="fewwww" Foreground="#FBFBFB" Background="#3F365F" Padding="15 13"
+                                 Margin="10 10 10 0"
+                                 TextAlignment="Center">
+                            <TextBox.Style>
+                                <Style>
+                                    <Style.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="15"/>
+                                        </Style>
+                                    </Style.Resources>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+
+                        <Button Foreground="#FBFBFB"  Margin="0 10 0 0" Height="45">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border CornerRadius="18" Padding="20 0" BorderThickness="0">
+                                        <Border.Background>
+                                            <LinearGradientBrush StartPoint="0 1" EndPoint="1 0">
+                                                <GradientStop Color="#7884FF" Offset="0"/>
+                                                <GradientStop Color="#5AD7FD" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <TextBlock Text="提  交" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                            
+                            
+                            
+                        </Button>
+
+                    </StackPanel>
+                </Border>
+
+                <Border  Margin="80 30 80 0" CornerRadius="26" Height="140" Padding="15" VerticalAlignment="Top">
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#d378ff" Offset="0.1"/>
+                            <GradientStop Color="#d378ff" Offset="0.5"/>
+                            <GradientStop Color="#d378ff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="12" FontSize="16" Foreground="#FBFBFB"></TextBlock>
+                            <TextBlock Text="12" FontSize="16" Foreground="#FBFBFB"  Margin="20 0 0 0"></TextBlock>
+                            <TextBlock Text="12" FontSize="16" Margin="20 0 0 0" Foreground="#FBFBFB"></TextBlock>
+                        </StackPanel>
+                        
+                        
+                    </StackPanel>
+                    
+                </Border>
+
+                <StackPanel Grid.Column="1">
+                    
+                </StackPanel>
+                    
+            </Grid>
+        </Border>
+        
     </Grid>
 </Window>
