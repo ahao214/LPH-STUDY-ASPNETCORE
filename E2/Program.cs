@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+
+namespace E2
+{
+    internal class Program
+    {
+        // 筛选符合价格的所有商品
+        public static IEnumerable<Goods> GetList(List<Goods> lst, decimal price)
+        {
+            List<Goods> list = new List<Goods>();
+            foreach (var item in lst)
+            {
+                if (item.Price == price)
+                {
+                    list.Add(item);
+                }
+            }
+            return list;
+        }
+
+        // 使用yield
+        public static IEnumerable<Goods> GetList1(List<Goods> lst, decimal price)
+        {
+            foreach (var item in lst)
+            {
+                if (item.Price == price)
+                {
+                    yield return item;
+                }
+            }
+        }
+
+
+
+        static void Main(string[] args)
+        {
+            List<Goods> list = new List<Goods>()
+            {
+                new Goods (){Id =1,Name ="苹果",Price=5},
+                new Goods (){Id =2,Name ="苹果",Price=4},
+                new Goods (){Id =3,Name ="苹果",Price=5},
+                new Goods (){Id =4,Name ="苹果",Price=33},
+                new Goods (){Id =5,Name ="苹果",Price=5},
+                new Goods (){Id =6,Name ="苹果",Price=333}
+            };
+            GetList(list, 5);
+
+
+            ReadKey();
+        }
+    }
+}
