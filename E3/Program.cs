@@ -16,25 +16,39 @@ namespace E3
             using (FreshLiveDB db = new FreshLiveDB())
             {
                 // 增加
-                ProductClass pc = new ProductClass()
-                {
-                    Name = "C#班"
-                };
+                //ProductClass pc = new ProductClass()
+                //{
+                //    Name = "C#班"
+                //};
 
-                db.ProductClass.Add(pc);
-                db.SaveChanges();
+                //db.ProductClass.Add(pc);
+                //db.SaveChanges();
 
 
                 // 删除
-                var delPc = db.ProductClass.Where(a => a.Id == pc.Id).FirstOrDefault();
-                db.ProductClass.Remove(delPc);
+                //var delPc = db.ProductClass.Where(a => a.Id == 6).FirstOrDefault();
+                //db.ProductClass.Remove(delPc);
+                //if (db.SaveChanges() > 0)
+                //{
+                //    WriteLine("Delete Successful");
+                //}
+                //else
+                //{
+                //    WriteLine("Delete fail");
+                //}
+
+                // 修改
+                var upd = db.ProductClass.Where(a => a.Id == 7).FirstOrDefault();
+
+                upd.Name = "饮料";
+                upd.Id = 7;
                 if (db.SaveChanges() > 0)
                 {
-                    WriteLine("Delete Successful");
+                    WriteLine("修改成功");
                 }
                 else
                 {
-                    WriteLine("Delete fail");
+                    WriteLine("修改失败");
                 }
 
 
