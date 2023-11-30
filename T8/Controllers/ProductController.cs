@@ -20,7 +20,7 @@ namespace T8.Controllers
         // GET: api/Product/5
         public ProductClass Get(int id)
         {
-            return db.ProductClass.Find(id);
+            return db.ProductClass.FirstOrDefault(x => x.Id == id);
         }
 
         // POST: api/Product
