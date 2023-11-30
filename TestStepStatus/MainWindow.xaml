@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:TestStepStatus"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:StepConverter x:Key="StepConverter"/>
+        <local:ArrowConverter x:Key="ArrowConverter"/>
+    </Window.Resources>
+    
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Image Source="{Binding Step,Converter={StaticResource StepConverter},ConverterParameter=1}"/>
+            
+            
+            
+        </StackPanel>
+        
+        
 
     </Grid>
 </Window>
