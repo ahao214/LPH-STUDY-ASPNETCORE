@@ -19,8 +19,28 @@ namespace C1
         {
             return a + b;
         }
+
+
+        public static void Drink()
+        {
+            WriteLine("喝水");
+        }
+
+        public static void WaterFlower()
+        {
+            WriteLine("浇花");
+        }
+
+
+
         static void Main(string[] args)
         {
+            Water water = new Water();
+            water.WaterAction(Drink);
+            water.WaterAction(WaterFlower);
+
+
+
             // 根据年月日得到字符串
             Func<DateTime, string> f1 = (x) => { return x.Year + "" + x.Month + "" + x.Day; };
             WriteLine(f1(DateTime.Now));
