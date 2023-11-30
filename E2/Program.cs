@@ -80,7 +80,10 @@ namespace E2
                          where a.Price == 5
                          select a;
 
-
+            // 方法语法
+            string[] names = { "jack", "tom", "harry", "mary", "jay" };
+            var query = names.Where(n => n.Contains("q"))
+                .OrderBy(n => n.Length);
 
 
 
