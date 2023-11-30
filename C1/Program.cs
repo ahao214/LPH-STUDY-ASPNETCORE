@@ -21,10 +21,14 @@ namespace C1
             Console.WriteLine(sd.Invoke("jack"));
 
             // 多播委托
+            #region 多播委托
             EatAndWatch ewd = Eating;
             ewd += Watching;
             ewd("jack");
 
+            ewd -= Watching;
+            ewd("tom");
+            #endregion
 
             Console.ReadLine();
         }
