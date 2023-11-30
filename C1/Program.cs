@@ -21,6 +21,11 @@ namespace C1
         }
         static void Main(string[] args)
         {
+            // 根据年月日得到字符串
+            Func<DateTime, string> f1 = (x) => { return x.Year + "" + x.Month + "" + x.Day; };
+            WriteLine(f1(DateTime.Now));
+
+
             Func<int, int, int> ca = new Func<int, int, int>(Calc);
             WriteLine(ca.Invoke(1, 1));
 
