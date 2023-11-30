@@ -37,6 +37,28 @@ namespace E2
         }
 
 
+        SayDele s3 = (x) => { WriteLine("你好" + x); };
+
+        Action<string> action = (x) =>
+        {
+            WriteLine("你好:" + x);
+        };
+
+        Action<string> action1 = new Action<string>(
+            (x) =>
+            {
+                WriteLine("你好：" + x);
+            });
+
+
+
+
+        public delegate void SayDele(string name);
+        public static void SayHello(string name)
+        {
+            WriteLine("你好:" + name);
+        }
+
 
         static void Main(string[] args)
         {
