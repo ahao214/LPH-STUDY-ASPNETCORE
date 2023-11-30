@@ -73,6 +73,19 @@ namespace E2
             };
             GetList(list, 5);
 
+            #region LINQ
+
+            // 查询价格等于5的商品信息
+            var res1 = from a in list
+                         where a.Price == 5
+                         select a;
+
+
+
+
+
+            #endregion
+
 
             ReadKey();
         }
