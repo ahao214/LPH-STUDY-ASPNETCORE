@@ -14,8 +14,19 @@ namespace C1
         public delegate string SayDelegate(string s);
 
         public delegate void EatAndWatch(string name);
+
+        public static int Calc(int a, int b)
+        {
+            return a + b;
+        }
         static void Main(string[] args)
         {
+            Func<int, int, int> ca = new Func<int, int, int>(Calc);
+            WriteLine(ca.Invoke(1, 1));
+
+            Func<int, int, int> ca1 = Calc;
+            WriteLine(ca1(1, 1));
+
             //2 调用委托
             SayDelegate sd = new SayDelegate(Say);
             Console.WriteLine(sd.Invoke("jack"));
@@ -48,6 +59,9 @@ namespace C1
         {
             WriteLine(name + "正在看电视");
         }
+
+
+
 
     }
 }
