@@ -25,6 +25,18 @@ namespace E3
                 db.SaveChanges();
 
 
+                // 删除
+                var delPc = db.ProductClass.Where(a => a.Id == pc.Id).FirstOrDefault();
+                db.ProductClass.Remove(delPc);
+                if (db.SaveChanges() > 0)
+                {
+                    WriteLine("Delete Successful");
+                }
+                else
+                {
+                    WriteLine("Delete fail");
+                }
+
 
             }
 
