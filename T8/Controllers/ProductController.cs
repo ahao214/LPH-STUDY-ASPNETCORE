@@ -23,6 +23,17 @@ namespace T8.Controllers
             return db.ProductClass.FirstOrDefault(x => x.Id == id);
         }
 
+        /// <summary>
+        /// 根据名称查询产品
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public IEnumerable<ProductClass> Get(string name)
+        {
+            return db.ProductClass.Where(a => a.Name.Contains(name)).ToList();
+        }
+
+
         // POST: api/Product
         public void Post([FromBody] string value)
         {
