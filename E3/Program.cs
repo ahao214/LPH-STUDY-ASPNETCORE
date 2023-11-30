@@ -38,17 +38,25 @@ namespace E3
                 //}
 
                 // 修改
-                var upd = db.ProductClass.Where(a => a.Id == 7).FirstOrDefault();
+                //var upd = db.ProductClass.Where(a => a.Id == 7).FirstOrDefault();
 
-                upd.Name = "饮料";
-                upd.Id = 7;
-                if (db.SaveChanges() > 0)
+                //upd.Name = "饮料";
+                //upd.Id = 7;
+                //if (db.SaveChanges() > 0)
+                //{
+                //    WriteLine("修改成功");
+                //}
+                //else
+                //{
+                //    WriteLine("修改失败");
+                //}
+
+
+                // 查询
+                var result = db.ProductClass.ToList();
+                foreach (var item in result)
                 {
-                    WriteLine("修改成功");
-                }
-                else
-                {
-                    WriteLine("修改失败");
+                    WriteLine(item.Id + " " + item.Name);
                 }
 
 
