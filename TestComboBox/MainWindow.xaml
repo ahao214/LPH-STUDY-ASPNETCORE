@@ -22,9 +22,15 @@
                             </Border>
 
                             <Border Grid.Column="1" BorderBrush="Red" BorderThickness="1">
-                                
+                                <ToggleButton IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press"/>
                             </Border>
-                            
+                            <Popup x:Name="MyPopup" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom">
+                                <Border MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                        <StackPanel Background="AliceBlue" IsItemsHost="True"/>
+                                    </ScrollViewer>   
+                                </Border>
+                            </Popup>
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
