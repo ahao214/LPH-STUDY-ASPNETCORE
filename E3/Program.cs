@@ -63,6 +63,23 @@ namespace E3
             }
 
 
+            using (FreshLiveDB db = new FreshLiveDB())
+            {
+                // 建表
+                string sql = "drop table JW3";
+                if (db.Database.ExecuteSqlCommand(sql) ==-1)
+                {
+                    WriteLine("操作成功");
+                }
+                else
+                {
+                    WriteLine("操作失败");
+                }
+
+
+
+            }
+
             ReadLine();
 
         }
