@@ -27,7 +27,7 @@ namespace TestComboBox
                 Name = "Please Choose"
             };
             cbbDatas.Add(cbbData);
-            for (int i = 0; i < 20; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 CbbData c1 = new CbbData();
                 c1.ID = i;
