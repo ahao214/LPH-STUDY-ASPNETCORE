@@ -6,7 +6,36 @@
         xmlns:local="clr-namespace:TestComboBox"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <Style x:Key="MyCbbStyle" TargetType="ComboBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="7*"/>
+                                <ColumnDefinition Width="3*" MaxWidth="20"/>
+                            </Grid.ColumnDefinitions>
 
+                            <Border  Grid.Column="0" Background="AliceBlue" BorderThickness="1 1 0 1" BorderBrush="Blue">
+                                <TextBox Text="{TemplateBinding Text}" Background="Transparent" VerticalContentAlignment="Center" FontSize="14" Foreground="Red" FontWeight="Bold"/>
+                            </Border>
+
+                            <Border Grid.Column="1" BorderBrush="Red" BorderThickness="1">
+                                
+                            </Border>
+                            
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <ComboBox Name="myCbb" Height="25" Width="250" Style="{StaticResource MyCbbStyle}">
+            
+        </ComboBox>
     </Grid>
 </Window>
