@@ -681,6 +681,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestStackPanelBorder", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBtnSvg", "TestBtnSvg\TestBtnSvg.csproj", "{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestComboBox", "TestComboBox\TestComboBox.csproj", "{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1523,6 +1525,10 @@ Global
 		{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1859,6 +1865,7 @@ Global
 		{0AF68DE7-9D21-48DC-A9C4-0C1D17B4F2A2} = {F96C6ABC-8F6F-469F-B275-6D1FB0FC45C8}
 		{4CF52E35-0596-4141-A497-202B1BCB3BB2} = {08353411-3865-4B80-B1F6-2E320C897C84}
 		{3BCBA2A0-93B6-4D71-9D3E-E603D831E413} = {08353411-3865-4B80-B1F6-2E320C897C84}
+		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873} = {08353411-3865-4B80-B1F6-2E320C897C84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
