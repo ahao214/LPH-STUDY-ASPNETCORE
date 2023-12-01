@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sketch3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="173" Width="296">
+        Title="MainWindow" Height="573" Width="296">
     <Grid>
-        <StackPanel Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="LightBlue">
             <TextBox x:Name="txt1" Margin="5"/>
             <TextBox x:Name="txt2" Margin="5"/>
             <StackPanel Orientation="Horizontal">
@@ -19,5 +23,13 @@
             </Button>
             
         </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Background="LightSlateGray">
+            <TextBox Margin="5" Text="{Binding ElementName=slider1,Path=Value,Mode=TwoWay}"/>
+            <Slider Margin="5" x:Name="slider1"/>
+
+        </StackPanel>
+        
     </Grid>
 </Window>
