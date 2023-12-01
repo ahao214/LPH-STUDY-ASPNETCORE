@@ -683,6 +683,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBtnSvg", "TestBtnSvg\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestComboBox", "TestComboBox\TestComboBox.csproj", "{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDynamicResource", "StaticDynamicResource\StaticDynamicResource.csproj", "{85AA4699-1893-40E0-906A-A4E6EF2E514A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1529,6 +1531,10 @@ Global
 		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85AA4699-1893-40E0-906A-A4E6EF2E514A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AA4699-1893-40E0-906A-A4E6EF2E514A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AA4699-1893-40E0-906A-A4E6EF2E514A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AA4699-1893-40E0-906A-A4E6EF2E514A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1866,6 +1872,7 @@ Global
 		{4CF52E35-0596-4141-A497-202B1BCB3BB2} = {08353411-3865-4B80-B1F6-2E320C897C84}
 		{3BCBA2A0-93B6-4D71-9D3E-E603D831E413} = {08353411-3865-4B80-B1F6-2E320C897C84}
 		{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873} = {08353411-3865-4B80-B1F6-2E320C897C84}
+		{85AA4699-1893-40E0-906A-A4E6EF2E514A} = {08353411-3865-4B80-B1F6-2E320C897C84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
