@@ -40,7 +40,7 @@
     </Window.Resources>
     
     <Grid>
-        <ComboBox Name="myCbb" Height="25" Width="250" Style="{StaticResource MyCbbStyle}">
+        <ComboBox Name="myCbb" Height="25" Width="250" DisplayMemberPath="Name" SelectedValuePath="ID" SelectedIndex="0" Style="{StaticResource MyCbbStyle}">
             
         </ComboBox>
     </Grid>

@@ -19,6 +19,22 @@ namespace TestComboBox
         public MainWindow()
         {
             InitializeComponent();
+
+            List<CbbData> cbbDatas = new List<CbbData>();
+            CbbData cbbData = new CbbData()
+            {
+                ID = 0,
+                Name = "Please Choose"
+            };
+            cbbDatas.Add(cbbData);
+            for (int i = 0; i < 20; i++)
+            {
+                CbbData c1 = new CbbData();
+                c1.ID = i;
+                c1.Name = "a" + i.ToString();
+                cbbDatas.Add(c1);
+            }
+            myCbb.ItemsSource = cbbDatas;
         }
     }
 }
