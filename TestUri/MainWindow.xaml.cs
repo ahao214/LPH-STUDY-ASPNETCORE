@@ -20,8 +20,9 @@ namespace TestUri
         {
             InitializeComponent();
 
+            img.Source = new BitmapImage(new Uri("pack://application:,,,/Images/JD.jpg", UriKind.Absolute));
 
-
+            img.Source = new BitmapImage(new Uri("/Images/JD.jpg", UriKind.RelativeOrAbsolute));
         }
     }
 }
