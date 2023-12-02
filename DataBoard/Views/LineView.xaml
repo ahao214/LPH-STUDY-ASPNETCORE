@@ -13,12 +13,27 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
-            <DataGrid Grid.Row="0" ItemsSource="{Binding Lines}">
+            <DataGrid Grid.Row="0" ItemsSource="{Binding Lines}" AutoGenerateColumns="False" Background="Transparent">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
                     <DataGridTextColumn Header="生产线" Binding="{Binding Name}"/>
                     <DataGridTextColumn Header="添加者" Binding="{Binding UserInfo.Name}"/>
                     <DataGridTextColumn Header="添加日期" Binding="{Binding InsertDate}"/>
+
+                    <DataGridTemplateColumn Header="操作">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="修改" Margin="5"/>
+                                    <TextBlock Grid.Column="1" Text="删除" Margin="5"/>
+                                </Grid>
+                            </DataTemplate>    
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
                 
                 
