@@ -38,6 +38,7 @@
             this.DgvBookInfo = new Sunny.UI.UIDataGridView();
             this.BookId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ConvrImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.BookNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +49,6 @@
             this.BorrowCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookSamry = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ConvrImage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvBookInfo)).BeginInit();
@@ -119,6 +119,7 @@
             this.DgvBookInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BookId,
             this.BookName,
+            this.ConvrImage,
             this.BookNumber,
             this.PublishId,
             this.PublishDate,
@@ -129,7 +130,6 @@
             this.BorrowCount,
             this.TotalCount,
             this.BookSamry,
-            this.ConvrImage,
             this.Modify,
             this.DelData});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -189,6 +189,16 @@
             this.BookName.Name = "BookName";
             this.BookName.ToolTipText = "图书名称";
             this.BookName.Width = 200;
+            // 
+            // ConvrImage
+            // 
+            this.ConvrImage.DataPropertyName = "ConvrImage";
+            this.ConvrImage.HeaderText = "图书封面";
+            this.ConvrImage.MinimumWidth = 8;
+            this.ConvrImage.Name = "ConvrImage";
+            this.ConvrImage.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ConvrImage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ConvrImage.Width = 150;
             // 
             // BookNumber
             // 
@@ -280,14 +290,6 @@
             this.BookSamry.ToolTipText = "简介";
             this.BookSamry.Width = 150;
             // 
-            // ConvrImage
-            // 
-            this.ConvrImage.DataPropertyName = "ConvrImage";
-            this.ConvrImage.HeaderText = "图书封面";
-            this.ConvrImage.MinimumWidth = 8;
-            this.ConvrImage.Name = "ConvrImage";
-            this.ConvrImage.Width = 150;
-            // 
             // Modify
             // 
             this.Modify.HeaderText = "修改";
@@ -338,6 +340,7 @@
         private Sunny.UI.UIDataGridView DgvBookInfo;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookId;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookName;
+        private System.Windows.Forms.DataGridViewImageColumn ConvrImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishId;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishDate;
@@ -348,7 +351,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookSamry;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ConvrImage;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
         private System.Windows.Forms.DataGridViewLinkColumn DelData;
     }
