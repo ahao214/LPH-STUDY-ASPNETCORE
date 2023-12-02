@@ -679,19 +679,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3", "E3\E3.csproj", "{0AF6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestStackPanelBorder", "TestStackPanelBorder\TestStackPanelBorder.csproj", "{4CF52E35-0596-4141-A497-202B1BCB3BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBtnSvg", "TestBtnSvg\TestBtnSvg.csproj", "{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBtnSvg", "TestBtnSvg\TestBtnSvg.csproj", "{3BCBA2A0-93B6-4D71-9D3E-E603D831E413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestComboBox", "TestComboBox\TestComboBox.csproj", "{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestComboBox", "TestComboBox\TestComboBox.csproj", "{062EFA1A-85A3-4EA4-B1DC-7BCFB30AA873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDynamicResource", "StaticDynamicResource\StaticDynamicResource.csproj", "{85AA4699-1893-40E0-906A-A4E6EF2E514A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticDynamicResource", "StaticDynamicResource\StaticDynamicResource.csproj", "{85AA4699-1893-40E0-906A-A4E6EF2E514A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NandiGuiwang", "NandiGuiwang", "{9F6BAA83-92CF-49EC-B4D6-65138E955791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sketch3", "Sketch3\Sketch3.csproj", "{B31A66C9-7C0A-4B0B-8553-912742492F4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sketch3", "Sketch3\Sketch3.csproj", "{B31A66C9-7C0A-4B0B-8553-912742492F4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YiZhenMeiLaiYouDeFeng", "YiZhenMeiLaiYouDeFeng", "{12A2E066-6B29-48A2-9064-D2D118970935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deamon01", "WPFBase\Deamon01\Deamon01.csproj", "{67DDBE5C-172B-494B-B41C-6142EB2F2E7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deamon01", "WPFBase\Deamon01\Deamon01.csproj", "{67DDBE5C-172B-494B-B41C-6142EB2F2E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPoint4", "PowerPoint4\PowerPoint4.csproj", "{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1551,6 +1553,10 @@ Global
 		{67DDBE5C-172B-494B-B41C-6142EB2F2E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DDBE5C-172B-494B-B41C-6142EB2F2E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DDBE5C-172B-494B-B41C-6142EB2F2E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1893,6 +1899,7 @@ Global
 		{B31A66C9-7C0A-4B0B-8553-912742492F4E} = {9F6BAA83-92CF-49EC-B4D6-65138E955791}
 		{12A2E066-6B29-48A2-9064-D2D118970935} = {4972E5FC-D5FC-4213-BB48-9781FC5067BD}
 		{67DDBE5C-172B-494B-B41C-6142EB2F2E7A} = {12A2E066-6B29-48A2-9064-D2D118970935}
+		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31} = {9F6BAA83-92CF-49EC-B4D6-65138E955791}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
