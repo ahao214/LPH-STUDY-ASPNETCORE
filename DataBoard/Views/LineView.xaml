@@ -28,8 +28,8 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="修改" Margin="5"/>
-                                    <TextBlock Grid.Column="1" Text="删除" Margin="5"/>
+                                    <TextBlock Grid.Column="0" Text="修改" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
+                                    <TextBlock Grid.Column="1" Text="删除" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
                                 </Grid>
                             </DataTemplate>    
                         </DataGridTemplateColumn.CellTemplate>
