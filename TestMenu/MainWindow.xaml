@@ -15,13 +15,13 @@
                     <ControlTemplate TargetType="MenuItem">
                         <Border x:Name="MyBorder" Background="#2E333A">
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="40">
-                       <Image Source="{Binding ImgPath}"  Height="30" Width="30" Margin="10"/>
+                                <Image Source="{Binding ImgPath}"  Height="30" Width="30" Margin="10"/>
                                 <Label Content="{Binding Name}" Foreground="#B7B6B8"/>
                                 <Label Content=">" Foreground="#FFFFFF" x:Name="sublbl" Margin="50 0 0 0">
                                     <Label.Style>
                                         <Style TargetType="Label">
                                             <Setter Property="Visibility" Value="Visible">
-                                                
+
                                             </Setter>
 
                                             <Style.Triggers>
@@ -29,10 +29,18 @@
                                                     <Setter Property="VirtualizingPanel.Visibility" Value="Collapsed"/>
                                                 </DataTrigger>
                                             </Style.Triggers>
-                                            
+
                                         </Style>
                                     </Label.Style>
-                                </Label>                                  
+                                </Label>
+                                <Popup x:Name="myPopup"
+                                       IsOpen="{Binding Path=IsSubmenuOpen,RelativeSource={RelativeSource TemplatedParent}}" Placement="Right">
+                                    <Border x:Name="border1" BorderThickness="0">
+                                        <StackPanel IsItemsHost="True"/>
+                                    </Border>
+
+                                </Popup>
+
                             </StackPanel>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -45,7 +53,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    
+
     <Grid Background="#23262B">
 
         <StackPanel Orientation="Horizontal"
