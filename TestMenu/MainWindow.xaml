@@ -6,21 +6,68 @@
         xmlns:local="clr-namespace:TestMenu"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style x:Key="MyMenuItemStyle" TargetType="MenuItem">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="MenuItem">
+                        <Border x:Name="MyBorder" Background="#2E333A">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="40">
+                       <Image Source="{Binding ImgPath}"  Height="30" Width="30" Margin="10"/>
+                                <Label Content="{Binding Name}" Foreground="#B7B6B8"/>
+                                <Label Content=">" Foreground="#FFFFFF" x:Name="sublbl" Margin="50 0 0 0">
+                                    <Label.Style>
+                                        <Style TargetType="Label">
+                                            <Setter Property="Visibility" Value="Visible">
+                                                
+                                            </Setter>
+
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding SubItems}" Value="{x:Null}">
+                                                    <Setter Property="VirtualizingPanel.Visibility" Value="Collapsed"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                            
+                                        </Style>
+                                    </Label.Style>
+                                </Label>                                  
+                            </StackPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#404D60"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <Grid Background="#23262B">
 
         <StackPanel Orientation="Horizontal"
                      HorizontalAlignment="Left" Width="200" Background="#2E333A">
             <Menu x:Name="myMenu" Background="#2E333A" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" ItemsSource="{Binding Departments}">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical">
+
+                        </StackPanel>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
                 <Menu.ItemTemplate>
                     <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
                         <Label Content="{Binding Name}"/>
                     </HierarchicalDataTemplate>
-                    
-                    
+
+
                 </Menu.ItemTemplate>
-                
+
             </Menu>
         </StackPanel>
-        
+
     </Grid>
 </Window>

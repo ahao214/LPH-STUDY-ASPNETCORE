@@ -19,6 +19,8 @@ namespace TestMenu
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
+
         }
     }
 }
