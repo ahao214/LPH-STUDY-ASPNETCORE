@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestMenu"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid Background="#23262B">
 
+        <StackPanel Orientation="Horizontal"
+                     HorizontalAlignment="Left" Width="200" Background="#2E333A">
+            <Menu x:Name="myMenu" Background="#2E333A" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" ItemsSource="{Binding Departments}">
+                <Menu.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
+                        <Label Content="{Binding Name}"/>
+                    </HierarchicalDataTemplate>
+                    
+                    
+                </Menu.ItemTemplate>
+                
+            </Menu>
+        </StackPanel>
+        
     </Grid>
 </Window>
