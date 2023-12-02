@@ -56,7 +56,7 @@ namespace DataBoard.ViewModel
                     else
                     {
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                        dialog.ShowMessageBox("添加失败", "提示");                        
+                        dialog.ShowMessageBox("添加失败", "提示");
                     }
 
                 });
