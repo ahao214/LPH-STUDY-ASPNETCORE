@@ -4,18 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBoard.Windows"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStyle="None"
+        Background="#29282D"
+        WindowStartupLocation="CenterScreen" 
         DataContext="{Binding Source={StaticResource Locator},Path=EditLineWindow}"
         Title="修改生产线" Height="200" Width="400">
     <Grid>
-        <Grid Margin="30 50 30 50">
+        <TextBlock Text="&#xf011;"  HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 15 15 0"
+                   FontSize="26" Foreground="White"
+                   MouseUp="TextBlock_MouseUp"
+                   FontFamily="/Fonts/#FontAwesome"/>
+        <Grid Margin="30 50 30 40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <TextBox Grid.Column="0" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
                 UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding AddLineCommand}" Style="{StaticResource AddButtonStyle}"/>
+            <Button Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding EditLineCommand}" Style="{StaticResource AddButtonStyle}"/>
         </Grid>
         
         

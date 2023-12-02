@@ -1,5 +1,6 @@
 ﻿using DataBoard.Model;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,12 @@ namespace DataBoard.ViewModel
 
 
         }
+
+
+        //public RelayCommand EditLineCommand
+        //{
+
+        //}
 
     }
 }
