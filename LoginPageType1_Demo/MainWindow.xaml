@@ -4,9 +4,41 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginPageType1_Demo"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" AllowsTransparency="True"
+        Background="Transparent" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="登录页面" Height="500" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"/>
+            <ColumnDefinition Width="0.65*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" CornerRadius="10 0 0 10">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#00999A" Offset="0"/>
+                    <GradientStop Color="#0072C0" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <Border Grid.Column="1" CornerRadius="0 10 0 10" Background="White"/>
+
+        <Canvas Grid.Column="0">
+            <Ellipse Width="60" Height="60" Fill="#33A9BD" Canvas.Left="186" Canvas.Top="250"/>
+
+            <Ellipse Width="26" Height="26" Fill="#33A9BD" Canvas.Left="31" Canvas.Top="444"/>
+        </Canvas>
+
+        <StackPanel Grid.Column="0">
+
+            <TextBlock Text="Sign Up" Foreground="White" FontSize="32" FontFamily="Arial" TextAlignment="Center" Margin="0 100 0 30" FontWeight="Bold"/>
+            
+            <TextBlock Text="If you don't already a account with us,you can register by clicking the button below" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="14" FontFamily="Arial" TextAlignment="Center" Margin="20 0 20 0" LineHeight="25"/>
+
+            <Button Content="Sign Up"  Margin="0 130 0 0" FontSize="16" FontFamily="Arial" Width="170" Background="Transparent" Foreground="Wheat" BorderBrush="White"/>
+        </StackPanel>
+
 
     </Grid>
 </Window>
