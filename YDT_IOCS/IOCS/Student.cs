@@ -10,6 +10,7 @@ namespace YDT_IOCS.IOCS
     {
         public Teacher teacher { get; set; }
 
+        public School school { get; set; }
         public void Study()
         {
             teacher.Classes();

@@ -29,16 +29,39 @@ namespace YDT_IOCS.IOCS
                 // 1 创建对象
                 object _object = Activator.CreateInstance(type);
 
+
+                // 4 对象属性赋值(依赖注入)
+                //PropertyInfo propertyInfo= type.GetProperty("teacher");
+                //propertyInfo.SetValue(_object, new Teacher());
+
+                //PropertyInfo propertyInfo1 = type.GetProperty("school");
+                //propertyInfo1.SetValue(_object, new School());
+
+                PropertyInfo[] properties = type.GetProperties();
+                foreach (PropertyInfo property in properties)
+                {
+                    // 遍历Type[]
+                    foreach (var item in types)
+                    {
+                        // 判断item
+                        if (property.PropertyType.Equals(item))
+                        {
+                            // 创建item对象
+                            object obj = Activator.CreateInstance(item);
+
+                            // 赋值(依赖注入)
+                            property.SetValue(_object, obj);
+                        }
+                    }
+
+                }
+
+
+
                 // 2 存储对象
                 IOCS.Add(type.FullName, _object);
 
-
-
-
-
             }
-
-
         }
 
 
