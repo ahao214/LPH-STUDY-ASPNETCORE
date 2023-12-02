@@ -44,7 +44,7 @@ namespace DataBoard.ViewModel
                 return new RelayCommand(() =>
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessageBox("添加成功", "提示");
+                    dialog.ShowMessage("AddLineWindow", "提示");
                 });
             }
         }
