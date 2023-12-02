@@ -28,49 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxtRemark = new Sunny.UI.UITextBox();
-            this.lblRemark = new Sunny.UI.UILabel();
             this.TxtAuthorName = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.BtnOk = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
             this.SuspendLayout();
-            // 
-            // TxtRemark
-            // 
-            this.TxtRemark.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtRemark.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtRemark.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtRemark.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtRemark.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtRemark.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtRemark.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtRemark.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.TxtRemark.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtRemark.Location = new System.Drawing.Point(192, 141);
-            this.TxtRemark.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtRemark.MinimumSize = new System.Drawing.Size(1, 16);
-            this.TxtRemark.Name = "TxtRemark";
-            this.TxtRemark.Padding = new System.Windows.Forms.Padding(5);
-            this.TxtRemark.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtRemark.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtRemark.ShowText = false;
-            this.TxtRemark.Size = new System.Drawing.Size(165, 75);
-            this.TxtRemark.Style = Sunny.UI.UIStyle.Green;
-            this.TxtRemark.TabIndex = 28;
-            this.TxtRemark.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TxtRemark.Watermark = "";
-            // 
-            // lblRemark
-            // 
-            this.lblRemark.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblRemark.Location = new System.Drawing.Point(53, 141);
-            this.lblRemark.Name = "lblRemark";
-            this.lblRemark.Size = new System.Drawing.Size(133, 32);
-            this.lblRemark.Style = Sunny.UI.UIStyle.Green;
-            this.lblRemark.TabIndex = 27;
-            this.lblRemark.Text = "备注";
-            this.lblRemark.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TxtAuthorName
             // 
@@ -157,8 +119,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 721);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.Controls.Add(this.TxtRemark);
-            this.Controls.Add(this.lblRemark);
             this.Controls.Add(this.TxtAuthorName);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.BtnOk);
@@ -174,9 +134,6 @@
         }
 
         #endregion
-
-        private Sunny.UI.UITextBox TxtRemark;
-        private Sunny.UI.UILabel lblRemark;
         private Sunny.UI.UITextBox TxtAuthorName;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIButton BtnOk;

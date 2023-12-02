@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookDAL\AuthorDAL.cs" />
+    <Compile Include="BookDAL\BookInfoDAL.cs" />
     <Compile Include="BookDAL\BookTypeDAL.cs" />
     <Compile Include="BookDAL\ManagerDAL.cs" />
     <Compile Include="BookDAL\PublishHouseDAL.cs" />
