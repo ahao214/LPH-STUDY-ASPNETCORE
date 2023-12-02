@@ -20,5 +20,10 @@ namespace LoginPageType1_Demo
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

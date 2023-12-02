@@ -33,12 +33,62 @@
         <StackPanel Grid.Column="0">
 
             <TextBlock Text="Sign Up" Foreground="White" FontSize="32" FontFamily="Arial" TextAlignment="Center" Margin="0 100 0 30" FontWeight="Bold"/>
-            
+
             <TextBlock Text="If you don't already a account with us,you can register by clicking the button below" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="14" FontFamily="Arial" TextAlignment="Center" Margin="20 0 20 0" LineHeight="25"/>
 
             <Button Content="Sign Up"  Margin="0 130 0 0" FontSize="16" FontFamily="Arial" Width="170" Background="Transparent" Foreground="Wheat" BorderBrush="White"/>
         </StackPanel>
 
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Sign in to App" Foreground="#0072C0" FontSize="32" FontFamily="Arial" TextAlignment="Center" Margin="0 100 0 25" FontWeight="Bold"/>
 
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Background="Transparent" BorderBrush="Transparent">
+                    <Image Source="\Source\Images\OS2.png" Width="40" Height="40"/>
+                </Button>
+
+                <Button Background="Transparent" BorderBrush="Transparent" Margin="10 0 10 0">
+                    <Image Source="\Source\Images\OS3.png" Width="40" Height="40"/>
+                </Button>
+
+
+                <Button Background="Transparent" BorderBrush="Transparent">
+                    <Image Source="\Source\Images\OS4.png" Width="40" Height="40"/>
+                </Button>
+            </StackPanel>
+
+            <TextBlock Text="or use your account info" TextWrapping="WrapWithOverflow" Foreground="#0072C0" FontSize="14" FontFamily="Arial" TextAlignment="Center" Margin="0 15 0 0" FontWeight="Bold"/>
+
+            <Border Height="35" Width="340" BorderThickness="1" BorderBrush="#878787" CornerRadius="20" Margin="0 30 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="25" Height="25" Margin="5 0 0 0">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Source\Images\OS5.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBox x:Name="txtUserName" Text="UserName" FontSize="20" FontFamily="Arial" TextAlignment="Left" VerticalAlignment="Center" Foreground="#878787" BorderBrush="Transparent" Margin="5 0 0 0" Width="288"/>
+                </StackPanel>
+            </Border>
+
+            <Border Height="35" Width="340" BorderThickness="1" BorderBrush="#878787" CornerRadius="20" Margin="0 30 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="25" Height="25" Margin="5 0 0 0">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Source\Images\OS6.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBox x:Name="txtPwd" Text="Pwd" FontSize="20" FontFamily="Arial" TextAlignment="Left" VerticalAlignment="Center" Foreground="#878787" BorderBrush="Transparent" Margin="5 0 0 0" Width="288"/>
+                </StackPanel>
+            </Border>
+
+            <Button Content="Sign In" FontSize="16" FontFamily="Arial" Width="170" Background="#0072C0" Foreground="White" BorderBrush="#0072C0" Margin="0 22 0 0"/>
+
+        </StackPanel>
+
+        <Canvas Grid.Column="1">
+            <Button Background="Transparent" BorderBrush="Transparent" Canvas.Left="470" Canvas.Top="18" Click="Button_Click">
+                <Image Source="Source\Images\OS8.png" Width="25" Height="25"/>
+            </Button>
+        </Canvas>
     </Grid>
 </Window>

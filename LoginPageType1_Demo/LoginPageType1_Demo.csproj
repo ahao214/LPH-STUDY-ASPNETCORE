@@ -8,4 +8,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Source\Images\OS2.png" />
+    <None Remove="Source\Images\OS3.png" />
+    <None Remove="Source\Images\OS4.png" />
+    <None Remove="Source\Images\OS5.png" />
+    <None Remove="Source\Images\OS6.png" />
+    <None Remove="Source\Images\OS7.png" />
+    <None Remove="Source\Images\OS8.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Source\Images\OS2.png" />
+    <Resource Include="Source\Images\OS3.png" />
+    <Resource Include="Source\Images\OS4.png" />
+    <Resource Include="Source\Images\OS5.png" />
+    <Resource Include="Source\Images\OS6.png" />
+    <Resource Include="Source\Images\OS7.png" />
+    <Resource Include="Source\Images\OS8.png" />
+  </ItemGroup>
+
 </Project>
