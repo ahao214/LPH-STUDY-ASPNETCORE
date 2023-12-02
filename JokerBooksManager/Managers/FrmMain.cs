@@ -244,7 +244,9 @@ namespace JokerBooksManager.Managers
         #region 单击图书列表事件
         private void TsmiBookInfoList_Click(object sender, EventArgs e)
         {
-
+            FrmBookInfoList frmBookInfoList = SingleForm<FrmBookInfoList>.CreateInstance();
+            frmBookInfoList.MdiParent = MdiParent;
+            frmBookInfoList.Show();
         } 
         #endregion
     }
