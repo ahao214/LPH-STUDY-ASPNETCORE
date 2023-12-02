@@ -23,6 +23,10 @@ namespace TestUriExternal
             img.Source = new BitmapImage(new Uri("pack://application:,,,/External;component/images/JD.jpg", UriKind.RelativeOrAbsolute));
 
 
+            img.Source = new BitmapImage(new Uri("/External;component/images/JD.jpg", UriKind.RelativeOrAbsolute));
+
+
+
         }
     }
 }
