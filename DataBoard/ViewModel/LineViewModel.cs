@@ -45,6 +45,7 @@ namespace DataBoard.ViewModel
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("AddLineWindow", "提示");
+                    Lines = _lineProvider.Select();
                 });
             }
         }

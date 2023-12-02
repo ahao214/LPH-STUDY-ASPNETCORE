@@ -9,17 +9,28 @@
         WindowStartupLocation="CenterScreen" 
         DataContext="{Binding Source={StaticResource Locator},Path=AddLineWindow}"
         Title="添加生产线" Height="200" Width="400">
-    <Grid>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="200"/>
+    </WindowChrome.WindowChrome>
+    <Border BorderBrush="White" BorderThickness="1">
+
+        <Grid>
+            <TextBlock Style="{StaticResource TextBlockExitStyle}"   MouseUp="TextBlock_MouseUp" WindowChrome.IsHitTestVisibleInChrome="True"/>
         <Grid Margin="30 50 30 40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="0" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
+            <TextBox Grid.Column="0"  WindowChrome.IsHitTestVisibleInChrome="True" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
         UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding AddLineCommand}" Style="{StaticResource AddButtonStyle}"/>
+            <Button Grid.Column="1" 
+                    WindowChrome.IsHitTestVisibleInChrome="True"
+                    Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding AddLineCommand}"  CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:AddLineWindow}}"                
+                    Style="{StaticResource AddButtonStyle}"/>
         </Grid>
 
 
     </Grid>
+
+    </Border>
 </Window>

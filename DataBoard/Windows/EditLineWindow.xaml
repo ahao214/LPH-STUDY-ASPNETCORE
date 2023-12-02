@@ -9,21 +9,28 @@
         WindowStartupLocation="CenterScreen" 
         DataContext="{Binding Source={StaticResource Locator},Path=EditLineWindow}"
         Title="修改生产线" Height="200" Width="400">
-    <Grid>
-        <TextBlock Text="&#xf011;"  HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 15 15 0"
-                   FontSize="26" Foreground="White"
-                   MouseUp="TextBlock_MouseUp"
-                   FontFamily="/Fonts/#FontAwesome"/>
-        <Grid Margin="30 50 30 40">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="0" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
-                UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding EditLineCommand}" Style="{StaticResource AddButtonStyle}"/>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="200"/>
+    </WindowChrome.WindowChrome>
+
+    <Border BorderThickness="1" BorderBrush="White">
+        <Grid>
+            <TextBlock  Style="{StaticResource TextBlockExitStyle}"                      WindowChrome.IsHitTestVisibleInChrome="True"
+               MouseUp="TextBlock_MouseUp"
+              />
+            <Grid Margin="30 50 30 40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" WindowChrome.IsHitTestVisibleInChrome="True" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
+            UpdateSourceTrigger=PropertyChanged}"/>
+                <Button WindowChrome.IsHitTestVisibleInChrome="True" Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding EditLineCommand}" Style="{StaticResource AddButtonStyle}"/>
+            </Grid>
+
+
         </Grid>
-        
-        
-    </Grid>
+    </Border>
+
+
 </Window>
