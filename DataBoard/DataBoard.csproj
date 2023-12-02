@@ -117,6 +117,8 @@
     <Compile Include="Model\UserInfo.cs">
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AddLineWindowViewModel.cs" />
+    <Compile Include="ViewModel\EditLineWindowViewModel.cs" />
     <Compile Include="ViewModel\HistoryViewModel.cs" />
     <Compile Include="ViewModel\IndexViewModel.cs" />
     <Compile Include="ViewModel\LineViewModel.cs" />

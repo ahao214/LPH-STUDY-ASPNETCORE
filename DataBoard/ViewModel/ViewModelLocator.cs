@@ -64,8 +64,28 @@ namespace DataBoard.ViewModel
             SimpleIoc.Default.Register<UserInfoView>();
             SimpleIoc.Default.Register<HistoryView>();
             SimpleIoc.Default.Register<IndexView>();
+            
+            
+            SimpleIoc.Default.Register<AddLineWindowViewModel>();
+            SimpleIoc.Default.Register<EditLineWindowViewModel>();
 
 
+
+        }
+
+        public AddLineWindowViewModel AddLineWindow
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<AddLineWindowViewModel>();
+            }
+        }
+        public EditLineWindowViewModel EditLineWindow
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<EditLineWindowViewModel>();
+            }
         }
 
         public IndexViewModel Index

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBoard.Windows"
         mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource Locator},Path=AddLineWindow}"
         Title="AddLineWindow" Height="450" Width="800">
     <Grid>
         
