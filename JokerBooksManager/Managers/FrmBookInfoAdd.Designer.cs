@@ -212,7 +212,7 @@
             this.DpPublishDate.FillColor = System.Drawing.Color.White;
             this.DpPublishDate.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.DpPublishDate.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DpPublishDate.Location = new System.Drawing.Point(167, 239);
+            this.DpPublishDate.Location = new System.Drawing.Point(167, 228);
             this.DpPublishDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DpPublishDate.MaxLength = 19;
             this.DpPublishDate.MinimumSize = new System.Drawing.Size(63, 0);
@@ -385,7 +385,7 @@
             this.CboBookTypeId.ItemRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.CboBookTypeId.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.CboBookTypeId.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CboBookTypeId.Location = new System.Drawing.Point(167, 299);
+            this.CboBookTypeId.Location = new System.Drawing.Point(167, 290);
             this.CboBookTypeId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CboBookTypeId.MinimumSize = new System.Drawing.Size(63, 0);
             this.CboBookTypeId.Name = "CboBookTypeId";
@@ -407,7 +407,7 @@
             this.CboAuthorId.ItemRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.CboAuthorId.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.CboAuthorId.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.CboAuthorId.Location = new System.Drawing.Point(167, 361);
+            this.CboAuthorId.Location = new System.Drawing.Point(167, 348);
             this.CboAuthorId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CboAuthorId.MinimumSize = new System.Drawing.Size(63, 0);
             this.CboAuthorId.Name = "CboAuthorId";
@@ -430,7 +430,7 @@
             this.TxtBookPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBookPrice.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
             this.TxtBookPrice.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtBookPrice.Location = new System.Drawing.Point(167, 421);
+            this.TxtBookPrice.Location = new System.Drawing.Point(167, 406);
             this.TxtBookPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtBookPrice.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtBookPrice.Name = "TxtBookPrice";
