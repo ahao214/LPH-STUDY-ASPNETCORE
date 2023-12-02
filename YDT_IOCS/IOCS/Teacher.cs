@@ -8,5 +8,11 @@ namespace YDT_IOCS.IOCS
 {
     public class Teacher
     {
+
+
+        public void Classes()
+        {
+            Console.WriteLine("老师开始教课了");
+        }
     }
 }
