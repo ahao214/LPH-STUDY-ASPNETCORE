@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -21,9 +22,14 @@ namespace LoginPageType1_Demo
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// 关闭按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Close_Click(object sender, RoutedEventArgs e)
         {
-
+            Process.GetCurrentProcess().Kill();
         }
     }
 }

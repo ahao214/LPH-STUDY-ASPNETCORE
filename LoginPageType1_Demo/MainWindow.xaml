@@ -86,7 +86,7 @@
         </StackPanel>
 
         <Canvas Grid.Column="1">
-            <Button Background="Transparent" BorderBrush="Transparent" Canvas.Left="470" Canvas.Top="18" Click="Button_Click">
+            <Button Background="Transparent" BorderBrush="Transparent" Canvas.Left="470" Canvas.Top="18" Click="Close_Click">
                 <Image Source="Source\Images\OS8.png" Width="25" Height="25"/>
             </Button>
         </Canvas>
