@@ -52,7 +52,7 @@
             this.CboAuthorId = new Sunny.UI.UIComboBox();
             this.TxtBookPrice = new Sunny.UI.UITextBox();
             this.TxtTotalCount = new Sunny.UI.UITextBox();
-            this.uiButton1 = new Sunny.UI.UIButton();
+            this.BtnFileBrowse = new Sunny.UI.UIButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -166,7 +166,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.uiButton1);
+            this.groupBox2.Controls.Add(this.BtnFileBrowse);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Location = new System.Drawing.Point(494, 77);
@@ -469,27 +469,28 @@
             this.TxtTotalCount.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtTotalCount.Watermark = "";
             // 
-            // uiButton1
+            // BtnFileBrowse
             // 
-            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(243, 253);
-            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiButton1.Name = "uiButton1";
-            this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
-            this.uiButton1.Style = Sunny.UI.UIStyle.Green;
-            this.uiButton1.TabIndex = 31;
-            this.uiButton1.Text = "浏览图片";
-            this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnFileBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnFileBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnFileBrowse.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnFileBrowse.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnFileBrowse.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnFileBrowse.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnFileBrowse.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnFileBrowse.Location = new System.Drawing.Point(243, 253);
+            this.BtnFileBrowse.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BtnFileBrowse.Name = "BtnFileBrowse";
+            this.BtnFileBrowse.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnFileBrowse.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnFileBrowse.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnFileBrowse.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnFileBrowse.Size = new System.Drawing.Size(100, 35);
+            this.BtnFileBrowse.Style = Sunny.UI.UIStyle.Green;
+            this.BtnFileBrowse.TabIndex = 31;
+            this.BtnFileBrowse.Text = "浏览图片";
+            this.BtnFileBrowse.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnFileBrowse.Click += new System.EventHandler(this.BtnFileBrowse_Click);
             // 
             // FrmBookInfoAdd
             // 
@@ -540,6 +541,6 @@
         private Sunny.UI.UITextBox TxtBookPrice;
         private Sunny.UI.UIComboBox CboAuthorId;
         private Sunny.UI.UIComboBox CboBookTypeId;
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton BtnFileBrowse;
     }
 }
