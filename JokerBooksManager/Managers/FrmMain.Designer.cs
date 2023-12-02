@@ -50,12 +50,15 @@
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
+            this.TsmiBookManager = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookInfoList = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Location = new System.Drawing.Point(0, 67);
             this.menuStrip1.Name = "menuStrip1";
@@ -91,6 +94,7 @@
             // 
             // MsMenu
             // 
+            this.MsMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.MsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmiSysManage,
@@ -98,7 +102,8 @@
             this.TsmiBookTypeManager,
             this.TsmiPublish,
             this.TsmiWindowList,
-            this.TsmiAuthor});
+            this.TsmiAuthor,
+            this.TsmiBookManager});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
@@ -184,7 +189,7 @@
             // 
             this.TsmiAuthorList.Image = global::JokerBooksManager.Properties.Resources._2;
             this.TsmiAuthorList.Name = "TsmiAuthorList";
-            this.TsmiAuthorList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiAuthorList.Size = new System.Drawing.Size(182, 34);
             this.TsmiAuthorList.Text = "作者列表";
             this.TsmiAuthorList.Click += new System.EventHandler(this.TsmiAuthorList_Click);
             // 
@@ -252,6 +257,23 @@
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TsmiBookManager
+            // 
+            this.TsmiBookManager.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiBookInfoList});
+            this.TsmiBookManager.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiBookManager.Name = "TsmiBookManager";
+            this.TsmiBookManager.Size = new System.Drawing.Size(122, 28);
+            this.TsmiBookManager.Text = "图书管理";
+            // 
+            // TsmiBookInfoList
+            // 
+            this.TsmiBookInfoList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiBookInfoList.Name = "TsmiBookInfoList";
+            this.TsmiBookInfoList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBookInfoList.Text = "图书信息列表";
+            this.TsmiBookInfoList.Click += new System.EventHandler(this.TsmiBookInfoList_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -303,5 +325,7 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiPublishList;
         private System.Windows.Forms.ToolStripMenuItem TsmiAuthor;
         private System.Windows.Forms.ToolStripMenuItem TsmiAuthorList;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBookManager;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBookInfoList;
     }
 }

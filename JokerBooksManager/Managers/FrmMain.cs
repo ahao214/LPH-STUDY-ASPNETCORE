@@ -240,5 +240,12 @@ namespace JokerBooksManager.Managers
             frmAuthorList.Show();
         }
         #endregion
+
+        #region 单击图书列表事件
+        private void TsmiBookInfoList_Click(object sender, EventArgs e)
+        {
+
+        } 
+        #endregion
     }
 }
