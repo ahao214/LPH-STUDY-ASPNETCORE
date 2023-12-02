@@ -23,6 +23,9 @@ namespace TestUri
             img.Source = new BitmapImage(new Uri("pack://application:,,,/Images/JD.jpg", UriKind.Absolute));
 
             img.Source = new BitmapImage(new Uri("/Images/JD.jpg", UriKind.RelativeOrAbsolute));
+
+
+            img.Source = new BitmapImage(new Uri("pack://SiteOfOrigin:,,,/Images/JD.jpg"));
         }
     }
 }
