@@ -697,6 +697,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPoint4", "PowerPoint4\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMenu", "TestMenu\TestMenu.csproj", "{5B595DFB-0651-49BD-9F0E-4C1C634DAA07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNotifyIcons", "TestNotifyIcons\TestNotifyIcons.csproj", "{0F71D6AC-D60D-43D4-85E3-2E4C956641B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1563,6 +1565,10 @@ Global
 		{5B595DFB-0651-49BD-9F0E-4C1C634DAA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B595DFB-0651-49BD-9F0E-4C1C634DAA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B595DFB-0651-49BD-9F0E-4C1C634DAA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F71D6AC-D60D-43D4-85E3-2E4C956641B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F71D6AC-D60D-43D4-85E3-2E4C956641B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F71D6AC-D60D-43D4-85E3-2E4C956641B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F71D6AC-D60D-43D4-85E3-2E4C956641B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1907,6 +1913,7 @@ Global
 		{67DDBE5C-172B-494B-B41C-6142EB2F2E7A} = {12A2E066-6B29-48A2-9064-D2D118970935}
 		{5515AF8D-1BF7-4F9C-A153-16EE8FE9AA31} = {9F6BAA83-92CF-49EC-B4D6-65138E955791}
 		{5B595DFB-0651-49BD-9F0E-4C1C634DAA07} = {08353411-3865-4B80-B1F6-2E320C897C84}
+		{0F71D6AC-D60D-43D4-85E3-2E4C956641B1} = {08353411-3865-4B80-B1F6-2E320C897C84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
