@@ -13,16 +13,7 @@ namespace PowerPoint4.PresetUI
     {
         public Type PagesWindow { get; set; }
 
-        protected override void OnClick()
-        {
-            base.OnClick();
-            Window win = Activator.CreateInstance(this.PagesWindow) as Window;
-            if (win != null)
-            {
-                win.Show();
-            }
-
-        }
+     
 
 
     }

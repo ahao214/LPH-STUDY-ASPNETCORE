@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PowerPoint4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="200" Width="500">
+    <StackPanel Background="LightBlue">
+        <Label Margin="5" Content="User Experience Feedback" FontWeight="Bold" FontSize="16"/>
 
-    </Grid>
+        <TextBlock Margin="10 0 10 5"
+                   Text="thanks you"
+                   Height="48" FontSize="13" TextWrapping="WrapWithOverflow" Foreground="DarkBlue"/>
+
+
+    </StackPanel>
 </Window>
