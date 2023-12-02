@@ -27,5 +27,6 @@ namespace DataBoard.Model
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<History> History { get; set; }
+        public virtual UserInfo UserInfo { get; set; }
     }
 }

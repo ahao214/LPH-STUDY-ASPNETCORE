@@ -29,7 +29,7 @@ namespace DataBoard.ViewModel
         public List<Line> Lines
         {
             get { return lines; }
-            set { lines = value; }
+            set { lines = value; RaisePropertyChanged(); }
         }
 
 

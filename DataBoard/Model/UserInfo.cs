@@ -14,10 +14,19 @@ namespace DataBoard.Model
     
     public partial class UserInfo
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public UserInfo()
+        {
+            this.Line = new HashSet<Line>();
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public int Role { get; set; }
         public Nullable<System.DateTime> InsertDate { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Line> Line { get; set; }
     }
 }
