@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace YDT_IOCS.IOCS
 {
+    [IOCService]
     public class Student
     {
         public Teacher teacher { get; set; }
 
-        public School school { get; set; }
+        //public School school { get; set; }
         public void Study()
         {
             teacher.Classes();

@@ -13,6 +13,9 @@ namespace YDT_IOCS.IOCS
     /// 1 创建对象
     /// 2 存储对象：三种容器(List Set Dictionary) 使用 Dictionary
     /// 3 获取对象
+    /// 4 依赖注入(对象属性赋值)
+    /// 5 对象过滤
+    ///     只创建需要的对象
     /// </summary>
     public class IOCFactory
     {
@@ -26,41 +29,43 @@ namespace YDT_IOCS.IOCS
             Type[] types = assembly.GetTypes();
             foreach (Type type in types)
             {
-                // 1 创建对象
-                object _object = Activator.CreateInstance(type);
-
-
-                // 4 对象属性赋值(依赖注入)
-                //PropertyInfo propertyInfo= type.GetProperty("teacher");
-                //propertyInfo.SetValue(_object, new Teacher());
-
-                //PropertyInfo propertyInfo1 = type.GetProperty("school");
-                //propertyInfo1.SetValue(_object, new School());
-
-                PropertyInfo[] properties = type.GetProperties();
-                foreach (PropertyInfo property in properties)
+                // 5 对象过滤
+                IOCService iocservice = type.GetCustomAttribute<IOCService>();
+                if (iocservice != null)
                 {
-                    // 遍历Type[]
-                    foreach (var item in types)
+
+                    // 1 创建对象
+                    object _object = Activator.CreateInstance(type);
+
+
+                    // 4 对象属性赋值(依赖注入)
+                    //PropertyInfo propertyInfo= type.GetProperty("teacher");
+                    //propertyInfo.SetValue(_object, new Teacher());
+
+                    //PropertyInfo propertyInfo1 = type.GetProperty("school");
+                    //propertyInfo1.SetValue(_object, new School());
+
+                    PropertyInfo[] properties = type.GetProperties();
+                    foreach (PropertyInfo property in properties)
                     {
-                        // 判断item
-                        if (property.PropertyType.Equals(item))
+                        // 遍历Type[]
+                        foreach (var item in types)
                         {
-                            // 创建item对象
-                            object obj = Activator.CreateInstance(item);
+                            // 判断item
+                            if (property.PropertyType.Equals(item))
+                            {
+                                // 创建item对象
+                                object obj = Activator.CreateInstance(item);
 
-                            // 赋值(依赖注入)
-                            property.SetValue(_object, obj);
+                                // 赋值(依赖注入)
+                                property.SetValue(_object, obj);
+                            }
                         }
+
                     }
-
+                    // 2 存储对象
+                    IOCS.Add(type.FullName, _object);
                 }
-
-
-
-                // 2 存储对象
-                IOCS.Add(type.FullName, _object);
-
             }
         }
 
