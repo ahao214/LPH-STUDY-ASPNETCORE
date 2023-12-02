@@ -29,7 +29,7 @@ namespace DataBoard.Model.Provider
 
         public List<Line> Select()
         {
-            return db.Line.ToList();
+            return db.Line.Include("UserInfo").ToList();
         }
 
         public int Update(Line t)
