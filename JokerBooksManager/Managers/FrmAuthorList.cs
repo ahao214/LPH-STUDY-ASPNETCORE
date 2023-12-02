@@ -45,9 +45,9 @@ namespace JokerBooksManager.Managers
         #endregion
 
 
-        #region 打开出版社窗体
+        #region 打开作者窗体
         /// <summary>
-        /// 打开出版社窗体
+        /// 打开作者窗体
         /// </summary>
         /// <param name="iReaderType"></param>
         private void ShowForm(int iReaderType)
@@ -70,7 +70,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 执行删除
         /// </summary>
-        /// <param name="iBookTypeId">出版社ID</param>
+        /// <param name="id">作者ID</param>
         private void DelAuthor(int id)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
