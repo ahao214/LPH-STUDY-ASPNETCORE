@@ -17,8 +17,8 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
                     <DataGridTextColumn Header="生产线" Binding="{Binding Name}"/>
-                    <DataGridTextColumn Header="添加者" Binding="{Binding Id}"/>
-                    <DataGridTextColumn Header="编号" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="添加者" Binding="{Binding UserInfo.Name}"/>
+                    <DataGridTextColumn Header="添加日期" Binding="{Binding InsertDate}"/>
                 </DataGrid.Columns>
                 
                 
