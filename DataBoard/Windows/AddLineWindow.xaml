@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:DataBoard.Windows"
         mc:Ignorable="d"
         DataContext="{Binding Source={StaticResource Locator},Path=AddLineWindow}"
-        Title="AddLineWindow" Height="450" Width="800">
+        Title="添加生产线" Height="200" Width="400">
     <Grid>
+        
+        
         
     </Grid>
 </Window>

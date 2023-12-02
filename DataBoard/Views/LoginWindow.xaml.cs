@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight.Views;
+﻿using DataBoard.Windows;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,9 +36,23 @@ namespace DataBoard.Views
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// 弹自定义窗体
+        /// </summary>
+        /// <param name="message">窗体名称</param>
+        /// <param name="title"></param>
+        /// <returns></returns>
         public Task ShowMessage(string message, string title)
         {
-            MessageBox.Show(message, title);
+            switch(message)
+            {
+                case "AddLineWindow":
+                    new AddLineWindow().ShowDialog();
+                    break;
+                case "EditLineWindow":
+                    new EditLineWindow ().ShowDialog();
+                    break;
+            }
             return null;
         }
 

@@ -1,6 +1,9 @@
 ﻿using DataBoard.Model;
 using DataBoard.Model.Provider;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +36,18 @@ namespace DataBoard.ViewModel
         }
 
 
+
+        public RelayCommand OpenAddLineWindowCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
+                    dialog.ShowMessageBox("添加成功", "提示");
+                });
+            }
+        }
 
     }
 }

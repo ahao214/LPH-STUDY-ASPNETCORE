@@ -31,21 +31,23 @@
                                     <TextBlock Grid.Column="0" Text="修改" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
                                     <TextBlock Grid.Column="1" Text="删除" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
                                 </Grid>
-                            </DataTemplate>    
+                            </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
-                
-                
+
+
             </DataGrid>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Style="{StaticResource AddButtonStyle}"/>
+                <Button Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" 
+                       Command="{Binding OpenAddLineWindowCommand}" 
+                        Style="{StaticResource AddButtonStyle}"/>
             </StackPanel>
         </Grid>
-        
-        
-        
-        
+
+
+
+
     </Grid>
 </UserControl>

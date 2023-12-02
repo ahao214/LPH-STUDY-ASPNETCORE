@@ -16,15 +16,16 @@ namespace DataBoard.Model.Provider
         {
             if (t == null)
                 return 0;
-            var model = db.Line .ToList().FirstOrDefault(item=>item.Id == t.Id);
-            if(model == null) return 0; 
-            db.Line .Remove(model);
-            return db.SaveChanges();            
+            var model = db.Line.ToList().FirstOrDefault(item => item.Id == t.Id);
+            if (model == null) return 0;
+            db.Line.Remove(model);
+            return db.SaveChanges();
         }
 
         public int Insert(Line t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = System.Data.Entity.EntityState.Added;
+            return db.SaveChanges();
         }
 
         public List<Line> Select()

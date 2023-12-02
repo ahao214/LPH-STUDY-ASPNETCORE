@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight;
+﻿using DataBoard.Model;
+using GalaSoft.MvvmLight;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,15 @@ namespace DataBoard.ViewModel
     /// </summary>
     public class EditLineWindowViewModel:ViewModelBase
     {
+        private Line line;
 
+        public Line Line
+        {
+            get { return line; }
+            set { line = value; RaisePropertyChanged(); }
+
+
+        }
 
     }
 }
