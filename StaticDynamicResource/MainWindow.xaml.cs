@@ -20,5 +20,10 @@ namespace StaticDynamicResource
         {
             InitializeComponent();
         }
+
+        private void changeStyleBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

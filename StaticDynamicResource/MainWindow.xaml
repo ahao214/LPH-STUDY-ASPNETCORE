@@ -3,10 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StaticDynamicResource"
+        xmlns:local="clr-namespace:StaticDynamicResource" xmlns:sys="clr-namespace:System;assembly=netstandard"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <sys:String x:Key="ContentShow">
+            显示资源文本
+        </sys:String>
+        <SolidColorBrush x:Key="BtnColor" Color="Green"/>
+    </Window.Resources>
+    
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition  Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Label Content="静态资源"/>
+            <Button x:Name="staticBtn"
+                    Width="70" Height="45"  Background="{StaticResource BtnColor}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Label Content="动态资源"/>
+            <Button x:Name="dynamicBtn" Width="70" Height="45" Background="{StaticResource BtnColor}"/>
+
+        </StackPanel>
+        <Button x:Name="changeStyleBtn" Height="45" Width="170" Click="changeStyleBtn_Click"></Button>
 
     </Grid>
 </Window>
