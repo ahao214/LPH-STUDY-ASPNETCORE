@@ -32,7 +32,7 @@
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.BtnOk = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GbCrls = new System.Windows.Forms.GroupBox();
             this.TxtTotalCount = new Sunny.UI.UITextBox();
             this.TxtBookPrice = new Sunny.UI.UITextBox();
             this.CboAuthorId = new Sunny.UI.UIComboBox();
@@ -53,7 +53,7 @@
             this.TxtBookSamry = new Sunny.UI.UITextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.PbConvrImage = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            this.GbCrls.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -142,29 +142,29 @@
             this.BtnClose.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // groupBox1
+            // GbCrls
             // 
-            this.groupBox1.Controls.Add(this.TxtTotalCount);
-            this.groupBox1.Controls.Add(this.TxtBookPrice);
-            this.groupBox1.Controls.Add(this.CboAuthorId);
-            this.groupBox1.Controls.Add(this.CboBookTypeId);
-            this.groupBox1.Controls.Add(this.TxtBookNumber);
-            this.groupBox1.Controls.Add(this.uiLabel8);
-            this.groupBox1.Controls.Add(this.uiLabel7);
-            this.groupBox1.Controls.Add(this.uiLabel6);
-            this.groupBox1.Controls.Add(this.uiLabel5);
-            this.groupBox1.Controls.Add(this.uiLabel4);
-            this.groupBox1.Controls.Add(this.uiLabel3);
-            this.groupBox1.Controls.Add(this.uiLabel2);
-            this.groupBox1.Controls.Add(this.DpPublishDate);
-            this.groupBox1.Controls.Add(this.CboPublishId);
-            this.groupBox1.Controls.Add(this.TxtBookName);
-            this.groupBox1.Controls.Add(this.uiLabel1);
-            this.groupBox1.Location = new System.Drawing.Point(38, 58);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(385, 520);
-            this.groupBox1.TabIndex = 27;
-            this.groupBox1.TabStop = false;
+            this.GbCrls.Controls.Add(this.TxtTotalCount);
+            this.GbCrls.Controls.Add(this.TxtBookPrice);
+            this.GbCrls.Controls.Add(this.CboAuthorId);
+            this.GbCrls.Controls.Add(this.CboBookTypeId);
+            this.GbCrls.Controls.Add(this.TxtBookNumber);
+            this.GbCrls.Controls.Add(this.uiLabel8);
+            this.GbCrls.Controls.Add(this.uiLabel7);
+            this.GbCrls.Controls.Add(this.uiLabel6);
+            this.GbCrls.Controls.Add(this.uiLabel5);
+            this.GbCrls.Controls.Add(this.uiLabel4);
+            this.GbCrls.Controls.Add(this.uiLabel3);
+            this.GbCrls.Controls.Add(this.uiLabel2);
+            this.GbCrls.Controls.Add(this.DpPublishDate);
+            this.GbCrls.Controls.Add(this.CboPublishId);
+            this.GbCrls.Controls.Add(this.TxtBookName);
+            this.GbCrls.Controls.Add(this.uiLabel1);
+            this.GbCrls.Location = new System.Drawing.Point(38, 58);
+            this.GbCrls.Name = "GbCrls";
+            this.GbCrls.Size = new System.Drawing.Size(385, 520);
+            this.GbCrls.TabIndex = 27;
+            this.GbCrls.TabStop = false;
             // 
             // TxtTotalCount
             // 
@@ -501,7 +501,7 @@
             this.ClientSize = new System.Drawing.Size(1024, 721);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GbCrls);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.BtnClose);
             this.Name = "FrmBookInfoAdd";
@@ -511,7 +511,7 @@
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
             this.Load += new System.EventHandler(this.FrmBookInfoAdd_Load);
-            this.groupBox1.ResumeLayout(false);
+            this.GbCrls.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -525,7 +525,7 @@
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIButton BtnOk;
         private Sunny.UI.UIButton BtnClose;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GbCrls;
         private Sunny.UI.UIDatetimePicker DpPublishDate;
         private Sunny.UI.UIComboBox CboPublishId;
         private System.Windows.Forms.GroupBox groupBox2;

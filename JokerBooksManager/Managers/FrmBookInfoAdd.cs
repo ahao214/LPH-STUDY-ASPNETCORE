@@ -20,6 +20,22 @@ namespace JokerBooksManager.Managers
     /// </summary>
     public partial class FrmBookInfoAdd : UIForm
     {
+        #region 窗体共用Model变量
+        /// <summary>
+        /// 窗体共用Model变量
+        /// </summary>
+        private FormInfoModel formInfoModel = new FormInfoModel();
+        #endregion
+
+        #region 图书信息ID
+
+        /// <summary>
+        /// 图书ID
+        /// </summary>
+        private int bookId = 0;
+
+        #endregion
+
         #region 构造函数
 
         public FrmBookInfoAdd()
@@ -28,7 +44,6 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
-
 
         #region 浏览添加图片
 
@@ -61,35 +76,82 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-
         /// <summary>
-        /// 窗体共用Model变量
-        /// </summary>
-        private FormInfoModel formInfoModel = new FormInfoModel();
-        /// <summary>
-        /// 作者ID
-        /// </summary>
-        private int authorId = 0;
-        /// <summary>
-        /// 存放原始的作者名字
+        /// 存放原始的图书名字
         /// </summary>
         private string oldAuthorName = string.Empty;
 
         private AuthorBLL bll = new AuthorBLL();
 
 
+        #region 窗体加载
+        private void FrmBookInfoAdd_Load(object sender, EventArgs e)
+        {
+            InitialAddOrUpdate();
+        }
+        #endregion
+
+        #region 初始化添加还是修改
+
+        private void InitialAddOrUpdate()
+        {
+            if (!(Tag is null))
+            {
+                formInfoModel = Tag as FormInfoModel;
+                if (!(formInfoModel is null))
+                {
+                    bookId = formInfoModel.KeyId;
+                }
+            }
+            if (bookId > 0)
+            {
+                Author author = bll.GetAuthorById(bookId);
+                if (author is null)
+                    return;
+                //oldAuthorName = TxtAuthorName.Text = author.AuthorName;
+                //TxtRemark.Text = author.Remark;
+
+                Text = CommConst.CharUpdateBookType;
+            }
+            else
+            {
+                PbConvrImage.Image = null;
+                TxtBookSamry.Clear();
+                foreach (Control item in GbCrls.Controls)
+                {
+                    if (item is UITextBox)
+                    {
+                        UITextBox txtBox = item as UITextBox;
+                        txtBox.Clear();
+                    }
+                }
+
+            }
+        }
+
+        #endregion
+
+        #region 绑定下拉框数据
+
+        private void CboBindData()
+        {
+            CommDefine.PublishDataBind(CboPublishId);
+            CommDefine.AuthorDataBind(CboAuthorId);
+            CommDefine.BookTypeDataBind(CboBookTypeId);
+        }
+
+        #endregion
 
 
-
-        #region 添加或修改作者信息
+        #region 添加或修改图书信息
         /// <summary>
-        /// 添加或修改作者信息
+        /// 添加或修改图书信息
         /// </summary>
         /// <param name="type"></param>
         private void AddOrUpdate(Author author)
         {
             bool bRes;
-            if (authorId == 0) // 添加
+            if (bookId == 0) // 添加
             {
                 bRes = bll.AddAuthor(author);
             }
@@ -113,15 +175,15 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        #region 验证作者名称是否存在
+        #region 验证图书名称是否存在
         /// <summary>
-        /// 验证作者名称是否存在
+        /// 验证图书名称是否存在
         /// </summary>
-        /// <param name="authorName">作者名称</param>
+        /// <param name="authorName">图书名称</param>
         /// <returns>True:存在 False：不存在</returns>
-        private bool CheckAuthorName(string authorName)
+        private bool CheckBookName(string authorName)
         {
-            if (authorId == 0 || (authorId > 0 && oldAuthorName != authorName))
+            if (bookId == 0 || (bookId > 0 && oldAuthorName != authorName))
             {
                 if (bll.IsExistAuthor(authorName))
                 {
@@ -141,7 +203,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 输入验证
         /// </summary>
-        /// <param name="authorName">作者名称</param>
+        /// <param name="authorName">图书名称</param>
         /// <returns>True:通过 False：不通过</returns>
         private bool CheckInput(string authorName)
         {
@@ -155,73 +217,37 @@ namespace JokerBooksManager.Managers
 
         #endregion
 
-        #region 初始化添加还是修改
 
-        private void InitialAddOrUpdate()
-        {
-            if (!(Tag is null))
-            {
-                formInfoModel = Tag as FormInfoModel;
-                if (!(formInfoModel is null))
-                {
-                    authorId = formInfoModel.KeyId;
-                }
-            }
-            if (authorId > 0)
-            {
-                Author author = bll.GetAuthorById(authorId);
-                if (author is null)
-                    return;
-                //oldAuthorName = TxtAuthorName.Text = author.AuthorName;
-                //TxtRemark.Text = author.Remark;
-
-                Text = CommConst.CharUpdateBookType;
-            }
-            else
-            {
-                //TxtAuthorName.Clear();
-                //TxtRemark.Clear();
-            }
-        }
-
-        #endregion
-
-        #region 窗体加载
-        private void FrmBookInfoAdd_Load(object sender, EventArgs e)
-        {
-            InitialAddOrUpdate();
-        }
-        #endregion
 
         #region 新增按钮事件
         private void BtnOk_Click(object sender, EventArgs e)
         {
             string bookName = TxtBookName.Text.Trim();
-            
+
 
             if (!CheckInput(bookName))
             {
                 return;
             }
-            if (CheckAuthorName(bookName))
+            if (CheckBookName(bookName))
             {
                 return;
             }
             // 封装 Author 信息            
             Author author = new Author
             {
-                AuthorId = authorId              
+                AuthorId = bookId
             };
             // 添加数据到数据库
             AddOrUpdate(author);
-        } 
+        }
         #endregion
 
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
-        } 
+        }
         #endregion
     }
 }

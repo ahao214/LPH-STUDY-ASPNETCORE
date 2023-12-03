@@ -99,7 +99,7 @@ namespace JokerBooksManager.Comm
         #region 绑定出版社
 
 
-        public void PublishDataBind(UIComboBox cbo)
+        public static void PublishDataBind(UIComboBox cbo)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace JokerBooksManager.Comm
 
         #region 绑定图书类别
 
-        public void BookTypeDataBind(UIComboBox cbo)
+        public static void BookTypeDataBind(UIComboBox cbo)
         {
             try
             {
@@ -140,7 +140,7 @@ namespace JokerBooksManager.Comm
 
         #region 绑定图书作者
 
-        public void AuthorDataBind(UIComboBox cbo)
+        public static void AuthorDataBind(UIComboBox cbo)
         {
             try
             {
