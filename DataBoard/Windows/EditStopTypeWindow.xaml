@@ -5,9 +5,49 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:DataBoard.Windows"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="EditStopTypeWindow"
-    Width="800"
-    Height="450"
+    Title="修改停机类型"
+    Width="400"
+    Height="200"
+    Background="#29282D"
+    DataContext="{Binding Source={StaticResource Locator}, Path=EditLineWindow}"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
     mc:Ignorable="d">
-    <Grid />
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="200" />
+    </WindowChrome.WindowChrome>
+
+    <Border BorderBrush="White" BorderThickness="1">
+        <Grid>
+            <TextBlock
+                MouseUp="TextBlock_MouseUp"
+                Style="{StaticResource TextBlockExitStyle}"
+                WindowChrome.IsHitTestVisibleInChrome="True" />
+            <Grid Margin="30,50,30,40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox
+                    Grid.Column="0"
+                    Height="35"
+                    Text="{Binding Line .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    WindowChrome.IsHitTestVisibleInChrome="True" />
+                <Button
+                    Grid.Column="1"
+                    Margin="15,15,15,15"
+                    HorizontalAlignment="Right"
+                    Command="{Binding EditStopTypeCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:EditLineWindow}}"
+                    Content="修改"
+                    FontSize="16"
+                    Style="{StaticResource AddButtonStyle}"
+                    Tag="&#xf055;"
+                    WindowChrome.IsHitTestVisibleInChrome="True" />
+            </Grid>
+
+
+        </Grid>
+    </Border>
+
 </Window>
