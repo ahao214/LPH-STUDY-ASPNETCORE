@@ -42,7 +42,7 @@ namespace DataBoard.ViewModel
                 return new RelayCommand(() =>
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessage("AddLineWindow", "提示");                    
+                    dialog.ShowMessage("AddStopTypeWindow", "提示");                    
                     StopTypes= _stopTypeProvider.Select();
                 });
             }
@@ -63,7 +63,7 @@ namespace DataBoard.ViewModel
                         return;
                     vm.Line = line;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessage("EditLineWindow", "提示");
+                    dialog.ShowMessage("EditStopTypeWindow", "提示");
                     StopTypes = _stopTypeProvider.Select();
                 });
             }
