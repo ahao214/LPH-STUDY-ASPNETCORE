@@ -31,13 +31,13 @@
                 <TextBox
                     Grid.Column="0"
                     Height="35"
-                    Text="{Binding Line .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Text="{Binding StopType .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                     WindowChrome.IsHitTestVisibleInChrome="True" />
                 <Button
                     Grid.Column="1"
                     Margin="15,15,15,15"
                     HorizontalAlignment="Right"
-                    Command="{Binding AddLineCommand}"
+                    Command="{Binding AddStopTypeCommand}"
                     CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddLineWindow}}"
                     Content="添加"
                     FontSize="16"
