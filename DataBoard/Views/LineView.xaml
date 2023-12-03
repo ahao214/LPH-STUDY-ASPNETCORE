@@ -21,12 +21,25 @@
                 Grid.Row="0"
                 AutoGenerateColumns="False"
                 Background="Transparent"
+                CanUserAddRows="False"
                 ItemsSource="{Binding Lines}">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding Id}" Header="编号" />
-                    <DataGridTextColumn Binding="{Binding Name}" Header="生产线" />
-                    <DataGridTextColumn Binding="{Binding UserInfo.Name}" Header="添加者" />
-                    <DataGridTextColumn Binding="{Binding InsertDate}" Header="添加日期" />
+                    <DataGridTextColumn
+                        Binding="{Binding Id}"
+                        Header="编号"
+                        IsReadOnly="True" />
+                    <DataGridTextColumn
+                        Binding="{Binding Name}"
+                        Header="生产线"
+                        IsReadOnly="True" />
+                    <DataGridTextColumn
+                        Binding="{Binding UserInfo.Name}"
+                        Header="添加者"
+                        IsReadOnly="True" />
+                    <DataGridTextColumn
+                        Binding="{Binding InsertDate}"
+                        Header="添加日期"
+                        IsReadOnly="True" />
 
                     <DataGridTemplateColumn Header="操作">
                         <DataGridTemplateColumn.CellTemplate>
