@@ -152,11 +152,17 @@
     <Compile Include="Windows\AddLineWindow.xaml.cs">
       <DependentUpon>AddLineWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddStopTypeWindow.xaml.cs">
+      <DependentUpon>AddStopTypeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddSubLineWindow.xaml.cs">
       <DependentUpon>AddSubLineWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditLineWindow.xaml.cs">
       <DependentUpon>EditLineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EditStopTypeWindow.xaml.cs">
+      <DependentUpon>EditStopTypeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditSubLineWindow.xaml.cs">
       <DependentUpon>EditSubLineWindow.xaml</DependentUpon>
@@ -224,11 +230,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\AddStopTypeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AddSubLineWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\EditLineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EditStopTypeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
