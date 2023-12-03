@@ -276,6 +276,7 @@
             this.TxtBookNumber.MinimumSize = new System.Drawing.Size(1, 16);
             this.TxtBookNumber.Name = "TxtBookNumber";
             this.TxtBookNumber.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtBookNumber.ReadOnly = true;
             this.TxtBookNumber.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtBookNumber.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.TxtBookNumber.ShowText = false;

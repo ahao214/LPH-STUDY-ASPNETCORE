@@ -20,6 +20,22 @@ namespace JokerBooksManager.Managers
     /// </summary>
     public partial class FrmBookInfoAdd : UIForm
     {
+        #region 图书字段变量
+
+        private string sBookName;
+        private string sBookNumber;
+        private int iPublishId;
+        private string sPublishDate;
+        private int iBookTypeId;
+        private int iAuthorId;
+        private decimal dBookPrice;
+        private int iTotalCount;
+        private Image iConverImg;
+        private string sBookSummary;
+
+        #endregion
+
+
         #region 窗体共用Model变量
         /// <summary>
         /// 窗体共用Model变量
@@ -204,18 +220,51 @@ namespace JokerBooksManager.Managers
 
         #region 输入验证
 
+       
         /// <summary>
         /// 输入验证
-        /// </summary>
-        /// <param name="authorName">图书名称</param>
+        /// </summary>        
         /// <returns>True:通过 False：不通过</returns>
-        private bool CheckInput(string authorName)
+        private bool CheckInput()
         {
-            if (authorName.Length == 0 || string.IsNullOrEmpty(authorName))
+            sBookName = TxtBookName.Text.Trim();
+            sBookNumber = TxtBookNumber.Text.Trim();
+            iPublishId = CboPublishId.SelectedValue.ChangeInt();
+            sPublishDate = DpPublishDate.Text;
+            iBookTypeId = CboBookTypeId.SelectedValue.ChangeInt();
+            iAuthorId = CboAuthorId.SelectedValue.ChangeInt();
+            iConverImg = PbConvrImage.Image;
+            dBookPrice = Convert.ToDecimal(TxtBookPrice.Text.Trim());
+            iTotalCount = TxtTotalCount.Text.Trim().ChangeInt();
+            sBookSummary = TxtBookSamry.Text.Trim();
+
+            if (string.IsNullOrEmpty(sBookName))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
+
+            if (string.IsNullOrEmpty(sPublishDate))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (!CommDefine.IsDigital(iTotalCount.ToString()))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (string.IsNullOrEmpty(dBookPrice.ToString()))
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+            if (iConverImg == null)
+            {
+                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+                return false;
+            }
+
             return true;
         }
 
@@ -228,8 +277,7 @@ namespace JokerBooksManager.Managers
         {
             string bookName = TxtBookName.Text.Trim();
 
-
-            if (!CheckInput(bookName))
+            if (!CheckInput())
             {
                 return;
             }

@@ -171,7 +171,7 @@ namespace JokerBooksManager.Comm
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public bool IsDigital(string input)
+        public static bool IsDigital(string input)
         {
             return Regex.IsMatch(input, "^[1-9]([0-9])*$");
         }
