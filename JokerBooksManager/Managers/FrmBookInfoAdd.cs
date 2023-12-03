@@ -139,6 +139,9 @@ namespace JokerBooksManager.Managers
             CommDefine.PublishDataBind(CboPublishId);
             CommDefine.AuthorDataBind(CboAuthorId);
             CommDefine.BookTypeDataBind(CboBookTypeId);
+            // 图书编码
+            TxtBookNumber.Text = "";
+
         }
 
         #endregion

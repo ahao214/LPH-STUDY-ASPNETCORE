@@ -1,7 +1,9 @@
 ﻿using JokerBooksManagerDAL.BookDAL;
+using JokerBooksManagerDAL.Helper;
 using JokerBooksManagerModels.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -142,6 +144,26 @@ namespace JokerBooksManagerBLL.BookBLL
             {
 
                 throw ex;
+            }
+        }
+
+        #endregion
+
+
+        #region 获取数据库中最后一条图书编码
+        /// <summary>
+        /// 获取数据库中最后一条图书编码
+        /// </summary>
+        /// <returns></returns>
+        public string GetBookNumber()
+        {
+            try
+            {
+                return BookInfoDAL.GetBookNumber();
+            }
+            catch (Exception err)
+            {
+                throw err;
             }
         }
 
