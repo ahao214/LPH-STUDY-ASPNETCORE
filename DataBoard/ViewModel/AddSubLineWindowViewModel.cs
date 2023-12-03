@@ -21,6 +21,9 @@ namespace DataBoard.ViewModel
         }
 
 
+        /// <summary>
+        /// 添加子线
+        /// </summary>
         public RelayCommand<Window> AddSubLineCommand
         {
             get
