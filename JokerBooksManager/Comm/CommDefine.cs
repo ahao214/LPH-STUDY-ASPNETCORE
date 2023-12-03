@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using JokerBooksManagerComm.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
+using System.Text.RegularExpressions;
 
 
 namespace JokerBooksManager.Comm
@@ -160,6 +161,19 @@ namespace JokerBooksManager.Comm
                 CommMsgBox.MsgBoxCaveat(err.Message);
             }
 
+        }
+
+        #endregion
+
+        #region 验证纯数字
+        /// <summary>
+        /// 验证纯数字
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public bool IsDigital(string input)
+        {
+            return Regex.IsMatch(input, "^[1-9]([0-9])*$");
         }
 
         #endregion
