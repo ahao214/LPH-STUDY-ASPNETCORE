@@ -31,7 +31,8 @@
                 <TextBox
                     Grid.Column="0"
                     Height="35"
-                    Text="{Binding Line .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    MaxLength="32"
+                    Text="{Binding StopType .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                     WindowChrome.IsHitTestVisibleInChrome="True" />
                 <Button
                     Grid.Column="1"
