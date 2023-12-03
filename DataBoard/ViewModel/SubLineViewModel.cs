@@ -42,7 +42,7 @@ namespace DataBoard.ViewModel
                 return new RelayCommand(() =>
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessage("AddLineWindow", "提示");
+                    dialog.ShowMessage("AddSubLineWindow", "提示");
                     SubLines = _subLineProvider.Select();
                 });
             }
@@ -63,7 +63,7 @@ namespace DataBoard.ViewModel
                         return;
                     vm.Line = line;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessage("EditLineWindow", "提示");                    
+                    dialog.ShowMessage("EditSubLineWindow", "提示");                    
                     SubLines = _subLineProvider.Select();
                 });
             }
