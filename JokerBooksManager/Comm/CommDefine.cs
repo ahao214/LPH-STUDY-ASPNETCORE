@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Runtime.InteropServices;
 using JokerBooksManagerComm.Comm;
+using JokerBooksManagerBLL.BookBLL;
+using Sunny.UI;
 
 
 namespace JokerBooksManager.Comm
@@ -94,6 +96,26 @@ namespace JokerBooksManager.Comm
         }
         #endregion
 
+        #region 绑定出版社
+
+
+        public void PublishDataBind(UIComboBox cbo)
+        {
+            try
+            {
+                PublishHouseBLL bll = new PublishHouseBLL();
+                cbo.DataSource = bll.GetPublishHouses();
+                cbo.DisplayMember = "PublishName";
+                cbo.ValueMember = "PublishId";
+            }
+            catch (System.Exception err)
+            {
+                CommMsgBox.MsgBoxCaveat(err.Message);
+            }
+
+        }
+
+        #endregion
 
     }
 }
