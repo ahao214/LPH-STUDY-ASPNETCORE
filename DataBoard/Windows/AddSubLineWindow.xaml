@@ -13,7 +13,9 @@
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">
-
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="200" />
+    </WindowChrome.WindowChrome>
     <Border BorderBrush="White" BorderThickness="1">
 
         <Grid>
