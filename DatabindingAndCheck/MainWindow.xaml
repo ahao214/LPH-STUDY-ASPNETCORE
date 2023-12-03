@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
     Width="500"
-    Height="200"
+    Height="800"
     mc:Ignorable="d">
     <StackPanel>
         <TextBox
@@ -37,5 +37,37 @@
             FontFamily="Arial"
             FontSize="16" />
 
+        <TextBlock
+            Margin="10,10,10,10"
+            FontFamily="Arial"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="Employee ID：" />
+        <TextBox
+            x:Name="ID_TextBox"
+            Margin="10"
+            FontFamily="Arial"
+            FontSize="16" />
+        <TextBlock
+            Margin="10,0,10,0"
+            FontFamily="Arial"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="Employee List:" />
+        <ListBox
+            x:Name="EmployeeList_ListBox"
+            Height="200"
+            Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="60" Text="{Binding Path=Name}" />
+                        <TextBlock Width="35" Text="{Binding Path=Age}" />
+                        <TextBlock Width="150" Text="{Binding Path=PhoneType}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </StackPanel>
+
 </Window>

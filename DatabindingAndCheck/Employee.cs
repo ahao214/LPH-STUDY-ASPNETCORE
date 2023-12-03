@@ -14,7 +14,7 @@ namespace DatabindingAndCheck
 
 
         int id;
-        public int Id
+        public int ID
         {
             get { return id; }
             set
@@ -24,7 +24,7 @@ namespace DatabindingAndCheck
                 // 参数1：事件来源
                 // 参数2：属性变更事件参数
                 if (this.PropertyChanged != null)    // 无订阅判断，避免激发空事件产生异常
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Id"));
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs("ID"));
             }
         }
 
