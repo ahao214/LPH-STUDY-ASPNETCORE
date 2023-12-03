@@ -62,7 +62,7 @@ namespace DataBoard.ViewModel
             {
                 return new RelayCommand<Line>((line) =>
                 {
-                    var vm = SimpleIoc.Default.GetInstance<AddLineWindowViewModel>();
+                    var vm = SimpleIoc.Default.GetInstance<EditLineWindowViewModel>();
                     if (vm == null)
                         return;
                     vm.Line = line;
