@@ -118,7 +118,11 @@
       <DependentUpon>BoardDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AddLineWindowViewModel.cs" />
+    <Compile Include="ViewModel\AddStopTypeWindowViewModel.cs" />
+    <Compile Include="ViewModel\AddSubLineWindowViewModel.cs" />
     <Compile Include="ViewModel\EditLineWindowViewModel.cs" />
+    <Compile Include="ViewModel\EditStopTypeWindowViewModel.cs" />
+    <Compile Include="ViewModel\EditSubLineWindowViewModel.cs" />
     <Compile Include="ViewModel\HistoryViewModel.cs" />
     <Compile Include="ViewModel\IndexViewModel.cs" />
     <Compile Include="ViewModel\LineViewModel.cs" />
