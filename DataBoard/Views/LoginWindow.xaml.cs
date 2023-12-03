@@ -1,18 +1,9 @@
 ﻿using DataBoard.Windows;
 using GalaSoft.MvvmLight.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DataBoard.Views
 {
@@ -52,6 +43,24 @@ namespace DataBoard.Views
                 case "EditLineWindow":
                     new EditLineWindow().ShowDialog();
                     break;
+
+                case "AddStopTypeWindow":
+                    new AddStopTypeWindow().ShowDialog();
+                    break;
+
+                case "AddSubLineWindow":
+                    new AddSubLineWindow().ShowDialog();
+                    break;
+
+                case "EditStopTypeWindow":
+                    new EditStopTypeWindow().ShowDialog();
+                    break;
+
+                case "EditSubLineWindow":
+                    new EditSubLineWindow().ShowDialog();
+                    break;
+
+
             }
             return null;
         }
