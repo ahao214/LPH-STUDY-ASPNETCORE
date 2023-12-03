@@ -82,7 +82,7 @@ namespace JokerBooksManager.Managers
         private string oldAuthorName = string.Empty;
 
         private AuthorBLL bll = new AuthorBLL();
-
+        private BookInfoBLL bookBll = new BookInfoBLL();
 
         #region 窗体加载
         private void FrmBookInfoAdd_Load(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace JokerBooksManager.Managers
             CommDefine.AuthorDataBind(CboAuthorId);
             CommDefine.BookTypeDataBind(CboBookTypeId);
             // 图书编码
-            TxtBookNumber.Text = "";
+            TxtBookNumber.Text = bookBll.GetBookNumber();
 
         }
 
