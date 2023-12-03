@@ -54,12 +54,8 @@
 
             <TextBlock
                 Margin="0,100,0,30"
-                FontFamily="Arial"
-                FontSize="32"
-                FontWeight="Bold"
-                Foreground="White"
-                Text="Sign Up"
-                TextAlignment="Center" />
+                Style="{StaticResource SignTitle}"
+                Text="Sign Up" />
 
             <TextBlock
                 Margin="20,0,20,0"
@@ -85,12 +81,8 @@
         <StackPanel Grid.Column="1">
             <TextBlock
                 Margin="0,100,0,25"
-                FontFamily="Arial"
-                FontSize="32"
-                FontWeight="Bold"
-                Foreground="#0072C0"
-                Text="Sign in to App"
-                TextAlignment="Center" />
+                Style="{StaticResource SignTitle}"
+                Text="Sign in to App" />
 
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button Background="Transparent" BorderBrush="Transparent">
