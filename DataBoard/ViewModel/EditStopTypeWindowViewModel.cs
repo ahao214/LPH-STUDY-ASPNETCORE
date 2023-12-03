@@ -11,39 +11,37 @@ using System.Windows;
 namespace DataBoard.ViewModel
 {
     public class EditStopTypeWindowViewModel:ViewModelBase
-    {
-        private Line line;
+    {        
+        private StopType stopType;
 
-        public Line Line
+        public StopType StopType
         {
-            get { return line; }
-            set { line = value; RaisePropertyChanged(); }
-
-
+            get { return stopType; }
+            set { stopType = value; RaisePropertyChanged(); }
         }
 
 
 
 
         /// <summary>
-        /// 修改生产线信息
+        /// 修改停机类型信息
         /// </summary>
-        public RelayCommand<Window> EditLineCommand
+        public RelayCommand<Window> EditStopTypeCommand
         {
             get
             {
                 return new RelayCommand<Window>((window) =>
                 {
-                    if (string.IsNullOrEmpty(line.Name))
+                    if (string.IsNullOrEmpty(stopType.Name))
                         return;
-                    if (line.Name.Length > 32)
+                    if (stopType.Name.Length > 32)
                         return;
 
                     var appData = ServiceLocator.Current.GetInstance<AppData>();
-                    this.line.UserInfoId = appData.CurrentUser.Id;
-                    this.line.InsertDate = DateTime.Now;
-                    LineProvider lineProvider = new LineProvider();
-                    var count = lineProvider.Update(this.line);
+                    this.stopType.UserInfoId = appData.CurrentUser.Id;
+                    this.stopType.InsertDate = DateTime.Now;
+                    StopTypeProvider provider = new StopTypeProvider();
+                    var count = provider.Update(this.stopType);
                     if (count > 0)
                     {
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
