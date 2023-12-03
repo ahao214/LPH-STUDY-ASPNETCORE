@@ -36,7 +36,9 @@ namespace DataBoard.ViewModel
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public RelayCommand OpenAddLineWindowCommand
         {
             get
@@ -45,6 +47,23 @@ namespace DataBoard.ViewModel
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("AddLineWindow", "提示");
+                    Lines = _lineProvider.Select();
+                });
+            }
+        }
+
+
+        /// <summary>
+        /// 打开修改生产线对话框
+        /// </summary>
+        public RelayCommand OpenEditLineWindowCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+                    var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
+                    dialog.ShowMessage("EditLineWindow", "提示");
                     Lines = _lineProvider.Select();
                 });
             }

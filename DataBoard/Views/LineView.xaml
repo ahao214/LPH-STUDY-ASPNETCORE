@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:DataBoard.Views"
+             xmlns:local="clr-namespace:DataBoard.Views" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator},Path=Line}" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -28,8 +28,17 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="修改" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
-                                    <TextBlock Grid.Column="1" Text="删除" Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
+                                    <TextBlock Grid.Column="0" Text="修改" 
+                                               Margin="5" Style="{StaticResource TextBlockForDataGridStyle}">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseUp">
+                                   <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LineView},Path=DataContext.OpenEditLineWindowCommand}"/>             
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                    </TextBlock>
+                                    
+                                    <TextBlock Grid.Column="1" Text="删除" 
+                                               Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
                                 </Grid>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
