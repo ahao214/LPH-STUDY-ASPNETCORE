@@ -6,10 +6,6 @@ using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace DataBoard.ViewModel
@@ -42,8 +38,8 @@ namespace DataBoard.ViewModel
                     var appData = ServiceLocator.Current.GetInstance<AppData>();
                     this.subLine.UserInfoId = appData.CurrentUser.Id;
                     this.subLine.InsertDate = DateTime.Now;
-                    SubLineProvider subLineProvider = new SubLineProvider();
-                    var count = subLineProvider.Update(this.subLine);
+                    SubLineProvider provider = new SubLineProvider();
+                    var count = provider.Update(this.subLine);
                     if (count > 0)
                     {
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
