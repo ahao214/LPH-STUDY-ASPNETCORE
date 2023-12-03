@@ -14,11 +14,7 @@ namespace DataBoard.Model.Provider
         private readonly BoardDBEntities db = new BoardDBEntities();
         public int Delete(Line t)
         {
-            if (t == null)
-                return 0;
-            var model = db.Line.ToList().FirstOrDefault(item => item.Id == t.Id);
-            if (model == null) return 0;
-            db.Line.Remove(model);
+            db.Entry(t).State = System.Data.Entity.EntityState.Deleted;
             return db.SaveChanges();
         }
 

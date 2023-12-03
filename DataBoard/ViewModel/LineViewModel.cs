@@ -37,7 +37,7 @@ namespace DataBoard.ViewModel
 
 
         /// <summary>
-        /// 
+        /// 打开生产线
         /// </summary>
         public RelayCommand OpenAddLineWindowCommand
         {
@@ -54,7 +54,7 @@ namespace DataBoard.ViewModel
 
 
         /// <summary>
-        /// 打开修改生产线对话框
+        /// 修改生产线
         /// </summary>
         public RelayCommand<Line> OpenEditLineWindowCommand
         {
@@ -80,10 +80,27 @@ namespace DataBoard.ViewModel
         {
             get
             {
-                return new RelayCommand<Line>((Line) =>
+                return new RelayCommand<Line>((line) =>
                 {
+                    if (line == null) return;
+                    var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
+                    var task = dialog.ShowMessage("确定要删除吗?", "提示", "", () =>
+                    {
+                        var count = _lineProvider.Delete(line);
+                        if (count > 0)
+                        {
+                            dialog.ShowMessageBox("删除成功", "提示");
+                            Lines = _lineProvider.Select();
+                        }
+                        else
+                        {
+                            dialog.ShowMessageBox("删除失败", "提示");
 
+                        }
+                    });
+                    task.Start();
                 });
+
             }
         }
 
