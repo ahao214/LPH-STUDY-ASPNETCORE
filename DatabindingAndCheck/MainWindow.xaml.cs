@@ -28,6 +28,7 @@ namespace DatabindingAndCheck
 
         private void OutputName_Click(object sender, RoutedEventArgs e)
         {
+            this.OutputTextBox.Text = "My name is " + employee.Name;
 
         }
     }

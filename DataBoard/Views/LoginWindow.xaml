@@ -1,74 +1,112 @@
-﻿<Window x:Class="DataBoard.Views.LoginWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DataBoard.Views"
-        mc:Ignorable="d"
-        WindowStyle="None" DataContext="{Binding Source={StaticResource Locator},Path=LoginWindow}"
-        Title="登录窗体" Height="400" Width="760">
+﻿<Window
+    x:Class="DataBoard.Views.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DataBoard.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="登录窗体"
+    Width="760"
+    Height="400"
+    DataContext="{Binding Source={StaticResource Locator}, Path=LoginWindow}"
+    WindowStyle="None"
+    mc:Ignorable="d">
 
     <Grid>
-        <!--定义两列-->
+        <!--  定义两列  -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <!--左边-->
+        <!--  左边  -->
         <Border>
             <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
-                    <GradientStop Color="#83ABE9" Offset="0"/>
-                    <GradientStop Color="#C8B9D0" Offset="0.9"/>
-                    <GradientStop Color="#4E6A9C" Offset="1"/>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#83ABE9" />
+                    <GradientStop Offset="0.9" Color="#C8B9D0" />
+                    <GradientStop Offset="1" Color="#4E6A9C" />
                 </LinearGradientBrush>
             </Border.Background>
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel.Effect>
-                    <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="Black" Opacity="0.8"/>
+                    <DropShadowEffect
+                        BlurRadius="5"
+                        Opacity="0.8"
+                        ShadowDepth="0"
+                        Color="Black" />
                 </StackPanel.Effect>
-                <TextBlock Text="Welcome" Foreground="White" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBlock Text="DataBoard System" Foreground="White" Margin="0 10 0 0" FontSize="24" HorizontalAlignment="Center"/>
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="20"
+                    Foreground="White"
+                    Text="Welcome" />
+                <TextBlock
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Foreground="White"
+                    Text="DataBoard System" />
             </StackPanel>
 
         </Border>
 
-        <!--右边-->
+        <!--  右边  -->
         <Grid Grid.Column="1">
-            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 15 15 0" Text="&#xf2d3;" FontSize="22" 
-                       FontFamily="/Fonts/#FontAwesome" MouseUp="TextBlock_MouseUp">
+            <TextBlock
+                Margin="0,15,15,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                FontFamily="/Fonts/#FontAwesome"
+                FontSize="22"
+                MouseUp="TextBlock_MouseUp"
+                Text="&#xf2d3;">
                 <TextBlock.Style>
                     <Style TargetType="{x:Type TextBlock}">
                         <Style.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Foreground" Value="Black" />
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="False">
-                                <Setter Property="Foreground" Value="Gray"/>
+                                <Setter Property="Foreground" Value="Gray" />
                             </Trigger>
                         </Style.Triggers>
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
-            <Grid  VerticalAlignment="Center">
-                <!--定义三行-->
+            <Grid VerticalAlignment="Center">
+                <!--  定义三行  -->
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" Margin="15" Width="270" Height="35" Tag="&#xf007;" 
-                         Style="{StaticResource LoginTextBoxStyle}"
-                         Text="{Binding AppData.CurrentUser.Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox
+                    Grid.Row="0"
+                    Width="270"
+                    Height="35"
+                    Margin="15"
+                    Style="{StaticResource LoginTextBoxStyle}"
+                    Tag="&#xf007;"
+                    Text="{Binding AppData.CurrentUser.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                <TextBox Grid.Row="1" Margin="15" Width="270" Height="35" Tag="&#xf023;"
-                         Style="{StaticResource LoginTextBoxStyle}"
-                         Text="{Binding AppData.CurrentUser.Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
-                
-                <Button Grid.Row="2" Margin="15" Content="登录" Width="255" Height="35" 
-                        Style="{StaticResource LoginButtonStyle}"
-                        Command="{Binding CheckUserCommand}"
-                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LoginWindow}}"/>
+                <TextBox
+                    Grid.Row="1"
+                    Width="270"
+                    Height="35"
+                    Margin="15"
+                    Style="{StaticResource LoginTextBoxStyle}"
+                    Tag="&#xf023;"
+                    Text="{Binding AppData.CurrentUser.Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Button
+                    Grid.Row="2"
+                    Width="255"
+                    Height="35"
+                    Margin="15"
+                    Command="{Binding CheckUserCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:LoginWindow}}"
+                    Content="登录"
+                    Style="{StaticResource LoginButtonStyle}" />
             </Grid>
         </Grid>
 
