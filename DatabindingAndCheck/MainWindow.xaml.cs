@@ -16,9 +16,19 @@ namespace DatabindingAndCheck
     /// </summary>
     public partial class MainWindow : Window
     {
+        Employee employee = new Employee() { Name = "Default name" };
+
+
+
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OutputName_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
