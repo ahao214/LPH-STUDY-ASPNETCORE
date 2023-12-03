@@ -20,5 +20,16 @@ namespace TemperatureDial
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 按住鼠标左键拖动的事件
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown (e);
+            this.DragMove();
+        }
+
     }
 }
