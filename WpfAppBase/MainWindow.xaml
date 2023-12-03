@@ -47,6 +47,7 @@
         <PasswordBox
             Grid.Row="2"
             Password="ssssss"
+            PasswordChanged="PasswordBox_PasswordChanged"
             PasswordChar="$" />
 
     </Grid>

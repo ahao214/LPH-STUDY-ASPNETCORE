@@ -31,5 +31,10 @@ namespace WpfAppBase
             StackPanel sp = lblPwd.Content as StackPanel;
             string password = (sp.Children[0] as TextBlock).Text + " " + (sp.Children[1] as TextBlock).Text;
         }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
