@@ -86,7 +86,7 @@
                 <Button
              Margin="15,15,15,15"
              HorizontalAlignment="Right"
-             Command="{Binding OpenAddLineWindowCommand}"
+             Command="{Binding OpenAddSubLineWindowCommand}"
              Content="添加"
              FontSize="16"
              Style="{StaticResource AddButtonStyle}"
