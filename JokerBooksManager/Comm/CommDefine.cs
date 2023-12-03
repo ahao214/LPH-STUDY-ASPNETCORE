@@ -178,5 +178,20 @@ namespace JokerBooksManager.Comm
 
         #endregion
 
+
+        #region 验证小数点后面有两位数字
+        /// <summary>
+        /// 验证小数点后面有两位数字
+        /// </summary>
+        /// <param name="input">输入的值</param>
+        /// <returns>正确返回True 否则返回False</returns>
+        public static bool IsDecimal(string input)
+        {
+            return Regex.IsMatch(input, @"^(\d+)$|^(\d+[.]\d{2})$");
+
+        }
+
+        #endregion
+
     }
 }
