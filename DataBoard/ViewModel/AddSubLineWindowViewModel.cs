@@ -12,33 +12,31 @@ namespace DataBoard.ViewModel
     public class AddSubLineWindowViewModel:ViewModelBase
     {
 
-        private Line line = new Line();
+        private SubLine subLine = new SubLine();
 
-        public Line Line
+        public SubLine SubLine
         {
-            get { return line; }
-            set { line = value; RaisePropertyChanged(); }
-
-
+            get { return subLine; }
+            set { subLine = value; RaisePropertyChanged(); }
         }
 
 
-        public RelayCommand<Window> AddLineCommand
+        public RelayCommand<Window> AddSubLineCommand
         {
             get
             {
                 return new RelayCommand<Window>((window) =>
                 {
-                    if (string.IsNullOrEmpty(line.Name))
+                    if (string.IsNullOrEmpty(subLine.Name))
                         return;
-                    if (line.Name.Length > 32)
+                    if (subLine.Name.Length > 32)
                         return;
 
                     var appData = ServiceLocator.Current.GetInstance<AppData>();
-                    this.line.UserInfoId = appData.CurrentUser.Id;
-                    this.line.InsertDate = DateTime.Now;
-                    LineProvider lineProvider = new LineProvider();
-                    var count = lineProvider.Insert(this.line);
+                    this.subLine.UserInfoId = appData.CurrentUser.Id;
+                    this.subLine.InsertDate = DateTime.Now;
+                    SubLineProvider provider = new SubLineProvider();
+                    var count = provider.Insert(this.subLine);
                     if (count > 0)
                     {
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
