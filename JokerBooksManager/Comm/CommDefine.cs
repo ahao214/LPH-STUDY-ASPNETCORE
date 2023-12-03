@@ -107,6 +107,8 @@ namespace JokerBooksManager.Comm
                 cbo.DataSource = bll.GetPublishHouses();
                 cbo.DisplayMember = "PublishName";
                 cbo.ValueMember = "PublishId";
+                if (cbo.Items.Count > 0)
+                    cbo.SelectedIndex = 0;
             }
             catch (System.Exception err)
             {
@@ -126,8 +128,10 @@ namespace JokerBooksManager.Comm
             {
                 BookTypeBLL bll = new BookTypeBLL();
                 cbo.DataSource = bll.GetBookTypes();
-                cbo.DisplayMember = "PublishName";
-                cbo.ValueMember = "PublishId";
+                cbo.DisplayMember = "BookTypeName";
+                cbo.ValueMember = "BookTypeId";
+                if (cbo.Items.Count > 0)
+                    cbo.SelectedIndex = 0;
             }
             catch (System.Exception err)
             {
@@ -146,8 +150,10 @@ namespace JokerBooksManager.Comm
             {
                 AuthorBLL bll = new AuthorBLL();
                 cbo.DataSource = bll.GetAuthors();
-                cbo.DisplayMember = "PublishName";
-                cbo.ValueMember = "PublishId";
+                cbo.DisplayMember = "AuthorName";
+                cbo.ValueMember = "AuthorId";
+                if (cbo.Items.Count > 0)
+                    cbo.SelectedIndex = 0;
             }
             catch (System.Exception err)
             {

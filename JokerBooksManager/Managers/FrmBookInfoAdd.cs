@@ -88,6 +88,7 @@ namespace JokerBooksManager.Managers
         private void FrmBookInfoAdd_Load(object sender, EventArgs e)
         {
             InitialAddOrUpdate();
+            CboBindData();
         }
         #endregion
 
