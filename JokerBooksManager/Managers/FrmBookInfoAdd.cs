@@ -35,6 +35,21 @@ namespace JokerBooksManager.Managers
         /// <param name="e"></param>
         private void BtnFileBrowse_Click(object sender, EventArgs e)
         {
+            OpenFileDialog fileDialog = new OpenFileDialog
+            {
+                Filter = "图片文件|*.jpg;*.png;*.gif"
+            };
+            try
+            {
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    PbConvrImage.Image = Image.FromFile(fileDialog.FileName);
+                }
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
 
         }
 
