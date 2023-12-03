@@ -24,5 +24,13 @@ namespace TestPopup
         {
             InitializeComponent();
         }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (myPopup.IsOpen)
+                myPopup.IsOpen = false;
+            else
+                myPopup.IsOpen = true;
+        }
     }
 }
