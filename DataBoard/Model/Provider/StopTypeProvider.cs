@@ -11,24 +11,28 @@ namespace DataBoard.Model.Provider
     /// </summary>
     public class StopTypeProvider : IProvider<StopType>
     {
+        private readonly BoardDBEntities db = new BoardDBEntities();
         public int Delete(StopType t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = System.Data.Entity.EntityState.Deleted;
+            return db.SaveChanges();
         }
 
         public int Insert(StopType t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = System.Data.Entity.EntityState.Added;
+            return db.SaveChanges();
         }
 
         public List<StopType> Select()
         {
-            throw new NotImplementedException();
+            return db.StopType.Include("History").ToList();
         }
 
         public int Update(StopType t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = System.Data.Entity.EntityState.Modified;
+            return db.SaveChanges();
         }
     }
 }
