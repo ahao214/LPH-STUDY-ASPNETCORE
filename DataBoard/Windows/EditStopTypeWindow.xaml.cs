@@ -23,5 +23,10 @@ namespace DataBoard.Windows
         {
             InitializeComponent();
         }
+
+        private void TextBlock_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
     }
 }
