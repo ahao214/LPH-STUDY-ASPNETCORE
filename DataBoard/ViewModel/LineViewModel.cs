@@ -56,15 +56,33 @@ namespace DataBoard.ViewModel
         /// <summary>
         /// 打开修改生产线对话框
         /// </summary>
-        public RelayCommand OpenEditLineWindowCommand
+        public RelayCommand<Line> OpenEditLineWindowCommand
         {
             get
             {
-                return new RelayCommand(() =>
+                return new RelayCommand<Line>((line) =>
                 {
+                    var vm = SimpleIoc.Default.GetInstance<AddLineWindowViewModel>();
+                    if (vm == null)
+                        return;
+                    vm.Line = line;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("EditLineWindow", "提示");
                     Lines = _lineProvider.Select();
+                });
+            }
+        }
+
+        /// <summary>
+        /// 删除生产线
+        /// </summary>
+        public RelayCommand<Line> DeleteLineWindowCommand
+        {
+            get
+            {
+                return new RelayCommand<Line>((Line) =>
+                {
+
                 });
             }
         }

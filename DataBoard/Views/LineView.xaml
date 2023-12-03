@@ -28,17 +28,28 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="修改" 
+                                    <TextBlock  Tag="{Binding}" Grid.Column="0" Text="修改" 
                                                Margin="5" Style="{StaticResource TextBlockForDataGridStyle}">
                                         <i:Interaction.Triggers>
                                             <i:EventTrigger EventName="MouseUp">
-                                   <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LineView},Path=DataContext.OpenEditLineWindowCommand}"/>             
+                                   <i:InvokeCommandAction 
+                                       Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LineView},Path=DataContext.OpenEditLineWindowCommand}"
+                                       CommandParameter="{Binding  RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=TextBlock},Path=Tag}"/>             
                                             </i:EventTrigger>
                                         </i:Interaction.Triggers>
                                     </TextBlock>
-                                    
-                                    <TextBlock Grid.Column="1" Text="删除" 
-                                               Margin="5" Style="{StaticResource TextBlockForDataGridStyle}"/>
+
+                                    <TextBlock Grid.Column="1" Text="删除" Tag="{Binding}" 
+                                               Margin="5" Style="{StaticResource TextBlockForDataGridStyle}">
+                                      <i:Interaction.Triggers>
+         <i:EventTrigger EventName="MouseUp">
+<i:InvokeCommandAction 
+    Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:LineView},
+    Path=DataContext.DeleteLineWindowCommand}"
+    CommandParameter="{Binding  RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=TextBlock},Path=Tag}"/>             
+         </i:EventTrigger>
+     </i:Interaction.Triggers>
+                                    </TextBlock>
                                 </Grid>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
