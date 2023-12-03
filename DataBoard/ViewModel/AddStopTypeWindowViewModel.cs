@@ -20,8 +20,10 @@ namespace DataBoard.ViewModel
             set { stopType = value; RaisePropertyChanged(); }
         }
 
-
-        public RelayCommand<Window> AddSubLineCommand
+        /// <summary>
+        /// 添加停机类型
+        /// </summary>
+        public RelayCommand<Window> AddStopTypeCommand
         {
             get
             {
