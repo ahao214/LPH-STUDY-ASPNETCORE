@@ -117,5 +117,46 @@ namespace JokerBooksManager.Comm
 
         #endregion
 
+
+        #region 绑定图书类别
+
+        public void BookTypeDataBind(UIComboBox cbo)
+        {
+            try
+            {
+                BookTypeBLL bll = new BookTypeBLL();
+                cbo.DataSource = bll.GetBookTypes();
+                cbo.DisplayMember = "PublishName";
+                cbo.ValueMember = "PublishId";
+            }
+            catch (System.Exception err)
+            {
+                CommMsgBox.MsgBoxCaveat(err.Message);
+            }
+
+        }
+
+        #endregion
+
+        #region 绑定图书作者
+
+        public void AuthorDataBind(UIComboBox cbo)
+        {
+            try
+            {
+                AuthorBLL bll = new AuthorBLL();
+                cbo.DataSource = bll.GetAuthors();
+                cbo.DisplayMember = "PublishName";
+                cbo.ValueMember = "PublishId";
+            }
+            catch (System.Exception err)
+            {
+                CommMsgBox.MsgBoxCaveat(err.Message);
+            }
+
+        }
+
+        #endregion
+
     }
 }
