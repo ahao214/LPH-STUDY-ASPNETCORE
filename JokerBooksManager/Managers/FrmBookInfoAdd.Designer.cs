@@ -105,7 +105,7 @@
             this.BtnOk.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnOk.Location = new System.Drawing.Point(38, 672);
+            this.BtnOk.Location = new System.Drawing.Point(37, 613);
             this.BtnOk.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -128,7 +128,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(242, 672);
+            this.BtnClose.Location = new System.Drawing.Point(241, 613);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -499,7 +499,7 @@
             // FrmBookInfoAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1024, 721);
+            this.ClientSize = new System.Drawing.Size(1024, 669);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.GbCrls);

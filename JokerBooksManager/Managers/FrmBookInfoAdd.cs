@@ -28,7 +28,7 @@ namespace JokerBooksManager.Managers
         private string sPublishDate;
         private int iBookTypeId;
         private int iAuthorId;
-        private decimal dBookPrice;
+        private string sBookPrice;
         private int iTotalCount;
         private Image iConverImg;
         private string sBookSummary;
@@ -134,14 +134,14 @@ namespace JokerBooksManager.Managers
             {
                 PbConvrImage.Image = null;
                 TxtBookSamry.Clear();
-                foreach (Control item in GbCrls.Controls)
-                {
-                    if (item is UITextBox)
-                    {
-                        UITextBox txtBox = item as UITextBox;
-                        txtBox.Clear();
-                    }
-                }
+                //foreach (Control item in GbCrls.Controls)
+                //{
+                //    if (item is UITextBox)
+                //    {
+                //        UITextBox txtBox = item as UITextBox;
+                //        txtBox.Clear();
+                //    }
+                //}
 
             }
         }
@@ -199,13 +199,13 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 验证图书名称是否存在
         /// </summary>
-        /// <param name="authorName">图书名称</param>
+        /// <param name="bookName">图书名称</param>
         /// <returns>True:存在 False：不存在</returns>
-        private bool CheckBookName(string authorName)
+        private bool CheckBookName(string bookName)
         {
-            if (bookId == 0 || (bookId > 0 && oldAuthorName != authorName))
+            if (bookId == 0 || (bookId > 0 && oldAuthorName != bookName))
             {
-                if (bll.IsExistAuthor(authorName))
+                if (bll.IsExistAuthor(bookName))
                 {
                     CommMsgBox.MsgBoxCaveat(CommConst.IsExistsInfo);
                     return true;
@@ -220,7 +220,7 @@ namespace JokerBooksManager.Managers
 
         #region 输入验证
 
-       
+
         /// <summary>
         /// 输入验证
         /// </summary>        
@@ -234,7 +234,7 @@ namespace JokerBooksManager.Managers
             iBookTypeId = CboBookTypeId.SelectedValue.ChangeInt();
             iAuthorId = CboAuthorId.SelectedValue.ChangeInt();
             iConverImg = PbConvrImage.Image;
-            dBookPrice = Convert.ToDecimal(TxtBookPrice.Text.Trim());
+            sBookPrice = TxtBookPrice.Text.Trim();
             iTotalCount = TxtTotalCount.Text.Trim().ChangeInt();
             sBookSummary = TxtBookSamry.Text.Trim();
 
@@ -254,7 +254,7 @@ namespace JokerBooksManager.Managers
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if (string.IsNullOrEmpty(dBookPrice.ToString()))
+            if (!CommDefine.IsDecimal(sBookPrice))
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
