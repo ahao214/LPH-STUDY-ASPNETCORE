@@ -38,7 +38,7 @@ namespace DatabindingAndCheck
 
             #region 简化绑定
 
-            this.InputTextBox.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = employee });
+            this.InputTextBox.SetBinding(TextBox.TextProperty, new Binding("Name") { Source = employee, Mode = BindingMode.OneWay });
 
             #endregion
         }
@@ -47,6 +47,11 @@ namespace DatabindingAndCheck
         {
             this.OutputTextBox.Text = "My name is " + employee.Name;
 
+        }
+
+        private void NameToAmy_Click(object sender, RoutedEventArgs e)
+        {
+            this.OutputTextBox.Text = "Amy";
         }
     }
 }

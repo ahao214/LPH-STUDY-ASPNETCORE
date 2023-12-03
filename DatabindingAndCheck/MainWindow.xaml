@@ -29,5 +29,13 @@
             FontSize="16"
             Text="" />
 
+        <Button
+            Width="140"
+            Margin="10"
+            Click="NameToAmy_Click"
+            Content="Name to Amy"
+            FontFamily="Arial"
+            FontSize="16" />
+
     </StackPanel>
 </Window>
