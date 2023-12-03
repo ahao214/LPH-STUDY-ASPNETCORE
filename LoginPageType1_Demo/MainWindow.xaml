@@ -68,14 +68,9 @@
                 TextWrapping="WrapWithOverflow" />
 
             <Button
-                Width="170"
                 Margin="0,130,0,0"
-                Background="Transparent"
-                BorderBrush="White"
                 Content="Sign Up"
-                FontFamily="Arial"
-                FontSize="16"
-                Foreground="Wheat" />
+                Style="{StaticResource SignUpButton}" />
         </StackPanel>
 
         <StackPanel Grid.Column="1">
@@ -182,14 +177,9 @@
             </Border>
 
             <Button
-                Width="170"
                 Margin="0,22,0,0"
-                Background="#0072C0"
-                BorderBrush="#0072C0"
                 Content="Sign In"
-                FontFamily="Arial"
-                FontSize="16"
-                Foreground="White" />
+                Style="{StaticResource SignInButton}" />
 
         </StackPanel>
 
