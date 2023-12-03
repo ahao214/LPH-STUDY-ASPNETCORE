@@ -35,7 +35,8 @@ namespace DataBoard.Model.Provider
 
         public int Update(Line t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = System.Data.Entity.EntityState.Modified;
+            return db.SaveChanges();
         }
     }
 }

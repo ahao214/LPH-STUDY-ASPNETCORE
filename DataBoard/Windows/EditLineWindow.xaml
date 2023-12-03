@@ -1,31 +1,49 @@
-﻿<Window x:Class="DataBoard.Windows.EditLineWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DataBoard.Windows"
-        mc:Ignorable="d" WindowStyle="None"
-        Background="#29282D"
-        WindowStartupLocation="CenterScreen" 
-        DataContext="{Binding Source={StaticResource Locator},Path=EditLineWindow}"
-        Title="修改生产线" Height="200" Width="400">
+﻿<Window
+    x:Class="DataBoard.Windows.EditLineWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DataBoard.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="修改生产线"
+    Width="400"
+    Height="200"
+    Background="#29282D"
+    DataContext="{Binding Source={StaticResource Locator}, Path=EditLineWindow}"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="200"/>
+        <WindowChrome CaptionHeight="200" />
     </WindowChrome.WindowChrome>
 
-    <Border BorderThickness="1" BorderBrush="White">
+    <Border BorderBrush="White" BorderThickness="1">
         <Grid>
-            <TextBlock  Style="{StaticResource TextBlockExitStyle}"                      WindowChrome.IsHitTestVisibleInChrome="True"
-               MouseUp="TextBlock_MouseUp"
-              />
-            <Grid Margin="30 50 30 40">
+            <TextBlock
+                MouseUp="TextBlock_MouseUp"
+                Style="{StaticResource TextBlockExitStyle}"
+                WindowChrome.IsHitTestVisibleInChrome="True" />
+            <Grid Margin="30,50,30,40">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" WindowChrome.IsHitTestVisibleInChrome="True" Height="35" Text="{Binding Line .Name,Mode=TwoWay,
-            UpdateSourceTrigger=PropertyChanged}"/>
-                <Button WindowChrome.IsHitTestVisibleInChrome="True" Grid.Column="1" Margin="15 15 15 15" FontSize="16" Content="添加" Tag="&#xf055;" HorizontalAlignment="Right" Command="{Binding EditLineCommand}" Style="{StaticResource AddButtonStyle}"/>
+                <TextBox
+                    Grid.Column="0"
+                    Height="35"
+                    Text="{Binding Line .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    WindowChrome.IsHitTestVisibleInChrome="True" />
+                <Button
+                    Grid.Column="1"
+                    Margin="15,15,15,15"
+                    HorizontalAlignment="Right"
+                    Command="{Binding EditLineCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:EditLineWindow}}"
+                    Content="修改"
+                    FontSize="16"
+                    Style="{StaticResource AddButtonStyle}"
+                    Tag="&#xf055;"
+                    WindowChrome.IsHitTestVisibleInChrome="True" />
             </Grid>
 
 
