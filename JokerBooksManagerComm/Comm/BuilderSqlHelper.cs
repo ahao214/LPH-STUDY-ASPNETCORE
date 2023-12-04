@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -291,9 +292,10 @@ namespace JokerBooksManagerComm.Comm
             PropertyInfo[] properties = t.GetType().GetProperties();
             foreach (PropertyInfo pi in properties)
             {
-                if(!pi.Name .Equals (primaryKey ))
+                string pName = pi.Name;
+                if (!pName.Equals(primaryKey))
                 {
-                    colVals += (string.IsNullOrEmpty(colVals) ? "" : ",") + string.Format($"{pi.Name}");
+                    colVals += (string.IsNullOrEmpty(colVals) ? "" : ",") + string.Format($"{pName}");
                 }
             }
 
@@ -307,7 +309,32 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 创建参数
 
+        /// <summary>
+        /// 创建参数
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="primaryKey">主键</param>
+        /// <returns>返回除了主键以外的任何字段参数</returns>
+        public static List<SqlParameter> GetParameters<T>(T t, string primaryKey) where T : class
+        {
+            PropertyInfo[] properties = t.GetType().GetProperties();
+            List<SqlParameter> parameters = new List<SqlParameter>();
+            foreach (PropertyInfo pi in properties)
+            {
+                string pName = pi.Name;
+                if (!pName.Equals(primaryKey))
+                {
+                    SqlParameter para = new SqlParameter("@" + pName, pi.GetValue(t));
+                    parameters.Add(para);
+                }
+            }
+            return parameters.ToList();
+        }
+
+        #endregion
 
 
     }
