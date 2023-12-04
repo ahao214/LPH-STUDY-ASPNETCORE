@@ -68,25 +68,25 @@ namespace JokerBooksManager.Comm
         /// <param name="headerCode"></param>
         /// <param name="sNumber"></param>
         /// <returns>返回加一后的读者编码</returns>
-        public static string NumberPlusOne(string headerCode,string sNumber)
+        public static string NumberPlusOne(string headerCode, string sNumber)
         {
             int len = sNumber.Length;
             int iHeadLen = headerCode.Length;
             sNumber = sNumber.Substring(iHeadLen, len - iHeadLen);
             int iNumber = sNumber.ChangeInt() + 1;
-            return FillIn(iNumber.ToString());
+            return FillIn(headerCode, iNumber.ToString());
         }
 
         #endregion
 
 
-        #region 构造11位读者编码
+        #region 构造11位编码
         /// <summary>
-        /// 构造11位读者编码
+        /// 构造11位编码
         /// </summary>
         /// <param name="dataSource"></param>
         /// <returns></returns>
-        private static string FillIn(string dataSource)
+        private static string FillIn(string headerCode, string dataSource)
         {
             // 首先得到字符串长度
             int len = dataSource.Length;
@@ -98,7 +98,7 @@ namespace JokerBooksManager.Comm
             {
                 dataSource = "0" + dataSource;
             }
-            return CommConst.PrefixReaderNumber + dataSource;
+            return headerCode + dataSource;
         }
         #endregion
 
