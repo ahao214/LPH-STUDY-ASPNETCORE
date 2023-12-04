@@ -167,6 +167,25 @@ namespace DialControlLibrary
         /// </summary>
         private void LightContorl()
         {
+            this.DisplayNumber.Content = this.DisplayValue.ToString();
+            if (DisplayValue < MinMark)
+            {
+                LowLight.Fill = LowWarningLightBrush;
+                MidLight.Fill = MidDefaultLightBrush;
+                SuperLight.Fill = SuperDefaultLightBrush;
+            }
+            else if (DisplayValue > MaxMark)
+            {
+                LowLight.Fill = LowDefaultLightBrush;
+                MidLight.Fill = MidDefaultLightBrush;
+                SuperLight.Fill = SuperWarningLightBrush;
+            }
+            else
+            {
+                LowLight.Fill = LowDefaultLightBrush;
+                MidLight.Fill = MidWarningLightBrush;
+                SuperLight.Fill = SuperDefaultLightBrush;
+            }
 
         }
 
