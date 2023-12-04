@@ -213,8 +213,21 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
+        #region 添加图书信息(另外一种方法)
+        /// <summary>
+        /// 添加图书信息(另外一种方法)
+        /// </summary>
+        /// <param name="bookInfo"></param>
+        /// <returns></returns>
+        public static bool NewAddBookInfo(BookInfo info)
+        {
+            BookCommandType type = BookCommandType.Text;
+            string sql = BuilderSqlHelper.InsertSql(info, "BookId");
+            List<SqlParameter> paras = BuilderSqlHelper.GetParameters(info, "BookId");
 
-
+            return DBHelper.ExecuteNoneQuery(sql, type, paras.ToArray()) > 0;
+        } 
+        #endregion
 
     }
 }
