@@ -71,6 +71,13 @@
                     MaxMark="100"
                     MinMark="-10" />
 
+                <DCL:Regulator
+                    Grid.Row="1"
+                    Width="240"
+                    Height="279"
+                    Margin="10,0,30,0"
+                    VerticalAlignment="Top" />
+
             </Grid>
         </Grid>
 
