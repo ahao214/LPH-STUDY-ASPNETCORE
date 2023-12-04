@@ -116,10 +116,12 @@ namespace DialControlLibrary
 
         #endregion
 
+        // 加载灯
         private void LoadLight()
         {
-
-
+            this.LowLight.Fill = LowDefaultLightBrush;
+            this.MidLight.Fill = MidDefaultLightBrush;
+            this.SuperLight.Fill = SuperDefaultLightBrush;
         }
 
         public int MaxMark
