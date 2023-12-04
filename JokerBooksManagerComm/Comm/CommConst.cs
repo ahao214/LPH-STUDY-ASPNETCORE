@@ -212,6 +212,12 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 图书编码前缀字符
+
+        public const string PrefixBookNumber = "BI";
+
+        #endregion
+
 
         #region 读者编码长度
 
