@@ -58,7 +58,7 @@
                                         Text="修改">
                                         <i:Interaction.Triggers>
                                             <i:EventTrigger EventName="MouseUp">
-                                                <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:LineView}, Path=DataContext.OpenEditStopTypeWindowCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TextBlock}, Path=Tag}" />
+                                                <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:StopTypeView}, Path=DataContext.OpenEditStopTypeWindowCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TextBlock}, Path=Tag}" />
                                             </i:EventTrigger>
                                         </i:Interaction.Triggers>
                                     </TextBlock>
@@ -71,7 +71,7 @@
                                         Text="删除">
                                         <i:Interaction.Triggers>
                                             <i:EventTrigger EventName="MouseUp">
-                                                <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:LineView}, Path=DataContext.DeleteStopTypeWindowCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TextBlock}, Path=Tag}" />
+                                                <i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:StopTypeView}, Path=DataContext.DeleteStopTypeWindowCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=TextBlock}, Path=Tag}" />
                                             </i:EventTrigger>
                                         </i:Interaction.Triggers>
                                     </TextBlock>
