@@ -47,6 +47,7 @@ namespace DataBoard.ViewModel
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                         dialog.ShowMessageBox("添加成功", "提示");
                         window.Close();
+                        this.Line = new Line();
                     }
                     else
                     {
