@@ -9,6 +9,9 @@ using JokerBooksManagerComm.Comm;
 using JokerBooksManagerBLL.BookBLL;
 using Sunny.UI;
 using System.Text.RegularExpressions;
+using System.IO;
+using System.Drawing.Imaging;
+using System.Drawing;
 
 
 namespace JokerBooksManager.Comm
@@ -188,6 +191,27 @@ namespace JokerBooksManager.Comm
         public static bool IsDecimal(string input)
         {
             return Regex.IsMatch(input, @"^(\d+)$|^(\d+[.]\d{2})$");
+
+        }
+
+        #endregion
+
+        #region  转换图片
+
+        /// <summary>
+        /// 转换图片
+        /// </summary>
+        /// <param name="img"></param>
+        /// <returns></returns>
+        public static byte[] ImageToByte(Image img)
+        {
+            MemoryStream stream = new MemoryStream();
+            img.Save(stream, ImageFormat.Bmp);
+            byte[] bytes = new byte[stream.Length];
+            stream.Position = 0;
+            stream.Read(bytes, 0, bytes.Length);
+            stream.Close();
+            return bytes;
 
         }
 
