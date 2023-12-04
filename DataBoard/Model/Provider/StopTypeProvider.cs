@@ -26,7 +26,7 @@ namespace DataBoard.Model.Provider
 
         public List<StopType> Select()
         {
-            return db.StopType.Include("History").ToList();
+            return db.StopType.Include("History").Include("UserInfo").ToList();
         }
 
         public int Update(StopType t)
