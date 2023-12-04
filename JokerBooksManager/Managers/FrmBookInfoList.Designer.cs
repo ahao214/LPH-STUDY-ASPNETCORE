@@ -42,7 +42,7 @@
             this.BookNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InputName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,7 +123,7 @@
             this.BookNumber,
             this.PublishName,
             this.PublishDate,
-            this.BookTypeId,
+            this.BookTypeName,
             this.AuthorName,
             this.BookPrice,
             this.InputName,
@@ -227,14 +227,14 @@
             this.PublishDate.ToolTipText = "出版时间";
             this.PublishDate.Width = 150;
             // 
-            // BookTypeId
+            // BookTypeName
             // 
-            this.BookTypeId.DataPropertyName = "BookTypeId";
-            this.BookTypeId.HeaderText = "图书类别";
-            this.BookTypeId.MinimumWidth = 8;
-            this.BookTypeId.Name = "BookTypeId";
-            this.BookTypeId.ToolTipText = "图书类别";
-            this.BookTypeId.Width = 150;
+            this.BookTypeName.DataPropertyName = "BookTypeName";
+            this.BookTypeName.HeaderText = "图书类别";
+            this.BookTypeName.MinimumWidth = 8;
+            this.BookTypeName.Name = "BookTypeName";
+            this.BookTypeName.ToolTipText = "图书类别";
+            this.BookTypeName.Width = 150;
             // 
             // AuthorName
             // 
@@ -345,7 +345,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BookNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookTypeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookTypeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn AuthorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn InputName;

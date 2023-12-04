@@ -110,7 +110,7 @@ namespace JokerBooksManager.Managers
                 DgvBookInfo.Rows.Add();
                 DgvBookInfo["BookId",i].Value = lst[i].BookId;
                 DgvBookInfo["BookName", i].Value = lst[i].BookName;                
-                DgvBookInfo["CoverImage", i].Value = lst[i].ConvrImage;
+                //DgvBookInfo["CoverImage", i].Value = lst[i].ConvrImage;
                 DgvBookInfo["BookNumber", i].Value = lst[i].BookNumber;
                 DgvBookInfo["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
                 DgvBookInfo["PublishDate", i].Value = lst[i].PublishDate;

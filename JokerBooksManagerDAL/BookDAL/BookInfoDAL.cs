@@ -27,8 +27,8 @@ namespace JokerBooksManagerDAL.BookDAL
             BookCommandType commandType = BookCommandType.Text;
             string sql = BuilderSqlHelper.InsertSql<BookInfo>(bookInfo, "BookInfo", "BookId");
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("insert into BookInfo(BookName,BookNumber,PublishId,PublishDate,BookTypeId,AuthorId,BookPrice ,InputName,TotalCount,BookSamry,ConvrImage)");
-            sb.AppendLine("values(@BookName,@BookNumber,@PublishId,@PublishDate,@BookTypeId,@AuthorId,@BookPrice ,@InputName,@TotalCount,@BookSamry,@ConvrImage)");
+            sb.AppendLine("insert into BookInfo(BookName,BookNumber,PublishId,PublishDate,BookTypeId,AuthorId,BookPrice ,InputName,TotalCount,BookSamry)");
+            sb.AppendLine("values(@BookName,@BookNumber,@PublishId,@PublishDate,@BookTypeId,@AuthorId,@BookPrice ,@InputName,@TotalCount,@BookSamry)");
             SqlParameter[] parameters =
             {
                 new  SqlParameter ("@BookName",bookInfo.BookName),
@@ -41,7 +41,7 @@ namespace JokerBooksManagerDAL.BookDAL
                 new  SqlParameter ("@InputName",bookInfo.InputName),
                 new  SqlParameter ("@TotalCount",bookInfo.TotalCount),
                 new  SqlParameter ("@BookSamry",bookInfo.BookSamry),
-                new  SqlParameter ("@ConvrImage",bookInfo.ConvrImage)
+                //new  SqlParameter ("@ConvrImage",bookInfo.ConvrImage)
             };
 
             return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, parameters) > 0;
@@ -101,7 +101,7 @@ namespace JokerBooksManagerDAL.BookDAL
                     BorrowCount = dr["BorrowCount"].ChangeInt(),
                     TotalCount = dr["TotalCount"].ChangeInt(),
                     BookSamry = dr["BookSamry"].ToString(),
-                    ConvrImage = (byte[])dr["ConvrImage"]
+                    //ConvrImage = (byte[])dr["ConvrImage"]
                 };
                 lst.Add(auth);
             }
