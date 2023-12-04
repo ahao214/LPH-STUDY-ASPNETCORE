@@ -98,6 +98,26 @@ namespace DialControlLibrary
 
                 this.TickBorder.Children.Add(line);
 
+                if(i %2.5!=0)
+                {
+                    line.X2 = 4.5;
+                }
+                else
+                {
+                    // 刻度值是10的倍数
+                    TextBlock textBlock = new TextBlock
+                    {
+                        FontSize = 9,
+                        Width = 20,
+                        FontFamily = new FontFamily("Arial"),
+                        Foreground = lineBrush,
+                        TextAlignment = TextAlignment.Right,
+                        Text = (Maximun - i * 2).ToString(),
+                        Margin = new Thickness(10, -5 + i * GraduationInterval, 0, 0)
+                    };
+                    this.TickBorder.Children.Add(textBlock);
+                }
+
             }
 
 
