@@ -168,16 +168,17 @@ namespace JokerBooksManager.Managers
         /// 添加或修改图书信息
         /// </summary>
         /// <param name="type"></param>
-        private void AddOrUpdate(Author author)
+        private void AddOrUpdate(BookInfo bookInfo)
         {
             bool bRes;
             if (bookId == 0) // 添加
             {
-                bRes = bll.AddAuthor(author);
+                bRes = bookBll.AddBookInfo(bookInfo);
             }
             else // 修改
             {
-                bRes = bll.UpdateAuthor(author);
+                //bRes = bll.UpdateAuthor(author);
+                bRes = true;
             }
             if (bRes)
             {
@@ -285,13 +286,13 @@ namespace JokerBooksManager.Managers
             {
                 return;
             }
-            // 封装 Author 信息            
-            Author author = new Author
+            // 封装 BookInfo 信息            
+            BookInfo bookInfo = new BookInfo
             {
-                AuthorId = bookId
+                BookName = bookName,
             };
             // 添加数据到数据库
-            AddOrUpdate(author);
+            AddOrUpdate(bookInfo);
         }
         #endregion
 
