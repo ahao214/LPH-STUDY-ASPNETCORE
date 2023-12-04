@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Schema;
 
 namespace DialControlLibrary
 {
@@ -23,6 +24,7 @@ namespace DialControlLibrary
         public MercuryThermometer()
         {
             InitializeComponent();
+            TickMarkRepaint();
         }
 
         /// <summary>
@@ -34,7 +36,7 @@ namespace DialControlLibrary
             set { SetValue(MaximunProperty, value); }
         }
 
-        public static readonly DependencyProperty MaximunProperty = DependencyProperty.Register("Maximun", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(50));
+        public static readonly DependencyProperty MaximunProperty = DependencyProperty.Register("Maximun", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(50, new PropertyChangedCallback(ValueChanged)));
 
 
 
@@ -48,7 +50,7 @@ namespace DialControlLibrary
         }
 
         public static readonly DependencyProperty MinimunProperty =
-            DependencyProperty.Register("Minimun", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(-20));
+            DependencyProperty.Register("Minimun", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(-20, new PropertyChangedCallback(ValueChanged)));
 
 
         /// <summary>
@@ -61,10 +63,45 @@ namespace DialControlLibrary
         }
 
         public static readonly DependencyProperty DisplayValueProperty =
-            DependencyProperty.Register("DisplayValue", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(0));
+            DependencyProperty.Register("DisplayValue", typeof(int), typeof(MercuryThermometer), new PropertyMetadata(0, new PropertyChangedCallback(ValueChanged)));
 
 
+        private static void ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            (d as MercuryThermometer).TickMarkRepaint();
+        }
 
+        /// <summary>
+        /// 重新绘制温度计
+        /// </summary>
+        private void TickMarkRepaint()
+        {
+            // 清空原有数据
+            this.TickBorder.Children.Clear();
+
+            double TickBorderHeight = 121;
+            double RangeInterval = (Maximun - Minimun) / 2;
+            double GraduationInterval = TickBorderHeight / RangeInterval;
+
+            // 绘制刻度
+            for (int i = 0; i <= RangeInterval; i++)
+            {
+                Line line = new Line();
+                line.X1 = 2;
+                line.Y1 = i * GraduationInterval;
+                line.X2 = 10;
+                line.Y2 = i * GraduationInterval;
+                Color lineColor = (Color)ColorConverter.ConvertFromString("#BCA258");
+                Brush lineBrush = new SolidColorBrush(lineColor);
+                line.Stroke = lineBrush;
+                line.StrokeThickness = 1;
+
+                this.TickBorder.Children.Add(line);
+
+            }
+
+
+        }
 
     }
 }
