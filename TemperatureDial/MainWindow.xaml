@@ -43,6 +43,7 @@
                 Content="Industrial Temperature Console"
                 FontSize="27"
                 Style="{StaticResource RegLabelStyle}" />
+            <Button/>
         </Canvas>
 
         <Grid Grid.Row="1">

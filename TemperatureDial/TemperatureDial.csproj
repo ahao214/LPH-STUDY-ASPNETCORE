@@ -9,8 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icon\Toolbar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DialControlLibrary\DialControlLibrary.csproj" />
     <ProjectReference Include="..\SingleControlLibrbay\SingleControlLibrbay.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icon\Toolbar.png" />
   </ItemGroup>
 
 </Project>
