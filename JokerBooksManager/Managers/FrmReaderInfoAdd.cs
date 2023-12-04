@@ -70,7 +70,7 @@ namespace JokerBooksManager.Managers
 
         private void ReaderNumberInit()
         {
-            TxtReaderNumber.Text = CommDefine.NumberPlusOne(infoBll.GetReaderNumber());
+            TxtReaderNumber.Text = CommDefine.NumberPlusOne(CommConst.PrefixReaderNumber,infoBll.GetReaderNumber());
         }
 
         #endregion
