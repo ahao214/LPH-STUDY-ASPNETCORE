@@ -20,13 +20,31 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 新增图书信息
         /// </summary>
-        /// <param name="author">图书信息</param>
+        /// <param name="bookInfo">图书信息</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool AddAuthor(Author author)
+        public static bool AddBookInfo(BookInfo bookInfo)
         {
             BookCommandType commandType = BookCommandType.Text;
-            string sql = BuilderSqlHelper.InsertSql<Author>(author, "Author", "AuthorId");
-            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
+            string sql = BuilderSqlHelper.InsertSql<BookInfo>(bookInfo, "BookInfo", "BookId");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("insert into BookInfo(BookName,BookNumber,PublishId,PublishDate,BookTypeId,AuthorId,BookPrice ,InputName,TotalCount,BookSamry,ConvrImage)");
+            sb.AppendLine("values(@BookName,@BookNumber,@PublishId,@PublishDate,@BookTypeId,@AuthorId,@BookPrice ,@InputName,@TotalCount,@BookSamry,@ConvrImage)");
+            SqlParameter[] parameters =
+            {
+                new  SqlParameter ("@BookName",bookInfo.BookName),
+                new  SqlParameter ("@BookNumber",bookInfo.BookNumber),
+                new  SqlParameter ("@PublishId",bookInfo.PublishId),
+                new  SqlParameter ("@PublishDate",bookInfo.PublishDate),
+                new  SqlParameter ("@BookTypeId",bookInfo.BookTypeId),
+                new  SqlParameter ("@AuthorId",bookInfo.AuthorId),
+                new  SqlParameter ("@BookPrice",bookInfo.BookPrice),
+                new  SqlParameter ("@InputName",bookInfo.InputName),
+                new  SqlParameter ("@TotalCount",bookInfo.TotalCount),
+                new  SqlParameter ("@BookSamry",bookInfo.BookSamry),
+                new  SqlParameter ("@ConvrImage",bookInfo.ConvrImage)
+            };
+
+            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType,parameters) > 0;
         }
 
         #endregion
@@ -36,16 +54,16 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 图书信息是否存在
         /// </summary>
-        /// <param name="authorName">图书信息</param>
+        /// <param name="bookInfoName">图书信息</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public static bool IsExistAuthor(string authorName)
+        public static bool IsExistBookInfo(string bookInfoName)
         {
             StringBuilder sb = new StringBuilder();
             Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("AuthorName", authorName);
+            dic.Add("BookName", bookInfoName);
             BookCommandType commandType = BookCommandType.Text;
-            Author author = new Author();
-            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId", dic);
+            BookInfo BookInfo = new BookInfo();
+            string sql = BuilderSqlHelper.SelectSql<BookInfo>(BookInfo, "BookInfo", "BookId", dic);
 
             return DBHelper.GetDataTable(sql, commandType).DefaultView.Count > 0;
         }
@@ -58,22 +76,22 @@ namespace JokerBooksManagerDAL.BookDAL
         /// 获取所有图书信息
         /// </summary>
         /// <returns></returns>
-        public static List<Author> GetAuthors()
+        public static List<BookInfo> GetBookInfos()
         {
             BookCommandType bookCommand = BookCommandType.Text;
-            List<Author> lst = new List<Author>();
+            List<BookInfo> lst = new List<BookInfo>();
             StringBuilder sb = new StringBuilder();
-            Author author = new Author();
-            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId");
+            BookInfo bookInfo = new BookInfo();
+            string sql = BuilderSqlHelper.SelectSql<BookInfo>(bookInfo, "BookInfo", "BookId");
 
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             while (dr.Read())
             {
-                Author auth = new Author
+                BookInfo auth = new BookInfo
                 {
-                    AuthorId = dr["AuthorId"].ChangeInt(),
-                    AuthorName = dr["AuthorName"].ToString(),
-                    Remark = dr["Remark"].ToString()
+                    BookId = dr["BookId"].ChangeInt(),
+                    BookName = dr["BookName"].ToString(),
+
                 };
                 lst.Add(auth);
             }
@@ -92,26 +110,25 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="ID">图书信息ID</param>
         /// <returns>返回图书信息对象</returns>
-        public static Author GetAuthorById(int ID)
+        public static BookInfo GetBookInfoById(int ID)
         {
-            Author author = new Author();
+            BookInfo BookInfo = new BookInfo();
             BookCommandType bookCommand = BookCommandType.Text;
             Dictionary<string, object> dic = new Dictionary<string, object>
             {
-                { "AuthorId",ID }
+                { "BookId",ID }
             };
-            string sql = BuilderSqlHelper.SelectSql<Author>(author, "Author", "AuthorId", dic);
+            string sql = BuilderSqlHelper.SelectSql<BookInfo>(BookInfo, "BookInfo", "BookId", dic);
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             if (dr.Read())
             {
-                author = new Author
+                BookInfo = new BookInfo
                 {
-                    AuthorName = dr["AuthorName"].ToString(),
-                    Remark = dr["Remark"].ToString()
+                    BookName = dr["BookName"].ToString(),
                 };
             }
             dr.Close();
-            return author;
+            return BookInfo;
         }
 
 
@@ -123,12 +140,12 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 更新图书信息
         /// </summary>
-        /// <param name="author">图书信息对象</param>
+        /// <param name="BookInfo">图书信息对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool UpdateAuthor(Author author)
+        public static bool UpdateBookInfo(BookInfo BookInfo)
         {
             BookCommandType commandType = BookCommandType.Text;
-            string sql = BuilderSqlHelper.UpdateSql<Author>(author, "Author", "AuthorId", author.AuthorId);
+            string sql = BuilderSqlHelper.UpdateSql<BookInfo>(BookInfo, "BookInfo", "BookId", BookInfo.BookId);
 
             return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
         }
@@ -144,14 +161,14 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="id">图书信息ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public static bool DeleteAuthor(int id)
+        public static bool DeleteBookInfo(int id)
         {
             BookCommandType commandType = BookCommandType.Text;
             List<string> sqlList = new List<string>();
             StringBuilder sb = new StringBuilder();
-            Author author = new Author();
-            author.AuthorId = id;
-            string sql = BuilderSqlHelper.DeleteSql<Author>(author, "Author", "AuthorId");
+            BookInfo BookInfo = new BookInfo();
+            BookInfo.BookId = id;
+            string sql = BuilderSqlHelper.DeleteSql<BookInfo>(BookInfo, "BookInfo", "BookId");
             sb.Append(sql);
             sqlList.Add(sb.ToString());
             return DBHelper.ExecuteSqlTrans(sqlList, commandType);
@@ -185,5 +202,9 @@ namespace JokerBooksManagerDAL.BookDAL
         }
 
         #endregion
+
+
+
+
     }
 }

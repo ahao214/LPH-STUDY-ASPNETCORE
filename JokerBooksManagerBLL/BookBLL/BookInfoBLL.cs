@@ -21,13 +21,13 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <summary>
         /// 新增图书信息
         /// </summary>
-        /// <param name="readerType">图书信息</param>
+        /// <param name="bookInfo">图书信息</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public bool AddAuthor(Author author)
+        public bool AddBookInfo(BookInfo bookInfo)
         {
             try
             {
-                return AuthorDAL.AddAuthor(author);
+                return BookInfoDAL.AddBookInfo(bookInfo);
             }
             catch (Exception ex)
             {
@@ -42,13 +42,13 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <summary>
         /// 图书信息是否存在
         /// </summary>
-        /// <param name="readerType">图书信息</param>
+        /// <param name="bookName">图书信息</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public bool IsExistAuthor(string authorName)
+        public bool IsExistBookInfo(string bookName)
         {
             try
             {
-                return AuthorDAL.IsExistAuthor(authorName);
+                return BookInfoDAL.IsExistBookInfo(bookName);
             }
             catch (Exception ex)
             {
@@ -64,11 +64,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// 获取所有图书信息
         /// </summary>
         /// <returns>返回图书对象集合</returns>
-        public List<Author> GetAuthors()
+        public List<BookInfo> GetBookInfos()
         {
             try
             {
-                return AuthorDAL.GetAuthors();
+                return BookInfoDAL.GetBookInfos();
             }
             catch (Exception ex)
             {
@@ -87,11 +87,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="ID">图书信息ID</param>
         /// <returns>返回图书信息对象</returns>
-        public Author GetAuthorById(int ID)
+        public BookInfo GetBookInfoById(int ID)
         {
             try
             {
-                return AuthorDAL.GetAuthorById(ID);
+                return BookInfoDAL.GetBookInfoById(ID);
             }
             catch (Exception ex)
             {
@@ -109,13 +109,13 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <summary>
         /// 更新图书信息
         /// </summary>
-        /// <param name="author">图书信息对象</param>
+        /// <param name="BookInfo">图书信息对象</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public bool UpdateAuthor(Author author)
+        public bool UpdateBookInfo(BookInfo bookInfo)
         {
             try
             {
-                return AuthorDAL.UpdateAuthor(author);
+                return BookInfoDAL.UpdateBookInfo(bookInfo);
             }
             catch (Exception ex)
             {
@@ -134,11 +134,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// </summary>
         /// <param name="readerType">图书信息ID</param>
         /// <returns>大于0：True 小于0：False</returns>
-        public bool DeleteAuthor(int id)
+        public bool DeleteBookInfo(int id)
         {
             try
             {
-                return AuthorDAL.DeleteAuthor(id);
+                return BookInfoDAL.DeleteBookInfo(id);
             }
             catch (Exception ex)
             {
