@@ -16,7 +16,7 @@
 
     <Viewbox Stretch="Uniform">
         <Grid Width="110" Height="120">
-            <Border Background="White" />
+            <Border Background="Transparent" />
 
             <Canvas>
                 <SCL:RegLabel
