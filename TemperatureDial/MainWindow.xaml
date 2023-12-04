@@ -48,6 +48,14 @@
                     <RowDefinition Height="0.4*" />
                     <RowDefinition Height="0.6*" />
                 </Grid.RowDefinitions>
+
+                <DCL:Indicator
+                    Width="200"
+                    Margin="30,0,50,0"
+                    DisplayValue="25"
+                    MaxMark="100"
+                    MinMark="-10" />
+
             </Grid>
         </Grid>
 
