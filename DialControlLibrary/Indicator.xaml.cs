@@ -31,13 +31,86 @@ namespace DialControlLibrary
         static Color LowColor1 = (Color)ColorConverter.ConvertFromString("#00B0F0");
         static Color LowColor2 = (Color)ColorConverter.ConvertFromString("#0070C0");
 
-        static Color MinDefault = (Color)ColorConverter.ConvertFromString("#FFF2CC");
+        static Color MidDefault = (Color)ColorConverter.ConvertFromString("#FFF2CC");
         static Color MidColor1 = (Color)ColorConverter.ConvertFromString("#FFFF00");
         static Color MidColor2 = (Color)ColorConverter.ConvertFromString("#FFC000");
 
         static Color SuperDefault = (Color)ColorConverter.ConvertFromString("#FBE5D6");
         static Color SuperColor1 = (Color)ColorConverter.ConvertFromString("#FF0000");
         static Color SuperColor2 = (Color)ColorConverter.ConvertFromString("#C00000");
+
+
+        #endregion
+
+
+        static RotateTransform rotateTransform = new RotateTransform
+        {
+            CenterX = 12.5,
+            CenterY = 12.5,
+            Angle = 90
+        };
+
+        #region 定义画刷
+
+        LinearGradientBrush LowDefaultLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(LowDefault,0.499),
+                new GradientStop(LowDefault,0.5)
+            }
+        };
+
+        LinearGradientBrush LowWarningLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(LowColor1,0.499),
+                new GradientStop(LowColor2,0.5)
+            }
+        };
+
+        LinearGradientBrush MidDefaultLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(MidDefault,0.499),
+                new GradientStop(MidDefault,0.5)
+            }
+        };
+
+        LinearGradientBrush MidWarningLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(MidColor1,0.499),
+                new GradientStop(MidColor2,0.5)
+            }
+        };
+
+        LinearGradientBrush SuperDefaultLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(SuperDefault,0.499),
+                new GradientStop(SuperDefault,0.5)
+            }
+        };
+
+        LinearGradientBrush SuperWarningLightBrush = new LinearGradientBrush
+        {
+            Transform = rotateTransform,
+            GradientStops =
+            {
+                new GradientStop(SuperColor1,0.499),
+                new GradientStop(SuperColor2,0.5)
+            }
+        };
 
 
         #endregion
