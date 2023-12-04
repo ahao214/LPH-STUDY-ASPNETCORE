@@ -35,7 +35,7 @@ namespace DialControlLibrary
         }
 
         public static readonly DependencyProperty MaxInputProperty =
-            DependencyProperty.Register("MaxInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+            DependencyProperty.Register("MaxInput", typeof(int), typeof(Regulator), new PropertyMetadata(50));
 
 
 
@@ -47,7 +47,7 @@ namespace DialControlLibrary
         }
 
         public static readonly DependencyProperty MinInputProperty =
-            DependencyProperty.Register("MinInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+            DependencyProperty.Register("MinInput", typeof(int), typeof(Regulator), new PropertyMetadata(-20));
 
 
 
@@ -58,7 +58,7 @@ namespace DialControlLibrary
         }
 
         public static readonly DependencyProperty NumOutPutProperty =
-            DependencyProperty.Register("ValueInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+            DependencyProperty.Register("NumOutPut", typeof(int), typeof(Regulator), new PropertyMetadata(15));
 
 
 

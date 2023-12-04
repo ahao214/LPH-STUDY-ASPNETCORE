@@ -53,9 +53,9 @@
 
             <DCL:MercuryThermometer
                 Width="240"
-                DisplayValue="1"
-                Maximun="50"
-                Minimun="-10" />
+                DisplayValue="{Binding Path=ShowValue}"
+                Maximun="{Binding Path=Max}"
+                Minimun="{Binding Path=Min}" />
 
 
             <Grid Grid.Column="1">
@@ -67,16 +67,19 @@
                 <DCL:Indicator
                     Width="200"
                     Margin="30,0,50,0"
-                    DisplayValue="25"
-                    MaxMark="100"
-                    MinMark="-10" />
+                    DisplayValue="{Binding Path=ShowValue}"
+                    MaxMark="{Binding Path=Max}"
+                    MinMark="{Binding Path=Min}" />
 
                 <DCL:Regulator
                     Grid.Row="1"
                     Width="240"
                     Height="279"
                     Margin="10,0,30,0"
-                    VerticalAlignment="Top" />
+                    VerticalAlignment="Top"
+                    MaxInput="{Binding Path=Max, Mode=TwoWay}"
+                    MinInput="{Binding Path=Min, Mode=TwoWay}"
+                    NumOutPut="{Binding Path=ShowValue, Mode=TwoWay}" />
 
             </Grid>
         </Grid>
