@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DialControlLibrary\DialControlLibrary.csproj" />
+    <ProjectReference Include="..\SingleControlLibrbay\SingleControlLibrbay.csproj" />
   </ItemGroup>
 
 </Project>
