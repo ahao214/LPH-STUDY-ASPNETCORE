@@ -21,14 +21,42 @@
             <Canvas>
                 <SCL:RegLabel
                     Canvas.Left="7"
-                    Canvas.Top="6"
+                    Canvas.Top="1"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="Maximun"
                     Style="{StaticResource RegLabelStyle}" />
                 <SCL:RegTextBox
+                    x:Name="MaxTextBox"
                     Canvas.Left="5"
-                    Canvas.Top="24"
+                    Canvas.Top="21"
+                    Style="{StaticResource RegTextBoxStyle}" />
+
+                <SCL:RegLabel
+                    Canvas.Left="7"
+                    Canvas.Top="39"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Content="Minimun"
+                    Style="{StaticResource RegLabelStyle}" />
+                <SCL:RegTextBox
+                    x:Name="MinTextBox"
+                    Canvas.Left="5"
+                    Canvas.Top="59"
+                    Style="{StaticResource RegTextBoxStyle}" />
+
+
+                <SCL:RegLabel
+                    Canvas.Left="9"
+                    Canvas.Top="77"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Content="Value"
+                    Style="{StaticResource RegLabelStyle}" />
+                <SCL:RegTextBox
+                    x:Name="ValueTextBox"
+                    Canvas.Left="5"
+                    Canvas.Top="97"
                     Style="{StaticResource RegTextBoxStyle}" />
 
             </Canvas>
