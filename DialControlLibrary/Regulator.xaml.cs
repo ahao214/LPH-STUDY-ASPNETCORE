@@ -24,5 +24,49 @@ namespace DialControlLibrary
         {
             InitializeComponent();
         }
+
+
+
+
+        public int MaxInput
+        {
+            get { return (int)GetValue(MaxInputProperty); }
+            set { SetValue(MaxInputProperty, value); }
+        }
+
+        public static readonly DependencyProperty MaxInputProperty =
+            DependencyProperty.Register("MaxInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+
+
+
+
+        public int MinInput
+        {
+            get { return (int)GetValue(MinInputProperty); }
+            set { SetValue(MinInputProperty, value); }
+        }
+
+        public static readonly DependencyProperty MinInputProperty =
+            DependencyProperty.Register("MinInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+
+
+
+        public int NumOutPut
+        {
+            get { return (int)GetValue(NumOutPutProperty); }
+            set { SetValue(NumOutPutProperty, value); }
+        }
+
+        public static readonly DependencyProperty NumOutPutProperty =
+            DependencyProperty.Register("ValueInput", typeof(int), typeof(Regulator), new PropertyMetadata(0));
+
+
+
+
+
+
+
+
+
     }
 }
