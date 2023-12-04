@@ -39,7 +39,7 @@
                     Margin="15,15,15,15"
                     HorizontalAlignment="Right"
                     Command="{Binding AddStopTypeCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddLineWindow}}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddStopTypeWindow}}"
                     Content="添加"
                     FontSize="16"
                     Style="{StaticResource AddButtonStyle}"
