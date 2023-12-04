@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows;
@@ -83,6 +84,16 @@ namespace TemperatureDial
             max = 50;
             Min = -20;
             ShowValue = 15;
+        }
+
+        /// <summary>
+        /// 关闭按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Process.GetCurrentProcess().Kill();
         }
     }
 }

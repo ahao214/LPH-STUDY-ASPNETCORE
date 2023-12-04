@@ -43,7 +43,10 @@
                 Content="Industrial Temperature Console"
                 FontSize="27"
                 Style="{StaticResource RegLabelStyle}" />
-            <Button/>
+            <Button
+                Canvas.Left="490"
+                Canvas.Top="25"
+                Style="{StaticResource CloseButton}"Click="Button_Click" />
         </Canvas>
 
         <Grid Grid.Row="1">
