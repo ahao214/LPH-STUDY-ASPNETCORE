@@ -51,7 +51,7 @@ namespace JokerBooksManagerModels.Model
         /// <summary>
         /// 借阅次数
         /// </summary>
-        public int BorowCount { get; set; }
+        public int BorrowCount { get; set; }
         /// <summary>
         /// 总册数
         /// </summary>
