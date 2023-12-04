@@ -38,7 +38,7 @@
                     Margin="15,15,15,15"
                     HorizontalAlignment="Right"
                     Command="{Binding EditLineCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:EditLineWindow}}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:EditSubLineWindow}}"
                     Content="修改"
                     FontSize="16"
                     Style="{StaticResource AddButtonStyle}"
