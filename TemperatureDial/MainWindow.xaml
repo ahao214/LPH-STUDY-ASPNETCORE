@@ -36,7 +36,11 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <DCL:MercuryThermometer Width="240" />
+            <DCL:MercuryThermometer
+                Width="240"
+                DisplayValue="1"
+                Maximun="50"
+                Minimun="-10" />
 
 
             <Grid Grid.Column="1">

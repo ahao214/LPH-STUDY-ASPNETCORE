@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -98,7 +99,9 @@ namespace DialControlLibrary
 
                 this.TickBorder.Children.Add(line);
 
-                if(i %2.5!=0)
+                #region 设置长短刻度线
+
+                if (i % 2.5 != 0)
                 {
                     line.X2 = 4.5;
                 }
@@ -118,6 +121,23 @@ namespace DialControlLibrary
                     this.TickBorder.Children.Add(textBlock);
                 }
 
+                #endregion
+
+                var displayValue = this.DisplayValue;
+                if (this.DisplayValue < this.Minimun)
+                {
+                    displayValue = this.Minimun;
+                }
+                if (this.DisplayValue > this.Maximun)
+                {
+                    displayValue = this.Maximun;
+                }
+
+                var TransHeight = (displayValue - this.Minimun) * (GraduationInterval / 2) + 10;
+
+                // 动画显示温度计上升
+                DoubleAnimation doubleAnimation = new DoubleAnimation(TransHeight, TimeSpan.FromMilliseconds(500));
+                this.DisplayHeightBorder.BeginAnimation(HeightProperty, doubleAnimation);
             }
 
 
