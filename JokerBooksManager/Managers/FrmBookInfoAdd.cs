@@ -156,7 +156,7 @@ namespace JokerBooksManager.Managers
             CommDefine.AuthorDataBind(CboAuthorId);
             CommDefine.BookTypeDataBind(CboBookTypeId);
             // 图书编码
-            TxtBookNumber.Text = bookBll.GetBookNumber();
+            TxtBookNumber.Text = CommDefine.NumberPlusOne(CommConst.PrefixBookNumber, bookBll.GetBookNumber());
 
         }
 
@@ -170,17 +170,17 @@ namespace JokerBooksManager.Managers
         /// <param name="type"></param>
         private void AddOrUpdate(BookInfo bookInfo)
         {
-            bool bRes;
+            bool res;
             if (bookId == 0) // 添加
             {
-                bRes = bookBll.AddBookInfo(bookInfo);
+                res = bookBll.AddBookInfo(bookInfo);
             }
             else // 修改
             {
                 //bRes = bll.UpdateAuthor(author);
-                bRes = true;
+                res = false;
             }
-            if (bRes)
+            if (res)
             {
                 CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
                 // 刷新
@@ -290,6 +290,16 @@ namespace JokerBooksManager.Managers
             BookInfo bookInfo = new BookInfo
             {
                 BookName = bookName,
+                BookNumber = sBookName,
+                PublishId = CboPublishId.SelectedValue.ChangeInt(),
+                PublishDate = sPublishDate.ToDateTime(),
+                BookTypeId = CboBookTypeId.SelectedValue.ChangeInt(),
+                AuthorId = CboAuthorId.SelectedValue.ChangeInt(),
+                BookPrice = Convert.ToDecimal(sBookPrice),
+                InputName = UserInfo.LoginName,
+                TotalCount = iTotalCount,
+                BookSamry = sBookSummary,
+                ConvrImage = CommDefine.ImageToByte(iConverImg)
             };
             // 添加数据到数据库
             AddOrUpdate(bookInfo);
