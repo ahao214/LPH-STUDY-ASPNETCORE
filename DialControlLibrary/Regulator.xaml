@@ -9,5 +9,30 @@
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
-    <Grid />
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/SingleControlLibrbay;component/Styles/Generic.xaml" />
+    </UserControl.Resources>
+
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="110" Height="120">
+            <Border Background="White" />
+
+            <Canvas>
+                <SCL:RegLabel
+                    Canvas.Left="7"
+                    Canvas.Top="6"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Content="Maximun"
+                    Style="{StaticResource RegLabelStyle}" />
+                <SCL:RegTextBox
+                    Canvas.Left="5"
+                    Canvas.Top="24"
+                    Style="{StaticResource RegTextBoxStyle}" />
+
+            </Canvas>
+        </Grid>
+    </Viewbox>
+
 </UserControl>
