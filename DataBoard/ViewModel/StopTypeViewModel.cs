@@ -52,16 +52,16 @@ namespace DataBoard.ViewModel
         /// <summary>
         /// 修改停机类型
         /// </summary>
-        public RelayCommand<Line> OpenEditStopTypeWindowCommand
+        public RelayCommand<StopType> OpenEditStopTypeWindowCommand
         {
             get
             {
-                return new RelayCommand<Line>((line) =>
+                return new RelayCommand<StopType>((model) =>
                 {
-                    var vm = SimpleIoc.Default.GetInstance<EditLineWindowViewModel>();
+                    var vm = SimpleIoc.Default.GetInstance<EditStopTypeWindowViewModel>();
                     if (vm == null)
-                        return;
-                    vm.Line = line;
+                        return;                    
+                    vm.StopType = model;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("EditStopTypeWindow", "提示");
                     StopTypes = _stopTypeProvider.Select();
