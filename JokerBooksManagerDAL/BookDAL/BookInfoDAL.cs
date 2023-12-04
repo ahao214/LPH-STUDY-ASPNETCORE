@@ -44,7 +44,7 @@ namespace JokerBooksManagerDAL.BookDAL
                 new  SqlParameter ("@ConvrImage",bookInfo.ConvrImage)
             };
 
-            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType,parameters) > 0;
+            return DBHelper.ExecuteNoneQuery(sb.ToString(), commandType, parameters) > 0;
         }
 
         #endregion
@@ -91,7 +91,17 @@ namespace JokerBooksManagerDAL.BookDAL
                 {
                     BookId = dr["BookId"].ChangeInt(),
                     BookName = dr["BookName"].ToString(),
-
+                    BookNumber = dr["BookNumber"].ToString(),
+                    PublishId = dr["PublishId"].ChangeInt(),
+                    PublishDate = Convert.ToDateTime(dr["PublishDate"]),
+                    BookTypeId = dr["BookTypeId"].ChangeInt(),
+                    AuthorId = dr["AuthorId"].ChangeInt(),
+                    BookPrice = Convert.ToDecimal(dr["BookPrice"]),
+                    InputName = dr["InputName"].ToString(),
+                    BorrowCount = dr["BorrowCount"].ChangeInt(),
+                    TotalCount = dr["TotalCount"].ChangeInt(),
+                    BookSamry = dr["BookSamry"].ToString(),
+                    ConvrImage = (byte[])dr["ConvrImage"]
                 };
                 lst.Add(auth);
             }

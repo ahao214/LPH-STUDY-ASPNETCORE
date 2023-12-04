@@ -260,11 +260,11 @@ namespace JokerBooksManager.Managers
                 CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
                 return false;
             }
-            if (iConverImg == null)
-            {
-                CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
-                return false;
-            }
+            //if (iConverImg == null)
+            //{
+            //    CommMsgBox.MsgBoxCaveat(CommConst.InputFail);
+            //    return false;
+            //}
 
             return true;
         }
@@ -299,7 +299,7 @@ namespace JokerBooksManager.Managers
                 InputName = UserInfo.LoginName,
                 TotalCount = iTotalCount,
                 BookSamry = sBookSummary,
-                ConvrImage = CommDefine.ImageToByte(iConverImg)
+                //ConvrImage = CommDefine.ImageToByte(iConverImg)
             };
             // 添加数据到数据库
             AddOrUpdate(bookInfo);
