@@ -272,5 +272,43 @@ namespace JokerBooksManagerComm.Comm
 
 
         #endregion
+
+
+        #region 创建图书信息添加上SQL语句
+
+        /// <summary>
+        /// 创建图书信息添加上SQL语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="primaryKey">主键</param>
+        /// <returns></returns>
+        public static string InsertSql<T>(T t, string primaryKey) where T : class
+        {
+            // 拿到列
+            string colNames = GetColumnName(t, primaryKey);
+            string colVals = string.Empty;
+            PropertyInfo[] properties = t.GetType().GetProperties();
+            foreach (PropertyInfo pi in properties)
+            {
+                if(!pi.Name .Equals (primaryKey ))
+                {
+                    colVals += (string.IsNullOrEmpty(colVals) ? "" : ",") + string.Format($"{pi.Name}");
+                }
+            }
+
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("INSERT INTO BookInfo ");
+            sb.Append("(" + colNames + ")");
+            sb.Append("VALUES (" + colVals + ")");
+            return sb.ToString();
+        }
+
+        #endregion
+
+
+
+
     }
 }
