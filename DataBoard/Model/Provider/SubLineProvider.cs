@@ -27,7 +27,7 @@ namespace DataBoard.Model.Provider
 
         public List<SubLine> Select()
         {
-            return db.SubLine.Include("History").ToList();
+            return db.SubLine.Include("History").Include("UserInfo").ToList();
         }
 
         public int Update(SubLine t)
