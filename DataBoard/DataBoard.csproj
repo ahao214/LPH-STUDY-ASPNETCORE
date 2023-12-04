@@ -162,6 +162,9 @@
     <Compile Include="Windows\AddSubLineWindow.xaml.cs">
       <DependentUpon>AddSubLineWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddUserInfoWindow.xaml.cs">
+      <DependentUpon>AddUserInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\EditLineWindow.xaml.cs">
       <DependentUpon>EditLineWindow.xaml</DependentUpon>
     </Compile>
@@ -239,6 +242,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\AddSubLineWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddUserInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
