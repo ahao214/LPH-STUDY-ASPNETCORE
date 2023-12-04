@@ -63,7 +63,7 @@ namespace JokerBooksManagerModels.Model
         /// <summary>
         /// 图书封面
         /// </summary>
-        public string ConvrImage { get; set; }
+        public byte[] ConvrImage { get; set; }
 
     }
 }
