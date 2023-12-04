@@ -60,18 +60,20 @@ namespace JokerBooksManager.Comm
         #endregion
 
 
-        #region 读者编码加一 
+        #region 编码加一 
 
         /// <summary>
-        /// 读者编码加一
+        /// 编码加一
         /// </summary>
-        /// <param name="readerNumber"></param>
+        /// <param name="headerCode"></param>
+        /// <param name="sNumber"></param>
         /// <returns>返回加一后的读者编码</returns>
-        public static string NumberPlusOne(string readerNumber)
+        public static string NumberPlusOne(string headerCode,string sNumber)
         {
-            int len = readerNumber.Length;
-            readerNumber = readerNumber.Substring(2, len - 2);
-            int iNumber = readerNumber.ChangeInt() + 1;
+            int len = sNumber.Length;
+            int iHeadLen = headerCode.Length;
+            sNumber = sNumber.Substring(iHeadLen, len - iHeadLen);
+            int iNumber = sNumber.ChangeInt() + 1;
             return FillIn(iNumber.ToString());
         }
 
