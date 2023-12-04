@@ -1,12 +1,72 @@
-﻿<UserControl x:Class="DialControlLibrary.Indicator"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:DialControlLibrary"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+﻿<UserControl
+    x:Class="DialControlLibrary.Indicator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:DialControlLibrary"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Viewbox Stretch="Uniform">
+
+        <Grid Width="110" Height="85">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.55*" />
+                <RowDefinition Height="0.45*" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.RowSpan="2" Background="Transparent" />
+
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Label
+                    x:Name="DisplayNumber"
+                    Width="60"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Content="24"
+                    FontFamily="Arial"
+                    FontSize="24"
+                    Foreground="#419F8D" />
+                <Label
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="℃"
+                    FontFamily="Arial"
+                    FontSize="24"
+                    Foreground="#0070C0" />
+
+            </StackPanel>
+
+            <StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                Orientation="Horizontal">
+                <Ellipse
+                    x:Name="LowLight"
+                    Width="25"
+                    Height="25"
+                    Stroke="#CFE2F2"
+                    StrokeThickness="2" />
+                <Ellipse
+                    x:Name="MidLight"
+                    Width="25"
+                    Height="25"
+                    Margin="10,0,10,0"
+                    Stroke="#CFE2F2"
+                    StrokeThickness="2" />
+                <Ellipse
+                    x:Name="SuperLight"
+                    Width="25"
+                    Height="25"
+                    Stroke="#CFE2F2"
+                    StrokeThickness="2" />
+
+            </StackPanel>
+
+
+
+        </Grid>
+    </Viewbox>
 </UserControl>

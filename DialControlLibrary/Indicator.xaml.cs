@@ -23,6 +23,7 @@ namespace DialControlLibrary
         public Indicator()
         {
             InitializeComponent();
+            this.LoadLight();
         }
 
         #region 定义灯的颜色
@@ -114,6 +115,12 @@ namespace DialControlLibrary
 
 
         #endregion
+
+        private void LoadLight()
+        {
+
+
+        }
 
         public int MaxMark
         {
