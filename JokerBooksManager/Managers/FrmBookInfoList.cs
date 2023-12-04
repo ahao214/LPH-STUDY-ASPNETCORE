@@ -23,13 +23,15 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 业务逻辑层:作者变量
         /// </summary>
-        private readonly AuthorBLL bll = new AuthorBLL();
-
+        private readonly AuthorBLL authorBll = new AuthorBLL();
+        private readonly BookInfoBLL bookInfoBll = new BookInfoBLL();
+        private readonly PublishHouseBLL publishBll = new PublishHouseBLL();
+        private readonly BookTypeBLL bookTypeBll = new BookTypeBLL();
         #region 构造函数
         public FrmBookInfoList()
         {
             InitializeComponent();
-        } 
+        }
         #endregion
 
         #region 新增
@@ -70,7 +72,7 @@ namespace JokerBooksManager.Managers
             int row = e.RowIndex;
             // 获取列
             int col = e.ColumnIndex;
-            Author author = DgvBookInfo.Rows[row].DataBoundItem as Author;
+            BookInfo bookInfo = DgvBookInfo.Rows[row].DataBoundItem as BookInfo;
             if (!(DgvBookInfo.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
                 return;
             // 拿到单元格的值
@@ -79,10 +81,10 @@ namespace JokerBooksManager.Managers
             switch (cellValue)
             {
                 case CommConst.CharUpdate:
-                    ShowForm(author.AuthorId); break;
+                    ShowForm(bookInfo.BookId); break;
                 case CommConst.CharDelete:
                     //删除
-                    DelAuthor(author.AuthorId);
+                    DelBookInfo(bookInfo.BookId);
                     break;
                 default:
                     break;
@@ -101,7 +103,26 @@ namespace JokerBooksManager.Managers
 
         private void LoadBookInfo()
         {
-            DgvBookInfo.DataSource = bll.GetAuthors();
+            DgvBookInfo.Rows.Clear();
+            List<BookInfo> lst = bookInfoBll.GetBookInfos(); ;
+            for (int i = 0; i < lst.Count; i++)
+            {
+                DgvBookInfo.Rows.Add();
+                DgvBookInfo["BookId",i].Value = lst[i].BookId;
+                DgvBookInfo["BookName", i].Value = lst[i].BookName;                
+                DgvBookInfo["CoverImage", i].Value = lst[i].ConvrImage;
+                DgvBookInfo["BookNumber", i].Value = lst[i].BookNumber;
+                DgvBookInfo["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
+                DgvBookInfo["PublishDate", i].Value = lst[i].PublishDate;
+                DgvBookInfo["BookTypeName", i].Value = bookTypeBll.GetBookTypeById(lst[i].BookTypeId).BookTypeName;
+                DgvBookInfo["AuthorName", i].Value = authorBll.GetAuthorById(lst[i].AuthorId).AuthorName;
+                DgvBookInfo["BookPrice", i].Value = lst[i].BookPrice;
+                DgvBookInfo["InputName", i].Value = lst[i].InputName;
+                DgvBookInfo["BorrowCount", i].Value = lst[i].BorrowCount;
+                DgvBookInfo["TotalCount", i].Value = lst[i].TotalCount;
+                DgvBookInfo["BookSamry", i].Value = lst[i].BookSamry;
+            }
+
         }
         #endregion
 
@@ -110,12 +131,12 @@ namespace JokerBooksManager.Managers
         /// 执行删除
         /// </summary>
         /// <param name="id">作者ID</param>
-        private void DelAuthor(int id)
+        private void DelBookInfo(int id)
         {
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
 
-            bool res = bll.DeleteAuthor(id);
+            bool res = authorBll.DeleteAuthor(id);
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);

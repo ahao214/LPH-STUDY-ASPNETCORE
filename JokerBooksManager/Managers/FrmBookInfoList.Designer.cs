@@ -40,10 +40,10 @@
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ConvrImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.BookNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublishId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PublishName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PublishDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuthorId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InputName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BorrowCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,10 +121,10 @@
             this.BookName,
             this.ConvrImage,
             this.BookNumber,
-            this.PublishId,
+            this.PublishName,
             this.PublishDate,
             this.BookTypeId,
-            this.AuthorId,
+            this.AuthorName,
             this.BookPrice,
             this.InputName,
             this.BorrowCount,
@@ -209,14 +209,14 @@
             this.BookNumber.ToolTipText = "图书编码";
             this.BookNumber.Width = 150;
             // 
-            // PublishId
+            // PublishName
             // 
-            this.PublishId.DataPropertyName = "PublishId";
-            this.PublishId.HeaderText = "出版社";
-            this.PublishId.MinimumWidth = 8;
-            this.PublishId.Name = "PublishId";
-            this.PublishId.ToolTipText = "出版社";
-            this.PublishId.Width = 150;
+            this.PublishName.DataPropertyName = "PublishName";
+            this.PublishName.HeaderText = "出版社";
+            this.PublishName.MinimumWidth = 8;
+            this.PublishName.Name = "PublishName";
+            this.PublishName.ToolTipText = "出版社";
+            this.PublishName.Width = 150;
             // 
             // PublishDate
             // 
@@ -236,14 +236,14 @@
             this.BookTypeId.ToolTipText = "图书类别";
             this.BookTypeId.Width = 150;
             // 
-            // AuthorId
+            // AuthorName
             // 
-            this.AuthorId.DataPropertyName = "AuthorId";
-            this.AuthorId.HeaderText = "作者";
-            this.AuthorId.MinimumWidth = 8;
-            this.AuthorId.Name = "AuthorId";
-            this.AuthorId.ToolTipText = "作者";
-            this.AuthorId.Width = 150;
+            this.AuthorName.DataPropertyName = "AuthorName";
+            this.AuthorName.HeaderText = "作者";
+            this.AuthorName.MinimumWidth = 8;
+            this.AuthorName.Name = "AuthorName";
+            this.AuthorName.ToolTipText = "作者";
+            this.AuthorName.Width = 150;
             // 
             // BookPrice
             // 
@@ -343,10 +343,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BookName;
         private System.Windows.Forms.DataGridViewImageColumn ConvrImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublishId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PublishName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PublishDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookTypeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn InputName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BorrowCount;
