@@ -52,16 +52,16 @@ namespace DataBoard.ViewModel
         /// <summary>
         /// 修改子线
         /// </summary>
-        public RelayCommand<Line> OpenEditSubLineWindowCommand
+        public RelayCommand<SubLine> OpenEditSubLineWindowCommand
         {
             get
             {
-                return new RelayCommand<Line>((line) =>
+                return new RelayCommand<SubLine>((model) =>
                 {
-                    var vm = SimpleIoc.Default.GetInstance<EditLineWindowViewModel>();
+                    var vm = SimpleIoc.Default.GetInstance<EditSubLineWindowViewModel>();
                     if (vm == null)
                         return;
-                    vm.Line = line;
+                    vm.SubLine = model;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("EditSubLineWindow", "提示");                    
                     SubLines = _subLineProvider.Select();
