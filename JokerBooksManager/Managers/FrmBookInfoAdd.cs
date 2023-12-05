@@ -95,7 +95,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 存放原始的图书名字
         /// </summary>
-        private string oldAuthorName = string.Empty;
+        private string oldBookName = string.Empty;
 
         private AuthorBLL bll = new AuthorBLL();
         private BookInfoBLL bookBll = new BookInfoBLL();
@@ -215,7 +215,7 @@ namespace JokerBooksManager.Managers
         /// <returns>True:存在 False：不存在</returns>
         private bool CheckBookName(string bookName)
         {
-            if (bookId == 0 || (bookId > 0 && oldAuthorName != bookName))
+            if (bookId == 0 || (bookId > 0 && oldBookName != bookName))
             {
                 if (bll.IsExistAuthor(bookName))
                 {

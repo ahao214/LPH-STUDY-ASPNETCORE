@@ -186,8 +186,10 @@ namespace JokerBooksManagerDAL.BookDAL
             BookCommandType commandType = BookCommandType.Text;
             List<string> sqlList = new List<string>();
             StringBuilder sb = new StringBuilder();
-            BookInfo BookInfo = new BookInfo();
-            BookInfo.BookId = id;
+            BookInfo BookInfo = new BookInfo()
+            {
+                BookId = id,
+            };
             string sql = BuilderSqlHelper.DeleteSql<BookInfo>(BookInfo, "BookInfo", "BookId");
             sb.Append(sql);
             sqlList.Add(sb.ToString());

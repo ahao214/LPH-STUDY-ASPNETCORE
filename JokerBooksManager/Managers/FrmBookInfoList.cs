@@ -139,7 +139,7 @@ namespace JokerBooksManager.Managers
             if (DialogResult.No == CommMsgBox.YesNoConfirm(CommConst.IsDeleteData))
                 return;
 
-            bool res = authorBll.DeleteAuthor(id);
+            bool res = bookInfoBll.DeleteBookInfo(id);
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
