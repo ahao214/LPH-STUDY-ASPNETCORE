@@ -31,6 +31,11 @@ namespace TestRandom
             Console.WriteLine(sb.ToString());
             Console.WriteLine(strs);
 
+            // 随机显示数组中的字符
+            string[] colors = { "red", "black", "blue", "yellow", "green" };
+            string color = colors[ran.Next(colors.Length)];
+            Console.WriteLine(color);
+
             Console.ReadKey();
 
         }
