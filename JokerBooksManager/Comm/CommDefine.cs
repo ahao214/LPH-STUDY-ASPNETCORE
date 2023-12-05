@@ -198,10 +198,10 @@ namespace JokerBooksManager.Comm
 
         #endregion
 
-        #region  转换图片
+        #region  Image类型转换Byte类型
 
         /// <summary>
-        /// 转换图片
+        /// Image类型转换Byte类型
         /// </summary>
         /// <param name="img"></param>
         /// <returns></returns>
@@ -215,6 +215,24 @@ namespace JokerBooksManager.Comm
             stream.Close();
             return bytes;
 
+        }
+
+        #endregion
+
+
+        #region Byte类型转换Image类型
+
+        /// <summary>
+        /// Byte类型转换Image类型
+        /// </summary>
+        /// <param name="bytes">二进制字节</param>
+        /// <returns>返回Image类型</returns>
+        public static Image ByteToImage(byte[] bytes)
+        {
+            MemoryStream stream = new MemoryStream(bytes);
+            Image img = Image.FromStream(stream);
+
+            return img;
         }
 
         #endregion
