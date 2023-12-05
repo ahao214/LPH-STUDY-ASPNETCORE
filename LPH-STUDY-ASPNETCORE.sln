@@ -721,7 +721,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureDial", "Temperat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialControlLibrary", "DialControlLibrary\DialControlLibrary.csproj", "{169C8857-103E-431D-AD61-38C32F6C17AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleControlLibrbay", "SingleControlLibrbay\SingleControlLibrbay.csproj", "{7D778E18-E625-43F2-9B65-708BD7B9A073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleControlLibrbay", "SingleControlLibrbay\SingleControlLibrbay.csproj", "{7D778E18-E625-43F2-9B65-708BD7B9A073}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookManagerSystem", "BookManagerSystem", "{FA1A387E-DD91-49BC-A304-305C01A63A7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1994,6 +1996,7 @@ Global
 		{F172EBF2-EAEC-47D5-9101-DF961C1C703C} = {7DACFF54-6289-49D7-816B-7D2675FFF4D6}
 		{169C8857-103E-431D-AD61-38C32F6C17AE} = {7DACFF54-6289-49D7-816B-7D2675FFF4D6}
 		{7D778E18-E625-43F2-9B65-708BD7B9A073} = {7DACFF54-6289-49D7-816B-7D2675FFF4D6}
+		{FA1A387E-DD91-49BC-A304-305C01A63A7D} = {3F136DDD-70E3-466A-96B7-74E90567A9E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CE13E9E-B87E-490C-A07C-E57035C2B26B}
