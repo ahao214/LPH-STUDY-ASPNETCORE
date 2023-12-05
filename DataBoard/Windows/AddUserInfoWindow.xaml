@@ -73,7 +73,10 @@
                     Grid.Column="1"
                     Height="30"
                     Margin="0,5,0,5"
-                    Text="{Binding CurrentUser .Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    DisplayMemberPath="Name"
+                    ItemsSource="{Binding AppData.RoleModels}"
+                    SelectedValuePath="Id"
+                    Text="{Binding CurrentUser.Role, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                     WindowChrome.IsHitTestVisibleInChrome="True" />
 
                 <Button
@@ -81,8 +84,8 @@
                     Grid.Column="3"
                     Margin="0,5,0,5"
                     HorizontalAlignment="Right"
-                    Command="{Binding AddLineCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddLineWindow}}"
+                    Command="{Binding AddUserInfoCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddUserInfoWindow}}"
                     Content="添加"
                     FontSize="16"
                     Style="{StaticResource AddButtonStyle}"

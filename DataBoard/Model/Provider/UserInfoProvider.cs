@@ -13,22 +13,37 @@ namespace DataBoard.Model.Provider
     {
         public int Delete(UserInfo t)
         {
-            throw new NotImplementedException();
+            using (BoardDBEntities db = new BoardDBEntities())
+            {
+                db.Entry(t).State = System.Data.Entity.EntityState.Deleted;
+                return db.SaveChanges();
+            }
         }
 
         public int Insert(UserInfo t)
         {
-            throw new NotImplementedException();
+            using (BoardDBEntities db = new BoardDBEntities())
+            {
+                db.Entry(t).State = System.Data.Entity.EntityState.Added;
+                return db.SaveChanges();
+            }
         }
 
         public List<UserInfo> Select()
         {
-            throw new NotImplementedException();
+            using (BoardDBEntities db = new BoardDBEntities())
+            {
+                return db.UserInfo.Include("History").Include("UserInfo").ToList();
+            }
         }
 
         public int Update(UserInfo t)
         {
-            throw new NotImplementedException();
+            using (BoardDBEntities db = new BoardDBEntities())
+            {
+                db.Entry(t).State = System.Data.Entity.EntityState.Modified;
+                return db.SaveChanges();
+            }
         }
     }
 }
