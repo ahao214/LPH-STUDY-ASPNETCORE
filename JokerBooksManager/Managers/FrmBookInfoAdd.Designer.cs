@@ -53,7 +53,6 @@
             this.TxtBookSamry = new Sunny.UI.UITextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.PbConvrImage = new System.Windows.Forms.PictureBox();
-            this.TxtInputName = new Sunny.UI.UITextBox();
             this.TxtBorrowCount = new Sunny.UI.UITextBox();
             this.GbCrls.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -147,7 +146,6 @@
             // GbCrls
             // 
             this.GbCrls.Controls.Add(this.TxtBorrowCount);
-            this.GbCrls.Controls.Add(this.TxtInputName);
             this.GbCrls.Controls.Add(this.TxtTotalCount);
             this.GbCrls.Controls.Add(this.TxtBookPrice);
             this.GbCrls.Controls.Add(this.CboAuthorId);
@@ -500,32 +498,6 @@
             this.PbConvrImage.TabIndex = 0;
             this.PbConvrImage.TabStop = false;
             // 
-            // TxtInputName
-            // 
-            this.TxtInputName.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtInputName.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtInputName.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtInputName.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtInputName.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtInputName.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtInputName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtInputName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.TxtInputName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtInputName.Location = new System.Drawing.Point(256, 510);
-            this.TxtInputName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtInputName.MinimumSize = new System.Drawing.Size(1, 16);
-            this.TxtInputName.Name = "TxtInputName";
-            this.TxtInputName.Padding = new System.Windows.Forms.Padding(5);
-            this.TxtInputName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtInputName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtInputName.ShowText = false;
-            this.TxtInputName.Size = new System.Drawing.Size(61, 32);
-            this.TxtInputName.Style = Sunny.UI.UIStyle.Green;
-            this.TxtInputName.TabIndex = 40;
-            this.TxtInputName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TxtInputName.Visible = false;
-            this.TxtInputName.Watermark = "";
-            // 
             // TxtBorrowCount
             // 
             this.TxtBorrowCount.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -548,6 +520,7 @@
             this.TxtBorrowCount.Size = new System.Drawing.Size(57, 32);
             this.TxtBorrowCount.Style = Sunny.UI.UIStyle.Green;
             this.TxtBorrowCount.TabIndex = 41;
+            this.TxtBorrowCount.Text = "0";
             this.TxtBorrowCount.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxtBorrowCount.Visible = false;
             this.TxtBorrowCount.Watermark = "";
@@ -604,6 +577,5 @@
         private Sunny.UI.UIComboBox CboBookTypeId;
         private Sunny.UI.UIButton BtnFileBrowse;
         private Sunny.UI.UITextBox TxtBorrowCount;
-        private Sunny.UI.UITextBox TxtInputName;
     }
 }

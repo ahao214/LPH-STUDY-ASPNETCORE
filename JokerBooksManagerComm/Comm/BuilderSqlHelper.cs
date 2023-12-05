@@ -336,6 +336,35 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 更新图书信息添加上SQL语句
 
+        /// <summary>
+        /// 更新图书信息添加上SQL语句
+        /// </summary>
+        /// <typeparam name="T">泛型</typeparam>
+        /// <param name="t">泛型变量</param>
+        /// <param name="primaryKey">主键</param>
+        /// <returns></returns>
+        public static string UpdateBookInfoSql<T>(T t, string tableName, string primaryKey) where T : class
+        {
+            string colVals = string.Empty;
+            PropertyInfo[] properties = t.GetType().GetProperties();
+            foreach (PropertyInfo pi in properties)
+            {
+                string pName = pi.Name;
+                if (!pName.Equals(primaryKey))
+                {
+                    colVals += (string.IsNullOrEmpty(colVals) ? "" : ",") + string.Format($"{pName}=@{pName}");
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"UPDATE {tableName} SET ");
+            sb.Append(colVals);
+            sb.Append($" WHERE {primaryKey}=@BookId");
+            return sb.ToString();
+        }
+
+        #endregion
     }
 }

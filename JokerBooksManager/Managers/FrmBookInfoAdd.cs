@@ -33,7 +33,6 @@ namespace JokerBooksManager.Managers
         private Image iConverImg;
         private string sBookSummary;
         private int iBorrowCount;
-        private string sInputName;
 
         #endregion
 
@@ -136,10 +135,11 @@ namespace JokerBooksManager.Managers
 
                 DpPublishDate.Text = bookInfo.PublishDate.ToString();
                 TxtBookPrice.Text = bookInfo.BookPrice.ToString();
+                TxtBorrowCount.Text = iBorrowCount.ToString();
                 TxtTotalCount.Text = bookInfo.TotalCount.ToString();
                 TxtBookSamry.Text = bookInfo.BookSamry;
                 PbConvrImage.Image = CommDefine.ByteToImage(bookInfo.ConvrImage);
-
+                TxtBookSamry.ReadOnly = true;
 
                 Text = CommConst.BookInfoCaption;
             }
@@ -170,7 +170,6 @@ namespace JokerBooksManager.Managers
             CommDefine.BookTypeDataBind(CboBookTypeId);
             // 图书编码
             TxtBookNumber.Text = CommDefine.NumberPlusOne(CommConst.PrefixBookNumber, bookBll.GetBookNumber());
-
         }
 
         #endregion
@@ -251,6 +250,7 @@ namespace JokerBooksManager.Managers
             sBookPrice = TxtBookPrice.Text.Trim();
             iTotalCount = TxtTotalCount.Text.Trim().ChangeInt();
             sBookSummary = TxtBookSamry.Text.Trim();
+            iBorrowCount = TxtBorrowCount.Text.Trim().ChangeInt();
 
             if (string.IsNullOrEmpty(sBookName))
             {

@@ -165,9 +165,9 @@ namespace JokerBooksManagerDAL.BookDAL
         public static bool UpdateBookInfo(BookInfo BookInfo)
         {
             BookCommandType commandType = BookCommandType.Text;
-            string sql = BuilderSqlHelper.UpdateSql<BookInfo>(BookInfo, "BookInfo", "BookId", BookInfo.BookId);
-
-            return DBHelper.ExecuteNoneQuery(sql, commandType) > 0;
+            string sql = BuilderSqlHelper.UpdateBookInfoSql<BookInfo>(BookInfo, "BookInfo", "BookId");
+            List<SqlParameter> paras = BuilderSqlHelper.GetParameters(BookInfo, "");
+            return DBHelper.ExecuteNoneQuery(sql, commandType, paras.ToArray()) > 0;
         }
 
         #endregion
@@ -236,7 +236,7 @@ namespace JokerBooksManagerDAL.BookDAL
             List<SqlParameter> paras = BuilderSqlHelper.GetParameters(info, "BookId");
 
             return DBHelper.ExecuteNoneQuery(sql, type, paras.ToArray()) > 0;
-        } 
+        }
         #endregion
 
     }
