@@ -56,11 +56,11 @@ namespace JokerBooksManagerDAL.BookDAL
         /// </summary>
         /// <param name="bookInfoName">图书信息</param>
         /// <returns>大于0：成功 小于0：失败</returns>
-        public static bool IsExistBookInfo(string bookInfoName)
+        public static bool IsExistBookInfo(string bookName)
         {
             StringBuilder sb = new StringBuilder();
             Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("BookName", bookInfoName);
+            dic.Add("BookName", bookName);
             BookCommandType commandType = BookCommandType.Text;
             BookInfo BookInfo = new BookInfo();
             string sql = BuilderSqlHelper.SelectSql<BookInfo>(BookInfo, "BookInfo", "BookId", dic);

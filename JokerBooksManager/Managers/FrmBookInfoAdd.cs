@@ -217,7 +217,7 @@ namespace JokerBooksManager.Managers
         {
             if (bookId == 0 || (bookId > 0 && oldBookName != bookName))
             {
-                if (bll.IsExistAuthor(bookName))
+                if (bookBll.IsExistBookInfo(bookName))
                 {
                     CommMsgBox.MsgBoxCaveat(CommConst.IsExistsInfo);
                     return true;
