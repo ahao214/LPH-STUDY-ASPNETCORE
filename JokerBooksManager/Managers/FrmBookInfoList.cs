@@ -72,7 +72,9 @@ namespace JokerBooksManager.Managers
             int row = e.RowIndex;
             // 获取列
             int col = e.ColumnIndex;
-            BookInfo bookInfo = DgvBookInfo.Rows[row].DataBoundItem as BookInfo;
+            int bookId = DgvBookInfo["BookId", row].Value.ChangeInt();
+
+            //BookInfo bookInfo = DgvBookInfo.Rows[row].DataBoundItem as BookInfo;
             if (!(DgvBookInfo.Rows[row].Cells[col] is DataGridViewLinkCell linkCell))
                 return;
             // 拿到单元格的值
@@ -81,10 +83,11 @@ namespace JokerBooksManager.Managers
             switch (cellValue)
             {
                 case CommConst.CharUpdate:
-                    ShowForm(bookInfo.BookId); break;
+                    // 编辑图书信息
+                    ShowForm(bookId); break;
                 case CommConst.CharDelete:
-                    //删除
-                    DelBookInfo(bookInfo.BookId);
+                    // 删除图书信息
+                    DelBookInfo(bookId);
                     break;
                 default:
                     break;
@@ -108,8 +111,8 @@ namespace JokerBooksManager.Managers
             for (int i = 0; i < lst.Count; i++)
             {
                 DgvBookInfo.Rows.Add();
-                DgvBookInfo["BookId",i].Value = lst[i].BookId;
-                DgvBookInfo["BookName", i].Value = lst[i].BookName;                
+                DgvBookInfo["BookId", i].Value = lst[i].BookId;
+                DgvBookInfo["BookName", i].Value = lst[i].BookName;
                 //DgvBookInfo["CoverImage", i].Value = lst[i].ConvrImage;
                 DgvBookInfo["BookNumber", i].Value = lst[i].BookNumber;
                 DgvBookInfo["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
