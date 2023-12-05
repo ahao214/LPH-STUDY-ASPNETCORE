@@ -53,6 +53,8 @@
             this.TxtBookSamry = new Sunny.UI.UITextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.PbConvrImage = new System.Windows.Forms.PictureBox();
+            this.TxtInputName = new Sunny.UI.UITextBox();
+            this.TxtBorrowCount = new Sunny.UI.UITextBox();
             this.GbCrls.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -105,7 +107,7 @@
             this.BtnOk.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnOk.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnOk.Location = new System.Drawing.Point(37, 613);
+            this.BtnOk.Location = new System.Drawing.Point(500, 616);
             this.BtnOk.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnOk.Name = "BtnOk";
             this.BtnOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -128,7 +130,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(241, 613);
+            this.BtnClose.Location = new System.Drawing.Point(704, 616);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -144,6 +146,8 @@
             // 
             // GbCrls
             // 
+            this.GbCrls.Controls.Add(this.TxtBorrowCount);
+            this.GbCrls.Controls.Add(this.TxtInputName);
             this.GbCrls.Controls.Add(this.TxtTotalCount);
             this.GbCrls.Controls.Add(this.TxtBookPrice);
             this.GbCrls.Controls.Add(this.CboAuthorId);
@@ -160,9 +164,9 @@
             this.GbCrls.Controls.Add(this.CboPublishId);
             this.GbCrls.Controls.Add(this.TxtBookName);
             this.GbCrls.Controls.Add(this.uiLabel1);
-            this.GbCrls.Location = new System.Drawing.Point(38, 58);
+            this.GbCrls.Location = new System.Drawing.Point(19, 55);
             this.GbCrls.Name = "GbCrls";
-            this.GbCrls.Size = new System.Drawing.Size(385, 520);
+            this.GbCrls.Size = new System.Drawing.Size(385, 565);
             this.GbCrls.TabIndex = 27;
             this.GbCrls.TabStop = false;
             // 
@@ -496,6 +500,58 @@
             this.PbConvrImage.TabIndex = 0;
             this.PbConvrImage.TabStop = false;
             // 
+            // TxtInputName
+            // 
+            this.TxtInputName.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtInputName.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtInputName.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtInputName.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtInputName.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtInputName.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtInputName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtInputName.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtInputName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtInputName.Location = new System.Drawing.Point(256, 510);
+            this.TxtInputName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtInputName.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtInputName.Name = "TxtInputName";
+            this.TxtInputName.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtInputName.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtInputName.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtInputName.ShowText = false;
+            this.TxtInputName.Size = new System.Drawing.Size(61, 32);
+            this.TxtInputName.Style = Sunny.UI.UIStyle.Green;
+            this.TxtInputName.TabIndex = 40;
+            this.TxtInputName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtInputName.Visible = false;
+            this.TxtInputName.Watermark = "";
+            // 
+            // TxtBorrowCount
+            // 
+            this.TxtBorrowCount.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBorrowCount.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtBorrowCount.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtBorrowCount.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBorrowCount.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtBorrowCount.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtBorrowCount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBorrowCount.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtBorrowCount.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtBorrowCount.Location = new System.Drawing.Point(167, 510);
+            this.TxtBorrowCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtBorrowCount.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtBorrowCount.Name = "TxtBorrowCount";
+            this.TxtBorrowCount.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtBorrowCount.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBorrowCount.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBorrowCount.ShowText = false;
+            this.TxtBorrowCount.Size = new System.Drawing.Size(57, 32);
+            this.TxtBorrowCount.Style = Sunny.UI.UIStyle.Green;
+            this.TxtBorrowCount.TabIndex = 41;
+            this.TxtBorrowCount.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtBorrowCount.Visible = false;
+            this.TxtBorrowCount.Watermark = "";
+            // 
             // FrmBookInfoAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -547,5 +603,7 @@
         private Sunny.UI.UIComboBox CboAuthorId;
         private Sunny.UI.UIComboBox CboBookTypeId;
         private Sunny.UI.UIButton BtnFileBrowse;
+        private Sunny.UI.UITextBox TxtBorrowCount;
+        private Sunny.UI.UITextBox TxtInputName;
     }
 }

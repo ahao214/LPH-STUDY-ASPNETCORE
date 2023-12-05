@@ -32,6 +32,8 @@ namespace JokerBooksManager.Managers
         private int iTotalCount;
         private Image iConverImg;
         private string sBookSummary;
+        private int iBorrowCount;
+        private string sInputName;
 
         #endregion
 
@@ -144,11 +146,6 @@ namespace JokerBooksManager.Managers
             else
             {
                 PbConvrImage.Image = null;
-                TxtBookName.Clear();
-                TxtBookNumber.Clear();
-                DpPublishDate.Clear();
-                TxtBookPrice.Clear();
-                TxtTotalCount.Clear();
                 TxtBookSamry.Clear();
                 //foreach (Control item in GbCrls.Controls)
                 //{
@@ -193,8 +190,8 @@ namespace JokerBooksManager.Managers
             }
             else // 修改
             {
+                bookInfo.BookId = bookId;
                 res = bookBll.UpdateBookInfo(bookInfo);
-                res = false;
             }
             if (res)
             {
@@ -307,14 +304,15 @@ namespace JokerBooksManager.Managers
             {
                 BookName = bookName,
                 BookNumber = sBookName,
-                PublishId = CboPublishId.SelectedValue.ChangeInt(),
+                PublishId = iPublishId,
                 PublishDate = sPublishDate.ToDateTime(),
-                BookTypeId = CboBookTypeId.SelectedValue.ChangeInt(),
-                AuthorId = CboAuthorId.SelectedValue.ChangeInt(),
+                BookTypeId = iBookTypeId,
+                AuthorId = iAuthorId,
                 BookPrice = Convert.ToDecimal(sBookPrice),
                 InputName = UserInfo.LoginName,
                 TotalCount = iTotalCount,
                 BookSamry = sBookSummary,
+                BorrowCount = iBorrowCount,
                 //ConvrImage = CommDefine.ImageToByte(iConverImg)
             };
             // 添加数据到数据库
