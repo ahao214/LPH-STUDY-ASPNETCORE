@@ -30,7 +30,7 @@ namespace DataBoard.ViewModel
                 {
                     if (string.IsNullOrEmpty(UserInfo.Name))
                         return;
-                    if (string.IsNullOrEmpty((UserInfo.Password))
+                    if (string.IsNullOrEmpty(UserInfo.Password))
                         return;
 
                     if (UserInfo.Name.Length > 32)

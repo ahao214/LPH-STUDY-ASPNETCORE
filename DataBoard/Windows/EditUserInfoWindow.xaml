@@ -31,14 +31,14 @@
                 <TextBox
                     Grid.Column="0"
                     Height="35"
-                    Text="{Binding Line .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Text="{Binding UserInfo .Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                     WindowChrome.IsHitTestVisibleInChrome="True" />
                 <Button
                     Grid.Column="1"
                     Margin="15,15,15,15"
                     HorizontalAlignment="Right"
-                    Command="{Binding AddLineCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddLineWindow}}"
+                    Command="{Binding EditUserInfoCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:AddUserInfoWindow}}"
                     Content="添加"
                     FontSize="16"
                     Style="{StaticResource AddButtonStyle}"
