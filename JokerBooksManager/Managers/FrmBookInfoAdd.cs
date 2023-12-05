@@ -121,14 +121,14 @@ namespace JokerBooksManager.Managers
                 }
             }
             if (bookId > 0)
-            {                
-                BookInfo bookInfo = bookBll .GetBookInfoById (bookId); 
+            {
+                BookInfo bookInfo = bookBll.GetBookInfoById(bookId);
                 if (bookInfo is null)
                     return;
                 TxtBookName.Text = bookInfo.BookName;
                 TxtBookNumber.Text = bookInfo.BookNumber;
                 DpPublishDate.Text = bookInfo.PublishDate.ToString();
-                TxtBookPrice .Text = bookInfo.BookPrice .ToString ();
+                TxtBookPrice.Text = bookInfo.BookPrice.ToString();
                 TxtTotalCount.Text = bookInfo.TotalCount.ToString();
                 TxtBookSamry.Text = bookInfo.BookSamry;
                 PbConvrImage.Image = CommDefine.ByteToImage(bookInfo.ConvrImage);
@@ -139,6 +139,11 @@ namespace JokerBooksManager.Managers
             else
             {
                 PbConvrImage.Image = null;
+                TxtBookName.Clear();
+                TxtBookNumber.Clear();
+                DpPublishDate.Clear();
+                TxtBookPrice.Clear();
+                TxtTotalCount.Clear();
                 TxtBookSamry.Clear();
                 //foreach (Control item in GbCrls.Controls)
                 //{
