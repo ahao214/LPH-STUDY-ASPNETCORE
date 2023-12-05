@@ -32,7 +32,6 @@ namespace JokerBooksManager.Managers
         private int iTotalCount;
         private Image iConverImg;
         private string sBookSummary;
-        private int iBorrowCount;
 
         #endregion
 
@@ -135,7 +134,7 @@ namespace JokerBooksManager.Managers
 
                 DpPublishDate.Text = bookInfo.PublishDate.ToString();
                 TxtBookPrice.Text = bookInfo.BookPrice.ToString();
-                TxtBorrowCount.Text = iBorrowCount.ToString();
+                TxtBorrowCount.Text = bookInfo.BorrowCount.ToString();
                 TxtTotalCount.Text = bookInfo.TotalCount.ToString();
                 TxtBookSamry.Text = bookInfo.BookSamry;
                 PbConvrImage.Image = CommDefine.ByteToImage(bookInfo.ConvrImage);
@@ -250,7 +249,6 @@ namespace JokerBooksManager.Managers
             sBookPrice = TxtBookPrice.Text.Trim();
             iTotalCount = TxtTotalCount.Text.Trim().ChangeInt();
             sBookSummary = TxtBookSamry.Text.Trim();
-            iBorrowCount = TxtBorrowCount.Text.Trim().ChangeInt();
 
             if (string.IsNullOrEmpty(sBookName))
             {
@@ -312,7 +310,7 @@ namespace JokerBooksManager.Managers
                 InputName = UserInfo.LoginName,
                 TotalCount = iTotalCount,
                 BookSamry = sBookSummary,
-                BorrowCount = iBorrowCount,
+                BorrowCount = TxtBorrowCount.Text.Trim().ChangeInt(),
                 //ConvrImage = CommDefine.ImageToByte(iConverImg)
             };
             // 添加数据到数据库
