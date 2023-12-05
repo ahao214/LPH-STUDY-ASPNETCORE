@@ -192,6 +192,12 @@ namespace JokerBooksManagerComm.Comm
 
         #endregion
 
+        #region 修改图书信息
+
+        public const string CharUpdateBookInfo = "修改图书信息";
+
+        #endregion
+
 
 
         #region 删除字符
