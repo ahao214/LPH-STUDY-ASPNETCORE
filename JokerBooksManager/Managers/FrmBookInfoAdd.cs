@@ -103,8 +103,8 @@ namespace JokerBooksManager.Managers
         #region 窗体加载
         private void FrmBookInfoAdd_Load(object sender, EventArgs e)
         {
-            InitialAddOrUpdate();
             CboBindData();
+            InitialAddOrUpdate();
         }
         #endregion
 
@@ -127,6 +127,11 @@ namespace JokerBooksManager.Managers
                     return;
                 TxtBookName.Text = bookInfo.BookName;
                 TxtBookNumber.Text = bookInfo.BookNumber;
+
+                CboPublishId.SelectedValue = bookInfo.PublishId;
+                CboBookTypeId.SelectedValue = bookInfo.BookTypeId;
+                CboAuthorId.SelectedValue = bookInfo.AuthorId;
+
                 DpPublishDate.Text = bookInfo.PublishDate.ToString();
                 TxtBookPrice.Text = bookInfo.BookPrice.ToString();
                 TxtTotalCount.Text = bookInfo.TotalCount.ToString();
