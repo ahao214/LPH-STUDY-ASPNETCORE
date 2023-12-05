@@ -131,7 +131,7 @@ namespace JokerBooksManager.Managers
                 TxtBookPrice .Text = bookInfo.BookPrice .ToString ();
                 TxtTotalCount.Text = bookInfo.TotalCount.ToString();
                 TxtBookSamry.Text = bookInfo.BookSamry;
-                //PbConvrImage .Image = bookInfo.ConvrImage;
+                PbConvrImage.Image = CommDefine.ByteToImage(bookInfo.ConvrImage);
 
 
                 Text = CommConst.BookInfoCaption;
