@@ -4,18 +4,15 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataBoard.ViewModel
 {
     public class UserInfoViewModel : ViewModelBase
     {
         private IProvider<UserInfo> provider = new UserInfoProvider();
-        
+
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -61,7 +58,7 @@ namespace DataBoard.ViewModel
                     var vm = SimpleIoc.Default.GetInstance<EditUserInfoWindowViewModel>();
                     if (vm == null)
                         return;
-                    //                   vm.Line = line;
+                    vm.UserInfo = userInfo;
 
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("EditUserInfoWindow", "提示");
@@ -86,12 +83,12 @@ namespace DataBoard.ViewModel
                         var count = provider.Delete(line);
                         if (count > 0)
                         {
-                            dialog.ShowMessageBox("删除成功", "提示");
+                            dialog.ShowMessageBox("删除用户成功", "提示");
                             UserInfos = provider.Select();
                         }
                         else
                         {
-                            dialog.ShowMessageBox("删除失败", "提示");
+                            dialog.ShowMessageBox("删除用户失败", "提示");
 
                         }
                     });
