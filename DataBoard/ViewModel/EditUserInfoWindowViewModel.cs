@@ -5,11 +5,6 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace DataBoard.ViewModel
@@ -43,12 +38,14 @@ namespace DataBoard.ViewModel
                     if (UserInfo.Password.Length > 32)
                         return;
 
-                    var appData = ServiceLocator.Current.GetInstance<AppData>();
-                    this.UserInfo.Id = appData.CurrentUser.Id;
-                    this.UserInfo.InsertDate = DateTime.Now;
-                    UserInfoProvider userInfoProvider = new UserInfoProvider();
+                    //var appData = ServiceLocator.Current.GetInstance<AppData>();
+                    //this.UserInfo.Id = appData.CurrentUser.Id;
+                    //this.userInfo.Name = appData.CurrentUser.Name;
+                    //this.userInfo.Password = appData.CurrentUser.Password;
+                    //this.UserInfo.InsertDate = DateTime.Now;
+                    IProvider<UserInfo> provider = new UserInfoProvider();
 
-                    var count = userInfoProvider.Update(this.UserInfo);
+                    var count = provider.Update(this.UserInfo);
                     if (count > 0)
                     {
                         var dialog = SimpleIoc.Default.GetInstance<IDialogService>();

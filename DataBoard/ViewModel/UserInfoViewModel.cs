@@ -11,7 +11,7 @@ namespace DataBoard.ViewModel
 {
     public class UserInfoViewModel : ViewModelBase
     {
-        private IProvider<UserInfo> provider = new UserInfoProvider();
+        private readonly IProvider<UserInfo> provider = new UserInfoProvider();
 
         /// <summary>
         /// 构造函数
@@ -53,12 +53,12 @@ namespace DataBoard.ViewModel
         {
             get
             {
-                return new RelayCommand<UserInfo>((userInfo) =>
+                return new RelayCommand<UserInfo>((model) =>
                 {
                     var vm = SimpleIoc.Default.GetInstance<EditUserInfoWindowViewModel>();
                     if (vm == null)
                         return;
-                    vm.UserInfo = userInfo;
+                    vm.UserInfo = model;
 
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("EditUserInfoWindow", "提示");
@@ -74,13 +74,13 @@ namespace DataBoard.ViewModel
         {
             get
             {
-                return new RelayCommand<UserInfo>((line) =>
+                return new RelayCommand<UserInfo>((model) =>
                 {
-                    if (line == null) return;
+                    if (model == null) return;
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     var task = dialog.ShowMessage("确定要删除吗?", "提示", "", () =>
                     {
-                        var count = provider.Delete(line);
+                        var count = provider.Delete(model);
                         if (count > 0)
                         {
                             dialog.ShowMessageBox("删除用户成功", "提示");
