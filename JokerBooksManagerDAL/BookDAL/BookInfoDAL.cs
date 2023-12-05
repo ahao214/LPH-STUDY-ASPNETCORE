@@ -134,7 +134,6 @@ namespace JokerBooksManagerDAL.BookDAL
             {
                 bookInfo = new BookInfo
                 {
-                    BookId = dr["BookId"].ChangeInt(),
                     BookName = dr["BookName"].ToString(),
                     BookNumber = dr["BookNumber"].ToString(),
                     PublishId = dr["PublishId"].ChangeInt(),

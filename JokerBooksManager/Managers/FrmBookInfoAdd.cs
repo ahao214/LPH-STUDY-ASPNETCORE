@@ -121,14 +121,20 @@ namespace JokerBooksManager.Managers
                 }
             }
             if (bookId > 0)
-            {
-                Author author = bll.GetAuthorById(bookId);
-                if (author is null)
+            {                
+                BookInfo bookInfo = bookBll .GetBookInfoById (bookId); 
+                if (bookInfo is null)
                     return;
-                //oldAuthorName = TxtAuthorName.Text = author.AuthorName;
-                //TxtRemark.Text = author.Remark;
+                TxtBookName.Text = bookInfo.BookName;
+                TxtBookNumber.Text = bookInfo.BookNumber;
+                DpPublishDate.Text = bookInfo.PublishDate.ToString();
+                TxtBookPrice .Text = bookInfo.BookPrice .ToString ();
+                TxtTotalCount.Text = bookInfo.TotalCount.ToString();
+                TxtBookSamry.Text = bookInfo.BookSamry;
+                //PbConvrImage .Image = bookInfo.ConvrImage;
 
-                Text = CommConst.CharUpdateBookType;
+
+                Text = CommConst.BookInfoCaption;
             }
             else
             {
@@ -177,7 +183,7 @@ namespace JokerBooksManager.Managers
             }
             else // 修改
             {
-                //bRes = bll.UpdateAuthor(author);
+                res = bookBll.UpdateBookInfo(bookInfo);
                 res = false;
             }
             if (res)
