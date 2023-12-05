@@ -10,7 +10,7 @@ namespace DataBoard.ViewModel
 {
     public class AddUserInfoWindowViewModel : ViewModelBase
     {
-        private UserInfo userInfo = new UserInfo() { Name = "admin", Password = "0" };
+        private UserInfo userInfo = new UserInfo();
 
         /// <summary>
         /// 当前用户
