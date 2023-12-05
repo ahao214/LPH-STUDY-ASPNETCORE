@@ -194,7 +194,7 @@ namespace JokerBooksManagerComm.Comm
 
         #region 修改图书信息
 
-        public const string CharUpdateBookInfo = "修改图书信息";
+        public const string BookInfoCaption = "修改图书信息";
 
         #endregion
 
