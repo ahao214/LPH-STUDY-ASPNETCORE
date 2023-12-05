@@ -44,14 +44,15 @@
             this.TsmiWindowList = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiAuthor = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiAuthorList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookManager = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookInfoList = new System.Windows.Forms.ToolStripMenuItem();
             this.Sstatus = new System.Windows.Forms.StatusStrip();
             this.TsslTxtInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
-            this.TsmiBookManager = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiBookInfoList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -193,6 +194,24 @@
             this.TsmiAuthorList.Text = "作者列表";
             this.TsmiAuthorList.Click += new System.EventHandler(this.TsmiAuthorList_Click);
             // 
+            // TsmiBookManager
+            // 
+            this.TsmiBookManager.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiBookInfoList,
+            this.TsmiBookSearch});
+            this.TsmiBookManager.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.TsmiBookManager.Name = "TsmiBookManager";
+            this.TsmiBookManager.Size = new System.Drawing.Size(122, 28);
+            this.TsmiBookManager.Text = "图书管理";
+            // 
+            // TsmiBookInfoList
+            // 
+            this.TsmiBookInfoList.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiBookInfoList.Name = "TsmiBookInfoList";
+            this.TsmiBookInfoList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBookInfoList.Text = "图书信息列表";
+            this.TsmiBookInfoList.Click += new System.EventHandler(this.TsmiBookInfoList_Click);
+            // 
             // Sstatus
             // 
             this.Sstatus.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -257,22 +276,13 @@
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TsmiBookManager
+            // TsmiBookSearch
             // 
-            this.TsmiBookManager.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiBookInfoList});
-            this.TsmiBookManager.Image = global::JokerBooksManager.Properties.Resources._1;
-            this.TsmiBookManager.Name = "TsmiBookManager";
-            this.TsmiBookManager.Size = new System.Drawing.Size(122, 28);
-            this.TsmiBookManager.Text = "图书管理";
-            // 
-            // TsmiBookInfoList
-            // 
-            this.TsmiBookInfoList.Image = global::JokerBooksManager.Properties.Resources._2;
-            this.TsmiBookInfoList.Name = "TsmiBookInfoList";
-            this.TsmiBookInfoList.Size = new System.Drawing.Size(270, 34);
-            this.TsmiBookInfoList.Text = "图书信息列表";
-            this.TsmiBookInfoList.Click += new System.EventHandler(this.TsmiBookInfoList_Click);
+            this.TsmiBookSearch.Image = global::JokerBooksManager.Properties.Resources._3;
+            this.TsmiBookSearch.Name = "TsmiBookSearch";
+            this.TsmiBookSearch.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBookSearch.Text = "图书信息查询";
+            this.TsmiBookSearch.Click += new System.EventHandler(this.TsmiBookSearch_Click);
             // 
             // FrmMain
             // 
@@ -327,5 +337,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiAuthorList;
         private System.Windows.Forms.ToolStripMenuItem TsmiBookManager;
         private System.Windows.Forms.ToolStripMenuItem TsmiBookInfoList;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBookSearch;
     }
 }

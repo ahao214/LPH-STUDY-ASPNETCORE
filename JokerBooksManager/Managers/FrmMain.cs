@@ -247,6 +247,13 @@ namespace JokerBooksManager.Managers
             FrmBookInfoList frmBookInfoList = SingleForm<FrmBookInfoList>.CreateInstance();
             frmBookInfoList.MdiParent = MdiParent;
             frmBookInfoList.Show();
+        }
+        #endregion
+
+        #region 图书信息查询事件
+        private void TsmiBookSearch_Click(object sender, EventArgs e)
+        {
+
         } 
         #endregion
     }
