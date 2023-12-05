@@ -9,7 +9,7 @@
     Width="400"
     Height="200"
     Background="#29282D"
-    DataContext="{Binding Source={StaticResource Locator}, Path=AddLineWindow}"
+    DataContext="{Binding Source={StaticResource Locator}, Path=EditUserInfoWindow}"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">

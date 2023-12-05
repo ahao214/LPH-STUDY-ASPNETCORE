@@ -9,7 +9,7 @@
     Width="400"
     Height="200"
     Background="#29282D"
-    DataContext="{Binding Source={StaticResource Locator}, Path=AddLineWindow}"
+    DataContext="{Binding Source={StaticResource Locator}, Path=AddUserInfoWindow}"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">
@@ -28,6 +28,32 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="16"
+                    Foreground="White"
+                    Text="用户名:" />
+                <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="16"
+                    Foreground="White"
+                    Text="密  码:" />
+                <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="16"
+                    Foreground="White"
+                    Text="角  色:" />
+
                 <TextBox
                     Grid.Column="0"
                     Height="35"
