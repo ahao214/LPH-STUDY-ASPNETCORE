@@ -122,23 +122,34 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <returns>返回图书信息对象</returns>
         public static BookInfo GetBookInfoById(int ID)
         {
-            BookInfo BookInfo = new BookInfo();
+            BookInfo bookInfo = new BookInfo();
             BookCommandType bookCommand = BookCommandType.Text;
             Dictionary<string, object> dic = new Dictionary<string, object>
             {
                 { "BookId",ID }
             };
-            string sql = BuilderSqlHelper.SelectSql<BookInfo>(BookInfo, "BookInfo", "BookId", dic);
+            string sql = BuilderSqlHelper.SelectSql<BookInfo>(bookInfo, "BookInfo", "BookId", dic);
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             if (dr.Read())
             {
-                BookInfo = new BookInfo
+                bookInfo = new BookInfo
                 {
+                    BookId = dr["BookId"].ChangeInt(),
                     BookName = dr["BookName"].ToString(),
+                    BookNumber = dr["BookNumber"].ToString(),
+                    PublishId = dr["PublishId"].ChangeInt(),
+                    PublishDate = Convert.ToDateTime(dr["PublishDate"]),
+                    BookTypeId = dr["BookTypeId"].ChangeInt(),
+                    AuthorId = dr["AuthorId"].ChangeInt(),
+                    BookPrice = Convert.ToDecimal(dr["BookPrice"]),
+                    InputName = dr["InputName"].ToString(),
+                    BorrowCount = dr["BorrowCount"].ChangeInt(),
+                    TotalCount = dr["TotalCount"].ChangeInt(),
+                    BookSamry = dr["BookSamry"].ToString(),
                 };
             }
             dr.Close();
-            return BookInfo;
+            return bookInfo;
         }
 
 
