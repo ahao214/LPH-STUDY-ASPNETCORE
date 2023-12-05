@@ -14,13 +14,14 @@ namespace DataBoard.ViewModel
 {
     public class UserInfoViewModel : ViewModelBase
     {
-        private UserInfoProvider _userInfoProvider = new UserInfoProvider();
+        private IProvider<UserInfo> provider = new UserInfoProvider();
+        
         /// <summary>
         /// 构造函数
         /// </summary>
         public UserInfoViewModel()
         {
-            userInfos = _userInfoProvider.Select();
+            userInfos = provider.Select();
         }
 
         private List<UserInfo> userInfos;
@@ -32,7 +33,7 @@ namespace DataBoard.ViewModel
 
 
         /// <summary>
-        /// 打开用户
+        /// 添加用户
         /// </summary>
         public RelayCommand OpenAddUserInfoWindowCommand
         {
@@ -42,7 +43,7 @@ namespace DataBoard.ViewModel
                 {
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     dialog.ShowMessage("AddUserInfoWindow", "提示");
-                    UserInfos = _userInfoProvider.Select();
+                    UserInfos = provider.Select();
                 });
             }
         }
@@ -63,8 +64,8 @@ namespace DataBoard.ViewModel
                     //                   vm.Line = line;
 
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
-                    dialog.ShowMessage("EditLineWindow", "提示");
-                    UserInfos = _userInfoProvider.Select();
+                    dialog.ShowMessage("EditUserInfoWindow", "提示");
+                    UserInfos = provider.Select();
                 });
             }
         }
@@ -82,11 +83,11 @@ namespace DataBoard.ViewModel
                     var dialog = SimpleIoc.Default.GetInstance<IDialogService>();
                     var task = dialog.ShowMessage("确定要删除吗?", "提示", "", () =>
                     {
-                        var count = _userInfoProvider.Delete(line);
+                        var count = provider.Delete(line);
                         if (count > 0)
                         {
                             dialog.ShowMessageBox("删除成功", "提示");
-                            UserInfos = _userInfoProvider.Select();
+                            UserInfos = provider.Select();
                         }
                         else
                         {
