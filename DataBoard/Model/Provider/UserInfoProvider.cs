@@ -33,7 +33,7 @@ namespace DataBoard.Model.Provider
         {
             using (BoardDBEntities db = new BoardDBEntities())
             {
-                return db.UserInfo.Include("History").Include("Role").Include("Line").Include("StopType").ToList();
+                return db.UserInfo.Include("History").Include("SubLine").Include("Line").Include("StopType").ToList();
             }
         }
 
