@@ -105,14 +105,14 @@ namespace JokerBooksManager.Managers
         #region 绑定图书信息到DataGrid
 
         private void LoadBookInfo()
-        {
-            DgvBookInfo.Rows.Clear();
+        {            
             int bookTypeId = 0;
             BookType bookType = Tag as BookType;
             if (bookType != null)
             {
                 bookTypeId = bookType.BookTypeId;
             }
+            DgvBookInfo.Rows.Clear();
             List<BookInfo> lst = bookInfoBll.GetBookInfos(bookTypeId);
             for (int i = 0; i < lst.Count; i++)
             {
