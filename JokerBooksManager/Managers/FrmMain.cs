@@ -211,7 +211,8 @@ namespace JokerBooksManager.Managers
                 TreeNode tn = new TreeNode
                 {
                     Name = "BookType" + bt.BookTypeId.ToString(),
-                    Text = bt.BookTypeName
+                    Text = bt.BookTypeName,
+                    Tag= bt
                 };
                 rootNode.Nodes.Add(tn);
             }
