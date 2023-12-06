@@ -18,8 +18,7 @@
             <Grid
                 Height="30"
                 VerticalAlignment="Top"
-                Background="LightBlue"
-                MouseLeftButtonDown="Grid_MouseLeftButtonDown" />
+                Background="LightBlue" />
             <!--  border：边框使用  -->
             <Border
                 Width="100"

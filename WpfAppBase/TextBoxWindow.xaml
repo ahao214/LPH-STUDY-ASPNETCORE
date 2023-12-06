@@ -46,7 +46,6 @@
             BorderThickness="2"
             Text="Pwd"
             TextAlignment="Left"
-            TextChanged="txtPwd_TextChanged"
             TextWrapping="Wrap" />
 
 

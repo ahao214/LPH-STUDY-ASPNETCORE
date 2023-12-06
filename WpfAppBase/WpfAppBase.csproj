@@ -67,6 +67,9 @@
     <Compile Include="TextBoxWindow.xaml.cs">
       <DependentUpon>TextBoxWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WrapPanelWindow.xaml.cs">
+      <DependentUpon>WrapPanelWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="BorderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TextBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WrapPanelWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
