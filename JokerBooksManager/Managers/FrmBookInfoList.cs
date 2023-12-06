@@ -107,7 +107,13 @@ namespace JokerBooksManager.Managers
         private void LoadBookInfo()
         {
             DgvBookInfo.Rows.Clear();
-            List<BookInfo> lst = bookInfoBll.GetBookInfos(); ;
+            int bookTypeId = 0;
+            BookType bookType = Tag as BookType;
+            if (bookType != null)
+            {
+                bookTypeId = bookType.BookTypeId;
+            }
+            List<BookInfo> lst = bookInfoBll.GetBookInfos(bookTypeId);
             for (int i = 0; i < lst.Count; i++)
             {
                 DgvBookInfo.Rows.Add();

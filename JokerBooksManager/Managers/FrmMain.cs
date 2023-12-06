@@ -263,6 +263,7 @@ namespace JokerBooksManager.Managers
         {
             FrmBookInfoList frmBookInfoList = SingleForm<FrmBookInfoList>.CreateInstance();
             frmBookInfoList.MdiParent = MdiParent;
+            frmBookInfoList.Tag = TvBookType.SelectedNode.Tag;  // 把选中的节点Tag传递到页面
             frmBookInfoList.Show();
         } 
         #endregion

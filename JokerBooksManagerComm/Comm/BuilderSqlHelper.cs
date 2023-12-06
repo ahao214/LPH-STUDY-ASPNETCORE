@@ -122,7 +122,7 @@ namespace JokerBooksManagerComm.Comm
                     sb.Append($" AND {kv.Key} = '{kv.Value}'");
                 }
             }
-            sb.Append($" ORDER BY {primaryKey} ASC");
+            //sb.Append($" ORDER BY {primaryKey} ASC");
 
             return sb.ToString();
         }

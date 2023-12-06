@@ -64,11 +64,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// 获取所有图书信息
         /// </summary>
         /// <returns>返回图书对象集合</returns>
-        public List<BookInfo> GetBookInfos()
+        public List<BookInfo> GetBookInfos(int bookTypeId)
         {
             try
             {
-                return BookInfoDAL.GetBookInfos();
+                return BookInfoDAL.GetBookInfos(bookTypeId);
             }
             catch (Exception ex)
             {

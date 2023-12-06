@@ -76,13 +76,26 @@ namespace JokerBooksManagerDAL.BookDAL
         /// 获取所有图书信息
         /// </summary>
         /// <returns></returns>
-        public static List<BookInfo> GetBookInfos()
+        public static List<BookInfo> GetBookInfos(int bookTypeId)
         {
             BookCommandType bookCommand = BookCommandType.Text;
             List<BookInfo> lst = new List<BookInfo>();
             StringBuilder sb = new StringBuilder();
             BookInfo bookInfo = new BookInfo();
-            string sql = BuilderSqlHelper.SelectSql<BookInfo>(bookInfo, "BookInfo", "BookId");
+            string sql = string.Empty;
+            if (bookTypeId == 0)
+            {
+                sql = BuilderSqlHelper.SelectSql<BookInfo>(bookInfo, "BookInfo", "BookId");
+            }
+            else
+            {
+                Dictionary<string, object> dic = new Dictionary<string, object>
+                {
+                    {"BookTypeID",bookTypeId }
+                };
+
+                sql = BuilderSqlHelper.SelectSql<BookInfo>(bookInfo, "BookInfo", "", dic);
+            }
 
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             while (dr.Read())
