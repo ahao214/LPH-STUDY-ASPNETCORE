@@ -7,6 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
+    Background="#29282D"
     mc:Ignorable="d">
-    <Grid />
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Foreground="White" Text="年" />
+            <ComboBox x:Name="comboxYear" />
+
+            <TextBlock Foreground="White" Text="月" />
+            <ComboBox x:Name="comboxMonth" />
+
+            <TextBlock Foreground="White" Text="日" />
+            <ComboBox x:Name="comboxDay" />
+
+            <TextBlock Foreground="White" Text="时" />
+            <ComboBox x:Name="comboxHour" />
+
+            <TextBlock Foreground="White" Text="分" />
+            <ComboBox x:Name="comboxMinute" />
+
+            <TextBlock Foreground="White" Text="秒" />
+            <ComboBox x:Name="comboxSecond" />
+
+
+        </StackPanel>
+
+
+    </Grid>
 </UserControl>
