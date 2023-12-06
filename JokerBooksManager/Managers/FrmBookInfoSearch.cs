@@ -23,13 +23,32 @@ namespace JokerBooksManager.Managers
         }
 
 
+        #region 页面加载
+        private void FrmBookInfoSearch_Load(object sender, EventArgs e)
+        {
+            LoadSearchType();
+        }
+        #endregion
 
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #region 绑定数据
+        private void LoadSearchType()
+        {
+            CboSearchType.SelectedIndex = 0;
+        }
+        #endregion
 
         #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
-        } 
+        }
         #endregion
+
+
     }
 }
