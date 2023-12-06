@@ -1,6 +1,5 @@
 ﻿using QRCoder;
 using System.Drawing;
-using System.Windows.Media;
 using static System.Console;
 
 namespace TestQRcodeDemo
