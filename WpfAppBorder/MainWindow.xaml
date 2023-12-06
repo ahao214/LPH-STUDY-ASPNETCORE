@@ -7,17 +7,7 @@
         mc:Ignorable="d" AllowsTransparency="True" Background="Transparent"
         Title="边框使用" Height="450" Width="800">
 
-    <Border BorderBrush="Red" BorderThickness="3" CornerRadius="0 0 20 20" Background="White">
-        <Grid>
-            <Grid Height="30" Background="LightBlue" VerticalAlignment="Top" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
-                
-            </Grid>
-            <!--border：边框使用-->
-            <Border BorderBrush="Purple" BorderThickness="2" Background="LightGreen" CornerRadius="5" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="100" Margin="15 40 15 15">
-                <Label Content="用户名：" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Blue"/>
-            </Border>
-        </Grid>
-    </Border>
+
 
 
 </Window>

@@ -55,9 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BorderWindow.xaml.cs">
+      <DependentUpon>BorderWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanelWindow.xaml.cs">
       <DependentUpon>StackPanelWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="BorderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
