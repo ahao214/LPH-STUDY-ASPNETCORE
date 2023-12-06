@@ -255,6 +255,15 @@ namespace JokerBooksManager.Managers
         private void TsmiBookSearch_Click(object sender, EventArgs e)
         {
 
+        }
+        #endregion
+
+        #region 选中后发生的事件
+        private void TvBookType_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            FrmBookInfoList frmBookInfoList = SingleForm<FrmBookInfoList>.CreateInstance();
+            frmBookInfoList.MdiParent = MdiParent;
+            frmBookInfoList.Show();
         } 
         #endregion
     }

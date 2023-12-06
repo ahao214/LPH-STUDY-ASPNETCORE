@@ -46,13 +46,13 @@
             this.TsmiAuthorList = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiBookManager = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmiBookInfoList = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBookSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.Sstatus = new System.Windows.Forms.StatusStrip();
             this.TsslTxtInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslLoginName = new System.Windows.Forms.ToolStripStatusLabel();
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
-            this.TsmiBookSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -208,9 +208,17 @@
             // 
             this.TsmiBookInfoList.Image = global::JokerBooksManager.Properties.Resources._2;
             this.TsmiBookInfoList.Name = "TsmiBookInfoList";
-            this.TsmiBookInfoList.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBookInfoList.Size = new System.Drawing.Size(218, 34);
             this.TsmiBookInfoList.Text = "图书信息列表";
             this.TsmiBookInfoList.Click += new System.EventHandler(this.TsmiBookInfoList_Click);
+            // 
+            // TsmiBookSearch
+            // 
+            this.TsmiBookSearch.Image = global::JokerBooksManager.Properties.Resources._3;
+            this.TsmiBookSearch.Name = "TsmiBookSearch";
+            this.TsmiBookSearch.Size = new System.Drawing.Size(218, 34);
+            this.TsmiBookSearch.Text = "图书信息查询";
+            this.TsmiBookSearch.Click += new System.EventHandler(this.TsmiBookSearch_Click);
             // 
             // Sstatus
             // 
@@ -275,14 +283,7 @@
             this.TvBookType.TabIndex = 3;
             this.TvBookType.Text = "uiTreeView1";
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TsmiBookSearch
-            // 
-            this.TsmiBookSearch.Image = global::JokerBooksManager.Properties.Resources._3;
-            this.TsmiBookSearch.Name = "TsmiBookSearch";
-            this.TsmiBookSearch.Size = new System.Drawing.Size(270, 34);
-            this.TsmiBookSearch.Text = "图书信息查询";
-            this.TsmiBookSearch.Click += new System.EventHandler(this.TsmiBookSearch_Click);
+            this.TvBookType.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TvBookType_AfterSelect);
             // 
             // FrmMain
             // 
