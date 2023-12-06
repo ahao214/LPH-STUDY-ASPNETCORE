@@ -1,0 +1,55 @@
+﻿<Window
+    x:Class="WpfAppBase.TextBoxWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfAppBase"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="TextBox-控件"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <Label
+            Margin="130,114,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="用户名：" />
+        <Label
+            Margin="130,187,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="密码：" />
+        <Button
+            Margin="150,284,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="登录" />
+        <TextBox
+            Name="txtUserName"
+            Width="120"
+            Margin="227,122,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="Green"
+            BorderThickness="1"
+            RenderTransformOrigin="-1.889,-2.237"
+            Text="admin"
+            TextWrapping="Wrap" />
+        <TextBox
+            Name="txtPwd"
+            Width="120"
+            Margin="227,195,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="Blue"
+            BorderThickness="2"
+            Text="Pwd"
+            TextAlignment="Left"
+            TextChanged="txtPwd_TextChanged"
+            TextWrapping="Wrap" />
+
+
+
+    </Grid>
+</Window>

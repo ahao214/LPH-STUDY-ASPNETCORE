@@ -6,14 +6,5 @@
         xmlns:local="clr-namespace:WpfAppTextBox"
         mc:Ignorable="d"
         Title="TextBox控件" Loaded="Window_Loaded" Height="450" Width="800">
-    <Grid>
-        <Label Content="用户名：" HorizontalAlignment="Left" Margin="130,114,0,0" VerticalAlignment="Top"/>
-        <Label Content="密码：" HorizontalAlignment="Left" Margin="130,187,0,0" VerticalAlignment="Top"/>
-        <Button Content="登录" HorizontalAlignment="Left" Margin="150,284,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtUserName" BorderThickness="1" BorderBrush="Green" HorizontalAlignment="Left" Margin="227,122,0,0" TextWrapping="Wrap" Text="admin" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.889,-2.237"/>
-        <TextBox Name="txtPwd" BorderThickness="2" BorderBrush="Blue" HorizontalAlignment="Left" Margin="227,195,0,0" TextWrapping="Wrap" Text="Pwd"  TextAlignment="Left" VerticalAlignment="Top" Width="120" TextChanged="txtPwd_TextChanged"/>
-
-
-
-    </Grid>
+    
 </Window>
