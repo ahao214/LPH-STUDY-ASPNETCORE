@@ -261,6 +261,11 @@ namespace JokerBooksManager.Managers
         #region 选中后发生的事件
         private void TvBookType_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            // 窗体登录成功后是否就调出FrmBookInfoList这个窗体
+            TreeNode selNode = TvBookType.SelectedNode;
+            if (selNode == null || selNode.Tag.ToString().Length == 0)
+                return;
+
             FrmBookInfoList frmBookInfoList = SingleForm<FrmBookInfoList>.CreateInstance();
             frmBookInfoList.MdiParent = MdiParent;
             frmBookInfoList.Tag = TvBookType.SelectedNode.Tag;  // 把选中的节点Tag传递到图书列表页面
