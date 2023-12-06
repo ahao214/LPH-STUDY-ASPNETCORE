@@ -21,5 +21,15 @@ namespace JokerBooksManager.Managers
         {
             InitializeComponent();
         }
+
+
+
+
+        #region 关闭窗体
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        } 
+        #endregion
     }
 }
