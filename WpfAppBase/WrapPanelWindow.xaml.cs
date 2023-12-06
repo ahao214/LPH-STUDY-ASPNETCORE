@@ -26,10 +26,10 @@ namespace WpfAppBase
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            for(int i = 0;i < 20;i++)
+            for (int i = 0; i < 20; i++)
             {
                 CheckBox cb = new CheckBox();
-                cb.Content = "chk" + (i + 1).ToString("00") + "号";
+                cb.Content = "座位" + (i + 1).ToString("00") + "号";
                 cb.Foreground = new SolidColorBrush(Colors.Red);
                 cb.Margin = new Thickness(3, 2, 3, 2);
                 wp01.Children.Add(cb);
