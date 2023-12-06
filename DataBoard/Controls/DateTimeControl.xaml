@@ -11,23 +11,59 @@
     mc:Ignorable="d">
     <Grid>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Foreground="White" Text="年" />
-            <ComboBox x:Name="comboxYear" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="年" />
+            <ComboBox
+                x:Name="comboxYear"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
-            <TextBlock Foreground="White" Text="月" />
-            <ComboBox x:Name="comboxMonth" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="月" />
+            <ComboBox
+                x:Name="comboxMonth"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
-            <TextBlock Foreground="White" Text="日" />
-            <ComboBox x:Name="comboxDay" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="日" />
+            <ComboBox
+                x:Name="comboxDay"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
-            <TextBlock Foreground="White" Text="时" />
-            <ComboBox x:Name="comboxHour" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="时" />
+            <ComboBox
+                x:Name="comboxHour"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
-            <TextBlock Foreground="White" Text="分" />
-            <ComboBox x:Name="comboxMinute" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="分" />
+            <ComboBox
+                x:Name="comboxMinute"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
-            <TextBlock Foreground="White" Text="秒" />
-            <ComboBox x:Name="comboxSecond" />
+            <TextBlock
+                FontSize="16"
+                Foreground="White"
+                Text="秒" />
+            <ComboBox
+                x:Name="comboxSecond"
+                Width="auto"
+                SelectionChanged="comboBox_SelectionChanged" />
 
 
         </StackPanel>
