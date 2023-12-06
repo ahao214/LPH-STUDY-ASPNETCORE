@@ -212,7 +212,7 @@ namespace JokerBooksManager.Managers
                 {
                     Name = "BookType" + bt.BookTypeId.ToString(),
                     Text = bt.BookTypeName,
-                    Tag= bt
+                    Tag = bt
                 };
                 rootNode.Nodes.Add(tn);
             }
@@ -254,7 +254,9 @@ namespace JokerBooksManager.Managers
         #region 图书信息查询事件
         private void TsmiBookSearch_Click(object sender, EventArgs e)
         {
-
+            FrmBookInfoSearch frmBookInfoSearch = SingleForm<FrmBookInfoSearch>.CreateInstance();
+            frmBookInfoSearch.MdiParent = MdiParent;
+            frmBookInfoSearch.Show();
         }
         #endregion
 
@@ -271,7 +273,7 @@ namespace JokerBooksManager.Managers
             frmBookInfoList.Tag = TvBookType.SelectedNode.Tag;  // 把选中的节点Tag传递到图书列表页面
             TvBookType.SelectedNode = null;
             frmBookInfoList.Show();
-        } 
+        }
         #endregion
     }
 }
