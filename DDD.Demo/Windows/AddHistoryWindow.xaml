@@ -9,5 +9,86 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            Content="书名:"
+            FontSize="16" />
+        <TextBox
+            Grid.Row="0"
+            Grid.Column="1"
+            FontSize="16" />
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            Content="库存:"
+            FontSize="16" />
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="200"
+            Height="30"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="16" />
+        <Label
+            Grid.Row="2"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            Content="数量:"
+            FontSize="16" />
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="1"
+            Width="200"
+            Height="30"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="16" />
+        <Label
+            Grid.Row="3"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            Content="借书人:"
+            FontSize="16" />
+        <ComboBox
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="200"
+            Height="30"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="16" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            Width="100"
+            Height="35"
+            HorizontalAlignment="Left"
+            Content="确定"
+            FontSize="16" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            Width="100"
+            Height="35 "
+            HorizontalAlignment="Left"
+            Content="取消"
+            FontSize="16" />
+    </Grid>
 </Window>
