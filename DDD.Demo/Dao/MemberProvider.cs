@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DDD.Demo.Dao
 {
     /// <summary>
-    /// 会员类的方法
+    /// 会员的方法
     /// </summary>
     public class MemberProvider : IProvider<Member>
     {
