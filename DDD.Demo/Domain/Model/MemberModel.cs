@@ -9,7 +9,7 @@ namespace DDD.Demo.Domain.Model
     /// <summary>
     /// 会员模型
     /// </summary>
-    public class MemberModel
+    public class MemberModel : ModelBase
     {
         private int id;
         public int Id
