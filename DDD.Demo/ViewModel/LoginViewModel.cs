@@ -9,7 +9,7 @@ namespace DDD.Demo.ViewModel
 {
     public class LoginViewModel:ViewModelBase
     {
-
+        public AppData AppData { get; set; } = AppData.Instance;
 
     }
 }

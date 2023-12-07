@@ -12,6 +12,8 @@ namespace DDD.Demo
     /// </summary>
     public class AppData:ObservableObject
     {
+        public static AppData Instance = new Lazy<AppData>(() => new AppData()).Value;
+
         public MemberModel CurrentUser { get; set; }    
 
 
