@@ -69,7 +69,11 @@
     <Compile Include="Dao\IProvider.cs" />
     <Compile Include="Dao\MemberProvider.cs" />
     <Compile Include="Dao\ReaderProvider.cs" />
+    <Compile Include="Domain\Model\BookModel.cs" />
+    <Compile Include="Domain\Model\HistoryModel.cs" />
+    <Compile Include="Domain\Model\MemberModel.cs" />
     <Compile Include="Domain\Model\ModelBase.cs" />
+    <Compile Include="Domain\Model\ReaderModel.cs" />
     <Compile Include="Model\Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
