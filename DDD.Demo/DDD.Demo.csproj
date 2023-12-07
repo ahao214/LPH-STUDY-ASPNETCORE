@@ -79,6 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppData.cs" />
     <Compile Include="Dao\BookProvider.cs" />
     <Compile Include="Dao\HistoryProvider.cs" />
     <Compile Include="Dao\IProvider.cs" />
