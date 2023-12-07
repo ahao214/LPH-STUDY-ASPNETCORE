@@ -108,6 +108,7 @@
     </Compile>
     <Compile Include="ViewModel\AddHistoryViewModel.cs" />
     <Compile Include="ViewModel\BorrowDetailViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="Windows\AddHistoryWindow.xaml.cs">
