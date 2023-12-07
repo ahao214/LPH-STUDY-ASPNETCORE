@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DDD.Demo.Domain.Repository
 {
-    internal class MemberRepository
+    public class MemberRepository
     {
+
+
     }
 }
