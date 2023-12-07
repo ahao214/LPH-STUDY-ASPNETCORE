@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace DDD.Demo.Domain.Builder
 {
+    /// <summary>
+    /// 会员转换
+    /// </summary>
     public class MemberModelBuilder
     {
         /// <summary>
