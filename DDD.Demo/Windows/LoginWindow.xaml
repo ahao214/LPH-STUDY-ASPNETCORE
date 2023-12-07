@@ -73,6 +73,8 @@
                 Width="100"
                 Height="40"
                 Margin="30,0,0,0"
+                Command="{Binding CloseCommand}"
+                CommandParameter="{Binding Source={RelativeSource AncestorType=local:LoginWindow, Mode=FindAncestor}}"
                 Content="关闭" />
         </StackPanel>
 
