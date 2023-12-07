@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dao\IProvider.cs" />
     <Compile Include="ViewModel\AddHistoryViewModel.cs" />
     <Compile Include="ViewModel\BorrowDetailViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -114,8 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converter\" />
-    <Folder Include="Dao\" />
-    <Folder Include="Domain\" />
+    <Folder Include="Domain\Builder\" />
+    <Folder Include="Domain\Interface\" />
+    <Folder Include="Domain\Model\" />
+    <Folder Include="Domain\Repository\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
