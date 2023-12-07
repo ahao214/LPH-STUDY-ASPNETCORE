@@ -69,6 +69,7 @@
     <Compile Include="Dao\IProvider.cs" />
     <Compile Include="Dao\MemberProvider.cs" />
     <Compile Include="Dao\ReaderProvider.cs" />
+    <Compile Include="Domain\Model\ModelBase.cs" />
     <Compile Include="Model\Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -165,7 +166,6 @@
     <Folder Include="Converter\" />
     <Folder Include="Domain\Builder\" />
     <Folder Include="Domain\Interface\" />
-    <Folder Include="Domain\Model\" />
     <Folder Include="Domain\Repository\" />
   </ItemGroup>
   <ItemGroup>
