@@ -75,6 +75,10 @@
     <Compile Include="Domain\Model\MemberModel.cs" />
     <Compile Include="Domain\Model\ModelBase.cs" />
     <Compile Include="Domain\Model\ReaderModel.cs" />
+    <Compile Include="Domain\Repository\BookRepository.cs" />
+    <Compile Include="Domain\Repository\HistoryRepository.cs" />
+    <Compile Include="Domain\Repository\MemberRepository.cs" />
+    <Compile Include="Domain\Repository\ReaderRepository.cs" />
     <Compile Include="Model\Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -170,7 +174,6 @@
   <ItemGroup>
     <Folder Include="Converter\" />
     <Folder Include="Domain\Interface\" />
-    <Folder Include="Domain\Repository\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model\Model1.Context.tt">
