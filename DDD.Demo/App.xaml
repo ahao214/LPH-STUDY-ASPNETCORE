@@ -6,7 +6,7 @@
     xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:DDD.Demo"
     d1p1:Ignorable="d"
-    StartupUri="MainWindow.xaml">
+    StartupUri="Windows/LoginWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <vm:ViewModelLocator
