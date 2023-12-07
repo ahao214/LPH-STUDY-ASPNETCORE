@@ -11,5 +11,11 @@ namespace DDD.Demo.Domain.Model
     /// </summary>
     public class ModelBase
     {
+
+        /// <summary>
+        /// 是否操作成功
+        /// </summary>
+        public bool Success { get; set; } = false;
+
     }
 }

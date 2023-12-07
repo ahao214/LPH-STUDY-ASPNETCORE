@@ -69,6 +69,7 @@
     <Compile Include="Dao\IProvider.cs" />
     <Compile Include="Dao\MemberProvider.cs" />
     <Compile Include="Dao\ReaderProvider.cs" />
+    <Compile Include="Domain\Builder\MemberModelBuilder.cs" />
     <Compile Include="Domain\Model\BookModel.cs" />
     <Compile Include="Domain\Model\HistoryModel.cs" />
     <Compile Include="Domain\Model\MemberModel.cs" />
@@ -168,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converter\" />
-    <Folder Include="Domain\Builder\" />
     <Folder Include="Domain\Interface\" />
     <Folder Include="Domain\Repository\" />
   </ItemGroup>
