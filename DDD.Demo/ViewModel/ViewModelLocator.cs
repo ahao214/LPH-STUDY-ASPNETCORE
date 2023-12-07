@@ -44,6 +44,16 @@ namespace DDD.Demo.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+
+            SimpleIoc.Default.Register<LoginViewModel>();
+        }
+
+        public LoginViewModel Login
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LoginViewModel>();
+            }
         }
 
         public MainViewModel Main
