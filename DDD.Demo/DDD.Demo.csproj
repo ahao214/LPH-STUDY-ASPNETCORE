@@ -59,6 +59,12 @@
     <Compile Include="ViewModel\BorrowDetailViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="Windows\AddHistoryWindow.xaml.cs">
+      <DependentUpon>AddHistoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\BorrowDetailWindow.xaml.cs">
+      <DependentUpon>BorrowDetailWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +77,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\AddHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\BorrowDetailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,7 +117,6 @@
     <Folder Include="Dao\" />
     <Folder Include="Domain\" />
     <Folder Include="Model\" />
-    <Folder Include="Windows\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
