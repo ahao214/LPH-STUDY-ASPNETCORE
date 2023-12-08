@@ -92,6 +92,7 @@
     <Compile Include="Domain\Interface\IBookRepository.cs" />
     <Compile Include="Domain\Interface\IHistoryRepository.cs" />
     <Compile Include="Domain\Interface\IMemberRepository.cs" />
+    <Compile Include="Domain\Interface\IReaderRepository.cs" />
     <Compile Include="Domain\Model\BookModel.cs" />
     <Compile Include="Domain\Model\HistoryModel.cs" />
     <Compile Include="Domain\Model\MemberModel.cs" />
