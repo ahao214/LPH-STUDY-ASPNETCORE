@@ -140,6 +140,15 @@
     <Compile Include="Views\AddReader.xaml.cs">
       <DependentUpon>AddReader.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\BrowseBook.xaml.cs">
+      <DependentUpon>BrowseBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BrowseHistory.xaml.cs">
+      <DependentUpon>BrowseHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BrowseReader.xaml.cs">
+      <DependentUpon>BrowseReader.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddHistoryWindow.xaml.cs">
       <DependentUpon>AddHistoryWindow.xaml</DependentUpon>
     </Compile>
@@ -166,6 +175,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AddReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BrowseBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BrowseHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BrowseReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
