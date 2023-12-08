@@ -9,10 +9,12 @@ namespace BlazorApp3.Components
 
         [Parameter]
         public string? Color { get; set; }
+        [Parameter]
+        public string? Value { get; set; } = "223";
 
         private void OnClick()
         {
-            System.Console.WriteLine("button click");
+            Value = "Joker";
         }
 
 
