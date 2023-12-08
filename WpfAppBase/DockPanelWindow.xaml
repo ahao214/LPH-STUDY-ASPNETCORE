@@ -1,0 +1,27 @@
+﻿<Window
+    x:Class="WpfAppBase.DockPanelWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfAppBase"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="DockPanel面板"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+
+    <DockPanel>
+        <Grid
+            Height="50"
+            Background="Black"
+            DockPanel.Dock="Top" />
+        <Grid
+            Width="100"
+            Background="LightBlue"
+            DockPanel.Dock="Left" />
+        <Grid
+            Width="100"
+            Background="LightGray"
+            DockPanel.Dock="Right" />
+    </DockPanel>
+</Window>
