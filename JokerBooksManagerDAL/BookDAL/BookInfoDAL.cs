@@ -260,8 +260,8 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <summary>
         /// 根据查询条件筛选图书
         /// </summary>
-        /// <param name="searchTypeId"></param>
-        /// <param name="keys"></param>
+        /// <param name="searchTypeId">查询类型</param>
+        /// <param name="keys">关键字</param>
         /// <returns></returns>
         public static List<BookInfo> GetSearchBook(int searchTypeId, string keys)
         {
