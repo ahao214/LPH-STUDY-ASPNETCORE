@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManagerBLL.BookBLL;
+using JokerBooksManagerComm.Comm;
 using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
@@ -52,6 +53,9 @@ namespace JokerBooksManager.Managers
 
         private void LoadSearchBookInfo()
         {
+            // 拿到要查询的类型
+            int searchType = CboSearchType.SelectedValue.ChangeInt();
+
             DgvBookInfo.Rows.Clear();
             List<BookInfo> lst = bookInfoBll.GetBookInfos(1);
             for (int i = 0; i < lst.Count; i++)
@@ -79,6 +83,19 @@ namespace JokerBooksManager.Managers
         #region 加载查询方式
         private void LoadSearchType()
         {
+            List<SearchType> searchTypes = new List<SearchType>();
+            SearchType typeOne = new SearchType(){Id = 1,Name = "按照图书编码"};
+            SearchType typeTwo = new SearchType() { Id = 2, Name = "按照出版社" };
+            SearchType typeThree = new SearchType() { Id = 3, Name = "按照图书类别" };
+            SearchType typeFour = new SearchType() { Id = 4, Name = "按照作者" };
+            searchTypes.Add(typeOne);
+            searchTypes.Add(typeTwo); 
+            searchTypes.Add(typeThree);
+            searchTypes.Add(typeFour);
+
+            CboSearchType.DataSource = searchTypes;
+            CboSearchType.ValueMember = "Id";
+            CboSearchType.DisplayMember = "Name";
 
             CboSearchType.SelectedIndex = 0;
         }
