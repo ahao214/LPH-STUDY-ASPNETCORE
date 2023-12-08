@@ -30,12 +30,16 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
+        #region 查询事件
+
         private void BtnSearch_Click(object sender, EventArgs e)
         {
 
-        }
+        } 
 
-        #region 绑定数据
+        #endregion
+
+        #region 加载查询方式
         private void LoadSearchType()
         {
             CboSearchType.SelectedIndex = 0;
