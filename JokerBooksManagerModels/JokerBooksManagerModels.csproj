@@ -50,6 +50,7 @@
     <Compile Include="Model\ReaderInfo.cs" />
     <Compile Include="Model\ReaderInfoExpend.cs" />
     <Compile Include="Model\ReaderType.cs" />
+    <Compile Include="Model\SearchType.cs" />
     <Compile Include="Model\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
