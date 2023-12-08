@@ -53,6 +53,9 @@
             this.TsslTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.Timers = new System.Windows.Forms.Timer(this.components);
             this.TvBookType = new Sunny.UI.UITreeView();
+            this.借阅管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiBorrowManage = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiReturnManage = new System.Windows.Forms.ToolStripMenuItem();
             this.MsMenu.SuspendLayout();
             this.Sstatus.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +107,8 @@
             this.TsmiPublish,
             this.TsmiWindowList,
             this.TsmiAuthor,
-            this.TsmiBookManager});
+            this.TsmiBookManager,
+            this.借阅管理ToolStripMenuItem});
             this.MsMenu.Location = new System.Drawing.Point(0, 35);
             this.MsMenu.MdiWindowListItem = this.TsmiWindowList;
             this.MsMenu.Name = "MsMenu";
@@ -285,6 +289,32 @@
             this.TvBookType.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.TvBookType.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TvBookType_AfterSelect);
             // 
+            // 借阅管理ToolStripMenuItem
+            // 
+            this.借阅管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiBorrowManage,
+            this.TsmiReturnManage});
+            this.借阅管理ToolStripMenuItem.Image = global::JokerBooksManager.Properties.Resources._1;
+            this.借阅管理ToolStripMenuItem.Name = "借阅管理ToolStripMenuItem";
+            this.借阅管理ToolStripMenuItem.Size = new System.Drawing.Size(122, 28);
+            this.借阅管理ToolStripMenuItem.Text = "借阅管理";
+            // 
+            // TsmiBorrowManage
+            // 
+            this.TsmiBorrowManage.Image = global::JokerBooksManager.Properties.Resources._2;
+            this.TsmiBorrowManage.Name = "TsmiBorrowManage";
+            this.TsmiBorrowManage.Size = new System.Drawing.Size(270, 34);
+            this.TsmiBorrowManage.Text = "图书借出";
+            this.TsmiBorrowManage.Click += new System.EventHandler(this.TsmiBorrowManage_Click);
+            // 
+            // TsmiReturnManage
+            // 
+            this.TsmiReturnManage.Image = global::JokerBooksManager.Properties.Resources._3;
+            this.TsmiReturnManage.Name = "TsmiReturnManage";
+            this.TsmiReturnManage.Size = new System.Drawing.Size(270, 34);
+            this.TsmiReturnManage.Text = "图书归还";
+            this.TsmiReturnManage.Click += new System.EventHandler(this.TsmiReturnManage_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -339,5 +369,8 @@
         private System.Windows.Forms.ToolStripMenuItem TsmiBookManager;
         private System.Windows.Forms.ToolStripMenuItem TsmiBookInfoList;
         private System.Windows.Forms.ToolStripMenuItem TsmiBookSearch;
+        private System.Windows.Forms.ToolStripMenuItem 借阅管理ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TsmiBorrowManage;
+        private System.Windows.Forms.ToolStripMenuItem TsmiReturnManage;
     }
 }

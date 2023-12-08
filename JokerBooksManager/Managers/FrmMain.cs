@@ -275,5 +275,19 @@ namespace JokerBooksManager.Managers
             frmBookInfoList.Show();
         }
         #endregion
+
+        #region 图书借阅
+        private void TsmiBorrowManage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+        #region 图书归还
+        private void TsmiReturnManage_Click(object sender, EventArgs e)
+        {
+
+        } 
+        #endregion
     }
 }
