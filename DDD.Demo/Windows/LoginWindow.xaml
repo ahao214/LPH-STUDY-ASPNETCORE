@@ -68,6 +68,8 @@
             <Button
                 Width="100"
                 Height="40"
+                Command="{Binding LoginCommand}"
+                CommandParameter="{Binding Source={RelativeSource AncestorType=local:LoginWindow, Mode=FindAncestor}}"
                 Content="登录" />
             <Button
                 Width="100"
