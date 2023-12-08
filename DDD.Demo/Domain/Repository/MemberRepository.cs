@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace DDD.Demo.Domain.Repository
 {
     /// <summary>
-    /// 
+    /// Member仓储层
     /// </summary>
     public class MemberRepository : IMemberRepository<MemberModel>
     {
