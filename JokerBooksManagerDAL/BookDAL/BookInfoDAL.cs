@@ -263,37 +263,41 @@ namespace JokerBooksManagerDAL.BookDAL
         /// <param name="searchTypeId"></param>
         /// <param name="keys"></param>
         /// <returns></returns>
-        public static List<BookInfo> GetSearchBook(int searchTypeId,string keys)
+        public static List<BookInfo> GetSearchBook(int searchTypeId, string keys)
         {
             BookCommandType bookCommand = BookCommandType.Text;
             List<BookInfo> lst = new List<BookInfo>();
-            StringBuilder sb = new StringBuilder();
-            SqlParameter para;
+
             string sql = string.Empty;
             switch (searchTypeId)
             {
                 case 1:
                     sql = "SELECT BookId,BookName,BookNumber,PublishId,PublishDate,BookTypeId,AuthorId,BookPrice,InputName,BorrowCount,TotalCount,BookSamry,ConvrImage FROM BookInfo WHERE BookNumber LIKE @BookNumber";
-                    para = new SqlParameter("@BookNumber", keys);
+
                     break;
                 case 2:
                     sql = "SELECT BookId,BookName,BookNumber,BI.PublishId,PublishDate,BookTypeId,AuthorId,BookPrice,InputName,BorrowCount,TotalCount,BookSamry,ConvrImage FROM BookInfo AS BI INNER JOIN PublishHouse AS PH ON BI.PublishId = PH.PublishId WHERE PH.PublishName LIKE @PublishName";
-                    para= new SqlParameter("@PublishName", keys);
                     break;
                 case 3:
                     sql = "SELECT BookId,BookName,BookNumber,BI.PublishId,PublishDate,BI.BookTypeId,AuthorId,BookPrice,InputName,BorrowCount,TotalCount,BookSamry,ConvrImage FROM BookInfo AS BI INNER JOIN BookType AS BT ON BI.BookTypeId = BT.BookTypeId WHERE BT.BookTypeName LIKE @BookTypeName";
-                    para = new SqlParameter("@BookTypeName", keys);
                     break;
                 case 4:
                     sql = "SELECT BookId,BookName,BookNumber,BI.PublishId,PublishDate,BookTypeId,BI.AuthorId,BookPrice,InputName,BorrowCount,TotalCount,BookSamry,ConvrImage FROM BookInfo AS BI INNER JOIN Author AS AU ON BI.AuthorId =AU.AuthorId  WHERE AU.AuthorName LIKE @AuthorName";
-                    para = new SqlParameter("@AuthorName", keys);
                     break;
                 default:
                     sql = "SELECT BookId,BookName,BookNumber.PublishId,PublishDate,BookTypeId,AuthorId,BookPrice,InputName,BorrowCount,TotalCount,BookSamry,ConvrImage FROM BookInfo ORDER BY BookId";
                     break;
             }
 
-            SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand, para);
+            SqlParameter[] paras =
+            {
+                new SqlParameter ("@BookNumber","%"+keys+"%"),
+                new SqlParameter ("@PublishName","%"+keys+"%"),
+                new SqlParameter ("@BookTypeName","%"+keys+"%"),
+                new SqlParameter ("@AuthorName","%"+keys+"%"),
+            };
+
+            SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand, paras);
             while (dr.Read())
             {
                 BookInfo auth = new BookInfo

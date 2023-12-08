@@ -168,5 +168,28 @@ namespace JokerBooksManagerBLL.BookBLL
         }
 
         #endregion
+
+        #region 根据查询条件筛选图书
+
+        /// <summary>
+        /// 根据查询条件筛选图书
+        /// </summary>
+        /// <param name="searchTypeId"></param>
+        /// <param name="keys"></param>
+        /// <returns></returns>
+        public  List<BookInfo> GetSearchBook(int searchTypeId, string keys)
+        {
+            try
+            {
+                return BookInfoDAL.GetSearchBook(searchTypeId, keys);
+            }
+            catch (Exception err)
+            {
+                throw err;
+            }
+        }
+
+
+        #endregion
     }
 }
