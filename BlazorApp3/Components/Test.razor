@@ -1,7 +1,17 @@
 ﻿<h3>@Title</h3>
 
+<input @attributes="inputAttr"/>
+
 @code {
 
     [Parameter]
     public string Title {get;set;}
+
+
+    [Parameter]
+    public Dictionary<string,object> inputAttr{get;set;}=new Dictionary<string,object>()
+    {
+        {"title","inout1"},
+        {"value","10"}
+    };
 }
