@@ -89,6 +89,7 @@
     <Compile Include="Domain\Builder\HistoryModelBuilder.cs" />
     <Compile Include="Domain\Builder\MemberModelBuilder.cs" />
     <Compile Include="Domain\Builder\ReaderModelBuilder.cs" />
+    <Compile Include="Domain\Interface\IMemberRepository.cs" />
     <Compile Include="Domain\Model\BookModel.cs" />
     <Compile Include="Domain\Model\HistoryModel.cs" />
     <Compile Include="Domain\Model\MemberModel.cs" />
@@ -200,7 +201,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converter\" />
-    <Folder Include="Domain\Interface\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model\Model1.Context.tt">
