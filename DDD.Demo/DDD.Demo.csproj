@@ -137,6 +137,9 @@
     <Compile Include="Views\AddBook.xaml.cs">
       <DependentUpon>AddBook.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AddReader.xaml.cs">
+      <DependentUpon>AddReader.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddHistoryWindow.xaml.cs">
       <DependentUpon>AddHistoryWindow.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\AddBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
