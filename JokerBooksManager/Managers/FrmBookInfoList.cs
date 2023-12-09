@@ -193,7 +193,7 @@ namespace JokerBooksManager.Managers
         private void BtnNextPage_Click(object sender, EventArgs e)
         {
             LoadBookInfo(pageSet.NextPage());
-            LblPage.Text = pageSet.nowPage.ToString();
+            SetLablePage();
         }
         #endregion
 
@@ -201,7 +201,7 @@ namespace JokerBooksManager.Managers
         private void BtnStartPage_Click(object sender, EventArgs e)
         {
             LoadBookInfo(pageSet.FirstPage());
-            LblPage.Text = pageSet.nowPage.ToString();
+            SetLablePage();
         }
         #endregion
 
@@ -209,8 +209,8 @@ namespace JokerBooksManager.Managers
 
         private void BtnPrevPage_Click(object sender, EventArgs e)
         {
-            LoadBookInfo(pageSet.PrevPage());
-            LblPage.Text = pageSet.nowPage.ToString();
+            LoadBookInfo(pageSet.PrevPage()); 
+            SetLablePage();
         }
         #endregion
 
@@ -218,8 +218,17 @@ namespace JokerBooksManager.Managers
         private void BtnEndPage_Click(object sender, EventArgs e)
         {
             LoadBookInfo(pageSet.EndPage());
+            SetLablePage();
+        }
+        #endregion
+
+        #region 
+
+        private void SetLablePage()
+        {
             LblPage.Text = pageSet.nowPage.ToString();
-        } 
+        }
+
         #endregion
     }
 }
