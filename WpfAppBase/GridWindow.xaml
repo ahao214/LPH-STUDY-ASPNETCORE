@@ -1,0 +1,33 @@
+﻿<Window
+    x:Class="WpfAppBase.GridWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfAppBase"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Grid介绍"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="10"
+            Content="登录" />
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1"
+            Background="Gray" />
+    </Grid>
+</Window>
