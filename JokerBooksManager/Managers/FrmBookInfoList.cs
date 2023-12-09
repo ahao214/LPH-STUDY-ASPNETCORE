@@ -202,6 +202,15 @@ namespace JokerBooksManager.Managers
         {
             LoadBookInfo(pageSet.FirstPage());
             LblPage.Text = pageSet.nowPage.ToString();
+        }
+        #endregion
+
+        #region 上一页事件
+
+        private void BtnPrevPage_Click(object sender, EventArgs e)
+        {
+            LoadBookInfo(pageSet.PrevPage());
+            LblPage.Text = pageSet.nowPage.ToString();
         } 
         #endregion
     }
