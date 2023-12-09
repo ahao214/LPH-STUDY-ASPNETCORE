@@ -23,5 +23,12 @@ namespace WpfAppBase
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // 导航页面
+            RolePage rolePage = new RolePage();
+            framePage.Content = rolePage;
+        }
     }
 }
