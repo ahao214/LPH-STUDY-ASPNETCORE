@@ -75,7 +75,7 @@ namespace JokerBooksManagerBLL.BookBLL
         }
 
         /// <summary>
-        /// 第一页的数据
+        /// 首页
         /// </summary>
         /// <returns></returns>
         public List <BookInfo> FirstPage()
@@ -83,6 +83,18 @@ namespace JokerBooksManagerBLL.BookBLL
             _nowPage = 1;   // 首页就是第一页
             return GetBookInfos();
         }
+
+        /// <summary>
+        /// 下一页
+        /// </summary>
+        /// <returns></returns>
+        public List <BookInfo> NextPage()
+        {
+            if (++_nowPage > _pageCount)
+                _nowPage = _pageCount;
+            return GetBookInfos();
+        }
+
 
         private List<BookInfo> GetBookInfos()
         {
