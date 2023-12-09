@@ -45,6 +45,7 @@
     <Compile Include="BookBLL\BookInfoBLL.cs" />
     <Compile Include="BookBLL\BookTypeBLL.cs" />
     <Compile Include="BookBLL\ManagerBLL.cs" />
+    <Compile Include="BookBLL\PageSet.cs" />
     <Compile Include="BookBLL\PublishHouseBLL.cs" />
     <Compile Include="BookBLL\ReaderInfoBLL.cs" />
     <Compile Include="BookBLL\ReaderTypeBLL.cs" />
