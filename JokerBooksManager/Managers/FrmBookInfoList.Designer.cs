@@ -51,6 +51,13 @@
             this.BookSamry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.BtnPrevPage = new Sunny.UI.UIButton();
+            this.BtnNextPage = new Sunny.UI.UIButton();
+            this.BtnEndPage = new Sunny.UI.UIButton();
+            this.BtnStartPage = new Sunny.UI.UIButton();
+            this.uiLabel1 = new Sunny.UI.UILabel();
+            this.uiLabel2 = new Sunny.UI.UILabel();
+            this.uiLabel3 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)(this.DgvBookInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +70,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(204, 421);
+            this.BtnClose.Location = new System.Drawing.Point(1553, 429);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -86,7 +93,7 @@
             this.BtnAddNew.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnAddNew.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnAddNew.Location = new System.Drawing.Point(9, 421);
+            this.BtnAddNew.Location = new System.Drawing.Point(1358, 429);
             this.BtnAddNew.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnAddNew.Name = "BtnAddNew";
             this.BtnAddNew.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -312,11 +319,139 @@
             this.DelData.UseColumnTextForLinkValue = true;
             this.DelData.Width = 150;
             // 
+            // BtnPrevPage
+            // 
+            this.BtnPrevPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPrevPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnPrevPage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnPrevPage.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnPrevPage.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnPrevPage.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnPrevPage.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnPrevPage.Location = new System.Drawing.Point(675, 429);
+            this.BtnPrevPage.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BtnPrevPage.Name = "BtnPrevPage";
+            this.BtnPrevPage.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnPrevPage.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnPrevPage.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnPrevPage.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnPrevPage.Size = new System.Drawing.Size(100, 35);
+            this.BtnPrevPage.Style = Sunny.UI.UIStyle.Green;
+            this.BtnPrevPage.TabIndex = 15;
+            this.BtnPrevPage.Text = "上一页";
+            this.BtnPrevPage.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // BtnNextPage
+            // 
+            this.BtnNextPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNextPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnNextPage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnNextPage.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnNextPage.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnNextPage.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnNextPage.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnNextPage.Location = new System.Drawing.Point(836, 429);
+            this.BtnNextPage.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BtnNextPage.Name = "BtnNextPage";
+            this.BtnNextPage.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnNextPage.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnNextPage.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnNextPage.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnNextPage.Size = new System.Drawing.Size(100, 35);
+            this.BtnNextPage.Style = Sunny.UI.UIStyle.Green;
+            this.BtnNextPage.TabIndex = 16;
+            this.BtnNextPage.Text = "下一页";
+            this.BtnNextPage.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // BtnEndPage
+            // 
+            this.BtnEndPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEndPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnEndPage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnEndPage.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnEndPage.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnEndPage.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnEndPage.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnEndPage.Location = new System.Drawing.Point(976, 429);
+            this.BtnEndPage.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BtnEndPage.Name = "BtnEndPage";
+            this.BtnEndPage.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnEndPage.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnEndPage.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnEndPage.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnEndPage.Size = new System.Drawing.Size(100, 35);
+            this.BtnEndPage.Style = Sunny.UI.UIStyle.Green;
+            this.BtnEndPage.TabIndex = 17;
+            this.BtnEndPage.Text = "尾页";
+            this.BtnEndPage.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // BtnStartPage
+            // 
+            this.BtnStartPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStartPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnStartPage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnStartPage.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnStartPage.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnStartPage.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnStartPage.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnStartPage.Location = new System.Drawing.Point(535, 429);
+            this.BtnStartPage.MinimumSize = new System.Drawing.Size(1, 1);
+            this.BtnStartPage.Name = "BtnStartPage";
+            this.BtnStartPage.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.BtnStartPage.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.BtnStartPage.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnStartPage.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.BtnStartPage.Size = new System.Drawing.Size(100, 35);
+            this.BtnStartPage.Style = Sunny.UI.UIStyle.Green;
+            this.BtnStartPage.TabIndex = 18;
+            this.BtnStartPage.Text = "首页";
+            this.BtnStartPage.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.Location = new System.Drawing.Point(1098, 429);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(48, 32);
+            this.uiLabel1.Style = Sunny.UI.UIStyle.Green;
+            this.uiLabel1.TabIndex = 19;
+            this.uiLabel1.Text = "1";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.Location = new System.Drawing.Point(1134, 429);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(48, 32);
+            this.uiLabel2.Style = Sunny.UI.UIStyle.Green;
+            this.uiLabel2.TabIndex = 20;
+            this.uiLabel2.Text = "/";
+            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel3
+            // 
+            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel3.Location = new System.Drawing.Point(1178, 429);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(48, 32);
+            this.uiLabel3.Style = Sunny.UI.UIStyle.Green;
+            this.uiLabel3.TabIndex = 21;
+            this.uiLabel3.Text = "1";
+            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // FrmBookInfoList
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1703, 748);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.Controls.Add(this.uiLabel3);
+            this.Controls.Add(this.uiLabel2);
+            this.Controls.Add(this.uiLabel1);
+            this.Controls.Add(this.BtnStartPage);
+            this.Controls.Add(this.BtnEndPage);
+            this.Controls.Add(this.BtnNextPage);
+            this.Controls.Add(this.BtnPrevPage);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnAddNew);
             this.Controls.Add(this.DgvBookInfo);
@@ -354,5 +489,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BookSamry;
         private System.Windows.Forms.DataGridViewLinkColumn Modify;
         private System.Windows.Forms.DataGridViewLinkColumn DelData;
+        private Sunny.UI.UIButton BtnPrevPage;
+        private Sunny.UI.UIButton BtnNextPage;
+        private Sunny.UI.UIButton BtnEndPage;
+        private Sunny.UI.UIButton BtnStartPage;
+        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UILabel uiLabel3;
     }
 }

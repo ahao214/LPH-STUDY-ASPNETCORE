@@ -10,7 +10,10 @@
     Height="450"
     mc:Ignorable="d">
     <Grid>
-        <Frame  Name="framePage" VerticalAlignment="Top" Source="RolePage.xaml" />
-        <Button Content="login" Click="Button_Click"/>
+        <Frame
+            Name="framePage"
+            VerticalAlignment="Top"
+            Source="RolePage.xaml" />
+        <Button Click="Button_Click" Content="login" />
     </Grid>
 </Window>
