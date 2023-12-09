@@ -161,7 +161,7 @@ namespace JokerBooksManager.Managers
         {
             pageSet = GetBooks();
             LoadBookInfo(pageSet.FirstPage());
-
+            LblPageCount.Text = pageSet.PageCount.ToString();
         } 
         #endregion
 
