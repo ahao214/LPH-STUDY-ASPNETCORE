@@ -115,9 +115,15 @@ namespace JokerBooksManagerBLL.BookBLL
         }
 
         #endregion
+
+
         private List<BookInfo> GetBookInfos()
         {
             List<BookInfo> subBookInfos = new List<BookInfo>();
+            
+            if (_pageCount == 0)
+                return subBookInfos;
+
             int iStart = (_nowPage - 1) * _pageSize; // 循环的起始下标
             int iEnd = _nowPage * _pageSize - 1;    // 循环的终止下标
 
