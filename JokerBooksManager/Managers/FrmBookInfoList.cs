@@ -21,12 +21,22 @@ namespace JokerBooksManager.Managers
     public partial class FrmBookInfoList : UIForm
     {
         /// <summary>
-        /// 业务逻辑层:作者变量
+        /// 业务逻辑层
         /// </summary>
         private readonly AuthorBLL authorBll = new AuthorBLL();
         private readonly BookInfoBLL bookInfoBll = new BookInfoBLL();
         private readonly PublishHouseBLL publishBll = new PublishHouseBLL();
         private readonly BookTypeBLL bookTypeBll = new BookTypeBLL();
+        /// <summary>
+        /// 业务逻辑层图书翻页变量
+        /// </summary>
+        private PageSet pageSet = null;
+        /// <summary>
+        /// 每页显示的条数
+        /// </summary>
+        private const int pageSize = 2;
+
+
         #region 构造函数
         public FrmBookInfoList()
         {
@@ -51,7 +61,7 @@ namespace JokerBooksManager.Managers
             frmBookInfoAdd.Tag = new FormInfoModel
             {
                 KeyId = id,
-                ReloadData = LoadBookInfo   // 自定义函数
+                ReloadData = InitailPageSet   // 自定义函数
             };
             frmBookInfoAdd.Show();
         }
@@ -98,22 +108,16 @@ namespace JokerBooksManager.Managers
         #region 窗体加载
         private void FrmBookInfoList_Load(object sender, EventArgs e)
         {
-            LoadBookInfo();
+            InitailPageSet();
         }
         #endregion
 
         #region 绑定图书信息到DataGrid
 
-        private void LoadBookInfo()
-        {            
-            int bookTypeId = 0;
-            BookType bookType = Tag as BookType;
-            if (bookType != null)
-            {
-                bookTypeId = bookType.BookTypeId;
-            }
+        private void LoadBookInfo(List<BookInfo> _bookInfos)
+        {
             DgvBookInfo.Rows.Clear();
-            List<BookInfo> lst = bookInfoBll.GetBookInfos(bookTypeId);
+            List<BookInfo> lst = _bookInfos;
             for (int i = 0; i < lst.Count; i++)
             {
                 DgvBookInfo.Rows.Add();
@@ -135,6 +139,32 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
+        #region 获取所有图书
+
+        private PageSet GetBooks()
+        {
+            int bookTypeId = 0;
+            BookType bookType = Tag as BookType;
+            if (bookType != null)
+            {
+                bookTypeId = bookType.BookTypeId;
+            }
+            pageSet = bookInfoBll.GetAllBooks(bookTypeId, pageSize);
+            return pageSet;
+        }
+
+        #endregion
+
+
+        #region 初始化页面记载的数据
+        private void InitailPageSet()
+        {
+            pageSet = GetBooks();
+            LoadBookInfo(pageSet.FirstPage());
+
+        } 
+        #endregion
+
         #region 执行删除
         /// <summary>
         /// 执行删除
@@ -149,13 +179,13 @@ namespace JokerBooksManager.Managers
             if (res)
             {
                 CommMsgBox.MsgBox(CommConst.DeleteDataSuccess);
-                LoadBookInfo();
+                InitailPageSet();
             }
             else
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataFail);
             }
-
+            LoadBookInfo(pageSet.FirstPage());
         }
         #endregion
     }
