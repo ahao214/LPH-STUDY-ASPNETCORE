@@ -276,18 +276,23 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
-        #region 图书借阅
+        #region 图书借书事件
+        
         private void TsmiBorrowManage_Click(object sender, EventArgs e)
         {
 
         }
 
         #endregion
-        #region 图书归还
+
+
+        #region 图书归还事件
+        
         private void TsmiReturnManage_Click(object sender, EventArgs e)
         {
 
         } 
+        
         #endregion
     }
 }
