@@ -188,5 +188,21 @@ namespace JokerBooksManager.Managers
             LoadBookInfo(pageSet.FirstPage());
         }
         #endregion
+
+        #region 单击下一页事件
+        private void BtnNextPage_Click(object sender, EventArgs e)
+        {
+            LoadBookInfo(pageSet.NextPage());
+            LblPage.Text = pageSet.nowPage.ToString();
+        }
+        #endregion
+
+        #region 单击首页事件
+        private void BtnStartPage_Click(object sender, EventArgs e)
+        {
+            LoadBookInfo(pageSet.FirstPage());
+            LblPage.Text = pageSet.nowPage.ToString();
+        } 
+        #endregion
     }
 }
