@@ -105,6 +105,16 @@ namespace JokerBooksManagerBLL.BookBLL
         }
 
         #endregion
+
+        #region 尾页
+
+        public List<BookInfo> EndPage()
+        {
+            _nowPage = _pageCount;
+            return GetBookInfos();
+        }
+
+        #endregion
         private List<BookInfo> GetBookInfos()
         {
             List<BookInfo> subBookInfos = new List<BookInfo>();
