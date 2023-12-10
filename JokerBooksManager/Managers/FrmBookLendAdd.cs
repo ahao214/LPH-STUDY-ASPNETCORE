@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JokerBooksManagerBLL.BookBLL;
+using JokerBooksManagerModels.Model;
 using Sunny.UI;
 
 namespace JokerBooksManager.Managers
@@ -16,6 +18,19 @@ namespace JokerBooksManager.Managers
     /// </summary>
     public partial class FrmBookLendAdd : UIForm
     {
+
+        #region 业务逻辑层BLL
+        
+        private readonly ReaderInfoBLL readerInfoBLL = new ReaderInfoBLL();
+
+        #endregion
+
+        #region
+
+        private ReaderInfo readerInfo = new ReaderInfo();
+
+        #endregion
+
         public FrmBookLendAdd()
         {
             InitializeComponent();
@@ -25,10 +40,18 @@ namespace JokerBooksManager.Managers
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        } 
+        }
+
+
         #endregion
 
+        #region 获取读者信息
+        
+        private void BtnSearchReader_Click(object sender, EventArgs e)
+        {
+            readerInfo = readerInfoBLL.GetReaderInfoByKeyWords(this.TxtKeys.Text.Trim());
+        } 
 
-
+        #endregion
     }
 }

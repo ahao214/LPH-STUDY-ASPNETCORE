@@ -153,6 +153,7 @@
             this.BtnSearchReader.TabIndex = 2;
             this.BtnSearchReader.Text = "查询";
             this.BtnSearchReader.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnSearchReader.Click += new System.EventHandler(this.BtnSearchReader_Click);
             // 
             // TxtReaderRemark
             // 
