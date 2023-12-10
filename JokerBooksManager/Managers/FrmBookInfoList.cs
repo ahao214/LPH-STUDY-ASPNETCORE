@@ -61,7 +61,7 @@ namespace JokerBooksManager.Managers
             frmBookInfoAdd.Tag = new FormInfoModel
             {
                 KeyId = id,
-                PageCount = pageSet.PageCount .ChangeInt(),
+                PageCount = LblPageCount.Text.ChangeInt(),
                 //ReloadData = InitailPageSet   // 自定义函数
                 RefreshData = InitailPageSet
             };
