@@ -30,7 +30,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 业务逻辑层图书翻页变量
         /// </summary>
-        private PageSet pageSet = null;
+        private PageSet<BookInfo> pageSet = null;
         /// <summary>
         /// 每页显示的条数
         /// </summary>
@@ -141,7 +141,7 @@ namespace JokerBooksManager.Managers
 
         #region 获取所有图书
 
-        private PageSet GetBooks()
+        private PageSet<BookInfo> GetBooks()
         {
             int bookTypeId = 0;
             BookType bookType = Tag as BookType;

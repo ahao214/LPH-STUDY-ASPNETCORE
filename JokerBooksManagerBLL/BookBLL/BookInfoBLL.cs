@@ -200,9 +200,9 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <param name="bookTypeId">图书类别ID</param>
         /// <param name="pageSize">每页展示的条数</param>
         /// <returns></returns>
-        public PageSet GetAllBooks(int bookTypeId,int pageSize)
+        public PageSet<BookInfo> GetAllBooks(int bookTypeId,int pageSize)
         {
-            return new PageSet(BookInfoDAL.GetBookInfos(bookTypeId), pageSize);
+            return new PageSet<BookInfo>(BookInfoDAL.GetBookInfos(bookTypeId), pageSize);
         }
 
         #endregion

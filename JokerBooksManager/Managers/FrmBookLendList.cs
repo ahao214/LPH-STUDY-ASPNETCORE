@@ -32,7 +32,7 @@ namespace JokerBooksManager.Managers
         /// <summary>
         /// 业务逻辑层图书翻页变量
         /// </summary>
-        private PageSet pageSet = null;
+        private PageSet<BorrowBook> pageSet = null;
         /// <summary>
         /// 每页显示的条数
         /// </summary>
@@ -102,17 +102,17 @@ namespace JokerBooksManager.Managers
 
         #region 获取所有图书
 
-        private PageSet GetBooks()
-        {
-            int bookTypeId = 0;
-            BookType bookType = Tag as BookType;
-            if (bookType != null)
-            {
-                bookTypeId = bookType.BookTypeId;
-            }
-            pageSet = bookInfoBll.GetAllBooks(bookTypeId, pageSize);
-            return pageSet;
-        }
+        //private PageSet<> GetBooks()
+        //{
+        //    int bookTypeId = 0;
+        //    BookType bookType = Tag as BookType;
+        //    if (bookType != null)
+        //    {
+        //        bookTypeId = bookType.BookTypeId;
+        //    }
+        //    pageSet = bookInfoBll.GetAllBooks(bookTypeId, pageSize);
+        //    return pageSet;
+        //}
 
         #endregion
 
@@ -120,7 +120,7 @@ namespace JokerBooksManager.Managers
         #region 初始化页面记载的数据
         private void InitailPageSet()
         {
-            pageSet = GetBooks();
+            //pageSet = GetBooks();
             //LoadBookInfo(pageSet.FirstPage());
             LblPageCount.Text = pageSet.PageCount.ToString();
         }
