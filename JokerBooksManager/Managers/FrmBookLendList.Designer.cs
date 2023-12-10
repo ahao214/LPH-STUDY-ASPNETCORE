@@ -28,25 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DgvBookInfo = new Sunny.UI.UIDataGridView();
-            this.BookId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.DgvBorrowBook = new Sunny.UI.UIDataGridView();
+            this.BorrowId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ConvrImage = new System.Windows.Forms.DataGridViewImageColumn();
-            this.BookNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublishName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PublishDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InputName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BorrowCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookSamry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReaderName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BorrowBookCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BorrowDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShouldDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActualDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Modify = new System.Windows.Forms.DataGridViewLinkColumn();
             this.DelData = new System.Windows.Forms.DataGridViewLinkColumn();
             this.BtnClose = new Sunny.UI.UIButton();
@@ -58,89 +53,84 @@
             this.BtnEndPage = new Sunny.UI.UIButton();
             this.BtnNextPage = new Sunny.UI.UIButton();
             this.BtnPrevPage = new Sunny.UI.UIButton();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvBookInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvBorrowBook)).BeginInit();
             this.SuspendLayout();
             // 
-            // DgvBookInfo
+            // DgvBorrowBook
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvBookInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvBookInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvBookInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvBookInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvBookInfo.ColumnHeadersHeight = 32;
-            this.DgvBookInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DgvBookInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BookId,
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvBorrowBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.DgvBorrowBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvBorrowBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvBorrowBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DgvBorrowBook.ColumnHeadersHeight = 32;
+            this.DgvBorrowBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvBorrowBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BorrowId,
             this.BookName,
-            this.ConvrImage,
-            this.BookNumber,
-            this.PublishName,
-            this.PublishDate,
-            this.BookTypeName,
-            this.AuthorName,
-            this.BookPrice,
-            this.InputName,
-            this.BorrowCount,
-            this.TotalCount,
-            this.BookSamry,
+            this.ReaderName,
+            this.BorrowBookCount,
+            this.BorrowDate,
+            this.ShouldDate,
+            this.ActualDate,
+            this.Remark,
             this.Modify,
             this.DelData});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvBookInfo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvBookInfo.EnableHeadersVisualStyles = false;
-            this.DgvBookInfo.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DgvBookInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(199)))), ((int)(((byte)(69)))));
-            this.DgvBookInfo.Location = new System.Drawing.Point(3, 38);
-            this.DgvBookInfo.Name = "DgvBookInfo";
-            this.DgvBookInfo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvBookInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DgvBookInfo.RowHeadersWidth = 62;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.DgvBookInfo.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DgvBookInfo.RowTemplate.Height = 30;
-            this.DgvBookInfo.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvBookInfo.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.DgvBookInfo.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.DgvBookInfo.SelectedIndex = -1;
-            this.DgvBookInfo.Size = new System.Drawing.Size(1441, 323);
-            this.DgvBookInfo.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.DgvBookInfo.Style = Sunny.UI.UIStyle.Green;
-            this.DgvBookInfo.TabIndex = 15;
-            this.DgvBookInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvBookInfo_CellContentClick);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvBorrowBook.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DgvBorrowBook.EnableHeadersVisualStyles = false;
+            this.DgvBorrowBook.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DgvBorrowBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(199)))), ((int)(((byte)(69)))));
+            this.DgvBorrowBook.Location = new System.Drawing.Point(3, 38);
+            this.DgvBorrowBook.Name = "DgvBorrowBook";
+            this.DgvBorrowBook.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvBorrowBook.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.DgvBorrowBook.RowHeadersWidth = 62;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(242)))), ((int)(((byte)(212)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.DgvBorrowBook.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.DgvBorrowBook.RowTemplate.Height = 30;
+            this.DgvBorrowBook.ScrollBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvBorrowBook.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.DgvBorrowBook.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.DgvBorrowBook.SelectedIndex = -1;
+            this.DgvBorrowBook.Size = new System.Drawing.Size(1441, 323);
+            this.DgvBorrowBook.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.DgvBorrowBook.Style = Sunny.UI.UIStyle.Green;
+            this.DgvBorrowBook.TabIndex = 15;
+            this.DgvBorrowBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvBorrowBook_CellContentClick);
             // 
-            // BookId
+            // BorrowId
             // 
-            this.BookId.DataPropertyName = "BookId";
-            this.BookId.HeaderText = "自动编号";
-            this.BookId.MinimumWidth = 8;
-            this.BookId.Name = "BookId";
-            this.BookId.ToolTipText = "自动编号";
-            this.BookId.Width = 150;
+            this.BorrowId.DataPropertyName = "BorrowId";
+            this.BorrowId.HeaderText = "自动编号";
+            this.BorrowId.MinimumWidth = 8;
+            this.BorrowId.Name = "BorrowId";
+            this.BorrowId.ToolTipText = "自动编号";
+            this.BorrowId.Width = 150;
             // 
             // BookName
             // 
@@ -151,105 +141,59 @@
             this.BookName.ToolTipText = "图书名称";
             this.BookName.Width = 200;
             // 
-            // ConvrImage
+            // ReaderName
             // 
-            this.ConvrImage.DataPropertyName = "ConvrImage";
-            this.ConvrImage.HeaderText = "图书封面";
-            this.ConvrImage.MinimumWidth = 8;
-            this.ConvrImage.Name = "ConvrImage";
-            this.ConvrImage.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ConvrImage.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ConvrImage.Width = 150;
+            this.ReaderName.DataPropertyName = "ReaderName";
+            this.ReaderName.HeaderText = "读者姓名";
+            this.ReaderName.MinimumWidth = 8;
+            this.ReaderName.Name = "ReaderName";
+            this.ReaderName.ToolTipText = "图书编码";
+            this.ReaderName.Width = 150;
             // 
-            // BookNumber
+            // BorrowBookCount
             // 
-            this.BookNumber.DataPropertyName = "BookNumber";
-            this.BookNumber.HeaderText = "图书编码";
-            this.BookNumber.MinimumWidth = 8;
-            this.BookNumber.Name = "BookNumber";
-            this.BookNumber.ToolTipText = "图书编码";
-            this.BookNumber.Width = 150;
+            this.BorrowBookCount.DataPropertyName = "BorrowBookCount";
+            this.BorrowBookCount.HeaderText = "借出次数";
+            this.BorrowBookCount.MinimumWidth = 8;
+            this.BorrowBookCount.Name = "BorrowBookCount";
+            this.BorrowBookCount.ToolTipText = "出版社";
+            this.BorrowBookCount.Width = 150;
             // 
-            // PublishName
+            // BorrowDate
             // 
-            this.PublishName.DataPropertyName = "PublishName";
-            this.PublishName.HeaderText = "出版社";
-            this.PublishName.MinimumWidth = 8;
-            this.PublishName.Name = "PublishName";
-            this.PublishName.ToolTipText = "出版社";
-            this.PublishName.Width = 150;
+            this.BorrowDate.DataPropertyName = "BorrowDate";
+            this.BorrowDate.HeaderText = "借出时间";
+            this.BorrowDate.MinimumWidth = 8;
+            this.BorrowDate.Name = "BorrowDate";
+            this.BorrowDate.ToolTipText = "出版时间";
+            this.BorrowDate.Width = 150;
             // 
-            // PublishDate
+            // ShouldDate
             // 
-            this.PublishDate.DataPropertyName = "PublishDate";
-            this.PublishDate.HeaderText = "出版时间";
-            this.PublishDate.MinimumWidth = 8;
-            this.PublishDate.Name = "PublishDate";
-            this.PublishDate.ToolTipText = "出版时间";
-            this.PublishDate.Width = 150;
+            this.ShouldDate.DataPropertyName = "ShouldDate";
+            this.ShouldDate.HeaderText = "应该归还时间";
+            this.ShouldDate.MinimumWidth = 8;
+            this.ShouldDate.Name = "ShouldDate";
+            this.ShouldDate.ToolTipText = "图书类别";
+            this.ShouldDate.Width = 150;
             // 
-            // BookTypeName
+            // ActualDate
             // 
-            this.BookTypeName.DataPropertyName = "BookTypeName";
-            this.BookTypeName.HeaderText = "图书类别";
-            this.BookTypeName.MinimumWidth = 8;
-            this.BookTypeName.Name = "BookTypeName";
-            this.BookTypeName.ToolTipText = "图书类别";
-            this.BookTypeName.Width = 150;
+            this.ActualDate.DataPropertyName = "ActualDate";
+            this.ActualDate.HeaderText = "实际归还时间";
+            this.ActualDate.MinimumWidth = 8;
+            this.ActualDate.Name = "ActualDate";
+            this.ActualDate.ToolTipText = "作者";
+            this.ActualDate.Width = 150;
             // 
-            // AuthorName
+            // Remark
             // 
-            this.AuthorName.DataPropertyName = "AuthorName";
-            this.AuthorName.HeaderText = "作者";
-            this.AuthorName.MinimumWidth = 8;
-            this.AuthorName.Name = "AuthorName";
-            this.AuthorName.ToolTipText = "作者";
-            this.AuthorName.Width = 150;
-            // 
-            // BookPrice
-            // 
-            this.BookPrice.DataPropertyName = "BookPrice";
-            this.BookPrice.HeaderText = "图书价格";
-            this.BookPrice.MinimumWidth = 8;
-            this.BookPrice.Name = "BookPrice";
-            this.BookPrice.ToolTipText = "图书价格";
-            this.BookPrice.Width = 150;
-            // 
-            // InputName
-            // 
-            this.InputName.DataPropertyName = "InputName";
-            this.InputName.HeaderText = "录入员";
-            this.InputName.MinimumWidth = 8;
-            this.InputName.Name = "InputName";
-            this.InputName.ToolTipText = "录入员";
-            this.InputName.Width = 150;
-            // 
-            // BorrowCount
-            // 
-            this.BorrowCount.DataPropertyName = "BorrowCount";
-            this.BorrowCount.HeaderText = "借阅次数";
-            this.BorrowCount.MinimumWidth = 8;
-            this.BorrowCount.Name = "BorrowCount";
-            this.BorrowCount.ToolTipText = "借阅次数";
-            this.BorrowCount.Width = 150;
-            // 
-            // TotalCount
-            // 
-            this.TotalCount.DataPropertyName = "TotalCount";
-            this.TotalCount.HeaderText = "总册数";
-            this.TotalCount.MinimumWidth = 8;
-            this.TotalCount.Name = "TotalCount";
-            this.TotalCount.ToolTipText = "总册数";
-            this.TotalCount.Width = 150;
-            // 
-            // BookSamry
-            // 
-            this.BookSamry.DataPropertyName = "BookSamry";
-            this.BookSamry.HeaderText = "简介";
-            this.BookSamry.MinimumWidth = 8;
-            this.BookSamry.Name = "BookSamry";
-            this.BookSamry.ToolTipText = "简介";
-            this.BookSamry.Width = 150;
+            this.Remark.DataPropertyName = "Remark";
+            this.Remark.HeaderText = "备注";
+            this.Remark.MinimumWidth = 8;
+            this.Remark.Name = "Remark";
+            this.Remark.ToolTipText = "图书价格";
+            this.Remark.Width = 150;
             // 
             // Modify
             // 
@@ -454,37 +398,22 @@
             this.Controls.Add(this.BtnPrevPage);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnAddNew);
-            this.Controls.Add(this.DgvBookInfo);
+            this.Controls.Add(this.DgvBorrowBook);
             this.MaximizeBox = false;
             this.Name = "FrmBookLendList";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.Style = Sunny.UI.UIStyle.Green;
-            this.Text = "图书借阅";
+            this.Text = "图书借阅记录";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvBookInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvBorrowBook)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Sunny.UI.UIDataGridView DgvBookInfo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookName;
-        private System.Windows.Forms.DataGridViewImageColumn ConvrImage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublishName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PublishDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookTypeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn InputName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookSamry;
-        private System.Windows.Forms.DataGridViewLinkColumn Modify;
-        private System.Windows.Forms.DataGridViewLinkColumn DelData;
+        private Sunny.UI.UIDataGridView DgvBorrowBook;
         private Sunny.UI.UIButton BtnClose;
         private Sunny.UI.UIButton BtnAddNew;
         private Sunny.UI.UILabel LblPageCount;
@@ -494,5 +423,15 @@
         private Sunny.UI.UIButton BtnEndPage;
         private Sunny.UI.UIButton BtnNextPage;
         private Sunny.UI.UIButton BtnPrevPage;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReaderName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowBookCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BorrowDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ShouldDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActualDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Remark;
+        private System.Windows.Forms.DataGridViewLinkColumn Modify;
+        private System.Windows.Forms.DataGridViewLinkColumn DelData;
     }
 }
