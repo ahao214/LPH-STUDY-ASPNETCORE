@@ -1,22 +1,17 @@
-﻿using JokerBooksManagerModels.Model;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 
 namespace JokerBooksManagerBLL.BookBLL
 {
     /// <summary>
     /// 业务逻辑层分页类
     /// </summary>
-    public class PageSet
+    public class PageSet<T> where T : class
     {
         /// <summary>
         /// 一次性从数据库取出所有的记录
         /// </summary>
-        private List<BookInfo> bookInfos;
+        private List<T> list;
         /// <summary>
         /// 总记录数
         /// </summary>
@@ -61,11 +56,11 @@ namespace JokerBooksManagerBLL.BookBLL
         /// <summary>
         /// 构造函数
         /// </summary>
-        public PageSet(List<BookInfo> _bookInfos, int _pageSize)
+        public PageSet(List<T> _bookInfos, int _pageSize)
         {
-            bookInfos = _bookInfos;                 // 传递所有图书记录
-            this._pageSize = _pageSize;             // 每页图书显示条数
-            TotalCount = bookInfos.Count;           // 得到总记录数
+            list = _bookInfos;                 // 传递所有Model记录
+            this._pageSize = _pageSize;             // 每页显示条数
+            TotalCount = list.Count;           // 得到总记录数
             _pageCount = TotalCount / _pageSize;    // 总页数
             if (TotalCount % _pageSize != 0)
             {
@@ -78,51 +73,51 @@ namespace JokerBooksManagerBLL.BookBLL
         /// 首页
         /// </summary>
         /// <returns></returns>
-        public List<BookInfo> FirstPage()
+        public List<T> FirstPage()
         {
             _nowPage = 1;   // 首页就是第一页
-            return GetBookInfos();
+            return GetListInfos();
         }
 
         /// <summary>
         /// 下一页
         /// </summary>
         /// <returns></returns>
-        public List<BookInfo> NextPage()
+        public List<T> NextPage()
         {
             if (++_nowPage > _pageCount)
                 _nowPage = _pageCount;
-            return GetBookInfos();
+            return GetListInfos();
         }
 
 
         #region 上一页
-        public List<BookInfo> PrevPage()
+        public List<T> PrevPage()
         {
             if (--_nowPage < 1)
                 _nowPage = 1;
-            return GetBookInfos();
+            return GetListInfos();
         }
 
         #endregion
 
         #region 尾页
 
-        public List<BookInfo> EndPage()
+        public List<T> EndPage()
         {
             _nowPage = _pageCount;
-            return GetBookInfos();
+            return GetListInfos();
         }
 
         #endregion
 
 
-        private List<BookInfo> GetBookInfos()
+        private List<T> GetListInfos()
         {
-            List<BookInfo> subBookInfos = new List<BookInfo>();
-            
+            List<T> subList = new List<T>();
+
             if (_pageCount == 0)
-                return subBookInfos;
+                return subList;
 
             int iStart = (_nowPage - 1) * _pageSize; // 循环的起始下标
             int iEnd = _nowPage * _pageSize - 1;    // 循环的终止下标
@@ -133,9 +128,9 @@ namespace JokerBooksManagerBLL.BookBLL
             }
             for (int i = iStart; i <= iEnd; i++)
             {
-                subBookInfos.Add(bookInfos[i]);
+                subList.Add(list[i]);
             }
-            return subBookInfos;
+            return subList;
         }
 
 
