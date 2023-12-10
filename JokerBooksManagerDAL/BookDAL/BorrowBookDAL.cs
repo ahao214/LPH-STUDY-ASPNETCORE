@@ -28,7 +28,7 @@ namespace JokerBooksManagerDAL.BookDAL
             List<BorrowBook> lst = new List<BorrowBook>();
             BorrowBook borrowBook = new BorrowBook();
 
-            string sql = BuilderSqlHelper.SelectSql<BookInfo>(borrowBook, "BorrowBook", "BorrowId");
+            string sql = BuilderSqlHelper.SelectSql<BorrowBook>(borrowBook, "BorrowBook", "BorrowId");
 
             SqlDataReader dr = DBHelper.ExecuteReader(sql, bookCommand);
             while (dr.Read())
@@ -39,7 +39,7 @@ namespace JokerBooksManagerDAL.BookDAL
                     BookId = dr["BookId"].ChangeInt(),
                     ReaderId = dr["ReaderId"].ChangeInt(),
                     BorrowBookCount = dr["BorrowBookCount"].ChangeInt(),
-                    BorrowDate = Convert.ToDateTime(dr["PublishId"]);
+                    BorrowDate = Convert.ToDateTime(dr["PublishId"]),
                     ShouldDate = Convert.ToDateTime(dr["ShouldDate"]),
                     ActualDate = Convert.ToDateTime(dr["ActualDate"]),                
                     Remark = dr["Remark"].ToString(),                    

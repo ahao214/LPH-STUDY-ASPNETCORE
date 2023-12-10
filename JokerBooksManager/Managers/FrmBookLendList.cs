@@ -86,17 +86,13 @@ namespace JokerBooksManager.Managers
                 DgvBorrowBook.Rows.Add();
                 DgvBorrowBook["BorrowId", i].Value = lst[i].BorrowId;
                 DgvBorrowBook["BookId", i].Value = lst[i].BookId;
-                DgvBorrowBook["BookName", i].Value = lst[i].BookName;
-                DgvBorrowBook["BookNumber", i].Value = lst[i].BookNumber;
-                DgvBorrowBook["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
-                DgvBorrowBook["PublishDate", i].Value = lst[i].PublishDate;
-                DgvBorrowBook["BookTypeName", i].Value = bookTypeBll.GetBookTypeById(lst[i].BookTypeId).BookTypeName;
-                DgvBorrowBook["AuthorName", i].Value = authorBll.GetAuthorById(lst[i].AuthorId).AuthorName;
-                DgvBorrowBook["BookPrice", i].Value = lst[i].BookPrice;
-                DgvBorrowBook["InputName", i].Value = lst[i].InputName;
-                DgvBorrowBook["BorrowCount", i].Value = lst[i].BorrowCount;
-                DgvBorrowBook["TotalCount", i].Value = lst[i].TotalCount;
-                DgvBorrowBook["BookSamry", i].Value = lst[i].BookSamry;
+                //DgvBorrowBook["BookName", i].Value = lst[i].BookName;
+                //DgvBorrowBook["BookNumber", i].Value = lst[i].BookNumber;
+                //DgvBorrowBook["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
+                //DgvBorrowBook["PublishDate", i].Value = lst[i].PublishDate;
+                //DgvBorrowBook["BookTypeName", i].Value = bookTypeBll.GetBookTypeById(lst[i].BookTypeId).BookTypeName;
+                //DgvBorrowBook["AuthorName", i].Value = authorBll.GetAuthorById(lst[i].AuthorId).AuthorName;
+                
             }
 
         }
@@ -125,7 +121,7 @@ namespace JokerBooksManager.Managers
         private void InitailPageSet()
         {
             pageSet = GetBooks();
-            LoadBookInfo(pageSet.FirstPage());
+            //LoadBookInfo(pageSet.FirstPage());
             LblPageCount.Text = pageSet.PageCount.ToString();
         }
         #endregion
@@ -150,7 +146,7 @@ namespace JokerBooksManager.Managers
             {
                 CommMsgBox.MsgBoxCaveat(CommConst.DeleteDataFail);
             }
-            LoadBookInfo(pageSet.FirstPage());
+            //LoadBookInfo(pageSet.FirstPage());
         }
         #endregion
 
