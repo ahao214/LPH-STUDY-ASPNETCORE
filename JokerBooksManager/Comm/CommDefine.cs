@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Drawing;
+using System.Windows.Forms;
 
 
 namespace JokerBooksManager.Comm
@@ -233,6 +234,28 @@ namespace JokerBooksManager.Comm
             Image img = Image.FromStream(stream);
 
             return img;
+        }
+
+        #endregion
+
+
+        #region 重新绘制GroupBox
+
+        public static void GrpupBoxPaint(GroupBox gb, PaintEventArgs e)
+        {
+            Brush brush = Brushes.Red;
+            Font gbFont = gb.Font;
+            Pen pen = Pens.Green;
+            string gbText = gb.Text.Trim();
+            int igbW = gb.Width - 2;
+            int igbH = gb.Height - 2;
+            e.Graphics.Clear(gb.BackColor); // 设置默认背景色
+            e.Graphics.DrawString(gbText, gbFont, brush, 10, 1);
+            e.Graphics.DrawLine(pen, 1, 7, 8, 7);   // 左上角的线条
+            e.Graphics.DrawLine(pen, e.Graphics.MeasureString(gbText, gbFont).Width + 7, 7, gb.Width, 7);
+            e.Graphics.DrawLine(pen, 1, 7, 9, igbH);// 左边的线条
+            e.Graphics.DrawLine(pen, 1, igbH, igbW, igbH);  // 底部的线条
+            e.Graphics.DrawLine(pen, igbW, 7, igbW, igbH);  // 右边的线条
         }
 
         #endregion
