@@ -93,6 +93,12 @@
     <Compile Include="Managers\FrmBookInfoSearch.Designer.cs">
       <DependentUpon>FrmBookInfoSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Managers\FrmBookLendAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Managers\FrmBookLendAdd.Designer.cs">
+      <DependentUpon>FrmBookLendAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\FrmBookLendList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmBookInfoSearch.resx">
       <DependentUpon>FrmBookInfoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Managers\FrmBookLendAdd.resx">
+      <DependentUpon>FrmBookLendAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Managers\FrmBookLendList.resx">
       <DependentUpon>FrmBookLendList.cs</DependentUpon>
