@@ -23,5 +23,9 @@ namespace JokerBooksManagerModels.Model
         /// 带参数的委托用于跳转到尾页
         /// </summary>
         public Action<int> RefreshData { get; set; }
+        /// <summary>
+        /// 用于跳转到尾页
+        /// </summary>
+        public int PageCount { get;set; }
     }
 }
