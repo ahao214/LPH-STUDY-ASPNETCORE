@@ -15,9 +15,9 @@ namespace JokerBooksManager.Managers
     /// <summary>
     /// 图书借书窗体
     /// </summary>
-    public partial class FrmBookLend : UIForm
+    public partial class FrmBookLendList : UIForm
     {
-        public FrmBookLend()
+        public FrmBookLendList()
         {
             InitializeComponent();
         }

@@ -280,7 +280,9 @@ namespace JokerBooksManager.Managers
         
         private void TsmiBorrowManage_Click(object sender, EventArgs e)
         {
-
+            FrmBookLendList frmBookLendList = SingleForm<FrmBookLendList>.CreateInstance();
+            frmBookLendList.MdiParent = MdiParent;
+            frmBookLendList.Show();
         }
 
         #endregion

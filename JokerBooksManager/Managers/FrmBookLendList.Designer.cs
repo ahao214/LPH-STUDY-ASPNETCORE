@@ -1,6 +1,6 @@
 ﻿namespace JokerBooksManager.Managers
 {
-    partial class FrmBookLend
+    partial class FrmBookLendList
     {
         /// <summary>
         /// Required designer variable.
@@ -33,12 +33,13 @@
             // FrmBookLend
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1467, 650);
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.MaximizeBox = false;
             this.Name = "FrmBookLend";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.Style = Sunny.UI.UIStyle.Green;
-            this.Text = "图书借书";
+            this.Text = "图书借阅";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
             this.ResumeLayout(false);
