@@ -140,32 +140,6 @@ namespace JokerBooksManagerDAL.BookDAL
 
         #endregion
 
-        #region 获取数据库中最后一条图书编码
-        /// <summary>
-        /// 获取数据库中最后一条图书编码
-        /// </summary>
-        /// <returns></returns>
-        public static string GetBookNumber()
-        {
-            BookCommandType type = BookCommandType.Text;
-            StringBuilder sb = new StringBuilder();
-            sb.Append("SELECT TOP 1 BookNumber FROM BookInfo ORDER BY BookId DESC");
-            SqlDataReader reader = DBHelper.ExecuteReader(sb.ToString(), type);
-            string sBookNumber = string.Empty;
-            if (reader.Read())
-            {
-                sBookNumber = reader["BookNumber"].ToString();
-            }
-            else
-            {
-                sBookNumber = "BN000000000";
-            }
-            reader.Close();
-            return sBookNumber;
-        }
-
-        #endregion
-
         #region 添加图书信息(另外一种方法)
         /// <summary>
         /// 添加图书信息(另外一种方法)
@@ -242,7 +216,6 @@ namespace JokerBooksManagerDAL.BookDAL
                     BorrowCount = dr["BorrowCount"].ChangeInt(),
                     TotalCount = dr["TotalCount"].ChangeInt(),
                     BookSamry = dr["BookSamry"].ToString(),
-                    //ConvrImage = (byte[])dr["ConvrImage"]
                 };
                 lst.Add(auth);
             }

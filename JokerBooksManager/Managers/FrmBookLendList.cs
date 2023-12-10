@@ -28,6 +28,7 @@ namespace JokerBooksManager.Managers
         private readonly BookInfoBLL bookInfoBll = new BookInfoBLL();
         private readonly PublishHouseBLL publishBll = new PublishHouseBLL();
         private readonly BookTypeBLL bookTypeBll = new BookTypeBLL();
+        private readonly BorrowBookBLL borrowBookBLL = new BorrowBookBLL(); 
         /// <summary>
         /// 业务逻辑层图书翻页变量
         /// </summary>
@@ -43,10 +44,12 @@ namespace JokerBooksManager.Managers
             InitializeComponent();
         }
 
+        #region 关闭窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        } 
+        #endregion
 
         #region 新增
         private void BtnAddNew_Click(object sender, EventArgs e)
@@ -74,16 +77,16 @@ namespace JokerBooksManager.Managers
 
         #region 绑定图书信息到DataGrid
 
-        private void LoadBookInfo(List<BookInfo> _bookInfos)
+        private void LoadBookInfo(List<BorrowBook> _borrowBooks)
         {
             DgvBorrowBook.Rows.Clear();
-            List<BookInfo> lst = _bookInfos;
+            List<BorrowBook> lst = _borrowBooks;
             for (int i = 0; i < lst.Count; i++)
             {
                 DgvBorrowBook.Rows.Add();
+                DgvBorrowBook["BorrowId", i].Value = lst[i].BorrowId;
                 DgvBorrowBook["BookId", i].Value = lst[i].BookId;
                 DgvBorrowBook["BookName", i].Value = lst[i].BookName;
-                //DgvBookInfo["CoverImage", i].Value = lst[i].ConvrImage;
                 DgvBorrowBook["BookNumber", i].Value = lst[i].BookNumber;
                 DgvBorrowBook["PublishName", i].Value = publishBll.GetPublishHouseById(lst[i].BookId).PublishName;
                 DgvBorrowBook["PublishDate", i].Value = lst[i].PublishDate;
@@ -151,38 +154,7 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
-        #region 单击下一页事件
-        private void BtnNextPage_Click(object sender, EventArgs e)
-        {
-            LoadBookInfo(pageSet.NextPage());
-            SetLablePage();
-        }
-        #endregion
-
-        #region 单击首页事件
-        private void BtnStartPage_Click(object sender, EventArgs e)
-        {
-            LoadBookInfo(pageSet.FirstPage());
-            SetLablePage();
-        }
-        #endregion
-
-        #region 上一页事件
-
-        private void BtnPrevPage_Click(object sender, EventArgs e)
-        {
-            LoadBookInfo(pageSet.PrevPage());
-            SetLablePage();
-        }
-        #endregion
-
-        #region 尾页事件
-        private void BtnEndPage_Click(object sender, EventArgs e)
-        {
-            LoadBookInfo(pageSet.EndPage());
-            SetLablePage();
-        }
-        #endregion
+       
 
         #region 
 
@@ -194,8 +166,6 @@ namespace JokerBooksManager.Managers
         #endregion
 
         #region 绑定图书信息到DataGrid
-
-
 
         private void DgvBorrowBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
