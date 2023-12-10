@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using JokerBooksManager.Comm;
 using JokerBooksManagerBLL.BookBLL;
@@ -50,6 +44,10 @@ namespace JokerBooksManager.Managers
         /// </summary>
         private int bookId = 0;
 
+        #endregion
+
+        #region 总页数
+        private int pageCount = 0;
         #endregion
 
         #region 构造函数
@@ -118,6 +116,7 @@ namespace JokerBooksManager.Managers
                 if (!(formInfoModel is null))
                 {
                     bookId = formInfoModel.KeyId;
+                    pageCount = formInfoModel.PageCount;
                 }
             }
             if (bookId > 0)
@@ -195,7 +194,7 @@ namespace JokerBooksManager.Managers
             {
                 CommMsgBox.MsgBox(CommConst.SaveDataSuccess);
                 // 刷新
-                formInfoModel.ReloadData?.Invoke();
+                formInfoModel.RefreshData?.Invoke(pageCount);
                 Close();
             }
             else

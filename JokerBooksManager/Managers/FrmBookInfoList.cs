@@ -61,7 +61,9 @@ namespace JokerBooksManager.Managers
             frmBookInfoAdd.Tag = new FormInfoModel
             {
                 KeyId = id,
-                ReloadData = InitailPageSet   // 自定义函数
+                PageCount = pageSet.PageCount .ChangeInt(),
+                //ReloadData = InitailPageSet   // 自定义函数
+                RefreshData = InitailPageSet
             };
             frmBookInfoAdd.Show();
         }
@@ -157,13 +159,20 @@ namespace JokerBooksManager.Managers
 
 
         #region 初始化页面记载的数据
+        private void InitailPageSet(int _pageCount)
+        {
+            pageSet = GetBooks();
+            LoadBookInfo(pageSet.EndPage());
+            LblPageCount.Text = _pageCount.ToString();
+        }
+        #endregion
+
         private void InitailPageSet()
         {
             pageSet = GetBooks();
             LoadBookInfo(pageSet.FirstPage());
             LblPageCount.Text = pageSet.PageCount.ToString();
-        } 
-        #endregion
+        }
 
         #region 执行删除
         /// <summary>
@@ -209,7 +218,7 @@ namespace JokerBooksManager.Managers
 
         private void BtnPrevPage_Click(object sender, EventArgs e)
         {
-            LoadBookInfo(pageSet.PrevPage()); 
+            LoadBookInfo(pageSet.PrevPage());
             SetLablePage();
         }
         #endregion
@@ -230,5 +239,7 @@ namespace JokerBooksManager.Managers
         }
 
         #endregion
+
+
     }
 }
