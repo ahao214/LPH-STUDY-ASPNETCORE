@@ -163,6 +163,7 @@ namespace JokerBooksManagerDAL.BookDAL
 
 
         #region 根据关键字查询读者信息
+
         /// <summary>
         /// 根据关键字查询读者信息
         /// </summary>
@@ -180,9 +181,10 @@ namespace JokerBooksManagerDAL.BookDAL
                 new SqlParameter("@ReaderTel",keyWords)
             };
 
-            SqlDataReader dr = DBHelper.ExecuteReader("GetSearchReader", commandType,paras);
+            SqlDataReader dr = DBHelper.ExecuteReader("GetSearchReader", commandType, paras);
             if (dr.Read())
             {
+                info.ReaderId = dr["ReaderId"].ChangeInt();
                 info.ReaderName = dr["ReaderName"].ToString();
                 info.ReaderTypeId = dr["ReaderTypeId"].ChangeInt();
                 info.ReaderSex = dr["ReaderSex"].ToString();
@@ -190,7 +192,6 @@ namespace JokerBooksManagerDAL.BookDAL
                 info.ReaderIdCard = dr["ReaderIdCard"].ToString();
                 info.ReaderTel = dr["ReaderTel"].ToString();
                 info.ReaderRemark = dr["ReaderRemark"].ToString();
-
             }
             dr.Close();
             return info;

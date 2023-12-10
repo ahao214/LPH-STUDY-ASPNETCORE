@@ -146,7 +146,25 @@ namespace JokerBooksManagerBLL.BookBLL
 
         #endregion
 
+        #region 根据关键字查询读者信息
+        /// <summary>
+        /// 根据关键字查询读者信息
+        /// </summary>
+        /// <param name="keyWords">关键字</param>
+        /// <returns></returns>
+        public ReaderInfo GetReaderInfoByKeyWords(string keyWords)
+        {
+            try
+            {
+                return ReaderInfoDAL.GetReaderInfoByKeyWords(keyWords);
+            }
+            catch (Exception exe)
+            {
+                throw exe;
+            }
+        }
 
+        #endregion
 
     }
 }
