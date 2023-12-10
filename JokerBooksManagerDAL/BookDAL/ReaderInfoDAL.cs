@@ -162,7 +162,41 @@ namespace JokerBooksManagerDAL.BookDAL
         #endregion
 
 
+        #region 根据关键字查询读者信息
+        /// <summary>
+        /// 根据关键字查询读者信息
+        /// </summary>
+        /// <param name="keyWords">关键字</param>
+        /// <returns></returns>
+        public static ReaderInfo GetReaderInfoByKeyWords(string keyWords)
+        {
+            BookCommandType commandType = BookCommandType.Text;
+            ReaderInfo info = new ReaderInfo();
 
+            SqlParameter[] paras =
+            {
+                new SqlParameter("@ReaderName",keyWords),
+                new SqlParameter("@ReaderNumber",keyWords),
+                new SqlParameter("@ReaderTel",keyWords)
+            };
+
+            SqlDataReader dr = DBHelper.ExecuteReader("GetSearchReader", commandType,paras);
+            if (dr.Read())
+            {
+                info.ReaderName = dr["ReaderName"].ToString();
+                info.ReaderTypeId = dr["ReaderTypeId"].ChangeInt();
+                info.ReaderSex = dr["ReaderSex"].ToString();
+                info.ReaderNumber = dr["ReaderNumber"].ToString();
+                info.ReaderIdCard = dr["ReaderIdCard"].ToString();
+                info.ReaderTel = dr["ReaderTel"].ToString();
+                info.ReaderRemark = dr["ReaderRemark"].ToString();
+
+            }
+            dr.Close();
+            return info;
+        }
+
+        #endregion
 
 
 
