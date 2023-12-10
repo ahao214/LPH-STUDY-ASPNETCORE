@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.GbrReaderInfo = new System.Windows.Forms.GroupBox();
+            this.GbrBookInfo = new System.Windows.Forms.GroupBox();
             this.BtnSearchReader = new Sunny.UI.UIButton();
             this.TxtReaderRemark = new Sunny.UI.UITextBox();
             this.TxtReaderTel = new Sunny.UI.UITextBox();
@@ -71,66 +71,66 @@
             this.BtnSearchBook = new Sunny.UI.UIButton();
             this.BtnBorrow = new Sunny.UI.UIButton();
             this.BtnClose = new Sunny.UI.UIButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.GbrReaderInfo.SuspendLayout();
+            this.GbrBookInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // GbrReaderInfo
             // 
-            this.groupBox1.Controls.Add(this.TxtKeys);
-            this.groupBox1.Controls.Add(this.uiLabel1);
-            this.groupBox1.Controls.Add(this.TxtReaderRemark);
-            this.groupBox1.Controls.Add(this.TxtReaderTel);
-            this.groupBox1.Controls.Add(this.TxtReaderIdCard);
-            this.groupBox1.Controls.Add(this.TxtReaderNumber);
-            this.groupBox1.Controls.Add(this.uiLabel7);
-            this.groupBox1.Controls.Add(this.uiLabel6);
-            this.groupBox1.Controls.Add(this.uiLabel5);
-            this.groupBox1.Controls.Add(this.uiLabel4);
-            this.groupBox1.Controls.Add(this.uiLabel3);
-            this.groupBox1.Controls.Add(this.uiLabel2);
-            this.groupBox1.Controls.Add(this.CboReaderTypeId);
-            this.groupBox1.Controls.Add(this.RbMale);
-            this.groupBox1.Controls.Add(this.RbFemale);
-            this.groupBox1.Controls.Add(this.TxtReaderName);
-            this.groupBox1.Controls.Add(this.uiLabel8);
-            this.groupBox1.Controls.Add(this.BtnSearchReader);
-            this.groupBox1.Location = new System.Drawing.Point(12, 53);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(500, 613);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "读者信息";
+            this.GbrReaderInfo.Controls.Add(this.TxtKeys);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel1);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderRemark);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderTel);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderIdCard);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderNumber);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel7);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel6);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel5);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel4);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel3);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel2);
+            this.GbrReaderInfo.Controls.Add(this.CboReaderTypeId);
+            this.GbrReaderInfo.Controls.Add(this.RbMale);
+            this.GbrReaderInfo.Controls.Add(this.RbFemale);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderName);
+            this.GbrReaderInfo.Controls.Add(this.uiLabel8);
+            this.GbrReaderInfo.Controls.Add(this.BtnSearchReader);
+            this.GbrReaderInfo.Location = new System.Drawing.Point(12, 53);
+            this.GbrReaderInfo.Name = "GbrReaderInfo";
+            this.GbrReaderInfo.Size = new System.Drawing.Size(500, 613);
+            this.GbrReaderInfo.TabIndex = 0;
+            this.GbrReaderInfo.TabStop = false;
+            this.GbrReaderInfo.Text = "读者信息";
             // 
-            // groupBox2
+            // GbrBookInfo
             // 
-            this.groupBox2.Controls.Add(this.uiTextBox1);
-            this.groupBox2.Controls.Add(this.uiLabel18);
-            this.groupBox2.Controls.Add(this.BtnSearchBook);
-            this.groupBox2.Controls.Add(this.uiLabel17);
-            this.groupBox2.Controls.Add(this.TxtBorrowCount);
-            this.groupBox2.Controls.Add(this.TxtTotalCount);
-            this.groupBox2.Controls.Add(this.TxtBookPrice);
-            this.groupBox2.Controls.Add(this.CboAuthorId);
-            this.groupBox2.Controls.Add(this.CboBookTypeId);
-            this.groupBox2.Controls.Add(this.TxtBookNumber);
-            this.groupBox2.Controls.Add(this.uiLabel9);
-            this.groupBox2.Controls.Add(this.uiLabel10);
-            this.groupBox2.Controls.Add(this.uiLabel11);
-            this.groupBox2.Controls.Add(this.uiLabel12);
-            this.groupBox2.Controls.Add(this.uiLabel13);
-            this.groupBox2.Controls.Add(this.uiLabel14);
-            this.groupBox2.Controls.Add(this.uiLabel15);
-            this.groupBox2.Controls.Add(this.DpPublishDate);
-            this.groupBox2.Controls.Add(this.CboPublishId);
-            this.groupBox2.Controls.Add(this.TxtBookName);
-            this.groupBox2.Controls.Add(this.uiLabel16);
-            this.groupBox2.Location = new System.Drawing.Point(518, 53);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(497, 613);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "图书信息";
+            this.GbrBookInfo.Controls.Add(this.uiTextBox1);
+            this.GbrBookInfo.Controls.Add(this.uiLabel18);
+            this.GbrBookInfo.Controls.Add(this.BtnSearchBook);
+            this.GbrBookInfo.Controls.Add(this.uiLabel17);
+            this.GbrBookInfo.Controls.Add(this.TxtBorrowCount);
+            this.GbrBookInfo.Controls.Add(this.TxtTotalCount);
+            this.GbrBookInfo.Controls.Add(this.TxtBookPrice);
+            this.GbrBookInfo.Controls.Add(this.CboAuthorId);
+            this.GbrBookInfo.Controls.Add(this.CboBookTypeId);
+            this.GbrBookInfo.Controls.Add(this.TxtBookNumber);
+            this.GbrBookInfo.Controls.Add(this.uiLabel9);
+            this.GbrBookInfo.Controls.Add(this.uiLabel10);
+            this.GbrBookInfo.Controls.Add(this.uiLabel11);
+            this.GbrBookInfo.Controls.Add(this.uiLabel12);
+            this.GbrBookInfo.Controls.Add(this.uiLabel13);
+            this.GbrBookInfo.Controls.Add(this.uiLabel14);
+            this.GbrBookInfo.Controls.Add(this.uiLabel15);
+            this.GbrBookInfo.Controls.Add(this.DpPublishDate);
+            this.GbrBookInfo.Controls.Add(this.CboPublishId);
+            this.GbrBookInfo.Controls.Add(this.TxtBookName);
+            this.GbrBookInfo.Controls.Add(this.uiLabel16);
+            this.GbrBookInfo.Location = new System.Drawing.Point(518, 53);
+            this.GbrBookInfo.Name = "GbrBookInfo";
+            this.GbrBookInfo.Size = new System.Drawing.Size(497, 613);
+            this.GbrBookInfo.TabIndex = 1;
+            this.GbrBookInfo.TabStop = false;
+            this.GbrBookInfo.Text = "图书信息";
             // 
             // BtnSearchReader
             // 
@@ -823,7 +823,7 @@
             this.BtnBorrow.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnBorrow.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnBorrow.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnBorrow.Location = new System.Drawing.Point(412, 696);
+            this.BtnBorrow.Location = new System.Drawing.Point(683, 686);
             this.BtnBorrow.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnBorrow.Name = "BtnBorrow";
             this.BtnBorrow.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -845,7 +845,7 @@
             this.BtnClose.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
             this.BtnClose.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnClose.Location = new System.Drawing.Point(571, 696);
+            this.BtnClose.Location = new System.Drawing.Point(890, 686);
             this.BtnClose.MinimumSize = new System.Drawing.Size(1, 1);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -865,8 +865,8 @@
             this.ControlBoxFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnBorrow);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GbrBookInfo);
+            this.Controls.Add(this.GbrReaderInfo);
             this.MaximizeBox = false;
             this.Name = "FrmBookLendAdd";
             this.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -874,17 +874,17 @@
             this.Text = "新增图书借阅";
             this.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
             this.ZoomScaleRect = new System.Drawing.Rectangle(22, 22, 800, 450);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.GbrReaderInfo.ResumeLayout(false);
+            this.GbrBookInfo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GbrReaderInfo;
         private Sunny.UI.UIButton BtnSearchReader;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox GbrBookInfo;
         private Sunny.UI.UITextBox TxtReaderRemark;
         private Sunny.UI.UITextBox TxtReaderTel;
         private Sunny.UI.UITextBox TxtReaderIdCard;

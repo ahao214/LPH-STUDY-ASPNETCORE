@@ -44,7 +44,7 @@ namespace JokerBooksManager.Managers
             InitializeComponent();
         }
 
-        #region 关闭窗体
+        #region 关闭当前窗体
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
