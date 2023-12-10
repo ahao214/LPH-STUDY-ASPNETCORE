@@ -46,7 +46,7 @@
             this.RbFemale = new Sunny.UI.UIRadioButton();
             this.TxtReaderName = new Sunny.UI.UITextBox();
             this.uiLabel8 = new Sunny.UI.UILabel();
-            this.TxtKeys = new Sunny.UI.UITextBox();
+            this.TxtReaderKeyWords = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.TxtTotalCount = new Sunny.UI.UITextBox();
             this.TxtBookPrice = new Sunny.UI.UITextBox();
@@ -66,7 +66,7 @@
             this.uiLabel16 = new Sunny.UI.UILabel();
             this.TxtBorrowCount = new Sunny.UI.UITextBox();
             this.uiLabel17 = new Sunny.UI.UILabel();
-            this.uiTextBox1 = new Sunny.UI.UITextBox();
+            this.TxtBookKeyWords = new Sunny.UI.UITextBox();
             this.uiLabel18 = new Sunny.UI.UILabel();
             this.BtnSearchBook = new Sunny.UI.UIButton();
             this.BtnBorrow = new Sunny.UI.UIButton();
@@ -77,7 +77,7 @@
             // 
             // GbrReaderInfo
             // 
-            this.GbrReaderInfo.Controls.Add(this.TxtKeys);
+            this.GbrReaderInfo.Controls.Add(this.TxtReaderKeyWords);
             this.GbrReaderInfo.Controls.Add(this.uiLabel1);
             this.GbrReaderInfo.Controls.Add(this.TxtReaderRemark);
             this.GbrReaderInfo.Controls.Add(this.TxtReaderTel);
@@ -104,7 +104,7 @@
             // 
             // GbrBookInfo
             // 
-            this.GbrBookInfo.Controls.Add(this.uiTextBox1);
+            this.GbrBookInfo.Controls.Add(this.TxtBookKeyWords);
             this.GbrBookInfo.Controls.Add(this.uiLabel18);
             this.GbrBookInfo.Controls.Add(this.BtnSearchBook);
             this.GbrBookInfo.Controls.Add(this.uiLabel17);
@@ -406,30 +406,30 @@
             this.uiLabel8.Text = "读者姓名";
             this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtKeys
+            // TxtReaderKeyWords
             // 
-            this.TxtKeys.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtKeys.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtKeys.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtKeys.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtKeys.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.TxtKeys.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.TxtKeys.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtKeys.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.TxtKeys.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TxtKeys.Location = new System.Drawing.Point(175, 53);
-            this.TxtKeys.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TxtKeys.MinimumSize = new System.Drawing.Size(1, 16);
-            this.TxtKeys.Name = "TxtKeys";
-            this.TxtKeys.Padding = new System.Windows.Forms.Padding(5);
-            this.TxtKeys.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtKeys.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.TxtKeys.ShowText = false;
-            this.TxtKeys.Size = new System.Drawing.Size(162, 32);
-            this.TxtKeys.Style = Sunny.UI.UIStyle.Green;
-            this.TxtKeys.TabIndex = 34;
-            this.TxtKeys.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TxtKeys.Watermark = "";
+            this.TxtReaderKeyWords.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderKeyWords.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtReaderKeyWords.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtReaderKeyWords.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderKeyWords.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtReaderKeyWords.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtReaderKeyWords.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtReaderKeyWords.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtReaderKeyWords.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtReaderKeyWords.Location = new System.Drawing.Point(175, 53);
+            this.TxtReaderKeyWords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtReaderKeyWords.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtReaderKeyWords.Name = "TxtReaderKeyWords";
+            this.TxtReaderKeyWords.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtReaderKeyWords.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderKeyWords.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtReaderKeyWords.ShowText = false;
+            this.TxtReaderKeyWords.Size = new System.Drawing.Size(162, 32);
+            this.TxtReaderKeyWords.Style = Sunny.UI.UIStyle.Green;
+            this.TxtReaderKeyWords.TabIndex = 34;
+            this.TxtReaderKeyWords.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtReaderKeyWords.Watermark = "";
             // 
             // uiLabel1
             // 
@@ -757,30 +757,30 @@
             this.uiLabel17.Text = "借出总次数";
             this.uiLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiTextBox1
+            // TxtBookKeyWords
             // 
-            this.uiTextBox1.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiTextBox1.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiTextBox1.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiTextBox1.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiTextBox1.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
-            this.uiTextBox1.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
-            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
-            this.uiTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox1.Location = new System.Drawing.Point(175, 36);
-            this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox1.Name = "uiTextBox1";
-            this.uiTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-            this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(162, 32);
-            this.uiTextBox1.Style = Sunny.UI.UIStyle.Green;
-            this.uiTextBox1.TabIndex = 60;
-            this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox1.Watermark = "";
+            this.TxtBookKeyWords.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBookKeyWords.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtBookKeyWords.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtBookKeyWords.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBookKeyWords.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(203)))), ((int)(((byte)(83)))));
+            this.TxtBookKeyWords.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(152)))), ((int)(((byte)(32)))));
+            this.TxtBookKeyWords.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBookKeyWords.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(251)))), ((int)(((byte)(241)))));
+            this.TxtBookKeyWords.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TxtBookKeyWords.Location = new System.Drawing.Point(175, 36);
+            this.TxtBookKeyWords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtBookKeyWords.MinimumSize = new System.Drawing.Size(1, 16);
+            this.TxtBookKeyWords.Name = "TxtBookKeyWords";
+            this.TxtBookKeyWords.Padding = new System.Windows.Forms.Padding(5);
+            this.TxtBookKeyWords.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBookKeyWords.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
+            this.TxtBookKeyWords.ShowText = false;
+            this.TxtBookKeyWords.Size = new System.Drawing.Size(162, 32);
+            this.TxtBookKeyWords.Style = Sunny.UI.UIStyle.Green;
+            this.TxtBookKeyWords.TabIndex = 60;
+            this.TxtBookKeyWords.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxtBookKeyWords.Watermark = "";
             // 
             // uiLabel18
             // 
@@ -902,7 +902,7 @@
         private Sunny.UI.UIRadioButton RbFemale;
         private Sunny.UI.UITextBox TxtReaderName;
         private Sunny.UI.UILabel uiLabel8;
-        private Sunny.UI.UITextBox TxtKeys;
+        private Sunny.UI.UITextBox TxtReaderKeyWords;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UITextBox TxtTotalCount;
         private Sunny.UI.UITextBox TxtBookPrice;
@@ -922,7 +922,7 @@
         private Sunny.UI.UILabel uiLabel16;
         private Sunny.UI.UILabel uiLabel17;
         private Sunny.UI.UITextBox TxtBorrowCount;
-        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UITextBox TxtBookKeyWords;
         private Sunny.UI.UILabel uiLabel18;
         private Sunny.UI.UIButton BtnSearchBook;
         private Sunny.UI.UIButton BtnBorrow;

@@ -20,7 +20,7 @@ namespace JokerBooksManager.Managers
     {
 
         #region 业务逻辑层BLL
-        
+
         private readonly ReaderInfoBLL readerInfoBLL = new ReaderInfoBLL();
 
         #endregion
@@ -46,11 +46,16 @@ namespace JokerBooksManager.Managers
         #endregion
 
         #region 获取读者信息
-        
+
         private void BtnSearchReader_Click(object sender, EventArgs e)
         {
-            readerInfo = readerInfoBLL.GetReaderInfoByKeyWords(this.TxtKeys.Text.Trim());
-        } 
+            string keyWords = this.TxtReaderKeyWords.Text.Trim();
+            readerInfo = readerInfoBLL.GetReaderInfoByKeyWords(keyWords);
+            if (!(readerInfo is null))
+            {
+                TxtReaderName.Text = readerInfo.ReaderName.ToString();
+            }
+        }
 
         #endregion
     }
