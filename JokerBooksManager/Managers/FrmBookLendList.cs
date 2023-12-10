@@ -58,18 +58,18 @@ namespace JokerBooksManager.Managers
         }
         #endregion
 
-        #region 打开新增或者修改窗体
+        #region 打开新增或者修改图书借阅窗体
 
         private void ShowForm(int id)
         {
-            FrmBookInfoAdd frmBookInfoAdd = SingleForm<FrmBookInfoAdd>.CreateInstance();
-            frmBookInfoAdd.MdiParent = MdiParent;
-            frmBookInfoAdd.Tag = new FormInfoModel
+            FrmBookLendAdd frmBookLendAdd = SingleForm<FrmBookLendAdd>.CreateInstance();
+            frmBookLendAdd.MdiParent = MdiParent;
+            frmBookLendAdd.Tag = new FormInfoModel
             {
                 KeyId = id,
                 ReloadData = InitailPageSet   // 自定义函数
             };
-            frmBookInfoAdd.Show();
+            frmBookLendAdd.Show();
         }
 
 

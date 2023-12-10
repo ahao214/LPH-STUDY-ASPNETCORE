@@ -11,6 +11,9 @@ using Sunny.UI;
 
 namespace JokerBooksManager.Managers
 {
+    /// <summary>
+    /// 图书借阅窗体
+    /// </summary>
     public partial class FrmBookLendAdd : UIForm
     {
         public FrmBookLendAdd()
