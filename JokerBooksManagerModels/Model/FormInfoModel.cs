@@ -19,5 +19,9 @@ namespace JokerBooksManagerModels.Model
         /// 刷新数据库的委托
         /// </summary>
         public Action ReloadData { get; set; }
+        /// <summary>
+        /// 带参数的委托用于跳转到尾页
+        /// </summary>
+        public Action<int> RefreshData { get; set; }
     }
 }
